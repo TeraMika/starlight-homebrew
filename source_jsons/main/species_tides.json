@@ -66,6 +66,19 @@
                     }
                 }
             ],
+            "fluff": {
+                "entries":
+                [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries":
+                        [
+                            "The Lacertal are a simple folk. However you ended up in the rift, it has changed you in ways that may make you difficult to recognise back home."
+                        ]
+                    }
+                ]
+            },
             "entries": 
             [
                 {
@@ -90,7 +103,7 @@
                     "page": 8,
                     "entries": 
                     [
-                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter Primal Spell list|spells|level=0|group=primal}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Primal Spell list.",
+                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter druid spell list|spells|level=0|class=Druid}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Druid Spell list.",
                         "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
                     ]
                 },
@@ -101,6 +114,13 @@
                     "entries": 
                     [
                         "You have Proficiency in the {@skill Perception} Skill."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "Despite your otherworldly origin, you have some commonality with the people of this world. You can speak, read, and write Common, and one other language of your choice that the DM agrees is appropriate for your character."
                     ]
                 }
             ]
@@ -238,6 +258,19 @@
                 }
             }
         ],
+        "fluff": {
+            "entries":
+            [
+                {
+                    "type": "entries",
+                    "name": "Origin",
+                    "entries":
+                    [
+                        "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material."
+                    ]
+                }
+            ]
+        },
         "entries": 
         [
             {
@@ -269,7 +302,7 @@
                 "name": "Keen Senses",
                 "entries":
                 [
-                    "You have profiency in the Perception skill."
+                    "You have profiency in the {@skill Perception} skill."
                 ]
             },
             {
@@ -279,8 +312,17 @@
                     "You can speak, read, and write Common, Abyssal, and Elvish."
                 ]
             }
-
+        ],
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "languageProficiencies": 
+        [
+            {
+                "common": true,
+                "elvish": true,
+                "abyssal": true
+            }
         ]
-        }
+    }
     ]
 }
