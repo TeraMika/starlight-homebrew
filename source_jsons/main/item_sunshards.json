@@ -224,7 +224,7 @@
                 "When you take the attack action on your turn, you can replace one of your attacks with an attack with this sunshard, if you are holding it or able to draw it. The sunshard deals {@dice 4d8} lightning damage on a hit and has the finesse, light, and thrown properties (range 60/120).",
                 "If the target is made of or wearing metal, you have advantage on the attack roll. On a hit, the target must make a DC 15 Constitution saving throw. On a failed save, they are stunned until the start of your next turn. On a miss, the following effect still applies, centred on the target.",
                 "Additionally, any creatures within 20 feet of the target must make a DC 15 Dexterity saving throw. On a failed save, they take {@dice 2d8} lightning damage, or half as much on a successful one.",
-                "Once used, the sunshard is expended and reduced to nothingness. If the attack was a miss, the sunshard remains, empty, and you can attempt a DC 20 Intelligence, Wisdom or Charisma (your choice) check to restore its magic. On a fail, the shard becomes dull."
+                "Once used, the sunshard is expended and reduced to nothingness. If the attack was a miss, the sunshard remains, empty, and you can attempt a DC 20 Intelligence, Wisdom or Charisma (your choice) check to restore its magic. On a fail, the magic is lost permanently."
 			]
 		},
         {
@@ -236,7 +236,7 @@
 				"This sunshard naturally draws lightning and electricity towards itself. While it is on your person, you have disadvantage on saving throws you make against effects that deal lightning damage.",
                 "As a ten-minute ritual, you can change the weather outside to thunderstorms, regardless of what it was initially, which will persist for one day.",
                 "After casting this ritual, you gain resistance to lightning and thunder damage, or immunity to those damage types if you are already resistant.",
-                "You can cast {@spell Call Lightning} at will, so long as you are outside under the storm you summoned."
+                "You can cast {@spell Call Lightning} at will, so long as you are outside under the storm you summoned. Once the storm ends, you lose this ability."
 			]
 		},
         {
