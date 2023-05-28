@@ -181,7 +181,7 @@
 			"wondrous": true,
 			"entries": [
 				"This crystal has a faint and gentle green hue; inside it slowly swirls a small cloud",
-                "As an action, you can expend the magic in the shard, casting the Gust of Wind spell, concentrating on it as normal. Alternatively, you can store the magic within yourself: for up to an hour, while you do this you do not need to breathe.",
+                "As an action, you can expend the magic in the shard, casting the {@spell gust of wind} spell, concentrating on it as normal. Alternatively, you can store the magic within yourself: for up to an hour, while you do this you do not need to breathe.",
                 "Ending this early (for example, to speak) offers you no other benefit. Expending the magic leaves the shard empty and dull."
 			]
 		},
