@@ -1,0 +1,308 @@
+{
+    "_meta": 
+    {
+        "sources": 
+        [
+            {
+                "json": "SToD: Sunshards",
+                "abbreviation": "SToD: Sunshards",
+                "color": "737373",
+                "full": "Shifting Tides of Delamir: Sunshards",
+                "authors": 
+                [
+                    "Mika Rae"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ]
+    },
+    "item":
+    [
+        {
+			"name": "Spell-Storing Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "unknown",
+			"wondrous": true,
+			"entries": [
+				"This sunshard may have a short description related to its contained spell.",
+                "This sunshard contains a spell, which will also influence its colour, and rarity. Generically, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells.",
+                "Spells of 1st or 2nd level would be common, 3rd or 4th level uncommon, 5th or 6th level rare, 7th or 8th level very rare, and 9th level legendary.",
+                "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components."
+			]
+		},
+        {
+			"name": "Red Sunshard of Recovery",
+			"source": "SToD: Sunshards",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This sunshard is empowered with positive energy, and hums quietly at all times.",
+                "As a bonus action, you can draw the power from the shard and direct it at a creature within 60 feet of you. For the next minute, that creature regains 2 hit points at the start of each of its turns."
+			]
+		},
+        {
+			"name": "Red Sunshard of Bursting",
+			"source": "SToD: Sunshards",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This sunshard is positively bursting at the seams, and its edges glow brighter than the rest.",
+                "As an action, you can crush this shard in your hand to release the energy stored within it. Every creature within 10 feet of you gains 1d4+3 hit points. If they are below one quarter of their hit point maximum, this healing is doubled."
+			]
+		},
+        {
+			"name": "Red Sunshard of ",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				""
+			]
+		},
+        {
+			"name": "Orange Sunshard of Ingition",
+			"source": "SToD: Sunshards",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This orange sunshard is warm to the touch.",
+                "As a bonus action, you can shatter the sunshard in your grip, setting yourself alight with warding flame. Any creature that hits you with a melee attack in the next minute suffers 1d4 fire damage in retaliation. Additionally, you can set any flammable objects you touch ablaze, and you emit 10 feet of bright light and a further 10 feet of dim light."
+			]
+		},
+        {
+			"name": "Orange Sunshard of Eruption",
+			"source": "SToD: Sunshards",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This sunshard rumbles and shakes in your hands, causing a mild discomfort over time.",
+                "As an action, you can cause an opaque wall of fire to erupt from the ground at a point within 30 feet of you. The wall is 1 foot thick, 20 feet long, and lasts until the end of your next turn.",
+                "Any creatures within its space must make a DC14 Dexterity saving throw or take 4d8 fire damage. Any creature who enters the wall for the first time on a turn or ends their turn there takes the same damage."
+			]
+		},
+        {
+			"name": "Orange Sunshard of Searing",
+			"source": "SToD: Sunshards",
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This sunshard leaves faint marks on your hand if held for ten minutes, which swirl slowly in place until fading over a few minutes.",
+                "As a bonus action, you can expend this sunshard's power, forcing a creature within 60 feet of you to make a DC15 Constitution saving throw.",
+                "On a failed save, the creature is marked for one hour. They cannot benefit from invisibility, emit 5 feet of bright light and a further 5 feet of dim light.",
+                "When the creature is marked, choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target loses resistance to that damage type, and once per turn when they take damage of the chosen type, takes an additional 1d8 damage of the chosen type."
+			]
+		},
+        {
+			"name": "Yellow Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Yellow Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Yellow Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Green Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Green Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Green Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Blue Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Blue Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Blue Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Indigo Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Indigo Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Indigo Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Violet Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Violet Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Violet Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "White Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "White Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "White Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Black Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Black Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+        {
+			"name": "Black Sunshard",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"",
+                ""
+			]
+		},
+    ]
+}
