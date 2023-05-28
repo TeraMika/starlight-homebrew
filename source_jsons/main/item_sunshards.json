@@ -49,16 +49,24 @@
 			"wondrous": true,
 			"entries": [
 				"This sunshard is positively bursting at the seams, and its edges glow brighter than the rest.",
-                "As an action, you can crush this shard in your hand to release the energy stored within it. Every creature within 10 feet of you gains 1d4+3 hit points. If they are below one quarter of their hit point maximum, this healing is doubled."
+                "As an action, you can crush this shard in your hand to release the energy stored within it. Every creature within 10 feet of you gains {@dice 1d4+3} hit points. If they are below one quarter of their hit point maximum, this healing is doubled."
 			]
 		},
         {
-			"name": "Red Sunshard of ",
+			"name": "Red Sunshard of Purity",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				""
+                "This sunshard makes you feel calmer when you hold it.",
+				"As an action, you take the power from the shard and emit a brilliant aura with a radius of 20 feet for one minute. Allies within the aura have advantage on Wisdom saving throws. Additionally, you can choose one of the following effects, which require your concentration:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You may spend a bonus action on each of your turns to restore {@dice 2d4} hitpoints to a creature of your choice within the aura.",
+                        "Any creature of your choice within the aura gains the maximum possible number of hit points from any healing."
+                    ]
+                }
 			]
 		},
         {
@@ -68,7 +76,7 @@
 			"wondrous": true,
 			"entries": [
 				"This orange sunshard is warm to the touch.",
-                "As a bonus action, you can shatter the sunshard in your grip, setting yourself alight with warding flame. Any creature that hits you with a melee attack in the next minute suffers 1d4 fire damage in retaliation. Additionally, you can set any flammable objects you touch ablaze, and you emit 10 feet of bright light and a further 10 feet of dim light."
+                "As a bonus action, you can shatter the sunshard in your grip, setting yourself alight with warding flame. Any creature that hits you with a melee attack in the next minute suffers {@dice 1d4} fire damage in retaliation. Additionally, you can set any flammable objects you touch ablaze, and you emit 10 feet of bright light and a further 10 feet of dim light."
 			]
 		},
         {
@@ -79,7 +87,7 @@
 			"entries": [
 				"This sunshard rumbles and shakes in your hands, causing a mild discomfort over time.",
                 "As an action, you can cause an opaque wall of fire to erupt from the ground at a point within 30 feet of you. The wall is 1 foot thick, 20 feet long, and lasts until the end of your next turn.",
-                "Any creatures within its space must make a DC14 Dexterity saving throw or take 4d8 fire damage. Any creature who enters the wall for the first time on a turn or ends their turn there takes the same damage."
+                "Any creatures within its space must make a DC14 Dexterity saving throw or take {@dice 4d8} fire damage. Any creature who enters the wall for the first time on a turn or ends their turn there takes the same damage."
 			]
 		},
         {
@@ -91,11 +99,120 @@
 				"This sunshard leaves faint marks on your hand if held for ten minutes, which swirl slowly in place until fading over a few minutes.",
                 "As a bonus action, you can expend this sunshard's power, forcing a creature within 60 feet of you to make a DC15 Constitution saving throw.",
                 "On a failed save, the creature is marked for one hour. They cannot benefit from invisibility, emit 5 feet of bright light and a further 5 feet of dim light.",
-                "When the creature is marked, choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target loses resistance to that damage type, and once per turn when they take damage of the chosen type, takes an additional 1d8 damage of the chosen type."
+                "When the creature is marked, choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target loses resistance to that damage type, and once per turn when they take damage of the chosen type, takes an additional {@dice 1d8} damage of the chosen type."
 			]
 		},
         {
-			"name": "Yellow Sunshard",
+			"name": "Yellow Sunshard of Dim Light",
+			"source": "SToD: Sunshards",
+			"rarity": "common",
+			"wondrous": false,
+			"entries": [
+				"This small sunshard is imbued with ambient energy and glows with 10 feet of dim light at all times.",
+                "As an action, you can cause this sunshard to shine as brightly as a {@item torch|phb} for one hour. After that time, roll a {@dice d20}. On a roll of 1, it burns out, otherwise it returns to its ambient magic at the next dawn."
+			]
+		},
+        {
+			"name": "Yellow Sunshard of Searing Radiance",
+			"source": "SToD: Sunshards",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This small sunshard is painful to look at for an extended period of time.",
+                "As an action, you can eject the light from the sunshard in a flash of brilliance. Roll {@2d6}. Any hostile creatures within 30 feet of you must succeed a DC 12 Constitution saving throw or be blinded for one turn and take that much damage. You gain that many temporary hit points."
+			]
+		},
+        {
+			"name": "Yellow Sunshard of Positive Force",
+			"source": "SToD: Sunshards",
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This sunshard emits 5 feet of bright daylight, and a further 5 feet of dim light, at all times.",
+                "As an action, you can emit a beam of pure positive energy forward. Any creatures of your choice in a 60-foot long, 5-foot wide line must make a DC 15 Constitution saving throw or be {@condition blinded} until the start of your next turn, and take 8d6 radiant damage. On a successful save, they take half as much damage and are not blinded. Undead have disadvantage on the saving throw.",
+                "Any other creatures of your choice regain {@dice 4d8} hit points."
+			]
+		},
+        {
+			"name": "Green Sunshard of Erupting Earth",
+			"source": "SToD: Sunshards",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This sunshard is quite heavy, and can be treated as a simple melee weapon, which is magical and does {@dice 1d4} bludgeoning damage.",
+                "As an action, you can throw the sunshard a distance in feet up to 3 times your strength score. If it lands on solid ground, the earth beneath it erupts upwards in a 15 foot cube centred on it.",
+                "Any creature within that space is pushed to the nearest side and takes {@dice 3d8} bludgeoning damage, and the cube is filled with nine walls of earth and stone.",
+                "Each wall occupies a 5 foot square and is 15 feet tall, has AC 15 and 35 hit points.",
+                "If a generated wall would not fit within the space, it is not summoned."
+			]
+		},
+        {
+			"name": "Green Sunshard of Lesser Air",
+			"source": "SToD: Sunshards",
+			"rarity": "",
+			"wondrous": true,
+			"entries": [
+				"This crystal has a faint and gentle green hue; inside it slowly swirls a small cloud",
+                "As an action, you can expend the magic in the shard, casting the Gust of Wind spell, concentrating on it as normal. Alternatively, you can store the magic within yourself: for up to an hour, while you do this you do not need to breathe.",
+                "Ending this early (for example, to speak) offers you no other benefit. Expending the magic leaves the shard empty and dull."
+			]
+		},
+        {
+			"name": "Green Sunshard of Unnatural Growth",
+			"source": "SToD: Sunshards",
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"Leaves and blossom occasionally grow on the outside of this sunshard, which bloom into small lotuses after a day.",
+                "As an action, you can draw the power from this sunshard to within yourself, gaining the following benefits for 2 hours:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can talk to plants, as with the {@spell speak with plants} spell.",
+                        "You can cause a plant to grow extremely rapidly, for example, turning a sapling into a tree, or a tree branch into a solid walkway. It takes one minute to cause something to grow 30 feet, which requires your action to do each turn, as if casting a spell. You cannot grow the same object more than once.",
+                        "You can cast the {@spell plant growth} spell once without expending a spell slot, and you know the spell for the duration.",
+                        "You can cast the {@spell guardian of nature} once without expending a spell slot, and you know the spell for the duration."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Blue Sunshard of Energising",
+			"source": "SToD: Sunshards",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This sunshard crackles delicately in your hand, as small sparks of lightning jolt between its vertices.",
+                "As a bonus action, you can crush this sunshard in your hands to immediately gain the benefits of a Short Rest, and one level of exhaustion."
+			]
+		},
+        {
+			"name": "Blue Sunshard of Javelin Lightning",
+			"source": "SToD: Sunshards",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This sunshard gives anyone who touches it a static shock, if it hasn't been held for more than one minute. A creature resistant to lightning damage does not receive this shock.",
+                "When you take the attack action on your turn, you can replace one of your attacks with an attack with this sunshard, if you are holding it or able to draw it. The sunshard deals {@dice 4d8} lightning damage on a hit and has the finesse, light, and thrown properties (range 60/120).",
+                "If the target is made of or wearing metal, you have advantage on the attack roll. On a hit, the target must make a DC 15 Constitution saving throw. On a failed save, they are stunned until the start of your next turn. On a miss, the following effect still applies, centred on the target.",
+                "Additionally, any creatures within 20 feet of the target must make a DC 15 Dexterity saving throw. On a failed save, they take {@dice 2d8} lightning damage, or half as much on a successful one.",
+                "Once used, the sunshard is expended and reduced to nothingness. If the attack was a miss, you can attempt a DC 20 Intelligence, Wisdom or Charisma (your choice) check to restore its magic. On a fail, the shard becomes dull."
+			]
+		},
+        {
+			"name": "Blue Sunshard of Stormcalling",
+			"source": "SToD: Sunshards",
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"This sunshard naturally draws lightning and electricity towards itself. While it is on your person, you have disadvantage on saving throws you make against effects that deal lightning damage.",
+                "As a ten-minute ritual, you can change the weather outside to thunderstorms, regardless of what it was initially, which will persist for one day.",
+                "After casting this ritual, you gain resistance to lightning and thunder damage, or immunity to those damage types if you are already resistant.",
+                "You can cast {@spell Call Lightning} at will, so long as you are outside under the storm you summoned."
+			]
+		},
+        {
+			"name": "Indigo Sunshard of Projection",
 			"source": "SToD: Sunshards",
 			"rarity": "",
 			"wondrous": true,
@@ -105,7 +222,17 @@
 			]
 		},
         {
-			"name": "Yellow Sunshard",
+			"name": "Indigo Sunshard of Fuelling",
+			"source": "SToD: Sunshards",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This sunshard feels as though it is filled with sand or dust, though visibly it is solid crystal.",
+                "This sunshard can be used to replace 50gp of material spell components for any spell, or for a material component with no listed cost that you do not possess. It can be used in this way only once, upon which it will disappear, being replaced with a fine-grained indigo dust."
+			]
+		},
+        {
+			"name": "Indigo Sunshard of Warding",
 			"source": "SToD: Sunshards",
 			"rarity": "",
 			"wondrous": true,
@@ -115,7 +242,7 @@
 			]
 		},
         {
-			"name": "Yellow Sunshard",
+			"name": "Violet Sunshard of Repulsion",
 			"source": "SToD: Sunshards",
 			"rarity": "",
 			"wondrous": true,
@@ -125,107 +252,7 @@
 			]
 		},
         {
-			"name": "Green Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Green Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Green Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Blue Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Blue Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Blue Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Indigo Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Indigo Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Indigo Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Violet Sunshard",
-			"source": "SToD: Sunshards",
-			"rarity": "",
-			"wondrous": true,
-			"entries": [
-				"",
-                ""
-			]
-		},
-        {
-			"name": "Violet Sunshard",
+			"name": "Violet Sunshard of Holding",
 			"source": "SToD: Sunshards",
 			"rarity": "",
 			"wondrous": true,
@@ -303,6 +330,6 @@
 				"",
                 ""
 			]
-		},
+		}
     ]
 }
