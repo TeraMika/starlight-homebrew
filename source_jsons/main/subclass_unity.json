@@ -1,244 +1,297 @@
 {
-	"name": "Oath of Unity",
-	"shortName": "Unity",
-	"source": "Starlight",
-	"subclassFeatures": [
-		[
+	"_meta": {
+		"sources": [
 			{
-				"name": "Oath of Unity",
-				"source": "Starlight",
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 3,
-				"header": 1,
-				"entries": [
-					"The Oath of unity is a vow taken to protect the ideals of community and the people within it. They seek to protect the people from evil, as the selfish can never truly be united. This often extends to powers and beings from other planes, who would seek to take aspects of the material plane for their own. The imagery of a paladin under this oath may take the shape of wings, as a protector or guardian angel, working together to protect people from the horrors that would tear them and their kingdoms apart.",
-					"You may have received your calling during a moment of heroism, or a moment of vulnerability, in the service or protection of others. Or perhaps you heard a voice on the wind, under a full moon. However this oath came to you, you value the safety of others above all, and seek to put down selfishness in all its forms.",
-					{
-						"type": "entries",
-						"name": "Tenets of Unity",
-						"entries": [ 
-							"Those who take the Oath of Unity are kind in spirit, brave in battle, and stand tall.",
-							"{@b {@i Community.}} The people need you. Be their shield.",
-							"{@b {@i Courage.}} Bravery is not the absence of fear, but acting in spite of it.",
-							"{@b {@i Honour.}} Be fair and just. Your actions are your deeds. Avoid harm, but do not let that get in the way of doing good.",
-							"{@b {@i Tolerance.}} Intolerance cannot be tolerated. People may exist as they are, unless they threaten the peace of others. To stay neutral is to side with the oppressor.",
-							"{@b {@i Integrity.}} You cannot be responsible for a community if you cannot accept your own actions. Protect those in your care, and ensure that all authority is just."
-						]
-					}
-				]
-			},
-			{
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 3,
-				"header": 2,
-				"entries": [
-					{
-						"name": "Oath Spells",
-						"source": "Starlight",
-						"className": "Paladin",
-						"classSource": "Starlight",
-						"subclassShortName": "Unity",
-						"subclassSource": "Starlight",
-						"level": 3,
-						"header": 2,
-						"entries": [
-							"You gain oath spells at the paladin levels listed in the Oath of Acquisitions Spells table.",
-							{
-								"type": "table",
-								"caption": "Oath of Unity Spells",
-								"colLabels": [
-									"Paladin Level",
-									"Spells"
-								],
-								"colStyles": [
-									"col-3 text-center",
-									"col-9 text-left"
-								],
-								"rows": [
-									[
-										"3rd",
-										"{@spell Sanctuary}, {@spell Protection from Evil and Good}"
-									],
-									[
-										"5th",
-										"{@spell Moonbeam}, {@spell Warding Bond}"
-									],
-									[
-										"9th",
-										"{@spell Beacon of Hope}, {@spell Spirit Guardians}"
-									],
-									[
-										"13th",
-										"{@spell Death Ward}, {@spell Guardian of Faith}"
-									],
-									[
-										"17th",
-										"{@spell Circle of Power}, {@spell Dispel Evil and Good}"
-									]
-								]
-							}
-						]
-					}
-				]
-			},
-			{
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 3,
-				"header": 2,
-				"entries": [
-					{
-						"name": "Channel Divinity",
-						"source": "Starlight",
-						"className": "Paladin",
-						"classSource": "Starlight",
-						"subclassShortName": "Unity",
-						"subclassSource": "Starlight",
-						"level": 3,
-						"header": 2,
-						"entries": [
-							"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
-							"{@b {@i Guardian Angel.}} As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them with the power of your belief, surrounding them in an invulnerable barrier until the start of your next turn and preventing the triggering damage. If the protected creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the effect ends.",
-							"{@b {@i Rallying Cry.}} As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, bolstering your allies with determination.\nYou can use your Channel Divinity to choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum bonus of one), and an additional 15 feet of movement speed."
-						]
-					}
-				]
-			}
-		],
-		[
-			{
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 7,
-				"header": 2,
-				"entries": [
-					{
-						"name": "Aura of Coordination",
-						"source": "Starlight",
-						"className": "Paladin",
-						"classSource": "Starlight",
-						"subclassShortName": "Unity",
-						"subclassSource": "Starlight",
-						"level": 7,
-						"header": 2,
-						"entries": [
-							"Beginning at 7th level, your presence provides coordination to your allies. Friendly creatures within 10 feet of you may take the Disengage action as a bonus action.",
-							"When you reach 18th level in this class, the range of this aura increases to 30 feet."
-						]
-					}
-				]
-			}
-		],
-		[
-			{
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 15,
-				"header": 2,
-				"entries": [
-					{
-						"name": "Resilient Spirit",
-						"source": "Starlight",
-						"className": "Paladin",
-						"classSource": "Starlight",
-						"subclassShortName": "Unity",
-						"subclassSource": "Starlight",
-						"level": 15,
-						"header": 2,
-						"entries": [
-							"Beginning at 15th level, your presence is a stronghold. Each friendly creature within your Aura of Coordination regains hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns, to a total no higher than your paladin level."
-						]
-					}
-				]
-			}
-		],
-		[
-			{
-				"className": "Paladin",
-				"classSource": "Starlight",
-				"subclassShortName": "Unity",
-				"subclassSource": "Starlight",
-				"level": 20,
-				"header": 2,
-				"entries": [
-					{
-						"name": "Spire of Elune",
-						"source": "Starlight",
-						"className": "Paladin",
-						"classSource": "Starlight",
-						"subclassShortName": "Unity",
-						"subclassSource": "Starlight",
-						"level": 20,
-						"header": 2,
-						"entries": [
-							"At 20th level, your presence becomes a terror to enemies who stand against you, and you become a beacon of hope to your allies. As an action, you transform, becoming a shining beacon of unity for your allies to rally around. You may be surrounded by swirling sigils and sparkling moonlight.",
-							"During the transformation, you gain the following features for ten minutes:",
-							{
-								"type": "list",
-								"items": [
-									"Your aura is filled with bright moonlight.",
-									"Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
-									"Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
-									"Your form cannot be changed against your will."
-								]
-							},
-							"Once you use this feature, you can't use it again until you finish a long rest."
-						]
-					}
-				]
+				"json": "Oath of Unity",
+				"abbreviation": "Unity",
+				"full": "Oath of the Unity",
+				"authors": [
+					"Mika Rae"
+				],
+				"convertedBy": [
+					"Mika Rae"
+				],
+				"version": "1",
+				"url": "https://github.com/TeraMika/starlight-homebrew"
 			}
 		]
-	],
-	"subclassSpells": [
-		"Sanctuary",
-		"Protection from Evil and Good",
-		"Moonbeam",
-		"Warding Bond",
-		"Beacon of Hope",
-		"Spirit Guardians",
-		"Death Ward",
-		"Guardian of Faith",
-		"Circle of Power",
-		"Dispel Evil and Good"
-	],
-	"additionalSpells": [
+	},
+	"subclass": [
 		{
-			"innate": {
-				"1": [
-					"Sanctuary",
-					"Protection from Evil and Good"
-				],
-				"2": [
-					"Moonbeam",
-					"Warding Bond"
-				],
-				"3": [
-					"Beacon of Hope",
-					"Spirit Guardians"
-				],
-				"4": [
-					"Death Ward",
-					"Guardian of Faith"
-				],
-				"5": [
-					"Circle of Power",
-					"Dispel Evil and Good"
-				]
-			}
+			"name": "Oath of Unity",
+			"source": "Starlight",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"shortName": "Unity",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"Sanctuary",
+							"Protection from Evil and Good"
+						],
+						"5": [
+							"Moonbeam",
+							"Warding Bond"
+						],
+						"9": [
+							"Beacon of Hope",
+							"Spirit Guardians"
+						],
+						"13": [
+							"Death Ward",
+							"Guardian of Faith"
+						],
+						"17": [
+							"Circle of Power",
+							"Dispel Evil and Good"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Unity|Paladin||Unity|Oath of the Unity|3",
+				"Aura of Coordination|Paladin||Unity|Oath of the Unity|7",
+				"Resilient|Paladin||Unity|Oath of the Unity|15",
+				"Champion of the People|Paladin||Unity|Oath of the Unity|20"
+			]
 		}
 	],
-	"className": "Paladin",
-	"classSource": "Unity"
+	"subclassFeature": [
+		{
+			"name": "Oath of Unity",
+			"source": "Starlight",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"entries": [
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Unity|Paladin||Unity|Oath of Unity|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Unity|Oath of Unity|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Guardian Angel|Paladin||Unity|Oath of Unity|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Rallying Cry|Paladin||Unity|Oath of Unity|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Guardian Angel",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				" As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them with the power of your belief, surrounding them in an invulnerable barrier until the start of your next turn and preventing the triggering damage. If the protected creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the effect ends."
+			]
+		},
+		{
+			"name": "Channel Divinity: Rallying Cry",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, bolstering your allies with determination.\nYou can use your Channel Divinity to choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum bonus of one), and an additional 15 feet of movement speed."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed in the Oath of Unity Spells table."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Oath of Unity Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Sanctuary}, {@spell Protection from Evil and Good}"
+						],
+						[
+							"5th",
+							"{@spell Moonbeam}, {@spell Warding Bond}"
+						],
+						[
+							"9th",
+							"{@spell Beacon of Hope}, {@spell Spirit Guardians}"
+						],
+						[
+							"13th",
+							"{@spell Death Ward}, {@spell Guardian of Faith}"
+						],
+						[
+							"17th",
+							"{@spell Circle of Power}, {@spell Dispel Evil and Good}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Tenets of Unity",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The Oath of unity is a vow taken to protect the ideals of community and the people within it. They seek to protect the people from evil, as the selfish can never truly be united. This often extends to powers and beings from other planes, who would seek to take aspects of the material plane for their own. The imagery of a paladin under this oath may take the shape of wings, as a protector or guardian angel, working together to protect people from the horrors that would tear them and their kingdoms apart.",
+				"You may have received your calling during a moment of heroism, or a moment of vulnerability, in the service or protection of others. Or perhaps you heard a voice on the wind, under a full moon. However this oath came to you, you value the safety of others above all, and seek to put down selfishness in all its forms.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Community",
+							"entries": [
+								"The people need you. Be their shield."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Courage",
+							"entries": [
+								"Bravery is not the absence of fear, but acting in spite of it."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Honour",
+							"entries": [
+								"Be fair and just. Your actions are your deeds. Avoid harm, but do not let that get in the way of doing good."
+							]
+						}
+					]
+				},
+                {
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Tolerance",
+							"entries": [
+								"Intolerance cannot be tolerated. People may exist as they are, unless they threaten the peace of others. To stay neutral is to side with the oppressor."
+							]
+						}
+					]
+				},
+                {
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Integrity",
+							"entries": [
+								"You cannot be responsible for a community if you cannot accept your own actions. Protect those in your care, and ensure that all authority is just."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Coordination",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures within 10 feet of you may take the Disengage action as a bonus action."
+			]
+		},
+		{
+			"name": "Resilient Spirit",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Beginning at 15th level, your presence is a stronghold. Each friendly creature within your Aura of Coordination regains hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns, to a total no higher than your paladin level."
+			]
+		},
+		{
+			"name": "Champion of the People",
+			"source": "Oath of Unity",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Unity",
+			"subclassSource": "Starlight",
+			"level": 20,
+			"header": 2,
+			"entries": [
+                "At 20th level, your presence becomes a terror to enemies who stand against you, and you become a beacon of hope to your allies. As an action, you transform, becoming a shining beacon of unity for your allies to rally around. You may be surrounded by swirling sigils and sparkling moonlight.",
+                "During the transformation, you gain the following features for ten minutes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your aura is filled with bright moonlight.",
+                        "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
+                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
+                        "Your form cannot be changed against your will."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+		}
+	]
 }
