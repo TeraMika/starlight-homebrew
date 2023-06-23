@@ -19,7 +19,6 @@
 	"subclass": [
 		{
 			"name": "Oath of Unity",
-			"shortName": "Unity",
 			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -51,10 +50,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Oath of Unity|Paladin|PHB|Unity|Starlight|3",
-				"Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
-				"Resilient|Paladin|PHB|Unity|Starlight|15",
-				"Champion of the People|Paladin|PHB|Unity|Starlight|20"
+				"Oath of Unity|Paladin|PHB|Unity|Oath of Unity|3",
+				"Aura of Coordination|Paladin|PHB|Unity|Oath of Unity|7",
+				"Resilient|Paladin|PHB|Unity|Oath of Unity|15",
+				"Champion of the People|Paladin|PHB|Unity|Oath of Unity|20"
 			]
 		}
 	],
