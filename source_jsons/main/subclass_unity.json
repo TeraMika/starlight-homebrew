@@ -50,10 +50,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Oath of Unity|Paladin||Unity|Starlight|3",
-				"Aura of Coordination|Paladin||Unity|Starlight|7",
-				"Resilient|Paladin||Unity|Starlight|15",
-				"Champion of the People|Paladin||Unity|Starlight|20"
+				"Oath of Unity|Paladin|PHB|Unity|Starlight|3",
+				"Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
+				"Resilient Spirit|Paladin|PHB|Unity|Starlight|15",
+				"Champion of the People|Paladin|PHB|Unity|Starlight|20"
 			]
 		}
 	],
@@ -69,19 +69,19 @@
 			"entries": [
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tenets of Unity|Paladin||Unity|Starlight|3"
+					"subclassFeature": "Tenets of Unity|Paladin|PHB|Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oath Spells|Paladin||Unity|Starlight|3"
+					"subclassFeature": "Oath Spells|Paladin|PHB|Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guardian Angel|Paladin||Unity|Starlight|3"
+					"subclassFeature": "Channel Divinity: Guardian Angel|Paladin|PHB|Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rallying Cry|Paladin||Unity|Starlight|3"
+					"subclassFeature": "Channel Divinity: Rallying Cry|Paladin|PHB|Unity|Starlight|3"
 				}
 			]
 		},
@@ -119,20 +119,8 @@
 			"subclassShortName": "Unity",
 			"subclassSource": "Starlight",
 			"level": 3,
-			"header": 1,
 			"entries": [
-				"You gain oath spells at the paladin levels listed in the Oath of Unity Spells table."
-			]
-		},
-		{
-			"name": "Oath Spells",
-			"source": "Starlight",
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "Unity",
-			"subclassSource": "Starlight",
-			"level": 3,
-			"entries": [
+				"You gain oath spells at the paladin levels listed in the Oath of Unity Spells table.",
 				{
 					"type": "table",
 					"caption": "Oath of Unity Spells",
