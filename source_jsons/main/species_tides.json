@@ -300,6 +300,14 @@
                 [
                     "You have profiency in the {@skill Perception} skill."
                 ]
+            },
+            {
+                "type": "entries",
+                "name": "Ritual Origins",
+                "entries":
+                [
+                    "The ritual that created you allows you to retain knowledge of your abyssal, and now profane, origin. You can speak, read, and write Abyssal and Elvish."
+                ]
             }
         ],
         "hasFluff": true,
