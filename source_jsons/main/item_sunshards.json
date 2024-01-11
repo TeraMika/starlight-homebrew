@@ -23,13 +23,41 @@
         {
 			"name": "Spell-Storing Sunshard",
 			"source": "SToD: Sunshards",
-			"rarity": "unknown",
+			"rarity": "unknown (magic)",
 			"wondrous": true,
 			"entries": [
 				"This sunshard may have a short description related to its contained spell.",
                 "This sunshard contains a spell, which will also influence its colour, and rarity. Generically, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells.",
-                "Spells of 1st or 2nd level would be common, 3rd or 4th level uncommon, 5th or 6th level rare, 7th or 8th level very rare, and 9th level legendary.",
-                "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components."
+                "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components. Typical rarities of the shards can be seen below.",
+                {
+                    "type": "table",
+			"colLabels": [
+				"Spell contained",
+				"Typical rarity"
+			],
+			"rows": [
+				[
+					"Levels 1 and 2",
+					"Common"
+				],
+				[
+					"Levels 3 and 4",
+					"Uncommon"
+				],
+				[
+					"Levels 5 and 6",
+					"Rare"
+				],
+				[
+					"Levels 7 and 8",
+					"Very rare"
+				],
+				[
+					"Level 9",
+					"Legendary"
+				]
+			]
+                }
 			]
 		},
         {
