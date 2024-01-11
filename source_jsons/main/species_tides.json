@@ -1,0 +1,286 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "SToD: Species",
+                "abbreviation": "SToD: Species",
+                "color": "9bff00",
+                "full": "Shifting Tides of Delamir",
+                "authors": [
+                    "Mika Rae"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ]
+    },
+    "race": [
+        {
+            "name": "Riftborn Lacertal",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "skillProficiencies": 
+            [
+                {
+                    "perception": true
+                }
+            ],
+            "creatureTypes": 
+            [
+                "humanoid"
+            ],
+            "size": 
+            [
+                "M",
+                "S"
+            ],
+            "speed": 
+            {
+                "walk": 30,
+                "fly": 30
+            },
+            "additionalSpells": 
+            [
+                {
+                    "ability": 
+                    {
+                        "choose": 
+                        [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": 
+                    {
+                        "1": 
+                        {
+                            "_": 
+                            [
+                                {
+                                    "choose": "level=0|group=primal"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "entries": 
+            [
+                {
+                    "type": "entries",
+                    "name": "Winged Form",
+                    "entries": 
+                    [
+                        "You have a flying speed equal to your movement speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Malformed Wings",
+                    "entries": 
+                    [
+                        "You fall at the end of your turn if you are airborne and the only thing holding you aloft is your flying speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rift Magic Exposure",
+                    "page": 8,
+                    "entries": 
+                    [
+                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter Primal Spell list|spells|level=0|group=primal}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Primal Spell list.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "page": 8,
+                    "entries": 
+                    [
+                        "You have Proficiency in the {@skill Perception} Skill."
+                    ]
+                }
+            ]
+        },
+        {
+        "name": "Tempestborn",
+        "source": "SToD: Species",
+        "lineage": "VRGR",
+        "size": 
+        [
+            "S",
+            "M"
+        ],
+        "speed": 30,
+        "darkvision": 60,
+        "resist": 
+        [
+            "lightning",
+            "thunder"
+        ],
+        "additionalSpells": 
+        [
+            {
+                "ability": 
+                {
+                    "choose": 
+                    [
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "known": 
+                {
+                    "1": 
+                    [
+                        "light#c"
+                    ]
+                }
+            }
+        ],
+        "entries": [
+            {
+                "type": "entries",
+                "name": "Tempestborn Resistance",
+                "entries": 
+                [
+                    "You have resistance to lightning damage and thunder damage."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Darkvision",
+                "entries": 
+                [
+                    "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Healing Hands",
+                "entries": 
+                [
+                    "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Light Bearer",
+                "entries": 
+                [
+                    "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Fulgur's Fury",
+                "entries": 
+                [
+                    "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
+                    "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+                    "Once you use this trait, you can't use it again until you finish a long rest."
+                ]
+            }
+        ],
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "languageProficiencies": 
+        [
+            {
+                "common": true,
+                "anyStandard": 1
+            }
+        ]
+        },
+        {
+        "name": "Elf (Profane)",
+        "source": "SToD: Species",
+        "lineage": "VRGR",
+        "size":
+        [
+            "S",
+            "M"
+        ],
+        "speed": 30,
+        "darkvision": 60,
+        "resist":
+        [
+            "fire",
+            "poison"
+        ],
+        "additionalSpells": 
+        [
+            {
+                "innate": {
+                    "3": {
+                        "daily": {
+                            "1": [
+                                "hellish rebuke#2"
+                            ]
+                        }
+                    }
+                },
+                "ability":                     
+                {
+                    "choose": 
+                    [
+                        "int", "wis", "cha"
+                    ]
+                },
+                "known": {
+                    "1": [
+                        "thaumaturgy#c"
+                    ]
+                }
+            }
+        ],
+        "entries": 
+        [
+            {
+                "type": "entries",
+                "name": "Darkvision",
+                "entries":
+                [
+                    "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Abyssal Resistance",
+                "entries": 
+                [
+                    "The ritual that brought you to this plane confers some of your heritage's resilience. You have resistance to fire and poison damage."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Abyssal Magics",
+                "entries":
+                [
+                    "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."   
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Keen Senses",
+                "entries":
+                [
+                    "You have profiency in the Perception skill."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Languages",
+                "entries": [
+                    "You can speak, read, and write Common, Abyssal, and Elvish."
+                ]
+            }
+
+        ]
+        }
+    ]
+}
