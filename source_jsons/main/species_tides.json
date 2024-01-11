@@ -74,7 +74,9 @@
                         "name": "Origin",
                         "entries":
                         [
-                            "The Lacertal are a simple folk. However you ended up in the rift, it has changed you in ways that may make you difficult to recognise back home."
+                            "The Lacertal are a simple folk. Living peaceful lives in another plane. When the rifts appeared, this changed dramatically, and while they steer clear sometimes fate determine that one makes their way in, willfully or not.",
+                            "Few survive the journey: going up is much harder than going down. Those that do rarely remember anything, especially if they are young, and none so far have made it to civilisation meaningfully. The lacertal learned to steer clear long ago, and even with only primitive communication warnings of the rift are passed through generations.",
+                            "Of course, this doesn't stop any particularly foolhardy, sneaky, and curious lacertal from entering anyway. However they end up in the rift, it is likely to change them in ways that make them hard to recognise back home."
                         ]
                     }
                 ]
@@ -114,13 +116,6 @@
                     "entries": 
                     [
                         "You have Proficiency in the {@skill Perception} Skill."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Languages",
-                    "entries": [
-                        "Despite your otherworldly origin, you have some commonality with the people of this world. You can speak, read, and write Common, and one other language of your choice that the DM agrees is appropriate for your character."
                     ]
                 }
             ]
@@ -207,7 +202,6 @@
             }
         ],
         "hasFluff": true,
-        "hasFluffImages": true,
         "languageProficiencies": 
         [
             {
@@ -266,7 +260,9 @@
                     "name": "Origin",
                     "entries":
                     [
-                        "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material."
+                        "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
+                        "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
+                        "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
                     ]
                 }
             ]
@@ -303,13 +299,6 @@
                 "entries":
                 [
                     "You have profiency in the {@skill Perception} skill."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Languages",
-                "entries": [
-                    "You can speak, read, and write Common, Abyssal, and Elvish."
                 ]
             }
         ],
