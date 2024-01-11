@@ -50,10 +50,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Oath of Unity|Paladin|PHB|Unity|Starlight|3",
-				"Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
-				"Resilient|Paladin|PHB|Unity|Starlight|15",
-				"Champion of the People|Paladin|PHB|Unity|Starlight|20"
+				"Oath of Unity|Paladin||Unity|Starlight|3",
+				"Aura of Coordination|Paladin||Unity|Starlight|7",
+				"Resilient|Paladin||Unity|Starlight|15",
+				"Champion of the People|Paladin||Unity|Starlight|20"
 			]
 		}
 	],
@@ -69,25 +69,25 @@
 			"entries": [
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tenets of Unity|Paladin|PHB|Unity|Starlight|3"
+					"subclassFeature": "Tenets of Unity|Paladin||Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oath Spells|Paladin|PHB|Unity|Starlight|3"
+					"subclassFeature": "Oath Spells|Paladin||Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Guardian Angel|Paladin|PHB|Unity|Starlight|3"
+					"subclassFeature": "Channel Divinity: Guardian Angel|Paladin||Unity|Starlight|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Rallying Cry|Paladin|PHB|Unity|Starlight|3"
+					"subclassFeature": "Channel Divinity: Rallying Cry|Paladin||Unity|Starlight|3"
 				}
 			]
 		},
 		{
 			"name": "Channel Divinity: Guardian Angel",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -100,7 +100,7 @@
 		},
 		{
 			"name": "Channel Divinity: Rallying Cry",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -113,7 +113,7 @@
 		},
 		{
 			"name": "Oath Spells",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -126,7 +126,7 @@
 		},
 		{
 			"name": "Oath Spells",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -171,7 +171,7 @@
 		},
 		{
 			"name": "Tenets of Unity",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -245,7 +245,7 @@
 		},
 		{
 			"name": "Aura of Coordination",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -258,7 +258,7 @@
 		},
 		{
 			"name": "Resilient Spirit",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
@@ -271,7 +271,7 @@
 		},
 		{
 			"name": "Champion of the People",
-			"source": "Oath of Unity",
+			"source": "Starlight",
 			"className": "Paladin",
 			"classSource": "PHB",
 			"subclassShortName": "Unity",
