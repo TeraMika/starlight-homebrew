@@ -116,7 +116,7 @@
         "items": 
         [
             "Numb can be applied multiple times. A numb creature loses 5 feet of movement speed and 1 Charisma for each numb effect applied to them.",
-            "If a creature has 0 movement speed or charisma as a result of the numb effect, that creature loses all numb affecting them and becomes {@condition Listless}.",
+            "If a creature has 0 movement speed or charisma as a result of the numb effect, that creature loses all numb affecting them and becomes {@condition listless|Starlight}.",
             "If numb is not applied to a creature for an hour, that creature loses one numb effect, and another for each hour that passes thereafter."
         ]
         }
@@ -134,7 +134,7 @@
         [
             "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and cannot move.",
             "The condition ends if the listless creature expends inspiration, they take more than 20 damage in one attack, or an ally spends an action to help them recover.",
-            "When this condition ends, the creature gains two {@condition numb} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
+            "When this condition ends, the creature gains two {@condition numb|Starlight} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
         ]
         }
     ]
