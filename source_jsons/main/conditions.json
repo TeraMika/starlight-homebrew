@@ -35,7 +35,7 @@
             "type": "list",
             "items": 
             [
-                "A dazed creature can take an action or a bonus action, but not both. Their movement speed is reduced to 10 feet.",
+                "A dazed creature can take an action or a bonus action, but not both. Their movement speed is {@condition Sluggish|Starlight}.",
                 "If a creature becomes dazed during their turn, their turn ends."
             ]
             }
@@ -51,7 +51,7 @@
             "type": "list",
             "items": 
             [
-                "A disoriented creature has its movement speed reduced by 10 feet, and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
+                "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
                 "The creature can make only one attack with an action or bonus action, and cannot cast levelled spells."
             ]
             }
@@ -67,7 +67,7 @@
             "type": "list",
             "items":
             [
-                "A shocked creature is {@condition incapacitated} and cannot move.",
+                "A shocked creature is {@condition incapacitated} and {@condition halted|Starlight}.",
                 "The creature automatically fails Strength and Dexterity saving throws.",
                 "Attack rolls against the creature have advantage.",
                 "The condition can be ended on a creature if another creature spends their action to help them recover."
@@ -101,8 +101,9 @@
             "type": "list",
             "items": 
             [
-                "An off-balance creature has a -2 penalty to attack rolls and its save DC(s).",
-                "The creature has disadvantage on any checks or saving throws it makes to avoid being forcibly moved or falling prone."
+                "Attacks against an off-balance creature have advantage, and its attacks have disadvantage.",
+                "The creature has disadvantage on any checks or saving throws it makes to avoid being forcibly moved or falling prone.",
+                "The condition ends when a creature takes damage, or misses an attack roll."
             ]
             }
         ]
@@ -166,7 +167,7 @@
             "type": "list",
             "items": 
             [
-                "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and cannot move.",
+                "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and is {@condition halted|Starlight}.",
                 "The condition ends if the listless creature expends inspiration, they take more than 20 damage in one attack, or an ally spends an action to help them recover.",
                 "When this condition ends, the creature gains two {@condition numb|Starlight} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
             ]
@@ -235,12 +236,55 @@
                 "type": "list",
                 "items":
                 [
-                    "The creature takes 3 fire damage at the start of each of its turns. At the end of its turns, it can repeat the saving throw that cause it to be burned.",
-                    "Must spend an action to interact with objects or features of the environment (such as drawing a weapon or opening doors).",
+                    "The creature takes 3 fire damage at the start of each of its turns. At the end of its turn ends, the creature can repeat the saving throw that caused it to be burned. If there was no such saving throw, the creature can make a DC 13 Constitution saving throw instead.",
+                    "The creature must spend an action to interact with objects or features of the environment (such as drawing a weapon or opening doors).",
                     "A creature can also use an action to attempt a DC 10 Medicine check to stop the burning.",
                     "A creature that is immune to fire damage is immune to this condition. A creature resistant to fire damage has advantage on any saving throws against it."
                 ]
             }
+        ]
+    },
+    {
+        "name": "Hampered",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            {
+                "type": "list",
+                "items":
+                [
+                    "A hampered creature's movement speed is reduced by 10 feet. This applies to all of its movement speeds unless specified otherwise.",
+                    "This can be applied multiple times, combining the speed reduction, but not from the same source."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Slowed",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            "A slowed creature's movement speed is reduced by half."
+        ]
+    },
+    {
+        "name": "Sluggish",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            "A sluggish creature's movement speed is 10 feet."
+        ]
+    },
+    {
+        "name": "Halted",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            "A halted creature's movement speed is 0 feet."
         ]
     }
 ]
