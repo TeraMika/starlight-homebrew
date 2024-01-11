@@ -224,6 +224,24 @@
         [
             "The creature's armour class cannot be increased by its Dexterity modifier."
         ]
+    },
+    {
+        "name": "Burning",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            {
+                "type": "list",
+                "items":
+                [
+                    "The creature takes 3 fire damage at the start of each of its turns. At the end of its turns, it can repeat the saving throw that cause it to be burned.",
+                    "Must spend an action to interact with objects or features of the environment (such as drawing a weapon or opening doors).",
+                    "A creature can also use an action to attempt a DC 10 Medicine check to stop the burning.",
+                    "A creature that is immune to fire damage is immune to this condition. A creature resistant to fire damage has advantage on any saving throws against it."
+                ]
+            }
+        ]
     }
 ]
 }
