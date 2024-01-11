@@ -27,7 +27,7 @@
 			"wondrous": true,
 			"entries": [
 				"This sunshard may have a short description related to its contained spell.",
-                "This sunshard contains a spell, which will also influence its colour, and rarity. Generically, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells.",
+                "This sunshard contains a spell, which will also influence its colour, and rarity. For example, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells. But this could vary by the specific spell.",
                 "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components. Typical rarities of the shards can be seen below.",
                 {
                     "type": "table",
