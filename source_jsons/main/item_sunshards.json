@@ -149,7 +149,7 @@
         {
 			"name": "Green Sunshard of Lesser Air",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "common",
 			"wondrous": true,
 			"entries": [
 				"This crystal has a faint and gentle green hue; inside it slowly swirls a small cloud",
@@ -214,11 +214,12 @@
         {
 			"name": "Indigo Sunshard of Projection",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
 				"",
-                ""
+                "As an action, you can break this sunshard to summon a protective ward for you and your allies. The ward has hit points equal to twice your level plus your intelligence modifier. Whenever you take damage, the ward takes it instead. If this damage reduces the ward to zero hit points, the damage is lost.",
+                "While the ward is active, you can spend a reaction to reduce the damage taken by a creature of your choice within 30 feet of you, with the ward taking the damage instead."
 			]
 		},
         {
@@ -234,101 +235,115 @@
         {
 			"name": "Indigo Sunshard of Warding",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"It is difficult to hold this sunshard: as if two opposing magnets were placed in it and your hand.",
+                "As a reaction, you can crush this sunshard to negate the impact of one attack or spell entirely, and if they are within 10 feet of you, push the attacker 10 feet in a direction of your choice."
 			]
 		},
         {
 			"name": "Violet Sunshard of Repulsion",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"This violet sunshard is surprisingly heavy for its size.",
+                "As an action, you can expel the magic from this shard. A burst of force erupts from the shard and detonates at a point you can see within 30 feet. Each creature within 10 feet of that point must make a DC14 Strength saving throw or take {@dice 2d8} force damage and be moved 10 feet away from the detonation point. On a successful save, they take half the damage and are not moved."
 			]
 		},
         {
-			"name": "Violet Sunshard of Holding",
+			"name": "Violet Sunshard of Grounding",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"This sunshard weighs more the higher it is from the ground.",
+                "As a bonus action, you can throw this sunshard to a point within 30 feet of you, shattering it and creating an area with a radius of 15 feet. Any creatures within the area have their movement speed halved, and take {@dice 2d6} force damage at the end of their turn if they remain in the area.",
+                "If any creatures are airborne when this area is generated, they must make a DC 14 Strength saving throw or be pulled down to the ground, taking twice as much fall damage."
 			]
 		},
         {
-			"name": "Violet Sunshard",
+			"name": "Violet Sunshard of Altered Gravity",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"The weight of this sunshard depends on your mood.",
+                "You may spend an action, and this sunshard, to target a creature within 30 feet of you. That target must succeed a DC13 Charisma saving throw or their gravity be altered in one of the following ways.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Their gravity becomes heavy. They cannot jump, their movement speed is halved, and they have disadvantage on dexterity checks and saving throws. Additionally, they take twice as much damage from falling.",
+                        "Their gravity becomes light. Their jump height is doubled, forced movement affects them twice as strongly, and they have disadvantage on strength checks and saving throws. Additionally, they take half as much damage from falling."
+                    ]
+                },
+                "The creature can repeat the saving throw at the end of each of its turns, ending it on a success."
 			]
 		},
         {
-			"name": "White Sunshard",
+			"name": "White Sunshard of Deferred Action",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"This sunshard moves half a second after you move it.",
+                "As an action, you can crush this sunshard in your hand. The temporal sand it turns into slows you, ending your turn. Next turn, you may take an additional action, or an additional bonus action."
 			]
 		},
         {
-			"name": "White Sunshard",
+			"name": "White Sunshard of Held Energy",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"The visual position of the sunshard only changes when its owner blinks. The sunshard otherwise remains with you at all times.",
+                "As a reaction, you can direct the shard's power towards an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect, at which point it will occur targeting the same area originally. You must release the effect before the end of your next turn.",
+                "The effect is released early if the target point has total cover from you, or if you are {@condition incapacitated} or die."
 			]
 		},
         {
-			"name": "White Sunshard",
+			"name": "White Sunshard of Skipped Time",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "legendary",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+                "On your turn, you may draw the power from this shard (no action required) to leave time temporarily. Other creatures act as if you are still there while you are gone. Any time before the end of your next turn, you may reenter the timestream.",
+                "While you are out of the timestream, you cannot take damage, you can move freely in any direction, and you may choose to end any conditions affecting you. However, you cannot damage or affect other creatures in any way.",
+                "At a point of your choosing, you can interrupt another creature's turn, appearing in a place of your choice that is within your movement speed and taking an additional turn then. When you interrupt a creature, that creature is {{@condition Marked|Starlight|Marked (4)} and {{@condition Exposed|Starlight} until the end of your turn, as they are surprised by your sudden appearance.",
+                "If you have not interrupted a creature before the start of your next turn, you reenter time then in a space of your choice and take your time as normal."
 			]
 		},
         {
-			"name": "Black Sunshard",
+			"name": "Black Sunshard of Absorption",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"When unwell, the shard is physically difficult to remove from your hand.",
+                "As an action, you can draw any toxins within yourself into this crystal. You can end any number of poisons or diseases affecting you. For the next hour, you have resistance to poison damage."
 			]
 		},
         {
-			"name": "Black Sunshard",
+			"name": "Black Sunshard of Clouding",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"This sunshard constantly emits wisps of dark smoke.",
+                "As an action, you can crush this shard in your hands, and cast {@spell Darkness|phb|}, targeted on yourself. Alternatively, you can throw the shard at a point within 20 feet for the same effect, targeted where it lands.",
+                "Any creature that starts or ends its turn in the darkness must make a DC 14 Constitution saving throw or become {{@condition poisoned} until the end of their next turn."
 			]
 		},
         {
-			"name": "Black Sunshard",
+			"name": "Black Sunshard of Crippling",
 			"source": "SToD: Sunshards",
-			"rarity": "",
+			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"",
-                ""
+				"This sunshard always appears as its own silhouette.",
+                "As an action, you can crush this shard in your hands and direct its energy at a creature within 60 feet. That creature must make a DC16 Constitution saving throw or take {@dice 8d8|} necrotic damage and become {@condition dazed|Starlight} until the end of their next turn. On a successful save, they take half the damage and are not dazed.",
+                "Until the target takes a short rest, their movement speed is halved, and they cannot recover any hit points, including as part of the short rest."
 			]
 		}
     ]
