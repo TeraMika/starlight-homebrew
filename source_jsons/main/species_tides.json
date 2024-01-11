@@ -270,6 +270,20 @@
         "entries": 
         [
             {
+                "name": "Age",
+                "type": "entries",
+                "entries": [
+                    "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
+                ]
+            },
+            {
+                "type": "entries",
+                "name": "Size",
+                "entries": [
+                    "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
+                ]
+            },
+            {
                 "type": "entries",
                 "name": "Darkvision",
                 "entries":
@@ -279,10 +293,10 @@
             },
             {
                 "type": "entries",
-                "name": "Abyssal Resistance",
+                "name": "Abyssal Heritage",
                 "entries": 
                 [
-                    "The ritual that brought you to this plane confers some of your heritage's resilience. You have resistance to fire and poison damage."
+                    "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
                 ]
             },
             {
@@ -302,12 +316,12 @@
                 ]
             },
             {
-                "type": "entries",
-                "name": "Ritual Origins",
-                "entries":
-                [
-                    "The ritual that created you allows you to retain knowledge of your abyssal, and now profane, origin. You can speak, read, and write Abyssal and Elvish."
-                ]
+                "name": "Trance",
+                "entries": [
+                    "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+                    "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                ],
+                "type": "entries"
             }
         ],
         "hasFluff": true,
@@ -316,8 +330,8 @@
         [
             {
                 "common": true,
-                "elvish": true,
-                "abyssal": true
+                "abyssal": true,
+                "anyStandard": 1
             }
         ]
     }
