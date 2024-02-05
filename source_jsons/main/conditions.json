@@ -201,7 +201,7 @@
             "items": 
             [
                 "A creature can be bleeding multiple times.",
-                "A bleeding creature takes 3 necrotic damage at the start of each of its turns for each instance of bleed it takes. It then loses one instance of bleeding.",
+                "A bleeding creature takes 3 necrotic damage at the start of each of its turns for each instance of bleed it has. It then loses one instance of bleeding.",
                 "The creature also has disadvantage on Constitution saving throws.",
                 "The condition is removed by gaining hit points, but not temporary hit points."
             ]
@@ -236,7 +236,7 @@
                 "type": "list",
                 "items":
                 [
-                    "The creature takes 3 fire damage at the start of each of its turns. At the end of its turn ends, the creature can repeat the saving throw that caused it to be burned. If there was no such saving throw, the creature can make a DC 13 Constitution saving throw instead.",
+                    "The creature takes 3 fire damage at the start of each of its turns.",
                     "The creature must spend an action to interact with objects or features of the environment (such as drawing a weapon or opening doors).",
                     "A creature can also use an action to attempt a DC 10 Medicine check to stop the burning.",
                     "A creature that is immune to fire damage is immune to this condition. A creature resistant to fire damage has advantage on any saving throws against it."
@@ -285,6 +285,23 @@
         "entries":
         [
             "A halted creature's movement speed is 0 feet."
+        ]
+    },
+    {
+        "name": "Dying",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            {
+                "type": "list",
+                "items":
+                [
+                    "If you start your turn while Dying, you roll a death saving throw as per the PHB rules. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
+                    "You are prone and cannot get up.",
+                    "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
+                ]
+            }
         ]
     }
 ]
