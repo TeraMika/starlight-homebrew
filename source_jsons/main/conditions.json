@@ -303,6 +303,24 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Withering",
+        "source": "Starlight",
+        "page": 0,
+        "entries":
+        [
+            {
+                "type": "list",
+                "items":
+                [
+                    "A Withering creature cannot regain hit points by any means and its movement is {@condition Hampered|Starlight}.",
+                    "The creature takes 2d8 necrotic damage as it receives the condition, and a further 1 necrotic damage each hour.",
+                    "The condition can be removed via Greater Restoration or a more powerful healing spell (Such as {@spell Heal|phb}, {@spell Regenerate|phb}, or {@spell Power Word Heal|phb}). Alternatively, {@spell Lesser Restoration|phb} can be used if the caster succeeds a DC 15 ability check with their spellcasting ability (expending the slot regardless).",
+                    "Typically, this condition is reserved for Darkiron, a material found in (but not native to) Neverwhere. At the DM's discretion, other effects may apply this condition, but with easier removal and/or greater damage."
+                ]
+            }
+        ]
     }
 ]
 }
