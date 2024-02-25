@@ -10,11 +10,11 @@
                 "color": "dac4ff",
                 "authors":
                 [
-                    "Mika Rae"
+                    "Starlight"
                 ],
                 "convertedBy":
                 [
-                    "Mika Rae"
+                    "Starlight"
                 ],
                 "version": "1.0",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
@@ -29,7 +29,7 @@
     [
         {
 			"name": "Necklace of Bitter Tears",
-			"source": "Starlight",
+			"source": "S: Items",
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
@@ -38,7 +38,7 @@
 		},
         {
 			"name": "Bracers of Extreme Evocation",
-			"source": "Starlight",
+			"source": "S: Items",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
@@ -54,7 +54,7 @@
 		},
         {
 			"name": "Gloves of Benign Transposition",
-			"source": "Starlight",
+			"source": "S: Items",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
@@ -63,7 +63,7 @@
 		},
         {
 			"name": "Gloves of Malicious Transposition",
-			"source": "Starlight",
+			"source": "S: Items",
 			"rarity": "uncommon",
 			"wondrous": true,
             "charges": 3,
@@ -74,7 +74,7 @@
 		},
         {
             "name": "Ring of Mana Channeling",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": true,
@@ -86,7 +86,7 @@
         },
         {
             "name": "Ring of Protection",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": true,
@@ -98,7 +98,7 @@
         },
         {
             "name": "Cloak of Protection",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": true,
@@ -109,7 +109,7 @@
         },
         {
             "name": "A Promise Made",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -117,13 +117,13 @@
             "charges": 1,
             "recharge": "restLong",
             "entries": [
-                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers when you complete a long rest.",
+                "This ring shares a single charge with {@item A Promise Kept|S: Items}, which recovers when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
             ]
         },
         {
             "name": "A Promise Kept",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -131,7 +131,7 @@
             "charges": 1,
             "recharge": "restLong",
             "entries": [
-                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
+                "This ring shares a single charge with {@item A Promise Made|S: Items}, which recovers each when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
             ],
             "attachedSpells": 
@@ -143,7 +143,7 @@
         },
         {
             "name": "Circlet of Storytelling",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -155,7 +155,7 @@
         },
         {
             "name": "Astral Teardrop",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": true,
@@ -173,7 +173,7 @@
         },
         {
             "name": "Fate's Pendant",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "legendary",
             "wondrous": true,
             "reqAttune": true,
@@ -190,7 +190,7 @@
         },
         {
             "name": "Soulful Rook Chesspiece",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -200,13 +200,13 @@
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Queen Chesspiece",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -216,13 +216,13 @@
                 "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
                 "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Bishop Chesspiece",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -232,13 +232,13 @@
                 "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
                 "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Knight Chesspiece",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -247,14 +247,14 @@
             "entries": [
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
-                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|S: Items|Hampers} your target's movement until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Quickstep Boots",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -264,7 +264,7 @@
         },
         {
             "name": "Eye of the 10-eyed Wyrm",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "very rare",
             "wondrous": true,
             "reqAttune": true,
@@ -282,7 +282,7 @@
                     "rows": [
                         [
                             "You gain advantage on initiative checks.",
-                            "On your first turn in combat, you are {@condition Slowed|Starlight}."
+                            "On your first turn in combat, you are {@condition Slowed|S: Items}."
                         ],
                         [
                             "You gain advantage on Wisdom ability checks.",
@@ -302,7 +302,7 @@
         },
         {
             "name": "Blessed Circlet",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -312,7 +312,7 @@
         },
         {
             "name": "Career Student's Ring",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -324,7 +324,7 @@
         },
         {
             "name": "Forgotten Green Hood",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -335,7 +335,7 @@
         },
         {
             "name": "Friend of Arcanists",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": true,
@@ -347,7 +347,7 @@
         },
         {
             "name": "Friend of Nature",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": true,
@@ -359,7 +359,7 @@
         },
         {
             "name": "Hunter's Shawl",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -369,7 +369,7 @@
         },
         {
             "name": "Hunter's Hood",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": true,
@@ -384,7 +384,7 @@
         },
         {
             "name": "Hunter's Boots",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -394,7 +394,7 @@
         },
         {
             "name": "Hunter's Bracers",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -404,7 +404,7 @@
         },
         {
             "name": "Hunter's Ring",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": false,
@@ -415,7 +415,7 @@
         },
         {
             "name": "Moon-Touched Bracelet",
-            "source": "Starlight",
+            "source": "S: Items",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": true,

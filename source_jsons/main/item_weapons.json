@@ -28,7 +28,7 @@
     [
         {
             "name": "Nature's Emissary",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "baseItem": "shortsword|phb",
             "type": "M",
             "weaponCategory": "martial",
@@ -56,7 +56,7 @@
         },
         {
             "name": "Protector's Naginata",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "baseItem": "Glaive|phb",
             "type": "M",
             "weight": 5,
@@ -80,7 +80,7 @@
         },
         {
             "name": "Sentinel's Rapier",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "baseItem": "rapier|phb",
             "type": "M",
             "weaponCategory": "martial",
@@ -102,7 +102,7 @@
         },
         {
             "name": "Clovehoof Armour",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "type": "MA",
             "rarity": "rare",
             "reqAttune": false,
@@ -118,7 +118,7 @@
         },
         {
             "name": "Dragonspirit Robes",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "baseItem": "robes|phb",
             "type": "OTH",
             "rarity": "rare",
@@ -133,7 +133,7 @@
         },
         {
             "name": "Vest of the Optimist",
-            "source": "Starlight",
+            "source": "S: Weapons",
             "baseItem": "studded leather armor|PHB",
             "type": "LA",
             "rarity": "rare",

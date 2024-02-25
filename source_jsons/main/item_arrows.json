@@ -10,11 +10,11 @@
                 "color": "dac4ff",
                 "authors":
                 [
-                    "Mika Rae"
+                    "Starlight"
                 ],
                 "convertedBy":
                 [
-                    "Mika Rae"
+                    "Starlight"
                 ],
                 "version": "1.0",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
@@ -28,7 +28,7 @@
     [
         {
 			"name": "Arrow of Acid",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
@@ -39,29 +39,29 @@
 		},
         {
 			"name": "Arrow of Fire",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|Starlight|burning}, repeating the saving throw at the end of each of its turns to end the effect."
+                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|S: Arrows|burning}, repeating the saving throw at the end of each of its turns to end the effect."
 			]
 		},
         {
 			"name": "Arrow of Ice",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|Starlight|hampered} until the start of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|S: Arrows|hampered} until the start of your next turn."
 			]
 		},
         {
 			"name": "Arrow of Lightning",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
@@ -72,7 +72,7 @@
 		},
         {
 			"name": "Arrow of Thunder",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
@@ -84,7 +84,7 @@
 		},
         {
 			"name": "Arrow of Gravity",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
@@ -95,7 +95,7 @@
 		},
         {
 			"name": "Arrow of Piercing",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
@@ -106,51 +106,51 @@
 		},
         {
 			"name": "Arrow of Wounding",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "common",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, causes the target to {@condition bleeding|Starlight|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|Starlight}."
+                "On hit, causes the target to {@condition bleeding|S: Arrows|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|S: Arrows}."
 			]
 		},
         {
 			"name": "Arrow of Maiming",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, the target must make a Constitution saving throw or become {@condition halted|Starlight}. On a successful saving throw, they are {@condition slowed|Starlight} instead."
+                "On hit, the target must make a Constitution saving throw or become {@condition halted|S: Arrows}. On a successful saving throw, they are {@condition slowed|S: Arrows} instead."
 			]
 		},
         {
 			"name": "Arrow of Curing",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition weakened|Starlight}, {@condition bleeding|Starlight}, {@condition burning|Starlight}, or {@condition shocked|Starlight}."
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|S: Arrows}, {@condition disoriented|S: Arrows}, {@condition weakened|S: Arrows}, {@condition bleeding|S: Arrows}, {@condition burning|S: Arrows}, or {@condition shocked|S: Arrows}."
 			]
 		},
         {
 			"name": "Arrow of Disruption",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|Starlight} until the end of their next turn."
+                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|S: Arrows} until the end of their next turn."
 			]
 		},
         {
 			"name": "Arrow of Darkness",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
@@ -161,7 +161,7 @@
 		},
         {
 			"name": "Arrow of Lesser Slaying",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
@@ -172,7 +172,7 @@
 		},
         {
 			"name": "Arrow of Weeping",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
@@ -183,7 +183,7 @@
 		},
         {
 			"name": "Arrow of Greater Slaying",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "rare",
 			"wondrous": false,
             "type": "A",
@@ -194,7 +194,7 @@
 		},
         {
 			"name": "Arrow of Recurving",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "rare",
 			"wondrous": false,
             "type": "A",
@@ -205,7 +205,7 @@
 		},
         {
 			"name": "Arrow of Relocation",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "rare",
 			"wondrous": false,
             "type": "A",
@@ -216,7 +216,7 @@
 		},
         {
 			"name": "Arrow of Explosives",
-			"source": "Starlight",
+			"source": "S: Arrows",
 			"rarity": "rare",
 			"wondrous": false,
             "type": "A",
