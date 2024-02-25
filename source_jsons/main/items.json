@@ -1,0 +1,394 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "S: Items",
+                "abbreviation": "S: Items",
+                "full": "Starlight: Items",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Mika Rae"
+                ],
+                "convertedBy":
+                [
+                    "Mika Rae"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+
+    "item":
+    [
+        {
+			"name": "Necklace of Bitter Tears",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "Necklace",
+			"entries": [
+                "Whenever you regain hit points while wearing this necklacee, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
+			]
+		},
+        {
+			"name": "Bracers of Extreme Evocation",
+			"source": "Starlight",
+			"rarity": "rare",
+			"wondrous": false,
+            "type": "Gloves",
+			"entries": [
+                "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
+                {
+                    "type": "list",
+                    "items": [
+                        "If the spell requires an attack roll, take a -5 penalty to that roll.",
+                        "If it requires a saving throw, targets have advantage on that saving throw."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Gloves of Benign Transposition",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "Gloves",
+			"entries": [
+                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them by expending 1 charge"
+			]
+		},
+        {
+			"name": "Gloves of Malicious Transposition",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "Gloves",
+			"entries": [
+                "These gloves have 3 charges, which are restored at dawn. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
+			]
+		},
+        {
+            "name": "Ring of Mana Channeling",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Ring",
+            "entries": [
+                "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
+                "{@b Attunement.} The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+            ]
+        },
+        {
+            "name": "Ring of Protection",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Ring",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this ring.",
+                "{@b Attunement.} and +1 to AC."
+            ]
+        },
+        {
+            "name": "Cloak of Protection",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Cloak",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this cloak.",
+                "{@b Attunement.} and +1 to AC."
+            ]
+        },
+        {
+            "name": "A Promise Made",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Ring",
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers each dawn.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
+            ]
+        },
+        {
+            "name": "A Promise Kept",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Ring",
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each dawn.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
+            ]
+        },
+        {
+            "name": "Circlet of Storytelling",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Headwear",
+            "entries":
+            [
+                "Stories you tell gain a subtle effect to make them more compelling.",
+                "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
+            ]
+        },
+        {
+            "name": "Astral Teardrop",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Necklace",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                "{@b Attunement.} You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+            ]
+        },
+        {
+            "name": "Fate's Pendant",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "wondrous": false,
+            "reqAttune": true,
+            "entries": [
+                "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
+                "{@b Redirect Fate.} Once each dawn, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
+                "{@b Attunement.} The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
+                "{@b Attunement.} When you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+            ]
+        },
+        {
+            "name": "Soulful Rook Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Queen Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
+                "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Bishop Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
+                "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Knight Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Quickstep Boots",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Footwear",
+            "entries": [
+                "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
+            ]
+        },
+        {
+            "name": "Eye of the 10-eyed Wyrm",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
+                "{@b Attunement.} The eye has two charges, which recover at dawn. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Benefit",
+                        "Detriment"
+                    ],
+                    "rows": [
+                        [
+                            "You gain advantage on initiative checks.",
+                            "On your first turn in combat, you are {@condition Slowed|Starlight}."
+                        ],
+                        [
+                            "You gain advantage on Wisdom ability checks.",
+                            "You gain disadvantage on Intelligence ability checks."
+                        ],
+                        [
+                            "You gain advantage on all attacks.",
+                            "You gain disadvantage on all saving throws."
+                        ],
+                        [
+                            "You gain resistance to bludgeoning, piercing and slashing damage.",
+                            "You gain vulnerablity to fire, cold, and lightning damage."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessed Circlet",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Headwear",
+            "entries": [
+                "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
+            ]
+        },
+        {
+            "name": "Career Student's Ring",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Ring",
+            "entries": [
+                "While wearing this ring, you can add half of your proficiency bonus to any any skill in which you are not already proficient.",
+                "{@note This does not combine with the Bard's 'Jack of All Trades' feature, or other similar features.}"
+            ]
+        },
+        {
+            "name": "Forgotten Green Hood",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Headwear",
+            "entries": [
+                "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
+                "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
+            ]
+        },
+        {
+            "name": "Friend of Arcanists",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Ring",
+            "entries": [
+                "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                "{@b Attunement.} The bonus is +2 instead."
+            ]
+        },
+        {
+            "name": "Friend of Nature",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Ring",
+            "entries": [
+                "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "{@b Attunement.} The bonus is +2 instead."
+            ]
+        },
+        {
+            "name": "Hunter's Shawl",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Cloak",
+            "entries": [
+                "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
+            ]
+        },
+        {
+            "name": "Hunter's Hood",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "Headware",
+            "entries": [
+                "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
+                "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until the next dawn."
+            ]
+        },
+        {
+            "name": "Hunter's Boots",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Footwear",
+            "entries": [
+                "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
+            ]
+        },
+        {
+            "name": "Hunter's Bracers",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Gloves",
+            "entries": [
+                "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
+            ]
+        },
+        {
+            "name": "Ring of Hunting",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "Ring",
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
+            ]
+        }
+    ]
+}
