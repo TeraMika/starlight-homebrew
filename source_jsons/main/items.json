@@ -33,7 +33,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-                "Whenever you regain hit points while wearing this necklacee, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
+                "Whenever you regain hit points while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
 			]
 		},
         {
