@@ -1,0 +1,229 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "S: Weapons",
+                "abbreviation": "S: Weapons",
+                "full": "Starlight: Weapons",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Mika Rae"
+                ],
+                "convertedBy":
+                [
+                    "Mika Rae"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "item":
+    [
+        {
+			"name": "Arrow of Acid",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw or have its AC reduced by 2 until the start of your next turn."
+			]
+		},
+        {
+			"name": "Arrow of Fire",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|Starlight|burning}, repeating the saving throw at the end of each of its turns to end the effect."
+			]
+		},
+        {
+			"name": "Arrow of Ice",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|Starlight|hampered} until the start of your next turn."
+			]
+		},
+        {
+			"name": "Arrow of Lightning",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
+			]
+		},
+        {
+			"name": "Arrow of Thunder",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
+                "Huge or larger creatures have advantage on this saving throw."
+			]
+		},
+        {
+			"name": "Arrow of Gravity",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
+			]
+		},
+        {
+			"name": "Arrow of Piercing",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
+			]
+		},
+        {
+			"name": "Arrow of Wounding",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, causes the target to {@condition bleeding|Starlight|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|Starlight}."
+			]
+		},
+        {
+			"name": "Arrow of Maiming",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target must make a Constitution saving throw or become {@condition halted|Starlight}. On a successful saving throw, they are {@condition slowed|Starlight} instead."
+			]
+		},
+        {
+			"name": "Arrow of Curing",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition weakened|Starlight}, {@condition bleeding|Starlight}, {@condition burning|Starlight}, or {@condition shocked|Starlight}."
+			]
+		},
+        {
+			"name": "Arrow of Disruption",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|Starlight} until the end of their next turn."
+			]
+		},
+        {
+			"name": "Arrow of Darkness",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
+			]
+		},
+        {
+			"name": "Arrow of Lesser Slaying",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, or Aberration, the attack is a critical hit."
+			]
+		},
+        {
+			"name": "Arrow of Weeping",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target takes an additional {@dice 1d4} necrotic damage and must make Constitution saving throw against your spell save DC. On a failed saving throw, they cannot regain any hit points until the start of your next turn."
+			]
+		},
+        {
+			"name": "Arrow of Greater Slaying",
+			"source": "Starlight",
+			"rarity": "rare",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Construct, the attack is a critical hit."
+			]
+		},
+        {
+			"name": "Arrow of Recurving",
+			"source": "Starlight",
+			"rarity": "rare",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not attack your ability modifier to the damage roll of this attack."
+			]
+		},
+        {
+			"name": "Arrow of Relocation",
+			"source": "Starlight",
+			"rarity": "rare",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "You teleport to where this arrow lands."
+			]
+		},
+        {
+			"name": "Arrow of Explosives",
+			"source": "Starlight",
+			"rarity": "rare",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
+			]
+		}
+    ]
+}
