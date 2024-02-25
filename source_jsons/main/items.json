@@ -90,6 +90,8 @@
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": true,
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this ring.",
@@ -102,6 +104,8 @@
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": true,
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this cloak.",
                 "{@b Attunement.} and +1 to AC."
@@ -116,6 +120,7 @@
             "type": "RG",
             "charges": 1,
             "recharge": "restLong",
+            "rechargeAmount": 1,
             "entries": [
                 "This ring shares a single charge with {@item A Promise Kept|S: Items}, which recovers when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
@@ -130,6 +135,7 @@
             "type": "RG",
             "charges": 1,
             "recharge": "restLong",
+            "rechargeAmount": 1,
             "entries": [
                 "This ring shares a single charge with {@item A Promise Made|S: Items}, which recovers each when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
