@@ -31,8 +31,7 @@
 			"name": "Necklace of Bitter Tears",
 			"source": "Starlight",
 			"rarity": "common",
-			"wondrous": false,
-            "type": "Necklace",
+			"wondrous": true,
 			"entries": [
                 "Whenever you regain hit points while wearing this necklacee, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
 			]
@@ -41,8 +40,7 @@
 			"name": "Bracers of Extreme Evocation",
 			"source": "Starlight",
 			"rarity": "rare",
-			"wondrous": false,
-            "type": "Gloves",
+			"wondrous": true,
 			"entries": [
                 "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
                 {
@@ -58,8 +56,7 @@
 			"name": "Gloves of Benign Transposition",
 			"source": "Starlight",
 			"rarity": "uncommon",
-			"wondrous": false,
-            "type": "Gloves",
+			"wondrous": true,
 			"entries": [
                 "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them by expending 1 charge"
 			]
@@ -68,8 +65,7 @@
 			"name": "Gloves of Malicious Transposition",
 			"source": "Starlight",
 			"rarity": "uncommon",
-			"wondrous": false,
-            "type": "Gloves",
+			"wondrous": true,
 			"entries": [
                 "These gloves have 3 charges, which are restored at dawn. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
 			]
@@ -80,7 +76,7 @@
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": true,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
                 "{@b Attunement.} The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
@@ -92,7 +88,7 @@
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": true,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this ring.",
                 "{@b Attunement.} and +1 to AC."
@@ -102,9 +98,8 @@
             "name": "Cloak of Protection",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
-            "type": "Cloak",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this cloak.",
                 "{@b Attunement.} and +1 to AC."
@@ -116,7 +111,7 @@
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers each dawn.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
@@ -128,7 +123,7 @@
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each dawn.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
@@ -138,9 +133,8 @@
             "name": "Circlet of Storytelling",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Headwear",
             "entries":
             [
                 "Stories you tell gain a subtle effect to make them more compelling.",
@@ -151,9 +145,8 @@
             "name": "Astral Teardrop",
             "source": "Starlight",
             "rarity": "rare",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
-            "type": "Necklace",
             "entries": [
                 "You can fail an additional death saving throw before dying (4 total).",
                 "{@b Attunement.} You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
@@ -163,7 +156,7 @@
             "name": "Fate's Pendant",
             "source": "Starlight",
             "rarity": "legendary",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
             "entries": [
                 "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
@@ -234,7 +227,6 @@
             "rarity": "common",
             "wondrous": false,
             "reqAttune": false,
-            "type": "Footwear",
             "entries": [
                 "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
             ]
@@ -279,9 +271,8 @@
             "name": "Blessed Circlet",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Headwear",
             "entries": [
                 "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
             ]
@@ -290,9 +281,9 @@
             "name": "Career Student's Ring",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "While wearing this ring, you can add half of your proficiency bonus to any any skill in which you are not already proficient.",
                 "{@note This does not combine with the Bard's 'Jack of All Trades' feature, or other similar features.}"
@@ -302,9 +293,8 @@
             "name": "Forgotten Green Hood",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Headwear",
             "entries": [
                 "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
                 "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
@@ -314,9 +304,9 @@
             "name": "Friend of Arcanists",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
                 "{@b Attunement.} The bonus is +2 instead."
@@ -326,9 +316,9 @@
             "name": "Friend of Nature",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
                 "{@b Attunement.} The bonus is +2 instead."
@@ -338,9 +328,8 @@
             "name": "Hunter's Shawl",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Cloak",
             "entries": [
                 "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
             ]
@@ -349,9 +338,8 @@
             "name": "Hunter's Hood",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": true,
-            "type": "Headware",
             "entries": [
                 "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
                 "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until the next dawn."
@@ -361,9 +349,8 @@
             "name": "Hunter's Boots",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Footwear",
             "entries": [
                 "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
             ]
@@ -372,9 +359,8 @@
             "name": "Hunter's Bracers",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
-            "type": "Gloves",
             "entries": [
                 "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
             ]
@@ -385,7 +371,7 @@
             "rarity": "common",
             "wondrous": false,
             "reqAttune": false,
-            "type": "Ring",
+            "type": "RG",
             "entries": [
                 "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
             ]
