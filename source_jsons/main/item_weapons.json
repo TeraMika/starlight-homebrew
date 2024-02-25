@@ -40,6 +40,7 @@
             "dmgType": "S",
             "rarity": "rare",
             "bonusWeapon": "+1",
+            "weight": 2,
             "reqAttune": true,
 			"curse": false,
             "entries": [
@@ -58,6 +59,7 @@
             "source": "Starlight",
             "baseItem": "Glaive|phb",
             "type": "M",
+            "weight": 5,
             "weaponCategory": "martial",
             "property": [
                 "H",
@@ -89,6 +91,7 @@
             "dmgType": "P",
             "rarity": "uncommon",
             "bonusWeapon": "+1",
+            "weight": 2,
             "reqAttune": false,
 			"curse": false,
             "entries": [
@@ -116,13 +119,13 @@
         {
             "name": "Dragonspirit Robes",
             "source": "Starlight",
-            "baseItem": "Robes|phb",
+            "baseItem": "robes|phb",
             "type": "OTH",
             "rarity": "rare",
             "reqAttune": true,
-            "ac": 10,
             "weight": 3,
 			"curse": false,
+            "wondrous": true,
             "entries": [
                 "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
                 "{@b Attunement.} Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
