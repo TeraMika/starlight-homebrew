@@ -225,7 +225,7 @@
             "name": "Quickstep Boots",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
             "entries": [
                 "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
@@ -281,7 +281,7 @@
             "name": "Career Student's Ring",
             "source": "Starlight",
             "rarity": "uncommon",
-            "wondrous": true,
+            "wondrous": false,
             "reqAttune": false,
             "type": "RG",
             "entries": [
@@ -304,7 +304,7 @@
             "name": "Friend of Arcanists",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": true,
+            "wondrous": false,
             "reqAttune": true,
             "type": "RG",
             "entries": [
@@ -316,7 +316,7 @@
             "name": "Friend of Nature",
             "source": "Starlight",
             "rarity": "common",
-            "wondrous": true,
+            "wondrous": false,
             "reqAttune": true,
             "type": "RG",
             "entries": [
@@ -366,7 +366,7 @@
             ]
         },
         {
-            "name": "Ring of Hunting",
+            "name": "Hunter's Ring",
             "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
