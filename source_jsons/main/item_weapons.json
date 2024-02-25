@@ -1,0 +1,147 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "S: Weapons",
+                "abbreviation": "S: Weapons",
+                "full": "Starlight: Weapons",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Mika Rae"
+                ],
+                "convertedBy":
+                [
+                    "Mika Rae"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "item":
+    [
+        {
+            "name": "Nature's Emissary",
+            "source": "Starlight",
+            "baseItem": "shortsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "rare",
+            "bonusWeapon": "1",
+            "reqAttune": true,
+			"curse": false,
+            "entries": [
+                "You have +1 bonus to attack and damage rolls made with this weapon.",
+                "{@b Attunement.} Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                "The sword can be planted in the ground as an action or in place of an attack, where it offers benefits within a radius equal to 5 times your proficiency bonus. Each dawn, you can change the season of Nature's Emissary, which changes the benefit provided.",
+                "{@b Spring Rain.} The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir.",
+                "{@b Fall's Warding.} The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.",
+                "{@b Summer's Glory.} The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes.",
+                "{@b Winter's Watch.} The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there.",
+                "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+            ]
+        },
+        {
+            "name": "Protector's Naginata",
+            "source": "Starlight",
+            "baseItem": "Glaive|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "R",
+                "2H"
+            ],
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "rarity": "common",
+            "bonusWeapon": "0",
+            "reqAttune": true,
+			"curse": false,
+            "entries": [
+                "This weapon is a polearm.",
+                "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
+                "{@b Attunement.} When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
+                "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+            ]
+        },
+        {
+            "name": "Sentinel's Rapier",
+            "source": "Starlight",
+            "baseItem": "rapier|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "rarity": "uncommon",
+            "bonusWeapon": "1",
+            "reqAttune": false,
+			"curse": false,
+            "entries": [
+                "You have a +1 bonus to attack and damage rolls using this weapon.",
+                "You gain a +1 bonus to initiative rolls.",
+                "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+            ]
+        },
+        {
+            "name": "Clovehoof Armour",
+            "source": "Starlight",
+            "type": "MA",
+            "rarity": "rare",
+            "reqAttune": false,
+			"curse": false,
+            "weight": 30,
+            "ac": 15,
+            "dexterityMax": null,
+            "stealth": true,
+            "entries": [
+                "Made from unusual fey materials, this armour is very light while still offering incredible protection. However, it is not more subtle than other similar armours.",
+                "You can add your full Dexterity modifier to your AC when wearing this medium armour."
+            ]
+        },
+        {
+            "name": "Dragonspirit Robes",
+            "source": "Starlight",
+            "baseItem": "Robes|phb",
+            "type": "G",
+            "rarity": "rare",
+            "reqAttune": true,
+			"curse": false,
+            "entries": [
+                "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
+                "{@b Attunement.} Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+            ]
+        },
+        {
+            "name": "Vest of the Optimist",
+            "source": "Starlight",
+            "baseItem": "studded leather armor|PHB",
+            "type": "LA",
+            "rarity": "rare",
+            "reqAttune": false,
+            "ac": 12,
+            "bonusAc": "2",
+			"curse": false,
+            "weight": 10,
+            "entries": [
+                 "You have a +2 bonus to AC while wearing this armour.",
+                 "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+            ]
+        }
+    ]
+}
