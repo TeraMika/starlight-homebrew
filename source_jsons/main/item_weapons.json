@@ -39,7 +39,7 @@
             "dmg1": "1d6",
             "dmgType": "S",
             "rarity": "rare",
-            "bonusWeapon": "1",
+            "bonusWeapon": "+1",
             "reqAttune": true,
 			"curse": false,
             "entries": [
@@ -67,7 +67,6 @@
             "dmg1": "1d10",
             "dmgType": "S",
             "rarity": "common",
-            "bonusWeapon": "0",
             "reqAttune": true,
 			"curse": false,
             "entries": [
@@ -89,7 +88,7 @@
             "dmg1": "1d8",
             "dmgType": "P",
             "rarity": "uncommon",
-            "bonusWeapon": "1",
+            "bonusWeapon": "+1",
             "reqAttune": false,
 			"curse": false,
             "entries": [
@@ -118,9 +117,11 @@
             "name": "Dragonspirit Robes",
             "source": "Starlight",
             "baseItem": "Robes|phb",
-            "type": "G",
+            "type": "OTH",
             "rarity": "rare",
             "reqAttune": true,
+            "ac": 10,
+            "weight": 3,
 			"curse": false,
             "entries": [
                 "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
