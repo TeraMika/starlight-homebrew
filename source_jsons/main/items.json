@@ -58,7 +58,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them by expending 1 charge"
+                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them."
 			]
 		},
         {
@@ -66,8 +66,10 @@
 			"source": "Starlight",
 			"rarity": "uncommon",
 			"wondrous": true,
+            "charges": 3,
+            "recharge": "restLong",
 			"entries": [
-                "These gloves have 3 charges, which are restored at dawn. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
+                "These gloves have 3 charges, which are restored when you complete a long rest. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
 			]
 		},
         {
@@ -112,8 +114,10 @@
             "wondrous": false,
             "reqAttune": false,
             "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
-                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers each dawn.",
+                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
             ]
         },
@@ -124,9 +128,17 @@
             "wondrous": false,
             "reqAttune": false,
             "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
-                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each dawn.",
+                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
+            ],
+            "attachedSpells": 
+            [
+                "unshakeable tail",
+                "warding bond",
+                "sanctuary"
             ]
         },
         {
@@ -147,9 +159,16 @@
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": true,
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
                 "You can fail an additional death saving throw before dying (4 total).",
                 "{@b Attunement.} You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+            ],
+            "attachedSpells": 
+            [
+                "modify memory",
+                "enervation"
             ]
         },
         {
@@ -160,9 +179,13 @@
             "reqAttune": true,
             "entries": [
                 "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
-                "{@b Redirect Fate.} Once each dawn, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
+                "{@b Redirect Fate.} Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
                 "{@b Attunement.} The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
                 "{@b Attunement.} When you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+            ],
+            "attachedSpells": 
+            [
+                "wish"
             ]
         },
         {
@@ -171,12 +194,14 @@
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
@@ -185,12 +210,14 @@
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
                 "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
                 "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
@@ -199,12 +226,14 @@
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
                 "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
                 "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
@@ -213,12 +242,14 @@
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
             "entries": [
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until the next dawn, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
@@ -237,9 +268,11 @@
             "rarity": "very rare",
             "wondrous": true,
             "reqAttune": true,
+            "charges": 2,
+            "recharge": "restLong",
             "entries": [
                 "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
-                "{@b Attunement.} The eye has two charges, which recover at dawn. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                "{@b Attunement.} The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
                 {
                     "type": "table",
                     "colLabels": [
@@ -342,7 +375,11 @@
             "reqAttune": true,
             "entries": [
                 "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
-                "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until the next dawn."
+                "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+            ],
+            "attachedSpells": 
+            [
+                "hunter's mark"
             ]
         },
         {
@@ -374,6 +411,19 @@
             "type": "RG",
             "entries": [
                 "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
+            ]
+        },
+        {
+            "name": "Moon-Touched Bracelet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "You have resistance to radiant damage while you are wearing this ring.",
+                "{@b Attunement.} You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
+                "Once cast, the spell is removed from the bracelet, freeing up the spacee."
             ]
         }
     ]
