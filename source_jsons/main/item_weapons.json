@@ -122,7 +122,10 @@
                 "You have a +2 bonus to attack and damage rolls using this weapon.",
                 "{@b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
                 "{@b Threadsplitter.} When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
-                "{@b Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do so after completing a long rest."
+                "{@b Eyes of Temporus.} You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+            ],
+            "attachedSpells": [
+                "true seeing"
             ]
         },
         {
