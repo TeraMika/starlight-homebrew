@@ -41,7 +41,7 @@
             "rarity": "rare",
             "bonusWeapon": "+1",
             "weight": 2,
-            "reqAttune": true,
+            "reqAttune": "optional",
 			"curse": false,
             "entries": [
                 "You have +1 bonus to attack and damage rolls made with this weapon.",
@@ -69,7 +69,7 @@
             "dmg1": "1d10",
             "dmgType": "S",
             "rarity": "common",
-            "reqAttune": true,
+            "reqAttune": "optional",
 			"curse": false,
             "entries": [
                 "This weapon is a polearm.",
@@ -105,22 +105,22 @@
             "source": "S: Weapons",
             "baseItem": "longsword|phb",
             "type": "M",
+            "rarity": "very rare",
+            "weight": 3,
             "weaponCategory": "martial",
             "property": [
                 "V"
             ],
             "dmg1": "1d8",
-            "dmg2": "1d10",
             "dmgType": "S",
-            "rarity": "very rare",
+            "dmg2": "1d10",
             "bonusWeapon": "+2",
-            "weight": 3,
             "reqAttune": "optional",
 			"curse": false,
             "entries": [
                 "You have a +2 bonus to attack and damage rolls using this weapon.",
                 "{b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
-                "{@b Threadsplitter. }When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
+                "{@b Threadsplitter.} When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
                 "{@Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do so after completing a long rest."
             ]
         },
@@ -177,7 +177,7 @@
             "baseItem": "Scale-mail|PHB",
             "type": "MA",
             "rarity": "very rare",
-            "reqAttune": true,
+            "reqAttune": "optional",
             "ac": 14,
             "bonusAc": "1",
             "dexterityMax": 3,
