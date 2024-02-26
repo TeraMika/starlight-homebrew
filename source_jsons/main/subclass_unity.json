@@ -2,14 +2,14 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Starlight",
-				"abbreviation": "Starlight",
-				"full": "Starlight",
+				"json": "Starlight: Unity",
+				"abbreviation": "S: Unity",
+				"full": "Starlight: Oath of Unity",
 				"authors": [
-					"Mika Rae"
+					"Starlight"
 				],
 				"convertedBy": [
-					"Mika Rae"
+					"Starlight"
 				],
 				"version": "1",
 				"url": "https://github.com/TeraMika/starlight-homebrew"

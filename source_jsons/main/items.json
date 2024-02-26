@@ -4,7 +4,7 @@
         "sources":
         [
             {
-                "json": "S: Items",
+                "json": "Starlight: Items",
                 "abbreviation": "S: Items",
                 "full": "Starlight: Items",
                 "color": "dac4ff",
@@ -470,7 +470,7 @@
             [
                 "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
                 "Once used, this cannot be used again until you complete a long rest.",
-                "{@b Attunement.} You can choose to {@status concentration||contentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+                "{@b Attunement.} You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
             ]
         },
         {

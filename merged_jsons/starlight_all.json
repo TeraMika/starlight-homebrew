@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "json": "S: Conditions",
+                "json": "Starlight: Conditions",
                 "abbreviation": "S: Conditions",
                 "full": "Starlight: Conditions",
                 "color": "dac4ff",
@@ -12,12 +12,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.14.51",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "S: Items",
+                "json": "Starlight: Items",
                 "abbreviation": "S: Items",
                 "full": "Starlight: Items",
                 "color": "dac4ff",
@@ -27,12 +27,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.02",
+                "version": "2024.02.26.14.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "S: Arrows",
+                "json": "Starlight: Arrows",
                 "abbreviation": "S: Arrows",
                 "full": "Starlight: Arrows",
                 "color": "dac4ff",
@@ -42,12 +42,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.14.51",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "S: Weapons",
+                "json": "Starlight: Weapons",
                 "abbreviation": "S: Weapons",
                 "full": "Starlight: Weapons",
                 "color": "dac4ff",
@@ -57,21 +57,21 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.46",
+                "version": "2024.02.26.14.55",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "Starlight",
-                "abbreviation": "Starlight",
-                "full": "Starlight",
+                "json": "Starlight: Unity",
+                "abbreviation": "S: Unity",
+                "full": "Starlight: Oath of Unity",
                 "authors": [
-                    "Mika Rae"
+                    "Starlight"
                 ],
                 "convertedBy": [
-                    "Mika Rae"
+                    "Starlight"
                 ],
-                "version": "2024.02.26.13.26",
+                "version": "2024.02.26.14.51",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -100,7 +100,7 @@
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708958790.4098437
+        "dateLastModified": 1708959353.211745
     },
     "condition": [
         {
@@ -801,7 +801,7 @@
             "entries": [
                 "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
                 "Once used, this cannot be used again until you complete a long rest.",
-                "{@b Attunement.} You can choose to {@status concentration||contentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+                "{@b Attunement.} You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
             ]
         },
         {
@@ -1116,13 +1116,13 @@
             "rarity": "very rare",
             "bonusWeapon": "+2",
             "weight": 3,
-            "reqAttune": false,
+            "reqAttune": "optional",
             "curse": false,
             "entries": [
                 "You have a +2 bonus to attack and damage rolls using this weapon.",
                 "{b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
                 "{@b Threadsplitter. }When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
-                "{@Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do after completing a long rest."
+                "{@Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do so after completing a long rest."
             ]
         },
         {
