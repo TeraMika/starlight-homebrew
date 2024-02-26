@@ -101,6 +101,30 @@
             ]
         },
         {
+            "name": "Threadsplitter",
+            "source": "S: Weapons",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmg2": "1d10",
+            "dmgType": "S",
+            "rarity": "very rare",
+            "bonusWeapon": "+2",
+            "weight": 3,
+            "reqAttune": false,
+			"curse": false,
+            "entries": [
+                "You have a +2 bonus to attack and damage rolls using this weapon.",
+                "{b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
+                "{@b Threadsplitter. }When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
+                "{@Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do after completing a long rest."
+            ]
+        },
+        {
             "name": "Clovehoof Armour",
             "source": "S: Weapons",
             "type": "MA",
@@ -145,6 +169,27 @@
             "entries": [
                  "You have a +2 bonus to AC while wearing this armour.",
                  "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+            ]
+        },
+        {
+            "name": "Timeless Scale-mail",
+            "source": "S: Weapons",
+            "baseItem": "Scale-mail|PHB",
+            "type": "MA",
+            "rarity": "very rare",
+            "reqAttune": true,
+            "ac": 14,
+            "bonusAc": "1",
+            "dexterityMax": 3,
+            "stealth": true,
+			"curse": false,
+            "weight": 10,
+            "entries": [
+                 "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
+                 "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
+                 "{@b Attunement. Clarity.} You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions.",
+                 "{@b Immutable.} You gain a {@dice 1d4} bonus to all saving throws while wearing this armour.",
+                 "{@b Echoes in time.} You can sense which, if any, dragons were within 30 miles of your location within the last year."
             ]
         }
     ]

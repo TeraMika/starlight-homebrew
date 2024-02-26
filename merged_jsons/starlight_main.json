@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.14.02",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.14.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,12 +71,12 @@
                 "convertedBy": [
                     "Mika Rae"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.13.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708952724.9508538
+        "dateLastModified": 1708958790.3998284
     },
     "condition": [
         {
@@ -393,7 +393,7 @@
             "source": "S: Items",
             "rarity": "rare",
             "wondrous": false,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "type": "RG",
             "entries": [
                 "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
@@ -405,7 +405,7 @@
             "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": false,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "bonusAc": "+1",
             "bonusSavingThrow": "+1",
             "type": "RG",
@@ -419,7 +419,7 @@
             "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "bonusAc": "+1",
             "bonusSavingThrow": "+1",
             "entries": [
@@ -478,7 +478,7 @@
             "source": "S: Items",
             "rarity": "rare",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "charges": 1,
             "recharge": "restLong",
             "entries": [
@@ -495,7 +495,7 @@
             "source": "S: Items",
             "rarity": "legendary",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "entries": [
                 "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
                 "{@b Redirect Fate.} Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
@@ -585,7 +585,7 @@
             "source": "S: Items",
             "rarity": "very rare",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "charges": 2,
             "recharge": "restLong",
             "entries": [
@@ -656,7 +656,7 @@
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
@@ -668,7 +668,7 @@
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
@@ -690,7 +690,7 @@
             "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "entries": [
                 "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
                 "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
@@ -735,12 +735,73 @@
             "source": "S: Items",
             "rarity": "rare",
             "wondrous": true,
-            "reqAttune": true,
+            "reqAttune": "optional",
+            "resist": [
+                "radiant"
+            ],
             "entries": [
                 "You have resistance to radiant damage while you are wearing this ring.",
                 "{@b Attunement.} You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
                 "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
                 "Once cast, the spell is removed from the bracelet, freeing up the spacee."
+            ]
+        },
+        {
+            "name": "Ring of Borrowed Time",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": false,
+            "entries": [
+                "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
+                "Instead of rolling a death saving throw at the start of your turns, you fail your death saving throw automatically at the end of your turns, but can otherwise act without penality.",
+                "This ends when the dying condition would. After the ring has put you into this alternate state, once you leave that state, the ring loses its magic until you complete a long rest."
+            ]
+        },
+        {
+            "name": "Cloak of the Timekeeper",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Attacks that deal force damage have disadvantage against you, and you have advantage on any saving throw against an effect that would cause you to take force damage on a success or failure."
+            ]
+        },
+        {
+            "name": "Stopped-clock Circlet",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
+                "Once used, this cannot be used again until you complete a long rest.",
+                "{@b Attunement.} You can choose to {@status concentration||contentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+            ]
+        },
+        {
+            "name": "Time-knife Gloves",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Whenever you hit a creature with an attack roll while wearing these gloves, it loses a reaction, if it has at least one."
+            ]
+        },
+        {
+            "name": "Boots of Excellent Positioning",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "charges": 5,
+            "recharge": "restLong",
+            "rechargeAmount": 5,
+            "entries": [
+                "These boots have 5 charges which are recovered upon completing a long rest. Whenever you are moved against your will, you can expend a reaction and one charge to teleport to any space you occupied after the start of your previous turn.",
+                "{@b Attunement.} You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
             ]
         },
         {
@@ -1017,6 +1078,30 @@
             ]
         },
         {
+            "name": "Threadsplitter",
+            "source": "S: Weapons",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmg2": "1d10",
+            "dmgType": "S",
+            "rarity": "very rare",
+            "bonusWeapon": "+2",
+            "weight": 3,
+            "reqAttune": false,
+            "curse": false,
+            "entries": [
+                "You have a +2 bonus to attack and damage rolls using this weapon.",
+                "{b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
+                "{@b Threadsplitter. }When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
+                "{@Eyes of Temporus.} You can cast the {@spell True Seeing|phb} once using this weapon. You regain the ability to do after completing a long rest."
+            ]
+        },
+        {
             "name": "Clovehoof Armour",
             "source": "S: Weapons",
             "type": "MA",
@@ -1061,6 +1146,27 @@
             "entries": [
                 "You have a +2 bonus to AC while wearing this armour.",
                 "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+            ]
+        },
+        {
+            "name": "Timeless Scale-mail",
+            "source": "S: Weapons",
+            "baseItem": "Scale-mail|PHB",
+            "type": "MA",
+            "rarity": "very rare",
+            "reqAttune": true,
+            "ac": 14,
+            "bonusAc": "1",
+            "dexterityMax": 3,
+            "stealth": true,
+            "curse": false,
+            "weight": 10,
+            "entries": [
+                "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
+                "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
+                "{@b Attunement. Clarity.} You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions.",
+                "{@b Immutable.} You gain a {@dice 1d4} bonus to all saving throws while wearing this armour.",
+                "{@b Echoes in time.} You can sense which, if any, dragons were within 30 miles of your location within the last year."
             ]
         }
     ],
@@ -1143,7 +1249,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                " As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them with the power of your belief, surrounding them in an invulnerable barrier until the start of your next turn and preventing the triggering damage. If the protected creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the effect ends."
+                " As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them, preventing the triggering damage and surrounding them in an invulnerable barrier which gives them resistance to all further damage.",
+                "If the protected creature makes an attack, casts a spell that affects an enemy, deals damage to another creature, or forces a creature to make a saving throw, the effect ends."
             ]
         },
         {
@@ -1156,7 +1263,8 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, bolstering your allies with determination.\nYou can use your Channel Divinity to choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum bonus of one), and an additional 15 feet of movement speed."
+                "As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, beckoning your allies forward.",
+                "You can use your Channel Divinity to choose creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum of one), and an additional 10 feet of movement speed."
             ]
         },
         {
@@ -1236,7 +1344,7 @@
                             "type": "entries",
                             "name": "Courage",
                             "entries": [
-                                "Bravery is not the absence of fear, but acting in spite of it."
+                                "Bravery is not the absence of fear, but acting in spite of it. Evil prevails when good men do not act - so you should act."
                             ]
                         }
                     ]
@@ -1272,7 +1380,7 @@
                             "type": "entries",
                             "name": "Integrity",
                             "entries": [
-                                "You cannot be responsible for a community if you cannot accept your own actions. Protect those in your care, and ensure that all authority is just."
+                                "You cannot be responsible for others if you cannot hold yourself to account. Protect those in your care, and ensure that all authority is just."
                             ]
                         }
                     ]
@@ -1289,7 +1397,7 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures within 10 feet of you may take the Disengage action as a bonus action."
+                "Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures that start their turn 10 feet of you may take the Disengage action as a bonus action on that turn."
             ]
         },
         {
@@ -1322,7 +1430,7 @@
                     "items": [
                         "Your aura is filled with bright moonlight.",
                         "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
-                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
+                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points or killed within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
                         "Your form cannot be changed against your will."
                     ]
                 },

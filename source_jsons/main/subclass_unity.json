@@ -95,7 +95,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				" As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them with the power of your belief, surrounding them in an invulnerable barrier until the start of your next turn and preventing the triggering damage. If the protected creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the effect ends."
+				" As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them, preventing the triggering damage and surrounding them in an invulnerable barrier which gives them resistance to all further damage.",
+				"If the protected creature makes an attack, casts a spell that affects an enemy, deals damage to another creature, or forces a creature to make a saving throw, the effect ends."
 			]
 		},
 		{
@@ -108,7 +109,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, bolstering your allies with determination.\nYou can use your Channel Divinity to choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum bonus of one), and an additional 15 feet of movement speed."
+				"As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, beckoning your allies forward.",
+				"You can use your Channel Divinity to choose creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum of one), and an additional 10 feet of movement speed."
 			]
 		},
 		{
@@ -188,7 +190,7 @@
 							"type": "entries",
 							"name": "Courage",
 							"entries": [
-								"Bravery is not the absence of fear, but acting in spite of it."
+								"Bravery is not the absence of fear, but acting in spite of it. Evil prevails when good men do not act - so you should act."
 							]
 						}
 					]
@@ -224,7 +226,7 @@
 							"type": "entries",
 							"name": "Integrity",
 							"entries": [
-								"You cannot be responsible for a community if you cannot accept your own actions. Protect those in your care, and ensure that all authority is just."
+								"You cannot be responsible for others if you cannot hold yourself to account. Protect those in your care, and ensure that all authority is just."
 							]
 						}
 					]
@@ -241,7 +243,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures within 10 feet of you may take the Disengage action as a bonus action."
+				"Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures that start their turn 10 feet of you may take the Disengage action as a bonus action on that turn."
 			]
 		},
 		{
@@ -274,7 +276,7 @@
                     "items": [
                         "Your aura is filled with bright moonlight.",
                         "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
-                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
+                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points or killed within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
                         "Your form cannot be changed against your will."
                     ]
                 },
