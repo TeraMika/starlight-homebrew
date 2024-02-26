@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "json": "Starlight: Conditions",
+                "json": "S: Conditions",
                 "abbreviation": "S: Conditions",
                 "full": "Starlight: Conditions",
                 "color": "dac4ff",
@@ -12,12 +12,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.51",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "Starlight: Items",
+                "json": "S: Items",
                 "abbreviation": "S: Items",
                 "full": "Starlight: Items",
                 "color": "dac4ff",
@@ -27,12 +27,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.52",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "Starlight: Arrows",
+                "json": "S: Arrows",
                 "abbreviation": "S: Arrows",
                 "full": "Starlight: Arrows",
                 "color": "dac4ff",
@@ -42,12 +42,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.51",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "Starlight: Weapons",
+                "json": "S: Weapons",
                 "abbreviation": "S: Weapons",
                 "full": "Starlight: Weapons",
                 "color": "dac4ff",
@@ -57,12 +57,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.55",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "Starlight: Unity",
+                "json": "S: Unity",
                 "abbreviation": "S: Unity",
                 "full": "Starlight: Oath of Unity",
                 "authors": [
@@ -71,12 +71,12 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.51",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708959353.1927896
+        "dateLastModified": 1708959473.3572426
     },
     "condition": [
         {
