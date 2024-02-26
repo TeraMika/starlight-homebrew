@@ -34,7 +34,7 @@
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw or have its AC reduced by 2 until the start of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw against your spell save DC or have its AC reduced by 2 until the start of your next turn."
 			]
 		},
         {
@@ -167,7 +167,7 @@
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, or Aberration, the attack is a critical hit."
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
 			]
 		},
         {
@@ -189,7 +189,7 @@
             "type": "A",
 			"entries": [
                 "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Construct, the attack is a critical hit."
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
 			]
 		},
         {

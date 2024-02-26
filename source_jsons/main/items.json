@@ -431,9 +431,38 @@
             ],
             "entries": [
                 "You have resistance to radiant damage while you are wearing this ring.",
-                "{@b Attunement.} You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
+                        "Once cast, the spell is removed from the bracelet, freeing up the space."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Moon-Touched Bracelet Alt Test",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "resist": 
+            [
+                "radiant"
+            ],
+            "entries": [
+                "You have resistance to radiant damage while you are wearing this ring.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use."
+                    ]
+                },
                 "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
-                "Once cast, the spell is removed from the bracelet, freeing up the spacee."
+                "Once cast, the spell is removed from the bracelet, freeing up the space."
             ]
         },
         {
