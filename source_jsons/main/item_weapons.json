@@ -46,13 +46,42 @@
 			"curse": false,
             "entries": [
                 "You have +1 bonus to attack and damage rolls made with this weapon.",
-                "{@b Attunement.} Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
-                "The sword can be planted in the ground as an action or in place of an attack, where it offers benefits within a radius equal to 5 times your proficiency bonus. Each dawn, you can change the season of Nature's Emissary, which changes the benefit provided.",
-                "{@b Spring Rain.} The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir.",
-                "{@b Fall's Warding.} The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.",
-                "{@b Summer's Glory.} The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes.",
-                "{@b Winter's Watch.} The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there.",
-                "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                        {
+                            "type": "entries",
+                            "name": "Spring's Rain",
+                            "entries": [
+                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Fall's Warding",
+                            "entries": [
+                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Summer's Glory",
+                            "entries": [
+                                "The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Winter's Watch",
+                            "entries": [
+                                "The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
+                            ]
+                        },
+                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                    ]
+                }
             ]
         },
         {
@@ -75,8 +104,14 @@
             "entries": [
                 "This weapon is a polearm.",
                 "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
-                "{@b Attunement.} When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
-                "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
+                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                    ]
+                }
             ]
         },
         {
@@ -120,9 +155,33 @@
 			"curse": false,
             "entries": [
                 "You have a +2 bonus to attack and damage rolls using this weapon.",
-                "{@b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
-                "{@b Threadsplitter.} When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
-                "{@b Eyes of Temporus.} You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Wrath of Time",
+                            "entries": [
+                                "This weapon deals an additional {@dice 1d4} force damage on each attack."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Threadsplitter",
+                            "entries": [
+                                "When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you critically hit, this means that you roll the dice three times, not four."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Eyes of Temporus",
+                            "entries": [
+                                "You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                            ]
+                        }
+                    ]
+                }
             ],
             "attachedSpells": [
                 "true seeing"
@@ -156,7 +215,14 @@
             "wondrous": true,
             "entries": [
                 "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
-                "{@b Attunement.} Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                    ]
+                }
+                
             ]
         },
         {
@@ -191,9 +257,33 @@
             "entries": [
                  "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
                  "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
-                 "{@b Attunement. Clarity.} You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions.",
-                 "{@b Immutable.} You gain a {@dice 1d4} bonus to all saving throws while wearing this armour.",
-                 "{@b Echoes in time.} You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                 {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Clarity",
+                            "entries": [
+                                "You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Immutable",
+                            "entries": [
+                                "You gain a {@dice 1d4} bonus to all saving throws while wearing this armour."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Echoes in time",
+                            "entries": [
+                                "You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]

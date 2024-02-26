@@ -33,7 +33,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw against your spell save DC or have its AC reduced by 2 until the start of your next turn."
 			]
 		},
@@ -44,7 +50,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|S: Arrows|burning}, repeating the saving throw at the end of each of its turns to end the effect."
 			]
 		},
@@ -55,7 +67,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|S: Arrows|hampered} until the start of your next turn."
 			]
 		},
@@ -66,7 +84,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
 			]
 		},
@@ -77,7 +101,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
                 "Huge or larger creatures have advantage on this saving throw."
 			]
@@ -89,7 +119,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
 			]
 		},
@@ -100,7 +136,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
 			]
 		},
@@ -111,7 +153,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, causes the target to {@condition bleeding|S: Arrows|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|S: Arrows}."
 			]
 		},
@@ -122,7 +170,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, the target must make a Constitution saving throw or become {@condition halted|S: Arrows}. On a successful saving throw, they are {@condition slowed|S: Arrows} instead."
 			]
 		},
@@ -133,7 +187,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|S: Arrows}, {@condition disoriented|S: Arrows}, {@condition weakened|S: Arrows}, {@condition bleeding|S: Arrows}, {@condition burning|S: Arrows}, or {@condition shocked|S: Arrows}."
 			]
 		},
@@ -144,7 +204,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|S: Arrows} until the end of their next turn."
 			]
 		},
@@ -155,7 +221,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
 			]
 		},
@@ -166,7 +238,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
 			]
 		},
@@ -177,7 +255,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "On hit, the target takes an additional {@dice 1d4} necrotic damage and must make Constitution saving throw against your spell save DC. On a failed saving throw, they cannot regain any hit points until the start of your next turn."
 			]
 		},
@@ -188,7 +272,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
 			]
 		},
@@ -199,7 +289,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not attack your ability modifier to the damage roll of this attack."
 			]
 		},
@@ -210,7 +306,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "You teleport to where this arrow lands."
 			]
 		},
@@ -221,7 +323,13 @@
 			"wondrous": false,
             "type": "A",
 			"entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
                 "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
 			]
 		}

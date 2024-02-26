@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.25.18.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.19.09",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.19.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.15.23",
+                "version": "2024.02.26.19.17",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,7 +71,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -82,7 +82,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -94,13 +94,13 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708961041.9118657
+        "dateLastModified": 1708975218.905822
     },
     "condition": [
         {
@@ -419,9 +419,16 @@
             "wondrous": false,
             "reqAttune": "optional",
             "type": "RG",
+            "bonusWeaponDamage": "+2",
             "entries": [
                 "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
-                "{@b Attunement.} The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+                    ]
+                }
             ]
         },
         {
@@ -435,7 +442,13 @@
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this ring.",
-                "{@b Attunement.} and +1 to AC."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "and +1 to AC."
+                    ]
+                }
             ]
         },
         {
@@ -448,7 +461,13 @@
             "bonusSavingThrow": "+1",
             "entries": [
                 "You gain a +1 bonus to saving throws while wearing this cloak.",
-                "{@b Attunement.} and +1 to AC."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "and +1 to AC."
+                    ]
+                }
             ]
         },
         {
@@ -507,7 +526,13 @@
             "recharge": "restLong",
             "entries": [
                 "You can fail an additional death saving throw before dying (4 total).",
-                "{@b Attunement.} You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+                    ]
+                }
             ],
             "attachedSpells": [
                 "modify memory",
@@ -522,9 +547,21 @@
             "reqAttune": "optional",
             "entries": [
                 "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
-                "{@b Redirect Fate.} Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
-                "{@b Attunement.} The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
-                "{@b Attunement.} When you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+                {
+                    "type": "entries",
+                    "name": "Redirect Fate.",
+                    "entries": [
+                        "Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
+                        "Additionally, when you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+                    ]
+                }
             ],
             "attachedSpells": [
                 "wish"
@@ -614,30 +651,36 @@
             "recharge": "restLong",
             "entries": [
                 "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
-                "{@b Attunement.} The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
                 {
-                    "type": "table",
-                    "colLabels": [
-                        "Benefit",
-                        "Detriment"
-                    ],
-                    "rows": [
-                        [
-                            "You gain advantage on initiative checks.",
-                            "On your first turn in combat, you are {@condition Slowed|S: Items}."
-                        ],
-                        [
-                            "You gain advantage on Wisdom ability checks.",
-                            "You gain disadvantage on Intelligence ability checks."
-                        ],
-                        [
-                            "You gain advantage on all attacks.",
-                            "You gain disadvantage on all saving throws."
-                        ],
-                        [
-                            "You gain resistance to bludgeoning, piercing and slashing damage.",
-                            "You gain vulnerablity to fire, cold, and lightning damage."
-                        ]
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Benefit",
+                                "Detriment"
+                            ],
+                            "rows": [
+                                [
+                                    "You gain advantage on initiative checks.",
+                                    "On your first turn in combat, you are {@condition Slowed|S: Items}."
+                                ],
+                                [
+                                    "You gain advantage on Wisdom ability checks.",
+                                    "You gain disadvantage on Intelligence ability checks."
+                                ],
+                                [
+                                    "You gain advantage on all attacks.",
+                                    "You gain disadvantage on all saving throws."
+                                ],
+                                [
+                                    "You gain resistance to bludgeoning, piercing and slashing damage.",
+                                    "You gain vulnerablity to fire, cold, and lightning damage."
+                                ]
+                            ]
+                        }
                     ]
                 }
             ]
@@ -684,7 +727,13 @@
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
-                "{@b Attunement.} The bonus is +2 instead."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
             ]
         },
         {
@@ -696,7 +745,13 @@
             "type": "RG",
             "entries": [
                 "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
-                "{@b Attunement.} The bonus is +2 instead."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
             ]
         },
         {
@@ -717,7 +772,13 @@
             "reqAttune": "optional",
             "entries": [
                 "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
-                "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+                    ]
+                }
             ],
             "attachedSpells": [
                 "hunter's mark"
@@ -765,9 +826,14 @@
             ],
             "entries": [
                 "You have resistance to radiant damage while you are wearing this ring.",
-                "{@b Attunement.} You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
-                "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
-                "Once cast, the spell is removed from the bracelet, freeing up the spacee."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it. Once cast, the spell is removed from the bracelet, freeing up the space."
+                    ]
+                }
             ]
         },
         {
@@ -801,7 +867,13 @@
             "entries": [
                 "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
                 "Once used, this cannot be used again until you complete a long rest.",
-                "{@b Attunement.} You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+                    ]
+                }
             ]
         },
         {
@@ -825,7 +897,13 @@
             "rechargeAmount": 5,
             "entries": [
                 "These boots have 5 charges which are recovered upon completing a long rest. Whenever you are moved against your will, you can expend a reaction and one charge to teleport to any space you occupied after the start of your previous turn.",
-                "{@b Attunement.} You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
+                    ]
+                }
             ]
         },
         {
@@ -835,8 +913,14 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw or have its AC reduced by 2 until the start of your next turn."
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw against your spell save DC or have its AC reduced by 2 until the start of your next turn."
             ]
         },
         {
@@ -846,7 +930,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|S: Arrows|burning}, repeating the saving throw at the end of each of its turns to end the effect."
             ]
         },
@@ -857,7 +947,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|S: Arrows|hampered} until the start of your next turn."
             ]
         },
@@ -868,7 +964,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
             ]
         },
@@ -879,7 +981,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
                 "Huge or larger creatures have advantage on this saving throw."
             ]
@@ -891,7 +999,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
             ]
         },
@@ -902,7 +1016,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
             ]
         },
@@ -913,7 +1033,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, causes the target to {@condition bleeding|S: Arrows|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|S: Arrows}."
             ]
         },
@@ -924,7 +1050,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, the target must make a Constitution saving throw or become {@condition halted|S: Arrows}. On a successful saving throw, they are {@condition slowed|S: Arrows} instead."
             ]
         },
@@ -935,7 +1067,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|S: Arrows}, {@condition disoriented|S: Arrows}, {@condition weakened|S: Arrows}, {@condition bleeding|S: Arrows}, {@condition burning|S: Arrows}, or {@condition shocked|S: Arrows}."
             ]
         },
@@ -946,7 +1084,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|S: Arrows} until the end of their next turn."
             ]
         },
@@ -957,7 +1101,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
             ]
         },
@@ -968,8 +1118,14 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, or Aberration, the attack is a critical hit."
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
             ]
         },
         {
@@ -979,7 +1135,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "On hit, the target takes an additional {@dice 1d4} necrotic damage and must make Constitution saving throw against your spell save DC. On a failed saving throw, they cannot regain any hit points until the start of your next turn."
             ]
         },
@@ -990,8 +1152,14 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
-                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Construct, the attack is a critical hit."
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
             ]
         },
         {
@@ -1001,7 +1169,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not attack your ability modifier to the damage roll of this attack."
             ]
         },
@@ -1012,7 +1186,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "You teleport to where this arrow lands."
             ]
         },
@@ -1023,7 +1203,13 @@
             "wondrous": false,
             "type": "A",
             "entries": [
-                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
                 "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
             ]
         },
@@ -1046,13 +1232,42 @@
             "curse": false,
             "entries": [
                 "You have +1 bonus to attack and damage rolls made with this weapon.",
-                "{@b Attunement.} Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
-                "The sword can be planted in the ground as an action or in place of an attack, where it offers benefits within a radius equal to 5 times your proficiency bonus. Each dawn, you can change the season of Nature's Emissary, which changes the benefit provided.",
-                "{@b Spring Rain.} The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir.",
-                "{@b Fall's Warding.} The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.",
-                "{@b Summer's Glory.} The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes.",
-                "{@b Winter's Watch.} The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there.",
-                "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                        {
+                            "type": "entries",
+                            "name": "Spring's Rain",
+                            "entries": [
+                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Fall's Warding",
+                            "entries": [
+                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Summer's Glory",
+                            "entries": [
+                                "The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Winter's Watch",
+                            "entries": [
+                                "The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
+                            ]
+                        },
+                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                    ]
+                }
             ]
         },
         {
@@ -1075,8 +1290,14 @@
             "entries": [
                 "This weapon is a polearm.",
                 "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
-                "{@b Attunement.} When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
-                "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
+                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                    ]
+                }
             ]
         },
         {
@@ -1120,9 +1341,33 @@
             "curse": false,
             "entries": [
                 "You have a +2 bonus to attack and damage rolls using this weapon.",
-                "{@b Attunement.} {@b Wrath of Time.} This weapon deals an additional {@dice 1d4} force damage on each attack.",
-                "{@b Threadsplitter.} When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage twice when determining the attack's damage.",
-                "{@b Eyes of Temporus.} You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Wrath of Time",
+                            "entries": [
+                                "This weapon deals an additional {@dice 1d4} force damage on each attack."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Threadsplitter",
+                            "entries": [
+                                "When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you critically hit, this means that you roll the dice three times, not four."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Eyes of Temporus",
+                            "entries": [
+                                "You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                            ]
+                        }
+                    ]
+                }
             ],
             "attachedSpells": [
                 "true seeing"
@@ -1156,7 +1401,13 @@
             "wondrous": true,
             "entries": [
                 "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
-                "{@b Attunement.} Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                    ]
+                }
             ]
         },
         {
@@ -1191,9 +1442,33 @@
             "entries": [
                 "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
                 "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
-                "{@b Attunement. Clarity.} You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions.",
-                "{@b Immutable.} You gain a {@dice 1d4} bonus to all saving throws while wearing this armour.",
-                "{@b Echoes in time.} You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Clarity",
+                            "entries": [
+                                "You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Immutable",
+                            "entries": [
+                                "You gain a {@dice 1d4} bonus to all saving throws while wearing this armour."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Echoes in time",
+                            "entries": [
+                                "You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
