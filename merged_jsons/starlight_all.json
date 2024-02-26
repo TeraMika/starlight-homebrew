@@ -1,0 +1,1991 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "S: Conditions",
+                "abbreviation": "S: Conditions",
+                "full": "Starlight: Conditions",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "S: Items",
+                "abbreviation": "S: Items",
+                "full": "Starlight: Items",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "S: Arrows",
+                "abbreviation": "S: Arrows",
+                "full": "Starlight: Arrows",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "S: Weapons",
+                "abbreviation": "S: Weapons",
+                "full": "Starlight: Weapons",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
+                "authors": [
+                    "Mika Rae"
+                ],
+                "convertedBy": [
+                    "Mika Rae"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew"
+            },
+            {
+                "json": "SToD: Sunshards",
+                "abbreviation": "SToD: Sunshards",
+                "color": "737373",
+                "full": "Shifting Tides of Delamir: Sunshards",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "SToD: Species",
+                "abbreviation": "SToD: Species",
+                "color": "737373",
+                "full": "Shifting Tides of Delamir: Species",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 1708952724.9701743
+    },
+    "condition": [
+        {
+            "name": "Dazed",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A dazed creature can take an action or a bonus action, but not both. Their movement speed is {@condition Sluggish|S: Conditions}.",
+                        "If a creature becomes dazed during their turn, their turn ends."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Disoriented",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A disoriented creature has its movement {@condition Hampered|S: Conditions} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
+                        "The creature can make only one attack with an action or bonus action, and cannot cast levelled spells."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shocked",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A shocked creature is {@condition incapacitated} and {@condition halted|S: Conditions}.",
+                        "The creature automatically fails Strength and Dexterity saving throws.",
+                        "Attack rolls against the creature have advantage.",
+                        "The condition can be ended on a creature if another creature spends an action or bonus action to help them recover."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weakened",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A weakened creature deals half damage with weapon attacks.",
+                        "Other creatures have advantage on any saving throw they make against a weakened creature or their effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Off-balance",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Attacks against an off-balance creature have advantage, and its attacks have disadvantage.",
+                        "The creature has disadvantage on any checks or saving throws it makes to avoid being forcibly moved or falling prone.",
+                        "The condition ends when a creature takes damage, or misses an attack roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Exposed",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Successful attacks against an exposed creature count as a critical hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Marked",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "Attack rolls against a marked creature have advantage, unless that creature takes the dodge action, which negates this effect and provides disadvantage as normal.",
+                        "Marked can be applied multiple times, denoted as 'Marked (X)', and each marked effect ends after one attack. For example, 'Marked (3)' would last for 3 attacks."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Numb",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A creature can be Numb multiple times.",
+                        "A numb creature loses 5 feet of movement and 1 Charisma for each time it is Numb.",
+                        "If a creature has 0 movement speed or charisma as a result of the numb effect, that creature loses all numb affecting them and becomes {@condition listless|S: Conditions}.",
+                        "If a numb creature does not receive more numb or take damage since its previous turn, and cannot see the source of its numb, it loses one instance of numb at the end of its turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Listless",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and is {@condition halted|S: Conditions}.",
+                        "The condition ends if the listless creature expends inspiration, they take more than 20 damage in one attack, or an ally spends an action to help them recover.",
+                        "When this condition ends, the creature gains two {@condition numb|S: Conditions} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Silenced",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A silenced creature cannot speak, or cast spells requiring verbal components.",
+                        "The creature is immune to thunder damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bleeding",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A creature can be bleeding multiple times.",
+                        "A bleeding creature takes 3 necrotic damage at the start of each of its turns for each instance of bleed it has. It then loses one instance of bleeding.",
+                        "The creature also has disadvantage on Constitution saving throws.",
+                        "The condition is removed by gaining hit points, but not temporary hit points."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sundered",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                "The creature's armour class cannot benefit from armour or shields, but still gains any bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
+            ]
+        },
+        {
+            "name": "Staggered",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                "The creature's armour class cannot be increased by its Dexterity modifier."
+            ]
+        },
+        {
+            "name": "Burning",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "The creature takes 3 fire damage at the start of each of its turns.",
+                        "The creature must spend an action to interact with objects or features of the environment (such as drawing a weapon or opening doors).",
+                        "A creature can also use an action to attempt a DC 10 Medicine check to stop the burning.",
+                        "A creature that is immune to fire damage is immune to this condition. A creature resistant to fire damage has advantage on any saving throws against it."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hampered",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A hampered creature's movement speed is reduced by 10 feet. This applies to all of its movement speeds unless specified otherwise.",
+                        "This can be applied multiple times, combining the speed reduction, but not from the same source."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Slowed",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                "A slowed creature's movement speed is reduced by half."
+            ]
+        },
+        {
+            "name": "Sluggish",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                "A sluggish creature's movement speed is 10 feet."
+            ]
+        },
+        {
+            "name": "Halted",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                "A halted creature's movement speed is 0 feet."
+            ]
+        },
+        {
+            "name": "Dying",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "If you start your turn while Dying, you roll a death saving throw as per the PHB rules. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
+                        "You are prone and cannot get up.",
+                        "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Withering",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A Withering creature cannot regain hit points by any means and its movement is {@condition Hampered|S: Conditions}.",
+                        "The creature takes 2d8 necrotic damage as it receives the condition, and a further 1 necrotic damage each hour.",
+                        "The condition can be removed via Greater Restoration or a more powerful healing spell (Such as {@spell Heal|phb}, {@spell Regenerate|phb}, or {@spell Power Word Heal|phb}). Alternatively, {@spell Lesser Restoration|phb} can be used if the caster succeeds a DC 15 ability check with their spellcasting ability (expending the slot regardless).",
+                        "Typically, this condition is reserved for Darkiron, a material found in (but not native to) Neverwhere. At the DM's discretion, other effects may apply this condition, but with easier removal and/or greater damage."
+                    ]
+                }
+            ]
+        }
+    ],
+    "item": [
+        {
+            "name": "Necklace of Bitter Tears",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Whenever you regain hit points while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
+            ]
+        },
+        {
+            "name": "Bracers of Extreme Evocation",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
+                {
+                    "type": "list",
+                    "items": [
+                        "If the spell requires an attack roll, take a -5 penalty to that roll.",
+                        "If it requires a saving throw, targets have advantage on that saving throw."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gloves of Benign Transposition",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them."
+            ]
+        },
+        {
+            "name": "Gloves of Malicious Transposition",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 3,
+            "recharge": "restLong",
+            "entries": [
+                "These gloves have 3 charges, which are restored when you complete a long rest. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
+            ]
+        },
+        {
+            "name": "Ring of Mana Channeling",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "RG",
+            "entries": [
+                "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
+                "{@b Attunement.} The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+            ]
+        },
+        {
+            "name": "Ring of Protection",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": true,
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
+            "type": "RG",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this ring.",
+                "{@b Attunement.} and +1 to AC."
+            ]
+        },
+        {
+            "name": "Cloak of Protection",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this cloak.",
+                "{@b Attunement.} and +1 to AC."
+            ]
+        },
+        {
+            "name": "A Promise Made",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
+            "rechargeAmount": 1,
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Kept|S: Items}, which recovers when you complete a long rest.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
+            ]
+        },
+        {
+            "name": "A Promise Kept",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
+            "rechargeAmount": 1,
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Made|S: Items}, which recovers each when you complete a long rest.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
+            ],
+            "attachedSpells": [
+                "unshakeable tail",
+                "warding bond",
+                "sanctuary"
+            ]
+        },
+        {
+            "name": "Circlet of Storytelling",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Stories you tell gain a subtle effect to make them more compelling.",
+                "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
+            ]
+        },
+        {
+            "name": "Astral Teardrop",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                "{@b Attunement.} You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+            ],
+            "attachedSpells": [
+                "modify memory",
+                "enervation"
+            ]
+        },
+        {
+            "name": "Fate's Pendant",
+            "source": "S: Items",
+            "rarity": "legendary",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
+                "{@b Redirect Fate.} Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result.",
+                "{@b Attunement.} The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
+                "{@b Attunement.} When you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+            ],
+            "attachedSpells": [
+                "wish"
+            ]
+        },
+        {
+            "name": "Soulful Rook Chesspiece",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Queen Chesspiece",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
+                "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Bishop Chesspiece",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
+                "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Knight Chesspiece",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|S: Items|Hampers} your target's movement until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Quickstep Boots",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
+            ]
+        },
+        {
+            "name": "Eye of the 10-eyed Wyrm",
+            "source": "S: Items",
+            "rarity": "very rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "charges": 2,
+            "recharge": "restLong",
+            "entries": [
+                "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
+                "{@b Attunement.} The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Benefit",
+                        "Detriment"
+                    ],
+                    "rows": [
+                        [
+                            "You gain advantage on initiative checks.",
+                            "On your first turn in combat, you are {@condition Slowed|S: Items}."
+                        ],
+                        [
+                            "You gain advantage on Wisdom ability checks.",
+                            "You gain disadvantage on Intelligence ability checks."
+                        ],
+                        [
+                            "You gain advantage on all attacks.",
+                            "You gain disadvantage on all saving throws."
+                        ],
+                        [
+                            "You gain resistance to bludgeoning, piercing and slashing damage.",
+                            "You gain vulnerablity to fire, cold, and lightning damage."
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessed Circlet",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
+            ]
+        },
+        {
+            "name": "Career Student's Ring",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "entries": [
+                "While wearing this ring, you can add half of your proficiency bonus to any any skill in which you are not already proficient.",
+                "{@note This does not combine with the Bard's 'Jack of All Trades' feature, or other similar features.}"
+            ]
+        },
+        {
+            "name": "Forgotten Green Hood",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
+                "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
+            ]
+        },
+        {
+            "name": "Friend of Arcanists",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "RG",
+            "entries": [
+                "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                "{@b Attunement.} The bonus is +2 instead."
+            ]
+        },
+        {
+            "name": "Friend of Nature",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "RG",
+            "entries": [
+                "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "{@b Attunement.} The bonus is +2 instead."
+            ]
+        },
+        {
+            "name": "Hunter's Shawl",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
+            ]
+        },
+        {
+            "name": "Hunter's Hood",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
+                "{@b Attunement.} You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+            ],
+            "attachedSpells": [
+                "hunter's mark"
+            ]
+        },
+        {
+            "name": "Hunter's Boots",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
+            ]
+        },
+        {
+            "name": "Hunter's Bracers",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
+            ]
+        },
+        {
+            "name": "Hunter's Ring",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
+            ]
+        },
+        {
+            "name": "Moon-Touched Bracelet",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "You have resistance to radiant damage while you are wearing this ring.",
+                "{@b Attunement.} You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it.",
+                "Once cast, the spell is removed from the bracelet, freeing up the spacee."
+            ]
+        },
+        {
+            "name": "Arrow of Acid",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw or have its AC reduced by 2 until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Fire",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|S: Arrows|burning}, repeating the saving throw at the end of each of its turns to end the effect."
+            ]
+        },
+        {
+            "name": "Arrow of Ice",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|S: Arrows|hampered} until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Lightning",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
+            ]
+        },
+        {
+            "name": "Arrow of Thunder",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
+                "Huge or larger creatures have advantage on this saving throw."
+            ]
+        },
+        {
+            "name": "Arrow of Gravity",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
+            ]
+        },
+        {
+            "name": "Arrow of Piercing",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
+            ]
+        },
+        {
+            "name": "Arrow of Wounding",
+            "source": "S: Arrows",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, causes the target to {@condition bleeding|S: Arrows|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|S: Arrows}."
+            ]
+        },
+        {
+            "name": "Arrow of Maiming",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target must make a Constitution saving throw or become {@condition halted|S: Arrows}. On a successful saving throw, they are {@condition slowed|S: Arrows} instead."
+            ]
+        },
+        {
+            "name": "Arrow of Curing",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|S: Arrows}, {@condition disoriented|S: Arrows}, {@condition weakened|S: Arrows}, {@condition bleeding|S: Arrows}, {@condition burning|S: Arrows}, or {@condition shocked|S: Arrows}."
+            ]
+        },
+        {
+            "name": "Arrow of Disruption",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|S: Arrows} until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Darkness",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
+            ]
+        },
+        {
+            "name": "Arrow of Lesser Slaying",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, or Aberration, the attack is a critical hit."
+            ]
+        },
+        {
+            "name": "Arrow of Weeping",
+            "source": "S: Arrows",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "On hit, the target takes an additional {@dice 1d4} necrotic damage and must make Constitution saving throw against your spell save DC. On a failed saving throw, they cannot regain any hit points until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Greater Slaying",
+            "source": "S: Arrows",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Construct, the attack is a critical hit."
+            ]
+        },
+        {
+            "name": "Arrow of Recurving",
+            "source": "S: Arrows",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not attack your ability modifier to the damage roll of this attack."
+            ]
+        },
+        {
+            "name": "Arrow of Relocation",
+            "source": "S: Arrows",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "You teleport to where this arrow lands."
+            ]
+        },
+        {
+            "name": "Arrow of Explosives",
+            "source": "S: Arrows",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                "{@b Magic Ammunition.} This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below.",
+                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
+            ]
+        },
+        {
+            "name": "Nature's Emissary",
+            "source": "S: Weapons",
+            "baseItem": "shortsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "rare",
+            "bonusWeapon": "+1",
+            "weight": 2,
+            "reqAttune": true,
+            "curse": false,
+            "entries": [
+                "You have +1 bonus to attack and damage rolls made with this weapon.",
+                "{@b Attunement.} Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                "The sword can be planted in the ground as an action or in place of an attack, where it offers benefits within a radius equal to 5 times your proficiency bonus. Each dawn, you can change the season of Nature's Emissary, which changes the benefit provided.",
+                "{@b Spring Rain.} The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir.",
+                "{@b Fall's Warding.} The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.",
+                "{@b Summer's Glory.} The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes.",
+                "{@b Winter's Watch.} The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there.",
+                "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+            ]
+        },
+        {
+            "name": "Protector's Naginata",
+            "source": "S: Weapons",
+            "baseItem": "Glaive|phb",
+            "type": "M",
+            "weight": 5,
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "R",
+                "2H"
+            ],
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "rarity": "common",
+            "reqAttune": true,
+            "curse": false,
+            "entries": [
+                "This weapon is a polearm.",
+                "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
+                "{@b Attunement.} When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
+                "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+            ]
+        },
+        {
+            "name": "Sentinel's Rapier",
+            "source": "S: Weapons",
+            "baseItem": "rapier|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "rarity": "uncommon",
+            "bonusWeapon": "+1",
+            "weight": 2,
+            "reqAttune": false,
+            "curse": false,
+            "entries": [
+                "You have a +1 bonus to attack and damage rolls using this weapon.",
+                "You gain a +1 bonus to initiative rolls.",
+                "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+            ]
+        },
+        {
+            "name": "Clovehoof Armour",
+            "source": "S: Weapons",
+            "type": "MA",
+            "rarity": "rare",
+            "reqAttune": false,
+            "curse": false,
+            "weight": 30,
+            "ac": 15,
+            "dexterityMax": null,
+            "stealth": true,
+            "entries": [
+                "Made from unusual fey materials, this armour is very light while still offering incredible protection. However, it is not more subtle than other similar armours.",
+                "You can add your full Dexterity modifier to your AC when wearing this medium armour."
+            ]
+        },
+        {
+            "name": "Dragonspirit Robes",
+            "source": "S: Weapons",
+            "baseItem": "robes|phb",
+            "type": "OTH",
+            "rarity": "rare",
+            "reqAttune": true,
+            "weight": 3,
+            "curse": false,
+            "wondrous": true,
+            "entries": [
+                "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
+                "{@b Attunement.} Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+            ]
+        },
+        {
+            "name": "Vest of the Optimist",
+            "source": "S: Weapons",
+            "baseItem": "studded leather armor|PHB",
+            "type": "LA",
+            "rarity": "rare",
+            "reqAttune": false,
+            "ac": 12,
+            "bonusAc": "2",
+            "curse": false,
+            "weight": 10,
+            "entries": [
+                "You have a +2 bonus to AC while wearing this armour.",
+                "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+            ]
+        },
+        {
+            "name": "Spell-Storing Sunshard",
+            "source": "SToD: Sunshards",
+            "rarity": "unknown (magic)",
+            "wondrous": true,
+            "entries": [
+                "This sunshard may have a short description related to its contained spell.",
+                "This sunshard contains a spell, which will also influence its colour, and rarity. For example, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells. But this could vary by the specific spell.",
+                "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components. Typical rarities of the shards can be seen below.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Spell contained",
+                        "Typical rarity"
+                    ],
+                    "rows": [
+                        [
+                            "Levels 1 and 2",
+                            "Common"
+                        ],
+                        [
+                            "Levels 3 and 4",
+                            "Uncommon"
+                        ],
+                        [
+                            "Levels 5 and 6",
+                            "Rare"
+                        ],
+                        [
+                            "Levels 7 and 8",
+                            "Very rare"
+                        ],
+                        [
+                            "Level 9",
+                            "Legendary"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Red Sunshard of Recovery",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is empowered with positive energy, and hums quietly at all times.",
+                "As a bonus action, you can draw the power from the shard and direct it at a creature within 60 feet of you. For the next minute, that creature regains 2 hit points at the start of each of its turns."
+            ]
+        },
+        {
+            "name": "Red Sunshard of Bursting",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is positively bursting at the seams, and its edges glow brighter than the rest.",
+                "As an action, you can crush this shard in your hand to release the energy stored within it. Every creature within 10 feet of you gains {@dice 1d4+3} hit points. If they are below one quarter of their hit point maximum, this healing is doubled."
+            ]
+        },
+        {
+            "name": "Red Sunshard of Purity",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard makes you feel calmer when you hold it.",
+                "As an action, you take the power from the shard and emit a brilliant aura with a radius of 20 feet for one minute. Allies within the aura have advantage on Wisdom saving throws. Additionally, you can choose one of the following effects, which require your concentration:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You may spend a bonus action on each of your turns to restore {@dice 2d4} hitpoints to a creature of your choice within the aura.",
+                        "Any creature of your choice within the aura gains the maximum possible number of hit points from any healing."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Ignition",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This orange sunshard is warm to the touch.",
+                "As a bonus action, you can shatter the sunshard in your grip, setting yourself alight with warding flame. Any creature that hits you with a melee attack in the next minute suffers {@dice 1d4} fire damage in retaliation. Additionally, you can set any flammable objects you touch ablaze, and you emit 10 feet of bright light and a further 10 feet of dim light."
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Eruption",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard rumbles and shakes in your hands, causing a mild discomfort over time.",
+                "As an action, you can cause an opaque wall of fire to erupt from the ground at a point within 30 feet of you. The wall is 1 foot thick, 20 feet long, and lasts until the end of your next turn.",
+                "Any creatures within its space must make a DC 14 Dexterity saving throw or take {@dice 4d8} fire damage. Any creature who enters the wall for the first time on a turn or ends their turn there takes the same damage."
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Searing",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard leaves faint marks on your hand if held for ten minutes, which swirl slowly in place until fading over a few minutes.",
+                "As a bonus action, you can expend this sunshard's power, forcing a creature within 60 feet of you to make a DC 15 Constitution saving throw.",
+                "On a failed save, the creature is marked for one hour. They cannot benefit from invisibility, emit 5 feet of bright light and a further 5 feet of dim light.",
+                "When the creature is marked, choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target loses resistance to that damage type, and once per turn when they take damage of the chosen type, takes an additional {@dice 1d8} damage of the chosen type."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Dim Light",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": false,
+            "entries": [
+                "This small sunshard is imbued with ambient energy and glows with 10 feet of dim light at all times.",
+                "As an action, you can cause this sunshard to shine as brightly as a {@item torch|phb} for one hour. After that time, roll a {@dice d20}. On a roll of 1, it burns out, otherwise it returns to its ambient magic at the next dawn."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Searing Radiance",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This small sunshard is painful to look at for an extended period of time.",
+                "As an action, you can eject the light from the sunshard in a flash of brilliance. Roll {@dice 2d6}. Any hostile creatures within 30 feet of you must succeed a DC 12 Constitution saving throw or be blinded for one turn and take that much damage. You gain that many temporary hit points."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Positive Force",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard emits 5 feet of bright daylight, and a further 5 feet of dim light, at all times.",
+                "As an action, you can emit a beam of pure positive energy forward. Any creatures of your choice in a 60-foot long, 5-foot wide line must make a DC 15 Constitution saving throw or be {@condition blinded} until the start of your next turn, and take {@dice 8d6} radiant damage. On a successful save, they take half as much damage and are not blinded. Undead have disadvantage on the saving throw.",
+                "Any other creatures of your choice regain {@dice 4d8} hit points."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Erupting Earth",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is quite heavy, and can be treated as a simple melee weapon, which is magical and does {@dice 1d4} bludgeoning damage.",
+                "As an action, you can throw the sunshard a distance in feet up to 3 times your strength score. If it lands on solid ground, the earth beneath it erupts upwards in a 15 foot cube centred on it.",
+                "Any creature within that space is pushed to the nearest side and takes {@dice 3d8} bludgeoning damage, and the cube is filled with nine walls of earth and stone.",
+                "Each wall occupies a 5 foot square and is 15 feet tall, has AC 15 and 35 hit points.",
+                "If a generated wall would not fit within the space, it is not summoned."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Lesser Air",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This crystal has a faint and gentle green hue; inside it slowly swirls a small cloud",
+                "As an action, you can expend the magic in the shard, casting the {@spell gust of wind} spell, concentrating on it as normal. Alternatively, you can store the magic within yourself: for up to an hour, while you do this you do not need to breathe.",
+                "Ending this early (for example, to speak) offers you no other benefit. Expending the magic leaves the shard empty and dull."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Unnatural Growth",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "Leaves and blossom occasionally grow on the outside of this sunshard, which bloom into small lotuses after a day.",
+                "As an action, you can draw the power from this sunshard to within yourself, gaining the following benefits for 2 hours:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can talk to plants, as with the {@spell speak with plants} spell.",
+                        "You can cause a plant to grow extremely rapidly, for example, turning a sapling into a tree, or a tree branch into a solid walkway. It takes one minute to cause something to grow 30 feet, which requires your action to do each turn, as if casting a spell. You cannot grow the same object more than once.",
+                        "You can cast the {@spell plant growth} spell once without expending a spell slot, and you know the spell for the duration.",
+                        "You can cast the {@spell guardian of nature} once without expending a spell slot, and you know the spell for the duration."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Energising",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard crackles delicately in your hand, as small sparks of lightning jolt between its vertices.",
+                "As a bonus action, you can crush this sunshard in your hands to immediately gain the benefits of a Short Rest, and one level of exhaustion."
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Javelin Lightning",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard gives anyone who touches it a static shock, if it hasn't been held for more than one minute. A creature resistant to lightning damage does not receive this shock.",
+                "When you take the attack action on your turn, you can replace one of your attacks with an attack with this sunshard, if you are holding it or able to draw it. The sunshard deals {@dice 4d8} lightning damage on a hit and has the finesse, light, and thrown properties (range 60/120).",
+                "If the target is made of or wearing metal, you have advantage on the attack roll. On a hit, the target must make a DC 15 Constitution saving throw. On a failed save, they are stunned until the start of your next turn. On a miss, the following effect still applies, centred on the target.",
+                "Additionally, any creatures within 20 feet of the target must make a DC 15 Dexterity saving throw. On a failed save, they take {@dice 2d8} lightning damage, or half as much on a successful one.",
+                "Once used, the sunshard is expended and reduced to nothingness. If the attack was a miss, the sunshard remains, empty, and you can attempt a DC 20 Intelligence, Wisdom or Charisma (your choice) check to restore its magic. On a fail, the magic is lost permanently."
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Stormcalling",
+            "source": "SToD: Sunshards",
+            "rarity": "very rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard naturally draws lightning and electricity towards itself. While it is on your person, you have disadvantage on saving throws you make against effects that deal lightning damage.",
+                "As a ten-minute ritual, you can change the weather outside to thunderstorms, regardless of what it was initially, which will persist for one day.",
+                "After casting this ritual, you gain resistance to lightning and thunder damage, or immunity to those damage types if you are already resistant.",
+                "You can cast {@spell Call Lightning} at will, so long as you are outside under the storm you summoned. Once the storm ends, you lose this ability."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Projection",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "",
+                "As an action, you can break this sunshard to summon a protective ward for you and your allies. The ward has hit points equal to twice your level plus your intelligence modifier. Whenever you take damage, the ward takes it instead. If this damage reduces the ward to zero hit points, the damage is lost.",
+                "While the ward is active, you can spend a reaction to reduce the damage taken by a creature of your choice within 30 feet of you, with the ward taking the damage instead."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Fuelling",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard feels as though it is filled with sand or dust, though visibly it is solid crystal.",
+                "This sunshard can be used to replace 50gp of material spell components for any spell, or for a material component with no listed cost that you do not possess. It can be used in this way only once, upon which it will disappear, being replaced with a fine-grained indigo dust."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Warding",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "It is difficult to hold this sunshard: as if two opposing magnets were placed in it and your hand.",
+                "As a reaction, you can crush this sunshard to negate the effect of one attack or spell entirely, so long as it targets only you, and if the attacker is within 10 feet of you, push them 10 feet in a direction of your choice."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Repulsion",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This violet sunshard is surprisingly heavy for its size.",
+                "As an action, you can expel the magic from this shard. A burst of force erupts from the shard and detonates at a point you can see within 30 feet. Each creature within 10 feet of that point must make a DC 14 Strength saving throw or take {@dice 2d8} force damage and be moved 10 feet away from the detonation point. On a successful save, they take half the damage and are not moved."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Grounding",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard weighs more the higher it is from the ground.",
+                "As a bonus action, you can throw this sunshard to a point within 30 feet of you, shattering it and creating an area with a radius of 15 feet. Any creatures within the area have their movement speed halved, and take {@dice 2d6} force damage at the end of their turn if they remain in the area.",
+                "If any creatures are airborne when this area is generated, they must make a DC 14 Strength saving throw or be pulled down to the ground, taking twice as much fall damage."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Altered Gravity",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The weight of this sunshard depends on your mood.",
+                "You may spend an action, and this sunshard, to target a creature within 30 feet of you. That target must succeed a DC 13 Charisma saving throw or their gravity be altered in one of the following ways.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Their gravity becomes heavy. They cannot jump, their movement speed is halved, and they have disadvantage on dexterity checks and saving throws. Additionally, they take twice as much damage from falling.",
+                        "Their gravity becomes light. Their jump height is doubled, forced movement affects them twice as strongly, and they have disadvantage on strength checks and saving throws. Additionally, they take half as much damage from falling."
+                    ]
+                },
+                "The creature can repeat the saving throw at the end of each of its turns, ending it on a success."
+            ]
+        },
+        {
+            "name": "White Sunshard of Deferred Action",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard moves half a second after you move it.",
+                "As an action, you can crush this sunshard in your hand. The temporal sand it turns into slows you, ending your turn. Next turn, you may take an additional action, or an additional bonus action."
+            ]
+        },
+        {
+            "name": "White Sunshard of Held Energy",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "The visual position of the sunshard only changes when its owner blinks. The sunshard otherwise remains with you at all times.",
+                "As a reaction, you can direct the shard's power towards an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect, at which point it will occur targeting the same area as it originally did. You must release the effect before the end of your next turn.",
+                "The effect is released early if the target point has total cover from you, or if you are {@condition incapacitated} or die."
+            ]
+        },
+        {
+            "name": "White Sunshard of Skipped Time",
+            "source": "SToD: Sunshards",
+            "rarity": "legendary",
+            "wondrous": true,
+            "entries": [
+                "On your turn, you may draw the power from this shard (no action required) to leave time temporarily. Other creatures act as if you are still there while you are gone. Any time before the end of your next turn, you may reenter the timestream.",
+                "While you are out of the timestream, you cannot take damage, you can move freely in any direction, and you may choose to end any conditions affecting you. However, you cannot damage or affect other creatures in any way.",
+                "At a point of your choosing, you can interrupt another creature's turn, appearing in a place of your choice that is within your movement speed and taking an additional turn then. When you interrupt a creature, that creature is {@condition Marked|Starlight|Marked (4)} and {@condition Exposed|Starlight} until the end of your turn, as they are surprised by your sudden appearance.",
+                "If you have not interrupted a creature before the start of your next turn, you reenter time then in a space of your choice and take your time as normal."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Absorption",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "When unwell, the shard is physically difficult to remove from your hand.",
+                "As an action, you can draw any toxins within yourself into this crystal. You can end any number of poisons or diseases affecting you. For the next hour, you have resistance to poison damage."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Clouding",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard constantly emits wisps of dark smoke.",
+                "As an action, you can crush this shard in your hands, and cast {@spell Darkness|phb|}, targeted on yourself. Alternatively, you can throw the shard at a point within 20 feet for the same effect, targeted where it lands.",
+                "Any creature that starts or ends its turn in the darkness must make a DC 14 Constitution saving throw or become {@condition poisoned} until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Crippling",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard always appears as its own silhouette.",
+                "As an action, you can crush this shard in your hands and direct its energy at a creature within 60 feet. That creature must make a DC 16 Constitution saving throw or take {@dice 8d8|} necrotic damage and become {@condition dazed|Starlight} until the end of their next turn. On a successful save, they take half the damage and are not dazed.",
+                "Until the target takes a short rest, their movement speed is halved, and they cannot recover any hit points, including as part of the short rest."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Oath of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "shortName": "Unity",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "Sanctuary",
+                            "Protection from Evil and Good"
+                        ],
+                        "5": [
+                            "Moonbeam",
+                            "Warding Bond"
+                        ],
+                        "9": [
+                            "Beacon of Hope",
+                            "Spirit Guardians"
+                        ],
+                        "13": [
+                            "Death Ward",
+                            "Guardian of Faith"
+                        ],
+                        "17": [
+                            "Circle of Power",
+                            "Dispel Evil and Good"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Unity|Paladin|PHB|Unity|Starlight|3",
+                "Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
+                "Resilient Spirit|Paladin|PHB|Unity|Starlight|15",
+                "Champion of the People|Paladin|PHB|Unity|Starlight|20"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Oath of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Unity|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Guardian Angel|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Rallying Cry|Paladin|PHB|Unity|Starlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Guardian Angel",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                " As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them with the power of your belief, surrounding them in an invulnerable barrier until the start of your next turn and preventing the triggering damage. If the protected creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, the effect ends."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Rallying Cry",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, bolstering your allies with determination.\nYou can use your Channel Divinity to choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum bonus of one), and an additional 15 feet of movement speed."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "You gain oath spells at the paladin levels listed in the Oath of Unity Spells table.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Unity Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Sanctuary}, {@spell Protection from Evil and Good}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Moonbeam}, {@spell Warding Bond}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Beacon of Hope}, {@spell Spirit Guardians}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Death Ward}, {@spell Guardian of Faith}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power}, {@spell Dispel Evil and Good}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The Oath of unity is a vow taken to protect the ideals of community and the people within it. They seek to protect the people from evil, as the selfish can never truly be united. This often extends to powers and beings from other planes, who would seek to take aspects of the material plane for their own. The imagery of a paladin under this oath may take the shape of wings, as a protector or guardian angel, working together to protect people from the horrors that would tear them and their kingdoms apart.",
+                "You may have received your calling during a moment of heroism, or a moment of vulnerability, in the service or protection of others. Or perhaps you heard a voice on the wind, under a full moon. However this oath came to you, you value the safety of others above all, and seek to put down selfishness in all its forms.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Community",
+                            "entries": [
+                                "The people need you. Be their shield."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Courage",
+                            "entries": [
+                                "Bravery is not the absence of fear, but acting in spite of it."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Honour",
+                            "entries": [
+                                "Be fair and just. Your actions are your deeds. Avoid harm, but do not let that get in the way of doing good."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Tolerance",
+                            "entries": [
+                                "Intolerance cannot be tolerated. People may exist as they are, unless they threaten the peace of others. To stay neutral is to side with the oppressor."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Integrity",
+                            "entries": [
+                                "You cannot be responsible for a community if you cannot accept your own actions. Protect those in your care, and ensure that all authority is just."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Coordination",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures within 10 feet of you may take the Disengage action as a bonus action."
+            ]
+        },
+        {
+            "name": "Resilient Spirit",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Beginning at 15th level, your presence is a stronghold. Each friendly creature within your Aura of Coordination regains hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns, to a total no higher than your paladin level."
+            ]
+        },
+        {
+            "name": "Champion of the People",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, your presence becomes a terror to enemies who stand against you, and you become a beacon of hope to your allies. As an action, you transform, becoming a shining beacon of unity for your allies to rally around. You may be surrounded by swirling sigils and sparkling moonlight.",
+                "During the transformation, you gain the following features for ten minutes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your aura is filled with bright moonlight.",
+                        "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
+                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
+                        "Your form cannot be changed against your will."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        }
+    ],
+    "race": [
+        {
+            "name": "Riftborn Lacertal",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M",
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": 30
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": {
+                            "_": [
+                                {
+                                    "choose": "level=0|group=primal"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "The Lacertal are a simple folk. Living peaceful lives in another plane. When the rifts appeared, this changed dramatically, and while they steer clear sometimes fate determine that one makes their way in, willfully or not.",
+                            "Few survive the journey: going up is much harder than going down. Those that do rarely remember anything, especially if they are young, and none so far have made it to civilisation meaningfully. The lacertal learned to steer clear long ago, and even with only primitive communication warnings of the rift are passed through generations.",
+                            "Of course, this doesn't stop any particularly foolhardy, sneaky, and curious lacertal from entering anyway. However they end up in the rift, it is likely to change them in ways that make them hard to recognise back home."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Winged Form",
+                    "entries": [
+                        "You have a flying speed equal to your movement speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Malformed Wings",
+                    "entries": [
+                        "You fall at the end of your turn if you are airborne and the only thing holding you aloft is your flying speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rift Magic Exposure",
+                    "page": 8,
+                    "entries": [
+                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter druid spell list|spells|level=0|class=Druid}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Druid Spell list.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "page": 8,
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} Skill."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tempestborn",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "lightning",
+                "thunder"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "light#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Tempestborn Resistance",
+                    "entries": [
+                        "You have resistance to lightning damage and thunder damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Healing Hands",
+                    "entries": [
+                        "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Bearer",
+                    "entries": [
+                        "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fulgur's Fury",
+                    "entries": [
+                        "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
+                        "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+                        "Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "anyStandard": 1
+                }
+            ]
+        },
+        {
+            "name": "Elf (Profane)",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "fire",
+                "poison"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "hellish rebuke#2"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "thaumaturgy#c"
+                        ]
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
+                            "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
+                            "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Heritage",
+                    "entries": [
+                        "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Magics",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} skill."
+                    ]
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+                        "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "abyssal": true,
+                    "anyStandard": 1
+                }
+            ]
+        }
+    ]
+}

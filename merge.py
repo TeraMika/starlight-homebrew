@@ -38,7 +38,7 @@ def write_to_file(filename, data):
 
 # Get file lists
 main_files = glob.glob("source_jsons/main/*.json")
-campaign_files = glob.glob("source/jsons/campaign/*.json")
+campaign_files = glob.glob("source_jsons/campaign/*.json")
 all_files = main_files + campaign_files
 
 # Get data and write

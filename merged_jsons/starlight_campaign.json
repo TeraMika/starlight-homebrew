@@ -1,0 +1,667 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "SToD: Sunshards",
+                "abbreviation": "SToD: Sunshards",
+                "color": "737373",
+                "full": "Shifting Tides of Delamir: Sunshards",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "SToD: Species",
+                "abbreviation": "SToD: Species",
+                "color": "737373",
+                "full": "Shifting Tides of Delamir: Species",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2024.02.26.12.54",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateLastModified": 1708952724.939979
+    },
+    "item": [
+        {
+            "name": "Spell-Storing Sunshard",
+            "source": "SToD: Sunshards",
+            "rarity": "unknown (magic)",
+            "wondrous": true,
+            "entries": [
+                "This sunshard may have a short description related to its contained spell.",
+                "This sunshard contains a spell, which will also influence its colour, and rarity. For example, an indigo sunshard could contain any arcane (wizard) spell, yellow for divine (cleric, paladin), and green for primal (druid/ranger) spells. But this could vary by the specific spell.",
+                "A spell cast through a sunshard is treated as if it was cast by the person wielding the sunshard, including concentration but excluding other requirements for the spell, such as material components. Typical rarities of the shards can be seen below.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Spell contained",
+                        "Typical rarity"
+                    ],
+                    "rows": [
+                        [
+                            "Levels 1 and 2",
+                            "Common"
+                        ],
+                        [
+                            "Levels 3 and 4",
+                            "Uncommon"
+                        ],
+                        [
+                            "Levels 5 and 6",
+                            "Rare"
+                        ],
+                        [
+                            "Levels 7 and 8",
+                            "Very rare"
+                        ],
+                        [
+                            "Level 9",
+                            "Legendary"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Red Sunshard of Recovery",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is empowered with positive energy, and hums quietly at all times.",
+                "As a bonus action, you can draw the power from the shard and direct it at a creature within 60 feet of you. For the next minute, that creature regains 2 hit points at the start of each of its turns."
+            ]
+        },
+        {
+            "name": "Red Sunshard of Bursting",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is positively bursting at the seams, and its edges glow brighter than the rest.",
+                "As an action, you can crush this shard in your hand to release the energy stored within it. Every creature within 10 feet of you gains {@dice 1d4+3} hit points. If they are below one quarter of their hit point maximum, this healing is doubled."
+            ]
+        },
+        {
+            "name": "Red Sunshard of Purity",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard makes you feel calmer when you hold it.",
+                "As an action, you take the power from the shard and emit a brilliant aura with a radius of 20 feet for one minute. Allies within the aura have advantage on Wisdom saving throws. Additionally, you can choose one of the following effects, which require your concentration:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You may spend a bonus action on each of your turns to restore {@dice 2d4} hitpoints to a creature of your choice within the aura.",
+                        "Any creature of your choice within the aura gains the maximum possible number of hit points from any healing."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Ignition",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This orange sunshard is warm to the touch.",
+                "As a bonus action, you can shatter the sunshard in your grip, setting yourself alight with warding flame. Any creature that hits you with a melee attack in the next minute suffers {@dice 1d4} fire damage in retaliation. Additionally, you can set any flammable objects you touch ablaze, and you emit 10 feet of bright light and a further 10 feet of dim light."
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Eruption",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard rumbles and shakes in your hands, causing a mild discomfort over time.",
+                "As an action, you can cause an opaque wall of fire to erupt from the ground at a point within 30 feet of you. The wall is 1 foot thick, 20 feet long, and lasts until the end of your next turn.",
+                "Any creatures within its space must make a DC 14 Dexterity saving throw or take {@dice 4d8} fire damage. Any creature who enters the wall for the first time on a turn or ends their turn there takes the same damage."
+            ]
+        },
+        {
+            "name": "Orange Sunshard of Searing",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard leaves faint marks on your hand if held for ten minutes, which swirl slowly in place until fading over a few minutes.",
+                "As a bonus action, you can expend this sunshard's power, forcing a creature within 60 feet of you to make a DC 15 Constitution saving throw.",
+                "On a failed save, the creature is marked for one hour. They cannot benefit from invisibility, emit 5 feet of bright light and a further 5 feet of dim light.",
+                "When the creature is marked, choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target loses resistance to that damage type, and once per turn when they take damage of the chosen type, takes an additional {@dice 1d8} damage of the chosen type."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Dim Light",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": false,
+            "entries": [
+                "This small sunshard is imbued with ambient energy and glows with 10 feet of dim light at all times.",
+                "As an action, you can cause this sunshard to shine as brightly as a {@item torch|phb} for one hour. After that time, roll a {@dice d20}. On a roll of 1, it burns out, otherwise it returns to its ambient magic at the next dawn."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Searing Radiance",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This small sunshard is painful to look at for an extended period of time.",
+                "As an action, you can eject the light from the sunshard in a flash of brilliance. Roll {@dice 2d6}. Any hostile creatures within 30 feet of you must succeed a DC 12 Constitution saving throw or be blinded for one turn and take that much damage. You gain that many temporary hit points."
+            ]
+        },
+        {
+            "name": "Yellow Sunshard of Positive Force",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard emits 5 feet of bright daylight, and a further 5 feet of dim light, at all times.",
+                "As an action, you can emit a beam of pure positive energy forward. Any creatures of your choice in a 60-foot long, 5-foot wide line must make a DC 15 Constitution saving throw or be {@condition blinded} until the start of your next turn, and take {@dice 8d6} radiant damage. On a successful save, they take half as much damage and are not blinded. Undead have disadvantage on the saving throw.",
+                "Any other creatures of your choice regain {@dice 4d8} hit points."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Erupting Earth",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard is quite heavy, and can be treated as a simple melee weapon, which is magical and does {@dice 1d4} bludgeoning damage.",
+                "As an action, you can throw the sunshard a distance in feet up to 3 times your strength score. If it lands on solid ground, the earth beneath it erupts upwards in a 15 foot cube centred on it.",
+                "Any creature within that space is pushed to the nearest side and takes {@dice 3d8} bludgeoning damage, and the cube is filled with nine walls of earth and stone.",
+                "Each wall occupies a 5 foot square and is 15 feet tall, has AC 15 and 35 hit points.",
+                "If a generated wall would not fit within the space, it is not summoned."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Lesser Air",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This crystal has a faint and gentle green hue; inside it slowly swirls a small cloud",
+                "As an action, you can expend the magic in the shard, casting the {@spell gust of wind} spell, concentrating on it as normal. Alternatively, you can store the magic within yourself: for up to an hour, while you do this you do not need to breathe.",
+                "Ending this early (for example, to speak) offers you no other benefit. Expending the magic leaves the shard empty and dull."
+            ]
+        },
+        {
+            "name": "Green Sunshard of Unnatural Growth",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "Leaves and blossom occasionally grow on the outside of this sunshard, which bloom into small lotuses after a day.",
+                "As an action, you can draw the power from this sunshard to within yourself, gaining the following benefits for 2 hours:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can talk to plants, as with the {@spell speak with plants} spell.",
+                        "You can cause a plant to grow extremely rapidly, for example, turning a sapling into a tree, or a tree branch into a solid walkway. It takes one minute to cause something to grow 30 feet, which requires your action to do each turn, as if casting a spell. You cannot grow the same object more than once.",
+                        "You can cast the {@spell plant growth} spell once without expending a spell slot, and you know the spell for the duration.",
+                        "You can cast the {@spell guardian of nature} once without expending a spell slot, and you know the spell for the duration."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Energising",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard crackles delicately in your hand, as small sparks of lightning jolt between its vertices.",
+                "As a bonus action, you can crush this sunshard in your hands to immediately gain the benefits of a Short Rest, and one level of exhaustion."
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Javelin Lightning",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard gives anyone who touches it a static shock, if it hasn't been held for more than one minute. A creature resistant to lightning damage does not receive this shock.",
+                "When you take the attack action on your turn, you can replace one of your attacks with an attack with this sunshard, if you are holding it or able to draw it. The sunshard deals {@dice 4d8} lightning damage on a hit and has the finesse, light, and thrown properties (range 60/120).",
+                "If the target is made of or wearing metal, you have advantage on the attack roll. On a hit, the target must make a DC 15 Constitution saving throw. On a failed save, they are stunned until the start of your next turn. On a miss, the following effect still applies, centred on the target.",
+                "Additionally, any creatures within 20 feet of the target must make a DC 15 Dexterity saving throw. On a failed save, they take {@dice 2d8} lightning damage, or half as much on a successful one.",
+                "Once used, the sunshard is expended and reduced to nothingness. If the attack was a miss, the sunshard remains, empty, and you can attempt a DC 20 Intelligence, Wisdom or Charisma (your choice) check to restore its magic. On a fail, the magic is lost permanently."
+            ]
+        },
+        {
+            "name": "Blue Sunshard of Stormcalling",
+            "source": "SToD: Sunshards",
+            "rarity": "very rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard naturally draws lightning and electricity towards itself. While it is on your person, you have disadvantage on saving throws you make against effects that deal lightning damage.",
+                "As a ten-minute ritual, you can change the weather outside to thunderstorms, regardless of what it was initially, which will persist for one day.",
+                "After casting this ritual, you gain resistance to lightning and thunder damage, or immunity to those damage types if you are already resistant.",
+                "You can cast {@spell Call Lightning} at will, so long as you are outside under the storm you summoned. Once the storm ends, you lose this ability."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Projection",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "",
+                "As an action, you can break this sunshard to summon a protective ward for you and your allies. The ward has hit points equal to twice your level plus your intelligence modifier. Whenever you take damage, the ward takes it instead. If this damage reduces the ward to zero hit points, the damage is lost.",
+                "While the ward is active, you can spend a reaction to reduce the damage taken by a creature of your choice within 30 feet of you, with the ward taking the damage instead."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Fuelling",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard feels as though it is filled with sand or dust, though visibly it is solid crystal.",
+                "This sunshard can be used to replace 50gp of material spell components for any spell, or for a material component with no listed cost that you do not possess. It can be used in this way only once, upon which it will disappear, being replaced with a fine-grained indigo dust."
+            ]
+        },
+        {
+            "name": "Indigo Sunshard of Warding",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "It is difficult to hold this sunshard: as if two opposing magnets were placed in it and your hand.",
+                "As a reaction, you can crush this sunshard to negate the effect of one attack or spell entirely, so long as it targets only you, and if the attacker is within 10 feet of you, push them 10 feet in a direction of your choice."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Repulsion",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This violet sunshard is surprisingly heavy for its size.",
+                "As an action, you can expel the magic from this shard. A burst of force erupts from the shard and detonates at a point you can see within 30 feet. Each creature within 10 feet of that point must make a DC 14 Strength saving throw or take {@dice 2d8} force damage and be moved 10 feet away from the detonation point. On a successful save, they take half the damage and are not moved."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Grounding",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This sunshard weighs more the higher it is from the ground.",
+                "As a bonus action, you can throw this sunshard to a point within 30 feet of you, shattering it and creating an area with a radius of 15 feet. Any creatures within the area have their movement speed halved, and take {@dice 2d6} force damage at the end of their turn if they remain in the area.",
+                "If any creatures are airborne when this area is generated, they must make a DC 14 Strength saving throw or be pulled down to the ground, taking twice as much fall damage."
+            ]
+        },
+        {
+            "name": "Violet Sunshard of Altered Gravity",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The weight of this sunshard depends on your mood.",
+                "You may spend an action, and this sunshard, to target a creature within 30 feet of you. That target must succeed a DC 13 Charisma saving throw or their gravity be altered in one of the following ways.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Their gravity becomes heavy. They cannot jump, their movement speed is halved, and they have disadvantage on dexterity checks and saving throws. Additionally, they take twice as much damage from falling.",
+                        "Their gravity becomes light. Their jump height is doubled, forced movement affects them twice as strongly, and they have disadvantage on strength checks and saving throws. Additionally, they take half as much damage from falling."
+                    ]
+                },
+                "The creature can repeat the saving throw at the end of each of its turns, ending it on a success."
+            ]
+        },
+        {
+            "name": "White Sunshard of Deferred Action",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard moves half a second after you move it.",
+                "As an action, you can crush this sunshard in your hand. The temporal sand it turns into slows you, ending your turn. Next turn, you may take an additional action, or an additional bonus action."
+            ]
+        },
+        {
+            "name": "White Sunshard of Held Energy",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "The visual position of the sunshard only changes when its owner blinks. The sunshard otherwise remains with you at all times.",
+                "As a reaction, you can direct the shard's power towards an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect, at which point it will occur targeting the same area as it originally did. You must release the effect before the end of your next turn.",
+                "The effect is released early if the target point has total cover from you, or if you are {@condition incapacitated} or die."
+            ]
+        },
+        {
+            "name": "White Sunshard of Skipped Time",
+            "source": "SToD: Sunshards",
+            "rarity": "legendary",
+            "wondrous": true,
+            "entries": [
+                "On your turn, you may draw the power from this shard (no action required) to leave time temporarily. Other creatures act as if you are still there while you are gone. Any time before the end of your next turn, you may reenter the timestream.",
+                "While you are out of the timestream, you cannot take damage, you can move freely in any direction, and you may choose to end any conditions affecting you. However, you cannot damage or affect other creatures in any way.",
+                "At a point of your choosing, you can interrupt another creature's turn, appearing in a place of your choice that is within your movement speed and taking an additional turn then. When you interrupt a creature, that creature is {@condition Marked|Starlight|Marked (4)} and {@condition Exposed|Starlight} until the end of your turn, as they are surprised by your sudden appearance.",
+                "If you have not interrupted a creature before the start of your next turn, you reenter time then in a space of your choice and take your time as normal."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Absorption",
+            "source": "SToD: Sunshards",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "When unwell, the shard is physically difficult to remove from your hand.",
+                "As an action, you can draw any toxins within yourself into this crystal. You can end any number of poisons or diseases affecting you. For the next hour, you have resistance to poison damage."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Clouding",
+            "source": "SToD: Sunshards",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This sunshard constantly emits wisps of dark smoke.",
+                "As an action, you can crush this shard in your hands, and cast {@spell Darkness|phb|}, targeted on yourself. Alternatively, you can throw the shard at a point within 20 feet for the same effect, targeted where it lands.",
+                "Any creature that starts or ends its turn in the darkness must make a DC 14 Constitution saving throw or become {@condition poisoned} until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Black Sunshard of Crippling",
+            "source": "SToD: Sunshards",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "This sunshard always appears as its own silhouette.",
+                "As an action, you can crush this shard in your hands and direct its energy at a creature within 60 feet. That creature must make a DC 16 Constitution saving throw or take {@dice 8d8|} necrotic damage and become {@condition dazed|Starlight} until the end of their next turn. On a successful save, they take half the damage and are not dazed.",
+                "Until the target takes a short rest, their movement speed is halved, and they cannot recover any hit points, including as part of the short rest."
+            ]
+        }
+    ],
+    "race": [
+        {
+            "name": "Riftborn Lacertal",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M",
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": 30
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": {
+                            "_": [
+                                {
+                                    "choose": "level=0|group=primal"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "The Lacertal are a simple folk. Living peaceful lives in another plane. When the rifts appeared, this changed dramatically, and while they steer clear sometimes fate determine that one makes their way in, willfully or not.",
+                            "Few survive the journey: going up is much harder than going down. Those that do rarely remember anything, especially if they are young, and none so far have made it to civilisation meaningfully. The lacertal learned to steer clear long ago, and even with only primitive communication warnings of the rift are passed through generations.",
+                            "Of course, this doesn't stop any particularly foolhardy, sneaky, and curious lacertal from entering anyway. However they end up in the rift, it is likely to change them in ways that make them hard to recognise back home."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Winged Form",
+                    "entries": [
+                        "You have a flying speed equal to your movement speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Malformed Wings",
+                    "entries": [
+                        "You fall at the end of your turn if you are airborne and the only thing holding you aloft is your flying speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rift Magic Exposure",
+                    "page": 8,
+                    "entries": [
+                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter druid spell list|spells|level=0|class=Druid}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Druid Spell list.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "page": 8,
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} Skill."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tempestborn",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "lightning",
+                "thunder"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "light#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Tempestborn Resistance",
+                    "entries": [
+                        "You have resistance to lightning damage and thunder damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Healing Hands",
+                    "entries": [
+                        "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Bearer",
+                    "entries": [
+                        "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fulgur's Fury",
+                    "entries": [
+                        "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
+                        "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+                        "Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "anyStandard": 1
+                }
+            ]
+        },
+        {
+            "name": "Elf (Profane)",
+            "source": "SToD: Species",
+            "lineage": "VRGR",
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "fire",
+                "poison"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "hellish rebuke#2"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "thaumaturgy#c"
+                        ]
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
+                            "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
+                            "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Heritage",
+                    "entries": [
+                        "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Magics",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} skill."
+                    ]
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+                        "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "abyssal": true,
+                    "anyStandard": 1
+                }
+            ]
+        }
+    ]
+}
