@@ -3,9 +3,13 @@ Homebrew JSONs for 5etools.
 
 All of the JSONs are kept in source_jsons.
 
-Each JSON's source tag is one of the following:
-- `Starlight` refers to core rules additions: conditions, basic actions, spells or items that are not setting specific
--  -> This will be the display name on any, even if the source JSON would be titled individually otherwise (e.g.: `Starlight: Conditions`)
-- `Starlight: Content` is for any features that would be grouped and extend outside of one group (such as a class or subclass having its own invocation-style feature tree, or spells).
--  -> For example, `Starlight: Kinesics`. This adds clarity when dealing with multiple optional features if they are added separately.
--  Content for Shifting Tides specifically will have `SToD` as the source, such as Sunshards or certain species.
+Templates.json is simply a blank slate for each of the main entries, like items, spells, or conditions. Eventually classes and subclasses will be added here too.
+
+JSON Source tags take the following format:
+- `Starlight: Z` is core rules additions that I would use in any campaign of mine. These are typically abbreviated to `S: Z` in the actual source, for readability.
+- They are labelled separately so that they can be used separately, and together while being in separate files.
+- \-> e.g.: `S: Items` and `S: Weapons` are similar, but one is for weapons/armour and the other is for all other magic items.
+- \-> It's easier to edit these when they are in individual files, but if they share a source name it will break 5etools, hence the distinction.
+
+- Anything in the 'campaign' folder will have its own source, such as `SToD` for Shifting Tides of Delamir.
+- These are things that are specific to one campaign, and are not included in the main Starlight collection for that reason.
