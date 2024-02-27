@@ -1,0 +1,185 @@
+
+
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "S: Generic",
+                "abbreviation": "S: Generic",
+                "full": "Starlight: Generic",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Starlight"
+                ],
+                "convertedBy":
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "item":[
+        {
+            "name": "Magic Item",
+            "source": "S: Items",
+            "rarity": "",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "",
+            "bonusWeaponDamage": "",
+            "entries": [
+                "",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "weapon",
+            "source": "S: Weapons",
+            "baseItem": "shortsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                ""
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "rare",
+            "bonusWeapon": "",
+            "weight": 2,
+            "reqAttune": "optional",
+			"curse": false,
+            "entries": [
+                "You have +1 bonus to attack and damage rolls made with this weapon.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "armour",
+            "source": "S: Weapons",
+            "type": "MA",
+            "rarity": "",
+            "reqAttune": false,
+			"curse": false,
+            "weight": 30,
+            "ac": 0,
+            "dexterityMax": null,
+            "stealth": false,
+            "entries": [
+                ""
+            ]
+        }
+    ],
+    "spell": 
+    [
+        {
+            "name": "",
+            "source": "S: Spells",
+            "level": 0,
+            "school": "",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": false,
+                "v": true,
+                "m": false
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "{@damage 1d8}"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries":[
+                        "{@scaledamage base|level-range|scaleBy}"
+                    ]
+                }
+            ],
+            "damageInflict": [
+                ""
+            ],
+            "savingThrow": [
+                ""
+            ],
+            "areaTags": [
+                ""
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "",
+                        "source": ""
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "",
+                            "source": ""
+                        },
+                        "subclass": {
+                            "name": "",
+                            "shortName": "",
+                            "source": ""
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "condition": 
+    [
+        {
+            "name": "Dazed",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": 
+            [
+                {
+                "type": "list",
+                "items": 
+                [
+                    "A dazed creature can take an action or a bonus action, but not both. Their movement speed is {@condition Sluggish|S: Conditions}.",
+                    "If a creature becomes dazed during their turn, their turn ends."
+                ]
+                }
+            ]
+        }
+    ]
+}

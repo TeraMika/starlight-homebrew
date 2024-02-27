@@ -577,6 +577,34 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Ring of Adrenaline Enhancment",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "entries":
+            [
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "While in combat, you regain {@dice 1d4} hit points at the start of each of your turns."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Amulet of Unmitigated Gall",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":[
+                "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
+                "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+            ]
         }
     ]
 }

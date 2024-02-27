@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.25.18.40",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.25",
+                "version": "2024.02.27.13.44",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.18",
+                "version": "2024.02.27.11.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,22 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.17",
+                "version": "2024.02.27.11.46",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "S: Spells",
+                "abbreviation": "S: Spells",
+                "full": "Starlight: Spells",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.02.27.15.07",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,7 +86,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -82,7 +97,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -94,13 +109,13 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708992592.5813365
+        "dateLastModified": 1709046759.1846194
     },
     "condition": [
         {
@@ -905,6 +920,33 @@
                         "You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Ring of Adrenaline Enhancment",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "While in combat, you regain {@dice 1d4} hit points at the start of each of your turns."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Amulet of Unmitigated Gall",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
+                "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
             ]
         },
         {
@@ -1828,6 +1870,316 @@
         }
     ],
     "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "spell": [
+        {
+            "name": "Divine Shield",
+            "source": "S: Spells",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You bestow a divine boon on a creature, protecting it from harm.",
+                "The first time a creature would take damage while under the effects of this spell, they instead take none. If an effect deals multiple damage types simultaneously, the creature is protected from all of them.",
+                "The spell ends after protecting a creature once, or if the target completes a long rest."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Holy Nova",
+            "source": "S: Spells",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true,
+                "m": "a prayer bead"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Divine light surges forth from you. You may choose any 6 creatures within a 30-foot radius, centered on you.",
+                "Creatures you choose gain a Divine Shield, as with the {@spell Divine Shield|S:Spells} spell. Any remaining creatures must make a Constitution saving throw or take {@damage 6d6} radiant damage, or half as much on a successful save. The divine light harmlessly washes over every other creature."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 6d6|4-9|1d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consecrate",
+            "source": "S: Spells",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 50
+                }
+            },
+            "components": {
+                "s": true,
+                "v": false,
+                "m": "a weapon or staff worth at least 1sp"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the ground within that area must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
+                "Celestials, elementals, fey, fiends, and undead have disadvantage on the saving throw. Furthermore, the ground within the spell's area is considered difficult terrain for those creature types for the next minute."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a spell slot above 4th level, the damage increases by {@scaledamage 10d4|4-9|1d4} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "areaTags": [
+                "N"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Arcane Butterflies",
+            "source": "S: Spells",
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true,
+                "m": false
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A 20 foot cube within range is briefly filled with a burst of glowing spectral butterflies. Creatures within the area must make an Intelligence saving throw. On a failed save, they take {@damage 2d8} psychic damage and must use all of their movement in a random direction on their turn. On a successful save, they take half as much damage and do not have to use their movement randomly."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a spell slot above 2nd level, the spell increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "C"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        }
+    ],
     "subclass": [
         {
             "name": "Oath of Unity",
