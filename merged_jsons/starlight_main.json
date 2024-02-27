@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.09",
+                "version": "2024.02.26.19.25",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -76,7 +76,7 @@
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1708975218.8931158
+        "dateLastModified": 1708992592.57044
     },
     "condition": [
         {
@@ -816,8 +816,9 @@
             "name": "Ring of Borrowed Time",
             "source": "S: Items",
             "rarity": "rare",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
+            "type": "RG",
             "entries": [
                 "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
                 "Instead of rolling a death saving throw at the start of your turns, you fail your death saving throw automatically at the end of your turns, but can otherwise act without penality.",

@@ -506,8 +506,9 @@
             "name": "Ring of Borrowed Time",
             "source": "S: Items",
             "rarity": "rare",
-            "wondrous": false,
+            "wondrous": true,
             "reqAttune": false,
+            "type": "RG",
             "entries":
             [
                 "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
