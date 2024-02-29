@@ -390,7 +390,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                "You have a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -408,7 +408,43 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Devout",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Intelligence (Religion) and Wisdom (Medicine) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Formidable",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -584,6 +620,7 @@
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": true,
+            "type": "RG",
             "entries":
             [
                 {

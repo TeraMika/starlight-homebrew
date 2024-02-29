@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.25.18.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.13.44",
+                "version": "2024.02.29.21.24",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.17",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.15.07",
+                "version": "2024.02.29.21.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -86,7 +86,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -97,7 +97,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,13 +109,13 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1709046759.1846194
+        "dateLastModified": 1709241888.4231715
     },
     "condition": [
         {
@@ -741,7 +741,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You gain a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                "You have a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -759,7 +759,43 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You gain a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Devout",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Intelligence (Religion) and Wisdom (Medicine) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Formidable",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -928,6 +964,7 @@
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": true,
+            "type": "RG",
             "entries": [
                 {
                     "type": "entries",
