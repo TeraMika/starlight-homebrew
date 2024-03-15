@@ -401,14 +401,14 @@
             ]
         },
         {
-            "name": "Friend of Nature",
+            "name": "Friend of Druids",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Animal Handling) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -419,7 +419,7 @@
             ]
         },
         {
-            "name": "Friend of the Devout",
+            "name": "Friend of Priests",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
@@ -437,7 +437,7 @@
             ]
         },
         {
-            "name": "Friend of the Formidable",
+            "name": "Friend of Warriors",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
@@ -445,6 +445,96 @@
             "type": "RG",
             "entries": [
                 "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Parties",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Persuasion) and Charisma (Performance) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Thieves",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Sleight of Hand) and Intelligence (Investigation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Urchins",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Wisdom (Survival) and Wisdom (Perception) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Paranoid",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Deception) and Wisdom (Insight) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Light-foots",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
