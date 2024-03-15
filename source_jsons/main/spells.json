@@ -206,7 +206,7 @@
 				}
 			],
 			"entries": [
-				"You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the ground within that area must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
+				"You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the same surface within a 50-foot cone (the spell covers up to 10 feet of elevation changes (such as a small wall or hole), but is blocked by a break in the surface) must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
                 "Celestials, elementals, fey, fiends, and undead have disadvantage on the saving throw. Furthermore, the ground within the spell's area is considered difficult terrain for those creature types for the next minute."
 			],
             "entriesHigherLevel": [
