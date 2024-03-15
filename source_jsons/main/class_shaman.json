@@ -557,5 +557,324 @@
                 ""
             ]
         }
+    ],
+    "subclass": [
+
+    ],
+    "subclassFeature": [
+
+    ],
+    "optionalfeature": [
+        {
+			"name": "Elemental Conduit",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You may add your spellcasting ability modifier to the damage you deal with any cantrip that deals fire, cold, thunder, lightning, or acid damage."
+			]
+		},
+        {
+            "name": "Spirit's Intuition",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Guidance|phb} cantrip. It has a duration of ten minutes when you cast it."
+			]
+        },
+        {
+            "name": "Moon's Spirit",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+			]
+        },
+        {
+            "name": "Roots of the Tree",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You may add your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+			]
+        },
+        {
+            "name": "Nature's Understanding",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can cast {@spell speak with animals} at will and without expending a spell slot."
+			]
+        },
+        {
+            "name": "Darkseer",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You gain darkvision out to 120 feet, or increase your existing darkvision by 120 feet. Your darkvision makes darkness appear as bright light to you, instead of dim."
+			]
+        },
+        {
+            "name": "Sense Arcana",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can cast {@spell Detect Magic|phb}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per long rest each, without expending a spell slot."
+			]
+        },
+        {
+            "name": "Lightfeet",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Longstrider|phb} spell and can cast it once per long rest without expending a spell slot."
+			]
+        },
+        {
+            "name": "Jungle's Bounty",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast the {@spell Goodberry|phb} spell once per long rest. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+            ]
+        },
+        {
+            "name": "Natural Instincts",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You gain proficiency in the {@skill Survival} and {@skill Medicine} skills."
+			]
+        },
+        {
+            "name": "Far Sight",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"As part of an hour-long ritual, you look into the future, sensing a power you might require. You can then swap one spell that you know for another on the Shaman spell list. You may do this only once each {@dice 2d4} days.",
+                "{@note The spell you can learn follows normal rules. For example, a 6th level Shaman could learn a 3rd level spell or lower, even if they had 4th level spell slots.}"
+			]
+        },
+        {
+            "name": "a",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				""
+			]
+        },
+        {
+			"name": "Elemental Manipulation",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can change the damage type of a spell you cast to the damage type of your Elemental Affinity."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Affinity"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Heart of the Sea",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You gain a swimming speed of 40 feet, or your walking speed, whichever is higher. If you already have a swimming speed, this increases it by 10 feet instead.",
+                "You also learn the {@spell Water Breathing|phb} spell, which doesn't count against your known Shaman spells."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Forest Heart",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Summon Fey|tce} spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Primordial Thorns",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a reaction to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
+                "This damage increases to {@dice 2d6} at 10th level."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Rune of Elemental Superiority",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you deal damage of the type associated with your elemental affinity, you ignore resistance to damage of that type."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Affinity"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Druidic Teachings",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Polymorph} spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				""
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 0,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        ""
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Rune of Totem Summoning",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				""
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 0,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        ""
+                    ]
+                }
+            ]
+		}
     ]
 }
