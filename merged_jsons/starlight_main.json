@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.17.20.53",
+                "version": "2024.03.17.20.56",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1710708818.2507555
+        "dateLastModified": 1710708979.3194444
     },
     "class": [
         {
@@ -129,7 +129,6 @@
                 "Elemental Origin Feature|Shaman|S: Shaman|10|S: Shaman",
                 "Ability Score Improvement|Fighter|PHB|12",
                 "Elemental Origin Feature|Shaman|S: Shaman|14|S: Shaman",
-                "Ancient Rites|Shaman|S: Shaman|15|S: Shaman",
                 "Ability Score Improvement|Fighter|PHB|16",
                 "Elemental Affinity Improvement|Shaman|S: Shaman|17|S: Shaman",
                 "Overload|Shaman|S: Shaman|18|S: Shaman",
@@ -1088,16 +1087,6 @@
                 "At 14th level, you gain a feature granted by your elemental origin."
             ],
             "gainSubclassFeature": true
-        },
-        {
-            "name": "Ancient Rites",
-            "source": "S: Shaman",
-            "className": "Shaman",
-            "classSource": "S: Shaman",
-            "level": 15,
-            "entries": [
-                "TBD"
-            ]
         },
         {
             "name": "Elemental Affinity Improvement",
