@@ -2,6 +2,21 @@
     "_meta": {
         "sources": [
             {
+                "json": "S: Shaman",
+                "abbreviation": "S: Shaman",
+                "full": "Starlight: Shaman",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.03.17.20.53",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
                 "json": "S: Conditions",
                 "abbreviation": "S: Conditions",
                 "full": "Starlight: Conditions",
@@ -12,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.25.18.40",
+                "version": "2024.03.17.19.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.29.21.24",
+                "version": "2024.03.05.21.35",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.29.21.18",
+                "version": "2024.03.15.18.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -114,9 +129,3706 @@
                 "targetSchema": "1.0"
             }
         ],
+        "optionalFeatureTypes": {
+            "PRU": "Primordial Rune"
+        },
         "dateAdded": 0,
-        "dateLastModified": 1709241888.4231715
+        "dateLastModified": 1710708818.2836957
     },
+    "class": [
+        {
+            "name": "Shaman",
+            "source": "S: Shaman",
+            "classFeatures": [
+                "Optional Rule: Alternate Ability Shaman|Shaman|S: Shaman|1|S: Shaman",
+                "Spellcasting|Shaman|S: Shaman|1|S: Shaman",
+                "Elemental Origin|Shaman|S: Shaman|1|S: Shaman",
+                "Primordial Runes|Shaman|S: Shaman|2|S: Shaman",
+                "Elemental Affinity|Shaman|S: Shaman|3|S: Shaman",
+                "Ability Score Improvement|Fighter|PHB|4",
+                "Elemental Origin Feature|Shaman|S: Shaman|6|S: Shaman",
+                "Elemental Affinity Improvement|Shaman|S: Shaman|7|S: Shaman",
+                "Ability Score Improvement|Fighter|PHB|8",
+                "Primordial Knowledge|Shaman|S: Shaman|9|S: Shaman",
+                "Elemental Origin Feature|Shaman|S: Shaman|10|S: Shaman",
+                "Ability Score Improvement|Fighter|PHB|12",
+                "Elemental Origin Feature|Shaman|S: Shaman|14|S: Shaman",
+                "Ancient Rites|Shaman|S: Shaman|15|S: Shaman",
+                "Ability Score Improvement|Fighter|PHB|16",
+                "Elemental Affinity Improvement|Shaman|S: Shaman|17|S: Shaman",
+                "Overload|Shaman|S: Shaman|18|S: Shaman",
+                "Ability Score Improvement|Fighter|PHB|19",
+                "Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman"
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "cha",
+                "wis"
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Shaman}",
+                        "{@filter Spells Known|spells|class=Shaman}"
+                    ],
+                    "rows": [
+                        [
+                            2,
+                            2
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ],
+                        [
+                            3,
+                            13
+                        ],
+                        [
+                            3,
+                            14
+                        ],
+                        [
+                            3,
+                            14
+                        ],
+                        [
+                            3,
+                            15
+                        ],
+                        [
+                            3,
+                            15
+                        ],
+                        [
+                            3,
+                            16
+                        ],
+                        [
+                            3,
+                            16
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|class=Shaman}",
+                        "{@filter 2nd|spells|level=2|class=Shaman}",
+                        "{@filter 3rd|spells|level=3|class=Shaman}",
+                        "{@filter 4th|spells|level=4|class=Shaman}",
+                        "{@filter 5th|spells|level=5|class=Shaman}",
+                        "{@filter 6th|spells|level=5|class=Shaman}",
+                        "{@filter 7th|spells|level=5|class=Shaman}",
+                        "{@filter 8th|spells|level=5|class=Shaman}",
+                        "{@filter 9th|spells|level=5|class=Shaman}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            2,
+                            1,
+                            1
+                        ]
+                    ]
+                },
+                {
+                    "colLabels": [
+                        "{@filter Runes Known|spells|level=0|class=Shaman (S: Shaman)}"
+                    ],
+                    "rows": [
+                        [
+                            "-"
+                        ],
+                        [
+                            "2"
+                        ],
+                        [
+                            "3"
+                        ],
+                        [
+                            "3"
+                        ],
+                        [
+                            "4"
+                        ],
+                        [
+                            "4"
+                        ],
+                        [
+                            "5"
+                        ],
+                        [
+                            "5"
+                        ],
+                        [
+                            "6"
+                        ],
+                        [
+                            "6"
+                        ],
+                        [
+                            "7"
+                        ],
+                        [
+                            "7"
+                        ],
+                        [
+                            "8"
+                        ],
+                        [
+                            "8"
+                        ],
+                        [
+                            "9"
+                        ],
+                        [
+                            "9"
+                        ],
+                        [
+                            "10"
+                        ],
+                        [
+                            "10"
+                        ],
+                        [
+                            "10"
+                        ],
+                        [
+                            "11"
+                        ]
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "{@item shield|PHB|shields}"
+                ],
+                "weapons": [
+                    "simple"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "arcana",
+                                "nature",
+                                "insight",
+                                "investigation",
+                                "medicine",
+                                "perception",
+                                "survival"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "default": [
+                    "(a) {@item scale-mail|PHB} or (b) {@item leather armor|PHB|leather armour}",
+                    "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
+                    "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
+                    "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
+                    "2 {@item dagger|PHB|daggers}"
+                ],
+                "additionalFromBackground": true,
+                "goldAlternative": "{@dice 3d4x10}"
+            },
+            "multiclassing": {
+                "requirements": {
+                    "wis": 13
+                },
+                "proficienciesGained": {
+                    "weapons": [
+                        "simple"
+                    ],
+                    "armor": [
+                        "light"
+                    ]
+                }
+            },
+            "spellcastingAbility": "wis",
+            "casterProgression": "full",
+            "spellsKnownProgression": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                12,
+                13,
+                13,
+                14,
+                14,
+                15,
+                15,
+                16,
+                16
+            ],
+            "cantripProgression": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "classSpells": [
+                "Acid Splash|PHB",
+                "Booming Blade|TCE",
+                "Control Flames|PHB",
+                "Create Bonfire|XGE",
+                "Dancing Lights|PHB",
+                "Druidcraft|PHB",
+                "Fire Bolt|PHB",
+                "Frostbite|XGE",
+                "Green-Flame Blade|TCE",
+                "Gust|XGE",
+                "Lightning Lure|TCE",
+                "Magic Stone|XGE",
+                "Mold Earth|XGE",
+                "Poison Spray|PHB",
+                "Primal Savagery|XGE",
+                "Produce Flame|PHB",
+                "Ray of Frost|PHB",
+                "Shape Water|XGE",
+                "Shocking Grasp|PHB",
+                "Thorn Whip|PHB",
+                "Thunderclap|XGE",
+                "Absorb Elements|XGE",
+                "Burning Hands|PHB",
+                "Caustic Smite|J:General",
+                "Chromatic Orb|PHB",
+                "Create or Destroy Water|PHB",
+                "Cure Wounds|PHB",
+                "Detect Magic|PHB",
+                "Detect Poison and Disease|PHB",
+                "Earth Tremor|XGE",
+                "Entangle|PHB",
+                "Faerie Fire|PHB",
+                "Fog Cloud|PHB",
+                "Frost Fingers|IDRotF",
+                "Ice Knife|XGE",
+                "Jump|PHB",
+                "Longstrider|PHB",
+                "Purify Food and Drink|PHB",
+                "Searing Smite|PHB",
+                "Tasha's Caustic Brew|TCE",
+                "Thunderous Smite|PHB",
+                "Thunderwave|PHB",
+                "Witch Bolt|PHB",
+                "Aganazzar's Scorcher|XGE",
+                "Barkskin|PHB",
+                "Continual Flame|PHB",
+                "Dust Devil|XGE",
+                "Earthbind|XGE",
+                "Flame Blade|PHB",
+                "Flaming Sphere|PHB",
+                "Gust of Wind|PHB",
+                "Heat Metal|PHB",
+                "Lesser Restoration|PHB",
+                "Maximilian's Earthen Grasp|XGE",
+                "Melf's Acid Arrow|PHB",
+                "Misty Step|PHB",
+                "Protection from Poison|PHB",
+                "Rime's Binding Ice|FTD",
+                "Scorching Ray|PHB",
+                "Shatter|PHB",
+                "Spike Growth|PHB",
+                "Warding Wind|XGE",
+                "Wither and Bloom|SCC",
+                "Ashardalon's Stride|FTD",
+                "Call Lightning|PHB",
+                "Daylight|PHB",
+                "Elemental Weapon|PHB",
+                "Erupting Earth|XGE",
+                "Fireball|PHB",
+                "Glyph of Warding|PHB",
+                "Lightning Bolt|PHB",
+                "Meld into Stone|PHB",
+                "Nondetection|PHB",
+                "Protection from Energy|PHB",
+                "Sleet Storm|PHB",
+                "Thunder Step|XGE",
+                "Tidal Wave|XGE",
+                "Wall of Sand|XGE",
+                "Wall of Water|XGE",
+                "Water Breathing|PHB",
+                "Water Walk|PHB",
+                "Wind Wall|PHB",
+                "Conjure Minor Elementals|PHB",
+                "Control Water|PHB",
+                "Elemental Bane|XGE",
+                "Fire Shield|PHB",
+                "Grasping Vine|PHB",
+                "Guardian of Nature|PHB",
+                "Ice Storm|PHB",
+                "Stoneskin|PHB",
+                "Storm Sphere|XGE",
+                "Summon Elemental|TCE",
+                "Vitriolic Sphere|XGE",
+                "Wall of Fire|PHB",
+                "Watery Sphere|XGE",
+                "Cloudkill|PHB",
+                "Commune with Nature|PHB",
+                "Cone of Cold|PHB",
+                "Control Winds|XGE",
+                "Dream|PHB",
+                "Greater Restoration|PHB",
+                "Immolation|XGE",
+                "Maelstrom|XGE",
+                "Reincarnate|PHB",
+                "Scrying|PHB",
+                "Transmute Rock|XGE",
+                "Tree Stride|PHB",
+                "Wall of Stone|PHB",
+                "Wrath of Nature|XGE",
+                "Bones of the Earth|XGE",
+                "Chain Lightning|PHB",
+                "Druid Grove|XGE",
+                "Find the Path|PHB",
+                "Flesh to Stone|PHB",
+                "Investiture of Flame|XGE",
+                "Investiture of Ice|XGE",
+                "Investiture of Stone|XGE",
+                "Investiture of Wind|XGE",
+                "Move Earth|PHB",
+                "Otiluke's Freezing Sphere|PHB",
+                "Primordial Ward|XGE",
+                "Sunbeam|PHB",
+                "Transport Via Plants|PHB",
+                "Wall of Ice|PHB",
+                "Wall of Thorns|PHB",
+                "Wind Walk|PHB",
+                "Delayed Blast Fireball|PHB",
+                "Fire Storm|PHB",
+                "Prismatic Spray|PHB",
+                "Regenerate|PHB",
+                "Symbol|PHB",
+                "Whirlwind|XGE",
+                "Antimagic Field|PHB",
+                "Control Weather|PHB",
+                "Earthquake|PHB",
+                "Incendiary Cloud|PHB",
+                "Sunburst|PHB",
+                "Tsunami|PHB",
+                "Foresight|PHB",
+                "Imprisonment|PHB",
+                "Invulnerability|PHB",
+                "Power Word Heal|PHB",
+                "Prismatic Wall|PHB",
+                "Storm of Vengeance|PHB"
+            ],
+            "fluff": [
+                {
+                    "name": "Shaman",
+                    "type": "section",
+                    "entries": [
+                        "Nature is a powerful force containing a myriad of mysterious magics. Shamans have the ability - learned, intuited, or innate - to act as a conduit for that natural magic.",
+                        "Shamans channel ancient rites in the form of runes, summon elemental spirits, and evoke powerful elemental magic to manipulate their enemies and allies alike.",
+                        {
+                            "type": "entries",
+                            "name": "Creating a Shaman",
+                            "entries": [
+                                "To create a Shaman, consult the subsections which give you hit points, proficiencies, and starting equipment. Then look at the Shaman table to see which features you get at each level. The descriptions of those features appear below.",
+                                {
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "entries": [
+                                        "You can make a Shaman quickly with these suggestions: First, put your highest ability score in Wisdom, followed by Constitution or Dexterity; second, choose the Outlander background; third, choose the {@spell Produce Flame|PHB} and {@spell Dancing Lights|PHB} cantrips, along with the 1st-level {@spell Ice Knife|XGE} and {@spell Thunderwave|PHB} spells."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Multiclassing and the Shaman",
+                                    "entries": [
+                                        "If your group uses the optional rule on multiclassing in the Player's Handbook, here's what you need to know if you choose artificer as one of your classes.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Ability Score Minimum",
+                                            "entries": [
+                                                "As a multiclass character, you must have at least a Wisdom score of 13 to take a level in this class, or to take a level in another class if you are already a Shaman."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Proficiencies Gained",
+                                            "entries": [
+                                                "If Shaman isn't your initial class, here are the proficiencies you gain when you take your first level as a Shaman: light armor and simple weapons."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Spell Slots",
+                                            "entries": [
+                                                "To determine your available spell slots, you include all of your Shaman levels."
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Optional Rule: Alternate Ability Shaman",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "isClassFeatureVariant": true,
+            "level": 1,
+            "entries": [
+                "While Shamans channel nature's magic in a similar mystical manner to druids, it is also possible to learn this power through study, or through force of will in dedication to nature.",
+                "If this is the case for your Shaman, you may prefer to use Intelligence or Charisma instead of Wisdom for your shaman features. If you do so, make the following changes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Wherever you would use Wisdom for your shaman features or specialism features, such as your Spellcasting or Rune features, you instead use your chosen ability.",
+                        "If you choose Intelligence, you replace Charisma as a saving throw proficiency given by this class with Intelligence.",
+                        "A multiclassed character would require a 13 in the chosen ability (instead of Wisdom) to take a level in this class, or take a level in another if Shaman is your first class."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spellcasting",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "Your experience in nature has infused you with the primordial magics of the world. This could be a life in a tribe, time spent wandering the wilds and finding a spirit, or unexpected communion with a nature deity. Whatever its origin, it fuels your spellcasting. You can channel these primal magics to strike those who would defy nature, restore your allies, and manipulate the world around you.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "At 1st level, you know two cantrips of your choice from the Shaman spell list. You learn an additional cantrip of your choice at 7th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known of 1st Level and Higher",
+                    "entries": [
+                        "You know two 1st-level spells of your choice from the shaman spell list.",
+                        "You learn an additional Shaman spell of your choice every level, and every other level from level 11 onwards.",
+                        "Additionally, when you gain a level in this class, you can choose one of the Shaman spells you know and replace it with another spell from the Shaman spell list, which must also be a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for Shaman spells as you draw magic from your connection to nature. You use your Wisdom when a Shaman spell refers to your spellcasting ability, and you use your Wisdom modifier whenever you set the saving throw DC or make a spell attack roll for one of your Shaman spells.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use a {@item druidic focus|PHB} as a spellcasting focus for your shaman spells. You or your DM may decide it more appropriate to use an {@item arcane focus|PHB}, depending on how your shaman learned their magic."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ritual Casting",
+                    "entries": [
+                        "Your connection to nature can be channeled with time, at less cost to yourself. You can cast a shaman spell you know as a ritual if that spell has the ritual tag."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elemental Origin",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "At 1st level, you determine the origin of your shaman abilities. This could be the source that they are drawn from, where your Shaman grew up or learned their magic, or the specific location they first unlocked their magical gifts.",
+                "This origin grants you features at 1st level, and again at 6th, 10th, and 14th level."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Primordial Runes",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 2,
+            "entries": [
+                "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or allow you to conjure totems which grant benefits within an area.",
+                "At 2nd level, you gain 2 Primordial Runes of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=PRU} page. When you gain certain Shaman levels, you gain additional runes of your choice, as shown in the Runes column of the Shaman table.",
+                "Additionally, when you gain a level in this class, you can choose one of the runes you know and replace it with another that you could learn at that level.",
+                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
+            ]
+        },
+        {
+            "name": "Elemental Affinity",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 3,
+            "entries": [
+                "At 3rd level, your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
+                {
+                    "type": "entries",
+                    "name": "Affinity with Flame",
+                    "entries": [
+                        "Your chosen element is fire. You gain the {@spell Firebolt|PHB} or {@spell Green-Flame Blade|TCE} cantrip. Additionally, you gain the {@b Growing Heat} feature below.",
+                        {
+                            "type": "entries",
+                            "name": "Growing Heat",
+                            "entries": [
+                                "Whenever you deal fire damage to a creature, they take additional damage equal to your proficiency bonus whenever you deal fire damage to them before the end of your next turn."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Affinity with Frost",
+                    "entries": [
+                        "Your chosen element is cold. You gain the {@spell Ray of Frost|PHB} or {@spell Frostbite|XGE} cantrip. Additionally, you gain the {@b Biting cold} feature below.",
+                        {
+                            "type": "entries",
+                            "name": "Biting Cold",
+                            "entries": [
+                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll or ability check that it makes."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Affinity with Lightning",
+                    "entries": [
+                        "Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|PHB} cantrip. Additionally, you gain the {@b Arc Lightning} feature below.",
+                        {
+                            "type": "entries",
+                            "name": "Arc Lightning",
+                            "entries": [
+                                "Once per round, when you deal lightning damage to a creature, you can arc lightning from one target to another. Up to two different creatures of your choice within 15 feet of the original target take Lightning damage equal to your proficiency bonus."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Affinity with Thunder",
+                    "entries": [
+                        "Your chosen element is thunder. You gain the {@spell Thunderclap|XGE} or {@spell Booming Blade|TCE} cantrip. Additionally, you gain the {@b Thundercrack} feature below.",
+                        {
+                            "type": "entries",
+                            "name": "Thundercrack",
+                            "entries": [
+                                "Once per turn, when you deal Thunder damage to a creature, you may move it five feet in a direction of your choice, provided it is large or smaller. Additionally, whenever you deal thunder damage to an object, you maximise the value of the dice instead of rolling damage against that object."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Affinity with Acid",
+                    "entries": [
+                        "Your chosen element is acid. You gain the {@spell Acid Splash|PHB} or {@spell Primal Savagery|XGE} cantrip. Additionally, you gain the {@b Persistent Corrosion} feature below.",
+                        {
+                            "type": "entries",
+                            "name": "Persistent Corrosion",
+                            "entries": [
+                                "When you deal acid damage to a creature, you can cause the acid to linger on them. At the start of each of its turns, the creature takes acid damage equal to your proficiency bonus. The acid lasts until a creature uses its action to remove it, or you use this feature again on a different target."
+                            ]
+                        }
+                    ]
+                },
+                "You can change your elemental affinity whenever you gain a level in this class."
+            ]
+        },
+        {
+            "name": "Elemental Origin Feature",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your elemental origin."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Elemental Affinity Improvement",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 7,
+            "entries": [
+                "You become resistant to the damage type of your chosen elemental affinity."
+            ]
+        },
+        {
+            "name": "Primordial Knowledge",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 9,
+            "entries": [
+                "Your strong connection to nature allows you access to ancient knowledge and abilities.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a bonus to {@skill arcana} and {@skill nature} checks equal to your spellcasting ability modifier.",
+                        "Additionally, you learn the {@spell Skill Empowerment|XGE} spell and can cast it once per long rest without expending a spell slot. It does not count against the number of Shaman spells you know."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elemental Origin Feature",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain a feature granted by your elemental origin."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Elemental Origin Feature",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain a feature granted by your elemental origin."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Ancient Rites",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 15,
+            "entries": [
+                "TBD"
+            ]
+        },
+        {
+            "name": "Elemental Affinity Improvement",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 17,
+            "entries": [
+                "You become immune to the damage type of your chosen elemental affinity."
+            ]
+        },
+        {
+            "name": "Overload",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 18,
+            "entries": [
+                "When you cast a Shaman spell, you can deal the maximum possible damage instead of rolling on the turn that you cast it.",
+                "Upon doing so, you take force damage equal to your Shaman level plus the level of the spell cast, which cannot be reduced in any way, and you cannot cast spells until after your next turn.",
+                "After you use this ability, you cannot do so again until you complete a short or long rest."
+            ]
+        },
+        {
+            "name": "Spiritual Avatar",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 20,
+            "entries": [
+                "Once per long rest, you can use a bonus action to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance to suit your elemental affinity, such as your head being lit with flames, or your skin being covered with frost.",
+                "While this state is active, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a flying speed of 50 feet.",
+                        "Whenever you cast a Shaman spell that has a casting time of one action, you can cast it using a bonus action instead."
+                    ]
+                },
+                "At this level, you also have access to a Primordial Rune specific to your subclass that can enhance your Spiritual Avatar in another way."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Waters",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "shortname": "Waters",
+            "subclassFeatures": [
+                "Waters|Shaman|S: Shaman|Waters|S: Shaman|1",
+                "Ebb and Flow Improvement|Shaman|S: Shaman|Waters|S: Shaman|6",
+                "Flow As Water|Shaman|S: Shaman|Waters|S: Shaman|10",
+                "Master of the Tides|Shaman|S: Shaman|Waters|S: Shaman|14"
+            ],
+            "subclassSpells": [
+                "Healing Word|PHB",
+                "Sanctuary|PHB",
+                "Healing Spirit|XGE",
+                "Mirror Image|PHB",
+                "Aura of Vitality|PHB",
+                "Vampiric Touch|PHB",
+                "Freedom of Movement|PHB",
+                "Aura of Purity|PHB",
+                "Mass Cure Wounds|PHB",
+                "Enervation|XGE"
+            ]
+        },
+        {
+            "name": "Oath of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "shortName": "Unity",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "Sanctuary",
+                            "Protection from Evil and Good"
+                        ],
+                        "5": [
+                            "Moonbeam",
+                            "Warding Bond"
+                        ],
+                        "9": [
+                            "Beacon of Hope",
+                            "Spirit Guardians"
+                        ],
+                        "13": [
+                            "Death Ward",
+                            "Guardian of Faith"
+                        ],
+                        "17": [
+                            "Circle of Power",
+                            "Dispel Evil and Good"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Oath of Unity|Paladin|PHB|Unity|Starlight|3",
+                "Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
+                "Resilient Spirit|Paladin|PHB|Unity|Starlight|15",
+                "Champion of the People|Paladin|PHB|Unity|Starlight|20"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Waters",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "Water is often described as the source of life. Shamans of the water - be that rivers, lakes, or the sea - know this, and control water in order to control life itself. They can manipulate the flow of positive energies in order to manipulate the flow of battle. Using water's restorative magic to assist their allies, and the force of water to throw their enemies off-balance.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                }
+            ]
+        },
+        {
+            "name": "Waters Shaman Spells",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Waters Shaman feature}",
+                "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
+                {
+                    "type": "table",
+                    "caption": "Waters Shaman Spells",
+                    "colLabels": [
+                        "Shaman Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Healing Word|PHB}, {@spell Sanctuary|PHB}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Healing Spirit|XGE}, {@spell Mirror Image|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Aura of Vitality|PHB}, {@spell Vampiric Touch|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Freedom of Movement|PHB}, {@spell Aura of Purity|PHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Mass Cure Wounds|PHB}, {@spell Enervation|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ebb and Flow",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Waters Shaman feature}",
+                "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|S: Conditions}."
+            ]
+        },
+        {
+            "name": "Ebb and Flow Improvement",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Waters Shaman feature}",
+                "The damage of the water jet increases to {@damage 2d4} + your Wisdom modifier."
+            ]
+        },
+        {
+            "name": "Flow As Water",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Waters Shaman feature}",
+                "You can breathe underwater and gain a swimming speed equal to your walking speed.",
+                "Furthermore, when a creature hits you with an attack, you can use a reaction to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks, and gaining the {@condition Regenerating|S: Conditions} condition with an amount equal to your Shaman level, for one turn.",
+                "This movement can move through other creatures' spaces, but if you end your movement in another creature's space you are ejected to the nearest unoccupied space, taking {@damage 1d8} force damage for each 5 feet you are ejected.",
+                "You can use this reaction once per short rest."
+            ]
+        },
+        {
+            "name": "Master of the Tides",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Waters Shaman feature}",
+                "Your Ebb and Flow has improved to match the very motion of the world itself, in the model of the ocean's tides.",
+                "When your water jet hits a target, you can restore hit points equal to the damage dealt to a creature of your choice within 30 feet of the target. The damage of the water jet increases to {@damage 2d8} + your wisdom modifier.",
+                "Finally, you can use the water jet without needing to restore hit points to a creature."
+            ]
+        },
+        {
+            "name": "Oath of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Unity|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Guardian Angel|Paladin|PHB|Unity|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Rallying Cry|Paladin|PHB|Unity|Starlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Guardian Angel",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                " As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them, preventing the triggering damage and surrounding them in an invulnerable barrier which gives them resistance to all further damage.",
+                "If the protected creature makes an attack, casts a spell that affects an enemy, deals damage to another creature, or forces a creature to make a saving throw, the effect ends."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Rallying Cry",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, beckoning your allies forward.",
+                "You can use your Channel Divinity to choose creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum of one), and an additional 10 feet of movement speed."
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "You gain oath spells at the paladin levels listed in the Oath of Unity Spells table.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Unity Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Sanctuary}, {@spell Protection from Evil and Good}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Moonbeam}, {@spell Warding Bond}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Beacon of Hope}, {@spell Spirit Guardians}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Death Ward}, {@spell Guardian of Faith}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Circle of Power}, {@spell Dispel Evil and Good}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Unity",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The Oath of unity is a vow taken to protect the ideals of community and the people within it. They seek to protect the people from evil, as the selfish can never truly be united. This often extends to powers and beings from other planes, who would seek to take aspects of the material plane for their own. The imagery of a paladin under this oath may take the shape of wings, as a protector or guardian angel, working together to protect people from the horrors that would tear them and their kingdoms apart.",
+                "You may have received your calling during a moment of heroism, or a moment of vulnerability, in the service or protection of others. Or perhaps you heard a voice on the wind, under a full moon. However this oath came to you, you value the safety of others above all, and seek to put down selfishness in all its forms.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Community",
+                            "entries": [
+                                "The people need you. Be their shield."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Courage",
+                            "entries": [
+                                "Bravery is not the absence of fear, but acting in spite of it. Evil prevails when good men do not act - so you should act."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Honour",
+                            "entries": [
+                                "Be fair and just. Your actions are your deeds. Avoid harm, but do not let that get in the way of doing good."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Tolerance",
+                            "entries": [
+                                "Intolerance cannot be tolerated. People may exist as they are, unless they threaten the peace of others. To stay neutral is to side with the oppressor."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Integrity",
+                            "entries": [
+                                "You cannot be responsible for others if you cannot hold yourself to account. Protect those in your care, and ensure that all authority is just."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aura of Coordination",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures that start their turn 10 feet of you may take the Disengage action as a bonus action on that turn."
+            ]
+        },
+        {
+            "name": "Resilient Spirit",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Beginning at 15th level, your presence is a stronghold. Each friendly creature within your Aura of Coordination regains hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns, to a total no higher than your paladin level."
+            ]
+        },
+        {
+            "name": "Champion of the People",
+            "source": "Starlight",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Unity",
+            "subclassSource": "Starlight",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, your presence becomes a terror to enemies who stand against you, and you become a beacon of hope to your allies. As an action, you transform, becoming a shining beacon of unity for your allies to rally around. You may be surrounded by swirling sigils and sparkling moonlight.",
+                "During the transformation, you gain the following features for ten minutes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your aura is filled with bright moonlight.",
+                        "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
+                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points or killed within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
+                        "Your form cannot be changed against your will."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        }
+    ],
+    "optionalfeature": [
+        {
+            "name": "Elemental Conduit",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You may add your spellcasting ability modifier to the damage you deal with any cantrip that deals fire, cold, thunder, lightning, or acid damage."
+            ]
+        },
+        {
+            "name": "Spirit's Intuition",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Guidance|PHB} cantrip. It has a duration of ten minutes when you cast it."
+            ]
+        },
+        {
+            "name": "Moon's Spirit",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+            ]
+        },
+        {
+            "name": "Natural Warrior",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Shillelagh} cantrip, and when you cast it it lasts for ten minutes and can be applied to any weapon with which you are proficient."
+            ]
+        },
+        {
+            "name": "Roots of the Tree",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You may add your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+            ]
+        },
+        {
+            "name": "Nature's Understanding",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast {@spell speak with animals} and at will and without expending a spell slot."
+            ]
+        },
+        {
+            "name": "Darkseer",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain darkvision out to 120 feet, or increase your existing darkvision by 120 feet. Your darkvision makes darkness appear as bright light to you, instead of dim."
+            ]
+        },
+        {
+            "name": "Sense Arcana",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast {@spell Detect Magic|PHB}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per long rest each, without expending a spell slot."
+            ]
+        },
+        {
+            "name": "Lightfeet",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Longstrider|PHB} and can cast it once per long rest without expending a spell slot."
+            ]
+        },
+        {
+            "name": "Jungle's Bounty",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast the {@spell Goodberry|PHB} spell once per long rest. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+            ]
+        },
+        {
+            "name": "Natural Instincts",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain proficiency in the {@skill Survival} and {@skill Medicine} skills."
+            ]
+        },
+        {
+            "name": "Far Sight",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "As part of an hour-long ritual, you look into the future, sensing a power you might require. You may ask a question about an event to occur within the next 7 days, and the DM may suggest a spell or type of spell that would prove beneficial. You can then swap one spell that you know for another on the Shaman spell list. You may do this only once each {@dice 2d4} days.",
+                "{@note The spell you can learn follows normal rules. For example, a 6th level Shaman could learn a 3rd level spell or lower, even if they had 4th level spell slots.}"
+            ]
+        },
+        {
+            "name": "Elemental Manipulation",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can change the damage type of a spell you cast to the damage type of your Elemental Affinity."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Affinity"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Home at Sea",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain a swimming speed of 40 feet, or your walking speed, whichever is higher. If you already have a swimming speed, this increases it by 10 feet instead.",
+                "You also learn the {@spell Water Breathing|PHB} spell, which doesn't count against your known Shaman spells."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Home in the Trees",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, this increases it by 10 feet instead.",
+                "You learn the {@spell Spider Climbing} spell and cast it once per long rest without expending a spell slot."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Forest Heart",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Summon Fey|TCE} spell."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gifts of the Elders",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Borrowed Knowledge|SCC} and {@spell Enhance Ability|PHB} spells."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Primordial Thorns",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a reaction to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
+                "This damage increases to {@dice 2d6} at 11th level."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Rune of Elemental Superiority",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you deal damage of the type associated with your elemental affinity, you ignore resistance to damage of that type."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Affinity"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Druidic Teachings",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Polymorph} spell."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Elemental Aversion",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Elemental Bane|XGE} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to two turns."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Keeper of the Grove",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once per short rest, you can attempt to allow nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|S: Conditions} until the end of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Small Friends",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Insect Plague|PHB} spell. You can communicate with insects freely."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nature Companion",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast the {@spell Find Familiar|PHB} spell once per long rest without expending material components. Your familiar takes the form of a {@creature Sapling Treant|S: Shaman} or a {@creature Raven|MM}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Forest Walker",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Transport Via Plants|PHB} spell and can cast it once per long rest without expending a spell slot."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Master of Roots",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once per long rest, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a bonus action, or forgo the need to {@status concentration||concentrate} on the spell."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Command of Air",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast the {@spell Fly|PHB} spell at will."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Earthly Intuition",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain Tremorsense to a range of 30 feet."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nature's Will",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "If you cast a spell and miss all of its attack roll(s), or all targets pass their saving throws to resist its effect, you can cast a cantrip as a bonus action instead of an action. You may do this once per short rest."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Searing Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Searing Nature Spirit Totem|S: Shaman}, which causes creatures to {@condition burning|S: Conditions|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Affinity with Flame",
+                        "Rune of totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Roaring Flames",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them. If a spell specifies multiple dimensions, such as {@spell Wall of Fire|PHB}, you one to increases."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compound Burns",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@b Growing Heat} feature improves. A creature now takes additional damage equal to your proficiency bonus any time they take fire damage, instead of only when you deal it. The effect's duration is still only increased by you."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Glacial Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Glacial Nature Spirit Totem|S: Shaman}, which, to creatures you choose, makes the area surrounding it difficult terrain and prevents regaining of hit points."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Block",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you deal cold damage to one or more creatures, you can gain a number of temporary hit points equal to your proficiency bonus times the number of creatures you hit."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Absolute Zero",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@b Biting Cold} feature is enhanced. The penalty now applies to the next attack roll, ability check, or saving throw that the target makes. It also imposes disadvantage on Strength and Dexterity saving throws."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Voltaic Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Voltaic Nature Spirit Totem|S: Shaman}, which prevents creatures of your choice within its area from taking reactions."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spasming Shocks",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|S: Conditions} until the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aftershock",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@b Arc Lightning} feature improves. It can now affect up to four targets, and the range limitation of 15 feet is between targets affected by this feature, not the original target."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Booming Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Booming Nature Spirit Totem|S: Shaman}, which creates a shockwave that pushes creatures of your choosing away from the totem."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Disorienting Thunderclap",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|PHB}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reverberating Thunder",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@b Thundercrack} feature improves. You are able to push creatures of any size, and the distance increases to 10 feet."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Caustic Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Caustic Nature Spirit Totem|S: Shaman}, which reduces the AC of creatures of your choice in its area by 2."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rapid Erosion",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw or become {@condition sundered|S: Conditions} until the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Viscous Acid",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|S: Conditions} and deals {@damage 1d4} less damage with weapon attacks."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Mountains",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are resistant to bludgeoning, piercing, and slashing damage."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Mountain"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Affinity Jet",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you use your {@subclassFeature Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1|S: Shaman|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Waters",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you regain 15 hit points at the start of each of your turns."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Volcanoes",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are immune to fire damage."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Volcanoes"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Forest",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn, or until you attack or cast a spell."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Forest"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rune of Totem Summoning",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You gain the ability to conjure a Nature Spirit Totem. This tiny elemental creature applies an effect to an area within 15 feet of itself. If a totem deals damage, you are considered to have done that damage.",
+                "Summoning a totem requires an action, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a long rest or unless you expend a spell slot of first level or higher.",
+                "The totem requires your {@status concentration} (as if you were concentrating on a spell), however, you can summon additional totems using the same concentration. Whenever you fail a Constitution saving throw to maintain your concentration, you choose one totem to disappear. If you use another effect which requires concentration such as a spell, they all disappear.",
+                "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@creature Taunting Nature Spirit Totem|S: Shaman}",
+                        "{@creature Warding Nature Spirit Totem|S: Shaman}",
+                        "{@creature Warning Nature Spirit Totem|S: Shaman}",
+                        "{@creature Lifting Nature Spirit Totem|S: Shaman}",
+                        "{@creature Blessing Nature Spirit Totem|S: Shaman}",
+                        "{@creature Wrath of Air Nature Spirit Totem|S: Shaman}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totemkeeper",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When expending a spell slot to summon a totem, you may summon two at once if the spell slot expended is of third level or higher."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totemic Blast",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your bonus action, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totemic Might",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you summon a totem, it gains temporary hit points equal to twice your proficiency bonus.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totem Commander",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
+                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a reaction to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totem Specialist",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn how to summon two more totems from the list in the {@optfeature Rune of Totem Summoning|S: Shaman}.",
+                "Furthermore, your totems become proficient in all saving throws."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enforcement Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn how to summon a {@creature Enforcement Nature Spirit Totem|S: Shaman}, which grants creatures of your choice temporary hit points at the start of each of your turns and prevents them from being moved against their will."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Totem",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn how to summon a {@creature Manarage Nature Spirit Totem|S: Shaman}. You can summon it once per short rest and it provides the following benefits:",
+                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature, but no more than once per turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+        }
+    ],
+    "monster": [
+        {
+            "name": "Sapling Treant",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "S"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 39,
+                "formula": "6d8+12"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 17,
+            "dex": 8,
+            "con": 14,
+            "int": 12,
+            "wis": 12,
+            "cha": 10,
+            "passive": 11,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "resist": [
+                "piercing"
+            ],
+            "vulnerable": [
+                "fire"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Rock",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Taunting Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Taunting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Hostile creatures within this totem's area have disadvantage on any attack that doesn't target the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast (Requires Totemic Blast Primordial Rune)",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warning Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warning Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one saving throw they make. The bonus is equal to half your spellcasting ability modifier (rounded up)."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warding Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warding Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|S: Conditions} until the end of its turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lifting Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Lifting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a friendly creature would enter this totem's area, it can spend an additional 5 feet of movement to be lifted by elemental winds and carried to the opposite side of the area. This movement does not provoke opportunity attacks.",
+                        "A friendly creature that starts its turn within the area gains 10 feet of movement speed for that turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessing Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Blessing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one attack roll or ability check they make. The bonus is equal to your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wrath of Air Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Wrath of Air Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, any creature within the totem's area may add their spellcasting ability modifier to one damage roll from an attack or spell. If they do not have a spellcasting ability modifier, they use their Wisdom ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enforcement Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved agains their will."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Searing Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Searing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|S: Conditions}. If a creature is already {@condition burning|S: Conditions}, it takes {@dice 1d4} fire damage instead."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Glacial Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Glacial Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "The area is difficult terrain for creatures of your choice. Additionally, those creatures cannot regain hit points while in the area."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Voltaic Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Voltaic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area are unable to take reactions."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Booming Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Booming Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "At the start of your turns, the totem emits a shockwave. Each creature of your choice within the totem's area must make a Strength saving throw or be pushed up to 15 feet directly away from the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Caustic Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Caustic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area suffer a -2 penalty to their AC."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        }
+    ],
     "condition": [
         {
             "name": "Dazed",
@@ -373,9 +4085,22 @@
                     "type": "list",
                     "items": [
                         "A Withering creature cannot regain hit points by any means and its movement is {@condition Hampered|S: Conditions}.",
-                        "The creature takes 2d8 necrotic damage as it receives the condition, and a further 1 necrotic damage each hour.",
-                        "The condition can be removed via Greater Restoration or a more powerful healing spell (Such as {@spell Heal|phb}, {@spell Regenerate|phb}, or {@spell Power Word Heal|phb}). Alternatively, {@spell Lesser Restoration|phb} can be used if the caster succeeds a DC 15 ability check with their spellcasting ability (expending the slot regardless).",
+                        "The creature takes 1 necrotic damage each hour that it has the condition.",
+                        "The condition can be removed via Greater Restoration or a more powerful healing spell (Such as {@spell Heal|phb}, {@spell Regenerate|phb}, or {@spell Power Word Heal|phb}). Alternatively, {@spell Lesser Restoration|phb} can be used if the caster succeeds a DC 13 ability check with their spellcasting ability (expending the slot regardless).",
                         "Typically, this condition is reserved for Darkiron, a material found in (but not native to) Neverwhere. At the DM's discretion, other effects may apply this condition, but with easier removal and/or greater damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Regenerating (X)",
+            "source": "S: Conditions",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A regenerating creature regains hit points equal to the Regenerating value at the start of each of their turns (denoted 'Regenerating (X)')."
                     ]
                 }
             ]
@@ -752,14 +4477,14 @@
             ]
         },
         {
-            "name": "Friend of Nature",
+            "name": "Friend of Druids",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Survival) checks.",
+                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Animal Handling) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -770,7 +4495,7 @@
             ]
         },
         {
-            "name": "Friend of the Devout",
+            "name": "Friend of Priests",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
@@ -788,7 +4513,7 @@
             ]
         },
         {
-            "name": "Friend of the Formidable",
+            "name": "Friend of Warriors",
             "source": "S: Items",
             "rarity": "common",
             "wondrous": false,
@@ -796,6 +4521,96 @@
             "type": "RG",
             "entries": [
                 "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Parties",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Persuasion) and Charisma (Performance) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Thieves",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Sleight of Hand) and Intelligence (Investigation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Urchins",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Wisdom (Survival) and Wisdom (Perception) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Paranoid",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Deception) and Wisdom (Insight) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Light-foots",
+            "source": "S: Items",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -2088,7 +5903,7 @@
                 }
             ],
             "entries": [
-                "You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the ground within that area must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
+                "You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the same surface within a 50-foot cone (the spell covers up to 10 feet of elevation changes (such as a small wall or hole), but is blocked by a break in the surface) must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
                 "Celestials, elementals, fey, fiends, and undead have disadvantage on the saving throw. Furthermore, the ground within the spell's area is considered difficult terrain for those creature types for the next minute."
             ],
             "entriesHigherLevel": [
@@ -2215,274 +6030,6 @@
                     }
                 ]
             }
-        }
-    ],
-    "subclass": [
-        {
-            "name": "Oath of Unity",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "shortName": "Unity",
-            "additionalSpells": [
-                {
-                    "prepared": {
-                        "3": [
-                            "Sanctuary",
-                            "Protection from Evil and Good"
-                        ],
-                        "5": [
-                            "Moonbeam",
-                            "Warding Bond"
-                        ],
-                        "9": [
-                            "Beacon of Hope",
-                            "Spirit Guardians"
-                        ],
-                        "13": [
-                            "Death Ward",
-                            "Guardian of Faith"
-                        ],
-                        "17": [
-                            "Circle of Power",
-                            "Dispel Evil and Good"
-                        ]
-                    }
-                }
-            ],
-            "subclassFeatures": [
-                "Oath of Unity|Paladin|PHB|Unity|Starlight|3",
-                "Aura of Coordination|Paladin|PHB|Unity|Starlight|7",
-                "Resilient Spirit|Paladin|PHB|Unity|Starlight|15",
-                "Champion of the People|Paladin|PHB|Unity|Starlight|20"
-            ]
-        }
-    ],
-    "subclassFeature": [
-        {
-            "name": "Oath of Unity",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 3,
-            "entries": [
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Tenets of Unity|Paladin|PHB|Unity|Starlight|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Oath Spells|Paladin|PHB|Unity|Starlight|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Guardian Angel|Paladin|PHB|Unity|Starlight|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity: Rallying Cry|Paladin|PHB|Unity|Starlight|3"
-                }
-            ]
-        },
-        {
-            "name": "Channel Divinity: Guardian Angel",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                " As a reaction to a friendly creature within 30 feet of you taking damage, you can use your Channel Divinity to protect them, preventing the triggering damage and surrounding them in an invulnerable barrier which gives them resistance to all further damage.",
-                "If the protected creature makes an attack, casts a spell that affects an enemy, deals damage to another creature, or forces a creature to make a saving throw, the effect ends."
-            ]
-        },
-        {
-            "name": "Channel Divinity: Rallying Cry",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "As a bonus action, you hold your weapon or arm aloft and shout a rallying cry, beckoning your allies forward.",
-                "You can use your Channel Divinity to choose creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Until the end of their next turn, each of those creatures gains a bonus to weapon attack and damage rolls equal to your Charisma modifier (minimum of one), and an additional 10 feet of movement speed."
-            ]
-        },
-        {
-            "name": "Oath Spells",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 3,
-            "entries": [
-                "You gain oath spells at the paladin levels listed in the Oath of Unity Spells table.",
-                {
-                    "type": "table",
-                    "caption": "Oath of Unity Spells",
-                    "colLabels": [
-                        "Paladin Level",
-                        "Spells"
-                    ],
-                    "colStyles": [
-                        "col-2 text-center",
-                        "col-10"
-                    ],
-                    "rows": [
-                        [
-                            "3rd",
-                            "{@spell Sanctuary}, {@spell Protection from Evil and Good}"
-                        ],
-                        [
-                            "5th",
-                            "{@spell Moonbeam}, {@spell Warding Bond}"
-                        ],
-                        [
-                            "9th",
-                            "{@spell Beacon of Hope}, {@spell Spirit Guardians}"
-                        ],
-                        [
-                            "13th",
-                            "{@spell Death Ward}, {@spell Guardian of Faith}"
-                        ],
-                        [
-                            "17th",
-                            "{@spell Circle of Power}, {@spell Dispel Evil and Good}"
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Tenets of Unity",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "The Oath of unity is a vow taken to protect the ideals of community and the people within it. They seek to protect the people from evil, as the selfish can never truly be united. This often extends to powers and beings from other planes, who would seek to take aspects of the material plane for their own. The imagery of a paladin under this oath may take the shape of wings, as a protector or guardian angel, working together to protect people from the horrors that would tear them and their kingdoms apart.",
-                "You may have received your calling during a moment of heroism, or a moment of vulnerability, in the service or protection of others. Or perhaps you heard a voice on the wind, under a full moon. However this oath came to you, you value the safety of others above all, and seek to put down selfishness in all its forms.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Community",
-                            "entries": [
-                                "The people need you. Be their shield."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Courage",
-                            "entries": [
-                                "Bravery is not the absence of fear, but acting in spite of it. Evil prevails when good men do not act - so you should act."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Honour",
-                            "entries": [
-                                "Be fair and just. Your actions are your deeds. Avoid harm, but do not let that get in the way of doing good."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Tolerance",
-                            "entries": [
-                                "Intolerance cannot be tolerated. People may exist as they are, unless they threaten the peace of others. To stay neutral is to side with the oppressor."
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Integrity",
-                            "entries": [
-                                "You cannot be responsible for others if you cannot hold yourself to account. Protect those in your care, and ensure that all authority is just."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Aura of Coordination",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 7,
-            "header": 2,
-            "entries": [
-                "Beginning at 7th level, your presence provides inspiration to your allies, allowing you to coordinate their movements. Friendly creatures that start their turn 10 feet of you may take the Disengage action as a bonus action on that turn."
-            ]
-        },
-        {
-            "name": "Resilient Spirit",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 15,
-            "header": 2,
-            "entries": [
-                "Beginning at 15th level, your presence is a stronghold. Each friendly creature within your Aura of Coordination regains hit points equal to your Charisma modifier (minimum of 1) at the start of each of their turns, to a total no higher than your paladin level."
-            ]
-        },
-        {
-            "name": "Champion of the People",
-            "source": "Starlight",
-            "className": "Paladin",
-            "classSource": "PHB",
-            "subclassShortName": "Unity",
-            "subclassSource": "Starlight",
-            "level": 20,
-            "header": 2,
-            "entries": [
-                "At 20th level, your presence becomes a terror to enemies who stand against you, and you become a beacon of hope to your allies. As an action, you transform, becoming a shining beacon of unity for your allies to rally around. You may be surrounded by swirling sigils and sparkling moonlight.",
-                "During the transformation, you gain the following features for ten minutes:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Your aura is filled with bright moonlight.",
-                        "Your spirit is empowered: friendly creatures within your aura have advantage on wisdom saving throws, and regain the maximum health possible from any healing.",
-                        "Your resolve is unbreakable: when a friendly creature would be reduced to zero hit points or killed within your aura, they are instead reduced to one hit point. A given creature can benefit from this only once per long rest.",
-                        "Your form cannot be changed against your will."
-                    ]
-                },
-                "Once you use this feature, you can't use it again until you finish a long rest."
-            ]
         }
     ],
     "race": [

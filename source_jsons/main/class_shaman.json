@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew/homebrew.json",
     "_meta": 
     {
         "sources": 
@@ -34,7 +33,7 @@
 				"Optional Rule: Alternate Ability Shaman|Shaman|S: Shaman|1|S: Shaman",
 				"Spellcasting|Shaman|S: Shaman|1|S: Shaman",
 				"Elemental Origin|Shaman|S: Shaman|1|S: Shaman",
-				"Runes|Shaman|S: Shaman|2|S: Shaman",
+				"Primordial Runes|Shaman|S: Shaman|2|S: Shaman",
 				"Elemental Affinity|Shaman|S: Shaman|3|S: Shaman",
 				"Ability Score Improvement|Fighter|PHB|4",
 				"Elemental Origin Feature|Shaman|S: Shaman|6|S: Shaman",
@@ -44,12 +43,12 @@
 				"Elemental Origin Feature|Shaman|S: Shaman|10|S: Shaman",
 				"Ability Score Improvement|Fighter|PHB|12",
 				"Elemental Origin Feature|Shaman|S: Shaman|14|S: Shaman",
-				"Primal Rite|Shaman|S: Shaman|15|S: Shaman",
+				"Ancient Rites|Shaman|S: Shaman|15|S: Shaman",
 				"Ability Score Improvement|Fighter|PHB|16",
                 "Elemental Affinity Improvement|Shaman|S: Shaman|17|S: Shaman",
-				"Overchannel|Shaman|S: Shaman|18|S: Shaman",
+				"Overload|Shaman|S: Shaman|18|S: Shaman",
 				"Ability Score Improvement|Fighter|PHB|19",
-				"Nature's Conduit|Shaman|S: Shaman|20|S: Shaman"
+				"Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman"
 			],
             "hd": {
                 "number": 1,
@@ -62,29 +61,30 @@
             "classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Shaman (S: Shaman)}"
+						"{@filter Cantrips Known|spells|level=0|class=Shaman}",
+                        "{@filter Spells Known|spells|class=Shaman}"
 					],
 					"rows": [
-						["2"],
-						["2"],
-						["2"],
-						["2"],
-						["2"],
-						["2"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"],
-						["3"]
+						[2, 2],
+						[2, 3],
+						[2, 4],
+						[2, 5],
+						[2, 6],
+						[2, 7],
+						[3, 8],
+						[3, 9],
+						[3, 10],
+						[3, 11],
+						[3, 12],
+						[3, 12],
+						[3, 13],
+						[3, 13],
+						[3, 14],
+						[3, 14],
+						[3, 15],
+						[3, 15],
+						[3, 16],
+						[3, 16]
 					]
 				},
 				{
@@ -212,7 +212,7 @@
             "startingProficiencies": {
                 "armor": [
                     "light", "medium",
-                    "{@item shield|phb|shields}"
+                    "{@item shield|PHB|shields}"
                 ],
                 "weapons":[
                     "simple"
@@ -237,11 +237,11 @@
             },
             "startingEquipment": {
                 "default": [
-                    "(a) {@item scale-mail|phb} or (b) {@item leather armor|phb|leather armour}",
-                    "(a) a {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
-                    "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb} or {@item druidic focus|phb}",
-                    "(a) a {@item explorer's pack|phb} or (b) an {@item dungeoneer's pack|phb}",
-                    "2 {@item dagger|phb|daggers}"
+                    "(a) {@item scale-mail|PHB} or (b) {@item leather armor|PHB|leather armour}",
+                    "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
+                    "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
+                    "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
+                    "2 {@item dagger|PHB|daggers}"
                 ],
                 "additionalFromBackground": true,
                 "goldAlternative": "{@dice 3d4x10}"
@@ -268,7 +268,159 @@
                 2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3
             ],
             "classSpells": [
-                "Acid Splash"
+                "Acid Splash|PHB",
+                "Booming Blade|TCE",
+                "Control Flames|PHB",
+                "Create Bonfire|XGE",
+                "Dancing Lights|PHB",
+                "Druidcraft|PHB",
+                "Fire Bolt|PHB",
+                "Frostbite|XGE",
+                "Green-Flame Blade|TCE",
+                "Gust|XGE",
+                "Lightning Lure|TCE",
+                "Magic Stone|XGE",
+                "Mold Earth|XGE",
+                "Poison Spray|PHB",
+                "Primal Savagery|XGE",
+                "Produce Flame|PHB",
+                "Ray of Frost|PHB",
+                "Shape Water|XGE",
+                "Shocking Grasp|PHB",
+                "Thorn Whip|PHB",
+                "Thunderclap|XGE",
+
+                "Absorb Elements|XGE",
+                "Burning Hands|PHB",
+                "Caustic Smite|J:General",
+                "Chromatic Orb|PHB",
+                "Create or Destroy Water|PHB",
+                "Cure Wounds|PHB",
+                "Detect Magic|PHB",
+                "Detect Poison and Disease|PHB",
+                "Earth Tremor|XGE",
+                "Entangle|PHB",
+                "Faerie Fire|PHB",
+                "Fog Cloud|PHB",
+                "Frost Fingers|IDRotF",
+                "Ice Knife|XGE",
+                "Jump|PHB",
+                "Longstrider|PHB",
+                "Purify Food and Drink|PHB",
+                "Searing Smite|PHB",
+                "Tasha's Caustic Brew|TCE",
+                "Thunderous Smite|PHB",
+                "Thunderwave|PHB",
+                "Witch Bolt|PHB",
+
+                "Aganazzar's Scorcher|XGE",
+                "Barkskin|PHB",
+                "Continual Flame|PHB",
+                "Dust Devil|XGE",
+                "Earthbind|XGE",
+                "Flame Blade|PHB",
+                "Flaming Sphere|PHB",
+                "Gust of Wind|PHB",
+                "Heat Metal|PHB",
+                "Lesser Restoration|PHB",
+                "Maximilian's Earthen Grasp|XGE",
+                "Melf's Acid Arrow|PHB",
+                "Misty Step|PHB",
+                "Protection from Poison|PHB",
+                "Rime's Binding Ice|FTD",
+                "Scorching Ray|PHB",
+                "Shatter|PHB",
+                "Spike Growth|PHB",
+                "Warding Wind|XGE",
+                "Wither and Bloom|SCC",
+
+                "Ashardalon's Stride|FTD",
+                "Call Lightning|PHB",
+                "Daylight|PHB",
+                "Elemental Weapon|PHB",
+                "Erupting Earth|XGE",
+                "Fireball|PHB",
+                "Glyph of Warding|PHB",
+                "Lightning Bolt|PHB",
+                "Meld into Stone|PHB",
+                "Nondetection|PHB",
+                "Protection from Energy|PHB",
+                "Sleet Storm|PHB",
+                "Thunder Step|XGE",
+                "Tidal Wave|XGE",
+                "Wall of Sand|XGE",
+                "Wall of Water|XGE",
+                "Water Breathing|PHB",
+                "Water Walk|PHB",
+                "Wind Wall|PHB",
+
+                "Conjure Minor Elementals|PHB",
+                "Control Water|PHB",
+                "Elemental Bane|XGE",
+                "Fire Shield|PHB",
+                "Grasping Vine|PHB",
+                "Guardian of Nature|PHB",
+                "Ice Storm|PHB",
+                "Stoneskin|PHB",
+                "Storm Sphere|XGE",
+                "Summon Elemental|TCE",
+                "Vitriolic Sphere|XGE",
+                "Wall of Fire|PHB",
+                "Watery Sphere|XGE",
+
+                "Cloudkill|PHB",
+                "Commune with Nature|PHB",
+                "Cone of Cold|PHB",
+                "Control Winds|XGE",
+                "Dream|PHB",
+                "Greater Restoration|PHB",
+                "Immolation|XGE",
+                "Maelstrom|XGE",
+                "Reincarnate|PHB",
+                "Scrying|PHB",
+                "Transmute Rock|XGE",
+                "Tree Stride|PHB",
+                "Wall of Stone|PHB",
+                "Wrath of Nature|XGE",
+
+                "Bones of the Earth|XGE",
+                "Chain Lightning|PHB",
+                "Druid Grove|XGE",
+                "Find the Path|PHB",
+                "Flesh to Stone|PHB",
+                "Investiture of Flame|XGE",
+                "Investiture of Ice|XGE",
+                "Investiture of Stone|XGE",
+                "Investiture of Wind|XGE",
+                "Move Earth|PHB",
+                "Otiluke's Freezing Sphere|PHB",
+                "Primordial Ward|XGE",
+                "Sunbeam|PHB",
+                "Transport Via Plants|PHB",
+                "Wall of Ice|PHB",
+                "Wall of Thorns|PHB",
+                "Wind Walk|PHB",
+
+                "Delayed Blast Fireball|PHB",
+                "Fire Storm|PHB",
+                "Prismatic Spray|PHB",
+                "Regenerate|PHB",
+                "Symbol|PHB",
+                "Whirlwind|XGE",
+
+                "Antimagic Field|PHB",
+                "Control Weather|PHB",
+                "Earthquake|PHB",
+                "Incendiary Cloud|PHB",
+                "Sunburst|PHB",
+                "Tsunami|PHB",
+
+                "Foresight|PHB",
+                "Imprisonment|PHB",
+                "Invulnerability|PHB",
+                "Power Word Heal|PHB",
+                "Prismatic Wall|PHB",
+                "Storm of Vengeance|PHB"
             ],
             "fluff": [
                 {
@@ -286,7 +438,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a Shaman quickly with these suggestions: First, put your highest ability score in Wisdom, followed by Constitution or Dexterity; second, choose the Outlander background; third, choose the {@spell Produce Flame|phb} and {@spell Dancing Lights|phb} cantrips, along with the 1st-level {@spell Ice Knife|xge} and {@spell Thunderwave|phb} spells."
+										"You can make a Shaman quickly with these suggestions: First, put your highest ability score in Wisdom, followed by Constitution or Dexterity; second, choose the Outlander background; third, choose the {@spell Produce Flame|PHB} and {@spell Dancing Lights|PHB} cantrips, along with the 1st-level {@spell Ice Knife|XGE} and {@spell Thunderwave|PHB} spells."
 									]
 								},
 								{
@@ -346,6 +498,74 @@
             ]
         },
         {
+            "name": "Spellcasting",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "Your experience in nature has infused you with the primordial magics of the world. This could be a life in a tribe, time spent wandering the wilds and finding a spirit, or unexpected communion with a nature deity. Whatever its origin, it fuels your spellcasting. You can channel these primal magics to strike those who would defy nature, restore your allies, and manipulate the world around you.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "At 1st level, you know two cantrips of your choice from the Shaman spell list. You learn an additional cantrip of your choice at 7th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known of 1st Level and Higher",
+                    "entries": [
+                        "You know two 1st-level spells of your choice from the shaman spell list.",
+                        "You learn an additional Shaman spell of your choice every level, and every other level from level 11 onwards.",
+                        "Additionally, when you gain a level in this class, you can choose one of the Shaman spells you know and replace it with another spell from the Shaman spell list, which must also be a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for Shaman spells as you draw magic from your connection to nature. You use your Wisdom when a Shaman spell refers to your spellcasting ability, and you use your Wisdom modifier whenever you set the saving throw DC or make a spell attack roll for one of your Shaman spells.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Focus",
+                    "entries": [
+                        "You can use a {@item druidic focus|PHB} as a spellcasting focus for your shaman spells. You or your DM may decide it more appropriate to use an {@item arcane focus|PHB}, depending on how your shaman learned their magic."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ritual Casting",
+                    "entries": [
+                        "Your connection to nature can be channeled with time, at less cost to yourself. You can cast a shaman spell you know as a ritual if that spell has the ritual tag."
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Elemental Origin",
             "source": "S: Shaman",
             "className": "Shaman",
@@ -369,8 +589,7 @@
                 "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or allow you to conjure totems which grant benefits within an area.",
                 "At 2nd level, you gain 2 Primordial Runes of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=PRU} page. When you gain certain Shaman levels, you gain additional runes of your choice, as shown in the Runes column of the Shaman table.",
                 "Additionally, when you gain a level in this class, you can choose one of the runes you know and replace it with another that you could learn at that level.",
-                "If a rune has prerequisites, you must meet them to channel that rune. You can channel a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class.",
-                "If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
+                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
             ]
         },
         {
@@ -381,12 +600,12 @@
             "level": 3,
             "entries":
             [
-                "Your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
+                "At 3rd level, your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
                 {
 					"type": "entries",
 					"name": "Affinity with Flame",
 					"entries":[
-						"Your chosen element is fire. You gain the {@spell Firebolt|phb} or {@spell Green-Flame Blade|tce} cantrip. Additionally, you gain the {@b Growing Heat} feature below.",
+						"Your chosen element is fire. You gain the {@spell Firebolt|PHB} or {@spell Green-Flame Blade|TCE} cantrip. Additionally, you gain the {@b Growing Heat} feature below.",
                         {
                             "type": "entries",
                             "name": "Growing Heat",
@@ -400,7 +619,7 @@
 					"type": "entries",
 					"name": "Affinity with Frost",
 					"entries":[
-						"Your chosen element is cold. You gain the {@spell Ray of Frost|phb} or {@spell Frostbite|xge} cantrip. Additionally, you gain the {@b Biting cold} feature below.",
+						"Your chosen element is cold. You gain the {@spell Ray of Frost|PHB} or {@spell Frostbite|XGE} cantrip. Additionally, you gain the {@b Biting cold} feature below.",
                         {
                             "type": "entries",
                             "name": "Biting Cold",
@@ -414,7 +633,7 @@
 					"type": "entries",
 					"name": "Affinity with Lightning",
 					"entries":[
-						"Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|phb} cantrip. Additionally, you gain the {@b Arc Lightning} feature below.",
+						"Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|PHB} cantrip. Additionally, you gain the {@b Arc Lightning} feature below.",
                         {
                             "type": "entries",
                             "name": "Arc Lightning",
@@ -428,7 +647,7 @@
 					"type": "entries",
 					"name": "Affinity with Thunder",
 					"entries":[
-						"Your chosen element is thunder. You gain the {@spell Thunderclap|xge} or {@spell Booming Blade|tce} cantrip. Additionally, you gain the {@b Thundercrack} feature below.",
+						"Your chosen element is thunder. You gain the {@spell Thunderclap|XGE} or {@spell Booming Blade|TCE} cantrip. Additionally, you gain the {@b Thundercrack} feature below.",
                         {
                             "type": "entries",
                             "name": "Thundercrack",
@@ -442,7 +661,7 @@
 					"type": "entries",
 					"name": "Affinity with Acid",
 					"entries":[
-						"Your chosen element is acid. You gain the {@spell Acid Splash|phb} or {@spell Primal Savagery|xge} cantrip. Additionally, you gain the {@b Persistent Corrosion} feature below.",
+						"Your chosen element is acid. You gain the {@spell Acid Splash|PHB} or {@spell Primal Savagery|XGE} cantrip. Additionally, you gain the {@b Persistent Corrosion} feature below.",
                         {
                             "type": "entries",
                             "name": "Persistent Corrosion",
@@ -483,13 +702,12 @@
             "classSource": "S: Shaman",
             "level": 9,
             "entries": [
-                "Your strong connection to nature allows you access to ancient knowledge and abilities:",
+                "Your strong connection to nature allows you access to ancient knowledge and abilities.",
                 {
                     "type": "list",
-                    "entries":
-                    [
+                    "items": [
                         "You gain a bonus to {@skill arcana} and {@skill nature} checks equal to your spellcasting ability modifier.",
-                        "You learn the {@spell Skill Empowerment|xge} spell and can cast it once per long rest without expending a spell slot. It does not count against the number of Shaman spells you know."
+                        "Additionally, you learn the {@spell Skill Empowerment|XGE} spell and can cast it once per long rest without expending a spell slot. It does not count against the number of Shaman spells you know."
                     ]
                 }
             ]
@@ -523,7 +741,7 @@
             "classSource": "S: Shaman",
             "level": 15,
             "entries": [
-                ""
+                "TBD"
             ]
         },
         {
@@ -549,21 +767,172 @@
             ]
         },
         {
-            "name": "Avatar of Nature",
+            "name": "Spiritual Avatar",
             "source": "S: Shaman",
             "className": "Shaman",
             "classSource": "S: Shaman",
             "level": 20,
             "entries": [
-                ""
+                "Once per long rest, you can use a bonus action to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance to suit your elemental affinity, such as your head being lit with flames, or your skin being covered with frost.",
+                "While this state is active, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a flying speed of 50 feet.",
+                        "Whenever you cast a Shaman spell that has a casting time of one action, you can cast it using a bonus action instead."
+                    ]
+                },
+                "At this level, you also have access to a Primordial Rune specific to your subclass that can enhance your Spiritual Avatar in another way."
             ]
         }
     ],
     "subclass": [
-
+        {
+            "name": "Waters",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "shortname": "Waters",
+            "subclassFeatures": [
+                "Waters|Shaman|S: Shaman|Waters|S: Shaman|1",
+                "Ebb and Flow Improvement|Shaman|S: Shaman|Waters|S: Shaman|6",
+                "Flow As Water|Shaman|S: Shaman|Waters|S: Shaman|10",
+                "Master of the Tides|Shaman|S: Shaman|Waters|S: Shaman|14"
+            ],
+            "subclassSpells": [
+                "Healing Word|PHB", "Sanctuary|PHB",
+                "Healing Spirit|XGE", "Mirror Image|PHB",
+                "Aura of Vitality|PHB", "Vampiric Touch|PHB",
+                "Freedom of Movement|PHB", "Aura of Purity|PHB",
+                "Mass Cure Wounds|PHB", "Enervation|XGE"
+            ]
+        }
     ],
     "subclassFeature": [
-
+        {
+            "name": "Waters",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "Water is often described as the source of life. Shamans of the water - be that rivers, lakes, or the sea - know this, and control water in order to control life itself. They can manipulate the flow of positive energies in order to manipulate the flow of battle. Using water's restorative magic to assist their allies, and the force of water to throw their enemies off-balance.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                }
+            ]
+        },
+        {
+            "name": "Waters Shaman Spells",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Waters Shaman feature}",
+                "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
+                {
+                    "type": "table",
+                    "caption": "Waters Shaman Spells",
+                    "colLabels": [
+                        "Shaman Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Healing Word|PHB}, {@spell Sanctuary|PHB}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Healing Spirit|XGE}, {@spell Mirror Image|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Aura of Vitality|PHB}, {@spell Vampiric Touch|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Freedom of Movement|PHB}, {@spell Aura of Purity|PHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Mass Cure Wounds|PHB}, {@spell Enervation|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ebb and Flow",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Waters Shaman feature}",
+                "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|S: Conditions}."
+            ]
+        },
+        {
+            "name": "Ebb and Flow Improvement",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Waters Shaman feature}",
+                "The damage of the water jet increases to {@damage 2d4} + your Wisdom modifier."
+            ]
+        },
+        {
+            "name": "Flow As Water",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Waters Shaman feature}",
+                "You can breathe underwater and gain a swimming speed equal to your walking speed.",
+                "Furthermore, when a creature hits you with an attack, you can use a reaction to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks, and gaining the {@condition Regenerating|S: Conditions} condition with an amount equal to your Shaman level, for one turn.",
+                "This movement can move through other creatures' spaces, but if you end your movement in another creature's space you are ejected to the nearest unoccupied space, taking {@damage 1d8} force damage for each 5 feet you are ejected.",
+                "You can use this reaction once per short rest."
+            ]
+        },
+        {
+            "name": "Master of the Tides",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Waters Shaman feature}",
+                "Your Ebb and Flow has improved to match the very motion of the world itself, in the model of the ocean's tides.",
+                "When your water jet hits a target, you can restore hit points equal to the damage dealt to a creature of your choice within 30 feet of the target. The damage of the water jet increases to {@damage 2d8} + your wisdom modifier.",
+                "Finally, you can use the water jet without needing to restore hit points to a creature."
+            ]
+        }
     ],
     "optionalfeature": [
         {
@@ -583,7 +952,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Guidance|phb} cantrip. It has a duration of ten minutes when you cast it."
+				"You learn the {@spell Guidance|PHB} cantrip. It has a duration of ten minutes when you cast it."
 			]
         },
         {
@@ -623,7 +992,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast {@spell speak with animals} at will and without expending a spell slot."
+				"You can cast {@spell speak with animals} and at will and without expending a spell slot."
 			]
         },
         {
@@ -643,7 +1012,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast {@spell Detect Magic|phb}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per long rest each, without expending a spell slot."
+				"You can cast {@spell Detect Magic|PHB}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per long rest each, without expending a spell slot."
 			]
         },
         {
@@ -653,7 +1022,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Longstrider|phb} spell and can cast it once per long rest without expending a spell slot."
+				"You learn the {@spell Longstrider|PHB} and can cast it once per long rest without expending a spell slot."
 			]
         },
         {
@@ -663,7 +1032,7 @@
                 "PRU"
             ],
             "entries": [
-                "You can cast the {@spell Goodberry|phb} spell once per long rest. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+                "You can cast the {@spell Goodberry|PHB} spell once per long rest. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
             ]
         },
         {
@@ -683,7 +1052,7 @@
 				"PRU"
 			],
 			"entries": [
-				"As part of an hour-long ritual, you look into the future, sensing a power you might require. You can then swap one spell that you know for another on the Shaman spell list. You may do this only once each {@dice 2d4} days.",
+				"As part of an hour-long ritual, you look into the future, sensing a power you might require. You may ask a question about an event to occur within the next 7 days, and the DM may suggest a spell or type of spell that would prove beneficial. You can then swap one spell that you know for another on the Shaman spell list. You may do this only once each {@dice 2d4} days.",
                 "{@note The spell you can learn follows normal rules. For example, a 6th level Shaman could learn a 3rd level spell or lower, even if they had 4th level spell slots.}"
 			]
         },
@@ -720,7 +1089,7 @@
 			],
 			"entries": [
 				"You gain a swimming speed of 40 feet, or your walking speed, whichever is higher. If you already have a swimming speed, this increases it by 10 feet instead.",
-                "You also learn the {@spell Water Breathing|phb} spell, which doesn't count against your known Shaman spells."
+                "You also learn the {@spell Water Breathing|PHB} spell, which doesn't count against your known Shaman spells."
 			],
             "prerequisite": [
                 {
@@ -765,7 +1134,29 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Summon Fey|tce} spell."
+				"You learn the {@spell Summon Fey|TCE} spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Gifts of the Elders",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Borrowed Knowledge|SCC} and {@spell Enhance Ability|PHB} spells."
 			],
             "prerequisite": [
                 {
@@ -857,7 +1248,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Elemental Bane|xge} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to two turns."
+				"You learn the {@spell Elemental Bane|XGE} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to two turns."
 			],
             "prerequisite": [
                 {
@@ -902,7 +1293,29 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Insect Plague} spell. You can communicate with insects freely."
+				"You learn the {@spell Insect Plague|PHB} spell. You can communicate with insects freely."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Nature Companion",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can cast the {@spell Find Familiar|PHB} spell once per long rest without expending material components. Your familiar takes the form of a {@creature Sapling Treant|S: Shaman} or a {@creature Raven|MM}."
 			],
             "prerequisite": [
                 {
@@ -924,7 +1337,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Transport Via Plants|phb} spell and can cast it once per long rest without expending a spell slot."
+				"You learn the {@spell Transport Via Plants|PHB} spell and can cast it once per long rest without expending a spell slot."
 			],
             "prerequisite": [
                 {
@@ -968,7 +1381,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast the {@spell Fly|phb} spell at will."
+				"You can cast the {@spell Fly|PHB} spell at will."
 			],
             "prerequisite": [
                 {
@@ -1052,7 +1465,7 @@
 				"PRU"
 			],
 			"entries": [
-				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them. If a spell specifies multiple dimensions, such as {@spell Wall of Fire|phb}, you one to increases."
+				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them. If a spell specifies multiple dimensions, such as {@spell Wall of Fire|PHB}, you one to increases."
 			],
             "prerequisite": [
                 {
@@ -1120,7 +1533,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When you deal cold damage to one or more creatures, you can gain a number of temporary hit points equal to your proficiency bonus for each creature you hit."
+				"When you deal cold damage to one or more creatures, you can gain a number of temporary hit points equal to your proficiency bonus times the number of creatures you hit."
 			],
             "prerequisite": [
                 {
@@ -1256,7 +1669,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|phb}."
+				"Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|PHB}."
 			],
             "prerequisite": [
                 {
@@ -1368,6 +1781,131 @@
             ]
 		},
         {
+			"name": "Avatar of the Mountains",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are resistant to bludgeoning, piercing, and slashing damage."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Mountain"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Affinity Jet",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you use your {@subclassFeature Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1|S: Shaman|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+		}, 
+        {
+			"name": "Avatar of the Waters",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you regain 15 hit points at the start of each of your turns."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Avatar of the Volcanoes",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are immune to fire damage."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Volcanoes"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Avatar of the Forest",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn, or until you attack or cast a spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Forest"
+                    ]
+                }
+            ]
+		},
+        {
 			"name": "Rune of Totem Summoning",
 			"source": "S: Shaman",
 			"featureType": [
@@ -1380,7 +1918,7 @@
                 "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
                 {
                     "type": "list",
-                    "entries": [
+                    "items": [
                         "{@creature Taunting Nature Spirit Totem|S: Shaman}",
                         "{@creature Warding Nature Spirit Totem|S: Shaman}",
                         "{@creature Warning Nature Spirit Totem|S: Shaman}",
@@ -1553,7 +2091,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn how to summon a {@creature Manarage Nature Spirit Totem|S: Shaman}, which grants the following benefit in its area:",
+				"You learn how to summon a {@creature Manarage Nature Spirit Totem|S: Shaman}. You can summon it once per short rest and it provides the following benefits:",
                 "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature, but no more than once per turn."
 			],
             "prerequisite": [
@@ -1574,6 +2112,50 @@
 		}
     ],
     "monster": [
+        {
+            "name": "Sapling Treant",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "S" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "ac": 14, "from": [ "natural armor" ] } ],
+            "hp": { "average": 39, "formula": "6d8+12" },
+            "speed": { "walk": 30 },
+            "str": 17,
+            "dex": 8,
+            "con": 14,
+            "int": 12,
+            "wis": 12,
+            "cha": 10,
+            "passive": 11,
+            "languages": [ "understands the languages you speak" ],
+            "resist": [ "piercing" ],
+            "vulnerable": [ "fire" ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Rock",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
+                    ]
+                }
+            ]
+        },
         {
             "name": "Taunting Nature Spirit Totem",
             "source": "S: Shaman",

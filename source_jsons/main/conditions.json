@@ -321,6 +321,19 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Regenerating (X)",
+        "source": "S: Conditions",
+        "page": 0,
+        "entries": [
+            {
+                "type": "list",
+                "items": [
+                    "A regenerating creature regains hit points equal to the Regenerating value at the start of each of their turns (denoted 'Regenerating (X)')."
+                ]
+            }
+        ]
     }
 ]
 }
