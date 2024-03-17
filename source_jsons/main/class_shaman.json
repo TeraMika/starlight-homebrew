@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew/homebrew.json",
     "_meta": 
     {
         "sources": 
@@ -20,7 +21,7 @@
             }
         ],
         "optionalFeatureTypes": {
-            "PRU": "Primordial Runes"
+            "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
         "dateLastModified": 0
@@ -385,10 +386,10 @@
 					"type": "entries",
 					"name": "Affinity with Flame",
 					"entries":[
-						"Your chosen element is fire. You gain the {@spell Firebolt|phb} or {@spell Green-Flame Blade|tce} cantrip. Additionally, you gain the {@b Rising Temperature} feature below.",
+						"Your chosen element is fire. You gain the {@spell Firebolt|phb} or {@spell Green-Flame Blade|tce} cantrip. Additionally, you gain the {@b Growing Heat} feature below.",
                         {
                             "type": "entries",
-                            "name": "Rising Temperature",
+                            "name": "Growing Heat",
                             "entries":[
                                 "Whenever you deal fire damage to a creature, they take additional damage equal to your proficiency bonus whenever you deal fire damage to them before the end of your next turn."
                             ]
@@ -404,7 +405,7 @@
                             "type": "entries",
                             "name": "Biting Cold",
                             "entries":[
-                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll, ability check, or saving throw that it makes."
+                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll or ability check that it makes."
                             ]
                         }
 					]
@@ -596,6 +597,16 @@
 			]
         },
         {
+            "name": "Natural Warrior",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Shillelagh} cantrip, and when you cast it it lasts for ten minutes and can be applied to any weapon with which you are proficient."
+			]
+        },
+        {
             "name": "Roots of the Tree",
 			"source": "S: Shaman",
 			"featureType": [
@@ -677,16 +688,6 @@
 			]
         },
         {
-            "name": "a",
-			"source": "S: Shaman",
-			"featureType": [
-				"PRU"
-			],
-			"entries": [
-				""
-			]
-        },
-        {
 			"name": "Elemental Manipulation",
 			"source": "S: Shaman",
 			"featureType": [
@@ -712,7 +713,7 @@
             ]
 		},
         {
-			"name": "Heart of the Sea",
+			"name": "Home at Sea",
 			"source": "S: Shaman",
 			"featureType": [
 				"PRU"
@@ -720,6 +721,29 @@
 			"entries": [
 				"You gain a swimming speed of 40 feet, or your walking speed, whichever is higher. If you already have a swimming speed, this increases it by 10 feet instead.",
                 "You also learn the {@spell Water Breathing|phb} spell, which doesn't count against your known Shaman spells."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Home in the Trees",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, this increases it by 10 feet instead.",
+                "You learn the {@spell Spider Climbing} spell and cast it once per long rest without expending a spell slot."
 			],
             "prerequisite": [
                 {
@@ -764,7 +788,7 @@
 			],
 			"entries": [
 				"Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a reaction to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
-                "This damage increases to {@dice 2d6} at 10th level."
+                "This damage increases to {@dice 2d6} at 11th level."
 			],
             "prerequisite": [
                 {
@@ -827,18 +851,213 @@
             ]
 		},
         {
-			"name": "",
+			"name": "Elemental Aversion",
 			"source": "S: Shaman",
 			"featureType": [
 				"PRU"
 			],
 			"entries": [
-				""
+				"You learn the {@spell Elemental Bane|xge} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to two turns."
 			],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 0,
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Keeper of the Grove",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Once per short rest, you can attempt to allow nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|S: Conditions} until the end of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Small Friends",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Insect Plague} spell. You can communicate with insects freely."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Forest Walker",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn the {@spell Transport Via Plants|phb} spell and can cast it once per long rest without expending a spell slot."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Master of Roots",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Once per long rest, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a bonus action, or forgo the need to {@status concentration||concentrate} on the spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Command of Air",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can cast the {@spell Fly|phb} spell at will."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Earthly Intuition",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You gain Tremorsense to a range of 30 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Nature's Will",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"If you cast a spell and miss all of its attack roll(s), or all targets pass their saving throws to resist its effect, you can cast a cantrip as a bonus action instead of an action. You may do this once per short rest."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Searing Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can summon a {@creature Searing Nature Spirit Totem|S: Shaman}, which causes creatures to {@condition burning|S: Conditions|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Affinity with Flame",
+                        "Rune of totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Roaring Flames",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them. If a spell specifies multiple dimensions, such as {@spell Wall of Fire|phb}, you one to increases."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
                         "class": {
                             "name": "Shaman",
                             "source": "S: Shaman",
@@ -846,7 +1065,304 @@
                         }
                     },
                     "feature": [
-                        ""
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Compound Burns",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your {@b Growing Heat} feature improves. A creature now takes additional damage equal to your proficiency bonus any time they take fire damage, instead of only when you deal it. The effect's duration is still only increased by you."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Glacial Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can summon a {@creature Glacial Nature Spirit Totem|S: Shaman}, which, to creatures you choose, makes the area surrounding it difficult terrain and prevents regaining of hit points."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Ice Block",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you deal cold damage to one or more creatures, you can gain a number of temporary hit points equal to your proficiency bonus for each creature you hit."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Absolute Zero",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your {@b Biting Cold} feature is enhanced. The penalty now applies to the next attack roll, ability check, or saving throw that the target makes. It also imposes disadvantage on Strength and Dexterity saving throws."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Voltaic Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can summon a {@creature Voltaic Nature Spirit Totem|S: Shaman}, which prevents creatures of your choice within its area from taking reactions."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Spasming Shocks",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|S: Conditions} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Aftershock",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your {@b Arc Lightning} feature improves. It can now affect up to four targets, and the range limitation of 15 feet is between targets affected by this feature, not the original target."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Booming Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can summon a {@creature Booming Nature Spirit Totem|S: Shaman}, which creates a shockwave that pushes creatures of your choosing away from the totem."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Disorienting Thunderclap",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|phb}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Reverberating Thunder",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your {@b Thundercrack} feature improves. You are able to push creatures of any size, and the distance increases to 10 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Caustic Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You can summon a {@creature Caustic Nature Spirit Totem|S: Shaman}, which reduces the AC of creatures of your choice in its area by 2."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Rapid Erosion",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw or become {@condition sundered|S: Conditions} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Viscous Acid",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|S: Conditions} and deals {@damage 1d4} less damage with weapon attacks."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
                     ]
                 }
             ]
@@ -858,12 +1374,36 @@
 				"PRU"
 			],
 			"entries": [
-				""
+                "You gain the ability to conjure a Nature Spirit Totem. This tiny elemental creature applies an effect to an area within 15 feet of itself. If a totem deals damage, you are considered to have done that damage.",
+                "Summoning a totem requires an action, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a long rest or unless you expend a spell slot of first level or higher.",
+                "The totem requires your {@status concentration} (as if you were concentrating on a spell), however, you can summon additional totems using the same concentration. Whenever you fail a Constitution saving throw to maintain your concentration, you choose one totem to disappear. If you use another effect which requires concentration such as a spell, they all disappear.",
+                "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
+                {
+                    "type": "list",
+                    "entries": [
+                        "{@creature Taunting Nature Spirit Totem|S: Shaman}",
+                        "{@creature Warding Nature Spirit Totem|S: Shaman}",
+                        "{@creature Warning Nature Spirit Totem|S: Shaman}",
+                        "{@creature Lifting Nature Spirit Totem|S: Shaman}",
+                        "{@creature Blessing Nature Spirit Totem|S: Shaman}",
+                        "{@creature Wrath of Air Nature Spirit Totem|S: Shaman}"
+                    ]
+                }  
+            ]
+		},
+        {
+			"name": "Totemkeeper",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When expending a spell slot to summon a totem, you may summon two at once if the spell slot expended is of third level or higher."
 			],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 0,
+                        "level": 5,
                         "class": {
                             "name": "Shaman",
                             "source": "S: Shaman",
@@ -871,10 +1411,962 @@
                         }
                     },
                     "feature": [
-                        ""
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totemic Blast",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your bonus action, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totemic Might",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you summon a totem, it gains temporary hit points equal to twice your proficiency bonus.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totem Commander",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
+                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a reaction to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totem Specialist",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn how to summon two more totems from the list in the {@optfeature Rune of Totem Summoning|S: Shaman}.",
+                "Furthermore, your totems become proficient in all saving throws."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Enforcement Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn how to summon a {@creature Enforcement Nature Spirit Totem|S: Shaman}, which grants creatures of your choice temporary hit points at the start of each of your turns and prevents them from being moved against their will."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Manarage Totem",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"You learn how to summon a {@creature Manarage Nature Spirit Totem|S: Shaman}, which grants the following benefit in its area:",
+                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature, but no more than once per turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
                     ]
                 }
             ]
 		}
+    ],
+    "monster": [
+        {
+            "name": "Taunting Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Taunting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Hostile creatures within this totem's area have disadvantage on any attack that doesn't target the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast (Requires Totemic Blast Primordial Rune)",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warning Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warning Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one saving throw they make. The bonus is equal to half your spellcasting ability modifier (rounded up)."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warding Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warding Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|S: Conditions} until the end of its turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lifting Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Lifting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a friendly creature would enter this totem's area, it can spend an additional 5 feet of movement to be lifted by elemental winds and carried to the opposite side of the area. This movement does not provoke opportunity attacks.",
+                        "A friendly creature that starts its turn within the area gains 10 feet of movement speed for that turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessing Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Blessing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one attack roll or ability check they make. The bonus is equal to your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wrath of Air Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Wrath of Air Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, any creature within the totem's area may add their spellcasting ability modifier to one damage roll from an attack or spell. If they do not have a spellcasting ability modifier, they use their Wisdom ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enforcement Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved agains their will."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Searing Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Searing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|S: Conditions}. If a creature is already {@condition burning|S: Conditions}, it takes {@dice 1d4} fire damage instead."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Glacial Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Glacial Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "The area is difficult terrain for creatures of your choice. Additionally, those creatures cannot regain hit points while in the area."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Voltaic Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Voltaic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area are unable to take reactions."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Booming Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Booming Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "At the start of your turns, the totem emits a shockwave. Each creature of your choice within the totem's area must make a Strength saving throw or be pushed up to 15 feet directly away from the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Caustic Nature Spirit Totem",
+            "source": "S: Shaman",
+            "summonedByClass": "Shaman|S: Shaman",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Caustic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area suffer a -2 penalty to their AC."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Shaman} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Shaman} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Shaman} Primordial Rune to use."
+                    ]
+                }
+            ]
+        }
     ]
 }
