@@ -7,7 +7,7 @@
                 "json": "S: Shaman",
                 "abbreviation": "S: Shaman",
                 "full": "Starlight: Shaman",
-            "color": "dac4ff",
+                "color": "dac4ff",
                 "authors": [
                     "Starlight"
                 ],
@@ -623,7 +623,7 @@
                             "type": "entries",
                             "name": "Biting Cold",
                             "entries":[
-                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll or ability check that it makes."
+                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll or ability check that it makes before the start of your next turn."
                             ]
                         }
 					]
@@ -691,7 +691,7 @@
             "classSource": "S: Shaman",
             "level": 7,
             "entries": [
-                "You become resistant to the damage type of your chosen elemental affinity."
+                "At 7th level, your attunement to the elements grows deeper. You become resistant to the damage type of your chosen elemental affinity."
             ]
         },
         {
@@ -740,7 +740,7 @@
             "classSource": "S: Shaman",
             "level": 17,
             "entries": [
-                "You become immune to the damage type of your chosen elemental affinity."
+                "At 17th level, you are a paragon of your chosen element. You become immune to the damage type of your chosen elemental affinity."
             ]
         },
         {
@@ -750,6 +750,7 @@
             "classSource": "S: Shaman",
             "level": 18,
             "entries": [
+                "At 18th level, you gain the ability to briefly push your magical abilities to their limit by experiencing magical feedback.",
                 "When you cast a Shaman spell, you can deal the maximum possible damage instead of rolling on the turn that you cast it.",
                 "Upon doing so, you take force damage equal to your Shaman level plus the level of the spell cast, which cannot be reduced in any way, and you cannot cast spells until after your next turn.",
                 "After you use this ability, you cannot do so again until you complete a short or long rest."
@@ -762,7 +763,7 @@
             "classSource": "S: Shaman",
             "level": 20,
             "entries": [
-                "Once per long rest, you can use a bonus action to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance to suit your elemental affinity, such as your head being lit with flames, or your skin being covered with frost.",
+                "At 20th level, you can use a bonus action to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance as you choose to suit your elemental affinity or origin, such as your head being lit with flames, or your skin being covered with frost.",
                 "While this state is active, you gain the following benefits:",
                 {
                     "type": "list",
@@ -771,7 +772,8 @@
                         "Whenever you cast a Shaman spell that has a casting time of one action, you can cast it using a bonus action instead."
                     ]
                 },
-                "At this level, you also have access to a Primordial Rune specific to your subclass that can enhance your Spiritual Avatar in another way."
+                "At this level, you also have access to a Primordial Rune specific to your subclass that can enhance your Spiritual Avatar in another way.",
+                "Once you use this feature, you can't do so again until you complete a long rest."
             ]
         }
     ],
@@ -1100,7 +1102,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, this increases it by 10 feet instead.",
+				"You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, it increases to that amount",
                 "You learn the {@spell Spider Climbing} spell and cast it once per long rest without expending a spell slot."
 			],
             "prerequisite": [
@@ -1237,7 +1239,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Elemental Bane|XGE} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to two turns."
+				"You learn the {@spell Elemental Bane|XGE} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -1454,7 +1456,7 @@
 				"PRU"
 			],
 			"entries": [
-				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them. If a spell specifies multiple dimensions, such as {@spell Wall of Fire|PHB}, you one to increases."
+				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them (for example, {@spell Burning Hands|PHB} increases from a 15-foot cone to a 20-foot cone). If a spell specifies multiple dimensions, such as {@spell Wall of Fire|PHB}, you choose one to increase."
 			],
             "prerequisite": [
                 {
@@ -1522,7 +1524,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When you deal cold damage to one or more creatures, you can gain a number of temporary hit points equal to your proficiency bonus times the number of creatures you hit."
+				"On the turn that you cast a spell of 1st level or higher that deals cold damage to one or more creatures, you can gain temporary hit points equal to your proficiency bonus times the number of creatures you deal cold damage to with that spell."
 			],
             "prerequisite": [
                 {
