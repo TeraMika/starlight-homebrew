@@ -797,6 +797,26 @@
                 "Freedom of Movement|PHB", "Aura of Purity|PHB",
                 "Mass Cure Wounds|PHB", "Enervation|XGE"
             ]
+        },
+        {
+            "name": "Mountains",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "shortname": "Mountains",
+            "subclassFeatures": [
+                "Mountains|Shaman|S: Shaman|Mountains|S: Shaman|1",
+                "Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|6",
+                "Spirits of the Valley|Shaman|S: Shaman|Mountains|S: Shaman|10",
+                "True Mettle|Shaman|S: Shaman|Mountains|S: Shaman|14"
+            ],
+            "subclassSpells": [
+                "Armor of Agathys|PHB", "Compelled Duel|PHB",
+                "Aid|PHB", "Warding Bond|PHB",
+                "Remove Curse|PHB", "Leomund's Tiny Hut|PHB",
+                "Stone Shape|PHB", "Summon Construct|TCE",
+                "Telekinesis|PHB", "Passwall|PHB"
+            ]
         }
     ],
     "subclassFeature": [
@@ -809,7 +829,7 @@
             "subclassSource": "S: Shaman",
             "level": 1,
             "entries": [
-                "Water is often described as the source of life. Shamans of the water - be that rivers, lakes, or the sea - know this, and control water in order to control life itself. They can manipulate the flow of positive energies in order to manipulate the flow of battle. Using water's restorative magic to assist their allies, and the force of water to throw their enemies off-balance.",
+                "Water is often described as the source of life. Shamans of the waters - be that rivers, lakes, or the sea - know this, and control water in order to control life itself. They can manipulate the flow of positive energies in order to manipulate the flow of battle. Using water's restorative magic to assist their allies, and the force of water to throw their enemies off-balance.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
@@ -817,6 +837,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Meandering Streams|Shaman|S: Shaman|Waters|S: Shaman|1"
                 }
             ]
         },
@@ -867,6 +891,19 @@
                 }
             ]
         },
+        {
+            "name": "Meandering Streams",  
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Waters Shaman feature}",
+                "Water supplies life in all places, and water flows down mountains and across plains before reaching the sea. This intuitive knowledge of the wider world and its layout grants you proficiency with the {@skill Survival} skill and {@item cartographer's tools|phb}. It would also be reasonable to have waterproof paper or a waterproof pouch to keep your supplies in."
+            ]
+        },    
         {
             "name": "Ebb and Flow",
             "source": "S: Shaman",
@@ -922,6 +959,142 @@
                 "Your Ebb and Flow has improved to match the very motion of the world itself, in the model of the ocean's tides.",
                 "When your water jet hits a target, you can restore hit points equal to the damage dealt to a creature of your choice within 30 feet of the target. The damage of the water jet increases to {@damage 2d8} + your wisdom modifier.",
                 "Finally, you can use the water jet without needing to restore hit points to a creature."
+            ]
+        },
+        {
+            "name": "Mountains",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Waters",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "The mountains are steadfast, unmoving, and operate ",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Meandering Streams|Shaman|S: Shaman|Waters|S: Shaman|1"
+                }
+            ]
+        },
+        {
+            "name": "Mountains Shaman Spells",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Mountains Shaman feature}",
+                "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
+                {
+                    "type": "table",
+                    "caption": "Mountains Shaman Spells",
+                    "colLabels": [
+                        "Shaman Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Armor of Agathys|PHB}, {@spell Compelled Duel|PHB}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Warding Bond|PHB}, {@spell Aid|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Remove Curse|PHB}, {@spell Leomund's Tiny Hut|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Stone Shape|PHB}, {@spell Summon Construct|TCE}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Telekinesis|PHB}, {@spell Passwall|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mountain Home",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Mountains Shaman feature}",
+                ""
+            ]
+        },
+        {
+            "name": "Unwavering Spirit",  
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Mountains Shaman feature}",
+                ""
+            ]
+        },
+        {
+            "name": "Earthly Attachments",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Mountains Shaman feature}",
+                ""
+            ]
+        },
+        {
+            "name": "Spirit of the Valley",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Mountains Shaman feature}",
+                ""
+            ]
+        },
+        {
+            "name": "True Mettle",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Mountains Shaman feature}",
+                ""
             ]
         }
     ],
