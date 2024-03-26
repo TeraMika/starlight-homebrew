@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.26.10.57",
+                "version": "2024.03.26.14.24",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1711450682.5617805
+        "dateLastModified": 1711466335.1391263
     },
     "class": [
         {
@@ -1400,7 +1400,7 @@
             "subclassSource": "S: Shaman",
             "level": 1,
             "entries": [
-                "The mountains are steadfast, unmoving, and operate ",
+                "The mountains are steadfast and towering, watching over the world and earth while being unmovable by any convential means. Shamans of the Mountains inhabit these places, settling on or within the mountains, moving stone, guarding themselves and others, and attuning to nature so as to carry out its will. They are stoic, often living introverted lives in small communities, but do valuable work in maintaining the balance of nature in the harsh climates of the mountains.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Mountains Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
@@ -1518,7 +1518,7 @@
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
                 "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} to protect them instead of yourself, reducing the damage they take.",
-                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier. Additionally, you can spend a spell slot of first level or higher in order to use your unwavering spirit, if you have no other uses."
+                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier. Additionally, you can spend a spell slot of first level or higher in order to use your unwavering spirit, if you have no other uses available."
             ]
         },
         {
@@ -1558,8 +1558,8 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Mountains Shaman feature}",
-                "You are a titan of endurance, resisting even entropy itself. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
-                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a reaction and use of your unwavering spirit to leave it with 1 hit point instead of 0."
+                "You are a titan of endurance, a bastion for your allies. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
+                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a reaction and use of your unwavering spirit to reduce it to 1 hit point instead."
             ]
         },
         {
@@ -1572,7 +1572,7 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Mountains Shaman feature}",
-                "You age ten times slower than similar creatures due to your elemental origin. Each decade that passes causes you to age only one year."
+                "You resist even entropy itself. You age ten times slower than similar creatures due to your elemental origin. Each decade that passes causes you to age only one year."
             ]
         },
         {
@@ -2694,6 +2694,31 @@
                     },
                     "feature": [
                         "Elemental Origin: Mountain"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "High-pressure Jet",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your {@subclassFeature Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1|S: Shaman|Ebb and Flow water jet}, also pushes creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
                     ]
                 }
             ]
