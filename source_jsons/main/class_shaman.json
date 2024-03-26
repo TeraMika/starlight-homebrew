@@ -806,9 +806,11 @@
             "shortname": "Mountains",
             "subclassFeatures": [
                 "Mountains|Shaman|S: Shaman|Mountains|S: Shaman|1",
-                "Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|6",
-                "Spirits of the Valley|Shaman|S: Shaman|Mountains|S: Shaman|10",
-                "True Mettle|Shaman|S: Shaman|Mountains|S: Shaman|14"
+                "Earthly Attachments|Shaman|S: Shaman|Mountains|S: Shaman|6",
+                "Unwavering Spirit Improvement|Shaman|S: Shaman|Mountains|S: Shaman|10",
+                "Spirit of the Valley|Shaman|S: Shaman|Mountains|S: Shaman|10",
+                "True Mettle|Shaman|S: Shaman|Mountains|S: Shaman|14",
+                "Watcher of the World|Shaman|S: Shaman|Mountains|S: Shaman|14"
             ],
             "subclassSpells": [
                 "Armor of Agathys|PHB", "Compelled Duel|PHB",
@@ -966,22 +968,26 @@
             "source": "S: Shaman",
             "className": "Shaman",
             "classSource": "S: Shaman",
-            "subclassShortName": "Waters",
+            "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
             "level": 1,
             "entries": [
                 "The mountains are steadfast, unmoving, and operate ",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Mountains Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Mountain Home|Shaman|S: Shaman|Mountains|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Meandering Streams|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Mountainhide|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1"
                 }
             ]
         },
@@ -1042,7 +1048,21 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Mountains Shaman feature}",
-                ""
+                "The mountains have stood the test of time, and with that time comes knowledge. You gain proficiency in {@item mason's tools|phb} and have advantage on Intelligence checks made to identify information about or investigate the properties of rooms or objects comprised in some way of stone (for example, the history of a ruin, natural properties of mountains, investigating a stone room).",
+                "Furthermore, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+            ]
+        },
+        {
+            "name": "Mountain Hide",  
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Mountains Shaman feature}",
+                "Your skin is toughened by your elemental source. While you are not wearing armour, your AC is 13 plus your Constitution modifier."
             ]
         },
         {
@@ -1055,7 +1075,8 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Mountains Shaman feature}",
-                ""
+                "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a reaction to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
+                "You can do this a number of times per long rest equal to your proficiency bonus."
             ]
         },
         {
@@ -1068,7 +1089,21 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
-                ""
+                "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} to protect them instead of yourself, reducing the damage they take.",
+                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier. Additionally, you can spend a spell slot of first level or higher in order to use your unwavering spirit, if you have no other uses."
+            ]
+        },
+        {
+            "name": "Unwavering Spirit Improvement",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Mountains Shaman feature}",
+                "The mountains watch over vast swathes of land, as you do, and now your own magic becomes a source of this protection. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} increases to {@dice 3d6} plus your Constitution modifier and your Wisdom modifier."
             ]
         },
         {
@@ -1081,7 +1116,8 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                ""
+                "You can call on the chilling winds of the valley. You can use an action to {@condition slowed|S: Conditions|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a short or long rest.",
+                "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
             ]
         },
         {
@@ -1094,9 +1130,25 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Mountains Shaman feature}",
-                ""
+                "You are a titan of endurance, resisting even entropy itself. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
+                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a reaction and use of your unwavering spirit to leave it with 1 hit point instead of 0."
+            ]
+        },
+        {
+            "name": "Watcher of the World",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Mountains",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Mountains Shaman feature}",
+                "You age ten times slower than similar creatures due to your elemental origin. Each decade that passes causes you to age only one year."
             ]
         }
+
+        
     ],
     "optionalfeature": [
         {
@@ -1945,6 +1997,32 @@
             ]
 		},
         {
+			"name": "Greater Resilience",
+			"source": "S: Shaman",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you use your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman|unwavering spirit}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
+                "You can do this once, and must complete a short or long rest before you can do so again."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Mountains"
+                    ]
+                }
+            ]
+		}, 
+        {
 			"name": "Avatar of the Mountains",
 			"source": "S: Shaman",
 			"featureType": [
@@ -1993,7 +2071,7 @@
                     ]
                 }
             ]
-		}, 
+		},
         {
 			"name": "Avatar of the Waters",
 			"source": "S: Shaman",
