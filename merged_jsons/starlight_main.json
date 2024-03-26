@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.26.10.52",
+                "version": "2024.03.26.10.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1711450402.0655344
+        "dateLastModified": 1711450682.5198185
     },
     "class": [
         {
@@ -1457,7 +1457,7 @@
             ]
         },
         {
-            "name": "Mountain Hide",
+            "name": "Mountainhide",
             "source": "S: Shaman",
             "className": "Shaman",
             "classSource": "S: Shaman",
