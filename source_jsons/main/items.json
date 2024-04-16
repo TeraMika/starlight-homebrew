@@ -670,7 +670,7 @@
                         "You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
                     ]
                 }
-]
+            ]
         },
         {
             "name": "Time-knife Gloves",
@@ -731,6 +731,53 @@
             "entries":[
                 "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
                 "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+            ]
+        },
+        {
+            "name": "Cloak of the Profane Elf",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":[
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            ]
+        },
+        {
+            "name": "Cloak of Arcane Bolstering",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":[
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            ]
+        },
+        {
+            "name": "Cloak of the Wind",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries":[
+                "Your movement speed is increased by 5 feet.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your movement speed is increased by 10 feet instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Apathetic Cloak",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":[
+                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
             ]
         }
     ]
