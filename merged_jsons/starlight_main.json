@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.26.21.17",
+                "version": "2024.03.30.12.48",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.05.21.35",
+                "version": "2024.04.16.20.12",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1711487856.2330222
+        "dateLastModified": 1713298689.7609863
     },
     "class": [
         {
@@ -1805,7 +1805,7 @@
                 "PRU"
             ],
             "entries": [
-                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
             ]
         },
         {
@@ -2669,7 +2669,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Mountain"
+                        "Elemental Origin: Mountains"
                     ]
                 }
             ]
@@ -5045,6 +5045,53 @@
             "entries": [
                 "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
                 "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+            ]
+        },
+        {
+            "name": "Cloak of the Profane Elf",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            ]
+        },
+        {
+            "name": "Cloak of Arcane Bolstering",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            ]
+        },
+        {
+            "name": "Cloak of the Wind",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "Your movement speed is increased by 5 feet.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your movement speed is increased by 10 feet instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Apathetic Cloak",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
             ]
         },
         {
