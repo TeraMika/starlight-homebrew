@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.16.20.12",
+                "version": "2024.04.16.20.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713298689.7865531
+        "dateLastModified": 1713298797.1721625
     },
     "class": [
         {
@@ -5088,7 +5088,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within a hostile creature's reach."
             ]
         },
         {

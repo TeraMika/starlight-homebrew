@@ -750,7 +750,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries":[
-                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within a hostile creature's reach."
             ]
         },
         {
