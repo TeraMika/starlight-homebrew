@@ -184,8 +184,7 @@
             "type": "list",
             "items":
             [
-                "A silenced creature cannot speak, or cast spells requiring verbal components.",
-                "The creature is immune to thunder damage."
+                "A silenced creature cannot speak, or cast spells requiring verbal components."
             ]
             }
         ]
