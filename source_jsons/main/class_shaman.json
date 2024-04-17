@@ -819,6 +819,27 @@
                 "Stone Shape|PHB", "Summon Construct|TCE",
                 "Telekinesis|PHB", "Passwall|PHB"
             ]
+        },
+        {
+            "name": "Dunes",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "shortname": "Dunes",
+            "subclassFeatures": [
+                "Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1",
+                "Shifting Sands|Shaman|S: Shaman|Dunes|S: Shaman|6",
+                "Duneswalker|Shaman|S: Shaman|Dunes|S: Shaman|6",
+                "Superior Mirage|Shaman|S: Shaman|Dunes|S: Shaman|10",
+                "Liquefaction|Shaman|S: Shaman|Dunes|S: Shaman|14"
+            ],
+            "subclassSpells": [
+                "Bane|PHB", "Disguise Self|PHB",
+                "Mirror Image|PHB", "Pass Without Trace|PHB",
+                "Major Image|PHB", "Dispel Magic|PHB",
+                "Hallucinatory Terrain|PHB", "Confusion|PHB",
+                "Mislead|PHB", "Insect Plague|PHB"
+            ]
         }
     ],
     "subclassFeature": [
@@ -903,7 +924,8 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Waters Shaman feature}",
-                "Water supplies life in all places, and water flows down mountains and across plains before reaching the sea. This intuitive knowledge of the wider world and its layout grants you proficiency with the {@skill Survival} skill and {@item cartographer's tools|phb}. It would also be reasonable to have waterproof paper or a waterproof pouch to keep your supplies in."
+                "Water supplies life in all places, and water flows down mountains and across plains before reaching the sea. This intuitive knowledge of the wider world and its layout grants you proficiency with the {@skill Survival} skill and {@item cartographer's tools|phb}. It would also be reasonable to have waterproof paper or a waterproof pouch to keep your supplies in.",
+                "Additionally, you can hold your breath for twice as long as you otherwise could."
             ]
         },    
         {
@@ -1049,7 +1071,7 @@
             "entries": [
                 "{@i 1st-level Mountains Shaman feature}",
                 "The mountains have stood the test of time, and with that time comes knowledge. You gain proficiency in {@item mason's tools|phb} and have advantage on Intelligence checks made to identify information about or investigate the properties of rooms or objects comprised in some way of stone (for example, the history of a ruin, natural properties of mountains, investigating a stone room).",
-                "Furthermore, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+                "Furthermore, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and you are naturally adapted to cold climates when considering {@hazard extreme cold|DMG}."
             ]
         },
         {
@@ -1146,9 +1168,105 @@
                 "{@i 14th-level Mountains Shaman feature}",
                 "You resist even entropy itself. You age ten times slower than similar creatures due to your elemental origin. Each decade that passes causes you to age only one year."
             ]
-        }
-
-        
+        },
+        {
+            "name": "Dunes",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "The dunes are unforgiving environments - be they hot or cold - and Shamans Shamans of the Dunes live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that it's easier done with allies at your side.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Mirage|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                }
+            ]
+        },
+        {
+            "name": "Dunes Shaman Spells",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Dunes Shaman feature}",
+                "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
+                {
+                    "type": "table",
+                    "caption": "Dunes Shaman Spells",
+                    "colLabels": [
+                        "Shaman Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Bane|PHB}, {@spell Disguise Self|PHB}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Mirror Image|PHB}, {@spell Pass Without Trace|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Major Image|PHB}, {@spell Leomund's Tiny Hut|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Hallucinatory Terrain|PHB}, {@spell Summon Construct|TCE}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Mislead|PHB}, {@spell Insect Plague|PHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Life in the Dunes",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Dunes Shaman feature}",
+                "Survival in a desert is no easy feat. You must be able to make do with scant resources, and able to avoid the predators and dangers that roam - an upfront approach is rarely your best choice. You gain proficiency in {@item cook's utensils|PHB} and {@skill Stealth}.",
+                "Furthermore, you are naturally acclimated to hot or cold temperatures (depending on your desert) when considering {@hazard extreme heat|DMG} or {@hazard extreme cold|DMG}."
+            ]
+        },
+        {
+            "name": "Mirage",  
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Dunes Shaman feature}",
+                "Your skin is toughened by your elemental source. While you are not wearing armour, your AC is 13 plus your Constitution modifier."
+            ]
+        }     
     ],
     "optionalfeature": [
         {
