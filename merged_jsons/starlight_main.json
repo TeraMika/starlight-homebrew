@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.16.14.34",
+                "version": "2024.03.30.12.48",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.15.07.47",
+                "version": "2024.03.17.19.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.18.07.49",
+                "version": "2024.04.16.20.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.17",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -87,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.14.05",
+                "version": "2024.03.15.18.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -101,7 +101,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713362764.0341153
+        "dateLastModified": 1713298797.1520574
     },
     "class": [
         {
@@ -1507,7 +1507,7 @@
             "entries": [
                 "{@i 1st-level Mountains Shaman feature}",
                 "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a reaction to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
-                "You can do this a number of times per long rest equal to your proficiency bonus."
+                "You can do this a number of times per long rest equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
             ]
         },
         {
@@ -1521,7 +1521,7 @@
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
                 "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1|S: Shaman} to protect them instead of yourself, reducing the damage they take.",
-                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier. Additionally, you can spend a spell slot of first level or higher in order to use your unwavering spirit, if you have no other uses available."
+                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier."
             ]
         },
         {
@@ -1930,7 +1930,7 @@
                 "PRU"
             ],
             "entries": [
-                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
             ]
         },
         {
@@ -2794,7 +2794,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Mountain"
+                        "Elemental Origin: Mountains"
                     ]
                 }
             ]
@@ -5169,6 +5169,53 @@
             "entries": [
                 "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
                 "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+            ]
+        },
+        {
+            "name": "Cloak of the Profane Elf",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            ]
+        },
+        {
+            "name": "Cloak of Arcane Bolstering",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within a hostile creature's reach."
+            ]
+        },
+        {
+            "name": "Cloak of the Wind",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "Your movement speed is increased by 5 feet.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your movement speed is increased by 10 feet instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Apathetic Cloak",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
             ]
         },
         {
