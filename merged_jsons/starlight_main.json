@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.30.12.48",
+                "version": "2024.04.18.10.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.17.19.08",
+                "version": "2024.04.15.07.47",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.16.20.19",
+                "version": "2024.04.17.14.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.18",
+                "version": "2024.02.27.11.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.17",
+                "version": "2024.02.27.11.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -87,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.03.15.18.40",
+                "version": "2024.04.17.14.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -101,7 +101,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713298797.1520574
+        "dateLastModified": 1713436953.9487724
     },
     "class": [
         {
@@ -1587,7 +1587,7 @@
             "subclassSource": "S: Shaman",
             "level": 1,
             "entries": [
-                "The dunes are unforgiving environments - be they hot or cold - and Shamans Shamans of the Dunes live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that it's easier done with allies at your side.",
+                "The dunes are unforgiving environments - be they hot or cold - and discretion is often the better part of survival. Shamans of the Dunes often live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that surviving is easier done with allies at your side.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
@@ -1635,11 +1635,11 @@
                         ],
                         [
                             "5th",
-                            "{@spell Major Image|PHB}, {@spell Leomund's Tiny Hut|PHB}"
+                            "{@spell Major Image|PHB}, {@spell Dispel Magic|PHB}"
                         ],
                         [
                             "7th",
-                            "{@spell Hallucinatory Terrain|PHB}, {@spell Summon Construct|TCE}"
+                            "{@spell Hallucinatory Terrain|PHB}, {@spell Confusion|PHB}"
                         ],
                         [
                             "9th",
@@ -1673,7 +1673,68 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Dunes Shaman feature}",
-                "Your skin is toughened by your elemental source. While you are not wearing armour, your AC is 13 plus your Constitution modifier."
+                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|phb|fireball spell}, you can use your reaction to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
+            ]
+        },
+        {
+            "name": "Control the Storm",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Dunes Shaman feature}",
+                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per short rest, you can spend an action to create a storm of swirling particulates in a 15 foot radius around you (this could be snow or sand, for example). This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through."
+            ]
+        },
+        {
+            "name": "Duneswalker",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Dunes Shaman feature}",
+                "You are practised in walking the deserts, and are not affected by difficult terrain consisting of sand, snow, or other similar materials such as fine gravel."
+            ]
+        },
+        {
+            "name": "Superior Mirage",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Dunes Shaman feature}",
+                "Your mirage is superior, increasing the distance that it covers. You can teleport up to 10 feet when using your {@subclassFeature Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1|S: Shaman|mirage}, and you can spend a spell slot of any level to increase the distance you teleport by a number of feet equal to 10 times the slot level expended."
+            ]
+        },
+        {
+            "name": "Liquefaction",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Dunes Shaman feature}",
+                "You have learned much greater control over the desert storms. You can {@status concentration||concentrate} on your {@subclassFeature Control the Storm|Shaman|S: Shaman|Dunes|S: Shaman|6|S: Shaman|storm} when you summon it to increase its power, granting the following benefits.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can use a bonus action to move the storm independently of yourself, up to 20 feet, where the storm then remains until you move it again.",
+                        "The area is lightly obscured. You and creatures you choose can attempt to hide in this light obscurement.",
+                        "Hostile creatures entering the storm or starting their turn in it must make a Dexterity saving throw or take {@damage 5d8} piercing damage and become {@condition blinded} until the start of their next turn."
+                    ]
+                },
+                "You can concentrate on the storm this way once per long rest. If you lose your {@status concentration}, the storm ends and you must complete a short rest to use it again, as normal."
             ]
         },
         {
@@ -1930,7 +1991,7 @@
                 "PRU"
             ],
             "entries": [
-                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
+                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
             ]
         },
         {
@@ -2794,7 +2855,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Mountains"
+                        "Elemental Origin: Mountain"
                     ]
                 }
             ]
