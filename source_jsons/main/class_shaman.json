@@ -210,7 +210,7 @@
 			],
             "startingProficiencies": {
                 "armor": [
-                    "light", "medium",
+                    "light",
                     "{@item shield|PHB|shields}"
                 ],
                 "weapons":[
@@ -236,7 +236,7 @@
             },
             "startingEquipment": {
                 "default": [
-                    "(a) {@item scale-mail|PHB} or (b) {@item leather armor|PHB|leather armour}",
+                    "{@item leather armor|PHB|leather armour}",
                     "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
                     "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
                     "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
@@ -1361,7 +1361,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+				"You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
 			]
         },
         {
@@ -2225,7 +2225,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Mountain"
+                        "Elemental Origin: Mountains"
                     ]
                 }
             ]

@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.18.13.55",
+                "version": "2024.04.18.20.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.15.07.47",
+                "version": "2024.04.17.20.04",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.14.10",
+                "version": "2024.04.16.20.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.17",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -87,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.14.05",
+                "version": "2024.04.17.20.04",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -101,7 +101,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -112,7 +112,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -124,7 +124,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713448536.010613
+        "dateLastModified": 1713474459.9151409
     },
     "class": [
         {
@@ -563,7 +563,6 @@
             "startingProficiencies": {
                 "armor": [
                     "light",
-                    "medium",
                     "{@item shield|PHB|shields}"
                 ],
                 "weapons": [
@@ -2015,7 +2014,7 @@
                 "PRU"
             ],
             "entries": [
-                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity insteaed of sleeping."
+                "You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
             ]
         },
         {
@@ -2879,7 +2878,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Mountain"
+                        "Elemental Origin: Mountains"
                     ]
                 }
             ]
