@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.18.10.42",
+                "version": "2024.04.18.13.55",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713436953.9487724
+        "dateLastModified": 1713448535.958083
     },
     "class": [
         {
@@ -1193,7 +1193,7 @@
             "shortname": "Dunes",
             "subclassFeatures": [
                 "Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1",
-                "Shifting Sands|Shaman|S: Shaman|Dunes|S: Shaman|6",
+                "Control the Storm|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Duneswalker|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Superior Mirage|Shaman|S: Shaman|Dunes|S: Shaman|10",
                 "Liquefaction|Shaman|S: Shaman|Dunes|S: Shaman|14"
@@ -1590,15 +1590,15 @@
                 "The dunes are unforgiving environments - be they hot or cold - and discretion is often the better part of survival. Shamans of the Dunes often live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that surviving is easier done with allies at your side.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mirage|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 }
             ]
         },
@@ -2936,13 +2936,38 @@
             ]
         },
         {
-            "name": "Avatar of the Volcanoes",
+            "name": "Empowered Mirage",
             "source": "S: Shaman",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are immune to fire damage."
+                "When using your {@subclassFeature Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1|S: Shaman}, you can deal damage of the type associated with your elemental affinity equal to your proficiency bonus to all other creatures of your choice within 5 feet of the space you left."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Dunes"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Dunes",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you gain an additional reaction each round."
             ],
             "prerequisite": [
                 {
@@ -2955,7 +2980,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Volcanoes"
+                        "Elemental Origin: Dunes"
                     ]
                 }
             ]
