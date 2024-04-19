@@ -12,11 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-<<<<<<< HEAD
-                "version": "2024.04.16.14.34",
-=======
-                "version": "2024.03.30.12.48",
->>>>>>> 47fa88e46e9e2e150ca885dfaeaf8fb1ff6e8b60
+                "version": "2024.04.19.12.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -31,11 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-<<<<<<< HEAD
                 "version": "2024.04.15.07.47",
-=======
-                "version": "2024.03.17.19.08",
->>>>>>> 47fa88e46e9e2e150ca885dfaeaf8fb1ff6e8b60
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -50,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.16.20.19",
+                "version": "2024.04.17.14.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -65,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.18",
+                "version": "2024.02.27.11.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -80,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.19.17",
+                "version": "2024.02.27.11.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -95,11 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-<<<<<<< HEAD
                 "version": "2024.04.17.14.05",
-=======
-                "version": "2024.03.15.18.40",
->>>>>>> 47fa88e46e9e2e150ca885dfaeaf8fb1ff6e8b60
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -113,7 +101,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.14.57",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -124,7 +112,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -136,7 +124,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -145,11 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-<<<<<<< HEAD
-        "dateLastModified": 1713362764.159616
-=======
-        "dateLastModified": 1713298797.1721625
->>>>>>> 47fa88e46e9e2e150ca885dfaeaf8fb1ff6e8b60
+        "dateLastModified": 1713528647.0513546
     },
     "class": [
         {
@@ -579,7 +563,6 @@
             "startingProficiencies": {
                 "armor": [
                     "light",
-                    "medium",
                     "{@item shield|PHB|shields}"
                 ],
                 "weapons": [
@@ -605,7 +588,7 @@
             },
             "startingEquipment": {
                 "default": [
-                    "(a) {@item scale-mail|PHB} or (b) {@item leather armor|PHB|leather armour}",
+                    "{@item leather armor|PHB|leather armour}",
                     "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
                     "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
                     "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
@@ -1233,7 +1216,7 @@
             "shortname": "Dunes",
             "subclassFeatures": [
                 "Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1",
-                "Shifting Sands|Shaman|S: Shaman|Dunes|S: Shaman|6",
+                "Control the Storm|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Duneswalker|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Superior Mirage|Shaman|S: Shaman|Dunes|S: Shaman|10",
                 "Liquefaction|Shaman|S: Shaman|Dunes|S: Shaman|14"
@@ -1249,6 +1232,35 @@
                 "Confusion|PHB",
                 "Mislead|PHB",
                 "Insect Plague|PHB"
+            ]
+        },
+        {
+            "name": "Forests",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "shortname": "Forests",
+            "subclassFeatures": [
+                "Forests|Shaman|S: Shaman|Forests|S: Shaman|1",
+                "Extra Attack|Shaman|S: Shaman|Forests|S: Shaman|6",
+                "Treeswalker|Shaman|S: Shaman|Forests|S: Shaman|6",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|6",
+                "Masterful Hunter|Shaman|S: Shaman|Forests|S: Shaman|10",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|10",
+                "Empowered Invocation|Shaman|S: Shaman|Forests|S: Shaman|14",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|14"
+            ],
+            "subclassSpells": [
+                "Hunter's Mark|PHB",
+                "Snare|XGE",
+                "Invisibility|PHB",
+                "Rope Trick|PHB",
+                "Speak with Plants|PHB",
+                "Plant Growth|PHB",
+                "Guardian of Nature|XGE",
+                "Locate Creature|PHB",
+                "Hold Monster|PHB",
+                "Far Step|XGE"
             ]
         },
         {
@@ -1627,18 +1639,18 @@
             "subclassSource": "S: Shaman",
             "level": 1,
             "entries": [
-                "The dunes are unforgiving environments - be they hot or cold - and Shamans Shamans of the Dunes live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that it's easier done with allies at your side.",
+                "The dunes are unforgiving environments - be they hot or cold - and discretion is often the better part of survival. Shamans of the Dunes often live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that surviving is easier done with allies at your side.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mirage|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1"
                 }
             ]
         },
@@ -1675,11 +1687,11 @@
                         ],
                         [
                             "5th",
-                            "{@spell Major Image|PHB}, {@spell Leomund's Tiny Hut|PHB}"
+                            "{@spell Major Image|PHB}, {@spell Dispel Magic|PHB}"
                         ],
                         [
                             "7th",
-                            "{@spell Hallucinatory Terrain|PHB}, {@spell Summon Construct|TCE}"
+                            "{@spell Hallucinatory Terrain|PHB}, {@spell Confusion|PHB}"
                         ],
                         [
                             "9th",
@@ -1713,7 +1725,348 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Dunes Shaman feature}",
-                "Your skin is toughened by your elemental source. While you are not wearing armour, your AC is 13 plus your Constitution modifier."
+                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|phb|fireball spell}, you can use your reaction to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
+            ]
+        },
+        {
+            "name": "Control the Storm",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Dunes Shaman feature}",
+                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per short rest, you can spend an action to create a storm of swirling particulates in a 15 foot radius around you (this could be snow or sand, for example). This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through."
+            ]
+        },
+        {
+            "name": "Duneswalker",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Dunes Shaman feature}",
+                "You are practised in walking the deserts, and are not affected by difficult terrain consisting of sand, snow, or other similar materials such as fine gravel."
+            ]
+        },
+        {
+            "name": "Superior Mirage",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Dunes Shaman feature}",
+                "Your mirage is superior, increasing the distance that it covers. You can teleport up to 10 feet when using your {@subclassFeature Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1|S: Shaman|mirage}, and you can spend a spell slot of any level to increase the distance you teleport by a number of feet equal to 10 times the slot level expended."
+            ]
+        },
+        {
+            "name": "Liquefaction",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Dunes",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Dunes Shaman feature}",
+                "You have learned much greater control over the desert storms. You can {@status concentration||concentrate} on your {@subclassFeature Control the Storm|Shaman|S: Shaman|Dunes|S: Shaman|6|S: Shaman|storm} when you summon it to increase its power, granting the following benefits.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can use a bonus action to move the storm independently of yourself, up to 20 feet, where the storm then remains until you move it again.",
+                        "The area is lightly obscured. You and creatures you choose can attempt to hide in this light obscurement.",
+                        "Hostile creatures entering the storm or starting their turn in it must make a Dexterity saving throw or take {@damage 5d8} piercing damage and become {@condition blinded} until the start of their next turn."
+                    ]
+                },
+                "You can concentrate on the storm this way once per long rest. If you lose your {@status concentration}, the storm ends and you must complete a short rest to use it again, as normal."
+            ]
+        },
+        {
+            "name": "Forests",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "Forests are a resilient environment, but are more vulnerable to explicit attack than many others. To this end, Shamans of the Forests take on the role of a hunter, personally handling those who would threaten the forests, be that its trees, inhabitants, or plantlife. The power of the forests grants pursuit, recovery and adaptability - Shamans living this way are open to new solutions, working together, and recovering from a setback.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Forests Shaman Spells|Shaman|S: Shaman|Forests|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Home in the Trees|Shaman|S: Shaman|Forests|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runeblade|Shaman|S: Shaman|Forests|S: Shaman|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|1"
+                }
+            ]
+        },
+        {
+            "name": "Forests Shaman Spells",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Forests Shaman feature}",
+                "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
+                {
+                    "type": "table",
+                    "caption": "Forests Shaman Spells",
+                    "colLabels": [
+                        "Shaman Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Hunter's Mark|PHB}, {@spell Snare|XGE}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Invisibility|PHB}, {@spell Rope Trick|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Speak with Plants|PHB}, {@spell Plant Growth|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Guardian of Nature|XGE}, {@spell Locate Creature|PHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Hold Monster|PHB}, {@spell Far Step|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Home in the Trees",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Forests Shaman feature}",
+                "The rampant plant growth in a forested environment provides opportunity, but also cover. You are trained to see past that cover, and make use of plants and herbs available to you. You have proficiency with the {@item Herbalism Kit|PHB} and with the {@skill Perception} skill.",
+                "Furthermore, owing to your hunting training, you have proficiency with medium armour. You can choose to replace your starting Leather Armour with Scale Mail instead."
+            ]
+        },
+        {
+            "name": "Runeblade",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Forests Shaman feature}",
+                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust.",
+                "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a short rest or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
+            ]
+        },
+        {
+            "name": "Runeblade Invocation",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Forests Shaman feature}",
+                "You can use your primal magic to invoke the runes on your Runeblade. When you take the {@action Attack|PHB} action, you can expend a spell slot of any level to cause the following effects to take place.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a +1 bonus to hit and 1d4 additional damage with your Runeblade. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|S: Shaman|3|S: Shaman|elemental affinity}.",
+                        "If you expend a spell slot of 2nd level or higher, your Runeblade attacks deal an additional 3 damage per slot level above first.",
+                        "You activate one of your known Runeblade Invocations, detailed below."
+                    ]
+                },
+                "You can choose 3 of the following Runeblade powers to learn, and you learn an additional powers at 6th, 10th and 14th level in this class. When you gain a level in this class, you can replace one power with another from this feature. If a power has a level requirement, you must be at least that level in this class to learn it. If a power requires a saving throw, it uses your Shaman spell save DC. Powers last until the start of the following turn from their activation.",
+                {
+                    "type": "entries",
+                    "name": "Rapid Growth",
+                    "entries": [
+                        "Your Runeblade has an additional 5ft of reach."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Leeching Seed",
+                    "entries": [
+                        "When you damage an enemy with your Runeblade, you regain hit points equal to the damage dealt by the attack (not including the additional damage from this feature)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Deep Foliage",
+                    "entries": [
+                        "You are surrounded by the leaves of the forest, granting you a +3 bonus to your AC and Dexterity saving throws."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Gust Step",
+                    "entries": [
+                        "Your movement speed is increased by 20 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Razorleaf Edge",
+                    "entries": [
+                        "Your Runeblade attacks cause targets to {@condition Bleed|Starlight}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Erupting Vines (6th level or higher)",
+                    "entries": [
+                        "The first time you hit a creature with your Runeblade this turn, it must make a Strength saving throw or become {@condition Restrained} until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Sporeburst (6th level or higher)",
+                    "entries": [
+                        "Once, when you hit a creature with your Runeblade, you can force it to make a Wisdom saving throw or become {@condition Dazed|Starlight} until the end of its turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hunter's Instinct (10th level or higher)",
+                    "entries": [
+                        "You gain a further +2 bonus to attack rolls with your Runeblade."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Distracting Colouration (10th level or higher)",
+                    "entries": [
+                        "Your attacks demand attention, or cow your opponents. The first creature you hit with your Runeblade is either {@condition charmed|PHB} by you, or it has disadvantage to attack a creature other than you on its next turn."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Forests Shaman feature}",
+                "When you take the {@action Attack|PHB} action on your turn, you can attack twice with your Runeblade instead of once."
+            ]
+        },
+        {
+            "name": "Treeswalker",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Forests Shaman feature}",
+                "You are not affected by difficult terrain consisting of plants or similar foliage. If a plant is hazardous, such as being covered in spines, it does not harm you.",
+                "For you, the {@spell Plant Growth|PHB} spell only requires you to spend 2 feet per 1 foot of movement."
+            ]
+        },
+        {
+            "name": "Additional Runeblade Invocation",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Forests Shaman feature}",
+                "You learn one additional Runeblade Invocation."
+            ]
+        },
+        {
+            "name": "Masterful Hunter",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Forests Shaman feature}",
+                "You can {@action Hide|PHB} as a bonus action, and can attempt to do so when you are only lightly obscured. While hidden, your movement speed is increased by 15 feet."
+            ]
+        },
+        {
+            "name": "Additional Runeblade Invocation",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Forests Shaman feature}",
+                "You learn one additional Runeblade Invocation."
+            ]
+        },
+        {
+            "name": "Empowered Invocation",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Forests Shaman feature}",
+                "A number of times per day equal to your proficiency bonus, you can activate two effects simultaneously when you {@subclassFeature Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|1|S: Shaman|invoke your runeblade}."
+            ]
+        },
+        {
+            "name": "Additional Runeblade Invocation",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "subclassShortName": "Forests",
+            "subclassSource": "S: Shaman",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Forests Shaman feature}",
+                "You learn one additional Runeblade Invocation."
             ]
         },
         {
@@ -2915,13 +3268,38 @@
             ]
         },
         {
-            "name": "Avatar of the Volcanoes",
+            "name": "Empowered Mirage",
             "source": "S: Shaman",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are immune to fire damage."
+                "When using your {@subclassFeature Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1|S: Shaman}, you can deal damage of the type associated with your elemental affinity equal to your proficiency bonus to all other creatures of your choice within 5 feet of the space you left."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Dunes"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Avatar of the Dunes",
+            "source": "S: Shaman",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you gain an additional reaction each round."
             ],
             "prerequisite": [
                 {
@@ -2934,7 +3312,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Volcanoes"
+                        "Elemental Origin: Dunes"
                     ]
                 }
             ]
