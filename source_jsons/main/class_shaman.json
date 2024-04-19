@@ -851,11 +851,11 @@
                 "Forests|Shaman|S: Shaman|Forests|S: Shaman|1",
                 "Extra Attack|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Treeswalker|Shaman|S: Shaman|Forests|S: Shaman|6",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|6",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Masterful Hunter|Shaman|S: Shaman|Forests|S: Shaman|10",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|10",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|10",
                 "Empowered Invocation|Shaman|S: Shaman|Forests|S: Shaman|14",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|14"
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|14"
             ],
             "subclassSpells": [
                 "Hunter's Mark|PHB", "Snare|XGE",

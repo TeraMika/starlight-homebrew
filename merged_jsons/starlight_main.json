@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.19.12.08",
+                "version": "2024.04.19.12.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713528510.3765635
+        "dateLastModified": 1713528646.9546778
     },
     "class": [
         {
@@ -1220,11 +1220,11 @@
                 "Forests|Shaman|S: Shaman|Forests|S: Shaman|1",
                 "Extra Attack|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Treeswalker|Shaman|S: Shaman|Forests|S: Shaman|6",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|6",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Masterful Hunter|Shaman|S: Shaman|Forests|S: Shaman|10",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|10",
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|10",
                 "Empowered Invocation|Shaman|S: Shaman|Forests|S: Shaman|14",
-                "Additional Rune|Shaman|S: Shaman|Forests|S: Shaman|14"
+                "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|14"
             ],
             "subclassSpells": [
                 "Hunter's Mark|PHB",
