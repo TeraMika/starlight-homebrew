@@ -1454,7 +1454,7 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Forests Shaman feature}",
-                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust.",
+                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust. You are considered Proficient with your Runeblade.",
                 "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a short rest or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
             ]
         },
@@ -1472,7 +1472,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain a +1 bonus to hit and 1d4 additional damage with your Runeblade. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|S: Shaman|3|S: Shaman|elemental affinity}.",
+                        "Your Runeblade deals {@damage 1d4} additional damage. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|S: Shaman|3|S: Shaman|elemental affinity} (you choose).",
                         "If you expend a spell slot of 2nd level or higher, your Runeblade attacks deal an additional 3 damage per slot level above first.",
                         "You activate one of your known Runeblade Invocations, detailed below."
                     ]
@@ -1531,7 +1531,7 @@
                     "type": "entries",
                     "name": "Hunter's Instinct (10th level or higher)",
                     "entries": [
-                         "You gain a further +2 bonus to attack rolls with your Runeblade."
+                         "You gain a +2 bonus to attack rolls with your Runeblade."
                     ]
                 },
                 {
@@ -2659,13 +2659,13 @@
             ]
 		},
         {
-			"name": "Avatar of the Forest",
+			"name": "Avatar of the Forests",
 			"source": "S: Shaman",
 			"featureType": [
 				"PRU"
 			],
 			"entries": [
-				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn, or until you attack or cast a spell."
+				"When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -2678,7 +2678,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Forest"
+                        "Elemental Origin: Forests"
                     ]
                 }
             ]

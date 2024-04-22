@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.19.12.10",
+                "version": "2024.04.22.14.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -87,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.14.05",
+                "version": "2024.04.19.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713528647.0513546
+        "dateLastModified": 1713796529.0654798
     },
     "class": [
         {
@@ -1906,7 +1906,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You gain a +1 bonus to hit and 1d4 additional damage with your Runeblade. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|S: Shaman|3|S: Shaman|elemental affinity}.",
+                        "Your Runeblade deals {@damage 1d4} additional damage. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|S: Shaman|3|S: Shaman|elemental affinity} (you choose).",
                         "If you expend a spell slot of 2nd level or higher, your Runeblade attacks deal an additional 3 damage per slot level above first.",
                         "You activate one of your known Runeblade Invocations, detailed below."
                     ]
@@ -1965,7 +1965,7 @@
                     "type": "entries",
                     "name": "Hunter's Instinct (10th level or higher)",
                     "entries": [
-                        "You gain a further +2 bonus to attack rolls with your Runeblade."
+                        "You gain a +2 bonus to attack rolls with your Runeblade."
                     ]
                 },
                 {
@@ -3318,13 +3318,13 @@
             ]
         },
         {
-            "name": "Avatar of the Forest",
+            "name": "Avatar of the Forests",
             "source": "S: Shaman",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn, or until you attack or cast a spell."
+                "When using your {@classFeature Spiritual Avatar|Shaman|S: Shaman|20|S: Shaman|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn."
             ],
             "prerequisite": [
                 {
@@ -3337,7 +3337,7 @@
                         }
                     },
                     "feature": [
-                        "Elemental Origin: Forest"
+                        "Elemental Origin: Forests"
                     ]
                 }
             ]
@@ -6900,7 +6900,7 @@
             ],
             "entries": [
                 "A 30-foot radius area around you is filled with purifying energy pulled from the warmth of the stars. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased and has resistance to poison damage.",
-                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition shocked|Starlight}, {@condition bleeding|Starlight} and {@condition weakened|Starlight}."
+                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition shocked|S: Conditions}, {@condition bleeding|S: Conditions} and {@condition weakened|S: Conditions}."
             ],
             "damageResist": [
                 "poison"
@@ -6968,7 +6968,7 @@
                 }
             ],
             "entries": [
-                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition silenced|Starlight}, or {@condition weakened|Starlight}."
+                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition silenced|S: Conditions}, or {@condition weakened|S: Conditions}."
             ],
             "areaTags": [
                 "ST"

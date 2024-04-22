@@ -368,7 +368,7 @@
             ],
             "entries": [
                 "A 30-foot radius area around you is filled with purifying energy pulled from the warmth of the stars. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased and has resistance to poison damage.",
-                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition shocked|Starlight}, {@condition bleeding|Starlight} and {@condition weakened|Starlight}."
+                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition shocked|S: Conditions}, {@condition bleeding|S: Conditions} and {@condition weakened|S: Conditions}."
             ],
             "damageResist": [
                 "poison"
@@ -436,7 +436,7 @@
                 }
             ],
             "entries": [
-                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition silenced|Starlight}, or {@condition weakened|Starlight}."
+                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition silenced|S: Conditions}, or {@condition weakened|S: Conditions}."
             ],
             "areaTags": [
                 "ST"
