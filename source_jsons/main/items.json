@@ -786,15 +786,27 @@
             ]
         },
         {
-            "name": "Sanctuary Rose",
+            "name": "Sanctuary Rose Cutting",
             "source": "S: Items",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
             "entries":
             [
+                "This pale blue rose petal glows dimly within its jar, emitting 5 feet of dim light at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
+                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to zero hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
+            ]
+        },
+        {
+            "name": "Sanctuary Rose",
+            "source": "S: Items",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":
+            [
                 "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
-                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to zero hit points, you can channel its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} for that duration.",
+                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to zero hit points, you can channel its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
                 "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moonphase except for new) before it can be used again."
             ]
         },
