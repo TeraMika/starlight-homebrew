@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.22.14.19",
+                "version": "2024.04.22.14.35",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.14.10",
+                "version": "2024.05.16.09.31",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -109,7 +109,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1713796529.0395901
+        "dateLastModified": 1715853018.418398
     },
     "class": [
         {
@@ -1864,7 +1864,7 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Forests Shaman feature}",
-                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust.",
+                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust. You are considered Proficient with your Runeblade.",
                 "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a short rest or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
             ]
         },
@@ -5572,7 +5572,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} until the end of their next turn."
             ]
         },
         {
@@ -5582,7 +5582,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within a hostile creature's reach."
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
             ]
         },
         {
@@ -5610,6 +5610,28 @@
             "reqAttune": false,
             "entries": [
                 "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
+            ]
+        },
+        {
+            "name": "Sanctuary Rose",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
+                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to zero hit points, you can channel its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} for that duration."
+            ]
+        },
+        {
+            "name": "Darkmoon Dhalia",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
+                "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
             ]
         },
         {

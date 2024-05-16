@@ -728,7 +728,8 @@
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
-            "entries":[
+            "entries":
+            [
                 "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
                 "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
             ]
@@ -739,8 +740,9 @@
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
-            "entries":[
-                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} for one turn."
+            "entries":
+            [
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} until the end of their next turn."
             ]
         },
         {
@@ -749,8 +751,9 @@
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
-            "entries":[
-                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within a hostile creature's reach."
+            "entries":
+            [
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
             ]
         },
         {
@@ -759,7 +762,8 @@
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": "optional",
-            "entries":[
+            "entries":
+            [
                 "Your movement speed is increased by 5 feet.",
                 {
                     "type": "entries",
@@ -776,8 +780,33 @@
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
-            "entries":[
+            "entries":
+            [
                 "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
+            ]
+        },
+        {
+            "name": "Sanctuary Rose",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":
+            [
+                "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
+                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to zero hit points, you can channel its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} for that duration."
+            ]
+        },
+        {
+            "name": "Darkmoon Dhalia",
+            "source": "S: Items",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries":
+            [
+                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
+                "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
             ]
         }
     ]
