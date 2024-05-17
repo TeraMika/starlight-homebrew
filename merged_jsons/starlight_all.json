@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.17.12.12",
+                "version": "2024.05.17.12.20",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1715948042.9685397
+        "dateLastModified": 1715948437.0548701
     },
     "class": [
         {
@@ -6088,7 +6088,7 @@
             ]
         },
         {
-            "name": "Hunter's Longsword",
+            "name": "Jagged Followthrough",
             "source": "S: Weapons",
             "baseItem": "longsword|phb",
             "type": "M",
@@ -6109,7 +6109,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|bleed|S: Conditions} twice on hit. This can be used as an action, or in place of a normal weapon attack."
+                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|S: Conditions|bleed} twice on hit. This can be used as an action, or in place of a normal weapon attack."
                     ]
                 }
             ]
