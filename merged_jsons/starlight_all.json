@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.22.14.35",
+                "version": "2024.05.17.18.50",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.15.07.47",
+                "version": "2024.04.17.20.04",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.17.07.25",
+                "version": "2024.05.17.18.51",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.02.26.19.18",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.17.12.20",
+                "version": "2024.05.17.19.06",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -87,7 +87,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.19.13.21",
+                "version": "2024.05.17.18.50",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -101,8 +101,23 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.14.57",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
+            },
+            {
+                "json": "SToD: Items",
+                "abbreviation": "SToD: Items",
+                "full": "Shifting Tides of Delamir: Items",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.05.17.18.53",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
             },
             {
                 "json": "SToD: Sunshards",
@@ -112,7 +127,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -124,7 +139,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -133,7 +148,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1715948437.0548701
+        "dateLastModified": 1715972805.896982
     },
     "class": [
         {
@@ -6101,7 +6116,7 @@
             "dmg2": "1d10",
             "rarity": "uncommon",
             "weight": 2,
-            "reqAttune": true,
+            "reqAttune": "optional",
             "curse": false,
             "entries": [
                 "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
@@ -6261,6 +6276,17 @@
                         }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Titanheart's Ring",
+            "source": "S: Items",
+            "type": "RG",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": false,
+            "entries": [
+                "Creatures you restore hit points to gain a {@dice 1d4} bonus to attack rolls and saving throws, and are resistant to bludgeoning, piercing, and slashing damage, until the end of their next turn."
             ]
         },
         {

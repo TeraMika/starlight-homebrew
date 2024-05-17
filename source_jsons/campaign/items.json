@@ -1,0 +1,41 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "SToD: Items",
+                "abbreviation": "SToD: Items",
+                "full": "Shifting Tides of Delamir: Items",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Starlight"
+                ],
+                "convertedBy":
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "item":
+    [
+        {
+            "name": "Titanheart's Ring",
+            "source": "S: Items",
+            "type": "RG",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": false,
+            "entries": [
+                "Creatures you restore hit points to gain a {@dice 1d4} bonus to attack rolls and saving throws, and are resistant to bludgeoning, piercing, and slashing damage, until the end of their next turn."
+            ]
+        }
+    ]
+}

@@ -151,7 +151,7 @@
             "dmg2": "1d10",
             "rarity": "uncommon",
             "weight": 2,
-            "reqAttune": true,
+            "reqAttune": "optional",
 			"curse": false,
             "entries": [
                 "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",

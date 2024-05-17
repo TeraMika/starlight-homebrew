@@ -2,6 +2,21 @@
     "_meta": {
         "sources": [
             {
+                "json": "SToD: Items",
+                "abbreviation": "SToD: Items",
+                "full": "Shifting Tides of Delamir: Items",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2024.05.17.18.53",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
                 "json": "SToD: Sunshards",
                 "abbreviation": "SToD: Sunshards",
                 "color": "737373",
@@ -9,7 +24,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -21,14 +36,26 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.02.26.18.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
-        "dateLastModified": 1711450402.0125031
+        "dateAdded": 0,
+        "dateLastModified": 1715972805.8465958
     },
     "item": [
+        {
+            "name": "Titanheart's Ring",
+            "source": "S: Items",
+            "type": "RG",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": false,
+            "entries": [
+                "Creatures you restore hit points to gain a {@dice 1d4} bonus to attack rolls and saving throws, and are resistant to bludgeoning, piercing, and slashing damage, until the end of their next turn."
+            ]
+        },
         {
             "name": "Spell-Storing Sunshard",
             "source": "SToD: Sunshards",
