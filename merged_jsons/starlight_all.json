@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.16.13.49",
+                "version": "2024.05.17.07.25",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -72,7 +72,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.27.11.46",
+                "version": "2024.05.17.12.12",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -133,7 +133,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1715867405.94666
+        "dateLastModified": 1715948042.9685397
     },
     "class": [
         {
@@ -5644,7 +5644,7 @@
             "reqAttune": false,
             "entries": [
                 "This pale blue rose petal glows dimly within its jar, emitting 5 feet of dim light at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
-                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to zero hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
+                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
             ]
         },
         {
@@ -5655,7 +5655,7 @@
             "reqAttune": false,
             "entries": [
                 "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
-                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to zero hit points, you can channel its magic to protect yourself. This reduces your current hit points to one, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
+                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can channel its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
                 "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moonphase except for new) before it can be used again."
             ]
         },
@@ -6000,6 +6000,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
+                        "As an action or in place of an attack when you take the {@action Attack} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a long rest - which may alter its appearance.",
                         "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
                         {
                             "type": "entries",
@@ -6084,6 +6085,33 @@
                 "You have a +1 bonus to attack and damage rolls using this weapon.",
                 "You gain a +1 bonus to initiative rolls.",
                 "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+            ]
+        },
+        {
+            "name": "Hunter's Longsword",
+            "source": "S: Weapons",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "rarity": "uncommon",
+            "weight": 2,
+            "reqAttune": true,
+            "curse": false,
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|bleed|S: Conditions} twice on hit. This can be used as an action, or in place of a normal weapon attack."
+                    ]
+                }
             ]
         },
         {

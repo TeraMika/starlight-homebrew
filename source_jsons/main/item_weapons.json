@@ -50,6 +50,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
+                        "As an action or in place of an attack when you take the {@action Attack} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a long rest - which may alter its appearance.",
                         "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
                         {
                             "type": "entries",
@@ -134,6 +135,33 @@
                 "You have a +1 bonus to attack and damage rolls using this weapon.",
                 "You gain a +1 bonus to initiative rolls.",
                 "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+            ]
+        },
+        {
+            "name": "Hunter's Longsword",
+            "source": "S: Weapons",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "rarity": "uncommon",
+            "weight": 2,
+            "reqAttune": true,
+			"curse": false,
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|bleed|S: Conditions} twice on hit. This can be used as an action, or in place of a normal weapon attack."
+                    ]
+                }
             ]
         },
         {
