@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.17.18.53",
+                "version": "2024.06.11.14.11",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -24,7 +24,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,24 +36,42 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.02.26.12.54",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1715972805.8465958
+        "dateLastModified": 1718115097.5238628
     },
     "item": [
         {
             "name": "Titanheart's Ring",
-            "source": "S: Items",
+            "source": "SToD: Items",
             "type": "RG",
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": false,
             "entries": [
                 "Creatures you restore hit points to gain a {@dice 1d4} bonus to attack rolls and saving throws, and are resistant to bludgeoning, piercing, and slashing damage, until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Lunarvitra Arrow",
+            "source": "SToD: Items",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "This arrow ignores bonuses to AC granted by spells or magical items, unless that spell or magical item is directly created by an Artifact or a Deity.",
+                "Targets hit by this arrow have any magical effects (such as {@spell Mage Armour|PHB} or {@spell Bestow Curse|PHB}) on them suppressed until the start of your next turn. Creatures with an antimagic susceptibility, such as {@creature Animated Armour|MM}, must follow the text in that condition, but only suffer its effects until the start of your next turn."
             ]
         },
         {
