@@ -4,13 +4,16 @@ import time
 import pathlib
 from datetime import datetime
 
+def prepare_comparison_source(source):
+    """Return a version of the source without the version attribute, in dictionary form, for comparison."""
+    return json.dumps({k:v for k,v in source.items() if k != 'version'}, sort_keys=True)
+
 def build_json(files):
     output = {}
     for f in files:
 
-        # Get time file was last modifed, to be used as version
-        file_modified_time = pathlib.Path(f).stat().st_mtime
-        version = datetime.utcfromtimestamp(file_modified_time).strftime('%Y.%m.%d.%H.%M')
+        # Use current time as version, as there are no longer duplicate sources
+        version = datetime.utcnow().strftime('%Y.%m.%d.%H.%M')
 
         # Build merged json from all given source jsons, extending rather than replacing where needed
         with open(f, 'r', encoding="ascii", errors="replace") as infile:
@@ -22,7 +25,17 @@ def build_json(files):
                     elif k == "_meta":
                         for source in data[k]["sources"]:
                             source["version"] = version
-                        output[k]["sources"].extend(data[k]["sources"])
+
+                        comp_new_sources = [prepare_comparison_source(source) for source in data[k]["sources"]]
+                        comp_output_sources = [prepare_comparison_source(source) for source in output[k]["sources"]]
+
+                        for new_source, original_source in zip(comp_new_sources, data[k]["sources"]):
+                            if new_source not in comp_output_sources:
+                                print("Adding new source")
+                                output[k]["sources"].append(original_source)
+                            else:
+                                print("rejecting duplicate source")
+
                     else:
                         output[k].extend(data[k])
                 else:

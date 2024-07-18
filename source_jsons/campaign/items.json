@@ -4,15 +4,11 @@
         "sources":
         [
             {
-                "json": "SToD: Items",
-                "abbreviation": "SToD: Items",
-                "full": "Shifting Tides of Delamir: Items",
-                "color": "dac4ff",
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
                 "authors":
-                [
-                    "Starlight"
-                ],
-                "convertedBy":
                 [
                     "Starlight"
                 ],
@@ -28,7 +24,7 @@
     [
         {
             "name": "Titanheart's Ring",
-            "source": "SToD: Items",
+            "source": "SToD",
             "type": "RG",
             "rarity": "rare",
             "wondrous": false,
@@ -39,7 +35,7 @@
         },
 		{
 			"name": "Lunarvitra Arrow",
-			"source": "SToD: Items",
+			"source": "SToD",
 			"rarity": "rare",
 			"wondrous": false,
 			"type": "A",

@@ -2,52 +2,25 @@
     "_meta": {
         "sources": [
             {
-                "json": "SToD: Items",
-                "abbreviation": "SToD: Items",
-                "full": "Shifting Tides of Delamir: Items",
-                "color": "dac4ff",
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
                 "authors": [
                     "Starlight"
                 ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2024.06.11.14.11",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "SToD: Sunshards",
-                "abbreviation": "SToD: Sunshards",
-                "color": "737373",
-                "full": "Shifting Tides of Delamir: Sunshards",
-                "authors": [
-                    "Starlight"
-                ],
-                "version": "2024.02.26.12.54",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "SToD: Species",
-                "abbreviation": "SToD: Species",
-                "color": "737373",
-                "full": "Shifting Tides of Delamir: Species",
-                "authors": [
-                    "Starlight"
-                ],
-                "version": "2024.02.26.12.54",
+                "version": "2024.07.18.10.27",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1718115097.5238628
+        "dateLastModified": 1721298451.4986904
     },
     "item": [
         {
             "name": "Titanheart's Ring",
-            "source": "SToD: Items",
+            "source": "SToD",
             "type": "RG",
             "rarity": "rare",
             "wondrous": false,
@@ -58,7 +31,7 @@
         },
         {
             "name": "Lunarvitra Arrow",
-            "source": "SToD: Items",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": false,
             "type": "A",
@@ -76,7 +49,7 @@
         },
         {
             "name": "Spell-Storing Sunshard",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "unknown (magic)",
             "wondrous": true,
             "entries": [
@@ -116,7 +89,7 @@
         },
         {
             "name": "Red Sunshard of Recovery",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -126,7 +99,7 @@
         },
         {
             "name": "Red Sunshard of Bursting",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -136,7 +109,7 @@
         },
         {
             "name": "Red Sunshard of Purity",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -153,7 +126,7 @@
         },
         {
             "name": "Orange Sunshard of Ignition",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -163,7 +136,7 @@
         },
         {
             "name": "Orange Sunshard of Eruption",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -174,7 +147,7 @@
         },
         {
             "name": "Orange Sunshard of Searing",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -186,7 +159,7 @@
         },
         {
             "name": "Yellow Sunshard of Dim Light",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": false,
             "entries": [
@@ -196,7 +169,7 @@
         },
         {
             "name": "Yellow Sunshard of Searing Radiance",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -206,7 +179,7 @@
         },
         {
             "name": "Yellow Sunshard of Positive Force",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -217,7 +190,7 @@
         },
         {
             "name": "Green Sunshard of Erupting Earth",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -230,7 +203,7 @@
         },
         {
             "name": "Green Sunshard of Lesser Air",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -241,7 +214,7 @@
         },
         {
             "name": "Green Sunshard of Unnatural Growth",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -260,7 +233,7 @@
         },
         {
             "name": "Blue Sunshard of Energising",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -270,7 +243,7 @@
         },
         {
             "name": "Blue Sunshard of Javelin Lightning",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -283,7 +256,7 @@
         },
         {
             "name": "Blue Sunshard of Stormcalling",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "very rare",
             "wondrous": true,
             "entries": [
@@ -295,7 +268,7 @@
         },
         {
             "name": "Indigo Sunshard of Projection",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -306,7 +279,7 @@
         },
         {
             "name": "Indigo Sunshard of Fuelling",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -316,7 +289,7 @@
         },
         {
             "name": "Indigo Sunshard of Warding",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -326,7 +299,7 @@
         },
         {
             "name": "Violet Sunshard of Repulsion",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -336,7 +309,7 @@
         },
         {
             "name": "Violet Sunshard of Grounding",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -347,7 +320,7 @@
         },
         {
             "name": "Violet Sunshard of Altered Gravity",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -365,7 +338,7 @@
         },
         {
             "name": "White Sunshard of Deferred Action",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -375,7 +348,7 @@
         },
         {
             "name": "White Sunshard of Held Energy",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -386,7 +359,7 @@
         },
         {
             "name": "White Sunshard of Skipped Time",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "legendary",
             "wondrous": true,
             "entries": [
@@ -398,7 +371,7 @@
         },
         {
             "name": "Black Sunshard of Absorption",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -408,7 +381,7 @@
         },
         {
             "name": "Black Sunshard of Clouding",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -419,7 +392,7 @@
         },
         {
             "name": "Black Sunshard of Crippling",
-            "source": "SToD: Sunshards",
+            "source": "SToD",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -432,7 +405,7 @@
     "race": [
         {
             "name": "Riftborn Lacertal",
-            "source": "SToD: Species",
+            "source": "SToD",
             "lineage": "VRGR",
             "skillProficiencies": [
                 {
@@ -519,7 +492,7 @@
         },
         {
             "name": "Tempestborn",
-            "source": "SToD: Species",
+            "source": "SToD",
             "lineage": "VRGR",
             "size": [
                 "S",
@@ -596,7 +569,7 @@
         },
         {
             "name": "Elf (Profane)",
-            "source": "SToD: Species",
+            "source": "SToD",
             "lineage": "VRGR",
             "size": [
                 "S",

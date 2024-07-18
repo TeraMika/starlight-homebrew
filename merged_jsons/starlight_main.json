@@ -12,14 +12,14 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.05.17.18.50",
+                "version": "2024.07.18.10.27",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
             {
-                "json": "S: Conditions",
-                "abbreviation": "S: Conditions",
-                "full": "Starlight: Conditions",
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
                 "color": "dac4ff",
                 "authors": [
                     "Starlight"
@@ -27,67 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.04.17.20.04",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "S: Items",
-                "abbreviation": "S: Items",
-                "full": "Starlight: Items",
-                "color": "dac4ff",
-                "authors": [
-                    "Starlight"
-                ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2024.05.17.18.51",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "S: Arrows",
-                "abbreviation": "S: Arrows",
-                "full": "Starlight: Arrows",
-                "color": "dac4ff",
-                "authors": [
-                    "Starlight"
-                ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2024.02.26.19.18",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "S: Weapons",
-                "abbreviation": "S: Weapons",
-                "full": "Starlight: Weapons",
-                "color": "dac4ff",
-                "authors": [
-                    "Starlight"
-                ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2024.05.17.19.06",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "S: Spells",
-                "abbreviation": "S: Spells",
-                "full": "Starlight: Spells",
-                "color": "dac4ff",
-                "authors": [
-                    "Starlight"
-                ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2024.05.17.18.50",
+                "version": "2024.07.18.10.27",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -101,7 +41,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.02.26.18.52",
+                "version": "2024.07.18.10.27",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -109,7 +49,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1715972805.8675988
+        "dateLastModified": 1721298451.5426767
     },
     "class": [
         {
@@ -4597,13 +4537,13 @@
     "condition": [
         {
             "name": "Dazed",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
                     "type": "list",
                     "items": [
-                        "A dazed creature can take an action or a bonus action, but not both. Their movement speed is {@condition Sluggish|S: Conditions}.",
+                        "A dazed creature can take an action or a bonus action, but not both. Their movement speed is {@condition Sluggish|Starlight}.",
                         "If a creature becomes dazed during their turn, their turn ends."
                     ]
                 }
@@ -4611,13 +4551,13 @@
         },
         {
             "name": "Disoriented",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
                     "type": "list",
                     "items": [
-                        "A disoriented creature has its movement {@condition Hampered|S: Conditions} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
+                        "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
                         "The creature can make only one attack with an action or bonus action, and cannot cast levelled spells."
                     ]
                 }
@@ -4625,13 +4565,13 @@
         },
         {
             "name": "Shocked",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
                     "type": "list",
                     "items": [
-                        "A shocked creature is {@condition incapacitated} and {@condition halted|S: Conditions}.",
+                        "A shocked creature is {@condition incapacitated} and {@condition halted|Starlight}.",
                         "The creature automatically fails Strength and Dexterity saving throws.",
                         "Attack rolls against the creature have advantage.",
                         "The condition can be ended on a creature if another creature spends an action or bonus action to help them recover."
@@ -4641,7 +4581,7 @@
         },
         {
             "name": "Weakened",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4655,7 +4595,7 @@
         },
         {
             "name": "Off-balance",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4670,7 +4610,7 @@
         },
         {
             "name": "Exposed",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4683,7 +4623,7 @@
         },
         {
             "name": "Marked",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4697,7 +4637,7 @@
         },
         {
             "name": "Numb",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4705,7 +4645,7 @@
                     "items": [
                         "A creature can be Numb multiple times.",
                         "A numb creature loses 5 feet of movement and 1 Charisma for each time it is Numb.",
-                        "If a creature has 0 movement speed or charisma as a result of the numb effect, that creature loses all numb affecting them and becomes {@condition listless|S: Conditions}.",
+                        "If a creature has 0 movement speed or charisma as a result of the numb effect, that creature loses all numb affecting them and becomes {@condition listless|Starlight}.",
                         "If a numb creature does not receive more numb or take damage since its previous turn, and cannot see the source of its numb, it loses one instance of numb at the end of its turn."
                     ]
                 }
@@ -4713,22 +4653,22 @@
         },
         {
             "name": "Listless",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
                     "type": "list",
                     "items": [
-                        "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and is {@condition halted|S: Conditions}.",
+                        "A listless creature falls {@condition prone}, becomes {@condition incapacitated} and is {@condition halted|Starlight}.",
                         "The condition ends if the listless creature expends inspiration, they take more than 20 damage in one attack, or an ally spends an action to help them recover.",
-                        "When this condition ends, the creature gains two {@condition numb|S: Conditions} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
+                        "When this condition ends, the creature gains two {@condition numb|Starlight} effects. The first turn after this ends, the creature can stand from prone at the cost of only 5 feet of movement, as they quickly snap to their senses."
                     ]
                 }
             ]
         },
         {
             "name": "Silenced",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4741,7 +4681,7 @@
         },
         {
             "name": "Bleeding",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4757,7 +4697,7 @@
         },
         {
             "name": "Sundered",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 "The creature's armour class cannot benefit from armour or shields, but still gains any bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
@@ -4765,7 +4705,7 @@
         },
         {
             "name": "Staggered",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 "The creature's armour class cannot be increased by its Dexterity modifier."
@@ -4773,7 +4713,7 @@
         },
         {
             "name": "Burning",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4789,7 +4729,7 @@
         },
         {
             "name": "Hampered",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4803,7 +4743,7 @@
         },
         {
             "name": "Slowed",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 "A slowed creature's movement speed is reduced by half."
@@ -4811,7 +4751,7 @@
         },
         {
             "name": "Sluggish",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 "A sluggish creature's movement speed is 10 feet."
@@ -4819,7 +4759,7 @@
         },
         {
             "name": "Halted",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 "A halted creature's movement speed is 0 feet."
@@ -4827,7 +4767,7 @@
         },
         {
             "name": "Dying",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4842,13 +4782,13 @@
         },
         {
             "name": "Withering",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
                     "type": "list",
                     "items": [
-                        "A Withering creature cannot regain hit points by any means and its movement is {@condition Hampered|S: Conditions}.",
+                        "A Withering creature cannot regain hit points by any means and its movement is {@condition Hampered|Starlight}.",
                         "The creature takes 1 necrotic damage each hour that it has the condition.",
                         "The condition can be removed via Greater Restoration or a more powerful healing spell (Such as {@spell Heal|phb}, {@spell Regenerate|phb}, or {@spell Power Word Heal|phb}). Alternatively, {@spell Lesser Restoration|phb} can be used if the caster succeeds a DC 13 ability check with their spellcasting ability (expending the slot regardless).",
                         "Typically, this condition is reserved for Darkiron, a material found in (but not native to) Neverwhere. At the DM's discretion, other effects may apply this condition, but with easier removal and/or greater damage."
@@ -4858,7 +4798,7 @@
         },
         {
             "name": "Regenerating (X)",
-            "source": "S: Conditions",
+            "source": "Starlight",
             "page": 0,
             "entries": [
                 {
@@ -4873,7 +4813,7 @@
     "item": [
         {
             "name": "Necklace of Bitter Tears",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "entries": [
@@ -4882,7 +4822,7 @@
         },
         {
             "name": "Bracers of Extreme Evocation",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "entries": [
@@ -4898,7 +4838,7 @@
         },
         {
             "name": "Gloves of Benign Transposition",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "entries": [
@@ -4907,7 +4847,7 @@
         },
         {
             "name": "Gloves of Malicious Transposition",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "charges": 3,
@@ -4918,7 +4858,7 @@
         },
         {
             "name": "Ring of Mana Channeling",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": "optional",
@@ -4937,7 +4877,7 @@
         },
         {
             "name": "Ring of Protection",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": "optional",
@@ -4957,7 +4897,7 @@
         },
         {
             "name": "Cloak of Protection",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": "optional",
@@ -4976,7 +4916,7 @@
         },
         {
             "name": "A Promise Made",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -4985,13 +4925,13 @@
             "recharge": "restLong",
             "rechargeAmount": 1,
             "entries": [
-                "This ring shares a single charge with {@item A Promise Kept|S: Items}, which recovers when you complete a long rest.",
+                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
             ]
         },
         {
             "name": "A Promise Kept",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -5000,7 +4940,7 @@
             "recharge": "restLong",
             "rechargeAmount": 1,
             "entries": [
-                "This ring shares a single charge with {@item A Promise Made|S: Items}, which recovers each when you complete a long rest.",
+                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
                 "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
             ],
             "attachedSpells": [
@@ -5011,7 +4951,7 @@
         },
         {
             "name": "Circlet of Storytelling",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5022,7 +4962,7 @@
         },
         {
             "name": "Astral Teardrop",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5045,7 +4985,7 @@
         },
         {
             "name": "Fate's Pendant",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "legendary",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5073,7 +5013,7 @@
         },
         {
             "name": "Soulful Rook Chesspiece",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5083,13 +5023,13 @@
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Queen Chesspiece",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5099,13 +5039,13 @@
                 "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
                 "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Bishop Chesspiece",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5115,13 +5055,13 @@
                 "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
                 "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Soulful Knight Chesspiece",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5130,14 +5070,14 @@
             "entries": [
                 "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
                 "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
-                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|S: Items|Hampers} your target's movement until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|S: Items} until the end of your turn when you use it.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
                 "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
             ]
         },
         {
             "name": "Quickstep Boots",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5147,7 +5087,7 @@
         },
         {
             "name": "Eye of the 10-eyed Wyrm",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "very rare",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5169,7 +5109,7 @@
                             "rows": [
                                 [
                                     "You gain advantage on initiative checks.",
-                                    "On your first turn in combat, you are {@condition Slowed|S: Items}."
+                                    "On your first turn in combat, you are {@condition Slowed|Starlight}."
                                 ],
                                 [
                                     "You gain advantage on Wisdom ability checks.",
@@ -5191,7 +5131,7 @@
         },
         {
             "name": "Blessed Circlet",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5201,7 +5141,7 @@
         },
         {
             "name": "Career Student's Ring",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": false,
@@ -5213,7 +5153,7 @@
         },
         {
             "name": "Forgotten Green Hood",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5224,7 +5164,7 @@
         },
         {
             "name": "Friend of Arcanists",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5242,7 +5182,7 @@
         },
         {
             "name": "Friend of Druids",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5260,7 +5200,7 @@
         },
         {
             "name": "Friend of Priests",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5278,7 +5218,7 @@
         },
         {
             "name": "Friend of Warriors",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5296,7 +5236,7 @@
         },
         {
             "name": "Friend of Parties",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5314,7 +5254,7 @@
         },
         {
             "name": "Friend of Thieves",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5332,7 +5272,7 @@
         },
         {
             "name": "Friend of Urchins",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5350,7 +5290,7 @@
         },
         {
             "name": "Friend of the Paranoid",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5368,7 +5308,7 @@
         },
         {
             "name": "Friend of Light-foots",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5386,7 +5326,7 @@
         },
         {
             "name": "Hunter's Shawl",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5396,7 +5336,7 @@
         },
         {
             "name": "Hunter's Hood",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5416,7 +5356,7 @@
         },
         {
             "name": "Hunter's Boots",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5426,7 +5366,7 @@
         },
         {
             "name": "Hunter's Bracers",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5436,7 +5376,7 @@
         },
         {
             "name": "Hunter's Ring",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "reqAttune": false,
@@ -5447,7 +5387,7 @@
         },
         {
             "name": "Moon-Touched Bracelet",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5468,7 +5408,7 @@
         },
         {
             "name": "Ring of Borrowed Time",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": false,
@@ -5481,7 +5421,7 @@
         },
         {
             "name": "Cloak of the Timekeeper",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5491,7 +5431,7 @@
         },
         {
             "name": "Stopped-clock Circlet",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5509,7 +5449,7 @@
         },
         {
             "name": "Time-knife Gloves",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5519,7 +5459,7 @@
         },
         {
             "name": "Boots of Excellent Positioning",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "reqAttune": "optional",
@@ -5539,7 +5479,7 @@
         },
         {
             "name": "Ring of Adrenaline Enhancment",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "reqAttune": true,
@@ -5556,7 +5496,7 @@
         },
         {
             "name": "Amulet of Unmitigated Gall",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": true,
             "reqAttune": false,
@@ -5567,7 +5507,7 @@
         },
         {
             "name": "Cloak of the Profane Elf",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5577,7 +5517,7 @@
         },
         {
             "name": "Cloak of Arcane Bolstering",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5587,7 +5527,7 @@
         },
         {
             "name": "Cloak of the Wind",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": "optional",
@@ -5604,7 +5544,7 @@
         },
         {
             "name": "Apathetic Cloak",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5614,7 +5554,7 @@
         },
         {
             "name": "Sanctuary Rose Cutting",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5625,7 +5565,7 @@
         },
         {
             "name": "Sanctuary Rose",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": true,
             "reqAttune": false,
@@ -5637,7 +5577,7 @@
         },
         {
             "name": "Darkmoon Dhalia",
-            "source": "S: Items",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": true,
             "reqAttune": false,
@@ -5648,7 +5588,7 @@
         },
         {
             "name": "Arrow of Acid",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5665,7 +5605,7 @@
         },
         {
             "name": "Arrow of Fire",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5677,12 +5617,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|S: Arrows|burning}, repeating the saving throw at the end of each of its turns to end the effect."
+                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|Starlight|burning}, repeating the saving throw at the end of each of its turns to end the effect."
             ]
         },
         {
             "name": "Arrow of Ice",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5694,12 +5634,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|S: Arrows|hampered} until the start of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|Starlight|hampered} until the start of your next turn."
             ]
         },
         {
             "name": "Arrow of Lightning",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5716,7 +5656,7 @@
         },
         {
             "name": "Arrow of Thunder",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5734,7 +5674,7 @@
         },
         {
             "name": "Arrow of Gravity",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5751,7 +5691,7 @@
         },
         {
             "name": "Arrow of Piercing",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5768,7 +5708,7 @@
         },
         {
             "name": "Arrow of Wounding",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "common",
             "wondrous": false,
             "type": "A",
@@ -5780,12 +5720,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, causes the target to {@condition bleeding|S: Arrows|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|S: Arrows}."
+                "On hit, causes the target to {@condition bleeding|Starlight|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|Starlight}."
             ]
         },
         {
             "name": "Arrow of Maiming",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5797,12 +5737,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, the target must make a Constitution saving throw or become {@condition halted|S: Arrows}. On a successful saving throw, they are {@condition slowed|S: Arrows} instead."
+                "On hit, the target must make a Constitution saving throw or become {@condition halted|Starlight}. On a successful saving throw, they are {@condition slowed|Starlight} instead."
             ]
         },
         {
             "name": "Arrow of Curing",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5814,12 +5754,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|S: Arrows}, {@condition disoriented|S: Arrows}, {@condition weakened|S: Arrows}, {@condition bleeding|S: Arrows}, {@condition burning|S: Arrows}, or {@condition shocked|S: Arrows}."
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition weakened|Starlight}, {@condition bleeding|Starlight}, {@condition burning|Starlight}, or {@condition shocked|Starlight}."
             ]
         },
         {
             "name": "Arrow of Disruption",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5831,12 +5771,12 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|S: Arrows} until the end of their next turn."
+                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|Starlight} until the end of their next turn."
             ]
         },
         {
             "name": "Arrow of Darkness",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5853,7 +5793,7 @@
         },
         {
             "name": "Arrow of Lesser Slaying",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5870,7 +5810,7 @@
         },
         {
             "name": "Arrow of Weeping",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "uncommon",
             "wondrous": false,
             "type": "A",
@@ -5887,7 +5827,7 @@
         },
         {
             "name": "Arrow of Greater Slaying",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "type": "A",
@@ -5904,7 +5844,7 @@
         },
         {
             "name": "Arrow of Recurving",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "type": "A",
@@ -5921,7 +5861,7 @@
         },
         {
             "name": "Arrow of Relocation",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "type": "A",
@@ -5938,7 +5878,7 @@
         },
         {
             "name": "Arrow of Explosives",
-            "source": "S: Arrows",
+            "source": "Starlight",
             "rarity": "rare",
             "wondrous": false,
             "type": "A",
@@ -5955,7 +5895,7 @@
         },
         {
             "name": "Nature's Emissary",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "shortsword|phb",
             "type": "M",
             "weaponCategory": "martial",
@@ -6013,7 +5953,7 @@
         },
         {
             "name": "Protector's Naginata",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "Glaive|phb",
             "type": "M",
             "weight": 5,
@@ -6043,7 +5983,7 @@
         },
         {
             "name": "Sentinel's Rapier",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "rapier|phb",
             "type": "M",
             "weaponCategory": "martial",
@@ -6065,7 +6005,7 @@
         },
         {
             "name": "Jagged Followthrough",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "longsword|phb",
             "type": "M",
             "weaponCategory": "martial",
@@ -6092,7 +6032,7 @@
         },
         {
             "name": "Threadsplitter",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "longsword|phb",
             "type": "M",
             "rarity": "very rare",
@@ -6143,7 +6083,7 @@
         },
         {
             "name": "Clovehoof Armour",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "type": "MA",
             "rarity": "rare",
             "reqAttune": false,
@@ -6159,7 +6099,7 @@
         },
         {
             "name": "Dragonspirit Robes",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "robes|phb",
             "type": "OTH",
             "rarity": "rare",
@@ -6180,7 +6120,7 @@
         },
         {
             "name": "Vest of the Optimist",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "studded leather armor|PHB",
             "type": "LA",
             "rarity": "rare",
@@ -6196,7 +6136,7 @@
         },
         {
             "name": "Timeless Scale-mail",
-            "source": "S: Weapons",
+            "source": "Starlight",
             "baseItem": "Scale-mail|PHB",
             "type": "MA",
             "rarity": "very rare",
@@ -6244,7 +6184,7 @@
     "spell": [
         {
             "name": "Divine Shield",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "A",
             "time": [
@@ -6315,7 +6255,7 @@
         },
         {
             "name": "Holy Nova",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 4,
             "school": "E",
             "time": [
@@ -6391,7 +6331,7 @@
         },
         {
             "name": "Consecrate",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 4,
             "school": "E",
             "time": [
@@ -6474,7 +6414,7 @@
         },
         {
             "name": "Arcane Butterflies",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "C",
             "time": [
@@ -6552,7 +6492,7 @@
         },
         {
             "name": "Raelynn's Purification Aura",
-            "source": "S: Spells",
+            "source": "Starlight",
             "page": 0,
             "level": 4,
             "school": "A",
@@ -6626,7 +6566,7 @@
         },
         {
             "name": "Raelynn's Lesser Restoration",
-            "source": "S: Spells",
+            "source": "Starlight",
             "page": 0,
             "level": 2,
             "school": "A",
@@ -6701,7 +6641,7 @@
         },
         {
             "name": "Earth Shock",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "E",
             "time": [
@@ -6763,7 +6703,7 @@
         },
         {
             "name": "Frost Shock",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "E",
             "time": [

@@ -4,9 +4,9 @@
         "sources":
         [
             {
-                "json": "S: Spells",
-                "abbreviation": "S: Spells",
-                "full": "Starlight: Spells",
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
                 "color": "dac4ff",
                 "authors":
                 [
@@ -28,7 +28,7 @@
     [
 		{
 			"name": "Divine Shield",
-			"source": "S: Spells",
+			"source": "Starlight",
 			"level": 1,
 			"school": "A",
 			"time": [
@@ -99,7 +99,7 @@
 		},
         {
 			"name": "Holy Nova",
-			"source": "S: Spells",
+			"source": "Starlight",
 			"level": 4,
 			"school": "E",
 			"time": [
@@ -175,7 +175,7 @@
 		},
         {
 			"name": "Consecrate",
-			"source": "S: Spells",
+			"source": "Starlight",
 			"level": 4,
 			"school": "E",
 			"time": [
@@ -258,7 +258,7 @@
 		},
         {
 			"name": "Arcane Butterflies",
-			"source": "S: Spells",
+			"source": "Starlight",
 			"level": 1,
 			"school": "C",
 			"time": [
@@ -336,7 +336,7 @@
 		},
         {
             "name": "Raelynn's Purification Aura",
-            "source": "S: Spells",
+            "source": "Starlight",
             "page": 0,
             "level": 4,
             "school": "A",
@@ -410,7 +410,7 @@
         },
         {
             "name": "Raelynn's Lesser Restoration",
-            "source": "S: Spells",
+            "source": "Starlight",
             "page": 0,
             "level": 2,
             "school": "A",
@@ -485,7 +485,7 @@
         },
         {
             "name": "Earth Shock",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "E",
             "time": [
@@ -547,7 +547,7 @@
         },
         {
             "name": "Frost Shock",
-            "source": "S: Spells",
+            "source": "Starlight",
             "level": 1,
             "school": "E",
             "time": [

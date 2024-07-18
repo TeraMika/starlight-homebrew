@@ -2,10 +2,10 @@
     "_meta": {
         "sources": [
             {
-                "json": "SToD: Species",
-                "abbreviation": "SToD: Species",
-                "color": "737373",
-                "full": "Shifting Tides of Delamir: Species",
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
                 "authors": [
                     "Starlight"
                 ],
@@ -18,7 +18,7 @@
     "race": [
         {
             "name": "Riftborn Lacertal",
-            "source": "SToD: Species",
+            "source": "SToD",
             "lineage": "VRGR",
             "skillProficiencies": 
             [
@@ -122,7 +122,7 @@
         },
         {
         "name": "Tempestborn",
-        "source": "SToD: Species",
+        "source": "SToD",
         "lineage": "VRGR",
         "size": 
         [
@@ -212,7 +212,7 @@
         },
         {
         "name": "Elf (Profane)",
-        "source": "SToD: Species",
+        "source": "SToD",
         "lineage": "VRGR",
         "size":
         [
