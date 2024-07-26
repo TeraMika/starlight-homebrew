@@ -962,7 +962,7 @@
             "level": 1,
             "entries": [
                 "{@i 1st-level Waters Shaman feature}",
-                "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|S: Conditions}."
+                "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|Starlight}."
             ]
         },
         {
@@ -989,7 +989,7 @@
             "entries": [
                 "{@i 10th-level Waters Shaman feature}",
                 "You can breathe underwater and gain a swimming speed equal to your walking speed.",
-                "Furthermore, when a creature hits you with an attack, you can use a reaction to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks, and gaining the {@condition Regenerating|S: Conditions} condition with an amount equal to your Shaman level, for one turn.",
+                "Furthermore, when a creature hits you with an attack, you can use a reaction to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks, and gaining the {@condition Regenerating|Starlight} condition with an amount equal to your Shaman level, for one turn.",
                 "This movement can move through other creatures' spaces, but if you end your movement in another creature's space you are ejected to the nearest unoccupied space, taking {@damage 1d8} force damage for each 5 feet you are ejected.",
                 "You can use this reaction once per short rest."
             ]
@@ -1162,7 +1162,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                "You can call on the chilling winds of the valley. You can use an action to {@condition slowed|S: Conditions|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a short or long rest.",
+                "You can call on the chilling winds of the valley. You can use an action to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a short or long rest.",
                 "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
             ]
         },
@@ -1684,7 +1684,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You may add your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+				"You may a bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
 			]
         },
         {
@@ -1973,7 +1973,7 @@
 			],
 			"entries": [
 				"Once per short rest, you can attempt to allow nature to siphon a creature's magic for a turn.",
-                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|S: Conditions} until the end of your next turn."
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -2149,7 +2149,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can summon a {@creature Searing Nature Spirit Totem|S: Shaman}, which causes creatures to {@condition burning|S: Conditions|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
+				"You can summon a {@creature Searing Nature Spirit Totem|S: Shaman}, which causes creatures to {@condition burning|Starlight|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
 			],
             "prerequisite": [
                 {
@@ -2303,7 +2303,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|S: Conditions} until the start of your next turn."
+				"Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|Starlight} until the start of your next turn."
 			],
             "prerequisite": [
                 {
@@ -2439,7 +2439,8 @@
 				"PRU"
 			],
 			"entries": [
-				"When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw or become {@condition sundered|S: Conditions} until the start of your next turn."
+				"When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw against your Shaman spell save DC or become {@condition sundered|Starlight} until the start of your next turn.",
+                "If the spell already requires a saving throw, this effect takes place if that saving throw is failed, instead of requiring the additional Dexterity saving throw."
 			],
             "prerequisite": [
                 {
@@ -2464,7 +2465,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|S: Conditions} and deals {@damage 1d4} less damage with weapon attacks."
+				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d4} less damage with weapon attacks."
 			],
             "prerequisite": [
                 {
@@ -2889,6 +2890,206 @@
             ]
 		}
     ],
+    "spell": [
+        {
+            "name": "Earth Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An undamaged geode"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Silenced|Starlight} until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "S: Shaman"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Frost Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An drop of water or an ice cube"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} cold damage and must make a Constitution saving throw. On a failed save, it is {@condition Halted|Starlight} until the start of your next turn. On a successful save, it is {@condition Slowed|Starlight} instead."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "S: Shaman"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Vitality Hex",
+            "source": "Starlight",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A used match, torch, or lantern"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You weave a cloak of shadow over a target's lifeforce. The target takes {@damage 2d8} necrotic damage becomes hexed for the duration of the spell. While hexed, once on each turn when the target takes damage (including from the casting of this spell), you regain {@damage 1d6} hit points. The target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the healing gained increases to {@damage 2d6} and any damage the target takes is increased by {@damage 1d6} necrotic damage."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SCL"
+            ],
+            "classes": {
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Shaman",
+                            "source": "S: Shaman"
+                        },
+                        "subclass": {
+                            "name": "Shadows",
+                            "shortName": "Shadows",
+                            "source": "S: Shaman"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
     "monster": [
         {
             "name": "Sapling Treant",
@@ -3087,7 +3288,7 @@
                     "name": "Warding Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|S: Conditions} until the end of its turn."
+                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
                     ]
                 },
                 {
@@ -3390,7 +3591,7 @@
                     ]
                 },
                 {
-                    "name": "Manarage Totem Aura",
+                    "name": "Enforcement Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
                         "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved agains their will."
@@ -3454,7 +3655,7 @@
                     "name": "Searing Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|S: Conditions}. If a creature is already {@condition burning|S: Conditions}, it takes {@dice 1d4} fire damage instead."
+                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|Starlight}. If a creature is already {@condition burning|Starlight}, it takes {@dice 1d4} fire damage instead."
                     ]
                 },
                 {
