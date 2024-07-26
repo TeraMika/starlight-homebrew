@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.08.16",
+                "version": "2024.07.26.10.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.08.16",
+                "version": "2024.07.26.10.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -41,7 +41,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.08.16",
+                "version": "2024.07.26.10.52",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -49,7 +49,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1721981785.8568933
+        "dateLastModified": 1721991161.3484309
     },
     "class": [
         {
@@ -2259,7 +2259,7 @@
                 "PRU"
             ],
             "entries": [
-                "You may a bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+                "You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
             ]
         },
         {
@@ -6242,6 +6242,28 @@
             "entries": [
                 "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
                 "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
+            ]
+        },
+        {
+            "name": "Chalice of Light",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Once each day, this chalice can be used to pour out a vial's worth of {@item Holy Water (flask)|PHB|holy water}. This holy water becomes mundane water when the Chalice is used again.",
+                "As an action, the holy water can be drank to end the {@condition poisoned|PHB} condition or one disease afflicting the character.",
+                "Over the course of one minute, this vial can also be used to coat a weapon, granting it a +1 bonus to attack rolls and +1 radiant damage against fiends and undead. The coating lasts for one hour and for the duration the weapon is considered magical for the purposes of overcoming resistances."
+            ]
+        },
+        {
+            "name": "Coin of Future Problems",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
             ]
         },
         {

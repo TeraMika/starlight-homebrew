@@ -1684,7 +1684,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You may a bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+				"You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
 			]
         },
         {
