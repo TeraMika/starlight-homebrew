@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.10.52",
+                "version": "2024.09.27.17.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.10.52",
+                "version": "2024.09.27.17.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -41,7 +41,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2024.07.26.10.52",
+                "version": "2024.09.27.17.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -49,7 +49,7 @@
             "PRU": "Primordial Rune"
         },
         "dateAdded": 0,
-        "dateLastModified": 1721991161.3484309
+        "dateLastModified": 1727458016.6515417
     },
     "class": [
         {
@@ -5215,8 +5215,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
-                        "The creature can make only one attack with an action or bonus action, and cannot cast levelled spells."
+                        "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks.",
+                        "When a disoriented creature attacks with an action or bonus action they can make only one attack with that action, and they cannot cast levelled spells."
                     ]
                 }
             ]
@@ -5245,8 +5245,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "A weakened creature deals half damage with weapon attacks.",
-                        "Other creatures have advantage on any saving throw they make against a weakened creature or their effects."
+                        "A weakened creature deals half damage with effects that require an attack roll.",
+                        "If an effect does not require an attack roll, targets instead have advantage on any saving throw or ability check made to resist it."
                     ]
                 }
             ]
@@ -5404,7 +5404,7 @@
             "source": "Starlight",
             "page": 0,
             "entries": [
-                "A slowed creature's movement speed is reduced by half."
+                "A slowed creature's movement speed is reduced by half of its maximum."
             ]
         },
         {

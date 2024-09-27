@@ -51,8 +51,8 @@
                 "type": "list",
                 "items": 
                 [
-                    "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks and saving throws.",
-                    "The creature can make only one attack with an action or bonus action, and cannot cast levelled spells."
+                    "A disoriented creature has its movement {@condition Hampered|Starlight} and disadvantage on Wisdom and Intelligence ability checks.",
+                    "When a disoriented creature attacks with an action or bonus action they can make only one attack with that action, and they cannot cast levelled spells."
                 ]
                 }
             ]
@@ -85,8 +85,8 @@
                 "type": "list",
                 "items": 
                 [
-                    "A weakened creature deals half damage with weapon attacks.",
-                    "Other creatures have advantage on any saving throw they make against a weakened creature or their effects."
+                    "A weakened creature deals half damage with effects that require an attack roll.",
+                    "If an effect does not require an attack roll, targets instead have advantage on any saving throw or ability check made to resist it."
                 ]
                 }
             ]
@@ -265,7 +265,7 @@
             "page": 0,
             "entries":
             [
-                "A slowed creature's movement speed is reduced by half."
+                "A slowed creature's movement speed is reduced by half of its maximum."
             ]
         },
         {
@@ -335,5 +335,5 @@
             ]
         }
     ]
-    }
+}
     
