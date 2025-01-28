@@ -1,0 +1,3256 @@
+{
+    "_meta": 
+    {
+        "sources": 
+        [
+            {
+                "json": "S: Hunter",
+                "abbreviation": "S: Hunter",
+                "full": "Starlight: Hunter",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "optionalFeatureTypes": {
+            "HTR": "Tricks"
+        },
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "class": [
+		{
+            "name": "Hunter",
+            "source": "S: Hunter",
+            "classFeatures": [
+				"Instinct|Hunter|S: Hunter|1|S: Hunter",
+				"Quarry|Hunter|S: Hunter|1|S: Hunter",
+                "Weapon Mastery|Ranger|XPHB|1",
+                "Fighting Style|Hunter|S: Hunter|2|S: Hunter",
+				"Tricks|Hunter|S: Hunter|2|S: Hunter",
+				"Hunting Grounds|Hunter|S: Hunter|3|S: Hunter",
+				"Ability Score Improvement|Fighter|PHB|4",
+                "Lesser Quarry|Hunter|S: Hunter|5|S: Hunter",
+				"Offensive Hunter|Hunter|S: Hunter|6|S: Hunter",
+				"Hunting Grounds Feature|Hunter|S: Hunter|7|S: Hunter",
+				"Ability Score Improvement|Fighter|PHB|8",
+                "Greater Quarry|Hunter|S: Hunter|9|S: Hunter",
+				"Defensive Hunter|Hunter|S: Hunter|10|S: Hunter",
+				"Hunting Grounds Feature|Hunter|S: Hunter|11|S: Hunter",
+				"Ability Score Improvement|Fighter|PHB|12",
+                "Superior Quarry|Hunter|S: Hunter|13|S: Hunter",
+                "Refined Instincts|Hunter|S: Hunter|14|S: Hunter",
+				"Hunting Grounds Feature|Hunter|S: Hunter|15|S: Hunter",
+				"Ability Score Improvement|Fighter|PHB|16",
+                "Supernatural Hunter|Hunter|S: Hunter|17|S: Hunter",
+				"Supreme Quarry|Hunter|S: Hunter|18|S: Hunter",
+				"Ability Score Improvement|Fighter|PHB|19",
+				"Hunter's Zenith|Hunter|S: Hunter|20|S: Hunter"
+			],
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "str",
+                "dex"
+            ],
+            "classTableGroups": [
+				{
+					"colLabels": [
+						"Hunter's Die"
+					],
+					"rows": [
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d6}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d8}"],
+						["{@dice 1d10}"],
+						["{@dice 1d10}"],
+						["{@dice 1d10}"],
+						["{@dice 1d10}"],
+						["{@dice 1d10}"],
+						["{@dice 1d10}"]
+					]
+				},
+                {
+                    "colLabels": [
+                        "Instinct",
+						"{@filter Tricks|optionalfeatures|feature type=HTR}"
+                    ],
+					"rows": [
+						["3", "-"],
+						["4", "2"],
+						["5", "2"],
+						["6", "3"],
+						["7", "3"],
+						["8", "4"],
+						["9", "4"],
+						["10", "5"],
+						["11", "5"],
+						["12", "6"],
+						["13", "6"],
+						["14", "7"],
+						["15", "7"],
+						["16", "8"],
+						["17", "8"],
+						["18", "9"],
+						["19", "9"],
+						["20", "10"],
+						["21", "10"],
+						["22", "11"]
+					]
+                }
+			],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "shield"
+                ],
+                "weapons":[
+                    "simple",
+                    "martial"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "acrobatics",
+                                "insight",
+                                "intimidation",
+                                "investigation",
+                                "medicine",
+                                "nature",
+                                "perception",
+                                "stealth",
+                                "survival"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "default": [
+                    "{@item leather armor|PHB|leather armour}",
+                    "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
+                    "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
+                    "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
+                    "2 {@item dagger|PHB|daggers}"
+                ],
+                "additionalFromBackground": true,
+                "goldAlternative": "{@dice 3d4x10}"
+            },
+            "multiclassing": {
+                "requirements":{
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+                },
+                "proficienciesGained": {
+                    "weapons":[
+                        "simple", "martial"
+                    ],
+                    "armor": [
+                        "light", "medium", "shield"
+                    ]
+                }
+            }
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Optional Rule: Alternate Ability Hunter",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "isClassFeatureVariant": true,
+            "level": 1,
+            "entries": [
+                "Hunters usually rely on their instincts, governed by Wisdom, their awareness of the world around them. But you may prefer that your Hunter gains an advantage through their wit and quick thinking, or their unbreakable resolve fueling their efforts.",
+                "If this is the case for your Hunter, you may prefer to use Intelligence or Charisma instead of Wisdom for your Hunter features. If you do so, make the following changes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Features which specify your Wisdom modifier (such as Supreme Quarry) instead use the modifier of the chosen ability.",
+                        "Your Hunter DC is calculated with that ability, instead of Wisdom."
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Instinct",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 1,
+            "entries":
+            [
+                "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a short rest.",
+                "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. This increases as you level up in this class as per the column in the Hunter table."
+            ]
+        },
+        {
+            "name": "Quarry",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 1,
+            "entries": [
+                "A Hunter needs a target. Once per turn, you can spend one Instinct to designate a creature within 60 feet of you (no action required) as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
+            ]
+        },
+        {
+            "name": "Fighting Style",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 2,
+            "entries":
+            [
+                "Your skills as a warrior are commendable, and you gain a {@filter Fighting Style Feat|feats|category=FS} of your choice.",
+                "Whenever you gain a level in this class, you can replace that Fighting Style feat with another."
+            ]
+        },
+        {
+            "name": "Tricks",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 2,
+            "entries":
+            [
+                "A Hunter is flexible, able to adapt their skillset to most threats. These Tricks are combat techniques, unique skills or benefits to your skills, or modifications to your defenses. They may be informed by your Hunting Grounds.",
+                "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a long rest, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
+                "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
+                "If a Trick grants or modifies an attack you cannot use more than one at a time. For example, if you use the Retaliate trick to strike back at a foe, you cannot use the Trip Attack Trick on that reliatory strike.",
+                "If a Trick requires a saving throw, the DC is equal to 8 plus your Strength or Dexterity modifier plus your Proficiency Bonus."
+            ]
+        },
+        {
+            "name": "Hunting Grounds",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "When you reach 3rd level, you distinguish yourself from other Hunters by calling on the skills developed in your Hunting Grounds, the place you honed your skills. Your Hunting Grounds grant you features at 3rd level, and again at 7th, 11th, and 15th level"
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 4,
+            "entries": [
+                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
+            ]
+        },
+        {
+            "name": "Lesser Quarry",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 5,
+            "entries":
+            [
+                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                {
+                    "type": "entries",
+                    "name": "Relentless",
+                    "entries":[
+                        "You can mark your Quarry without being able to see them. You have advantage on any Wisdom or Intelligence checks made to find your Quarry or see through its illusions, and your quarry lasts up to eight hours."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cautious",
+                    "entries":[
+                        "If your Quarry moves so that you are within its reach for a melee attack, you can use your Reaction to move up to half your speed without provoking opportunity attacks."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strategic",
+                    "entries":[
+                        "You can use a Bonus Action to take the {@action Dash} action, but you must move towards your Quarry. You can use a Bonus Action to take the {@action Disengage} action, but you must leave your Quarry's reach when you do so."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Offensive Hunter",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 6,
+            "entries": [
+                "At 6th level, your skill as a Hunter have grown and you develop new techniques to fell larger foes or to cleave through their minions. Choose one of the following:",
+                {
+                    "type": "entries",
+                    "name": "Focused Assault",
+                    "entries":[
+                        "You deal an additional {@dice 1d4} damage when you attack a creature that is below its maximum hit points."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Considered Strikes",
+                    "entries":[
+                        "When you attack a creature, you can spend 1 Instinct to add your Hunter's Die to the attack roll. If the target is your Quarry, you can do so after the roll, otherwise you must do so before."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Thin the Herd",
+                    "entries":[
+                        "Once on each of your turns when you attack a creature, you can immediately make another attack against a different creature within 10 feet of the target that is within your reach or range."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hunting Grounds Feature",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "When you reach 7th level, you gain another feature from your Hunting Grounds."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 8,
+            "entries": [
+                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 12 and 16."
+            ]
+        },
+        {
+            "name": "Greater Quarry",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 9,
+            "entries":
+            [
+                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                {
+                    "type": "entries",
+                    "name": "Relentless",
+                    "entries":[
+                        "Your Quarry cannot {@condition Frighten} you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cautious",
+                    "entries":[
+                        "Your Quarry cannot {@condition Charm} you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strategic",
+                    "entries":[
+                        "You learn your Quarry's resistances, vulnerabilities or immunities to any damage or conditions."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Defensive Hunter",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 10,
+            "entries": [
+                "At 10th level, your skill as a Hunter have grown further and you develop new techniques to help you evade danger. Choose one of the following:",
+                {
+                    "type": "entries",
+                    "name": "Quickstep",
+                    "entries":[
+                        "Creatures cannot make opportunity attacks against you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pattern Recognition",
+                    "entries":[
+                        "After a creature hits you with an attack, you gain a +4 bonus to AC against all other attacks made by that creature until the end of its turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Evasion",
+                    "entries":[
+                        "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hunting Grounds Feature",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 11,
+            "entries": [
+                "When you reach 11th level, you gain another feature from your Hunting Grounds."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 12,
+            "entries": [
+                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter level 16."
+            ]
+        },
+        {
+            "name": "Superior Quarry",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 13,
+            "entries":
+            [
+                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                {
+                    "type": "entries",
+                    "name": "Relentless",
+                    "entries":[
+                        "When you hit your Quarry with an attack, its AC is reduced by 3 until the end of your turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cautious",
+                    "entries":[
+                        "When your Quarry hits you with an attack, you can use your Reaction to halve the damage you take."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strategic",
+                    "entries":[
+                        "When you attack your Quarry, you can instead end the Quarry and make an attack against every other creature of your choice within your reach (if you use a melee weapon), or within 10 feet of your quarry (if you use a ranged weapon)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Refined Instincts",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 14,
+            "entries": [
+                "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws."
+            ]
+        },
+        {
+            "name": "Hunting Grounds Feature",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 15,
+            "entries": [
+                "When you reach 15th level, you gain another feature from your Hunting Grounds."
+            ],
+            "gainSubclassFeature": true
+        },
+        {
+            "name": "Supernatural Hunter",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 17,
+            "entries": [
+                "Your skills as a Hunter grow again, to the extent that your abilities seem almost supernatural. Choose one of the following abilities, which you can use once per short rest:",
+                {
+                    "type": "entries",
+                    "name": "Vanish",
+                    "entries":[
+                        "You can spend a Bonus Action to become Invisible until the end of your next turn. While invisible, you can pass through objects and creatures that you otherwise couldn't as if they were difficult terrain. If you end your turn within an object or creature's space, you take 3d10 force damage and are shunted to the nearest available space."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Blur",
+                    "entries":[
+                        "You double your movement speed this turn (no action required). The first time you take damage after this turn, any unspent movement is used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Reaper",
+                    "entries":[
+                        "As an Action, you can make a special attack which, if it kills a creature, allows you to make another attack. All of these attacks deal additional damage equal to your Hunter's Die."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Supreme Quarry",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 13,
+            "entries":
+            [
+                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                {
+                    "type": "entries",
+                    "name": "Relentless",
+                    "entries":[
+                        "Your attacks against your Quarry deal additional damage equal to your Wisdom modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Cautious",
+                    "entries":[
+                        "You have advantage on any saving throws you make against your Quarry and its effects."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Strategic",
+                    "entries":[
+                        "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, that ally has resistance to any damage dealt and advantage on any saving throws it makes."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hunter's Zenith",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 20,
+            "entries": [
+                "Your Wisdom score increases by 2, and so does your Strength or Dexterity score (you choose), both up to a maximum of 30.",
+                "You can have up to two creatures as your Quarry at any one time, and when you mark one you can mark another at no cost. Choosing another Quarry only ends your previous Quarry if you would have more than two, in which case you choose which to end.",
+                "At this level, you also gain access to a unique and powerful Trick. Relentless, Cautious, or Strategic Hunter."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Borderland",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "shortname": "Borderland",
+            "subclassFeatures": [
+                "Edge of the World|Hunter|S: Hunter|Borderland|S: Hunter|3",
+                "Expert|Hunter|S: Hunter|Borderland|S: Hunter|7",
+                "Ethereal Shift Improvement|Hunter|S: Hunter|Borderland|S: Hunter|7",
+                "Fae Tricks|Hunter|S: Hunter|Borderland|S: Hunter|11",
+                "Grave Step|Hunter|S: Hunter|Borderland|S: Hunter|15"
+            ]
+        },
+        {
+            "name": "Extraplanar",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "shortname": "Extraplanar",
+            "subclassFeatures": [
+                "Planeswalker|Hunter|S: Hunter|Extraplanar|S: Hunter|3",
+                "Expert|Hunter|S: Hunter|Extraplanar|S: Hunter|7",
+                "Celestial Dusting|Hunter|S: Hunter|Extraplanar|S: Hunter|7",
+                "Infernal Edge|Hunter|S: Hunter|Extraplanar|S: Hunter|11",
+                "Planar Boon|Hunter|S: Hunter|Extraplanar|S: Hunter|15"
+            ]
+        },
+        {
+            "name": "Dunes",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "shortname": "Dunes",
+            "subclassFeatures": [
+                "Dunes|Hunter|S: Hunter|Dunes|S: Hunter|1",
+                "Control the Storm|Hunter|S: Hunter|Dunes|S: Hunter|6",
+                "Duneswalker|Hunter|S: Hunter|Dunes|S: Hunter|6",
+                "Superior Mirage|Hunter|S: Hunter|Dunes|S: Hunter|10",
+                "Liquefaction|Hunter|S: Hunter|Dunes|S: Hunter|14"
+            ],
+            "subclassSpells": [
+                "Bane|PHB", "Disguise Self|PHB",
+                "Mirror Image|PHB", "Pass Without Trace|PHB",
+                "Major Image|PHB", "Dispel Magic|PHB",
+                "Hallucinatory Terrain|PHB", "Confusion|PHB",
+                "Mislead|PHB", "Insect Plague|PHB"
+            ]
+        },
+        {
+            "name": "Forests",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "shortname": "Forests",
+            "subclassFeatures": [
+                "Forests|Hunter|S: Hunter|Forests|S: Hunter|1",
+                "Extra Attack|Hunter|S: Hunter|Forests|S: Hunter|6",
+                "Treeswalker|Hunter|S: Hunter|Forests|S: Hunter|6",
+                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|6",
+                "Masterful Hunter|Hunter|S: Hunter|Forests|S: Hunter|10",
+                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|10",
+                "Empowered Invocation|Hunter|S: Hunter|Forests|S: Hunter|14",
+                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|14"
+            ],
+            "subclassSpells": [
+                "Hunter's Mark|PHB", "Snare|XGE",
+                "Invisibility|PHB", "Rope Trick|PHB",
+                "Speak with Plants|PHB", "Plant Growth|PHB",
+                "Guardian of Nature|XGE", "Locate Creature|PHB",
+                "Hold Monster|PHB", "Far Step|XGE"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Edge of the World",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "Borderland Hunters walk on the borders of the Material Plane and its mirror, the Feywilds, stalking the creatures that live there. Living in shades of grey and dim light, they have mastered the borders and can briefly change where they reside, striking terror no matter where a creature escapes to.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Skills from the Borderland|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Border-world Quarries|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ethereal Shift|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                }
+            ]
+        },
+        {
+            "name": "Skills from the Borderland",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Borderland Hunter feature}",
+                "Your experience in dealing with creatures of the between-realm has given you skills related to reading intention and concealing your own.",
+                "You gain proficiency with the {@skill Insight|XPHB} and {@skill Deception|XPHB} skills."
+            ]
+        },        
+        {
+            "name": "Border-world Quarries",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Borderland Hunter feature}",
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
+            ]
+        },    
+        {
+            "name": "Ethereal Shift",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Borderland Hunter feature}",
+                "You can use a Bonus Action to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
+                "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
+                "You can use this feature for free once per Short Rest, otherwise it costs 2 Instinct."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Borderland Hunter feature}",
+                "The skills you gained from the Borderlands have improved. You gain {@variantrule Expertise|XPHB} in Insight and Deception."
+            ]
+        },
+        {
+            "name": "Ethereal Shift Improvement",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Borderland Hunter feature}",
+                "While using Ethereal Shift, you can cast Misty Step once on each of your turns (no spell slot required)."
+            ]
+        },
+        {
+            "name": "Fae Tricks",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Borderland Hunter feature}",
+                "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a reaction to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
+                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take {@dice 4d8} psychic damage. This damage increases to {@dice 5d10} at level 15."
+            ]
+        },
+        {
+            "name": "Grave Step",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Borderland",
+            "subclassSource": "S: Hunter",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Borderland Hunter feature}",
+                "While using Ethereal Shift, you have {@sense Truesight|XPHB} out to a range of 60 feet.",
+                "Additionally, the necrotic damage you deal by passing through a creature's space increases to two rolls of your Hunter's Die. When you cast Misty Step using Ethereal Shift, you can deal this damage to all creatures in a 5-foot line between the space you teleport from and your destination."
+            ]
+        },
+        {
+            "name": "Extraplanar",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "Extraplanar Hunters walk the outer planes, dealing with Celestials, Demons and Aberrations alike. Time spent in these outer regions inevitably grants a taste of the power these creatures wield, which Extraplanar Hunters manipulate to their own end. They may protect other planes from these creatures, go on missions in these areas, or simply live their lives there.",
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Skills from the Outer Planes|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Outer-planes Quarries|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Planar Gift|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Aberrant Ward|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                    }
+                ]
+        },        {
+            "name": "Skills from the Outer Planes",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "You experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
+                "You gain proficiency with the {@skill Arcana|XPHB} and {@skill Religion|XPHB} skills."
+            ]
+        },        
+        {
+            "name": "Outer-planes Quarries",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
+            ]
+        },    
+        {
+            "name": "Planar Gift",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a Long Rest. Damaging your Quarry adds one Hunter's Die to the pool."
+            ]
+        },
+        {
+            "name": "Aberrant Ward",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When an ally within 30 feet of you takes damage, you can use your Reaction to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in Arcana and Religion."
+            ]
+        },
+        {
+            "name": "Celestial Dusting",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "When you hit a creature with a weapon attack, you can spend and roll one die from your Planar Gift to grant that many temporary hit points to yourself or a creature within 10 feet of you.",
+                "If you damage your Quarry, you can instead use the Hunter's Die rolled as part of the attack."
+            ]
+        },
+        {
+            "name": "Infernal Edge",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Extraplanar Hunter feature}",
+                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target must make a Constitution saving throw or become Poisoned until the end of your next turn, and take necrotic damage equal to a roll of the Planar Gift die. They take half as much damage on a successful save."
+            ]
+        },
+        {
+            "name": "Planar Boon",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "S: Hunter",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Extraplanar Hunter feature}",
+                "Your gifts from the outer planes have grown in power:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Aberrant Ward now pushes the attacking creature 10 feet away from the ally you protect with it.",
+                        "Celestial Dusting can also be used to restore hit points to a creature, and its range is 30 feet.",
+                        "Infernal Edge imposes disadvantage on the saving throw if your target is a Fiend, Celestial or Aberration."
+                    ]
+                }
+            ]
+        }
+    ],
+    "optionalfeature": [
+        {
+			"name": "Quick Reactions",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you roll initiative, you can spend one Instinct to roll your Hunter's Die and add it to the total. You can do so after the roll."
+			]
+		},
+        {
+            "name": "Hunter's Insight",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have a knack for reading people and their intentions. You can spend one Instinct to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} or {@skill Perception|XPHB} skills."
+			]
+        },
+        {
+            "name": "Bear It I",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can spend a Bonus Action and one Instinct to gain temporary hit points equal to a roll of your Hunter's Die plus your Constitution modifier."
+            ]
+        },
+        {
+            "name": "Honed Senses",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have additional Instinct equal to your Wisdom modifier (minimum gain of 1)."
+			]
+        },
+        {
+            "name": "Heavy Training",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You gain proficiency with Heavy Armour."
+			]
+        },
+        {
+            "name": "Trip Attack",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can attempt to trip a creature when you attack it. You can spend one Instinct when you make an attack to force the target to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
+			]
+        },
+        {
+            "name": "Retaliate",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When a creature hits you with an attack, you can spend one Instinct and a Reaction to make an attack against that creature, adding your Hunter's Die to the attack roll."
+			]
+        },
+        {
+            "name": "Driving Strike",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend one Instinct to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
+			]
+        },
+        {
+            "name": "Dazzling Strike",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend two Instinct to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
+			]
+        },
+        {
+            "name": "Trapsetter",
+            "source": "S: Hunter",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "At the start of each day, you can improvise {@item Ball Bearings|XPHB}, {@item Caltrops|XPHB}, {@item Acid|XPHB} or {@item Oil|XPHB}. You can {@action Utilize|XPHB} this improvised item with a Bonus Action instead of replacing an attack or using the {@action Utilize|XPHB} action.",
+                "Once created, the item lasts for 24 hours or until you improvise another, which costs 10gp and takes ten minutes."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Preparations",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can plan ahead when you know what the day holds.",
+                "At the start of each day, you can prepare a number of special coatings equal to your Proficiency Bonus. These coatings provide a +1 bonus to attack rolls and deal 1d4 additional damage of a damage type of your choosing other than force or psychic.",
+                "You can apply these to an arrow or other weapon with no action cost, but only one can be used at a time. The coatings retain their potency for 24 hours or until used."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Natural Talent",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+                "You gain proficiency in two Hunter skills you are not already proficient in (Athletics, Acrobatics, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Stealth, Survival)."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trained in Darkness",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+                "You have {@sense Darkvision|XPHB} out to a range of 60 feet. If you already have darkvision, its range is increased by 60 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+			"name": "Parry",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you are hit by an attack, you can spend one Instinct and your reaction to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Cleaving Attack",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend two Instinct to make an additional attack against another creature within your reach. The damage of the attack is equal to a roll of your Hunter's Die plus your Strength or Dexterity modifier (your choice), of the same type as the original weapon."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Readied Strike",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When a creature enters your reach and you are holding a melee weapon, you can use your Reaction to make an attack against them, adding your Hunter's Die to the attack roll."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Environmental Conditioning",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your exposure to a range of creatures and environments has taught you how to prepare for many a situation.",
+                "When you complete a short or long rest, you can choose to become resistant to one of fire, cold, acid, poison, lightning or thunder damage."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Highly Skilled I",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You become proficient in two skills of your choice."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Superior Stamina I",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can take the {@action Dash|XPHB} action as a Bonus Action."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Tether Shot",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you make an attack with a ranged weapon, you can spend one Instinct to fire a special arrow that restricts your target's movement.",
+                "On a hit, the target must make a Dexterity saving throw or be unable to move more than 15 feet from the spot they are on on their next turn. The tether can be broken with 10 slashing damage against an AC of 14, or if the target uses an action and succeeds a Strength check against your Hunter DC."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Hampering Attack",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your attacks are aimed such that they affect your opponent's movement. When you hit a creature with an attack, it becomes {@condition Hampered} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Sterner Stuff I",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have advantage on any saving throws made against poison damage or the {@condition Poisoned|XPHB} condition."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Keeper of the Grove",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per short rest, you can attempt to allow nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Small Friends",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You learn the {@spell Insect Plague|PHB} spell. You can communicate with insects freely."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Nature Companion",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can cast the {@spell Find Familiar|PHB} spell once per long rest without expending material components. Your familiar takes the form of a {@creature Sapling Treant|S: Hunter} or a {@creature Raven|MM}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Forest Walker",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You learn the {@spell Transport Via Plants|PHB} spell and can cast it once per long rest without expending a spell slot."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Master of Roots",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per long rest, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a bonus action, or forgo the need to {@status concentration||concentrate} on the spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Command of Air",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can cast the {@spell Fly|PHB} spell at will."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Earthly Intuition",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You gain Tremorsense to a range of 30 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Nature's Will",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"If you cast a spell and miss all of its attack roll(s), or all targets pass their saving throws to resist its effect, you can cast a cantrip as a bonus action instead of an action. You may do this once per short rest."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Searing Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can summon a {@creature Searing Nature Spirit Totem|S: Hunter}, which causes creatures to {@condition burning|Starlight|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Affinity with Flame",
+                        "Rune of totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Roaring Flames",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"The size of your spells that deal fire damage, if they specify an area, increase by 5 feet when you cast them (for example, {@spell Burning Hands|PHB} increases from a 15-foot cone to a 20-foot cone). If a spell specifies multiple dimensions, such as {@spell Wall of Fire|PHB}, you choose one to increase."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Compound Burns",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@b Growing Heat} feature improves. A creature now takes additional damage equal to your proficiency bonus any time they take fire damage, instead of only when you deal it. The effect's duration is still only increased by you."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Glacial Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can summon a {@creature Glacial Nature Spirit Totem|S: Hunter}, which, to creatures you choose, makes the area surrounding it difficult terrain and prevents regaining of hit points."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Ice Block",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"On the turn that you cast a spell of 1st level or higher that deals cold damage to one or more creatures, you can gain temporary hit points equal to your proficiency bonus times the number of creatures you deal cold damage to with that spell."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Absolute Zero",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@b Biting Cold} feature is enhanced. The penalty now applies to the next attack roll, ability check, or saving throw that the target makes. It also imposes disadvantage on Strength and Dexterity saving throws."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Frost"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Voltaic Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can summon a {@creature Voltaic Nature Spirit Totem|S: Hunter}, which prevents creatures of your choice within its area from taking reactions."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Spasming Shocks",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|Starlight} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Aftershock",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@b Arc Lightning} feature improves. It can now affect up to four targets, and the range limitation of 15 feet is between targets affected by this feature, not the original target."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Booming Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can summon a {@creature Booming Nature Spirit Totem|S: Hunter}, which creates a shockwave that pushes creatures of your choosing away from the totem."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Disorienting Thunderclap",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|PHB}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Reverberating Thunder",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@b Thundercrack} feature improves. You are able to push creatures of any size, and the distance increases to 10 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Thunder"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Caustic Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can summon a {@creature Caustic Nature Spirit Totem|S: Hunter}, which reduces the AC of creatures of your choice in its area by 2."
+			],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Rune of Totem Summoning",
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Rapid Erosion",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw against your Hunter spell save DC or become {@condition sundered|Starlight} until the start of your next turn.",
+                "If the spell already requires a saving throw, this effect takes place if that saving throw is failed, instead of requiring the additional Dexterity saving throw."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Viscous Acid",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d4} less damage with weapon attacks."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Acid"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Greater Resilience",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you use your {@subclassFeature Unwavering Spirit|Hunter|S: Hunter|Extraplanar|S: Hunter|1|S: Hunter|unwavering spirit}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
+                "You can do this once, and must complete a short or long rest before you can do so again."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Extraplanar"
+                    ]
+                }
+            ]
+		}, 
+        {
+			"name": "Avatar of the Extraplanar",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Hunter|S: Hunter|20|S: Hunter|spiritual avatar} feature, you are resistant to bludgeoning, piercing, and slashing damage."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Extraplanar"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "High-pressure Jet",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your {@subclassFeature Ebb and Flow|Hunter|S: Hunter|Waters|S: Hunter|1|S: Hunter|Ebb and Flow water jet}, also pushes creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Affinity Jet",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you use your {@subclassFeature Ebb and Flow|Hunter|S: Hunter|Waters|S: Hunter|1|S: Hunter|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Avatar of the Waters",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Hunter|S: Hunter|20|S: Hunter|spiritual avatar} feature, you regain 15 hit points at the start of each of your turns."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Waters"
+                    ]
+                }
+            ]
+		},
+        {
+            "name": "Empowered Mirage",
+            "source": "S: Hunter",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When using your {@subclassFeature Mirage|Hunter|S: Hunter|Dunes|S: Hunter|1|S: Hunter}, you can deal damage of the type associated with your elemental affinity equal to your proficiency bonus to all other creatures of your choice within 5 feet of the space you left."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Dunes"
+                    ]
+                }
+            ]
+        },
+        {
+			"name": "Avatar of the Dunes",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Hunter|S: Hunter|20|S: Hunter|spiritual avatar} feature, you gain an additional reaction each round."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Dunes"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Avatar of the Forests",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When using your {@classFeature Spiritual Avatar|Hunter|S: Hunter|20|S: Hunter|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Forests"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Rune of Totem Summoning",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+                "You gain the ability to conjure a Nature Spirit Totem. This tiny elemental creature applies an effect to an area within 15 feet of itself. If a totem deals damage, you are considered to have done that damage.",
+                "Summoning a totem requires an action, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a long rest or unless you expend a spell slot of first level or higher.",
+                "The totem requires your {@status concentration} (as if you were concentrating on a spell), however, you can summon additional totems using the same concentration. Whenever you fail a Constitution saving throw to maintain your concentration, you choose one totem to disappear. If you use another effect which requires concentration such as a spell, they all disappear.",
+                "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@creature Taunting Nature Spirit Totem|S: Hunter}",
+                        "{@creature Warding Nature Spirit Totem|S: Hunter}",
+                        "{@creature Warning Nature Spirit Totem|S: Hunter}",
+                        "{@creature Lifting Nature Spirit Totem|S: Hunter}",
+                        "{@creature Blessing Nature Spirit Totem|S: Hunter}",
+                        "{@creature Wrath of Air Nature Spirit Totem|S: Hunter}"
+                    ]
+                }  
+            ]
+		},
+        {
+			"name": "Totemkeeper",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When expending a spell slot to summon a totem, you may summon two at once if the spell slot expended is of third level or higher."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totemic Blast",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your bonus action, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totemic Might",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you summon a totem, it gains temporary hit points equal to twice your proficiency bonus.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totem Commander",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
+                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a reaction to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Totem Specialist",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You learn how to summon two more totems from the list in the {@optfeature Rune of Totem Summoning|S: Hunter}.",
+                "Furthermore, your totems become proficient in all saving throws."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Enforcement Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You learn how to summon a {@creature Enforcement Nature Spirit Totem|S: Hunter}, which grants creatures of your choice temporary hit points at the start of each of your turns and prevents them from being moved against their will."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Manarage Totem",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You learn how to summon a {@creature Manarage Nature Spirit Totem|S: Hunter}. You can summon it once per short rest and it provides the following benefits:",
+                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature, but no more than once per turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Rune of Totem Summoning"
+                    ]
+                }
+            ]
+		}
+    ],
+    "spell": [
+        {
+            "name": "Earth Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An undamaged geode"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Silenced|Starlight} until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Hunter",
+                        "source": "S: Hunter"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Frost Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An drop of water or an ice cube"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} cold damage and must make a Constitution saving throw. On a failed save, it is {@condition Halted|Starlight} until the start of your next turn. On a successful save, it is {@condition Slowed|Starlight} instead."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Hunter",
+                        "source": "S: Hunter"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Vitality Hex",
+            "source": "Starlight",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A used match, torch, or lantern"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You weave a cloak of shadow over a target's lifeforce. The target takes {@damage 2d8} necrotic damage becomes hexed for the duration of the spell. While hexed, once on each turn when the target takes damage (including from the casting of this spell), you regain {@damage 1d6} hit points. The target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the healing gained increases to {@damage 2d6} and any damage the target takes is increased by {@damage 1d6} necrotic damage."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SCL"
+            ],
+            "classes": {
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter"
+                        },
+                        "subclass": {
+                            "name": "Shadows",
+                            "shortName": "Shadows",
+                            "source": "S: Hunter"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "monster": [
+        {
+            "name": "Sapling Treant",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "S" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "ac": 14, "from": [ "natural armor" ] } ],
+            "hp": { "average": 39, "formula": "6d8+12" },
+            "speed": { "walk": 30 },
+            "str": 17,
+            "dex": 8,
+            "con": 14,
+            "int": 12,
+            "wis": 12,
+            "cha": 10,
+            "passive": 11,
+            "languages": [ "understands the languages you speak" ],
+            "resist": [ "piercing" ],
+            "vulnerable": [ "fire" ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Rock",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Taunting Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Taunting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Hostile creatures within this totem's area have disadvantage on any attack that doesn't target the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast (Requires Totemic Blast Primordial Rune)",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warning Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warning Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one saving throw they make. The bonus is equal to half your spellcasting ability modifier (rounded up)."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warding Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warding Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lifting Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Lifting Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "When a friendly creature would enter this totem's area, it can spend an additional 5 feet of movement to be lifted by elemental winds and carried to the opposite side of the area. This movement does not provoke opportunity attacks.",
+                        "A friendly creature that starts its turn within the area gains 10 feet of movement speed for that turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessing Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Blessing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, creatures within the area can gain a bonus to one attack roll or ability check they make. The bonus is equal to your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wrath of Air Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Wrath of Air Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Once per round, any creature within the totem's area may add their spellcasting ability modifier to one damage roll from an attack or spell. If they do not have a spellcasting ability modifier, they use their Wisdom ability modifier."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enforcement Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Enforcement Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved agains their will."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Searing Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Searing Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|Starlight}. If a creature is already {@condition burning|Starlight}, it takes {@dice 1d4} fire damage instead."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Glacial Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Glacial Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "The area is difficult terrain for creatures of your choice. Additionally, those creatures cannot regain hit points while in the area."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Voltaic Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Voltaic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area are unable to take reactions."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Booming Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Booming Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "At the start of your turns, the totem emits a shockwave. Each creature of your choice within the totem's area must make a Strength saving throw or be pushed up to 15 feet directly away from the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Caustic Nature Spirit Totem",
+            "source": "S: Hunter",
+            "summonedByClass": "Hunter|S: Hunter",
+            "size": [ "T" ],
+            "type": "elemental",
+            "alignment": [ "N" ],
+            "ac": [ { "special": "14 + PB (Natural Armor)" } ],
+            "hp": { "special": "Three times PB" },
+            "speed": { "walk": 0 },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [ "Uses your own" ],
+            "passive": 13,
+            "languages": [ "understands the languages you speak" ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Caustic Totem Aura",
+                    "entries": [
+                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
+                        "Creatures of your choice within the area suffer a -2 penalty to their AC."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|S: Hunter} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|S: Hunter} Primordial Rune to use." 
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|S: Hunter} Primordial Rune to use."
+                    ]
+                }
+            ]
+        }
+    ]
+}
