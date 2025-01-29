@@ -4,8 +4,8 @@
         "sources": 
         [
             {
-                "json": "S: Hunter",
-                "abbreviation": "S: Hunter",
+                "json": "Starlight",
+                "abbreviation": "Starlight",
                 "full": "Starlight: Hunter",
                 "color": "dac4ff",
                 "authors": [
@@ -28,33 +28,33 @@
     "class": [
 		{
             "name": "Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "classFeatures": [
-				"Instinct|Hunter|S: Hunter|1|S: Hunter",
-				"Quarry|Hunter|S: Hunter|1|S: Hunter",
+				"Instinct|Hunter|Starlight|1|Starlight",
+				"Quarry|Hunter|Starlight|1|Starlight",
                 "Weapon Mastery|Ranger|XPHB|1",
-                "Fighting Style|Hunter|S: Hunter|1|S: Hunter",
-                "Keen Eye|Hunter|S: Hunter|1|S: Hunter",
-				"Tricks|Hunter|S: Hunter|2|S: Hunter",
-				"Hunting Grounds|Hunter|S: Hunter|3|S: Hunter",
+                "Fighting Style|Hunter|Starlight|1|Starlight",
+                "Keen Eye|Hunter|Starlight|1|Starlight",
+				"Tricks|Hunter|Starlight|2|Starlight",
+				"Hunting Grounds|Hunter|Starlight|3|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|4",
                 "Extra Attack|Fighter|XPHB|5",
-                "Lesser Quarry|Hunter|S: Hunter|5|S: Hunter",
-				"Offensive Hunter|Hunter|S: Hunter|6|S: Hunter",
-				"Hunting Grounds Feature|Hunter|S: Hunter|7|S: Hunter",
+                "Lesser Quarry|Hunter|Starlight|5|Starlight",
+				"Offensive Hunter|Hunter|Starlight|6|Starlight",
+				"Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|8",
-                "Greater Quarry|Hunter|S: Hunter|9|S: Hunter",
-				"Defensive Hunter|Hunter|S: Hunter|10|S: Hunter",
-				"Hunting Grounds Feature|Hunter|S: Hunter|11|S: Hunter",
+                "Greater Quarry|Hunter|Starlight|9|Starlight",
+				"Defensive Hunter|Hunter|Starlight|10|Starlight",
+				"Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|12",
-                "Superior Quarry|Hunter|S: Hunter|13|S: Hunter",
-                "Refined Instincts|Hunter|S: Hunter|14|S: Hunter",
-				"Hunting Grounds Feature|Hunter|S: Hunter|15|S: Hunter",
+                "Superior Quarry|Hunter|Starlight|13|Starlight",
+                "Refined Instincts|Hunter|Starlight|14|Starlight",
+				"Hunting Grounds Feature|Hunter|Starlight|15|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|16",
-                "Supernatural Hunter|Hunter|S: Hunter|17|S: Hunter",
-				"Supreme Quarry|Hunter|S: Hunter|18|S: Hunter",
-				"Epic Boon|Fighter|XPHB|19",
-				"Hunter's Zenith|Hunter|S: Hunter|20|S: Hunter"
+                "Supernatural Hunter|Hunter|Starlight|17|Starlight",
+				"Supreme Quarry|Hunter|Starlight|18|Starlight",
+				"Epic Boon|Hunter|Starlight|19|Starlight",
+				"Hunter's Zenith|Hunter|Starlight|20|Starlight"
 			],
             "hd": {
                 "number": 1,
@@ -185,9 +185,9 @@
     "classFeature": [
         {
             "name": "Optional Rule: Alternate Ability Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "isClassFeatureVariant": true,
             "level": 1,
             "entries": [
@@ -205,9 +205,9 @@
         },
         {
             "name": "Instinct",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 1,
             "entries":
             [
@@ -217,9 +217,9 @@
         },
         {
             "name": "Quarry",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 1,
             "entries": [
                 "A Hunter needs a target. Once per turn, you can spend one Instinct and a Bonus Action to designate a creature within 60 feet of you as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
@@ -227,9 +227,9 @@
         },
         {
             "name": "Fighting Style",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 1,
             "entries":
             [
@@ -239,9 +239,9 @@
         },
         {
             "name": "Keen Eye",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 1,
             "entries":
             [
@@ -250,9 +250,9 @@
         },
         {
             "name": "Tricks",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 2,
             "entries":
             [
@@ -265,9 +265,9 @@
         },
         {
             "name": "Hunting Grounds",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 3,
             "entries": [
                 "When you reach 3rd level, you distinguish yourself from other Hunters by calling on the skills developed in your Hunting Grounds, the place you honed your skills. Your Hunting Grounds grant you features at 3rd level, and again at 7th, 11th, and 15th level."
@@ -276,9 +276,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 4,
             "entries": [
                 "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
@@ -286,9 +286,9 @@
         },
         {
             "name": "Lesser Quarry",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 5,
             "entries":
             [
@@ -318,9 +318,9 @@
         },
         {
             "name": "Offensive Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 6,
             "entries": [
                 "At 6th level, your skill as a Hunter have grown and you develop new techniques to fell larger foes or to cleave through their minions. Choose one of the following:",
@@ -349,9 +349,9 @@
         },
         {
             "name": "Hunting Grounds Feature",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 7,
             "entries": [
                 "When you reach 7th level, you gain another feature from your Hunting Grounds."
@@ -360,9 +360,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 8,
             "entries": [
                 "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 12 and 16."
@@ -370,9 +370,9 @@
         },
         {
             "name": "Greater Quarry",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 9,
             "entries":
             [
@@ -402,9 +402,9 @@
         },
         {
             "name": "Defensive Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 10,
             "entries": [
                 "At 10th level, your skill as a Hunter have grown further and you develop new techniques to help you evade danger. Choose one of the following:",
@@ -433,9 +433,9 @@
         },
         {
             "name": "Hunting Grounds Feature",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 11,
             "entries": [
                 "When you reach 11th level, you gain another feature from your Hunting Grounds."
@@ -444,9 +444,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 12,
             "entries": [
                 "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter level 16."
@@ -454,9 +454,9 @@
         },
         {
             "name": "Superior Quarry",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 13,
             "entries":
             [
@@ -486,9 +486,9 @@
         },
         {
             "name": "Refined Instincts",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 14,
             "entries": [
                 "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws."
@@ -496,9 +496,9 @@
         },
         {
             "name": "Hunting Grounds Feature",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 15,
             "entries": [
                 "When you reach 15th level, you gain another feature from your Hunting Grounds."
@@ -507,9 +507,9 @@
         },
         {
             "name": "Supernatural Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 17,
             "entries": [
                 "Your skills as a Hunter grow again, to the extent that your abilities seem almost supernatural. Choose one of the following abilities, which you can use once per short rest:",
@@ -538,9 +538,9 @@
         },
         {
             "name": "Supreme Quarry",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "level": 18,
             "entries":
             [
@@ -569,10 +569,20 @@
             ]
         },
         {
-            "name": "Hunter's Zenith",
-            "source": "S: Hunter",
+            "name": "Epic Boon",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
+            "level": 19,
+            "entries": [
+                "You gain an {@filter Epic Boon Feat|feats|category=EB} or another {@filter feat|feats|} of your choice for which you qualify."
+            ]
+        },
+        {
+            "name": "Hunter's Zenith",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
             "level": 20,
             "entries": [
                 "Your Wisdom score increases by 2, and so does your Strength or Dexterity score (you choose), both up to a maximum of 30.",
@@ -584,79 +594,79 @@
     "subclass": [
         {
             "name": "Borderland",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "shortname": "Borderland",
             "subclassFeatures": [
-                "Edge of the World|Hunter|S: Hunter|Borderland|S: Hunter|3",
-                "Expert|Hunter|S: Hunter|Borderland|S: Hunter|7",
-                "Ethereal Shift Improvement|Hunter|S: Hunter|Borderland|S: Hunter|7",
-                "Fae Tricks|Hunter|S: Hunter|Borderland|S: Hunter|11",
-                "Grave Step|Hunter|S: Hunter|Borderland|S: Hunter|15"
+                "Edge of the World|Hunter|Starlight|Borderland|Starlight|3",
+                "Expert|Hunter|Starlight|Borderland|Starlight|7",
+                "Ethereal Shift Improvement|Hunter|Starlight|Borderland|Starlight|7",
+                "Fae Tricks|Hunter|Starlight|Borderland|Starlight|11",
+                "Grave Step|Hunter|Starlight|Borderland|Starlight|15"
             ]
         },
         {
             "name": "Extraplanar",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "shortname": "Extraplanar",
             "subclassFeatures": [
-                "Planeswalker|Hunter|S: Hunter|Extraplanar|S: Hunter|3",
-                "Expert|Hunter|S: Hunter|Extraplanar|S: Hunter|7",
-                "Celestial Dusting|Hunter|S: Hunter|Extraplanar|S: Hunter|7",
-                "Infernal Edge|Hunter|S: Hunter|Extraplanar|S: Hunter|11",
-                "Planar Boon|Hunter|S: Hunter|Extraplanar|S: Hunter|15"
+                "Planeswalker|Hunter|Starlight|Extraplanar|Starlight|3",
+                "Expert|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|11",
+                "Planar Boon|Hunter|Starlight|Extraplanar|Starlight|15"
             ]
         },
         {
             "name": "Urban",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "shortname": "Urban",
             "subclassFeatures": [
-                "Bounty Hunter|Hunter|S: Hunter|Urban|S: Hunter|3",
-                "Expert|Hunter|S: Hunter|Urban|S: Hunter|7",
-                "Seeker|Hunter|S: Hunter|Urban|S: Hunter|7",
-                "Silent Killer|Hunter|S: Hunter|Urban|S: Hunter|11",
-                "Opportunist|Hunter|S: Hunter|Urban|S: Hunter|15"
+                "Bounty Hunter|Hunter|Starlight|Urban|Starlight|3",
+                "Expert|Hunter|Starlight|Urban|Starlight|7",
+                "Seeker|Hunter|Starlight|Urban|Starlight|7",
+                "Silent Killer|Hunter|Starlight|Urban|Starlight|11",
+                "Opportunist|Hunter|Starlight|Urban|Starlight|15"
             ]
         }
     ],
     "subclassFeature": [
         {
             "name": "Edge of the World",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "Borderland Hunters walk on the borders of the Material Plane and its mirror, the Feywilds, stalking the creatures that live there. Living in shades of grey and dim light, they have mastered the borders and can briefly change where they reside, striking terror no matter where a creature escapes to.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Skills from the Borderland|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                    "subclassFeature": "Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Border-world Quarries|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                    "subclassFeature": "Border-world Quarries|Hunter|Starlight|Borderland|Starlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ethereal Shift|Hunter|S: Hunter|Borderland|S: Hunter|3"
+                    "subclassFeature": "Ethereal Shift|Hunter|Starlight|Borderland|Starlight|3"
                 }
             ]
         },
         {
             "name": "Skills from the Borderland",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
@@ -666,11 +676,11 @@
         },        
         {
             "name": "Border-world Quarries",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
@@ -686,11 +696,11 @@
         },    
         {
             "name": "Ethereal Shift",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
@@ -701,11 +711,11 @@
         },
         {
             "name": "Expert",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
@@ -714,11 +724,11 @@
         },
         {
             "name": "Ethereal Shift Improvement",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
@@ -727,11 +737,11 @@
         },
         {
             "name": "Fae Tricks",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 11,
             "entries": [
                 "{@i 11th-level Borderland Hunter feature}",
@@ -741,11 +751,11 @@
         },
         {
             "name": "Grave Step",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Borderland",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 15,
             "entries": [
                 "{@i 15th-level Borderland Hunter feature}",
@@ -755,39 +765,39 @@
         },
         {
             "name": "Planeswalker",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "Extraplanar Hunters walk the outer planes, dealing with Celestials, Demons and Aberrations alike. Time spent in these outer regions inevitably grants a taste of the power these creatures wield, which Extraplanar Hunters manipulate to their own end. They may protect other planes from these creatures, go on missions in these areas, or simply live their lives there.",
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Skills from the Outer Planes|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                        "subclassFeature": "Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Outer-planes Quarries|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                        "subclassFeature": "Outer-planes Quarries|Hunter|Starlight|Extraplanar|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Planar Gift|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                        "subclassFeature": "Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Aberrant Ward|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
+                        "subclassFeature": "Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3"
                     }
                 ]
         },
         {
             "name": "Skills from the Outer Planes",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
@@ -797,11 +807,11 @@
         },        
         {
             "name": "Outer-planes Quarries",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
@@ -817,11 +827,11 @@
         },    
         {
             "name": "Planar Gift",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
@@ -830,11 +840,11 @@
         },
         {
             "name": "Aberrant Ward",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
@@ -843,11 +853,11 @@
         },
         {
             "name": "Expert",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
@@ -856,11 +866,11 @@
         },
         {
             "name": "Celestial Dusting",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
@@ -870,11 +880,11 @@
         },
         {
             "name": "Infernal Edge",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 11,
             "entries": [
                 "{@i 11th-level Extraplanar Hunter feature}",
@@ -883,11 +893,11 @@
         },
         {
             "name": "Planar Boon",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 15,
             "entries": [
                 "{@i 15th-level Extraplanar Hunter feature}",
@@ -904,35 +914,35 @@
         },
         {
             "name": "Bounty Hunter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "Those who hunt in this environment have a unique challenge. Finding one creature in a crowd, instead of a forest. Vertical, cramped terrain, with winding alleys and hidden paths. And a thousand places to disappear in plain sight. Urban Hunters cut through this noise, finding their marks and stopping them from getting away - if they ever saw you in the first place.",
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Skills from the City|Hunter|S: Hunter|Urban|S: Hunter|3"
+                        "subclassFeature": "Skills from the City|Hunter|Starlight|Urban|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Everyman Quarries|Hunter|S: Hunter|Urban|S: Hunter|3"
+                        "subclassFeature": "Everyman Quarries|Hunter|Starlight|Urban|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Crippling Attack|Hunter|S: Hunter|Urban|S: Hunter|3"
+                        "subclassFeature": "Crippling Attack|Hunter|Starlight|Urban|Starlight|3"
                     }
                 ]
         },
         {
             "name": "Skills from the City",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
@@ -942,11 +952,11 @@
         },        
         {
             "name": "Everyman Quarries",  
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
@@ -962,11 +972,11 @@
         },    
         {
             "name": "Crippling Attack",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
@@ -976,11 +986,11 @@
         },
         {
             "name": "Expert",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
@@ -989,11 +999,11 @@
         },
         {
             "name": "Seeker",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 7,
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
@@ -1002,11 +1012,11 @@
         },
         {
             "name": "Silent Killer",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 11,
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
@@ -1016,11 +1026,11 @@
         },
         {
             "name": "Opportunist",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "className": "Hunter",
-            "classSource": "S: Hunter",
+            "classSource": "Starlight",
             "subclassShortName": "Urban",
-            "subclassSource": "S: Hunter",
+            "subclassSource": "Starlight",
             "level": 15,
             "entries": [
                 "{@i 15th-level Urban Hunter feature}",
@@ -1032,7 +1042,7 @@
     "optionalfeature": [
         {
 			"name": "Quick Reactions",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1042,7 +1052,7 @@
 		},
         {
             "name": "Hunter's Insight",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1052,7 +1062,7 @@
         },
         {
             "name": "Bear It I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1062,7 +1072,7 @@
         },
         {
             "name": "Honed Senses",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1072,7 +1082,7 @@
         },
         {
             "name": "Heavy Training",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1082,7 +1092,7 @@
         },
         {
             "name": "Trip Attack",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1092,7 +1102,7 @@
         },
         {
             "name": "Retaliate",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1102,7 +1112,7 @@
         },
         {
             "name": "Driving Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1112,7 +1122,7 @@
         },
         {
             "name": "Dazzling Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1122,7 +1132,7 @@
         },
         {
             "name": "Finder of Traps",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1133,7 +1143,7 @@
         },
         {
             "name": "Trapsetter",
-            "source": "S: Hunter",
+            "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
@@ -1147,7 +1157,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1156,7 +1166,7 @@
         },
         {
             "name": "Preparations",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1171,7 +1181,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1180,7 +1190,7 @@
         },
         {
             "name": "Naturally Talented",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1193,7 +1203,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1202,7 +1212,7 @@
         },
         {
             "name": "Trained in Darkness",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1215,7 +1225,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1224,7 +1234,7 @@
         },
         {
 			"name": "Parry",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1237,7 +1247,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1246,7 +1256,7 @@
 		},
         {
 			"name": "Cleaving Attack",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1259,7 +1269,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1268,7 +1278,7 @@
 		},
         {
 			"name": "Readied Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1281,7 +1291,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1290,7 +1300,7 @@
 		},
         {
 			"name": "Environmental Conditioning",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1304,7 +1314,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1313,7 +1323,7 @@
 		},
         {
 			"name": "Highly Skilled",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1326,7 +1336,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1335,7 +1345,7 @@
 		},
         {
 			"name": "Superior Stamina I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1348,7 +1358,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1357,7 +1367,7 @@
 		},
         {
 			"name": "Staggering Blow",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1371,7 +1381,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1380,7 +1390,7 @@
 		},
         {
 			"name": "Sundering Blow",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1394,7 +1404,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1403,7 +1413,7 @@
 		},
         {
 			"name": "Hampering Attack",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1416,7 +1426,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1425,7 +1435,7 @@
 		},
         {
 			"name": "Pocket Sand",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1438,7 +1448,7 @@
                         "level": 6,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1447,7 +1457,7 @@
 		},
         {
 			"name": "Instinctual Mark",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1460,7 +1470,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1469,7 +1479,7 @@
 		},
         {
 			"name": "Sterner Stuff I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1482,7 +1492,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1491,7 +1501,7 @@
 		},
         {
 			"name": "Indefatigable I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1504,7 +1514,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1513,7 +1523,7 @@
 		},
         {
 			"name": "Cunning Hunter I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1526,7 +1536,7 @@
                         "level": 9,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1535,7 +1545,7 @@
 		},
         {
 			"name": "Sliding Attack",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1548,7 +1558,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1557,7 +1567,7 @@
 		},
         {
 			"name": "Power Attack",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1570,7 +1580,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1579,7 +1589,7 @@
 		},
         {
 			"name": "Powerful Stride I",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1592,7 +1602,7 @@
                         "level": 10,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1601,7 +1611,7 @@
 		},
         {
 			"name": "Superior Stamina II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1614,7 +1624,7 @@
                         "level": 10,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1623,7 +1633,7 @@
 		},
         {
 			"name": "Naturally Gifted",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1636,7 +1646,7 @@
                         "level": 10,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1645,7 +1655,7 @@
 		},
         {
 			"name": "Reputation Preceding",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1658,7 +1668,7 @@
                         "level": 10,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1667,7 +1677,7 @@
 		},
         {
 			"name": "Indefatigable II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1680,7 +1690,7 @@
                         "level": 12,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1692,7 +1702,7 @@
 		},
         {
 			"name": "Bear It II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1706,19 +1716,19 @@
                         "level": 12,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
                     "feature": [
-                        "Bear It II"
+                        "Bear It I"
                     ]
                 }
             ]
 		},
         {
 			"name": "Powerful Stride II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1731,7 +1741,7 @@
                         "level": 14,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1743,7 +1753,7 @@
 		},
         {
 			"name": "Disarming Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1756,7 +1766,7 @@
                         "level": 14,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1765,7 +1775,7 @@
 		},
         {
 			"name": "Sterner Stuff II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1778,7 +1788,7 @@
                         "level": 16,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1790,7 +1800,7 @@
 		},
         {
 			"name": "Cunning Hunter II",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1803,7 +1813,7 @@
                         "level": 16,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1815,7 +1825,7 @@
 		},
         {
 			"name": "Hunter's Resilience",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1828,7 +1838,7 @@
                         "level": 18,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     }
@@ -1837,7 +1847,7 @@
 		},
         {
 			"name": "Relentless Hunter",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1850,7 +1860,7 @@
                         "level": 20,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1862,7 +1872,7 @@
 		},
         {
 			"name": "Cautious Hunter",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1875,7 +1885,7 @@
                         "level": 20,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1887,7 +1897,7 @@
 		},
         {
 			"name": "Strategic Hunter",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1900,7 +1910,7 @@
                         "level": 20,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1912,7 +1922,7 @@
 		},
         {
 			"name": "Hunter of the Planes",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1926,19 +1936,19 @@
                         "level": 3,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
                     "feature": [
-                        "Borderland Hunting Grounds"
+                        "Extraplanar Hunting Grounds"
                     ]
                 }
             ]
 		},
         {
 			"name": "Favoured Terrain: Outer Planes",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1952,7 +1962,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1964,7 +1974,7 @@
 		},
         {
 			"name": "Supernatural Defenses",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -1977,7 +1987,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -1989,7 +1999,7 @@
 		},
         {
 			"name": "Banishing Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2002,7 +2012,7 @@
                         "level": 12,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2014,7 +2024,7 @@
 		},
         {
 			"name": "Attunement with the Planes",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2027,7 +2037,7 @@
                         "level": 15,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2039,7 +2049,7 @@
 		},
         {
 			"name": "Hunter of Ghosts",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2053,7 +2063,7 @@
                         "level": 3,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2065,7 +2075,7 @@
 		},
         {
 			"name": "Favoured Terrain: Borderlands",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2079,7 +2089,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2091,7 +2101,7 @@
 		},
         {
 			"name": "Visions of Death",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2105,7 +2115,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2117,7 +2127,7 @@
 		},
         {
 			"name": "Ethereal Step",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2131,7 +2141,7 @@
                         "level": 12,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2143,12 +2153,12 @@
 		},
         {
 			"name": "Halfway There",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero.",
+				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this once per Short Rest.",
                 "You have advantage on Death saving throws."
 			],
             "prerequisite": [
@@ -2157,7 +2167,7 @@
                         "level": 15,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2169,7 +2179,7 @@
 		},
         {
 			"name": "Hunter of People",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2182,7 +2192,7 @@
                         "level": 3,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2194,7 +2204,7 @@
 		},
         {
 			"name": "Favoured Terrain: City",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2208,7 +2218,7 @@
                         "level": 4,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2220,7 +2230,7 @@
 		},
         {
 			"name": "Building Scaler",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2233,7 +2243,7 @@
                         "level": 8,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2245,7 +2255,7 @@
 		},
         {
 			"name": "Dirty Fighting",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2258,7 +2268,7 @@
                         "level": 12,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
@@ -2270,7 +2280,7 @@
 		},
         {
 			"name": "Alpha Strike",
-			"source": "S: Hunter",
+			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
@@ -2284,7 +2294,7 @@
                         "level": 15,
                         "class": {
                             "name": "Hunter",
-                            "source": "S: Hunter",
+                            "source": "Starlight",
                             "visible": true
                         }
                     },
