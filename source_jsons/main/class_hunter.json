@@ -33,25 +33,27 @@
 				"Instinct|Hunter|S: Hunter|1|S: Hunter",
 				"Quarry|Hunter|S: Hunter|1|S: Hunter",
                 "Weapon Mastery|Ranger|XPHB|1",
-                "Fighting Style|Hunter|S: Hunter|2|S: Hunter",
+                "Fighting Style|Hunter|S: Hunter|1|S: Hunter",
+                "Keen Eye|Hunter|S: Hunter|1|S: Hunter",
 				"Tricks|Hunter|S: Hunter|2|S: Hunter",
 				"Hunting Grounds|Hunter|S: Hunter|3|S: Hunter",
-				"Ability Score Improvement|Fighter|PHB|4",
+				"Ability Score Improvement|Fighter|XPHB|4",
+                "Extra Attack|Fighter|XPHB|5",
                 "Lesser Quarry|Hunter|S: Hunter|5|S: Hunter",
 				"Offensive Hunter|Hunter|S: Hunter|6|S: Hunter",
 				"Hunting Grounds Feature|Hunter|S: Hunter|7|S: Hunter",
-				"Ability Score Improvement|Fighter|PHB|8",
+				"Ability Score Improvement|Fighter|XPHB|8",
                 "Greater Quarry|Hunter|S: Hunter|9|S: Hunter",
 				"Defensive Hunter|Hunter|S: Hunter|10|S: Hunter",
 				"Hunting Grounds Feature|Hunter|S: Hunter|11|S: Hunter",
-				"Ability Score Improvement|Fighter|PHB|12",
+				"Ability Score Improvement|Fighter|XPHB|12",
                 "Superior Quarry|Hunter|S: Hunter|13|S: Hunter",
                 "Refined Instincts|Hunter|S: Hunter|14|S: Hunter",
 				"Hunting Grounds Feature|Hunter|S: Hunter|15|S: Hunter",
-				"Ability Score Improvement|Fighter|PHB|16",
+				"Ability Score Improvement|Fighter|XPHB|16",
                 "Supernatural Hunter|Hunter|S: Hunter|17|S: Hunter",
 				"Supreme Quarry|Hunter|S: Hunter|18|S: Hunter",
-				"Ability Score Improvement|Fighter|PHB|19",
+				"Ability Score Improvement|Fighter|XPHB|19",
 				"Hunter's Zenith|Hunter|S: Hunter|20|S: Hunter"
 			],
             "hd": {
@@ -97,25 +99,25 @@
                     ],
 					"rows": [
 						["3", "-"],
-						["4", "2"],
-						["5", "2"],
-						["6", "3"],
-						["7", "3"],
-						["8", "4"],
-						["9", "4"],
-						["10", "5"],
-						["11", "5"],
-						["12", "6"],
-						["13", "6"],
-						["14", "7"],
-						["15", "7"],
-						["16", "8"],
-						["17", "8"],
-						["18", "9"],
-						["19", "9"],
-						["20", "10"],
-						["21", "10"],
-						["22", "11"]
+						["4", "3"],
+						["5", "3"],
+						["6", "4"],
+						["7", "4"],
+						["8", "5"],
+						["9", "5"],
+						["10", "6"],
+						["11", "6"],
+						["12", "7"],
+						["13", "7"],
+						["14", "8"],
+						["15", "8"],
+						["16", "9"],
+						["17", "9"],
+						["18", "10"],
+						["19", "10"],
+						["20", "11"],
+						["21", "11"],
+						["22", "12"]
 					]
                 }
 			],
@@ -228,11 +230,22 @@
             "source": "S: Hunter",
             "className": "Hunter",
             "classSource": "S: Hunter",
-            "level": 2,
+            "level": 1,
             "entries":
             [
                 "Your skills as a warrior are commendable, and you gain a {@filter Fighting Style Feat|feats|category=FS} of your choice.",
                 "Whenever you gain a level in this class, you can replace that Fighting Style feat with another."
+            ]
+        },
+        {
+            "name": "Keen Eye",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "level": 1,
+            "entries":
+            [
+                "A gut instinct guides your senses. Whenever you make an ability check using {@skill Perception|XPHB} or {@skill Survival|XPHB}, you can spend one Instinct to add your Hunter's Die to the roll total."
             ]
         },
         {
@@ -257,7 +270,7 @@
             "classSource": "S: Hunter",
             "level": 3,
             "entries": [
-                "When you reach 3rd level, you distinguish yourself from other Hunters by calling on the skills developed in your Hunting Grounds, the place you honed your skills. Your Hunting Grounds grant you features at 3rd level, and again at 7th, 11th, and 15th level"
+                "When you reach 3rd level, you distinguish yourself from other Hunters by calling on the skills developed in your Hunting Grounds, the place you honed your skills. Your Hunting Grounds grant you features at 3rd level, and again at 7th, 11th, and 15th level."
             ],
             "gainSubclassFeature": true
         },
@@ -528,7 +541,7 @@
             "source": "S: Hunter",
             "className": "Hunter",
             "classSource": "S: Hunter",
-            "level": 13,
+            "level": 18,
             "entries":
             [
                 "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
@@ -598,48 +611,17 @@
             ]
         },
         {
-            "name": "Dunes",
+            "name": "Urban",
             "source": "S: Hunter",
             "className": "Hunter",
             "classSource": "S: Hunter",
-            "shortname": "Dunes",
+            "shortname": "Urban",
             "subclassFeatures": [
-                "Dunes|Hunter|S: Hunter|Dunes|S: Hunter|1",
-                "Control the Storm|Hunter|S: Hunter|Dunes|S: Hunter|6",
-                "Duneswalker|Hunter|S: Hunter|Dunes|S: Hunter|6",
-                "Superior Mirage|Hunter|S: Hunter|Dunes|S: Hunter|10",
-                "Liquefaction|Hunter|S: Hunter|Dunes|S: Hunter|14"
-            ],
-            "subclassSpells": [
-                "Bane|PHB", "Disguise Self|PHB",
-                "Mirror Image|PHB", "Pass Without Trace|PHB",
-                "Major Image|PHB", "Dispel Magic|PHB",
-                "Hallucinatory Terrain|PHB", "Confusion|PHB",
-                "Mislead|PHB", "Insect Plague|PHB"
-            ]
-        },
-        {
-            "name": "Forests",
-            "source": "S: Hunter",
-            "className": "Hunter",
-            "classSource": "S: Hunter",
-            "shortname": "Forests",
-            "subclassFeatures": [
-                "Forests|Hunter|S: Hunter|Forests|S: Hunter|1",
-                "Extra Attack|Hunter|S: Hunter|Forests|S: Hunter|6",
-                "Treeswalker|Hunter|S: Hunter|Forests|S: Hunter|6",
-                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|6",
-                "Masterful Hunter|Hunter|S: Hunter|Forests|S: Hunter|10",
-                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|10",
-                "Empowered Invocation|Hunter|S: Hunter|Forests|S: Hunter|14",
-                "Additional Runeblade Invocation|Hunter|S: Hunter|Forests|S: Hunter|14"
-            ],
-            "subclassSpells": [
-                "Hunter's Mark|PHB", "Snare|XGE",
-                "Invisibility|PHB", "Rope Trick|PHB",
-                "Speak with Plants|PHB", "Plant Growth|PHB",
-                "Guardian of Nature|XGE", "Locate Creature|PHB",
-                "Hold Monster|PHB", "Far Step|XGE"
+                "Bounty Hunter|Hunter|S: Hunter|Urban|S: Hunter|3",
+                "Expert|Hunter|S: Hunter|Urban|S: Hunter|7",
+                "Seeker|Hunter|S: Hunter|Urban|S: Hunter|7",
+                "Silent Killer|Hunter|S: Hunter|Urban|S: Hunter|11",
+                "Opportunist|Hunter|S: Hunter|Urban|S: Hunter|15"
             ]
         }
     ],
@@ -692,7 +674,14 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
+                {
+                    "type": "quote",
+                    "entries": [
+                        "Ghosts don't have bodies, and fey are tricksy. Try the fancy fire."
+                    ],
+                    "by": "Captain Lee"
+                },
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Radiant damage."
             ]
         },    
         {
@@ -743,9 +732,9 @@
             "classSource": "S: Hunter",
             "subclassShortName": "Borderland",
             "subclassSource": "S: Hunter",
-            "level": 10,
+            "level": 11,
             "entries": [
-                "{@i 10th-level Borderland Hunter feature}",
+                "{@i 11th-level Borderland Hunter feature}",
                 "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a reaction to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
                 "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take {@dice 4d8} psychic damage. This damage increases to {@dice 5d10} at level 15."
             ]
@@ -765,7 +754,7 @@
             ]
         },
         {
-            "name": "Extraplanar",
+            "name": "Planeswalker",
             "source": "S: Hunter",
             "className": "Hunter",
             "classSource": "S: Hunter",
@@ -791,7 +780,8 @@
                         "subclassFeature": "Aberrant Ward|Hunter|S: Hunter|Extraplanar|S: Hunter|3"
                     }
                 ]
-        },        {
+        },
+        {
             "name": "Skills from the Outer Planes",  
             "source": "S: Hunter",
             "className": "Hunter",
@@ -801,7 +791,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "You experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
+                "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
                 "You gain proficiency with the {@skill Arcana|XPHB} and {@skill Religion|XPHB} skills."
             ]
         },        
@@ -815,6 +805,13 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "You gotta deal with a wide range of creatures in the outer planes, nothing works against all of them. So try to hit it where it hurts: right between the eyes."
+                    ],
+                    "by": "Anathema Fulgura"
+                },
                 "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
             ]
         },    
@@ -878,10 +875,10 @@
             "classSource": "S: Hunter",
             "subclassShortName": "Extraplanar",
             "subclassSource": "S: Hunter",
-            "level": 10,
+            "level": 11,
             "entries": [
-                "{@i 10th-level Extraplanar Hunter feature}",
-                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target must make a Constitution saving throw or become Poisoned until the end of your next turn, and take necrotic damage equal to a roll of the Planar Gift die. They take half as much damage on a successful save."
+                "{@i 11th-level Extraplanar Hunter feature}",
+                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn, and take necrotic damage equal to a roll of the Planar Gift die. They take half as much damage on a successful save."
             ]
         },
         {
@@ -904,6 +901,132 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Bounty Hunter",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "Those who hunt in this environment have a unique challenge. Finding one creature in a crowd, instead of a forest. Vertical, cramped terrain, with winding alleys and hidden paths. And a thousand places to disappear in plain sight. Urban Hunters cut through this noise, finding their marks and stopping them from getting away - if they ever saw you in the first place.",
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Skills from the City|Hunter|S: Hunter|Urban|S: Hunter|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Everyman Quarries|Hunter|S: Hunter|Urban|S: Hunter|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Crippling Attack|Hunter|S: Hunter|Urban|S: Hunter|3"
+                    }
+                ]
+        },
+        {
+            "name": "Skills from the City",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Urban Hunter feature}",
+                "Your experience navigating the cities has taught you how to find secrets, and how to get your way.",
+                "You gain proficiency with the {@skill Investigation|XPHB} and {@skill Persuasion|XPHB} skills."
+            ]
+        },        
+        {
+            "name": "Everyman Quarries",  
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Urban Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "Poison isn't what it used to be, and if you're a good soul you'll be hunting assassins yourself. It's a rare citygoer who can resist something like this, though."
+                    ],
+                    "by": "Augury, Crimelord"
+                },
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Necrotic damage."
+            ]
+        },    
+        {
+            "name": "Crippling Attack",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Urban Hunter feature}",
+                "The best way to hunt a creature is to prevent them getting away in the first place.",
+                "As a Bonus Action, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and are {@condition Halted|Starlight} until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Urban Hunter feature}",
+                "Your city-life skills have improved. You gain {@variantrule Expertise|XPHB} in {@skill Investigation|XPHB} and {@skill Persuasion|XPHB}."
+            ]
+        },
+        {
+            "name": "Seeker",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Urban Hunter feature}",
+                "You have a knack for finding people. You can spend one Instinct and an Action to sense the direction to a creature as per the {@spell Locate Creature|XPHB} spell. This lasts for ten minutes and does not require your {@status concentration|concentrating}."
+            ]
+        },
+        {
+            "name": "Silent Killer",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Urban Hunter feature}",
+                "You can take the {@action Hide|XPHB} action as a Bonus Action.",
+                "While unseen by a creature, you can make a special attack against it as an Action. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die."
+            ]
+        },
+        {
+            "name": "Opportunist",
+            "source": "S: Hunter",
+            "className": "Hunter",
+            "classSource": "S: Hunter",
+            "subclassShortName": "Urban",
+            "subclassSource": "S: Hunter",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Urban Hunter feature}",
+                "When you kill a creature, you become {@condition Invisible} until the start of your next turn. This invisibility ends if you make an attack or force another creature to make a saving throw.",
+                "Your Silent Killer special attack can be used in place of an attack, instead of as an Action."
+            ]
         }
     ],
     "optionalfeature": [
@@ -924,7 +1047,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have a knack for reading people and their intentions. You can spend one Instinct to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} or {@skill Perception|XPHB} skills."
+				"You have a knack for reading people and their intentions. You can spend one Instinct to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
 			]
         },
         {
@@ -1286,6 +1409,28 @@
 			],
 			"entries": [
 				"Your attacks are aimed such that they affect your opponent's movement. When you hit a creature with an attack, it becomes {@condition Hampered} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Pocket Sand",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per short rest, you can spend one Instinct and a Bonus Action to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn."
 			],
             "prerequisite": [
                 {
@@ -1997,13 +2142,14 @@
             ]
 		},
         {
-			"name": "lv. 15 borderland trick",
+			"name": "Halfway There",
 			"source": "S: Hunter",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				""
+				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero.",
+                "You have advantage on Death saving throws."
 			],
             "prerequisite": [
                 {
@@ -2017,6 +2163,133 @@
                     },
                     "feature": [
                         "Borderland Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Hunter of People",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You are trained to find people, no matter where they are hiding. You can add your Hunter's Die to ability checks using the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, {@skill Insight|XPHB} or {@skill Deception|XPHB} skills that are made to gain information from others."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Urban Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Favoured Terrain: City",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You do your best work where people are. In cities and other settlements, you have advantage on Wisdom (Survival) checks, you cannot become lost outside of magical means, difficult terrain does not slow your travel, and you can find enough food to eat no matter where you are.",
+                "Furthermore, you have advantage on ability checks made to identify local customs and find secret or hidden pathways in the environment."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Urban Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Building Scaler",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You are practised climbing buildings and leaping between them. You have a climbing speed equal to your movement speed and your jump distance is doubled."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Urban Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Dirty Fighting",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can attempt to wrest a weapon from your opponent. In place of one attack, you can spend one Instinct to make a melee attack roll, which sets the DC for your opponent's Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check. If they fail, they let go of one item or object they are holding, which falls into their current space if applicable."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Urban Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Alpha Strike",
+			"source": "S: Hunter",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per Long Rest when you roll initiative, you can replace the result of your d20 roll with a 20.",
+                "When you do this, the first attack roll you make is also replaced with a 20."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "S: Hunter",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Urban Hunting Grounds"
                     ]
                 }
             ]
