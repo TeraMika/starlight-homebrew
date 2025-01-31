@@ -633,6 +633,21 @@
                 "Silent Killer|Hunter|Starlight|Urban|Starlight|11",
                 "Opportunist|Hunter|Starlight|Urban|Starlight|15"
             ]
+        },
+        {
+            "name": "Horizon",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "shortname": "Horizon",
+            "subclassFeatures": [
+                "Beast Hunter|Hunter|Starlight|Horizon|Starlight|3",
+                "Expert|Hunter|Starlight|Horizon|Starlight|7",
+                "Roaming|Hunter|Starlight|Horizon|Starlight|7",
+                "Pack Hunting|Hunter|Starlight|Horizon|Starlight|7",
+                "Siphon Speed|Hunter|Starlight|Horizon|Starlight|11",
+                "Apex Hunter|Hunter|Starlight|Horizon|Starlight|15"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1037,6 +1052,161 @@
                 "When you kill a creature, you become {@condition Invisible} until the start of your next turn. This invisibility ends if you make an attack or force another creature to make a saving throw.",
                 "Your Silent Killer special attack can be used in place of an attack, instead of as an Action."
             ]
+        },
+        {
+            "name": "Beast Hunter",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "Horizon Hunters strive to be the best, hunting anything from sky to sea. They weaken their quarries in speed in strength, claim trophies from their strikes and even have the expertise to handle packs of creatures. They might do it for fame and fortune, they might do it to protect the innocent from the dangers of the wild, or they might simply hunt for the thrill of bettering themselves.",
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Skills from the Wilds|Hunter|Starlight|Horizon|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Bestial Quarries|Hunter|Starlight|Horizon|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Declaw|Hunter|Starlight|Horizon|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Trophies|Hunter|Starlight|Horizon|Starlight|3"
+                    }
+            ]
+        },
+        {
+            "name": "Skills from the Wilds",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Horizon Hunter feature}",
+                "In order to hunt beasts, you must travel far and learn how to cope with animals of all temperaments and sizes.",
+                "You gain proficiency with the {@skill Animal Handling|XPHB} and {@skill Survival|XPHB} skills."
+            ]
+        },        
+        {
+            "name": "Bestial Quarries",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Horizon Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "If you must slay beasts, I don't know a beast alive that's a fan of fire. Hopefully by the time you find one you can work your way around that."
+                    ],
+                    "by": "Grove, Ranger"
+                },
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Fire damage."
+            ]
+        },    
+        {
+            "name": "Declaw",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Horizon Hunter feature}",
+                " You can attempt to cripple your Quarry. When you make an attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one Instinct to force it to make a Constitution saving throw if you hit. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
+            ]
+        },
+        {
+            "name": "Trophies",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Horizon Hunter feature}",
+                "When you roll a d20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and 1d4 days to find a suitable buyer - in these cases, the item may sell for more."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Horizon Hunter feature}",
+                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in {@skill Animal Handling|XPHB} and {@skill Survival|XPHB}."
+            ]
+        },
+        {
+            "name": "Roaming",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Horizon Hunter feature}",
+                "Your walking speed increases by 10 feet, and you gain a Climb and Swim speed equal to your walking speed.",
+                "You can hold your breath underwater for an additional number of minutes equal to your Wisdom modifier."
+            ]
+        },
+        {
+            "name": "Pack Hunting",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Horizon Hunter feature}",
+                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required). The first time you do this each Short Rest, it costs no Instinct. Any other time, it costs one Instinct."
+            ]
+        },
+        {
+            "name": "Siphon Speed",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Horizon Hunter feature}",
+                "Once per turn when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, if the creature has a flying, burrowing, swimming, or climbing speed, that speed is reduced by half until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Apex Hunter",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Horizon",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Horizon Hunter feature}",
+                "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs, unless yours are higher.",
+                "When you hit your Quarry, its immunities are treated as resistance, and you bypass its resistances."
+            ]
         }
     ],
     "optionalfeature": [
@@ -1440,7 +1610,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per short rest, you can spend one Instinct and a Bonus Action to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn."
+				"Once per Short Rest, you can use a Bonus Action and one Instinct to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
 			],
             "prerequisite": [
                 {
@@ -2300,6 +2470,140 @@
                     },
                     "feature": [
                         "Urban Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Hunter of all Horizons",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you cause a Beast or Monstrosity that is {@variantrule Bloodied|XPHB} to take damage, you can force it to make a Wisdom saving throw. On a failure, it becomes {@condition Frightened|XPHB} of you and will attempt to flee the encounter by the fastest available means. A creature can be forced to make this save only once per turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Horizon Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Favoured Terrain: Land, Sea and Sky",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You are adept at travelling the regions that most humanoids rarely do. When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom (Survival) checks, you cannot become lost outside of magical means, difficult terrain does not slow your travel, and you can forage for food anywhere.",
+                "Furthermore, you have advantage on ability checks made to control vehicle such as boats or airships."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Horizon Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Exploit Opening",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you would get a trophy from a creature, you can forgo that opportunity to instead create one of the following weaknesses to take your target down:",
+                {
+                    "type": "list",
+                    "items": [
+                        "One of the creature's resistances or immunities is removed until the start of your next turn.",
+                        "The creature becomes {@variantrule vulnerability|XPHB|vulnerable} to your next attack.",
+                        "The creature becomes {@condition Dazed|Starlight} until the start of your next turn."
+                    ]
+                }
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Horizon Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Adrenaline Rush",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"While you are {@variantrule Bloodied|XPHB}, you add your Hunter's Die to all saving throws that you make."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Horizon Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Thrill of the Hunt",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die if you are {@variantrule Bloodied|XPHB} and have at least 1 {@variantrule Hit Point|XPHB}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Horizon Hunting Grounds"
                     ]
                 }
             ]
