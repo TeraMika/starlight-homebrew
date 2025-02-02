@@ -597,7 +597,7 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "shortname": "Borderland",
+            "shortName": "Borderland",
             "subclassFeatures": [
                 "Edge of the World|Hunter|Starlight|Borderland|Starlight|3",
                 "Expert|Hunter|Starlight|Borderland|Starlight|7",
@@ -611,7 +611,7 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "shortname": "Extraplanar",
+            "shortName": "Extraplanar",
             "subclassFeatures": [
                 "Planeswalker|Hunter|Starlight|Extraplanar|Starlight|3",
                 "Expert|Hunter|Starlight|Extraplanar|Starlight|7",
@@ -625,7 +625,7 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "shortname": "Urban",
+            "shortName": "Urban",
             "subclassFeatures": [
                 "Bounty Hunter|Hunter|Starlight|Urban|Starlight|3",
                 "Expert|Hunter|Starlight|Urban|Starlight|7",
@@ -639,7 +639,7 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "shortname": "Horizon",
+            "shortName": "Horizon",
             "subclassFeatures": [
                 "Beast Hunter|Hunter|Starlight|Horizon|Starlight|3",
                 "Expert|Hunter|Starlight|Horizon|Starlight|7",
@@ -647,6 +647,21 @@
                 "Pack Hunting|Hunter|Starlight|Horizon|Starlight|7",
                 "Siphon Speed|Hunter|Starlight|Horizon|Starlight|11",
                 "Apex Hunter|Hunter|Starlight|Horizon|Starlight|15"
+            ]
+        },
+        {
+            "name": "Fable",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "shortName": "Fable",
+            "subclassFeatures": [
+                "Storyteller|Hunter|Starlight|Fable|Starlight|3",
+                "Expert|Hunter|Starlight|Fable|Starlight|7",
+                "Rally|Hunter|Starlight|Fable|Starlight|7",
+                "Hunter's Call|Hunter|Starlight|Fable|Starlight|11",
+                "Commanding Shout|Hunter|Starlight|Fable|Starlight|15",
+                "Legendary Resilience|Hunter|Starlight|Fable|Starlight|15"
             ]
         }
     ],
@@ -686,7 +701,8 @@
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
                 "Your experience in dealing with creatures of the between-realm has given you skills related to reading intention and concealing your own.",
-                "You gain proficiency with the {@skill Insight|XPHB} and {@skill Deception|XPHB} skills."
+                "You gain proficiency with the {@skill Insight|XPHB} and {@skill Deception|XPHB} skills.",
+                "Additionally, you gain proficiency with {@item Navigator's tools|XPHB} and {@item Herbalism Kit|XPHB}, so you are never lost, and can identify the dangerous flora of the feywilds."
             ]
         },        
         {
@@ -817,7 +833,8 @@
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
                 "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
-                "You gain proficiency with the {@skill Arcana|XPHB} and {@skill Religion|XPHB} skills."
+                "You gain proficiency with the {@skill Arcana|XPHB} and {@skill Religion|XPHB} skills.",
+                "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
             ]
         },        
         {
@@ -962,7 +979,8 @@
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
                 "Your experience navigating the cities has taught you how to find secrets, and how to get your way.",
-                "You gain proficiency with the {@skill Investigation|XPHB} and {@skill Persuasion|XPHB} skills."
+                "You gain proficiency with two of the following three skills: {@skill Investigation|XPHB}, {@skill Persuasion|XPHB}, and {@skill Intimidation|XPHB}.",
+                "Additionally, you gain proficiency with {@item Forgery Kit|XPHB|Forgery Kits} and {@item Thieve's Tools}, to help you gain access to well-guarded places."
             ]
         },        
         {
@@ -1009,7 +1027,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
-                "Your city-life skills have improved. You gain {@variantrule Expertise|XPHB} in {@skill Investigation|XPHB} and {@skill Persuasion|XPHB}."
+                "Your city-life skills have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose from {@subclassFeature Skills from the City|Hunter|Starlight|Urban|Starlight|3|Starlight|your Skills from the City feature}."
             ]
         },
         {
@@ -1092,7 +1110,8 @@
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
                 "In order to hunt beasts, you must travel far and learn how to cope with animals of all temperaments and sizes.",
-                "You gain proficiency with the {@skill Animal Handling|XPHB} and {@skill Survival|XPHB} skills."
+                "You gain proficiency with two of the following three skills: {@skill Animal Handling|XPHB}, {@skill Athletics|XPHB}, and {@skill Survival|XPHB}.",
+                "Additionally, you gain proficiency with piloting air or water vehicles, and with a {@item Navigator's Kit|XPHB}."
             ]
         },        
         {
@@ -1125,7 +1144,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                " You can attempt to cripple your Quarry. When you make an attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one Instinct to force it to make a Constitution saving throw if you hit. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
+                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one Instinct to force it to make a Constitution saving throw. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
             ]
         },
         {
@@ -1138,7 +1157,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "When you roll a d20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and 1d4 days to find a suitable buyer - in these cases, the item may sell for more."
+                "When you roll a 20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and 1d4 days to find a suitable buyer - in these cases, the item may sell for more."
             ]
         },
         {
@@ -1151,7 +1170,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in {@skill Animal Handling|XPHB} and {@skill Survival|XPHB}."
+                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose from {@subclassFeature Skills from the Wilds|Hunter|Starlight|Urban|Starlight|3|Starlight|your Skills from the Wilds feature}."
             ]
         },
         {
@@ -1206,6 +1225,143 @@
                 "{@i 15th-level Horizon Hunter feature}",
                 "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs, unless yours are higher.",
                 "When you hit your Quarry, its immunities are treated as resistance, and you bypass its resistances."
+            ]
+        },
+        {
+            "name": "Storyteller",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "Fable Hunters gained their knowledge from study, and almost all of them have a common goal: to be a Hunter that would be discussed in the very books and tales they learned from. A Fable Hunter aims to live forever, immortalised in stories told around a fireplace and studies of combat strategy. A Fable Hunter wants to take on creatures of Legendary power; and a Fable Hunter wants to win. To this end, they learn their foe, and direct their allies to victory. Success comes before personal glory.",
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Skills of Yore|Hunter|Starlight|Fable|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Epic Quarries|Hunter|Starlight|Fable|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Commander|Hunter|Starlight|Fable|Starlight|3"
+                    }
+            ]
+        },
+        {
+            "name": "Skills of Yore",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Fable Hunter feature}",
+                "For your tale to be told, you must develop the quick wits and knowledge to tell it.",
+                "You gain proficiency with two of the following skills: {@skill Perception|XPHB}, {@skill Nature|XPHB}, and {@skill Performance|XPHB}.",
+                "Additionally, you gain proficiency with {@item Smith's Tools|XPHB} and {@item Woodcarver's Tools}, to keep your group well-supplied."
+            ]
+        },        
+        {
+            "name": "Epic Quarries",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclas.sSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Fable Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "The toughest creatures earned their rep', and they come in all shapes and sizes. Getting past defenses like that is tricky for even the strongest mages... but you might have a way."
+                    ],
+                    "by": "Thane, Bard of the Chorus"
+                },
+                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Force damage."
+            ]
+        },    
+        {
+            "name": "Commander",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Fable Hunter feature}",
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to command an ally. The ally you choose can use their {@action Reaction|XPHB} to move up to their movement speed, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Fable Hunter feature}",
+                "Your story-making skills have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose from your {@subclassFeature Skills of Yore|Hunter|Starlight|Urban|Starlight|3|Starlight|} feature."
+            ]
+        },
+        {
+            "name": "Rally",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Fable Hunter feature}",
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
+            ]
+        },
+        {
+            "name": "Hunter's Call",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Fable Hunter feature}",
+                "Once per Short Rest, you can use a Bonus Action and one Instinct to mark one target with a special Quarry. Whenever any creature hits the target with an attack, the target takes damage equal to your Hunter's Die. At the start of your next turn, the Quarry ends."
+            ]
+        },
+        {
+            "name": "Commanding Shout",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Fable Hunter feature}",
+                "Once per Short Rest, you can use a Bonus Action to imbue an ally with epic tenacity. Until the end of your next turn, that ally cannot be reduced below one hit point or killed, their movement speed cannot be reduced, and they cannot be {@condition Stunned|XPHB} or {@condition Restrained|XPHB}."
+            ]
+        },
+        {
+            "name": "Legendary Resilience",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Fable",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Fable Hunter feature}",
+                "When you are targeted by a Legendary Action (and similar actions such as Mythic Actions), you can either gain advantage on a saving throw you a forced to make, or gain resistance to any damage dealt by it."
             ]
         }
     ],
@@ -2174,7 +2330,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. You can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
+				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per Short Rest, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -2604,6 +2760,132 @@
                     },
                     "feature": [
                         "Horizon Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Hunter of Fables",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You are trained to fight all manner of creatures, from the fantastical to the real. When you roll initiative, you can make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to determine one of the Traits or Legendary Actions of a creature you can see, with a DC equal to 10 plus the creature's CR (maximum 30). You can add your Hunter's Die to this roll."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Fable Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Favoured Terrain: Myths",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have advantage on Wisdom ({@skill Survival|XPHB}) checks in environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps. In such locations, you cannot become lost outside of magical means, difficult terrain does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
+                "Furthermore, you have advantage on any saving throws made against environmental hazards such as heat or cold."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Fable Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Previvify",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You can use an {@action Action|XPHB} on your turn to revive a friendly creature within your reach who is at zero hit points. They regain hit points equal to twice your Hunter level and gain the benefits of your {@subclassFeature Rally|Hunter|Starlight|Fable|Starlight|7|Starlight} and {@subclassFeature Commander|Hunter|Starlight|Fable|Starlight|3|Starlight} features (movement only). Once you have used this feature, you cannot do so again until you complete a Long Rest."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Fable Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Exploit Weakness",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You guide your allies to success through your knowledge of these legendary creatures. Once per Short Rest, when your Quarry succeeds a saving throw against one of your allies' effects, you can use a Reaction to cause it to take damage equal to four rolls of your Hunter's Die."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Fable Hunting Grounds"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Slayer of Legends",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When a Legendary creature is your Quarry, your Hunter's Die becomes {@dice 2d6} instead of {@dice 1d10}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Fable Hunting Grounds"
                     ]
                 }
             ]
