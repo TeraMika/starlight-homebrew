@@ -1423,16 +1423,6 @@
 			]
         },
         {
-            "name": "Honed Senses",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You have additional Instinct equal to your Wisdom modifier (minimum gain of 1)."
-			]
-        },
-        {
             "name": "Heavy Training",
 			"source": "Starlight",
 			"featureType": [
@@ -1887,7 +1877,7 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 9,
+                        "level": 8,
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
@@ -2029,6 +2019,28 @@
                 }
             ]
 		},
+        {
+            "name": "Honed Senses",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have additional Instinct equal to twice your Wisdom modifier, instead of once."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
         {
 			"name": "Indefatigable II",
 			"source": "Starlight",
