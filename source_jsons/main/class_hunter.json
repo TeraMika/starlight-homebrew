@@ -215,7 +215,7 @@
             "entries":
             [
                 "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a short rest.",
-                "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. This increases as you level up in this class as per the column in the Hunter table."
+                "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. You have an amount of Instinct equal to your Hunter level (as indicated in the Hunter Table) and additional equal to your Wisdom modifier (minimum 0)."
             ]
         },
         {
