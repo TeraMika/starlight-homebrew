@@ -32,9 +32,9 @@
             "classFeatures": [
 				"Optional Rule: Alternate Ability Shaman|Shaman|S: Shaman|1|S: Shaman",
 				"Spellcasting|Shaman|S: Shaman|1|S: Shaman",
-				"Elemental Origin|Shaman|S: Shaman|1|S: Shaman",
+				"Elemental Affinity|Shaman|S: Shaman|1|S: Shaman",
 				"Primordial Runes|Shaman|S: Shaman|2|S: Shaman",
-				"Elemental Affinity|Shaman|S: Shaman|3|S: Shaman",
+                "Elemental Origin|Shaman|S: Shaman|3|S: Shaman",
 				"Ability Score Improvement|Fighter|PHB|4",
 				"Elemental Origin Feature|Shaman|S: Shaman|6|S: Shaman",
 				"Elemental Affinity Improvement|Shaman|S: Shaman|7|S: Shaman",
@@ -565,41 +565,14 @@
             ]
         },
         {
-            "name": "Elemental Origin",
+            "name": "Elemental Affinity",
             "source": "S: Shaman",
             "className": "Shaman",
             "classSource": "S: Shaman",
             "level": 1,
             "entries":
             [
-                "At 1st level, you determine the origin of your shaman abilities. This could be the source that they are drawn from, where your Shaman grew up or learned their magic, or the specific location they first unlocked their magical gifts.",
-                "This origin grants you features at 1st level, and again at 6th, 10th, and 14th level."
-            ],
-            "gainSubclassFeature": true
-        },
-        {
-            "name": "Primordial Runes",
-            "source": "S: Shaman",
-            "className": "Shaman",
-            "classSource": "S: Shaman",
-            "level": 2,
-            "entries":
-            [
-                "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or allow you to conjure totems which grant benefits within an area.",
-                "At 2nd level, you gain 2 Primordial Runes of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=PRU} page. When you gain certain Shaman levels, you gain additional runes of your choice, as shown in the Runes column of the Shaman table.",
-                "Additionally, when you gain a level in this class, you can choose one of the runes you know and replace it with another that you could learn at that level.",
-                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
-            ]
-        },
-        {
-            "name": "Elemental Affinity",
-            "source": "S: Shaman",
-            "className": "Shaman",
-            "classSource": "S: Shaman",
-            "level": 3,
-            "entries":
-            [
-                "At 3rd level, your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
+                "At 1st level, your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
                 {
 					"type": "entries",
 					"name": "Affinity with Flame",
@@ -672,6 +645,33 @@
 				},
                 "You can change your elemental affinity whenever you gain a level in this class."
             ]
+        },
+        {
+            "name": "Primordial Runes",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 2,
+            "entries":
+            [
+                "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or allow you to conjure totems which grant benefits within an area.",
+                "At 2nd level, you gain 2 Primordial Runes of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=PRU} page. When you gain certain Shaman levels, you gain additional runes of your choice, as shown in the Runes column of the Shaman table.",
+                "Additionally, when you gain a level in this class, you can choose one of the runes you know and replace it with another that you could learn at that level.",
+                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
+            ]
+        },
+        {
+            "name": "Elemental Origin",
+            "source": "S: Shaman",
+            "className": "Shaman",
+            "classSource": "S: Shaman",
+            "level": 3,
+            "entries":
+            [
+                "At 3rd level, you determine the origin of your shaman abilities. This could be the source that they are drawn from, where your Shaman grew up or learned their magic, or the specific location they first unlocked their magical gifts.",
+                "This origin grants you features at 3rd level, and again at 6th, 10th, and 14th level."
+            ],
+            "gainSubclassFeature": true
         },
         {
             "name": "Elemental Origin Feature",
@@ -785,7 +785,7 @@
             "classSource": "S: Shaman",
             "shortname": "Waters",
             "subclassFeatures": [
-                "Waters|Shaman|S: Shaman|Waters|S: Shaman|1",
+                "Waters|Shaman|S: Shaman|Waters|S: Shaman|3",
                 "Ebb and Flow Improvement|Shaman|S: Shaman|Waters|S: Shaman|6",
                 "Flow As Water|Shaman|S: Shaman|Waters|S: Shaman|10",
                 "Master of the Tides|Shaman|S: Shaman|Waters|S: Shaman|14"
@@ -805,7 +805,7 @@
             "classSource": "S: Shaman",
             "shortname": "Mountains",
             "subclassFeatures": [
-                "Mountains|Shaman|S: Shaman|Mountains|S: Shaman|1",
+                "Mountains|Shaman|S: Shaman|Mountains|S: Shaman|3",
                 "Earthly Attachments|Shaman|S: Shaman|Mountains|S: Shaman|6",
                 "Unwavering Spirit Improvement|Shaman|S: Shaman|Mountains|S: Shaman|10",
                 "Spirit of the Valley|Shaman|S: Shaman|Mountains|S: Shaman|10",
@@ -827,7 +827,7 @@
             "classSource": "S: Shaman",
             "shortname": "Dunes",
             "subclassFeatures": [
-                "Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1",
+                "Dunes|Shaman|S: Shaman|Dunes|S: Shaman|3",
                 "Control the Storm|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Duneswalker|Shaman|S: Shaman|Dunes|S: Shaman|6",
                 "Superior Mirage|Shaman|S: Shaman|Dunes|S: Shaman|10",
@@ -848,7 +848,7 @@
             "classSource": "S: Shaman",
             "shortname": "Forests",
             "subclassFeatures": [
-                "Forests|Shaman|S: Shaman|Forests|S: Shaman|1",
+                "Forests|Shaman|S: Shaman|Forests|S: Shaman|3",
                 "Extra Attack|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Treeswalker|Shaman|S: Shaman|Forests|S: Shaman|6",
                 "Additional Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|6",
@@ -874,20 +874,20 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Waters",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Water is often described as the source of life. Shamans of the waters - be that rivers, lakes, or the sea - know this, and control water in order to control life itself. They can manipulate the flow of positive energies in order to manipulate the flow of battle. Using water's restorative magic to assist their allies, and the force of water to throw their enemies off-balance.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Waters Shaman Spells|Shaman|S: Shaman|Waters|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Ebb and Flow|Shaman|S: Shaman|Waters|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Meandering Streams|Shaman|S: Shaman|Waters|S: Shaman|1"
+                    "subclassFeature": "Meandering Streams|Shaman|S: Shaman|Waters|S: Shaman|3"
                 }
             ]
         },
@@ -898,9 +898,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Waters",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Waters Shaman feature}",
+                "{@i 3rd-level Waters Shaman feature}",
                 "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
                 {
                     "type": "table",
@@ -945,9 +945,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Waters",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Waters Shaman feature}",
+                "{@i 3rd-level Waters Shaman feature}",
                 "Water supplies life in all places, and water flows down mountains and across plains before reaching the sea. This intuitive knowledge of the wider world and its layout grants you proficiency with the {@skill Survival} skill and {@item cartographer's tools|phb}. It would also be reasonable to have waterproof paper or a waterproof pouch to keep your supplies in.",
                 "Additionally, you can hold your breath for twice as long as you otherwise could."
             ]
@@ -959,9 +959,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Waters",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Waters Shaman feature}",
+                "{@i 3rd-level Waters Shaman feature}",
                 "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|Starlight}."
             ]
         },
@@ -1016,24 +1016,24 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The mountains are steadfast and towering, watching over the world and earth while being unmovable by any convential means. Shamans of the Mountains inhabit these places, settling on or within the mountains, moving stone, guarding themselves and others, and attuning to nature so as to carry out its will. They are stoic, often living introverted lives in small communities, but do valuable work in maintaining the balance of nature in the harsh climates of the mountains.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mountains Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Mountains Shaman Spells|Shaman|S: Shaman|Mountains|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mountain Home|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Mountain Home|Shaman|S: Shaman|Mountains|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mountainhide|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Mountainhide|Shaman|S: Shaman|Mountains|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|1"
+                    "subclassFeature": "Unwavering Spirit|Shaman|S: Shaman|Mountains|S: Shaman|3"
                 }
             ]
         },
@@ -1044,9 +1044,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Mountains Shaman feature}",
+                "{@i 3rd-level Mountains Shaman feature}",
                 "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
                 {
                     "type": "table",
@@ -1091,9 +1091,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Mountains Shaman feature}",
+                "{@i 3rd-level Mountains Shaman feature}",
                 "The mountains have stood the test of time, and with that time comes knowledge. You gain proficiency in {@item mason's tools|phb} and have advantage on Intelligence checks made to identify information about or investigate the properties of rooms or objects comprised in some way of stone (for example, the history of a ruin, natural properties of mountains, investigating a stone room).",
                 "Furthermore, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and you are naturally adapted to cold climates when considering {@hazard extreme cold|DMG}."
             ]
@@ -1105,9 +1105,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Mountains Shaman feature}",
+                "{@i 3rd-level Mountains Shaman feature}",
                 "Your skin is toughened by your elemental source. While you are not wearing armour, your AC is 13 plus your Constitution modifier."
             ]
         },
@@ -1118,9 +1118,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Mountains",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Mountains Shaman feature}",
+                "{@i 3rd-level Mountains Shaman feature}",
                 "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a reaction to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
                 "You can do this a number of times per long rest equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
             ]
@@ -1200,20 +1200,20 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Dunes",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "The dunes are unforgiving environments - be they hot or cold - and discretion is often the better part of survival. Shamans of the Dunes often live nomadic lifestyles, roving the deserts and ensuring that even such a harsh environment can continue its intended course. They are often reclusive, living within their travelling group, but may forge strong bonds - any survivor knows that surviving is easier done with allies at your side.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Dunes|S: Shaman|1"
+                    "subclassFeature": "Dunes Shaman Spells|Shaman|S: Shaman|Dunes|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Dunes|S: Shaman|1"
+                    "subclassFeature": "Life in the Dunes|Shaman|S: Shaman|Dunes|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Mirage|Shaman|S: Shaman|Dunes|S: Shaman|1"
+                    "subclassFeature": "Mirage|Shaman|S: Shaman|Dunes|S: Shaman|3"
                 }
             ]
         },
@@ -1224,9 +1224,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Dunes",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Dunes Shaman feature}",
+                "{@i 3rd-level Dunes Shaman feature}",
                 "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
                 {
                     "type": "table",
@@ -1271,9 +1271,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Dunes",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Dunes Shaman feature}",
+                "{@i 3rd-level Dunes Shaman feature}",
                 "Survival in a desert is no easy feat. You must be able to make do with scant resources, and able to avoid the predators and dangers that roam - an upfront approach is rarely your best choice. You gain proficiency in {@item cook's utensils|PHB} and {@skill Stealth}.",
                 "Furthermore, you are naturally acclimated to hot or cold temperatures (depending on your desert) when considering {@hazard extreme heat|DMG} or {@hazard extreme cold|DMG}."
             ]
@@ -1285,9 +1285,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Dunes",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Dunes Shaman feature}",
+                "{@i 3rd-level Dunes Shaman feature}",
                 "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|phb|fireball spell}, you can use your reaction to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
                 
             ]
@@ -1362,24 +1362,24 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Forests",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
                 "Forests are a resilient environment, but are more vulnerable to explicit attack than many others. To this end, Shamans of the Forests take on the role of a hunter, personally handling those who would threaten the forests, be that its trees, inhabitants, or plantlife. The power of the forests grants pursuit, recovery and adaptability - Shamans living this way are open to new solutions, working together, and recovering from a setback.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Forests Shaman Spells|Shaman|S: Shaman|Forests|S: Shaman|1"
+                    "subclassFeature": "Forests Shaman Spells|Shaman|S: Shaman|Forests|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Home in the Trees|Shaman|S: Shaman|Forests|S: Shaman|1"
+                    "subclassFeature": "Home in the Trees|Shaman|S: Shaman|Forests|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runeblade|Shaman|S: Shaman|Forests|S: Shaman|1"
+                    "subclassFeature": "Runeblade|Shaman|S: Shaman|Forests|S: Shaman|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|1"
+                    "subclassFeature": "Runeblade Invocation|Shaman|S: Shaman|Forests|S: Shaman|3"
                 }
             ]
         },
@@ -1390,9 +1390,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Forests",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Forests Shaman feature}",
+                "{@i 3rd-level Forests Shaman feature}",
                 "You always know these spells from the table below once you reach certain levels in this class. You cannot swap these spells out on level up, unlike your normal Shaman spells.",
                 {
                     "type": "table",
@@ -1437,9 +1437,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Forests",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Forests Shaman feature}",
+                "{@i 3rd-level Forests Shaman feature}",
                 "The rampant plant growth in a forested environment provides opportunity, but also cover. You are trained to see past that cover, and make use of plants and herbs available to you. You have proficiency with the {@item Herbalism Kit|PHB} and with the {@skill Perception} skill.",
                 "Furthermore, owing to your hunting training, you have proficiency with medium armour. You can choose to replace your starting Leather Armour with Scale Mail instead."
             ]
@@ -1451,9 +1451,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Forests",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Forests Shaman feature}",
+                "{@i 3rd-level Forests Shaman feature}",
                 "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|PHB}, {@item shortsword|PHB}, {@item scimitar|PHB}, {@item whip|PHB} or {@item rapier|PHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust. You are considered Proficient with your Runeblade.",
                 "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a short rest or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
             ]
@@ -1465,9 +1465,9 @@
             "classSource": "S: Shaman",
             "subclassShortName": "Forests",
             "subclassSource": "S: Shaman",
-            "level": 1,
+            "level": 3,
             "entries": [
-                "{@i 1st-level Forests Shaman feature}",
+                "{@i 3rd-level Forests Shaman feature}",
                 "You can use your primal magic to invoke the runes on your Runeblade. When you take the {@action Attack|PHB} action, you can expend a spell slot of any level to cause the following effects to take place.",
                 {
                     "type": "list",
@@ -1770,7 +1770,7 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 3,
+                        "level": 2,
                         "class": {
                             "name": "Shaman",
                             "source": "S: Shaman",
