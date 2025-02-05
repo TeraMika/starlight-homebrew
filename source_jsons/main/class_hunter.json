@@ -34,13 +34,16 @@
 				"Quarry|Hunter|Starlight|1|Starlight",
                 "Weapon Mastery|Ranger|XPHB|1",
                 "Fighting Style|Hunter|Starlight|1|Starlight",
-                "Keen Eye|Hunter|Starlight|1|Starlight",
+                "Survival Instincts|Hunter|Starlight|1|Starlight",
 				"Tricks|Hunter|Starlight|2|Starlight",
+                "Keen Eye|Hunter|Starlight|2|Starlight",
+                "Shrug It Off|Hunter|Starlight|2|Starlight",
 				"Hunting Grounds|Hunter|Starlight|3|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|4",
                 "Extra Attack|Fighter|XPHB|5",
                 "Lesser Quarry|Hunter|Starlight|5|Starlight",
 				"Offensive Hunter|Hunter|Starlight|6|Starlight",
+                "Sixth Sense|Hunter|Starlight|6|Starlight",
 				"Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|8",
                 "Greater Quarry|Hunter|Starlight|9|Starlight",
@@ -238,7 +241,7 @@
             ]
         },
         {
-            "name": "Keen Eye",
+            "name": "Survival Instincts",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -261,6 +264,28 @@
                 "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
                 "If a Trick grants or modifies an attack you cannot use more than one at a time. For example, if you use the Retaliate trick to strike back at a foe, you cannot use the Trip Attack Trick on that reliatory strike.",
                 "If a Trick requires a saving throw, the DC is equal to 8 plus your Strength or Dexterity modifier plus your Proficiency Bonus."
+            ]
+        },
+        {
+            "name": "Shrug It Off",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 2,
+            "entries": 
+            [
+                "It takes a significant hit to phase you. You can spend one Instinct and a Bonus Action to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
+            ]
+        },
+        {
+            "name": "Keen Eye",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 2,
+            "entries": 
+            [
+                "When you make an attack roll against your Quarry, you can spend one Instinct to add your Hunter's Die to the roll."
             ]
         },
         {
@@ -297,21 +322,21 @@
                     "type": "entries",
                     "name": "Relentless",
                     "entries":[
-                        "You can mark your Quarry without being able to see them. You have advantage on any Wisdom or Intelligence checks made to find your Quarry or see through its illusions, and your quarry lasts up to eight hours."
+                        "Your Quarry cannot {@condition Frighten} you."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Cautious",
                     "entries":[
-                        "If your Quarry moves so that you are within its reach for a melee attack, you can use your Reaction to move up to half your speed without provoking opportunity attacks."
+                        "Your Quarry cannot {@condition Charm} you."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "You can use a Bonus Action to take the {@action Dash} action, but you must move towards your Quarry. You can use a Bonus Action to take the {@action Disengage} action, but you must leave your Quarry's reach when you do so."
+                        "You learn your Quarry's resistances, vulnerabilities or immunities to any damage or conditions."
                     ]
                 }
             ]
@@ -328,14 +353,14 @@
                     "type": "entries",
                     "name": "Focused Assault",
                     "entries":[
-                        "You deal an additional {@dice 1d4} damage when you attack a creature that is below its maximum hit points."
+                        "You deal an additional {@dice 1d4} damage on attacks against a creature that is below its maximum hit points."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Considered Strikes",
                     "entries":[
-                        "When you attack a creature, you can spend 1 Instinct to add your Hunter's Die to the attack roll. If the target is your Quarry, you can do so after the roll, otherwise you must do so before."
+                        "You score a critical hit on attacks when rolling a 19 or 20 on the {@dice d20}. Whenever you roll a critical hit, you deal additional damage equal to one roll of your Hunter's Die."
                     ]
                 },
                 {
@@ -345,6 +370,17 @@
                         "Once on each of your turns when you attack a creature, you can immediately make another attack against a different creature within 10 feet of the target that is within your reach or range."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Sixth Sense",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 6,
+            "entries": 
+            [
+                "You can mark your Quarry without being able to see them. You have advantage on any Wisdom or Intelligence checks made to find your Quarry or see through its illusions, and your quarry lasts up to eight hours."
             ]
         },
         {
@@ -381,21 +417,21 @@
                     "type": "entries",
                     "name": "Relentless",
                     "entries":[
-                        "Your Quarry cannot {@condition Frighten} you."
+                        "When you hit your Quarry with an attack, its AC is reduced by 3 until the end of your turn."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Cautious",
                     "entries":[
-                        "Your Quarry cannot {@condition Charm} you."
+                        "When your Quarry deals damage to you with an effect that targets only you, you can use your Reaction to halve the damage you take from that effect."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "You learn your Quarry's resistances, vulnerabilities or immunities to any damage or conditions."
+                        "When you attack your Quarry, you can instead end the Quarry and make an attack against every other creature of your choice within your reach (if you use a melee weapon), or within 10 feet of your quarry (if you use a ranged weapon)."
                     ]
                 }
             ]
@@ -465,21 +501,21 @@
                     "type": "entries",
                     "name": "Relentless",
                     "entries":[
-                        "When you hit your Quarry with an attack, its AC is reduced by 3 until the end of your turn."
+                        "Your attacks against your Quarry deal additional damage equal to your Wisdom modifier."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Cautious",
                     "entries":[
-                        "When your Quarry hits you with an attack, you can use your Reaction to halve the damage you take."
+                        "You have an additional 5 feet of reach when attempting to attack your Quarry with a melee weapon. If you use a ranged weapon, you do not suffer disadvantage on attacks outside of the weapon's normal range that are made against your Quarry."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "When you attack your Quarry, you can instead end the Quarry and make an attack against every other creature of your choice within your reach (if you use a melee weapon), or within 10 feet of your quarry (if you use a ranged weapon)."
+                        "After your Quarry makes an attack roll, you can use your Reaction to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one Instinct, you can do this when your Quarry makes a saving throw."
                     ]
                 }
             ]
@@ -549,7 +585,7 @@
                     "type": "entries",
                     "name": "Relentless",
                     "entries":[
-                        "Your attacks against your Quarry deal additional damage equal to your Wisdom modifier."
+                        "You have advantage on attacks against your Quarry."
                     ]
                 },
                 {
@@ -563,7 +599,7 @@
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, that ally has resistance to any damage dealt and advantage on any saving throws it makes."
+                        "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has disadvantage on its attack (if it attacks), that ally has resistance to any damage dealt and advantage on any saving throws it makes."
                     ]
                 }
             ]
@@ -1014,7 +1050,7 @@
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
                 "The best way to hunt a creature is to prevent them getting away in the first place.",
-                "As a Bonus Action, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and are {@condition Halted|Starlight} until the start of your next turn."
+                "As a Bonus Action, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
             ]
         },
         {
@@ -1272,7 +1308,7 @@
             "className": "Hunter",
             "classSource": "Starlight",
             "subclassShortName": "Fable",
-            "subclas.sSource": "Starlight",
+            "subclassSource": "Starlight",
             "level": 3,
             "entries": [
                 "{@i 3rd-level Fable Hunter feature}",
@@ -1385,16 +1421,6 @@
 			"entries": [
 				"You have a knack for reading people and their intentions. You can spend one Instinct to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
 			]
-        },
-        {
-            "name": "Bear It I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can spend a Bonus Action and one Instinct to gain temporary hit points equal to a roll of your Hunter's Die plus your Constitution modifier."
-            ]
         },
         {
             "name": "Honed Senses",
@@ -1648,28 +1674,6 @@
             ]
 		},
         {
-			"name": "Highly Skilled",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You become proficient in two skills of your choice."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 6,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
-                }
-            ]
-		},
-        {
 			"name": "Superior Stamina I",
 			"source": "Starlight",
 			"featureType": [
@@ -1789,6 +1793,30 @@
 			],
 			"entries": [
 				"You can mark a creature as your Quarry without using your Bonus Action, but it costs 2 Instinct to mark a creature in this way."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Shrug it Off Improvement",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the Temporary Hit Points gained.",
+                "As part of that BonusAction, you can choose to spend additional Instinct, rolling one additional Hunter's Die for each Instinct spent.",
+                "Finally, you can use Shrug It Off to recover Hit Points, instead of gaining Temporary Hit Points."
 			],
             "prerequisite": [
                 {
@@ -2027,32 +2055,6 @@
             ]
 		},
         {
-			"name": "Bear It II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you use your Bear It Trick, the cost is reduced to one Instinct and you can choose to recover hit points instead of gaining temporary hit points.",
-                "If you gain hit points this way, you can gain more by spending more Instinct, adding the roll of one additional Hunter's Die for each Instinct you spend."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 12,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Bear It I"
-                    ]
-                }
-            ]
-		},
-        {
 			"name": "Powerful Stride II",
 			"source": "Starlight",
 			"featureType": [
@@ -2178,7 +2180,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have advantage on attacks against your Quarry."
+				"Attacks you make against your Quarry bypass damage resistance, and treat damage immunity as resistance."
 			],
             "prerequisite": [
                 {
@@ -2305,7 +2307,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your exposure to creatures from other planes has taught you how to resist their powers. When you complete a short or long rest, you can choose to become resistant to one of necrotic, radiant, or psychic damage until you next complete a short or long rest."
+				"Your exposure to creatures from other planes has taught you how to resist their powers. You become resistant to necrotic, radiant, and psychic damage."
 			],
             "prerequisite": [
                 {
@@ -2611,7 +2613,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per Long Rest when you roll initiative, you can replace the result of your d20 roll with a 20.",
+				"Once per Long Rest when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
                 "When you do this, the first attack roll you make is also replaced with a 20."
 			],
             "prerequisite": [
