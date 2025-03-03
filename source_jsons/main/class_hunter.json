@@ -20,7 +20,7 @@
             }
         ],
         "optionalFeatureTypes": {
-            "HTR": "Tricks"
+            "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
         "dateLastModified": 0
@@ -214,7 +214,7 @@
             "level": 1,
             "entries":
             [
-                "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a short rest.",
+                "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a {@variantrule Short Rest|XPHB}.",
                 "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. You have an amount of Instinct equal to your Hunter level (as indicated in the Hunter Table) and additional equal to your Wisdom modifier (minimum 0)."
             ]
         },
@@ -225,7 +225,7 @@
             "classSource": "Starlight",
             "level": 1,
             "entries": [
-                "A Hunter needs a target. Once per turn, you can spend one Instinct and a Bonus Action to designate a creature within 60 feet of you as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
+                "A Hunter needs a target. Once per turn, you can spend one Instinct and a {@variantrule Bonus Action|XPHB} to designate a creature within 60 feet of you as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
             ]
         },
         {
@@ -260,7 +260,7 @@
             "entries":
             [
                 "A Hunter is flexible, able to adapt their skillset to most threats. These Tricks are combat techniques, unique skills or benefits to your skills, or modifications to your defenses. They may be informed by your Hunting Grounds.",
-                "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a long rest, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
+                "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
                 "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
                 "If a Trick grants or modifies an attack you cannot use more than one at a time. For example, if you use the Retaliate trick to strike back at a foe, you cannot use the Trip Attack Trick on that reliatory strike.",
                 "If a Trick requires a saving throw, the DC is equal to 8 plus your Strength or Dexterity modifier plus your Proficiency Bonus."
@@ -274,7 +274,7 @@
             "level": 2,
             "entries": 
             [
-                "It takes a significant hit to phase you. You can spend one Instinct and a Bonus Action to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
+                "It takes a significant hit to phase you. You can spend one Instinct and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
             ]
         },
         {
@@ -424,7 +424,7 @@
                     "type": "entries",
                     "name": "Cautious",
                     "entries":[
-                        "When your Quarry deals damage to you with an effect that targets only you, you can use your Reaction to halve the damage you take from that effect."
+                        "When your Quarry deals damage to you with an effect that targets only you, you can use your {@variantrule Reaction|XPHB} to halve the damage you take from that effect."
                     ]
                 },
                 {
@@ -455,7 +455,7 @@
                     "type": "entries",
                     "name": "Pattern Recognition",
                     "entries":[
-                        "After a creature hits you with an attack, you gain a +4 bonus to AC against all other attacks made by that creature until the end of its turn."
+                        "After a creature hits you with an attack, you gain a +4 bonus to your {@variantrule Armour Class|XPHB|AC} against all other attacks made by that creature until the end of its turn."
                     ]
                 },
                 {
@@ -515,7 +515,7 @@
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "After your Quarry makes an attack roll, you can use your Reaction to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one Instinct, you can do this when your Quarry makes a saving throw."
+                        "After your Quarry makes an attack roll, you can use your {@variantrule Reaction|XPHB} to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one Instinct, you can do this when your Quarry makes a saving throw."
                     ]
                 }
             ]
@@ -548,26 +548,26 @@
             "classSource": "Starlight",
             "level": 17,
             "entries": [
-                "Your skills as a Hunter grow again, to the extent that your abilities seem almost supernatural. Choose one of the following abilities, which you can use once per short rest:",
+                "Your skills as a Hunter grow again, to the extent that your abilities seem almost supernatural. Choose one of the following abilities, which you can use once per {@variantrule Short Rest|XPHB}:",
                 {
                     "type": "entries",
                     "name": "Vanish",
                     "entries":[
-                        "You can spend a Bonus Action to become Invisible until the end of your next turn. While invisible, you can pass through objects and creatures that you otherwise couldn't as if they were difficult terrain. If you end your turn within an object or creature's space, you take 3d10 force damage and are shunted to the nearest available space."
+                        "You can spend a {@variantrule Bonus Action|XPHB} to become {@condition Invisible|XPHB} until the end of your next turn. While invisible, you can pass through objects and creatures that you otherwise couldn't as if they were {@variantrule Difficult Terrain|XPHB}. If you end your turn within an object or creature's space, you take 3d10 force damage and are shunted to the nearest available space."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Blur",
                     "entries":[
-                        "You double your movement speed this turn (no action required). The first time you take damage after this turn, any unspent movement is used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+                        "You double your {@variantrule Speed|XPHB} this turn (no action required). The first time you take damage after this turn, any unspent movement is used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Reaper",
                     "entries":[
-                        "As an Action, you can make a special attack which, if it kills a creature, allows you to make another attack. All of these attacks deal additional damage equal to your Hunter's Die."
+                        "As an {@variantrule Action|XPHB}, you can make a special attack which, if it kills a creature, allows you to make another attack. All of these attacks deal additional damage equal to your Hunter's Die."
                     ]
                 }
             ]
@@ -623,7 +623,7 @@
             "entries": [
                 "Your Wisdom score increases by 2, and so does your Strength or Dexterity score (you choose), both up to a maximum of 30.",
                 "You can have up to two creatures as your Quarry at any one time, and when you mark one you can mark another at no cost. Choosing another Quarry only ends your previous Quarry if you would have more than two, in which case you choose which to end.",
-                "At this level, you also gain access to a unique and powerful Trick. Relentless, Cautious, or Strategic Hunter."
+                "At this level, you also gain access to a unique and powerful Trick: Relentless, Cautious, or Strategic Hunter."
             ]
         }
     ],
@@ -737,7 +737,7 @@
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
                 "Your experience in dealing with creatures of the between-realm has given you skills related to reading intention and concealing your own.",
-                "You gain proficiency with the {@skill Insight|XPHB} and {@skill Deception|XPHB} skills.",
+                "You gain proficiency with two of the following skills: {@skill Insight|XPHB}, {@skill Deception|XPHB}, {@skill Persuasion|XPHB}, or {@skill Arcana|XPHB}.",
                 "Additionally, you gain proficiency with {@item Navigator's tools|XPHB} and {@item Herbalism Kit|XPHB}, so you are never lost, and can identify the dangerous flora of the feywilds."
             ]
         },        
@@ -771,9 +771,9 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
-                "You can use a Bonus Action to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
+                "You can use a {@variantrule Bonus Action|XPHB} to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
                 "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
-                "You can use this feature for free once per Short Rest, otherwise it costs 2 Instinct."
+                "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs 2 Instinct."
             ]
         },
         {
@@ -786,7 +786,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
-                "The skills you gained from the Borderlands have improved. You gain {@variantrule Expertise|XPHB} in Insight and Deception."
+                "The skills you gained from the Borderlands have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3|Starlight|Skills from the Borderland} feature."
             ]
         },
         {
@@ -812,7 +812,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Borderland Hunter feature}",
-                "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a reaction to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
+                "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a {@variantrule Reaction|XPHB} to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
                 "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take {@dice 4d8} psychic damage. This damage increases to {@dice 5d10} at level 15."
             ]
         },
@@ -869,7 +869,7 @@
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
                 "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
-                "You gain proficiency with the {@skill Arcana|XPHB} and {@skill Religion|XPHB} skills.",
+                "You gain proficiency with 2 of the following skills: {@skill Arcana|XPHB}, {@skill Religion|XPHB}, {@skill Insight}, or {@skill Persuasion}.",
                 "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
             ]
         },        
@@ -903,7 +903,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a Long Rest. Damaging your Quarry adds one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. Damaging your Quarry adds one Hunter's Die to the pool."
             ]
         },
         {
@@ -916,7 +916,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When an ally within 30 feet of you takes damage, you can use your Reaction to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
+                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When an ally within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
             ]
         },
         {
@@ -929,7 +929,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
-                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in Arcana and Religion."
+                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Urban|Starlight|3|Starlight|Skills from the Outer Planes feature}."
             ]
         },
         {
@@ -1050,7 +1050,7 @@
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
                 "The best way to hunt a creature is to prevent them getting away in the first place.",
-                "As a Bonus Action, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
+                "As a {@variantrule Bonus Action|XPHB}, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
             ]
         },
         {
@@ -1063,7 +1063,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
-                "Your city-life skills have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose from {@subclassFeature Skills from the City|Hunter|Starlight|Urban|Starlight|3|Starlight|your Skills from the City feature}."
+                "Your city-life skills have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the City|Hunter|Starlight|Urban|Starlight|3|Starlight|Skills from the City} feature."
             ]
         },
         {
@@ -1089,8 +1089,8 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
-                "You can take the {@action Hide|XPHB} action as a Bonus Action.",
-                "While unseen by a creature, you can make a special attack against it as an Action. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die."
+                "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}.",
+                "While unseen by a creature, you can make a special attack against it as an {@variantrule Action|XPHB}. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die."
             ]
         },
         {
@@ -1104,7 +1104,7 @@
             "entries": [
                 "{@i 15th-level Urban Hunter feature}",
                 "When you kill a creature, you become {@condition Invisible} until the start of your next turn. This invisibility ends if you make an attack or force another creature to make a saving throw.",
-                "Your Silent Killer special attack can be used in place of an attack, instead of as an Action."
+                "Your Silent Killer special attack can be used in place of an attack, instead of as an {@variantrule Action|XPHB}."
             ]
         },
         {
@@ -1206,7 +1206,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose from {@subclassFeature Skills from the Wilds|Hunter|Starlight|Urban|Starlight|3|Starlight|your Skills from the Wilds feature}."
+                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Wilds|Hunter|Starlight|Urban|Starlight|3|Starlight|Skills from the Wilds} feature."
             ]
         },
         {
@@ -1233,7 +1233,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required). The first time you do this each Short Rest, it costs no Instinct. Any other time, it costs one Instinct."
+                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required). The first time you do this each {@variantrule Short Rest|XPHB}, it costs no Instinct. Any other time, it costs one Instinct."
             ]
         },
         {
@@ -1259,7 +1259,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Horizon Hunter feature}",
-                "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs, unless yours are higher.",
+                "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs until the start of your next turn, unless yours are higher.",
                 "When you hit your Quarry, its immunities are treated as resistance, and you bypass its resistances."
             ]
         },
@@ -1332,7 +1332,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Fable Hunter feature}",
-                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to command an ally. The ally you choose can use their {@action Reaction|XPHB} to move up to their movement speed, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to command an ally. The ally you choose can use their {@variantrule Reaction|XPHB} to move up to their {@variantrule Speed|XPHB}, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
             ]
         },
         {
@@ -1345,7 +1345,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
-                "Your story-making skills have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose from your {@subclassFeature Skills of Yore|Hunter|Starlight|Urban|Starlight|3|Starlight|} feature."
+                "Your story-making skills have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, from your {@subclassFeature Skills of Yore|Hunter|Starlight|Urban|Starlight|3|Starlight|} feature."
             ]
         },
         {
@@ -1371,7 +1371,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Fable Hunter feature}",
-                "Once per Short Rest, you can use a Bonus Action and one Instinct to mark one target with a special Quarry. Whenever any creature hits the target with an attack, the target takes damage equal to your Hunter's Die. At the start of your next turn, the Quarry ends."
+                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one Instinct to mark one target with a special Quarry. Whenever any creature hits the target with an attack, the target takes damage equal to your Hunter's Die. At the start of your next turn, the Quarry ends."
             ]
         },
         {
@@ -1384,7 +1384,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Fable Hunter feature}",
-                "Once per Short Rest, you can use a Bonus Action to imbue an ally with epic tenacity. Until the end of your next turn, that ally cannot be reduced below one hit point or killed, their movement speed cannot be reduced, and they cannot be {@condition Stunned|XPHB} or {@condition Restrained|XPHB}."
+                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} to imbue your allies with epic tenacity. Until the end of your next turn, allies within 30 feet of you cannot be reduced below one hit point or killed, their {@variantrule Speed|XPHB} cannot be reduced, and they cannot be {@condition Stunned|XPHB} or {@condition Restrained|XPHB}."
             ]
         },
         {
@@ -1449,7 +1449,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature hits you with an attack, you can spend one Instinct and a Reaction to make an attack against that creature, adding your Hunter's Die to the attack roll."
+				"When a creature hits you with an attack, you can spend one Instinct and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
 			]
         },
         {
@@ -1479,7 +1479,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can spend one Instinct and a Bonus Action to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
+				"You can spend one Instinct and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
                 "A trap is any object or mechanism that was created or placed to cause damage or other danger. This could include spells, physical mechanisms, or even dangerous loopholes in a contract."
 			]
         },
@@ -1490,7 +1490,7 @@
                 "HTR"
             ],
             "entries": [
-                "At the start of each day, you can improvise {@item Ball Bearings|XPHB}, {@item Caltrops|XPHB}, {@item Acid|XPHB} or {@item Oil|XPHB}. You can {@action Utilize|XPHB} this improvised item with a Bonus Action instead of replacing an attack or using the {@action Utilize|XPHB} action.",
+                "At the start of each day, you can improvise {@item Ball Bearings|XPHB}, {@item Caltrops|XPHB}, {@item Acid|XPHB} or {@item Oil|XPHB}. You can {@action Utilize|XPHB} this improvised item with a {@variantrule Bonus Action|XPHB} instead of replacing an attack or using the {@action Utilize|XPHB} action.",
                 "Once created, the item lasts for 24 hours or until you improvise another, which costs 10gp and takes ten minutes."
             ],
             "prerequisite": [
@@ -1581,7 +1581,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you are hit by an attack, you can spend one Instinct and your reaction to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
+				"When you are hit by an attack, you can spend one Instinct and your {@variantrule Reaction|XPHB} to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -1625,7 +1625,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature enters your reach and you are holding a melee weapon, you can use your Reaction to make an attack against them, adding your Hunter's Die to the attack roll."
+				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an attack against them, adding your Hunter's Die to the attack roll."
 			],
             "prerequisite": [
                 {
@@ -1648,7 +1648,7 @@
 			],
 			"entries": [
 				"Your exposure to a range of creatures and environments has taught you how to prepare for many a situation.",
-                "When you complete a short or long rest, you can choose to become resistant to one of fire, cold, acid, lightning or thunder damage."
+                "When you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can choose to become resistant to one of fire, cold, acid, lightning or thunder damage."
 			],
             "prerequisite": [
                 {
@@ -1670,7 +1670,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can take the {@action Dash|XPHB} action as a Bonus Action."
+				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -1760,7 +1760,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per Short Rest, you can use a Bonus Action and one Instinct to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
+				"Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one Instinct to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
 			],
             "prerequisite": [
                 {
@@ -1782,7 +1782,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can mark a creature as your Quarry without using your Bonus Action, but it costs 2 Instinct to mark a creature in this way."
+				"You can mark a creature as your Quarry without using your {@variantrule Bonus Action|XPHB}, but it costs 2 Instinct to mark a creature in this way."
 			],
             "prerequisite": [
                 {
@@ -1805,7 +1805,7 @@
 			],
 			"entries": [
 				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the Temporary Hit Points gained.",
-                "As part of that BonusAction, you can choose to spend additional Instinct, rolling one additional Hunter's Die for each Instinct spent.",
+                "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional Instinct, rolling one additional Hunter's Die for each Instinct spent.",
                 "Finally, you can use Shrug It Off to recover Hit Points, instead of gaining Temporary Hit Points."
 			],
             "prerequisite": [
@@ -1850,7 +1850,7 @@
 				"HTR"
 			],
 			"entries": [
-                "You can remove one level of exhaustion whenever you complete a Short Rest."
+                "You can remove one level of exhaustion whenever you complete a {@variantrule Short Rest|XPHB}."
             ],
             "prerequisite": [
                 {
@@ -1894,7 +1894,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are especially manoeuvrable. You can use two Instinct and an Action to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with advantage against that creature."
+				"You are especially manoeuvrable. You can use two Instinct and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with advantage against that creature."
 			],
             "prerequisite": [
                 {
@@ -1938,7 +1938,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your movement is not impeded by difficult terrain."
+				"Your movement is not impeded by {@variantrule Difficult Terrain|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -1960,7 +1960,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your movement speed increases by 10 feet."
+				"Your {@variantrule Speed|XPHB} increases by 10 feet."
 			],
             "prerequisite": [
                 {
@@ -2048,7 +2048,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per turn when you regain hit points, including from rolling Hit Dice during a Short Rest, you can regain an additional amount equal to your Wisdom modifier."
+				"Once per turn when you regain hit points, including from rolling Hit Dice during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -2170,7 +2170,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per Short Rest when you fail a saving throw, you can reroll it with a bonus equal to your Hunter's Die."
+				"Once per {@variantrule Short Rest|XPHB} when you fail a saving throw, you can reroll it with a bonus equal to your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -2217,7 +2217,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When an effect would reduce you to zero hit points, you can spend a Reaction and one Instinct to be reduced to one instead. Then roll your Hunter's Die four times, add your Wisdom modifier, and regain hit points equal to the total rolled."
+				"When an effect would reduce you to zero hit points, you can spend a {@variantrule Reaction|XPHB} and one Instinct to be reduced to one instead. Then roll your Hunter's Die four times, add your Wisdom modifier, and regain hit points equal to the total rolled."
 			],
             "prerequisite": [
                 {
@@ -2242,7 +2242,7 @@
 				"HTR"
 			],
 			"entries": [
-				"If you have used your Reaction, you can spend one Instinct to take another. You can use only one Reaction per triggering event."
+				"If you have used your {@variantrule Reaction|XPHB}, you can spend one Instinct to take another. You can use only one reaction per triggering event."
 			],
             "prerequisite": [
                 {
@@ -2293,7 +2293,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You feel most comfortable when things are strange. In environments on other planes, you have advantage on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, difficult terrain does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
+				"You feel most comfortable when things are strange. In environments on other planes, you have advantage on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
                 "Furthermore, you can spend one Instinct to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how."
 			],
             "prerequisite": [
@@ -2344,7 +2344,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per Short Rest, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
+				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -2369,7 +2369,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per long rest, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
+				"Once per {@variantrule Long Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
 			],
             "prerequisite": [
                 {
@@ -2395,7 +2395,7 @@
 			],
 			"entries": [
 				"Borderland Hunters can pursue their foes even as they step into or through the Ethereal Plane. When you hit a creature with an attack, it cannot change the plane that it is on (for example, the {@spell Blink|XPHB} or {@spell Plane Shift|XPHB} spells) until the end of your next turn.",
-                "If you see a creature teleport, you can use your reaction to move up to your speed in pursuit of it."
+                "If you see a creature teleport, you can use your {@variantrule Reaction|XPHB} to move up to your speed in pursuit of it."
 			],
             "prerequisite": [
                 {
@@ -2420,7 +2420,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are experienced travelling the lands that border your own. When travelling through the Ethereal Plane or the Feywilds, you have advantage on Wisdom (Survival) checks, you cannot become lost, difficult terrain does not slow your travel, you can forage for food in any environment, and you have advantage on ability checks or saving throws made to see through illusions.",
+				"You are experienced travelling the lands that border your own. When travelling through the Ethereal Plane or the Feywilds, you have advantage on Wisdom (Survival) checks, you cannot become lost, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and you have advantage on ability checks or saving throws made to see through illusions.",
                 "Furthermore, in the Ethereal Plane, any vertical movement does not impose a movement penalty."
 			],
             "prerequisite": [
@@ -2472,7 +2472,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per Short Rest, you can cast the {@spell Etherealness|XPHB} spell on yourself as a Bonus Action. When cast this way, the spell lasts until the start of your next turn.",
+				"Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Etherealness|XPHB} spell on yourself as a {@variantrule Bonus Action|XPHB}. When cast this way, the spell lasts until the start of your next turn.",
                 "If you have already used this feature, you can use it again at the cost of 4 Instinct."
 			],
             "prerequisite": [
@@ -2498,7 +2498,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this once per Short Rest.",
+				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this once per {@variantrule Short Rest|XPHB}.",
                 "You have advantage on Death saving throws."
 			],
             "prerequisite": [
@@ -2549,7 +2549,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You do your best work where people are. In cities and other settlements, you have advantage on Wisdom (Survival) checks, you cannot become lost outside of magical means, difficult terrain does not slow your travel, and you can find enough food to eat no matter where you are.",
+				"You do your best work where people are. In cities and other settlements, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food to eat no matter where you are.",
                 "Furthermore, you have advantage on ability checks made to identify local customs and find secret or hidden pathways in the environment."
 			],
             "prerequisite": [
@@ -2575,7 +2575,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are practised climbing buildings and leaping between them. You have a climbing speed equal to your movement speed and your jump distance is doubled."
+				"You are practised climbing buildings and leaping between them. You have a climbing speed equal to your {@variantrule Speed|XPHB} and your jump distance is doubled."
 			],
             "prerequisite": [
                 {
@@ -2625,7 +2625,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per Long Rest when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
+				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
                 "When you do this, the first attack roll you make is also replaced with a 20."
 			],
             "prerequisite": [
@@ -2676,7 +2676,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are adept at travelling the regions that most humanoids rarely do. When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom (Survival) checks, you cannot become lost outside of magical means, difficult terrain does not slow your travel, and you can forage for food anywhere.",
+				"You are adept at travelling the regions that most humanoids rarely do. When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food anywhere.",
                 "Furthermore, you have advantage on ability checks made to control vehicle such as boats or airships."
 			],
             "prerequisite": [
@@ -2810,7 +2810,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have advantage on Wisdom ({@skill Survival|XPHB}) checks in environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps. In such locations, you cannot become lost outside of magical means, difficult terrain does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
+				"You have advantage on Wisdom ({@skill Survival|XPHB}) checks in environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps. In such locations, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
                 "Furthermore, you have advantage on any saving throws made against environmental hazards such as heat or cold."
 			],
             "prerequisite": [
@@ -2836,7 +2836,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can use an {@action Action|XPHB} on your turn to revive a friendly creature within your reach who is at zero hit points. They regain hit points equal to twice your Hunter level and gain the benefits of your {@subclassFeature Rally|Hunter|Starlight|Fable|Starlight|7|Starlight} and {@subclassFeature Commander|Hunter|Starlight|Fable|Starlight|3|Starlight} features (movement only). Once you have used this feature, you cannot do so again until you complete a Long Rest."
+				"You can use an {@action Action|XPHB} on your turn to revive a friendly creature within your reach who is at zero hit points. They regain hit points equal to twice your Hunter level and gain the benefits of your {@subclassFeature Rally|Hunter|Starlight|Fable|Starlight|7|Starlight} and {@subclassFeature Commander|Hunter|Starlight|Fable|Starlight|3|Starlight} features (movement only). Once you have used this feature, you cannot do so again until you complete a {@variantrule Long Rest|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -2861,7 +2861,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You guide your allies to success through your knowledge of these legendary creatures. Once per Short Rest, when your Quarry succeeds a saving throw against one of your allies' effects, you can use a Reaction to cause it to take damage equal to four rolls of your Hunter's Die."
+				"You guide your allies to success through your knowledge of these legendary creatures. Once per {@variantrule Short Rest|XPHB}, when your Quarry succeeds a saving throw against one of your allies' effects, you can use a {@variantrule Reaction|XPHB} to cause it to take damage equal to four rolls of your Hunter's Die."
 			],
             "prerequisite": [
                 {
