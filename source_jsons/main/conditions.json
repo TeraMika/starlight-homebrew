@@ -222,7 +222,7 @@
                             "type": "entries",
                             "name": "Attacks Affected",
                             "entries": [
-                                "Attack rolls against a you have {@variantrule Advantage|XPHB} if the attacker can see you."
+                                "Attack rolls against you have {@variantrule Advantage|XPHB} if the attacker can see you."
                             ]
                         }
                     ]
@@ -317,6 +317,7 @@
                             "name": "Ending the Condition",
                             "entries": [
                                 "You can use an {@variantrule Action|XPHB} to attempt a DC 10 {@skill Medicine} check to stop the bleeding.",
+                                "Regaining any hit points also ends the condition.",
                                 "If you are immune to slashing damage, you are immune to this condition. If you are resistant to slashing damage, you have advantage on any saving throws against the condition instead."
                             ]
                         }
@@ -381,6 +382,13 @@
                             "entries": [
                                 "You have {@variantrule Disadvantage|XPHB} on Dexterity saving throws."
                             ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "If you are immune to Lightning damage, you are immune to this condition. If you are resistant to lightning damage, you have advantage on any saving throws against the condition instead."
+                            ]
                         }
                     ]
                 }
@@ -434,14 +442,14 @@
                             "type": "entries",
                             "name": "Damage Increased",
                             "entries": [
-                                "When you take any damage, you take {@dice 1d4} more."
+                                "When you take any damage, that damage is increased by {@dice 1d4}."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Ending the Condition",
                             "entries": [
-                                "The condition ends if you take fire damage.",
+                                "The condition ends after you take fire damage.",
                                 "If you are immune to cold damage, you are immune to this condition. If you are resistant to cold damage, you have advantage on any saving throws against the condition instead."
                             ]
                         }
