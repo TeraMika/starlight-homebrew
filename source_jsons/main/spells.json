@@ -482,6 +482,75 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Pixie Sparks",
+            "source": "Starlight",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a volley of disorienting Feywild sparks to assail your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} psychic damage and the next attack made against it before the end of your next turn has {@variantrule Advantage|XPHB}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "Psychic damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "races": [
+                {
+                    "name": "Fairy",
+                    "source": "Starlight",
+                    "baseName": "Fairy",
+                    "baseSource": "Starlight"
+                }
+            ]
         }
     ]
 }
