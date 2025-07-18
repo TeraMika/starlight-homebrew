@@ -296,7 +296,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not attack your ability modifier to the damage roll of this attack."
+                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not add your ability modifier to the damage roll of this attack."
 			]
 		},
         {
