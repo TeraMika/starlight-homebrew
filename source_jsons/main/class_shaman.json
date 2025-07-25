@@ -515,7 +515,7 @@
                     "type": "entries",
                     "name": "Spell Slots",
                     "entries": [
-                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a long rest."
+                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a {@variantrule Long Rest}."
                     ]
                 },
                 {
@@ -582,7 +582,7 @@
                             "type": "entries",
                             "name": "Growing Heat",
                             "entries":[
-                                "Whenever you deal fire damage to a creature, they take additional damage equal to your proficiency bonus whenever you deal fire damage to them before the end of your next turn."
+                                "When you deal fire damage to a creature, they become {@condition Burning|Starlight} until the end of your next turn."
                             ]
                         }
 					]
@@ -638,7 +638,7 @@
                             "type": "entries",
                             "name": "Persistent Corrosion",
                             "entries":[
-                                "When you deal acid damage to a creature, you can cause the acid to linger on them. At the start of each of its turns, the creature takes acid damage equal to your proficiency bonus. The acid lasts until a creature uses its action to remove it, or you use this feature again on a different target."
+                                "When you deal acid damage to a creature, you can cause the acid to linger on them. At the start of each of its turns, the creature takes acid damage equal to your proficiency bonus. The acid lasts until a creature uses its {@variantrule Action} to remove it, or you use this feature again on a different target."
                             ]
                         }
 					]
@@ -706,7 +706,7 @@
                     "type": "list",
                     "items": [
                         "You gain a bonus to {@skill arcana} and {@skill nature} checks equal to your spellcasting ability modifier.",
-                        "Additionally, you learn the {@spell Skill Empowerment|XGE} spell and can cast it once per long rest without expending a spell slot. It does not count against the number of Shaman spells you know."
+                        "Additionally, you learn the {@spell Skill Empowerment|XGE} spell and can cast it once per {@variantrule Long Rest} without expending a spell slot. It does not count against the number of Shaman spells you know."
                     ]
                 }
             ]
@@ -753,7 +753,7 @@
                 "At 18th level, you gain the ability to briefly push your magical abilities to their limit by experiencing magical feedback.",
                 "When you cast a Shaman spell, you can deal the maximum possible damage instead of rolling on the turn that you cast it.",
                 "Upon doing so, you take force damage equal to your Shaman level plus the level of the spell cast, which cannot be reduced in any way, and you cannot cast spells until after your next turn.",
-                "After you use this ability, you cannot do so again until you complete a short or long rest."
+                "After you use this ability, you cannot do so again until you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest}."
             ]
         },
         {
@@ -763,17 +763,17 @@
             "classSource": "Starlight",
             "level": 20,
             "entries": [
-                "At 20th level, you can use a bonus action to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance as you choose to suit your elemental affinity or origin, such as your head being lit with flames, or your skin being covered with frost.",
+                "At 20th level, you can use a {@variantrule Bonus Action} to channel the spirits of nature directly for one minute, using yourself as a conduit. This might change your appearance as you choose to suit your elemental affinity or origin, such as your head being lit with flames, or your skin being covered with frost.",
                 "While this state is active, you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "You gain a flying speed of 50 feet.",
-                        "Whenever you cast a Shaman spell that has a casting time of one action, you can cast it using a bonus action instead."
+                        "Whenever you cast a Shaman spell that has a casting time of one {@variantrule Action}, you can cast it using a {@variantrule Bonus Action} instead."
                     ]
                 },
                 "At this level, you also have access to a Primordial Rune specific to your subclass that can enhance your Spiritual Avatar in another way.",
-                "Once you use this feature, you can't do so again until you complete a long rest."
+                "Once you use this feature, you can't do so again until you complete a {@variantrule Long Rest}."
             ]
         }
     ],
@@ -962,7 +962,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Waters Shaman feature}",
-                "When you restore hit points to a creature, you can use an action or a bonus action to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|Starlight}."
+                "When you restore hit points to a creature, you can use an {@variantrule Action} or a {@variantrule Bonus Action} to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|Starlight}."
             ]
         },
         {
@@ -989,9 +989,9 @@
             "entries": [
                 "{@i 10th-level Waters Shaman feature}",
                 "You can breathe underwater and gain a swimming speed equal to your walking speed.",
-                "Furthermore, when a creature hits you with an attack, you can use a reaction to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks, and gaining the {@condition Regenerating|Starlight} condition with an amount equal to your Shaman level, for one turn.",
+                "Furthermore, when a creature hits you with an attack, you can use a {@variantrule Reaction} to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks. You also regain hitpoints equal to your Shaman level.",
                 "This movement can move through other creatures' spaces, but if you end your movement in another creature's space you are ejected to the nearest unoccupied space, taking {@damage 1d8} force damage for each 5 feet you are ejected.",
-                "You can use this reaction once per short rest."
+                "You can use this {@variantrule Reaction} once per {@variantrule Short Rest}."
             ]
         },
         {
@@ -1121,8 +1121,8 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Mountains Shaman feature}",
-                "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a reaction to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
-                "You can do this a number of times per long rest equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
+                "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a {@variantrule Reaction} to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
+                "You can do this a number of times per {@variantrule Long Rest} equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
             ]
         },
         {
@@ -1135,7 +1135,7 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
-                "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|1|Starlight} to protect them instead of yourself, reducing the damage they take.",
+                "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} to protect them instead of yourself, reducing the damage they take.",
                 "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier."
             ]
         },
@@ -1149,7 +1149,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                "The mountains watch over vast swathes of land, as you do, and now your own magic becomes a source of this protection. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|1|Starlight} increases to {@dice 3d6} plus your Constitution modifier and your Wisdom modifier."
+                "The mountains watch over vast swathes of land, as you do, and now your own magic becomes a source of this protection. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 3d6} plus your Constitution modifier and your Wisdom modifier."
             ]
         },
         {
@@ -1162,7 +1162,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                "You can call on the chilling winds of the valley. You can use an action to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a short or long rest.",
+                "You can call on the chilling winds of the valley. You can use an {@variantrule Action} to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest}.",
                 "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
             ]
         },
@@ -1176,8 +1176,8 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Mountains Shaman feature}",
-                "You are a titan of endurance, a bastion for your allies. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|1|Starlight} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
-                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a reaction and use of your unwavering spirit to reduce it to 1 hit point instead."
+                "You are a titan of endurance, a bastion for your allies. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
+                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a {@variantrule Reaction} and use of your unwavering spirit to reduce it to 1 hit point instead."
             ]
         },
         {
@@ -1288,7 +1288,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Dunes Shaman feature}",
-                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|XPHB|fireball spell}, you can use your reaction to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
+                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|XPHB|fireball spell}), you can use your {@variantrule Reaction} to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
                 
             ]
         },
@@ -1302,7 +1302,7 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Dunes Shaman feature}",
-                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per short rest, you can spend an action to create a storm of swirling particulates in a 15 foot radius around you (this could be snow or sand, for example). This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through."
+                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per {@variantrule Short Rest}, you can spend an action to create a storm of swirling particulates in a 15 foot radius around you (this could be snow or sand, for example). This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through."
                 
             ]
         },
@@ -1330,7 +1330,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Dunes Shaman feature}",
-                "Your mirage is superior, increasing the distance that it covers. You can teleport up to 10 feet when using your {@subclassFeature Mirage|Shaman|Starlight|Dunes|Starlight|1|Starlight|mirage}, and you can spend a spell slot of any level to increase the distance you teleport by a number of feet equal to 10 times the slot level expended."
+                "Your mirage is superior, increasing the distance that it covers. You can teleport up to 10 feet when using your {@subclassFeature Mirage|Shaman|Starlight|Dunes|Starlight|3|Starlight|mirage}, and you can spend a spell slot of any level to increase the distance you teleport by a number of feet equal to 10 times the slot level expended."
             ]
         },
         {
@@ -1347,12 +1347,12 @@
                 {
                     "type": "list",
                     "items": [
-                        "You can use a bonus action to move the storm independently of yourself, up to 20 feet, where the storm then remains until you move it again.",
+                        "You can use a {@variantrule Bonus Action} to move the storm independently of yourself, up to 20 feet, where the storm then remains until you move it again.",
                         "The area is lightly obscured. You and creatures you choose can attempt to hide in this light obscurement.",
                         "Hostile creatures entering the storm or starting their turn in it must make a Dexterity saving throw or take {@damage 5d8} piercing damage and become {@condition blinded} until the start of their next turn."
                     ]
                 },
-                "You can concentrate on the storm this way once per long rest. If you lose your {@status concentration}, the storm ends and you must complete a short rest to use it again, as normal."
+                "You can concentrate on the storm this way once per {@variantrule Long Rest}. If you lose your {@status concentration}, the storm ends and you must complete a {@variantrule Short Rest} to use it again, as normal."
             ]
         },
         {
@@ -1455,7 +1455,7 @@
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
                 "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|XPHB}, {@item shortsword|XPHB}, {@item scimitar|XPHB}, {@item whip|XPHB} or {@item rapier|XPHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust. You are considered Proficient with your Runeblade.",
-                "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a short rest or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
+                "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a {@variantrule Short Rest} or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
             ]
         },
         {
@@ -1593,7 +1593,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Forests Shaman feature}",
-                "You can {@action Hide|XPHB} as a bonus action, and can attempt to do so when you are only lightly obscured. While hidden, your movement speed is increased by 15 feet."
+                "You can {@action Hide|XPHB} as a {@variantrule Bonus Action}, and can attempt to do so when you are only lightly obscured. While hidden, your movement speed is increased by 15 feet."
             ]
         },
         {
@@ -1619,7 +1619,7 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Forests Shaman feature}",
-                "A number of times per day equal to your proficiency bonus, you can activate two effects simultaneously when you {@subclassFeature Runeblade Invocation|Shaman|Starlight|Forests|Starlight|1|Starlight|invoke your runeblade}."
+                "A number of times per day equal to your proficiency bonus, you can activate two effects simultaneously when you {@subclassFeature Runeblade Invocation|Shaman|Starlight|Forests|Starlight|3|Starlight|invoke your runeblade}."
             ]
         },
         {
@@ -1664,7 +1664,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You do not need to sleep and cannot be forced to by any means. You can gain a long rest by doing 8 hours of light activity instead of sleeping."
+				"You do not need to sleep and cannot be forced to by any means. You can gain the benefits of a {@variantrule Long Rest} by doing 8 hours of light activity instead of sleeping."
 			]
         },
         {
@@ -1694,7 +1694,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast {@spell speak with animals} and at will and without expending a spell slot."
+				"You can cast {@spell speak with animals} at will and without expending a spell slot."
 			]
         },
         {
@@ -1714,7 +1714,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast {@spell Detect Magic|XPHB}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per long rest each, without expending a spell slot."
+				"You can cast {@spell Detect Magic|XPHB}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per {@variantrule Long Rest} each, without expending a spell slot."
 			]
         },
         {
@@ -1724,7 +1724,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Longstrider|XPHB} and can cast it once per long rest without expending a spell slot."
+				"You learn the {@spell Longstrider|XPHB} and can cast it once per {@variantrule Long Rest} without expending a spell slot."
 			]
         },
         {
@@ -1734,7 +1734,7 @@
                 "PRU"
             ],
             "entries": [
-                "You can cast the {@spell Goodberry|XPHB} spell once per long rest. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+                "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest}. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
             ]
         },
         {
@@ -1814,7 +1814,7 @@
 			],
 			"entries": [
 				"You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, it increases to that amount",
-                "You learn the {@spell Spider Climbing} spell and cast it once per long rest without expending a spell slot."
+                "You learn the {@spell Spider Climbing} spell and cast it once per {@variantrule Long Rest} without expending a spell slot."
 			],
             "prerequisite": [
                 {
@@ -1880,7 +1880,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a reaction to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
+				"Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a {@variantrule Reaction} to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
                 "This damage increases to {@dice 2d6} at 11th level."
 			],
             "prerequisite": [
@@ -1950,7 +1950,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Elemental Bane|XGE} spell. Once per long rest, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to the end of your next turn."
+				"You learn the {@spell Elemental Bane|XGE} spell. Once per {@variantrule Long Rest}, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -1972,7 +1972,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per short rest, you can attempt to allow nature to siphon a creature's magic for a turn.",
+				"Once per {@variantrule Short Rest}, you can attempt to allow nature to siphon a creature's magic for a turn.",
                 "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
 			],
             "prerequisite": [
@@ -2017,7 +2017,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can cast the {@spell Find Familiar|XPHB} spell once per long rest without expending material components. Your familiar takes the form of a {@creature Sapling Treant|Starlight} or a {@creature Raven|MM}."
+				"You can cast the {@spell Find Familiar|XPHB} spell once per {@variantrule Long Rest} without expending material components. Your familiar takes the form of a {@creature Sapling Treant|Starlight} or a {@creature Raven|MM}."
 			],
             "prerequisite": [
                 {
@@ -2039,7 +2039,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Transport Via Plants|XPHB} spell and can cast it once per long rest without expending a spell slot."
+				"You learn the {@spell Transport Via Plants|XPHB} spell and can cast it once per {@variantrule Long Rest} without expending a spell slot."
 			],
             "prerequisite": [
                 {
@@ -2061,7 +2061,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per long rest, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a bonus action, or forgo the need to {@status concentration||concentrate} on the spell."
+				"Once per {@variantrule Long Rest}, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a {@variantrule Bonus Action}, or forgo the need to {@status concentration||concentrate} on the spell."
 			],
             "prerequisite": [
                 {
@@ -2127,7 +2127,7 @@
 				"PRU"
 			],
 			"entries": [
-				"If you cast a spell and miss all of its attack roll(s), or all targets pass their saving throws to resist its effect, you can cast a cantrip as a bonus action instead of an action. You may do this once per short rest."
+				"If you cast a spell and miss all of its attack roll(s), or all targets pass their saving throws to resist its effect, you can cast a cantrip as a {@variantrule Bonus Action} instead of an {@variantrule Action}. You may do this once per {@variantrule Short Rest}."
 			],
             "prerequisite": [
                 {
@@ -2192,7 +2192,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Your {@b Growing Heat} feature improves. A creature now takes additional damage equal to your proficiency bonus any time they take fire damage, instead of only when you deal it. The effect's duration is still only increased by you."
+				"When you deal damage to a {@condition Burning|Starlight} creature, it takes additional damage equal to your Proficiency Bonus."
 			],
             "prerequisite": [
                 {
@@ -2285,7 +2285,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You can summon a {@creature Voltaic Nature Spirit Totem|Starlight}, which prevents creatures of your choice within its area from taking reactions."
+				"You can summon a {@creature Voltaic Nature Spirit Totem|Starlight}, which prevents creatures of your choice within its area from taking {@variantrule Reaction|XPHB|Reactions}."
 			],
             "prerequisite": [
                 {
@@ -2371,7 +2371,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per turn, when you deal Thunder damage to a creature with a spell of at least 3rd level, it must make a Strength saving throw or fall {@condition prone|XPHB}."
+				"Once per turn, when you deal Thunder damage to a creature with a spell of 1st level or higher, it must make a Strength saving throw or fall {@condition prone|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -2439,8 +2439,8 @@
 				"PRU"
 			],
 			"entries": [
-				"When you deal acid damage to a creature with a spell of 1st level or higher, you can force it to make a Dexterity saving throw against your Shaman spell save DC or become {@condition sundered|Starlight} until the start of your next turn.",
-                "If the spell already requires a saving throw, this effect takes place if that saving throw is failed, instead of requiring the additional Dexterity saving throw."
+				"When you deal acid damage to a creature with a spell of 1st level or higher, it becomes {@condition Melting|Starlight}.",
+                "The {@variantrule Action} used to end the Melting condition also ends your Persistent Corrosion, and vice versa."
 			],
             "prerequisite": [
                 {
@@ -2465,7 +2465,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d4} less damage with weapon attacks."
+				"Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d6} less damage with weapon attacks."
 			],
             "prerequisite": [
                 {
@@ -2490,13 +2490,38 @@
 				"PRU"
 			],
 			"entries": [
-				"When you use your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|1|Starlight|unwavering spirit}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
-                "You can do this once, and must complete a short or long rest before you can do so again."
+				"When you use your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight|unwavering spirit}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
+                "You can do this once, and must complete a {@variantrule Short Rest} or {@variantrule Long Rest} before you can do so again."
 			],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 15,
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Mountains"
+                    ]
+                }
+            ]
+		},
+        {
+			"name": "Mountain's Echo",
+			"source": "Starlight",
+			"featureType": [
+				"PRU"
+			],
+			"entries": [
+				"When you use your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight|unwavering spirit}, the creature you target can use a {@variantrule Reaction} to make a weapon attack."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -2541,7 +2566,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|1|Starlight|Ebb and Flow water jet}, also pushes creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
+				"Your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb and Flow water jet} also pushes creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
 			],
             "prerequisite": [
                 {
@@ -2560,13 +2585,13 @@
             ]
 		},
         {
-			"name": "Affinity Jet",
+			"name": "Elemental Geyser",
 			"source": "Starlight",
 			"featureType": [
 				"PRU"
 			],
 			"entries": [
-				"When you use your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|1|Starlight|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+				"When you use your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
 			],
             "prerequisite": [
                 {
@@ -2616,7 +2641,7 @@
                 "PRU"
             ],
             "entries": [
-                "When using your {@subclassFeature Mirage|Shaman|Starlight|Dunes|Starlight|1|Starlight}, you can deal damage of the type associated with your elemental affinity equal to your proficiency bonus to all other creatures of your choice within 5 feet of the space you left."
+                "When using your {@subclassFeature Mirage|Shaman|Starlight|Dunes|Starlight|3|Starlight}, you can deal damage of the type associated with your elemental affinity equal to your proficiency bonus to all other creatures of your choice within 5 feet of the space you left."
             ],
             "prerequisite": [
                 {
@@ -2641,7 +2666,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When using your {@classFeature Spiritual Avatar|Shaman|Starlight|20|Starlight|spiritual avatar} feature, you gain an additional reaction each round."
+				"When using your {@classFeature Spiritual Avatar|Shaman|Starlight|20|Starlight|spiritual avatar} feature, you gain an additional {@variantrule Reaction} each round."
 			],
             "prerequisite": [
                 {
@@ -2666,7 +2691,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When using your {@classFeature Spiritual Avatar|Shaman|Starlight|20|Starlight|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a reaction to become {@condition Invisible} until the end of your next turn."
+				"When using your {@classFeature Spiritual Avatar|Shaman|Starlight|20|Starlight|spiritual avatar} feature, you are naturally camouflaged. When taking damage, you can use a {@variantrule Reaction} to become {@condition Invisible} until the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -2692,7 +2717,7 @@
 			],
 			"entries": [
                 "You gain the ability to conjure a Nature Spirit Totem. This tiny elemental creature applies an effect to an area within 15 feet of itself. If a totem deals damage, you are considered to have done that damage.",
-                "Summoning a totem requires an action, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a long rest or unless you expend a spell slot of first level or higher.",
+                "Summoning a totem requires an {@variantrule Action}, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a {@variantrule Long Rest} or unless you expend a spell slot of first level or higher.",
                 "The totem requires your {@status concentration} (as if you were concentrating on a spell), however, you can summon additional totems using the same concentration. Whenever you fail a Constitution saving throw to maintain your concentration, you choose one totem to disappear. If you use another effect which requires concentration such as a spell, they all disappear.",
                 "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
                 {
@@ -2740,7 +2765,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your bonus action, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
+				"Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your {@variantrule Bonus Action}, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
                 "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
 			],
             "prerequisite": [
@@ -2793,7 +2818,7 @@
 			],
 			"entries": [
 				"You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
-                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a reaction to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
+                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a {@variantrule Reaction} to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
                 "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
 			],
             "prerequisite": [
@@ -2870,8 +2895,8 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn how to summon a {@creature Manarage Nature Spirit Totem|Starlight}. You can summon it once per short rest and it provides the following benefits:",
-                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature, but no more than once per turn."
+				"You learn how to summon a {@creature Manarage Nature Spirit Totem|Starlight}. You can summon it once per {@variantrule Short Rest} and it provides the following benefits:",
+                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature, but no more than once per turn."
 			],
             "prerequisite": [
                 {
@@ -3533,7 +3558,7 @@
                     "name": "Manarage Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per short rest, without expending a use of that feature."
+                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature."
                     ]
                 },
                 {
@@ -3777,7 +3802,7 @@
                     "name": "Voltaic Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures of your choice within the area are unable to take reactions."
+                        "Creatures of your choice within the area are unable to take {@variantrule Reaction|XPHB|Reactions}."
                     ]
                 },
                 {
