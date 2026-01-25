@@ -577,7 +577,7 @@
 					"type": "entries",
 					"name": "Affinity with Flame",
 					"entries":[
-						"Your chosen element is fire. You gain the {@spell Firebolt|XPHB} or {@spell Green-Flame Blade|TCE} cantrip. Additionally, you gain the {@b Growing Heat} feature below.",
+						"Your chosen element is fire. You gain the {@spell Firebolt|XPHB} and {@spell Green-Flame Blade|TCE} cantrips. Additionally, you gain the {@b Growing Heat} feature below.",
                         {
                             "type": "entries",
                             "name": "Growing Heat",
@@ -591,7 +591,7 @@
 					"type": "entries",
 					"name": "Affinity with Frost",
 					"entries":[
-						"Your chosen element is cold. You gain the {@spell Ray of Frost|XPHB} or {@spell Frostbite|XGE} cantrip. Additionally, you gain the {@b Biting cold} feature below.",
+						"Your chosen element is cold. You gain the {@spell Ray of Frost|XPHB} and {@spell Frostbite|XGE} cantrips. Additionally, you gain the {@b Biting cold} feature below.",
                         {
                             "type": "entries",
                             "name": "Biting Cold",
@@ -605,7 +605,7 @@
 					"type": "entries",
 					"name": "Affinity with Lightning",
 					"entries":[
-						"Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|XPHB} cantrip. Additionally, you gain the {@b Arc Lightning} feature below.",
+						"Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} and {@spell Shocking Grasp|XPHB} cantrips. Additionally, you gain the {@b Arc Lightning} feature below.",
                         {
                             "type": "entries",
                             "name": "Arc Lightning",
@@ -619,7 +619,7 @@
 					"type": "entries",
 					"name": "Affinity with Thunder",
 					"entries":[
-						"Your chosen element is thunder. You gain the {@spell Thunderclap|XGE} or {@spell Booming Blade|TCE} cantrip. Additionally, you gain the {@b Thundercrack} feature below.",
+						"Your chosen element is thunder. You gain the {@spell Thunderclap|XGE} and {@spell Booming Blade|TCE} cantrips. Additionally, you gain the {@b Thundercrack} feature below.",
                         {
                             "type": "entries",
                             "name": "Thundercrack",
@@ -633,7 +633,7 @@
 					"type": "entries",
 					"name": "Affinity with Acid",
 					"entries":[
-						"Your chosen element is acid. You gain the {@spell Acid Splash|XPHB} or {@spell Primal Savagery|XGE} cantrip. Additionally, you gain the {@b Persistent Corrosion} feature below.",
+						"Your chosen element is acid. You gain the {@spell Acid Splash|XPHB} and {@spell Primal Savagery|XGE} cantrips. Additionally, you gain the {@b Persistent Corrosion} feature below.",
                         {
                             "type": "entries",
                             "name": "Persistent Corrosion",
@@ -3110,6 +3110,563 @@
                             "shortName": "Shadows",
                             "source": "Starlight"
                         }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Spark",
+            "source": "Starlight",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a wisp of primordial magic and launch it at a creature or object within range. Choose on effect from the options below. You make an attack roll, dealing {@dice 1d8} damage of the chosen type and gaining the additional benefit specified.",
+                {
+                    "type": "entries",
+                    "name": "Searing Flame (Fire)",
+                    "entries":[
+                        "If you roll an 8 on a {@dice d8} for this spell, you can roll another and add it to the damage. The maximum number of dice added this way equals your spellcasting ability modifier."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Ancient Frost (Cold)",
+                    "entries":[
+                        "Treat any roll below 3 on the {@dice d8}s for this spell as a 3."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Disruptive Spark (Lightning)",
+                    "entries":[
+                        "The target cannot take a {@variantrule Reaction} until the end of your current turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Reverberating Thunder (Thunder)",
+                    "entries":[
+                        "The target is {@condition Deafened}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Splashing Acid (Acid)",
+                    "entries":[
+                        "The target's space(s) becomes filled with acid that deals 1d8 damage to the next creature who enters it."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Eruption",
+            "source": "Starlight",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A chunk of obsidian worth at least 50gp",
+                    "cost": 5000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "An elemental disturbance causes the ground to split. Choose one effect from the options below. Creatures within a 15-foot cube that originates at a point of your choosing on the ground must make a Strength saving throw or take {@damage 2d8} damage of the chosen type and suffer the chosen effect. Creatures take half as much damage on a successful save.",
+                {
+                    "type": "entries",
+                    "name": "Molten Earth (Fire)",
+                    "entries":[
+                        "Lava sprays upwards. Creatures who failed the saving throw fall {@condition Prone}. Prone creatures within the area take an additional {@damage 1d8} fire damage."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Frozen Fissure (Cold)",
+                    "entries":[
+                        "Creatures that fail the saving throw are {@condition Restrained} until the start of your next turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Fulminant Fault (Lightning)",
+                    "entries":[
+                        "The speed at which the eruption occurs leaves creatures who fail the saving throw {@condition Staggered|Starlight} until the start of your next turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Seismic Burst (Thunder)",
+                    "entries":[
+                        "Creatures who fail the saving throw are pushed 15 feet away from the centre of the cube and fall {@condition Prone}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Caustic Vent (Acid)",
+                    "entries":[
+                        "Creatures who move through the area take {@damage 1d8} acid damage for each 5 feet moved. This effect disappears at the end of your next turn."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d8} for each slot level above 2."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "conditionInflict": [
+                "prone", "restrained", "staggered"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "Q"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Breath",
+            "source": "Starlight",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A mint plant in a pot worth at least 100gp",
+                    "cost": 10000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You unleash a flash of raw elemental force. Choose one effect from the options below. Creatures within a 30-foot cone must make a Constitution saving throw or take {@damage 7d6} damage of the chosen type and suffer the additional effect specified below. On a successful save, targets take half as much damage.",
+                {
+                    "type": "entries",
+                    "name": "Pyroclastic Smoke (Fire)",
+                    "entries":[
+                        "Creatures who fail the saving throw become {@condition Blinded} until they or an adjacent ally clears the condition with a {@variantrule Bonus Action}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Flash Freeze (Cold)",
+                    "entries":[
+                        "Creatures who fail the saving throw are {@condition Halted} until the start of your next turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Ionising Breath (Lightning)",
+                    "entries":[
+                        "Creatures who fail the saving throw cannot take a {@variantrule Bonus Action} on their next turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Pressure Wave (Thunder)",
+                    "entries":[
+                        "All creatures in the area are pushed 10 feet away from you."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Acidic Deluge (Acid)",
+                    "entries":[
+                        "Creatures in the area take an additional 3d6 acid damage at the end of their next turn unless they use an {@variantrule Action} to wipe the acid from themselves."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d6} for each slot level above 3."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "conditionInflict": [
+                "prone", "halted" 
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "Q"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Cloudburst",
+            "source": "Starlight",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A lapis stone worth at least 150gp",
+                    "cost": 15000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You call forth a cloud of energy that fills the area beneath it with an elemental effect. Choose one effect from the options below. Creatures within a 30-foot radius, 40-foot tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point within range must make a Dexterity saving throw or take {@damage 8d6} damage of the chosen type. On a success, they take half the damage only. The area is then filled with the chosen effect until the start of your next turn.",
+                {
+                    "type": "entries",
+                    "name": "Scalding Water (Fire)",
+                    "entries":[
+                        "Creatures ending their turn within the area become {@condition Burning|Starlight}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Sleet Rain (Cold)",
+                    "entries":[
+                        "The area is filled with a thick mist and is {@variantrule Heavily Obscured|XPHB}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Stormclouds (Lightning)",
+                    "entries":[
+                        "The air is filled with static electricity; creatures cannot take {@variantrule Reaction|Reactions} within the area."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Thunderclouds (Thunder)",
+                    "entries":[
+                        "Creatures are {@condition Silenced|Starlight} while in the area. "
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Acid Rain (Acid)",
+                    "entries":[
+                        "Creatures attacking from within the area take {@damage 1d6} damage whenever they attack."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d6} for each slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "conditionInflict": [
+                "burning", "silenced"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "miscTags": [ "OBS" ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Spire",
+            "source": "Starlight",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A stone model of a tower worth at least 200gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You summon an ancient monolith imbued with an elemental power chosen from the options below. The monolith has a radius of 20 feet and a height of up to 60 feet, filling any height lower than that. Creatures in the way of the monolith can choose to make a Dexterity saving throw to be placed at the edge of the area, otherwise they remain on top. If there is not space on top for the creature, they are crushed for {@damage 4d10} bludgeoning damage and then dropped outside of the area",
+                {
+                    "type": "entries",
+                    "name": "Pillar of Flame (Fire)",
+                    "entries":[
+                        "Creatures who end their turn within 10 feet of the monolith take {@damage 6d8} fire damage, objects not being worn or carried ignite. This monolith can be travelled through; it provides 3/4 cover to creatures in or on the other side of it and is {@variantrule Difficult Terrain|XPHB}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Fang of Ice (Cold)",
+                    "entries":[
+                        "Creatures who end their turn within 10 feet of this solid monolith take {@damage 5d8} cold damage and are {@condition Hampered|Starlight} until the end of their next turn."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Obelisk of Storms (Lightning)",
+                    "entries":[
+                        "Lightning is drawn towards this solid mineral spire. Creatures who start their turn within 10 feet of the spire can take an {@variantrule Action} or {@variantrule Bonus Action} on their turn, not both. Additionally, when a creature takes lightning damage while near the spire, it is increased by {@damage 2d8}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Spire of Echoes (Thunder)",
+                    "entries":[
+                        "Resonations from this stone spire amplify sound. Creatures of your choice within 20 feet of the spire are vulnerable to Thunder damage. Creatures casting spells while within 20 feet of the spire have advantage on any attack rolls made as part of that spell."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Thorn of Nox (Acid)",
+                    "entries":[
+                        "If a creature starts its turn within 10 feet of the spire, it is {@condition Hampered|Starlight} and attack and damage rolls are reduced by {@dice 1d6} until the start of its next turn, and attack and damage rolls made against it are increased by {@dice 1d6} for the same duration."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "conditionInflict": [
+                "hampered"
+            ],
+            "miscTags": [ "DFT" ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Spire",
+            "source": "Starlight",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A stone model of a tower worth at least 200gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Dexterity saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
+                {
+                    "type": "entries",
+                    "name": "Superheated Winds (Fire)",
+                    "entries":[
+                        "Objects that are not worn or carried ignite. Creatures within the area have disadvantage on Constitution saving throws made to maintain {@status Concentration}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "White Gale (Cold)",
+                    "entries":[
+                        "Dense snow {@condition Blinded|XPHB|Blinds} creatures within the area."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Static Storm (Lightning)",
+                    "entries":[
+                        "Lightning damage. At the start of each of your turns, choose a creature within the storm to be struck by lightning. It must succeed an additional Dexterity saving throw or take {@damage 3d10} lightning damage"
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Howling Squall (Thunder)",
+                    "entries":[
+                        "Creatures within are {@condition Deafened} and {@condition Silenced|Starlight}."
+                    ]
+                },                {
+                    "type": "entries",
+                    "name": "Toxic Fumes (Acid)",
+                    "entries":[
+                        "Creatures within the tempest cannot benefit from any damage resistances, and their immunities are treated as resistances."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d10} for each slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "cold", "lightning", "acid", "thunder"
+            ],
+            "conditionInflict": [
+                "hampered"
+            ],
+            "miscTags": [ "DFT" ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
                     }
                 ]
             }
