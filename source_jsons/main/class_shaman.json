@@ -3576,9 +3576,9 @@
             }
         },
         {
-            "name": "Primordial Spire",
+            "name": "Primordial Tempest",
             "source": "Starlight",
-            "level": 5,
+            "level": 7,
             "school": "E",
             "time": [
                 {
@@ -3590,24 +3590,29 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 90
                 }
             },
             "components": {
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "A stone model of a tower worth at least 200gp",
-                    "cost": 20000
+                    "text": "Fulgurite worth at least 300gp",
+                    "cost": 30000
                 }
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 10
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
-                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Dexterity saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
+                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
                 {
                     "type": "entries",
                     "name": "Superheated Winds (Fire)",
@@ -3618,7 +3623,7 @@
                     "type": "entries",
                     "name": "White Gale (Cold)",
                     "entries":[
-                        "Dense snow {@condition Blinded|XPHB|Blinds} creatures within the area."
+                        "Dense snow makes the area {@variantrule Heavily Obscured|XPHB} and {@condition Hampered|Starlight|Hampers} creatures who start their turn in it until the end of their turn."
                     ]
                 },                {
                     "type": "entries",
@@ -3653,11 +3658,11 @@
                 "fire", "cold", "lightning", "acid", "thunder"
             ],
             "conditionInflict": [
-                "hampered"
+                "deafened", "silenced", "blinded", "hampered"
             ],
-            "miscTags": [ "DFT" ],
+            "miscTags": [ "OBS" ],
             "savingThrow": [
-                "dexterity"
+                "constitution"
             ],
             "areaTags": [
                 "Y"
