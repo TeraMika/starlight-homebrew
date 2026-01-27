@@ -849,13 +849,10 @@
             "shortname": "Forests",
             "subclassFeatures": [
                 "Forests|Shaman|Starlight|Forests|Starlight|3",
-                "Extra Attack|Shaman|Starlight|Forests|Starlight|6",
+                "Relentless Pursuit|Shaman|Starlight|Forests|Starlight|6",
                 "Treeswalker|Shaman|Starlight|Forests|Starlight|6",
-                "Additional Runeblade Invocation|Shaman|Starlight|Forests|Starlight|6",
-                "Masterful Hunter|Shaman|Starlight|Forests|Starlight|10",
-                "Additional Runeblade Invocation|Shaman|Starlight|Forests|Starlight|10",
-                "Empowered Invocation|Shaman|Starlight|Forests|Starlight|14",
-                "Additional Runeblade Invocation|Shaman|Starlight|Forests|Starlight|14"
+                "Looming Presence|Shaman|Starlight|Forests|Starlight|10",
+                "Forest's Thorns|Shaman|Starlight|Forests|Starlight|14"
             ],
             "subclassSpells": [
                 "Hunter's Mark|XPHB", "Snare|XGE",
@@ -989,8 +986,7 @@
             "entries": [
                 "{@i 10th-level Waters Shaman feature}",
                 "You can breathe underwater and gain a swimming speed equal to your walking speed.",
-                "Furthermore, when a creature hits you with an attack, you can use a {@variantrule Reaction} to transform briefly into water and move up to your movement speed in any direction without provoking opportunity attacks. You also regain hitpoints equal to your Shaman level.",
-                "This movement can move through other creatures' spaces, but if you end your movement in another creature's space you are ejected to the nearest unoccupied space, taking {@damage 1d8} force damage for each 5 feet you are ejected.",
+                "Furthermore, when you take damage, you can take on the form of water as a {@variantrule Reaction}. Until the end of your next turn, whenever you would take damage, you can treat any dice rolled for that damage as having rolled their minimum value instead. Your movement speed increases by 30 feet for the same duration",
                 "You can use this {@variantrule Reaction} once per {@variantrule Short Rest}."
             ]
         },
@@ -1288,7 +1284,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Dunes Shaman feature}",
-                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|XPHB|fireball spell}), you can use your {@variantrule Reaction} to teleport 5 feet to an unoccupied space in a direction of your choice, potentially avoiding the effect."
+                "You can channel the power of the changing temperatures in the desert to conjure mirages. When you are targeted by an attack or ability that targets an area (such as a dragon's breath or a {@spell fireball|XPHB|fireball spell}), you can use your {@variantrule Reaction} to teleport 5 feet to an unoccupied space in a direction of your choice. If this would put you out of reach of the attack or effect, you avoid it."
                 
             ]
         },
@@ -1302,7 +1298,7 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Dunes Shaman feature}",
-                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per {@variantrule Short Rest}, you can spend an action to create a storm of swirling particulates in a 15 foot radius around you (this could be snow or sand, for example). This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through."
+                "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per {@variantrule Short Rest}, you can spend an {@variantrule Action} to create a storm of swirling particulates (such as snow or sand) in a 10-foot Emanation originating from you. This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through. The storm lasts for one minute or until you are {@condition Incapacitated}."
                 
             ]
         },
@@ -1364,7 +1360,7 @@
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "Forests are a resilient environment, but are more vulnerable to explicit attack than many others. To this end, Shamans of the Forests take on the role of a hunter, personally handling those who would threaten the forests, be that its trees, inhabitants, or plantlife. The power of the forests grants pursuit, recovery and adaptability - Shamans living this way are open to new solutions, working together, and recovering from a setback.",
+                "Forests are a resilient and tricky environment, with flora and fauna that can be both friend and foe. They know who belongs and who does not. Shamans of the Forests understand this; they are as relentless as the forest itself and call on its powers to hunt down those who would threaten it.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Forests Shaman Spells|Shaman|Starlight|Forests|Starlight|3"
@@ -1375,11 +1371,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runeblade|Shaman|Starlight|Forests|Starlight|3"
+                    "subclassFeature": "Wild Mark|Shaman|Starlight|Forests|Starlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Runeblade Invocation|Shaman|Starlight|Forests|Starlight|3"
+                    "subclassFeature": "Canopy's Shelter|Shaman|Starlight|Forests|Starlight|3"
                 }
             ]
         },
@@ -1440,12 +1436,11 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
-                "The rampant plant growth in a forested environment provides opportunity, but also cover. You are trained to see past that cover, and make use of plants and herbs available to you. You have proficiency with the {@item Herbalism Kit|XPHB} and with the {@skill Perception} skill.",
-                "Furthermore, owing to your hunting training, you have proficiency with medium armour. You can choose to replace your starting Leather Armour with Scale Mail instead."
+                "The rampant plant growth in a forested environment provides opportunity, but also cover. You are trained to see past that cover, and make use of plants and herbs available to you. You have proficiency with the {@item Herbalism Kit|XPHB} and with the {@skill Perception} skill."
             ]
         },
         {
-            "name": "Runeblade",
+            "name": "Wild Mark",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -1454,12 +1449,13 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
-                "You can spend one minute to conjure a Runeblade, a weapon forged of primal magic and natural growth - it is as strong as a normal weapon but nonmagical. The weapon can be any with the finesse property, for example, a {@item dagger|XPHB}, {@item shortsword|XPHB}, {@item scimitar|XPHB}, {@item whip|XPHB} or {@item rapier|XPHB}. You determine its appearance, but it should take on the approximate physical qualities of the weapon you conjured; for example, a whip might be made of vines, or a shortsword from a bark cutting edge. If you conjure a second Runeblade, the first one withers and disappears to dust. You are considered Proficient with your Runeblade.",
-                "If you possess a magical weapon, you may spend an hour performing a primal ritual to connect with the weapon, which can be done as part of a {@variantrule Short Rest} or attunement. The weapon becomes nonmagical, and your Runeblade takes on its magical properties when conjured. This connection lasts until you choose to end it or replace it with another magical weapon, at which point the magic returns to the original weapon."
+                "When you damage a creature, you can mark it until the end of your next turn. You can have only one creature marked this way at a time.",
+                "While marked, a creature cannot benefit from the {@variantrule Disengage} action, and if it ends its turn more than 30 feet away from you, you can use your {@variantrule Reaction} to move up to half your Speed towards it.",
+                "Additionally, the first attack it makes against you each turn has {@variantrule Disadvantage}."
             ]
         },
         {
-            "name": "Runeblade Invocation",
+            "name": "Canopy's Shelter",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -1468,83 +1464,11 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
-                "You can use your primal magic to invoke the runes on your Runeblade. When you take the {@action Attack|XPHB} action, you can expend a spell slot of any level to cause the following effects to take place.",
-                {
-                    "type": "list",
-                    "items": [
-                        "Your Runeblade deals {@damage 1d4} additional damage. The damage is equal to the weapon's type or, if you have the feature, the damage type of your {@classFeature Elemental Affinity|Shaman|Starlight|3|Starlight|elemental affinity} (you choose).",
-                        "If you expend a spell slot of 2nd level or higher, your Runeblade attacks deal an additional 3 damage per slot level above first.",
-                        "You activate one of your known Runeblade Invocations, detailed below."
-                    ]
-                },
-                "You can choose 3 of the following Runeblade powers to learn, and you learn an additional powers at 6th, 10th and 14th level in this class. When you gain a level in this class, you can replace one power with another from this feature. If a power has a level requirement, you must be at least that level in this class to learn it. If a power requires a saving throw, it uses your Shaman spell save DC. Powers last until the start of the following turn from their activation.",
-                {
-                    "type": "entries",
-                    "name": "Rapid Growth",
-                    "entries": [
-                        "Your Runeblade has an additional 5ft of reach."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Leeching Seed",
-                    "entries": [
-                        "When you damage an enemy with your Runeblade, you regain hit points equal to the damage dealt by the attack (not including the additional damage from this feature)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Deep Foliage",
-                    "entries": [
-                        "You are surrounded by the leaves of the forest, granting you a +3 bonus to your AC and Dexterity saving throws."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Gust Step",
-                    "entries": [
-                        "Your movement speed is increased by 20 feet."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Razorleaf Edge",
-                    "entries": [
-                        "Your Runeblade attacks cause targets to {@condition Bleed|Starlight}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Erupting Vines (6th level or higher)",
-                    "entries": [
-                         "The first time you hit a creature with your Runeblade this turn, it must make a Strength saving throw or become {@condition Restrained} until the start of your next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Sporeburst (6th level or higher)",
-                    "entries": [
-                         "Once, when you hit a creature with your Runeblade, you can force it to make a Wisdom saving throw or become {@condition Dazed|Starlight} until the end of its turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Hunter's Instinct (10th level or higher)",
-                    "entries": [
-                         "You gain a +2 bonus to attack rolls with your Runeblade."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Distracting Colouration (10th level or higher)",
-                    "entries": [
-                        "Your attacks demand attention, or cow your opponents. The first creature you hit with your Runeblade is either {@condition charmed|XPHB} by you, or it has disadvantage to attack a creature other than you on its next turn."
-                    ]
-                }
+                "While you are not {@condition Incapacitated}, ranged attacks made against you have disadvantage if the attacker is more than 30 feet away from you."
             ]
         },
         {
-            "name": "Extra Attack",
+            "name": "Relentless Pursuit",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -1553,7 +1477,8 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Forests Shaman feature}",
-                "When you take the {@action Attack|XPHB} action on your turn, you can attack twice with your Runeblade instead of once."
+                "When a creature marked by your Wild Mark ends its turn more than 10 feet away from you, it takes damage equal to your Wisdom modifier. This damage cannot activate Wild Mark.",
+                "Any creature marked by your Wild Mark treats forest terrain (such as thick leafbeds, root-laden floors, or heavy undergrowth) as difficult terrain."
             ]
         },
         {
@@ -1571,20 +1496,7 @@
             ]
         },
         {
-            "name": "Additional Runeblade Invocation",
-            "source": "Starlight",
-            "className": "Shaman",
-            "classSource": "Starlight",
-            "subclassShortName": "Forests",
-            "subclassSource": "Starlight",
-            "level": 6,
-            "entries": [
-                "{@i 6th-level Forests Shaman feature}",
-                "You learn one additional Runeblade Invocation."
-            ]
-        },
-        {
-            "name": "Masterful Hunter",
+            "name": "Looming Presence",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -1593,24 +1505,11 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Forests Shaman feature}",
-                "You can {@action Hide|XPHB} as a {@variantrule Bonus Action}, and can attempt to do so when you are only lightly obscured. While hidden, your movement speed is increased by 15 feet."
+                "You embody the spirit of the giant trees of the forest. While a creature marked by your Wild Mark is within your reach, you have advantage on opportunity attacks against it. If you hit it with an opportunity attack, it becomes {@condition Frightened} of you until the end of its next turn."
             ]
         },
         {
-            "name": "Additional Runeblade Invocation",
-            "source": "Starlight",
-            "className": "Shaman",
-            "classSource": "Starlight",
-            "subclassShortName": "Forests",
-            "subclassSource": "Starlight",
-            "level": 10,
-            "entries": [
-                "{@i 10th-level Forests Shaman feature}",
-                "You learn one additional Runeblade Invocation."
-            ]
-        },
-        {
-            "name": "Empowered Invocation",
+            "name": "Forest's Thorns",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -1619,20 +1518,7 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Forests Shaman feature}",
-                "A number of times per day equal to your proficiency bonus, you can activate two effects simultaneously when you {@subclassFeature Runeblade Invocation|Shaman|Starlight|Forests|Starlight|3|Starlight|invoke your runeblade}."
-            ]
-        },
-        {
-            "name": "Additional Runeblade Invocation",
-            "source": "Starlight",
-            "className": "Shaman",
-            "classSource": "Starlight",
-            "subclassShortName": "Forests",
-            "subclassSource": "Starlight",
-            "level": 14,
-            "entries": [
-                "{@i 14th-level Forests Shaman feature}",
-                "You learn one additional Runeblade Invocation."
+                "The first time each turn a creature within your reach hits you with an attack or forces you to make a saving throw, it takes damage equal to your Wisdom modifier of a type matching your Elemental Affinity or Psychic (you choose) and has Disadvantage on its next attack roll this turn."
             ]
         }
     ],
@@ -2192,7 +2078,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When you deal damage to a {@condition Burning|Starlight} creature, it takes additional damage equal to your Proficiency Bonus."
+				"When you deal fire damage to a {@condition Burning|Starlight} creature, it takes additional damage equal to your Proficiency Bonus."
 			],
             "prerequisite": [
                 {
@@ -2895,8 +2781,8 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn how to summon a {@creature Manarage Nature Spirit Totem|Starlight}. You can summon it once per {@variantrule Short Rest} and it provides the following benefits:",
-                "Creatures within the area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature, but no more than once per turn."
+				"You learn how to summon a {@creature Manarage Nature Spirit Totem|Starlight}. You can summon it once per short rest and it provides the following benefits:",
+                "Creatures within the area have +2 spellpower."
 			],
             "prerequisite": [
                 {
@@ -3629,7 +3515,7 @@
                     "type": "entries",
                     "name": "Static Storm (Lightning)",
                     "entries":[
-                        "Lightning damage. At the start of each of your turns, choose a creature within the storm to be struck by lightning. It must succeed an additional Dexterity saving throw or take {@damage 3d10} lightning damage"
+                        "At the start of each of your turns, choose a creature within the storm to be struck by lightning. It must succeed an additional Dexterity saving throw or take {@damage 3d10} lightning damage"
                     ]
                 },                {
                     "type": "entries",
@@ -3875,7 +3761,7 @@
                     "name": "Warding Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "When a creature hostile to you attempts to enter the totem's area, it must make a {@savingThrow Wisdom} saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
+                        "When a creature hostile to you attempts to enter the totem's area, it must make a Wisdom saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
                     ]
                 },
                 {
@@ -4181,7 +4067,7 @@
                     "name": "Enforcement Totem Aura",
                     "entries": [
                         "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved agains their will."
+                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved against their will."
                     ]
                 },
                 {
@@ -4197,7 +4083,7 @@
                     "name": "Totemic Blast",
                     "entries": [
                         "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use." 
+                        "{@note This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use.}" 
                     ]
                 }
             ],
@@ -4206,7 +4092,7 @@
                     "name": "Totem Commander",
                     "entries": [
                         "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                        "{@note This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use.}"
                     ]
                 }
             ]
