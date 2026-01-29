@@ -1451,7 +1451,7 @@
                 "{@i 3rd-level Forests Shaman feature}",
                 "When you damage a creature, you can mark it until the end of your next turn. You can have only one creature marked this way at a time.",
                 "While marked, a creature cannot benefit from the {@variantrule Disengage} action, and if it ends its turn more than 30 feet away from you, you can use your {@variantrule Reaction} to move up to half your Speed towards it.",
-                "Additionally, the first attack it makes against you each turn has {@variantrule Disadvantage}."
+                "Additionally, it subtracts a {@dice 1d4} from melee attack rolls it makes against you."
             ]
         },
         {
@@ -1464,7 +1464,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
-                "While you are not {@condition Incapacitated}, ranged attacks made against you have disadvantage if the attacker is more than 30 feet away from you."
+                "While you are not {@condition Incapacitated}, ranged attacks made against you have disadvantage if the attacker is 30 feet or closer to you."
             ]
         },
         {
@@ -1477,7 +1477,7 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Forests Shaman feature}",
-                "When a creature marked by your Wild Mark ends its turn more than 10 feet away from you, it takes damage equal to your Wisdom modifier. This damage cannot activate Wild Mark.",
+                "When a creature marked by your Wild Mark ends its turn out of your reach, it takes damage equal to your Wisdom modifier. This damage cannot activate Wild Mark.",
                 "Any creature marked by your Wild Mark treats forest terrain (such as thick leafbeds, root-laden floors, or heavy undergrowth) as difficult terrain."
             ]
         },
