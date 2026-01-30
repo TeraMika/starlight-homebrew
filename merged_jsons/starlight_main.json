@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.18.09",
+                "version": "2026.01.30.19.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.18.09",
+                "version": "2026.01.30.19.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.18.09",
+                "version": "2026.01.30.19.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +56,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.18.09",
+                "version": "2026.01.30.19.26",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -64,7 +64,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1769796590.92001
+        "dateLastModified": 1769801171.3123038
     },
     "class": [
         {
@@ -1956,10 +1956,11 @@
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
-            "shortname": "Waters",
+            "shortName": "Waters",
             "subclassFeatures": [
                 "Waters|Shaman|Starlight|Waters|Starlight|3",
-                "Ebb and Flow Improvement|Shaman|Starlight|Waters|Starlight|6",
+                "Ebb and Flow Improvements|Shaman|Starlight|Waters|Starlight|6",
+                "Seastrider|Shaman|Starlight|Waters|Starlight|6",
                 "Flow As Water|Shaman|Starlight|Waters|Starlight|10",
                 "Master of the Tides|Shaman|Starlight|Waters|Starlight|14"
             ],
@@ -1981,11 +1982,12 @@
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
-            "shortname": "Mountains",
+            "shortName": "Mountains",
             "subclassFeatures": [
                 "Mountains|Shaman|Starlight|Mountains|Starlight|3",
                 "Earthly Attachments|Shaman|Starlight|Mountains|Starlight|6",
-                "Unwavering Spirit Improvement|Shaman|Starlight|Mountains|Starlight|10",
+                "Hillswalker|Shaman|Starlight|Mountains|Starlight|6",
+                "Earthen Scales Improvement|Shaman|Starlight|Mountains|Starlight|10",
                 "Spirit of the Valley|Shaman|Starlight|Mountains|Starlight|10",
                 "True Mettle|Shaman|Starlight|Mountains|Starlight|14",
                 "Watcher of the World|Shaman|Starlight|Mountains|Starlight|14"
@@ -2008,7 +2010,7 @@
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
-            "shortname": "Dunes",
+            "shortName": "Dunes",
             "subclassFeatures": [
                 "Dunes|Shaman|Starlight|Dunes|Starlight|3",
                 "Control the Storm|Shaman|Starlight|Dunes|Starlight|6",
@@ -2034,7 +2036,7 @@
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
-            "shortname": "Forests",
+            "shortName": "Forests",
             "subclassFeatures": [
                 "Forests|Shaman|Starlight|Forests|Starlight|3",
                 "Relentless Pursuit|Shaman|Starlight|Forests|Starlight|6",
@@ -2810,7 +2812,11 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Ebb and Flow|Shaman|Starlight|Waters|Starlight|3"
+                    "subclassFeature": "Ebb|Shaman|Starlight|Waters|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Flow|Shaman|Starlight|Waters|Starlight|3"
                 },
                 {
                     "type": "refSubclassFeature",
@@ -2880,7 +2886,7 @@
             ]
         },
         {
-            "name": "Ebb and Flow",
+            "name": "Ebb",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -2889,11 +2895,24 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Waters Shaman feature}",
-                "When you restore hit points to a creature, you can use an {@variantrule Action} or a {@variantrule Bonus Action} to throw a jet of water at an opponent within 30 feet. Make a ranged spell attack: on a hit, the target takes {@damage 1d4} bludgeoning damage and is knocked {@condition Off-balance|Starlight}."
+                "You maintain balance, where life inevitably brings harm. When you restore hit points to a creature on your turn, you can use a {@variantrule Bonus Action} on that turn to throw a jet of powerful water at a creature within 30 feet. Make a spell attack roll. On a hit, the target takes bludgeoning damage equal to {@dice 1d4} + your spellcasting ability modifier and becomes {@condition Off-balance|Starlight}."
             ]
         },
         {
-            "name": "Ebb and Flow Improvement",
+            "name": "Flow",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "subclassShortName": "Waters",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Waters Shaman feature}",
+                "You maintain balance, where life springs from danger. When you deal damage to a creature on your turn, you can use a {@variantrule Bonus Action} on that turn to throw a jet of restorative water at a creature within 30 feet. The creature targeted regains hit points equal to {@dice 1d4} + your spellcasting ability modifier."
+            ]
+        },
+        {
+            "name": "Ebb and Flow Improvements",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -2902,7 +2921,20 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Waters Shaman feature}",
-                "The damage of the water jet increases to {@damage 2d4} + your Wisdom modifier."
+                "When you use your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} or {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jet, its power increases to {@dice 2d4} + your spellcasting ability modifier, and its range is 60 feet."
+            ]
+        },
+        {
+            "name": "Seastrider",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "subclassShortName": "Waters",
+            "subclassSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Waters Shaman feature}",
+                "Your experience with waterlogged terrain means that you are no longer affected by difficult terrain on watery surfaces such as mud, marsh, shallow water, or similar terrain."
             ]
         },
         {
@@ -2930,9 +2962,9 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Waters Shaman feature}",
-                "Your Ebb and Flow has improved to match the very motion of the world itself, in the model of the ocean's tides.",
-                "When your water jet hits a target, you can restore hit points equal to the damage dealt to a creature of your choice within 30 feet of the target. The damage of the water jet increases to {@damage 2d8} + your wisdom modifier.",
-                "Finally, you can use the water jet without needing to restore hit points to a creature."
+                "Your Ebb and Flow have improved to match the very motion of the world itself, in the model of the ocean's tides.",
+                "The power of the water jet increases to {@dice 2d10} + your spellcasting ability modifier and its range increases to 120 feet.",
+                "When you use {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb}, you can also use {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} with the same {@variantrule Bonus Action}, and vice versa."
             ]
         },
         {
@@ -2959,7 +2991,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3"
+                    "subclassFeature": "Earthen Scales|Shaman|Starlight|Mountains|Starlight|3"
                 }
             ]
         },
@@ -3038,7 +3070,7 @@
             ]
         },
         {
-            "name": "Unwavering Spirit",
+            "name": "Earthen Scales",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -3047,7 +3079,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Mountains Shaman feature}",
-                "You can call on the spirits for active protection when you are in danger. When you take damage, you can use a {@variantrule Reaction} to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
+                "You can call on the spirits for active protection when creatures of the world are in danger. When you or a creature you can see within 30 feet takes damage, you can use a {@variantrule Reaction} to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
                 "You can do this a number of times per {@variantrule Long Rest} equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
             ]
         },
@@ -3061,12 +3093,25 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
-                "You are connected to the earth and ground, and all living things on them. When you see a creature within 30 feet of you take damage, you can channel your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} to protect them instead of yourself, reducing the damage they take.",
-                "The damage reduction of your Unwavering Spirit is increased to {@dice 2d6} plus your Constitution modifier."
+                "Your earthly connections deepend. The damage reduction of your Earthen Scales is increased to {@dice 2d6} plus your Constitution modifier.",
+                "Your Earthen Scales also recharges on a {@variantrule Short Rest}, instead of a {@variantrule Long Rest}."
             ]
         },
         {
-            "name": "Unwavering Spirit Improvement",
+            "name": "Hillswalker",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "subclassShortName": "Mountains",
+            "subclassSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Mountains Shaman feature}",
+                "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
+            ]
+        },
+        {
+            "name": "Earthen Scales Improvement",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
@@ -3075,7 +3120,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                "The mountains watch over vast swathes of land, as you do, and now your own magic becomes a source of this protection. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 3d6} plus your Constitution modifier and your Wisdom modifier."
+                "The mountains watch over vast swathes of land, as you do, and now your own magic becomes a source of this protection. The damage reduction from your {@subclassFeature Earthen Scales|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 3d6} plus your Constitution modifier."
             ]
         },
         {
@@ -3088,8 +3133,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
-                "You can call on the chilling winds of the valley. You can use an {@variantrule Action} to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you. Once you do, you cannot do so again until you finish a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest}.",
-                "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
+                "You can call on the chilling winds of the valley. You can use an {@variantrule Action} to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you until the end of your next turn. When you do so, you become Tough for the next minute; if you take 10 or less damage, you instead take no damage. Once you do, you cannot do so again until you finish a {@variantrule Long Rest}."
             ]
         },
         {
@@ -3102,8 +3146,8 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Mountains Shaman feature}",
-                "You are a titan of endurance, a bastion for your allies. The damage reduction from your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 4d6} plus your Constitution modifier and your Wisdom modifier.",
-                "Alternatively, you can now use your unwavering spirit to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a {@variantrule Reaction} and use of your unwavering spirit to reduce it to 1 hit point instead."
+                "You are a titan of endurance, a bastion for your allies. The damage reduction from your {@subclassFeature Earthen Scales|Shaman|Starlight|Mountains|Starlight|3|Starlight} increases to {@dice 4d6} plus your Constitution modifier.",
+                "Alternatively, you can now use your Earthen Scales to protect a creature from death. When the target would be reduced to 0 hit points as a result of taking damage, you can expend a {@variantrule Reaction} and use of your Earthen Scales to reduce it to 1 hit point instead."
             ]
         },
         {
@@ -6030,7 +6074,7 @@
                 "PRU"
             ],
             "entries": [
-                "When you use your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight|unwavering spirit}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
+                "When you use your {@subclassFeature Earthen Scales|Shaman|Starlight|Mountains|Starlight|3|Starlight|Earthen Scales}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
                 "You can do this once, and must complete a {@variantrule Short Rest} or {@variantrule Long Rest} before you can do so again."
             ],
             "prerequisite": [
@@ -6056,7 +6100,7 @@
                 "PRU"
             ],
             "entries": [
-                "When you use your {@subclassFeature Unwavering Spirit|Shaman|Starlight|Mountains|Starlight|3|Starlight|unwavering spirit}, the creature you target can use a {@variantrule Reaction} to make a weapon attack."
+                "When you use your {@subclassFeature Earthen Scales|Shaman|Starlight|Mountains|Starlight|3|Starlight|Earthen Scales}, the creature you target can use a {@variantrule Reaction} to make a weapon attack."
             ],
             "prerequisite": [
                 {
@@ -6106,7 +6150,7 @@
                 "PRU"
             ],
             "entries": [
-                "Your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb and Flow water jet} also pushes creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
+                "Your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets also push creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
             ],
             "prerequisite": [
                 {
@@ -6131,7 +6175,7 @@
                 "PRU"
             ],
             "entries": [
-                "When you use your {@subclassFeature Ebb and Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb and Flow water jet}, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+                "When you use your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets, you can choose to make its damage match your elemental affinity instead of bludgeoning."
             ],
             "prerequisite": [
                 {
