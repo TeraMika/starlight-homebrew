@@ -32,20 +32,19 @@
             "classFeatures": [
 				"Optional Rule: Alternate Ability Shaman|Shaman|Starlight|1|Starlight",
 				"Spellcasting|Shaman|Starlight|1|Starlight",
-				"Elemental Affinity|Shaman|Starlight|1|Starlight",
+                "Paths of the Shaman|Shaman|Starlight|1|Starlight",
+				"Elemental Affinity|Shaman|Starlight|2|Starlight",
 				"Primordial Runes|Shaman|Starlight|2|Starlight",
                 "Elemental Origin|Shaman|Starlight|3|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|4",
 				"Elemental Origin Feature|Shaman|Starlight|6|Starlight",
-				"Elemental Affinity Improvement|Shaman|Starlight|7|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|8",
-                "Primordial Knowledge|Shaman|Starlight|9|Starlight",
+                "Down the Path|Shaman|Starlight|9|Starlight",
 				"Elemental Origin Feature|Shaman|Starlight|10|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|12",
 				"Elemental Origin Feature|Shaman|Starlight|14|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|16",
-                "Elemental Affinity Improvement|Shaman|Starlight|17|Starlight",
-				"Overload|Shaman|Starlight|18|Starlight",
+                "Elemental Embodiment|Shaman|Starlight|18|Starlight",
 				"Epic Boon|Fighter|XPHB|19",
 				"Spiritual Avatar|Shaman|Starlight|20|Starlight"
 			],
@@ -565,85 +564,103 @@
             ]
         },
         {
-            "name": "Elemental Affinity",
+            "name": "Paths of the Shaman",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 1,
-            "entries":
-            [
-                "At 1st level, your attunement to nature grants you an affinity with a specific element. Choose one of the following:",
+            "type": "entries",
+            "entries": [
+                "You have dedicated yourself to one of the following Shamanic paths, a specific approach to channeling the power of nature or its spirits.",
                 {
-					"type": "entries",
-					"name": "Affinity with Flame",
-					"entries":[
-						"Your chosen element is fire. You gain the {@spell Firebolt|XPHB} and {@spell Green-Flame Blade|TCE} cantrips. Additionally, you gain the {@b Growing Heat} feature below.",
+                    "type": "entries",
+                    "entries": [
                         {
-                            "type": "entries",
-                            "name": "Growing Heat",
-                            "entries":[
-                                "When you deal fire damage to a creature, they become {@condition Burning|Starlight} until the end of your next turn."
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "name": "Path of the Conduit",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 1,
+                                    "entries": [
+                                        "You are a conduit for nature's power directly. Shamans who take this path focus on the raw power of their spellcasting instead of any other means.",
+                                        {
+                                            "type": "list",
+                                            "items":[
+                                                "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Path of the Runeblade",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 1,
+                                    "entries": [
+                                        "The Runeblade is a direct means of controlling your primal magic into combat. Shamans who take this path are likely to be the first into the fray, using magic to shore up their martial offense.",
+                                        {
+                                            "type": "list",
+                                            "items":[
+                                                "{@b Runeblade.} As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with Runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spell focus for your Shaman spells.",
+                                                "{@b Runeblade Conversion.} Over the course of an hour's ritual, you can convert a magical weapon to be your Runeblade, and can do so to only one magical weapon at a time.",
+                                                "{@b Battle Ready.} You gain proficiency with martial weapons, medium armor, and shields."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Path of the Conjurer",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 1,
+                                    "entries": [
+                                        "You manifest primal power differently, through tiny spirits in the form of totems. Shamans who take this path use their totems to aid their allies and hinder their foes in a variety of ways.",
+                                        {
+                                            "type": "list",
+                                            "items":[
+                                                "{@b Totems.} You gain the ability to summon a nature spirit totem. These tiny elemental creatures each apply a unique effect in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from themselves. If a totem deals damage, you are considered to have done that damage. Summoning a totem requires an Action, and you can have two such totems active at any time. Each totem lasts one minute. You can summon a Totem at no cost, but must expend a first level spell slot or complete a Short Rest to do so again. You know how to summon two totems from the list below, and can change your selection whenever you gain a level in this class.",
+                                                {
+                                                    "type": "list",
+                                                    "items": [
+                                                        "{@b Taunting.} Creatures of your choice have disadvantage when attacking any creature in the area that isn't the totem.",
+                                                        "{@b Warding.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
+                                                        "{@b Warning.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
+                                                        "{@b Lifting.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
+                                                        "{@b Blessing.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
+                                                        "{@b Manatide.} Creatures in the area gain +2 spell power."
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Path of the Seer",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 1,
+                                    "entries": [
+                                        "You can commune with spirits more directly, guiding them to assist you and your allies in many ways. Shamans who take this path might serve the role of oracles, advisors, or spiritual leaders.",
+                                        {
+                                            "type": "list",
+                                            "items":[
+                                                "{@b Guiding Spirits.} You can direct primordial spirits to assist your nearby allies. You can take the {@action Help} Action as a {@variantrule Bonus Action} and at a range of 30 feet.",
+                                                "{@b Spiritual Insights.} You gain proficiency in the {@skill Religion} or {@skill History} skill (your choice)."
+                                            ]
+                                        }
+                                    ]
+                                }
                             ]
                         }
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Affinity with Frost",
-					"entries":[
-						"Your chosen element is cold. You gain the {@spell Ray of Frost|XPHB} and {@spell Frostbite|XGE} cantrips. Additionally, you gain the {@b Biting cold} feature below.",
-                        {
-                            "type": "entries",
-                            "name": "Biting Cold",
-                            "entries":[
-                                "Once per round, when you deal cold damage to a creature, that creature suffers a penalty equal to your proficiency bonus to the next attack roll or ability check that it makes before the start of your next turn."
-                            ]
-                        }
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Affinity with Lightning",
-					"entries":[
-						"Your chosen element is lightning. You gain the {@spell Crackling Bolt|J:General} and {@spell Shocking Grasp|XPHB} cantrips. Additionally, you gain the {@b Arc Lightning} feature below.",
-                        {
-                            "type": "entries",
-                            "name": "Arc Lightning",
-                            "entries":[
-                                "Once per round, when you deal lightning damage to a creature, you can arc lightning from one target to another. Up to two different creatures of your choice within 15 feet of the original target take Lightning damage equal to your proficiency bonus."
-                            ]
-                        }
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Affinity with Thunder",
-					"entries":[
-						"Your chosen element is thunder. You gain the {@spell Thunderclap|XGE} and {@spell Booming Blade|TCE} cantrips. Additionally, you gain the {@b Thundercrack} feature below.",
-                        {
-                            "type": "entries",
-                            "name": "Thundercrack",
-                            "entries":[
-                                "Once per turn, when you deal Thunder damage to a creature, you may move it five feet in a direction of your choice, provided it is large or smaller. Additionally, whenever you deal thunder damage to an object, you maximise the value of the dice instead of rolling damage against that object."
-                            ]
-                        }
-					]
-				},
-                {
-					"type": "entries",
-					"name": "Affinity with Acid",
-					"entries":[
-						"Your chosen element is acid. You gain the {@spell Acid Splash|XPHB} and {@spell Primal Savagery|XGE} cantrips. Additionally, you gain the {@b Persistent Corrosion} feature below.",
-                        {
-                            "type": "entries",
-                            "name": "Persistent Corrosion",
-                            "entries":[
-                                "When you deal acid damage to a creature, you can cause the acid to linger on them. At the start of each of its turns, the creature takes acid damage equal to your proficiency bonus. The acid lasts until a creature uses its {@variantrule Action} to remove it, or you use this feature again on a different target."
-                            ]
-                        }
-					]
-				},
-                "You can change your elemental affinity whenever you gain a level in this class."
+                    ]
+                }
             ]
         },
         {
@@ -654,10 +671,90 @@
             "level": 2,
             "entries":
             [
-                "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or allow you to conjure totems which grant benefits within an area.",
+                "Your access to the primal forces of the world has granted you access to Primordial Runes, fragments of primal spirits which can enhance your own power, grant you new abilities or empower your existing ones.",
                 "At 2nd level, you gain 2 Primordial Runes of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|feature type=PRU} page. When you gain certain Shaman levels, you gain additional runes of your choice, as shown in the Runes column of the Shaman table.",
                 "Additionally, when you gain a level in this class, you can choose one of the runes you know and replace it with another that you could learn at that level.",
-                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, for example you change your elemental affinity, you may replace it with another rune for which you meet the prerequisite."
+                "If a rune has prerequisites, you must meet them to gain that rune. You can gain a rune at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a rune, by changing your elemental affinity for example, you may replace it with another rune for which you meet the prerequisite."
+            ]
+        },
+        {
+            "name": "Elemental Affinity",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 2,
+            "entries":
+            [
+                "You are attuned with all aspects of nature, but one speaks to you much more strongly.",
+                "When you choose an Elemental Affinity, you gain a cantrip from the options listed and become resistant to that damage type.",
+                "You will also gain access to a series of Primordial Runes that can deepen your affinity.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "name": "Affinity with Flame (Fire)",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 2,
+                                    "entries": [
+                                        "You gain the {@spell Firebolt|XPHB} or {@spell Green-Flame Blade|TCE} cantrip."
+                                    ],
+                                    "type": "entries"
+                                },
+                                {
+                                    "name": "Affinity with Frost (Cold)",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 2,
+                                    "entries": [
+                                        "You gain the {@spell Ray of Frost|XPHB} or {@spell Frostbite|XGE} cantrip."
+                                    ],
+                                    "type": "entries"
+                                },
+                                {
+                                    "name": "Affinity with Lightning (Lightning)",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 2,
+                                    "entries": [
+                                        "You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|XPHB} cantrip."
+                                    ],
+                                    "type": "entries"
+                                },
+                                {
+                                    "name": "Affinity with Thunder (Thunder)",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 2,
+                                    "entries": [
+                                        "You gain the {@spell Thunderclap|XPHB} or {@spell Booming Blade|TCE} cantrip."
+                                    ],
+                                    "type": "entries"
+                                },
+                                {
+                                    "name": "Affinity with Acid (Acid)",
+                                    "source": "Starlight",
+                                    "className": "Shaman",
+                                    "classSource": "Starlight",
+                                    "level": 2,
+                                    "entries": [
+                                        "You gain the {@spell Acid Splash|XPHB} or {@spell Primal Savagery|XGE} cantrip."
+                                    ],
+                                    "type": "entries"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "You can change your elemental affinity whenever you gain a level in this class."
             ]
         },
         {
@@ -685,28 +782,47 @@
             "gainSubclassFeature": true
         },
         {
-            "name": "Elemental Affinity Improvement",
-            "source": "Starlight",
-            "className": "Shaman",
-            "classSource": "Starlight",
-            "level": 7,
-            "entries": [
-                "At 7th level, your attunement to the elements grows deeper. You become resistant to the damage type of your chosen elemental affinity."
-            ]
-        },
-        {
-            "name": "Primordial Knowledge",
+            "name": "Down the Path",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "Your strong connection to nature allows you access to ancient knowledge and abilities.",
+                "You gain an additional benefit from your Path of the Shaman.",
                 {
-                    "type": "list",
-                    "items": [
-                        "You gain a bonus to {@skill arcana} and {@skill nature} checks equal to your spellcasting ability modifier.",
-                        "Additionally, you learn the {@spell Skill Empowerment|XGE} spell and can cast it once per {@variantrule Long Rest} without expending a spell slot. It does not count against the number of Shaman spells you know."
+                    "type": "entries",
+                    "name": "Path of the Conduit",
+                    "entries": [
+                        "You learn an additional Shaman cantrip of your choice and gain a bonus to Arcana checks equal to your spellcasting modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Path of the Runeblade",
+                    "entries": [
+                        "Your Runeblade deals an additional 1d4 damage of a type matching your Elemental Affinity."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Path of the Conjurer",
+                    "entries": [
+                        "You know up to four totems from the list, and the list gains these additional options:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "{@b Unerring Aim.} You may expend a {@variantrule Reaction} to grant a creature in your totem's emanation advantage on an attack roll it makes. You can do this before or after the roll.",
+                                "{@b Vortex.} Creatures of your choice within range of this totem take damage of the type associated with your elemental affinity whenever they start their turn or enter the Totem's Emanation. The damage is a number of {@dice d4}s equal to your proficiency bonus.",
+                                "{@b Life.} Creatures within this totem's Emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they do not have any."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Path of the Seer",
+                    "entries": [
+                        "You have advantage on Initiative rolls, and can swap your Initiative and a willing ally's at the start of combat."
                     ]
                 }
             ]
@@ -734,26 +850,13 @@
             "gainSubclassFeature": true
         },
         {
-            "name": "Elemental Affinity Improvement",
-            "source": "Starlight",
-            "className": "Shaman",
-            "classSource": "Starlight",
-            "level": 17,
-            "entries": [
-                "At 17th level, you are a paragon of your chosen element. You become immune to the damage type of your chosen elemental affinity."
-            ]
-        },
-        {
-            "name": "Overload",
+            "name": "Elemental Embodiment",
             "source": "Starlight",
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "At 18th level, you gain the ability to briefly push your magical abilities to their limit by experiencing magical feedback.",
-                "When you cast a Shaman spell, you can deal the maximum possible damage instead of rolling on the turn that you cast it.",
-                "Upon doing so, you take force damage equal to your Shaman level plus the level of the spell cast, which cannot be reduced in any way, and you cannot cast spells until after your next turn.",
-                "After you use this ability, you cannot do so again until you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest}."
+                "At 18th level, you are a paragon of your chosen element. You become immune to the damage type of your chosen elemental affinity."
             ]
         },
         {
