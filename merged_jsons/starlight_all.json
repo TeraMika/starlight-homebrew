@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +56,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -67,7 +67,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -79,7 +79,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.01.30.19.26",
+                "version": "2026.01.31.10.43",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -88,7 +88,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1769801171.3654354
+        "dateLastModified": 1769856191.2816517
     },
     "class": [
         {
@@ -1633,7 +1633,7 @@
                                             "items": [
                                                 "{@b Runeblade.} As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with Runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spell focus for your Shaman spells.",
                                                 "{@b Runeblade Conversion.} Over the course of an hour's ritual, you can convert a magical weapon to be your Runeblade, and can do so to only one magical weapon at a time.",
-                                                "{@b Battle Ready.} You gain proficiency with martial weapons, medium armor, and shields."
+                                                "{@b Battle Ready.} You gain proficiency with martial weapons and medium armor."
                                             ]
                                         }
                                     ]
@@ -1653,12 +1653,12 @@
                                                 {
                                                     "type": "list",
                                                     "items": [
-                                                        "{@b Taunting.} Creatures of your choice have disadvantage when attacking any creature in the area that isn't the totem.",
-                                                        "{@b Warding.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
-                                                        "{@b Warning.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
-                                                        "{@b Lifting.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
-                                                        "{@b Blessing.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
-                                                        "{@b Manatide.} Creatures in the area gain +2 spell power."
+                                                        "{@b {@creature Taunting Nature Spirit Totem|Starlight|Taunting}.} Creatures of your choice have disadvantage when attacking any creature in the area that isn't the totem.",
+                                                        "{@b {@creature Warding Nature Spirit Totem|Starlight|Warding}.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
+                                                        "{@b {@creature Warning Nature Spirit Totem|Starlight|Warning}.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
+                                                        "{@b {@creature Lifting Nature Spirit Totem|Starlight|Lifting}.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
+                                                        "{@b {@creature Blessing Nature Spirit Totem|Starlight|Blessing}.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
+                                                        "{@b {@creature Manatide Nature Spirit Totem|Starlight|Manatide}.} Creatures in the area gain +2 spell power."
                                                     ]
                                                 }
                                             ]
@@ -1822,7 +1822,7 @@
                     "type": "entries",
                     "name": "Path of the Runeblade",
                     "entries": [
-                        "Your Runeblade deals an additional 1d4 damage of a type matching your Elemental Affinity."
+                        "Your Runeblade deals an additional {@dice 1d4} damage of a type matching your Elemental Affinity."
                     ]
                 },
                 {
@@ -1833,9 +1833,10 @@
                         {
                             "type": "list",
                             "items": [
-                                "{@b Unerring Aim.} You may expend a {@variantrule Reaction} to grant a creature in your totem's emanation advantage on an attack roll it makes. You can do this before or after the roll.",
-                                "{@b Vortex.} Creatures of your choice within range of this totem take damage of the type associated with your elemental affinity whenever they start their turn or enter the Totem's Emanation. The damage is a number of {@dice d4}s equal to your proficiency bonus.",
-                                "{@b Life.} Creatures within this totem's Emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they do not have any."
+                                "{@b {@creature Unerring Aim Nature Spirit Totem|Starlight|Unerring Aim}.} Creatures in this emanation can reroll an attack they miss once each round.",
+                                "{@b {@creature Vortex Nature Spirit Totem|Starlight|Vortex}.} Creatures of your choice within range of this totem take damage of the type associated with your elemental affinity whenever they start their turn or enter the Totem's Emanation. The damage is a number of {@dice d4}s equal to your proficiency bonus.",
+                                "{@b {@creature Life Nature Spirit Totem|Starlight|Life}.} Creatures within this totem's emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they do not have any.",
+                                "{@b {@creature Enforcement Nature Spirit Totem|Starlight|Enforcement}.} Creatures within this totem's emanation gain temporary hit points and cannot be moved against their will."
                             ]
                         }
                     ]
@@ -5246,53 +5247,13 @@
             ]
         },
         {
-            "name": "Elemental Conduit",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You may add your spellcasting ability modifier to the damage you deal with any cantrip that deals fire, cold, thunder, lightning, or acid damage."
-            ]
-        },
-        {
-            "name": "Spirit's Intuition",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You learn the {@spell Guidance|XPHB} cantrip. It has a duration of ten minutes when you cast it."
-            ]
-        },
-        {
-            "name": "Moon's Spirit",
+            "name": "Moonwatcher",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
                 "You do not need to sleep and cannot be forced to by any means. You can gain the benefits of a {@variantrule Long Rest} by doing 8 hours of light activity instead of sleeping."
-            ]
-        },
-        {
-            "name": "Natural Warrior",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You learn the {@spell Shillelagh} cantrip, and when you cast it it lasts for ten minutes and can be applied to any weapon with which you are proficient."
-            ]
-        },
-        {
-            "name": "Roots of the Tree",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
             ]
         },
         {
@@ -5356,14 +5317,23 @@
             ]
         },
         {
-            "name": "Far Sight",
+            "name": "Rites of Passage",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "As part of an hour-long ritual, you look into the future, sensing a power you might require. You may ask a question about an event to occur within the next 7 days, and the DM may suggest a spell or type of spell that would prove beneficial. You can then swap one spell that you know for another on the Shaman spell list. You may do this only once each {@dice 2d4} days.",
-                "{@note The spell you can learn follows normal rules. For example, a 6th level Shaman could learn a 3rd level spell or lower, even if they had 4th level spell slots.}"
+                "Gain an {@filter Origin feat|feats|category=o} of your choice that you do not already have. You can learn this Rune more than once."
+            ]
+        },
+        {
+            "name": "Ancient Wards",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When a creature within 30 feet of you is hit by an attack, you can use your {@variantrule Reaction} to deal Psychic damage to the attacker equal to your Proficiency Bonus and shove them 10 feet away from their target."
             ]
         },
         {
@@ -5374,66 +5344,134 @@
             ],
             "entries": [
                 "You can change the damage type of a spell you cast to the damage type of your Elemental Affinity."
+            ]
+        },
+        {
+            "name": "Elemental Conduit",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You may add your spellcasting ability modifier to the damage you deal with any cantrip that deals fire, cold, thunder, lightning, or acid damage."
             ],
             "prerequisite": [
                 {
-                    "level": {
-                        "level": 2,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
                     "feature": [
-                        "Elemental Affinity"
+                        "Path of the Conduit"
                     ]
                 }
             ]
         },
         {
-            "name": "Home at Sea",
+            "name": "Roots of the Tree",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You gain a swimming speed of 40 feet, or your walking speed, whichever is higher. If you already have a swimming speed, this increases it by 10 feet instead.",
-                "You also learn the {@spell Water Breathing|XPHB} spell, which doesn't count against your known Shaman spells."
+                "You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
             ],
             "prerequisite": [
                 {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
+                    "feature": [
+                        "Path of the Conduit"
+                    ]
                 }
             ]
         },
         {
-            "name": "Home in the Trees",
+            "name": "Spirit's Intuition",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You gain a climbing speed of 40 feet, or your walking speed, whichever is higher. If you already have a climbing speed, it increases to that amount",
-                "You learn the {@spell Spider Climbing} spell and cast it once per {@variantrule Long Rest} without expending a spell slot."
+                "You learn the {@spell Guidance|XPHB} cantrip. It has a duration of ten minutes when you cast it."
             ],
             "prerequisite": [
                 {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
+                    "feature": [
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Far Sight",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "As part of a ten-minute ritual, you look into the future, sensing a power you might require. You may ask a question about an event to occur within the next 7 days, and the DM may suggest a spell or type of spell that would prove beneficial. You can then swap one spell that you know for another you can learn on the Shaman spell list, following normal spellcasting rules. You may do this only once per day."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Natural Warrior",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Shillelagh} cantrip, and when you cast it it lasts for ten minutes and can be applied to any weapon with which you are proficient."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Path of the Runeblade"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runeblade Master",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you conjure a Runeblade, it has the {@itemMastery Push|XPHB} mastery, or the mastery property of the weapon it takes the form of, and you can use that mastery with your Runeblade. Additionally, you can cause your Runeblade to deal damage of your Elemental Affinity's type instead of its normal type."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Path of the Runeblade"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runic Strikes",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you hit a creature with your Runeblade, you can expend a spell slot (no action required) to deal 2d6 damage of the type associated with your Elemental Affinity, and cause an additional effect associated with your Elemental Affinity, which lasts until the start of your next turn. The damage increases by 1d6 for each slot level above 1.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Fire.} Creatures within 5 feet of you take fire damage equal to your Proficiency Bonus.",
+                        "{@b Cold.} The target's next saving throw is reduced by 2.",
+                        "{@b Lightning.} You can immediately move up to half your Speed without provoking opportunity attacks.",
+                        "{@b Thunder.} The target becomes {@condition Prone}.",
+                        "{@b Acid.} Viscous acid causes the target to become {@condition Grappled|Starlight} by you (no hand required)."
+                    ]
+                }
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Path of the Runeblade"
+                    ]
                 }
             ]
         },
@@ -5460,13 +5498,14 @@
             ]
         },
         {
-            "name": "Gifts of the Elders",
+            "name": "Elemental Thorns",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You learn the {@spell Borrowed Knowledge|SCC} and {@spell Enhance Ability|XPHB} spells."
+                "Upon taking damage from a creature within 5 feet of you, you can spend a {@variantrule Reaction} to deal {@dice 1d6} damage of the type associated with your elemental affinity to that creature.",
+                "This damage increases to {@dice 2d6} at 11th level and {@dice 3d6} at 17th level."
             ],
             "prerequisite": [
                 {
@@ -5482,14 +5521,13 @@
             ]
         },
         {
-            "name": "Primordial Thorns",
+            "name": "Runeblade Adept",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "Upon taking damage from a creature you can see, or one that is within 5 feet of you, you can spend a {@variantrule Reaction} to deal {@dice 1d6} damage of the type associated with your elemental affinity.",
-                "This damage increases to {@dice 2d6} at 11th level."
+                "When you take the Attack action, you can make one additional attack on your turn, provided you attack only with your Runeblade."
             ],
             "prerequisite": [
                 {
@@ -5501,6 +5539,93 @@
                             "visible": true
                         }
                     }
+                },
+                {
+                    "feature": [
+                        "Path of the Runeblade"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gifts of the Elders",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Borrowed Knowledge|SCC} and {@spell Enhance Ability|XPHB} spells. When you cast it, Borrowed Knowledge can affect another creature in Touch range."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Nature Companion",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast the {@spell Find Familiar|XPHB} spell once per {@variantrule Long Rest} without requiring material components. Your familiar takes the form of a {@creature Sapling Treant|Starlight} or a {@creature Raven|MM}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totemic Blast",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your {@variantrule Bonus Action}, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
                 }
             ]
         },
@@ -5522,10 +5647,7 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    },
-                    "feature": [
-                        "Elemental Affinity"
-                    ]
+                    }
                 }
             ]
         },
@@ -5570,29 +5692,93 @@
                             "visible": true
                         }
                     }
+                },
+                {
+                    "feature": [
+                        "Path of the Conduit"
+                    ]
                 }
             ]
         },
         {
-            "name": "Keeper of the Grove",
+            "name": "Totemic Might",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "Once per {@variantrule Short Rest}, you can attempt to allow nature to siphon a creature's magic for a turn.",
-                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
+                "When you summon a totem, it gains temporary hit points equal to twice your proficiency bonus.",
+                "Additionally, your totems become proficient in all saving throws."
             ],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 9,
+                        "level": 7,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
                             "visible": true
                         }
                     }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totemkeeper",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When expending a spell slot to summon a totem, you may summon two at once if the spell slot expended is of third level or higher."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Keen Spirits",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you {@action Help} a creature with Guiding Spirits, you can increase the power of your target's attacks: if the creature you are helping successfully lands an attack before the start of your next turn, their attack deals an additional 2d6 damage. The damage is of the same type dealt by the attack."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Seer"
+                    ]
                 }
             ]
         },
@@ -5619,13 +5805,14 @@
             ]
         },
         {
-            "name": "Nature Companion",
+            "name": "Keeper of the Grove",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can cast the {@spell Find Familiar|XPHB} spell once per {@variantrule Long Rest} without expending material components. Your familiar takes the form of a {@creature Sapling Treant|Starlight} or a {@creature Raven|MM}."
+                "Once per {@variantrule Short Rest}, you can attempt to allow nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
             ],
             "prerequisite": [
                 {
@@ -5637,6 +5824,40 @@
                             "visible": true
                         }
                     }
+                },
+                {
+                    "feature": [
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Totem Commander",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
+                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a {@variantrule Reaction} to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
+                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
                 }
             ]
         },
@@ -5652,13 +5873,122 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 13,
+                        "level": 11,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
                             "visible": true
                         }
                     }
+                }
+            ]
+        },
+        {
+            "name": "Primal Confluence",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you cast a Primordial spell of 5th level or lower, you can choose two of the spell's optional effects instead of one. You can do this once per {@variantrule Long Rest}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conduit"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Runeblade Master",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can make 2 additional attacks instead of one when you take the {@variantrule Attack} action and attack with your Runeblade."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Runeblade",
+                        "Runeblade Adept"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spirit Shield",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn to shield your allies from harm in an instant. When another creature within 30 feet of you makes a Saving Throw, you can use a {@variantrule Reaction} to grant a bonus to the roll equal to your Shaman level. You can do this once per {@variantrule Short Rest}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bolstered Summons",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you summon a creature, it gains a +2 bonus to its Armour Class."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
                 }
             ]
         },
@@ -5707,7 +6037,7 @@
             ]
         },
         {
-            "name": "Earthly Intuition",
+            "name": "Command of Earth",
             "source": "Starlight",
             "featureType": [
                 "PRU"
@@ -5718,7 +6048,29 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 15,
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Command of Water",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can cast {@spell Water Walk|XPHB} and {@spell Water Breathing|XPHB} (self only) at will, and learn both spells."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -5740,7 +6092,88 @@
             "prerequisite": [
                 {
                     "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conduit"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Totem",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can summon a {@creature Manarage Nature Spirit Totem|Starlight} once per {@variantrule Short Rest}. Within its emanation, creatures can cast a first level spell or use a Short-Rest-recovery ability once without expending a spell slot, or use of that feature."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
                         "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Empower Runeblade",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can expend a spell slot of 5th level or higher (no action required) to empower your Runeblade for the next minute. For that duration, your Runeblade deals an additional 1d10 force damage and you regain hit points equal to the force damage dealt."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Runeblade"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tree of Life",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once per {@variantrule Long Rest}, you can use an {@variantrule Action} to imbue the world around you with the healing power of nature: {@b all} creatures within 100 feet of you regain 120 hit points."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -5751,19 +6184,80 @@
             ]
         },
         {
-            "name": "Searing Totem",
+            "name": "Shared Prophecy",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can summon a {@creature Searing Nature Spirit Totem|Starlight}, which causes creatures to {@condition burning|Starlight|burn} on entering the area, or take {@damage 1d4} fire damage if they are already burning."
+                "You learn the {@spell Foresight} spell. When you cast it, you can cast it on yourself and another creature at the same time. Casting the spell this way reduces its duration to one hour."
             ],
             "prerequisite": [
                 {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
                     "feature": [
-                        "Affinity with Flame",
-                        "Rune of totem Summoning"
+                        "Path of the Seer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Transmute Body",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You learn the {@spell Shapechange} spell. You retain the ability to summon totems in this form and can do so as a {@variantrule Bonus Action} while transformed."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                },
+                {
+                    "feature": [
+                        "Path of the Conjurer"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Searing Heat",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "Once on each of your turns when you deal fire damage to a creature, you can cause them to become {@condition Burning|Starlight} for one minute, or until they end the condition another way."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Flame"
                     ]
                 }
             ]
@@ -5819,18 +6313,25 @@
             ]
         },
         {
-            "name": "Glacial Totem",
+            "name": "Biting Cold",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can summon a {@creature Glacial Nature Spirit Totem|Starlight}, which, to creatures you choose, makes the area surrounding it difficult terrain and prevents regaining of hit points."
+                "Once per turn when you deal cold damage to a creature, you can cause them to become Brittle until the start of your next turn. A creature can use a Bonus Action to shake the frost from themselves, ending the effect."
             ],
             "prerequisite": [
                 {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
                     "feature": [
-                        "Rune of Totem Summoning",
                         "Affinity with Frost"
                     ]
                 }
@@ -5843,7 +6344,7 @@
                 "PRU"
             ],
             "entries": [
-                "On the turn that you cast a spell of 1st level or higher that deals cold damage to one or more creatures, you can gain temporary hit points equal to your proficiency bonus times the number of creatures you deal cold damage to with that spell."
+                "When you deal cold damage with a spell of 1st level or higher on the turn that you cast it, you can gain temporary hit points equal to your Proficiency Bonus times the number of creatures you dealt damage to with that spell."
             ],
             "prerequisite": [
                 {
@@ -5868,7 +6369,7 @@
                 "PRU"
             ],
             "entries": [
-                "Your {@b Biting Cold} feature is enhanced. The penalty now applies to the next attack roll, ability check, or saving throw that the target makes. It also imposes disadvantage on Strength and Dexterity saving throws."
+                "When you deal cold damage to a creature, the next saving throw it makes before the start of your next turn is reduced by {@dice 1d4}."
             ],
             "prerequisite": [
                 {
@@ -5887,36 +6388,18 @@
             ]
         },
         {
-            "name": "Voltaic Totem",
+            "name": "Arc Lightning",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can summon a {@creature Voltaic Nature Spirit Totem|Starlight}, which prevents creatures of your choice within its area from taking {@variantrule Reaction|XPHB|Reactions}."
-            ],
-            "prerequisite": [
-                {
-                    "feature": [
-                        "Rune of Totem Summoning",
-                        "Affinity with Lightning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Spasming Shocks",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "Once per round, if you deal lightning damage to a creature by expending a spell slot of 3rd level or higher, you can cause it to be {@condition staggered|Starlight} until the start of your next turn."
+                "Once per turn when you deal damage to a creature with a lightning spell, you can deal half that damage to another creature within 15 feet who was not a target of the spell."
             ],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 7,
+                        "level": 3,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -5936,7 +6419,33 @@
                 "PRU"
             ],
             "entries": [
-                "Your {@b Arc Lightning} feature improves. It can now affect up to four targets, and the range limitation of 15 feet is between targets affected by this feature, not the original target."
+                "Once per turn when you deal lightning damage to a creature, you can give it the {@condition Shocked|Starlight} condition until the end of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Affinity with Lightning"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Supercharge",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you take lightning damage, your next attack roll, ability check, or saving throw has {@variantrule Advantage}.",
+                "At 18th level, you gain this benefit even if your {@classFeature Elemental Embodiment|Shaman|Starlight|18|Starlight|immunity} would prevent the damage."
             ],
             "prerequisite": [
                 {
@@ -5955,31 +6464,38 @@
             ]
         },
         {
-            "name": "Booming Totem",
+            "name": "Thundercrack",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can summon a {@creature Booming Nature Spirit Totem|Starlight}, which creates a shockwave that pushes creatures of your choosing away from the totem."
+                "When you deal thunder damage to a creature that is large or smaller, you can move it 5 feet away from the source of the damage. You deal maximum damage instead of rolling when you deal thunder damage to an object."
             ],
             "prerequisite": [
                 {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
                     "feature": [
-                        "Rune of Totem Summoning",
                         "Affinity with Thunder"
                     ]
                 }
             ]
         },
         {
-            "name": "Disorienting Thunderclap",
+            "name": "Echoing Thunder",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "Once per turn, when you deal Thunder damage to a creature with a spell of 1st level or higher, it must make a Strength saving throw or fall {@condition prone|XPHB}."
+                "Once per turn, when a creature fails a saving throw against a spell that deals Thunder damage, you can cause it to become {@condition Rattled|Starlight}."
             ],
             "prerequisite": [
                 {
@@ -5998,13 +6514,13 @@
             ]
         },
         {
-            "name": "Reverberating Thunder",
+            "name": "Booming Thunder",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "Your {@b Thundercrack} feature improves. You are able to push creatures of any size, and the distance increases to 10 feet."
+                "Your {@b Thundercrack} rune improves. You are able to push creatures of any size, and the distance increases to 10 feet."
             ],
             "prerequisite": [
                 {
@@ -6017,38 +6533,45 @@
                         }
                     },
                     "feature": [
-                        "Affinity with Thunder"
+                        "Affinity with Thunder",
+                        "Thundercrack"
                     ]
                 }
             ]
         },
         {
-            "name": "Caustic Totem",
+            "name": "Corroding Acid",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "You can summon a {@creature Caustic Nature Spirit Totem|Starlight}, which reduces the AC of creatures of your choice in its area by 2."
+                "When you deal acid damage to a creature, you can coat them in acid, giving them the {@condition Melting|Starlight} condition for the next minute or until they or a creature within 5 feet of them uses an {@variantrule Action} to end it. You can only have one creature Melting in this way at a time."
             ],
             "prerequisite": [
                 {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
                     "feature": [
-                        "Rune of Totem Summoning",
                         "Affinity with Acid"
                     ]
                 }
             ]
         },
         {
-            "name": "Rapid Erosion",
+            "name": "Sulphur Pools",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "When you deal acid damage to a creature with a spell of 1st level or higher, it becomes {@condition Melting|Starlight}.",
-                "The {@variantrule Action} used to end the Melting condition also ends your Persistent Corrosion, and vice versa."
+                "Once per turn when you deal acid damage to a creature, you can create a 5-foot square of acid on the surface that creature is standing on. If a creature ends their turn in the acid, they take acid damage equal to your Proficiency Bonus. The acid is difficult terrain."
             ],
             "prerequisite": [
                 {
@@ -6073,7 +6596,7 @@
                 "PRU"
             ],
             "entries": [
-                "Your {@b Persistent Corrosion} feature improves. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d6} less damage with weapon attacks."
+                "Your {@b Corroding Acid} is more powerful. A creature suffering from the effect is {@condition Hampered|Starlight} and deals {@damage 1d4} less damage with weapon attacks."
             ],
             "prerequisite": [
                 {
@@ -6086,39 +6609,14 @@
                         }
                     },
                     "feature": [
-                        "Affinity with Acid"
+                        "Affinity with Acid",
+                        "Corroding Acid"
                     ]
                 }
             ]
         },
         {
-            "name": "Greater Resilience",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "When you use your {@subclassFeature Earthen Scales|Shaman|Starlight|Mountains|Starlight|3|Starlight|Earthen Scales}, you can grant a creature resistance to the triggering damage alongside your normal reduction. This lasts until the start of their next turn.",
-                "You can do this once, and must complete a {@variantrule Short Rest} or {@variantrule Long Rest} before you can do so again."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Elemental Origin: Mountains"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Mountain's Echo",
+            "name": "Valley Echoes",
             "source": "Starlight",
             "featureType": [
                 "PRU"
@@ -6129,7 +6627,7 @@
             "prerequisite": [
                 {
                     "level": {
-                        "level": 14,
+                        "level": 7,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -6168,18 +6666,18 @@
             ]
         },
         {
-            "name": "High-pressure Jet",
+            "name": "Elemental Geyser",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "Your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets also push creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
+                "When you use your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets, you can choose to make its damage match your elemental affinity instead of bludgeoning."
             ],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 5,
+                        "level": 3,
                         "class": {
                             "name": "Shaman",
                             "source": "Starlight",
@@ -6193,13 +6691,13 @@
             ]
         },
         {
-            "name": "Elemental Geyser",
+            "name": "High-pressure Jet",
             "source": "Starlight",
             "featureType": [
                 "PRU"
             ],
             "entries": [
-                "When you use your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets, you can choose to make its damage match your elemental affinity instead of bludgeoning."
+                "Your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} and {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets also push creatures back 5 feet when you hit them with it. At level 14, this increases to 10 feet."
             ],
             "prerequisite": [
                 {
@@ -6243,7 +6741,7 @@
             ]
         },
         {
-            "name": "Empowered Mirage",
+            "name": "Heatwave",
             "source": "Starlight",
             "featureType": [
                 "PRU"
@@ -6293,6 +6791,31 @@
             ]
         },
         {
+            "name": "Leeching Seeds",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "When you damage a creature affected by your {@subclassFeature Wild Mark|Shaman|Starlight|Waters|Starlight|3|Starlight}, you regain {@dice 1d4} hit points."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Elemental Origin: Forests"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Avatar of the Forests",
             "source": "Starlight",
             "featureType": [
@@ -6313,211 +6836,6 @@
                     },
                     "feature": [
                         "Elemental Origin: Forests"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Rune of Totem Summoning",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You gain the ability to conjure a Nature Spirit Totem. This tiny elemental creature applies an effect to an area within 15 feet of itself. If a totem deals damage, you are considered to have done that damage.",
-                "Summoning a totem requires an {@variantrule Action}, and the totem appears in an unoccupied space within 60 feet of you, and lasts for one minute. Once summoned, you cannot do so again until you complete a {@variantrule Long Rest} or unless you expend a spell slot of first level or higher.",
-                "The totem requires your {@status concentration} (as if you were concentrating on a spell), however, you can summon additional totems using the same concentration. Whenever you fail a Constitution saving throw to maintain your concentration, you choose one totem to disappear. If you use another effect which requires concentration such as a spell, they all disappear.",
-                "You know how to summon two totems from the list below. You can change your selection whenever you gain a level in this class.",
-                {
-                    "type": "list",
-                    "items": [
-                        "{@creature Taunting Nature Spirit Totem|Starlight}",
-                        "{@creature Warding Nature Spirit Totem|Starlight}",
-                        "{@creature Warning Nature Spirit Totem|Starlight}",
-                        "{@creature Lifting Nature Spirit Totem|Starlight}",
-                        "{@creature Blessing Nature Spirit Totem|Starlight}",
-                        "{@creature Wrath of Air Nature Spirit Totem|Starlight}"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Totemkeeper",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "When expending a spell slot to summon a totem, you may summon two at once if the spell slot expended is of third level or higher."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 5,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Totemic Blast",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "Your totems gain the ability to launch a blast of elemental magic. The blast uses your spell attack modifier, is fired from an active totem using your {@variantrule Bonus Action}, and deals {@damage 1d8+PB} damage of a type matching your elemental affinity.",
-                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 7,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Totemic Might",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "When you summon a totem, it gains temporary hit points equal to twice your proficiency bonus.",
-                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 7,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Totem Commander",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You have greater control over where your totems are summoned. You can summon them in the air, or attached to you or a willing creature.",
-                "A totem attached to a creature moves with it, but can still be targeted individually. If attached to a creature, you can expend a {@variantrule Reaction} to force the totem to be the new target of an attack that would otherwise hit the creature it is attached to.",
-                "{@note This ability is listed in the Nature Spirit Totems' statistics.}"
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 9,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Totem Specialist",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You learn how to summon two more totems from the list in the {@optfeature Rune of Totem Summoning|Starlight}.",
-                "Furthermore, your totems become proficient in all saving throws."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 11,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Enforcement Totem",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You learn how to summon a {@creature Enforcement Nature Spirit Totem|Starlight}, which grants creatures of your choice temporary hit points at the start of each of your turns and prevents them from being moved against their will."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Manarage Totem",
-            "source": "Starlight",
-            "featureType": [
-                "PRU"
-            ],
-            "entries": [
-                "You learn how to summon a {@creature Manarage Nature Spirit Totem|Starlight}. You can summon it once per short rest and it provides the following benefits:",
-                "Creatures within the area have +2 spellpower."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 13,
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    },
-                    "feature": [
-                        "Rune of Totem Summoning"
                     ]
                 }
             ]
@@ -7985,8 +8303,8 @@
                 {
                     "name": "Taunting Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Hostile creatures within this totem's area have disadvantage on any attack that doesn't target the totem."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Hostile creatures within this totem's emanation have disadvantage on any attack that doesn't target the totem."
                     ]
                 },
                 {
@@ -8062,8 +8380,8 @@
                 {
                     "name": "Warning Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Once per round, creatures within the area can gain a bonus to one saving throw they make. The bonus is equal to half your spellcasting ability modifier (rounded up)."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once per round, creatures within the emanation can gain a +2 bonus to one saving throw they make."
                     ]
                 },
                 {
@@ -8139,8 +8457,8 @@
                 {
                     "name": "Warding Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "When a creature hostile to you attempts to enter the totem's area, it must make a Wisdom saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "When a creature hostile to you attempts to enter the totem's emanation, it must make a Wisdom saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
                     ]
                 },
                 {
@@ -8216,9 +8534,9 @@
                 {
                     "name": "Lifting Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "When a friendly creature would enter this totem's area, it can spend an additional 5 feet of movement to be lifted by elemental winds and carried to the opposite side of the area. This movement does not provoke opportunity attacks.",
-                        "A friendly creature that starts its turn within the area gains 10 feet of movement speed for that turn."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "When a friendly creature enters the emanation, it can be lifted and leap up to 30 feet in a direction of its choice (no movement required). This movement does not provoke opportunity attacks.",
+                        "A friendly creature that starts its turn within the emanation gains 10 feet of movement speed for that turn."
                     ]
                 },
                 {
@@ -8294,8 +8612,8 @@
                 {
                     "name": "Blessing Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Once per round, creatures within the area can gain a bonus to one attack roll or ability check they make. The bonus is equal to your spellcasting ability modifier."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once per round, creatures within the emanation can gain a +2 bonus to one attack roll or ability check they make."
                     ]
                 },
                 {
@@ -8326,7 +8644,7 @@
             ]
         },
         {
-            "name": "Wrath of Air Nature Spirit Totem",
+            "name": "Manatide Nature Spirit Totem",
             "source": "Starlight",
             "summonedByClass": "Shaman|Starlight",
             "size": [
@@ -8369,10 +8687,10 @@
                     ]
                 },
                 {
-                    "name": "Wrath of Air Totem Aura",
+                    "name": "Manatide Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Once per round, any creature within the totem's area may add their spellcasting ability modifier to one damage roll from an attack or spell. If they do not have a spellcasting ability modifier, they use their Wisdom ability modifier."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures within the totem's emanation have {@condition Spell Power|Starlight|Spell Power +2}."
                     ]
                 },
                 {
@@ -8448,8 +8766,8 @@
                 {
                     "name": "Manarage Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures within this area may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures within the emanation may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature. They can do this only once."
                     ]
                 },
                 {
@@ -8525,8 +8843,8 @@
                 {
                     "name": "Enforcement Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures in the area that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved against their will."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures in the emanation that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved against their will."
                     ]
                 },
                 {
@@ -8557,7 +8875,7 @@
             ]
         },
         {
-            "name": "Searing Nature Spirit Totem",
+            "name": "Vortex Nature Spirit Totem",
             "source": "Starlight",
             "summonedByClass": "Shaman|Starlight",
             "size": [
@@ -8600,10 +8918,10 @@
                     ]
                 },
                 {
-                    "name": "Searing Totem Aura",
+                    "name": "Vortex Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Any creature which enters the area for the first time on a turn, or starts its turn there, becomes {@condition burning|Starlight}. If a creature is already {@condition burning|Starlight}, it takes {@dice 1d4} fire damage instead."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Any creature which enters the emanation for the first time on a turn, or ends its turn there, takes {@damage PBd4} damage of a type matching your {@classFeature Elemental Affinity|Shaman|Starlight|3|Starlight}."
                     ]
                 },
                 {
@@ -8634,7 +8952,7 @@
             ]
         },
         {
-            "name": "Glacial Nature Spirit Totem",
+            "name": "Life Nature Spirit Totem",
             "source": "Starlight",
             "summonedByClass": "Shaman|Starlight",
             "size": [
@@ -8677,10 +8995,10 @@
                     ]
                 },
                 {
-                    "name": "Glacial Totem Aura",
+                    "name": "Life Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "The area is difficult terrain for creatures of your choice. Additionally, those creatures cannot regain hit points while in the area."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures of your choice within this totem's emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they have zero hit points."
                     ]
                 },
                 {
@@ -8711,7 +9029,7 @@
             ]
         },
         {
-            "name": "Voltaic Nature Spirit Totem",
+            "name": "Unerring Aim Nature Spirit Totem",
             "source": "Starlight",
             "summonedByClass": "Shaman|Starlight",
             "size": [
@@ -8754,164 +9072,10 @@
                     ]
                 },
                 {
-                    "name": "Voltaic Totem Aura",
+                    "name": "Unerring Aim Totem Aura",
                     "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures of your choice within the area are unable to take {@variantrule Reaction|XPHB|Reactions}."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Booming Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Booming Totem Aura",
-                    "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "At the start of your turns, the totem emits a shockwave. Each creature of your choice within the totem's area must make a Strength saving throw or be pushed up to 15 feet directly away from the totem."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Caustic Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Caustic Totem Aura",
-                    "entries": [
-                        "The totem emits an aura which affects a 15-foot radius sphere centred on itself.",
-                        "Creatures of your choice within the area suffer a -2 penalty to their AC."
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once each round, a creature who misses an attack in the totem's emanation gains {@variantrule Advantage} can reroll the attack."
                     ]
                 },
                 {
@@ -9345,7 +9509,7 @@
             "source": "Starlight",
             "page": 0,
             "entries": [
-                "While you have the Hampered condition, you experience the following effects.",
+                "While you have the Brittle condition, you experience the following effects.",
                 {
                     "type": "entries",
                     "entries": [
@@ -9360,7 +9524,7 @@
                             "type": "entries",
                             "name": "Damage Increased",
                             "entries": [
-                                "When you take any damage, that damage is increased by {@dice 1d4}."
+                                "When you take any damage, that damage is increased by {@dice 2}."
                             ]
                         },
                         {
@@ -9369,6 +9533,26 @@
                             "entries": [
                                 "The condition ends after you take fire damage.",
                                 "If you are immune to cold damage, you are immune to this condition. If you are resistant to cold damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rattled",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Rattled condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Attacks",
+                            "entries": [
+                                "You have {@variantrule Disadvantage} on all ranged attacks."
                             ]
                         }
                     ]
@@ -9491,7 +9675,7 @@
                             "name": "Spells Affected",
                             "entries": [
                                 "You deal increased damage with your spells. Whenever you roll damage for a spell, add your Spell Power to the damage roll.",
-                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\".}"
+                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\". You can gain this condition multiple times, adding the total together.}"
                             ]
                         }
                     ]
