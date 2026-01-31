@@ -511,7 +511,7 @@
                 }
             ],
             "entries": [
-                "You conjure a volley of disorienting Feywild sparks to assail your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} psychic damage and the next attack made against it before the end of your next turn has {@variantrule Advantage|XPHB}."
+                "You conjure a volley of disorienting Feywild sparks to assail a creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} psychic damage and the next attack made against it before the end of your next turn has {@variantrule Advantage|XPHB}."
             ],
             "entriesHigherLevel": [
                 {

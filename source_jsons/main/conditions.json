@@ -338,7 +338,7 @@
                             "type": "entries",
                             "name": "Damage Received",
                             "entries": [
-                                "You take 3 fire damage at the start of each of your turns."
+                                "You take {@dice 1d4} fire damage at the start of each of your turns."
                             ]
                         },
                         {
@@ -427,7 +427,7 @@
             "source": "Starlight",
             "page": 0,
             "entries": [
-                "While you have the Hampered condition, you experience the following effects.",
+                "While you have the Brittle condition, you experience the following effects.",
                 {
                     "type": "entries",
                     "entries": [
@@ -442,7 +442,7 @@
                             "type": "entries",
                             "name": "Damage Increased",
                             "entries": [
-                                "When you take any damage, that damage is increased by {@dice 1d4}."
+                                "When you take any damage, that damage is increased by {@dice 2}."
                             ]
                         },
                         {
@@ -451,6 +451,26 @@
                             "entries": [
                                 "The condition ends after you take fire damage.",
                                 "If you are immune to cold damage, you are immune to this condition. If you are resistant to cold damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rattled",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Rattled condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Attacks",
+                            "entries": [
+                                "You have {@variantrule Disadvantage} on all ranged attacks."
                             ]
                         }
                     ]
@@ -576,7 +596,7 @@
                             "name": "Spells Affected",
                             "entries": [
                                 "You deal increased damage with your spells. Whenever you roll damage for a spell, add your Spell Power to the damage roll.",
-                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\".}"
+                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\". You can gain this condition multiple times, adding the total together.}"
                             ]
                         }
                     ]

@@ -262,7 +262,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the target takes an additional {@dice 1d4} necrotic damage and must make Constitution saving throw against your spell save DC. On a failed saving throw, they cannot regain any hit points until the start of your next turn."
+                "On hit, the target takes an additional {@dice 1d4} necrotic damage and cannot regain any hit points until the start of your next turn."
 			]
 		},
         {
@@ -302,7 +302,7 @@
         {
 			"name": "Arrow of Relocation",
 			"source": "Starlight",
-			"rarity": "rare",
+			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
 			"entries": [
@@ -319,7 +319,7 @@
         {
 			"name": "Arrow of Explosives",
 			"source": "Starlight",
-			"rarity": "rare",
+			"rarity": "uncommon",
 			"wondrous": false,
             "type": "A",
 			"entries": [
