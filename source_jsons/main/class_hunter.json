@@ -353,7 +353,7 @@
                     "type": "entries",
                     "name": "Focused Assault",
                     "entries":[
-                        "You deal an additional {@dice 1d4} damage on attacks against a creature that is below its maximum hit points."
+                        "You deal an additional {@dice 1d4} when you damage a creature that is below its maximum hit points."
                     ]
                 },
                 {
@@ -560,14 +560,14 @@
                     "type": "entries",
                     "name": "Blur",
                     "entries":[
-                        "You double your {@variantrule Speed|XPHB} this turn (no action required). The first time you take damage after this turn, any unspent movement is used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+                        "You double your {@variantrule Speed|XPHB} this turn (no action required). If you take damage before the start of your next turn, any movement you didn't use on your turn can instead be used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Reaper",
                     "entries":[
-                        "As an {@variantrule Action|XPHB}, you can make a special attack which, if it kills a creature, allows you to make another attack. All of these attacks deal additional damage equal to your Hunter's Die."
+                        "As an {@variantrule Action|XPHB}, you can make a special attack which, if it kills a creature, grants you an additional {@variantrule Action} this turn. Any attack made this way deals additional damage equal to your Hunter's Die."
                     ]
                 }
             ]
