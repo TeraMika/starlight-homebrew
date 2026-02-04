@@ -225,7 +225,7 @@
             "classSource": "Starlight",
             "level": 1,
             "entries": [
-                "A Hunter needs a target. Once per turn, you can spend one Instinct and a {@variantrule Bonus Action|XPHB} to designate a creature within 60 feet of you as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
+                "A Hunter needs a target. Once per turn, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to designate a creature within 60 feet of you as your Quarry, the target of your hunt. The designation lasts for up to one hour, and when you hit that creature with an attack, you deal additional damage equal to your Hunter's Die of the same type as your weapon. You can have only one Quarry at a time."
             ]
         },
         {
@@ -248,7 +248,7 @@
             "level": 1,
             "entries":
             [
-                "A gut instinct guides your senses. Whenever you make an ability check using {@skill Perception|XPHB} or {@skill Survival|XPHB}, you can spend one Instinct to add your Hunter's Die to the roll total."
+                "A gut instinct guides your senses. Whenever you make an ability check using {@skill Perception|XPHB} or {@skill Survival|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll total."
             ]
         },
         {
@@ -274,7 +274,7 @@
             "level": 2,
             "entries": 
             [
-                "It takes a significant hit to phase you. You can spend one Instinct and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
+                "It takes a significant hit to phase you. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
             ]
         },
         {
@@ -285,7 +285,7 @@
             "level": 2,
             "entries": 
             [
-                "When you make an attack roll against your Quarry, you can spend one Instinct to add your Hunter's Die to the roll."
+                "When you make an attack roll against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll."
             ]
         },
         {
@@ -515,7 +515,7 @@
                     "type": "entries",
                     "name": "Strategic",
                     "entries":[
-                        "After your Quarry makes an attack roll, you can use your {@variantrule Reaction|XPHB} to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one Instinct, you can do this when your Quarry makes a saving throw."
+                        "After your Quarry makes an attack roll, you can use your {@variantrule Reaction|XPHB} to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can do this when your Quarry makes a saving throw."
                     ]
                 }
             ]
@@ -773,7 +773,7 @@
                 "{@i 3rd-level Borderland Hunter feature}",
                 "You can use a {@variantrule Bonus Action|XPHB} to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
                 "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
-                "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs 2 Instinct."
+                "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
             ]
         },
         {
@@ -1049,8 +1049,8 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
-                "The best way to hunt a creature is to prevent them getting away in the first place.",
-                "As a {@variantrule Bonus Action|XPHB}, you can spend one Instinct to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
+                "The best way to chase a creature is to prevent them getting away in the first place.",
+                "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
             ]
         },
         {
@@ -1076,7 +1076,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
-                "You have a knack for finding people. You can spend one Instinct and an Action to sense the direction to a creature as per the {@spell Locate Creature|XPHB} spell. This lasts for ten minutes and does not require your {@status concentration|concentrating}."
+                "You have a knack for finding people. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action} to sense the direction to a creature as per the {@spell Locate Creature|XPHB} spell. This lasts for ten minutes and does not require your {@status concentration|concentrating}."
             ]
         },
         {
@@ -1090,7 +1090,7 @@
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
                 "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}.",
-                "While unseen by a creature, you can make a special attack against it as an {@variantrule Action|XPHB}. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die."
+                "While unseen by a creature, you can make a special attack against it as an {@variantrule Action|XPHB}. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die. If you hit the attack, making the attack does not reveal your location."
             ]
         },
         {
@@ -1180,7 +1180,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one Instinct to force it to make a Constitution saving throw. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
+                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
             ]
         },
         {
@@ -1233,7 +1233,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required). The first time you do this each {@variantrule Short Rest|XPHB}, it costs no Instinct. Any other time, it costs one Instinct."
+                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required)."
             ]
         },
         {
@@ -1332,7 +1332,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Fable Hunter feature}",
-                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to command an ally. The ally you choose can use their {@variantrule Reaction|XPHB} to move up to their {@variantrule Speed|XPHB}, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to command an ally. The ally you choose can use their {@variantrule Reaction|XPHB} to move up to their {@variantrule Speed|XPHB}, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
             ]
         },
         {
@@ -1358,7 +1358,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
-                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one Instinct to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
             ]
         },
         {
@@ -1371,7 +1371,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Fable Hunter feature}",
-                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one Instinct to mark one target with a special Quarry. Whenever any creature hits the target with an attack, the target takes damage equal to your Hunter's Die. At the start of your next turn, the Quarry ends."
+                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to mark one target with a special Quarry until the start of your next turn. Whenever any creature deals damage to the target, they deal additional damage equal to your Hunter's Die."
             ]
         },
         {
@@ -1384,7 +1384,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Fable Hunter feature}",
-                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} to imbue your allies with epic tenacity. Until the end of your next turn, allies within 30 feet of you cannot be reduced below one hit point or killed, their {@variantrule Speed|XPHB} cannot be reduced, and they cannot be {@condition Stunned|XPHB} or {@condition Restrained|XPHB}."
+                "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} to imbue allies within 30 feet of you with epic tenacity. Until the end of your next turn, affected creatures cannot be reduced below one hit point or killed, their {@variantrule Speed|XPHB} cannot be reduced, and they cannot be {@condition Stunned|XPHB} or {@condition Restrained|XPHB}."
             ]
         },
         {
@@ -1397,7 +1397,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Fable Hunter feature}",
-                "When you are targeted by a Legendary Action (and similar actions such as Mythic Actions), you can either gain advantage on a saving throw you a forced to make, or gain resistance to any damage dealt by it."
+                "When you are targeted by a Legendary Action (and similar actions such as Mythic Actions), you can either gain advantage on a saving throw you are forced to make against it or gain resistance to any damage dealt by it."
             ]
         }
     ],
@@ -1409,7 +1409,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you roll initiative, you can spend one Instinct to roll your Hunter's Die and add it to the total. You can do so after the roll."
+				"When you roll initiative, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
 			]
 		},
         {
@@ -1419,7 +1419,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have a knack for reading people and their intentions. You can spend one Instinct to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
+				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
 			]
         },
         {
@@ -1439,7 +1439,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can attempt to trip a creature when you attack it. You can spend one Instinct when you make an attack to force the target to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
+				"You can attempt to trip a creature when you attack it. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} when you make an attack to force the target to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
 			]
         },
         {
@@ -1449,7 +1449,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature hits you with an attack, you can spend one Instinct and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
+				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
 			]
         },
         {
@@ -1459,7 +1459,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend one Instinct to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
 			]
         },
         {
@@ -1469,7 +1469,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend two Instinct to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
+				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
 			]
         },
         {
@@ -1479,7 +1479,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can spend one Instinct and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
+				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
                 "A trap is any object or mechanism that was created or placed to cause damage or other danger. This could include spells, physical mechanisms, or even dangerous loopholes in a contract."
 			]
         },
@@ -1515,7 +1515,7 @@
 			"entries": [
 				"You can plan ahead when you know what the day holds.",
                 "At the start of each day, you can prepare a number of special coatings equal to your Proficiency Bonus. These coatings provide a +1 bonus to attack rolls and deal 1d4 additional damage of a damage type of your choosing other than force or psychic.",
-                "You can apply these to an arrow or other weapon with no action cost, but only one can be used at a time. The coatings retain their potency for 24 hours or until used."
+                "You can apply these to an arrow or other weapon with no action cost, but only one can be used at a time. The coatings retain their potency for 24 hours or until used, whereupon they last one minute."
 			],
             "prerequisite": [
                 {
@@ -1581,7 +1581,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you are hit by an attack, you can spend one Instinct and your {@variantrule Reaction|XPHB} to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
+				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -1603,7 +1603,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend two Instinct to make an additional attack against another creature within your reach. The damage of the attack is equal to a roll of your Hunter's Die plus your Strength or Dexterity modifier (your choice), of the same type as the original weapon."
+				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against another creature within your reach. The damage of the attack is equal to a roll of your Hunter's Die plus your Strength or Dexterity modifier (your choice), of the same type as the original weapon."
 			],
             "prerequisite": [
                 {
@@ -1648,7 +1648,7 @@
 			],
 			"entries": [
 				"Your exposure to a range of creatures and environments has taught you how to prepare for many a situation.",
-                "When you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can choose to become resistant to one of fire, cold, acid, lightning or thunder damage."
+                "When you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can choose to become resistant to your choice of fire, cold, acid, lightning or thunder damage. This resistance lasts until you select another resistance through this feature."
 			],
             "prerequisite": [
                 {
@@ -1692,7 +1692,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make an attack, you can spend one Instinct to attempt to impede your opponent's coordination.",
+				"When you make an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to impede your opponent's coordination.",
                 "On a hit, the target must make a Strength saving throw or be {@condition Staggered|S: Conditions} until the start of your next turn."
 			],
             "prerequisite": [
@@ -1715,7 +1715,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make an attack, you can spend one Instinct to attempt to temporarily weaken your opponent's armour.",
+				"When you make an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to temporarily weaken your opponent's armour.",
                 "On a hit, the target must make a Dexterity saving throw or be {@condition Sundered|S: Conditions} until the start of your next turn."
 			],
             "prerequisite": [
@@ -1760,7 +1760,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one Instinct to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
+				"Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
 			],
             "prerequisite": [
                 {
@@ -1782,7 +1782,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can mark a creature as your Quarry without using your {@variantrule Bonus Action|XPHB}, but it costs 2 Instinct to mark a creature in this way."
+				"You can mark a creature as your Quarry without using your {@variantrule Bonus Action|XPHB}, at the cost of two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
 			],
             "prerequisite": [
                 {
@@ -1805,7 +1805,7 @@
 			],
 			"entries": [
 				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the Temporary Hit Points gained.",
-                "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional Instinct, rolling one additional Hunter's Die for each Instinct spent.",
+                "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional {@classFeature Instinct|Hunter|Starlight|1|Starlight}, rolling one additional Hunter's Die for each Instinct spent.",
                 "Finally, you can use Shrug It Off to recover Hit Points, instead of gaining Temporary Hit Points."
 			],
             "prerequisite": [
@@ -1850,7 +1850,7 @@
 				"HTR"
 			],
 			"entries": [
-                "You can remove one level of exhaustion whenever you complete a {@variantrule Short Rest|XPHB}."
+                "You can remove one level of {@condition exhaustion} whenever you complete a {@variantrule Short Rest|XPHB}."
             ],
             "prerequisite": [
                 {
@@ -1872,7 +1872,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one Instinct to add your Hunter's Die to the total."
+				"When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the total."
 			],
             "prerequisite": [
                 {
@@ -1894,7 +1894,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are especially manoeuvrable. You can use two Instinct and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with advantage against that creature."
+				"You are especially manoeuvrable. You can use two {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
 			],
             "prerequisite": [
                 {
@@ -1916,7 +1916,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make an attack against your Quarry, you can spend one Instinct to subtract your Proficiency Bonus from the attack roll, but add your Hunter's Die to the damage dealt if the attack hits."
+				"When you make an attack against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll, but add your Hunter's Die to the damage dealt if the attack hits."
 			],
             "prerequisite": [
                 {
@@ -1954,6 +1954,28 @@
             ]
 		},
         {
+			"name": "Naturally Gifted",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You gain proficiency in any skill that you are not proficient in, then you gain {@variantrule Expertise|XPHB} in one that you are proficient in."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
 			"name": "Superior Stamina II",
 			"source": "Starlight",
 			"featureType": [
@@ -1976,35 +1998,13 @@
             ]
 		},
         {
-			"name": "Naturally Gifted",
+			"name": "Preceding Reputation",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You gain proficiency in a Hunter skill you are not already proficient in (Athletics, Acrobatics, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Stealth, Survival), then you gain {@variantrule Expertise|XPHB} in one that you are proficient in."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 10,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
-                }
-            ]
-		},
-        {
-			"name": "Reputation Preceding",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can spend one Instinct to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB} or {@skill Performance|XPHB} skills."
+				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB} or {@skill Performance|XPHB} skills."
 			],
             "prerequisite": [
                 {
@@ -2026,7 +2026,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have additional Instinct equal to twice your Wisdom modifier, instead of once."
+				"Your additional {@classFeature Instinct|Hunter|Starlight|1|Starlight} is equal to twice your Wisdom modifier, instead of once."
 			],
             "prerequisite": [
                 {
@@ -2098,7 +2098,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend one Instinct to force it to make a Strength saving throw or let go of or drop an object of your choice that it is holding. The object lands in the creature's space if possible."
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Strength saving throw or let go of or drop an object of your choice that it is holding. The object lands in the creature's space if possible."
 			],
             "prerequisite": [
                 {
@@ -2217,7 +2217,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When an effect would reduce you to zero hit points, you can spend a {@variantrule Reaction|XPHB} and one Instinct to be reduced to one instead. Then roll your Hunter's Die four times, add your Wisdom modifier, and regain hit points equal to the total rolled."
+				"When an effect would reduce you to zero hit points, you can spend a {@variantrule Reaction|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to be reduced to one instead. Then roll your Hunter's Die four times, add your Wisdom modifier, and regain hit points equal to the total rolled."
 			],
             "prerequisite": [
                 {
@@ -2242,7 +2242,7 @@
 				"HTR"
 			],
 			"entries": [
-				"If you have used your {@variantrule Reaction|XPHB}, you can spend one Instinct to take another. You can use only one reaction per triggering event."
+				"If you have used your {@variantrule Reaction|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to take another. You can use only one reaction per triggering event."
 			],
             "prerequisite": [
                 {
@@ -2268,7 +2268,7 @@
 			],
 			"entries": [
 				"You are trained to protect yourself from supernatural effects. You cannot be possessed.",
-                "Additionally, you can spend 1 Instinct to reroll a saving throw against being {@condition Charmed|XPHB} or {@condition Frightened|XPHB}. You must use the new roll."
+                "Additionally, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to reroll a saving throw against being {@condition Charmed|XPHB} or {@condition Frightened|XPHB}. You must use the new roll."
 			],
             "prerequisite": [
                 {
@@ -2294,7 +2294,7 @@
 			],
 			"entries": [
 				"You feel most comfortable when things are strange. In environments on other planes, you have advantage on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
-                "Furthermore, you can spend one Instinct to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how."
+                "Furthermore, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how."
 			],
             "prerequisite": [
                 {
@@ -2446,7 +2446,7 @@
 				"HTR"
 			],
 			"entries": [
-				"While using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB} a creature within 60 feet of you that you can see.",
+				"Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB} a creature within 60 feet of you that you can see.",
                 "The target must make a Wisdom saving throw. On failure, it becomes {@condition Frightened|XPHB} and takes 3 rolls of your Hunter's Die as damage on a failure. On a successful saving throw, it takes half as much damage and is not {@condition Frightened|XPHB}."
 			],
             "prerequisite": [
@@ -2473,7 +2473,7 @@
 			],
 			"entries": [
 				"Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Etherealness|XPHB} spell on yourself as a {@variantrule Bonus Action|XPHB}. When cast this way, the spell lasts until the start of your next turn.",
-                "If you have already used this feature, you can use it again at the cost of 4 Instinct."
+                "If you have already used this feature, you can use it again at the cost of four {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
 			],
             "prerequisite": [
                 {
@@ -2600,7 +2600,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can attempt to wrest a weapon from your opponent. In place of one attack, you can spend one Instinct to make a melee attack roll, which sets the DC for your opponent's Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check. If they fail, they let go of one item or object they are holding, which falls into their current space if applicable."
+				"You can attempt to wrest a weapon from your opponent. In place of one attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a melee attack roll, which sets the DC for your opponent's Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check. If they fail, they let go of one item or object they are holding, which falls into their current space."
 			],
             "prerequisite": [
                 {
@@ -2760,7 +2760,7 @@
 				"HTR"
 			],
 			"entries": [
-				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die if you are {@variantrule Bloodied|XPHB} and have at least 1 {@variantrule Hit Point|XPHB}."
+				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die if you are {@variantrule Bloodied|XPHB} and have at least one {@variantrule Hit Point|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -2785,7 +2785,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are trained to fight all manner of creatures, from the fantastical to the real. When you roll initiative, you can make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to determine one of the Traits or Legendary Actions of a creature you can see, with a DC equal to 10 plus the creature's CR (maximum 30). You can add your Hunter's Die to this roll."
+				"You are trained to fight all manner of creatures, from the fantastical to the real. When you roll initiative, you can make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to determine either the Traits or Legendary Actions of a creature you can see, with a DC equal to 10 plus the creature's CR (maximum 30). You can add your Hunter's Die to this roll."
 			],
             "prerequisite": [
                 {
