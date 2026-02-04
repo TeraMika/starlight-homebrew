@@ -373,7 +373,7 @@
                             "type": "entries",
                             "name": "Reactions Affected",
                             "entries": [
-                                "You regain one fewer {@variantrule Reaction|XPHB} than you normally would at the start of your turns."
+                                "Whenever you take a Reaction, you take {@dice 2d4} lightning damage."
                             ]
                         },
                         {
