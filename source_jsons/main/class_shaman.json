@@ -573,96 +573,149 @@
             "entries": [
                 "You have dedicated yourself to one of the following Shamanic paths, a specific approach to channeling the power of nature or its spirits.",
                 {
-                    "type": "entries",
+                "type": "entries",
+                "entries": [
+                    {
+                    "type": "options",
+                    "count": 1,
                     "entries": [
                         {
-                            "type": "options",
-                            "count": 1,
-                            "entries": [
+                        "name": "Path of the Conduit",
+                        "source": "Starlight",
+                        "className": "Shaman",
+                        "classSource": "Starlight",
+                        "level": 1,
+                        "type": "entries",
+                        "entries": [
+                            "You are a conduit for nature's power directly. Shamans who take this path focus on the raw power of their spellcasting instead of any other means.",
+                            {
+                            "type": "list",
+                                "items": [
+                                    "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
+                                ]
+                            }
+                        ],
+                        "reaction": [
+                            {
+                                "name": "Primal Clarity",
+                                "entries": [
+                                    "When you would lose concentration on a Shaman spell, you can use your {@variantrule Reaction} to maintain {@status concentration} instead. Once you use this reaction, you can't do so again until you finish a {@variantrule Short Rest}."
+                                ]
+                            }
+                        ]
+                        },
+                        {
+                        "name": "Path of the Runeblade",
+                        "source": "Starlight",
+                        "className": "Shaman",
+                        "classSource": "Starlight",
+                        "level": 1,
+                        "type": "entries",
+                        "entries": [
+                            "The Runeblade is a direct means of controlling your primal magic into combat. Shamans who take this path are likely to be the first into the fray, using magic to shore up their martial offense.",
+                            {
+                                "type": "list",
+                                "items": [
+                                    "{@b Runeblade.} As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spellcasting focus for your Shaman spells.",
+                                    "{@b Runeblade Conversion.} Over the course of an hour's ritual, you can convert a magical weapon to be your Runeblade, and can do so to only one magical weapon at a time.",
+                                    "{@b Battle Ready.} You gain proficiency with martial weapons and medium armor."
+                                ]
+                            }
+                        ],
+                        "weaponProficiencies": [
+                            "martial"
+                        ],
+                        "armorProficiencies": [
+                            "medium"
+                        ],
+                        "bonusAction": [
+                            {
+                                "name": "Conjure Runeblade",
+                                "entries": [
+                                    "You conjure your Runeblade or change its existing form."
+                                ]
+                            }
+                        ]
+                        },
+                        {
+                        "name": "Path of the Conjurer",
+                        "source": "Starlight",
+                        "className": "Shaman",
+                        "classSource": "Starlight",
+                        "level": 1,
+                        "type": "entries",
+                        "entries": [
+                            "You manifest primal power differently, through tiny spirits in the form of totems. Shamans who take this path use their totems to aid their allies and hinder their foes in a variety of ways.",
+                            {
+                            "type": "list",
+                            "items": [
+                                "{@b Totems.} You gain the ability to summon a nature spirit totem. These tiny elemental creatures each apply a unique effect in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from themselves. If a totem deals damage, you are considered to have done that damage. Summoning a totem requires an Action, and you can have two such totems active at any time. Each totem lasts one minute. You can summon a totem at no cost, but must expend a 1st-level spell slot or complete a {@variantrule Short Rest} to do so again. You know how to summon two totems from the list below, and can change your selection whenever you complete a {@variantrule Long Rest}.",
                                 {
-                                    "name": "Path of the Conduit",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 1,
-                                    "entries": [
-                                        "You are a conduit for nature's power directly. Shamans who take this path focus on the raw power of their spellcasting instead of any other means.",
-                                        {
-                                            "type": "list",
-                                            "items":[
-                                                "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Path of the Runeblade",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 1,
-                                    "entries": [
-                                        "The Runeblade is a direct means of controlling your primal magic into combat. Shamans who take this path are likely to be the first into the fray, using magic to shore up their martial offense.",
-                                        {
-                                            "type": "list",
-                                            "items":[
-                                                "{@b Runeblade.} As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with Runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spell focus for your Shaman spells.",
-                                                "{@b Runeblade Conversion.} Over the course of an hour's ritual, you can convert a magical weapon to be your Runeblade, and can do so to only one magical weapon at a time.",
-                                                "{@b Battle Ready.} You gain proficiency with martial weapons and medium armor."
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Path of the Conjurer",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 1,
-                                    "entries": [
-                                        "You manifest primal power differently, through tiny spirits in the form of totems. Shamans who take this path use their totems to aid their allies and hinder their foes in a variety of ways.",
-                                        {
-                                            "type": "list",
-                                            "items":[
-                                                "{@b Totems.} You gain the ability to summon a nature spirit totem. These tiny elemental creatures each apply a unique effect in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from themselves. If a totem deals damage, you are considered to have done that damage. Summoning a totem requires an Action, and you can have two such totems active at any time. Each totem lasts one minute. You can summon a Totem at no cost, but must expend a first level spell slot or complete a Short Rest to do so again. You know how to summon two totems from the list below, and can change your selection whenever you gain a level in this class.",
-                                                {
-                                                    "type": "list",
-                                                    "items": [
-                                                        "{@b {@creature Taunting Nature Spirit Totem|Starlight|Taunting}.} Creatures of your choice have disadvantage when attacking any creature in the area that isn't the totem.",
-                                                        "{@b {@creature Warding Nature Spirit Totem|Starlight|Warding}.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
-                                                        "{@b {@creature Warning Nature Spirit Totem|Starlight|Warning}.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
-                                                        "{@b {@creature Lifting Nature Spirit Totem|Starlight|Lifting}.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
-                                                        "{@b {@creature Blessing Nature Spirit Totem|Starlight|Blessing}.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
-                                                        "{@b {@creature Manatide Nature Spirit Totem|Starlight|Manatide}.} Creatures in the area gain +2 spell power."
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Path of the Seer",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 1,
-                                    "entries": [
-                                        "You can commune with spirits more directly, guiding them to assist you and your allies in many ways. Shamans who take this path might serve the role of oracles, advisors, or spiritual leaders.",
-                                        {
-                                            "type": "list",
-                                            "items":[
-                                                "{@b Guiding Spirits.} You can direct primordial spirits to assist your nearby allies. You can take the {@action Help} Action as a {@variantrule Bonus Action} and at a range of 30 feet.",
-                                                "{@b Spiritual Insights.} You gain proficiency in the {@skill Religion} or {@skill History} skill (your choice)."
-                                            ]
-                                        }
+                                    "type": "list",
+                                    "items": [
+                                        "{@b {@creature Taunting Nature Spirit Totem|Starlight|Taunting}.} Creatures of your choice have disadvantage when attacking any creature in the area that isn’t the totem.",
+                                        "{@b {@creature Warding Nature Spirit Totem|Starlight|Warding}.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
+                                        "{@b {@creature Warning Nature Spirit Totem|Starlight|Warning}.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
+                                        "{@b {@creature Lifting Nature Spirit Totem|Starlight|Lifting}.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
+                                        "{@b {@creature Blessing Nature Spirit Totem|Starlight|Blessing}.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
+                                        "{@b {@creature Manatide Nature Spirit Totem|Starlight|Manatide}.} Creatures in the area gain +2 spell power."
                                     ]
                                 }
                             ]
+                            }
+                        ],
+                        "action": [
+                            {
+                                "name": "Summon Totem",
+                                "entries": [
+                                    "You summon a nature spirit totem."
+                                ]
+                            }
+                        ]
+                        },
+                        {
+                        "name": "Path of the Seer",
+                        "source": "Starlight",
+                        "className": "Shaman",
+                        "classSource": "Starlight",
+                        "level": 1,
+                        "type": "entries",
+                        "entries": [
+                            "You can commune with spirits more directly, guiding them to assist you and your allies in many ways. Shamans who take this path might serve the role of oracles, advisors, or spiritual leaders.",
+                            {
+                                "type": "list",
+                                "items": [
+                                    "{@b Guiding Spirits.} You can take the {@action Help} action as a {@variantrule Bonus Action} and at a range of 30 feet.",
+                                    "{@b Spiritual Insights.} You gain proficiency in the {@skill Religion} or {@skill History} skill (your choice)."
+                                ]
+                            }
+                        ],
+                        "skillProficiencies": [
+                            {
+                                "choose": {
+                                    "count": 1,
+                                    "from": [
+                                        "religion",
+                                        "history"
+                                    ]
+                                }
+                            }
+                        ],
+                        "bonusAction": [
+                            {
+                                "name": "Guiding Spirits",
+                                "entries": [
+                                    "You can take the {@action Help} action as a {@variantrule Bonus Action} at a range of 30 feet."
+                                ]
+                            }
+                        ]
                         }
                     ]
+                    }
+                ]
                 }
             ]
-        },
+            },
         {
             "name": "Primordial Runes",
             "source": "Starlight",
@@ -683,6 +736,7 @@
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 2,
+            "type": "entries",
             "entries":
             [
                 "You are attuned with all aspects of nature, but one speaks to you much more strongly.",
@@ -701,21 +755,47 @@
                                     "className": "Shaman",
                                     "classSource": "Starlight",
                                     "level": 2,
+                                    "type": "entries",
                                     "entries": [
-                                        "You gain the {@spell Firebolt|XPHB} or {@spell Green-Flame Blade|TCE} cantrip."
+                                        "You gain power from the brilliant heat of flames and day. You gain the {@spell Firebolt|XPHB} or {@spell Green-Flame Blade|TCE} cantrip."
                                     ],
-                                    "type": "entries"
+                                    "resist": ["fire"],
+                                    "spellcastingBonus": [
+                                    {
+                                        "name": "Elemental Affinity Cantrip",
+                                        "spells": [
+                                            "fire bolt",
+                                            "green-flame blade"
+                                        ],
+                                        "choose": {
+                                            "count": 1
+                                        }
+                                    }
+                                    ]
                                 },
-                                {
+                                  {
                                     "name": "Affinity with Frost (Cold)",
                                     "source": "Starlight",
                                     "className": "Shaman",
                                     "classSource": "Starlight",
                                     "level": 2,
+                                    "type": "entries",
                                     "entries": [
-                                        "You gain the {@spell Ray of Frost|XPHB} or {@spell Frostbite|XGE} cantrip."
+                                        "You gain power from ancient frosts. You gain the {@spell Ray of Frost|XPHB} or {@spell Frostbite|XGE} cantrip."
                                     ],
-                                    "type": "entries"
+                                    "resist": ["cold"],
+                                    "spellcastingBonus": [
+                                    {
+                                        "name": "Elemental Affinity Cantrip",
+                                        "spells": [
+                                            "ray of frost",
+                                            "frostbite"
+                                        ],
+                                        "choose": {
+                                            "count": 1
+                                        }
+                                    }
+                                    ]
                                 },
                                 {
                                     "name": "Affinity with Lightning (Lightning)",
@@ -723,10 +803,23 @@
                                     "className": "Shaman",
                                     "classSource": "Starlight",
                                     "level": 2,
+                                    "type": "entries",
                                     "entries": [
-                                        "You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|XPHB} cantrip."
+                                        "You gain power from static and storms. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|XPHB} cantrip."
                                     ],
-                                    "type": "entries"
+                                    "resist": ["lightning"],
+                                    "spellcastingBonus": [
+                                    {
+                                        "name": "Elemental Affinity Cantrip",
+                                        "spells": [
+                                            "crackling bolt",
+                                            "shocking grasp"
+                                        ],
+                                        "choose": {
+                                            "count": 1
+                                        }
+                                    }
+                                    ]
                                 },
                                 {
                                     "name": "Affinity with Thunder (Thunder)",
@@ -734,10 +827,23 @@
                                     "className": "Shaman",
                                     "classSource": "Starlight",
                                     "level": 2,
+                                    "type": "entries",
                                     "entries": [
-                                        "You gain the {@spell Thunderclap|XPHB} or {@spell Booming Blade|TCE} cantrip."
+                                        "You gain power from clouds and skies. You gain the {@spell Thunderclap|XPHB} or {@spell Booming Blade|TCE} cantrip."
                                     ],
-                                    "type": "entries"
+                                    "resist": ["thunder"],
+                                    "spellcastingBonus": [
+                                    {
+                                        "name": "Elemental Affinity Cantrip",
+                                        "spells": [
+                                            "thunderclap",
+                                            "booming blade"
+                                        ],
+                                        "choose": {
+                                            "count": 1
+                                        }
+                                    }
+                                    ]
                                 },
                                 {
                                     "name": "Affinity with Acid (Acid)",
@@ -745,16 +851,28 @@
                                     "className": "Shaman",
                                     "classSource": "Starlight",
                                     "level": 2,
+                                    "type": "entries",
                                     "entries": [
-                                        "You gain the {@spell Acid Splash|XPHB} or {@spell Primal Savagery|XGE} cantrip."
+                                        "You gain power from nature's lessons. You gain the {@spell Acid Splash|XPHB} or {@spell Primal Savagery|XGE} cantrip."
                                     ],
-                                    "type": "entries"
+                                    "resist": ["acid"],
+                                    "spellcastingBonus": [
+                                    {
+                                        "name": "Elemental Affinity Cantrip",
+                                        "spells": [
+                                            "acid splash",
+                                            "primal savagery"
+                                        ],
+                                        "choose": {
+                                            "count": 1
+                                        }
+                                    }
+                                    ]
                                 }
                             ]
                         }
                     ]
-                },
-                "You can change your elemental affinity whenever you gain a level in this class."
+                }
             ]
         },
         {
