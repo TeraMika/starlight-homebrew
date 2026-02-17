@@ -826,7 +826,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Borderland Hunter feature}",
-                "While using Ethereal Shift, you have {@sense Truesight|XPHB} out to a range of 60 feet.",
+                "While using Ethereal Shift, you have {@sense Truesight|XPHB} out to a range of 30 feet.",
                 "Additionally, the necrotic damage you deal by passing through a creature's space increases to two rolls of your Hunter's Die. When you cast Misty Step using Ethereal Shift, you can deal this damage to all creatures in a 5-foot line between the space you teleport from and your destination."
             ]
         },
@@ -903,7 +903,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. Damaging your Quarry adds one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. Once per turn when you damage your Quarry, you can add one Hunter's Die to the pool."
             ]
         },
         {
@@ -1050,7 +1050,7 @@
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
                 "The best way to chase a creature is to prevent them getting away in the first place.",
-                "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target. On hit, they take damage equal to your Hunter's Die and must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight}. On a successful save, they are {@condition Hampered|Starlight} instead."
+                "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target; they must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight} and take damage equal to a roll of your Hunter's Die. On a successful save, they are {@condition Hampered|Starlight} instead."
             ]
         },
         {
@@ -1090,7 +1090,7 @@
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
                 "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}.",
-                "While unseen by a creature, you can make a special attack against it as an {@variantrule Action|XPHB}. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, and they take additional damage equal to your Hunter's Die. If you hit the attack, making the attack does not reveal your location."
+                "While unseen by a creature, you can replace one attack from your {@action Attack} action with a stealth strike. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, they take additional damage equal to your Hunter's Die, and your position is not revealed. You can do this only once per turn."
             ]
         },
         {
@@ -1103,8 +1103,8 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Urban Hunter feature}",
-                "When you kill a creature, you become {@condition Invisible} until the start of your next turn. This invisibility ends if you make an attack or force another creature to make a saving throw.",
-                "Your Silent Killer special attack can be used in place of an attack, instead of as an {@variantrule Action|XPHB}."
+                "When you reduce a creature to 0 hit points, you can immediately move up to half your speed without provoking {@variantrule Opportunity Attacks}. As part of this movement, you can take the {@action Hide} action, and if you end the movement hidden then you become {@condition Invisible} until the end of your next turn.",
+                "The invisibility ends if you make an attack or force a creature to make a saving throw."
             ]
         },
         {
@@ -1180,7 +1180,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attacks until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
+                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attack options (the DM chooses which) until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
             ]
         },
         {
@@ -1246,7 +1246,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Horizon Hunter feature}",
-                "Once per turn when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, if the creature has a flying, burrowing, swimming, or climbing speed, that speed is reduced by half until the start of your next turn."
+                "Once per turn when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, the creature is {@condition Slowed|Starlight} until the start of your next turn."
             ]
         },
         {
@@ -1916,7 +1916,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make an attack against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll, but add your Hunter's Die to the damage dealt if the attack hits."
+				"When you make an attack against your Quarry, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
 			],
             "prerequisite": [
                 {
@@ -1932,13 +1932,14 @@
             ]
 		},
         {
-			"name": "Powerful Stride I",
+			"name": "Deft Movement I",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"Your movement is not impeded by {@variantrule Difficult Terrain|XPHB}."
+				"Your movement cannot be reduced unless a condition sets it to 0 directly.",
+                "You can take the {@action Disengage} action as a {@variantrule Bonus Action}."
 			],
             "prerequisite": [
                 {
@@ -2067,13 +2068,14 @@
             ]
 		},
         {
-			"name": "Powerful Stride II",
+			"name": "Deft Movement II",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You gain the benefits of the {@spell Freedom of Movement|XPHB} spell whenever you are conscious."
+				"Your speed cannot be reduced unless a condition sets it to 0 directly.",
+                "You have {@variantrule Advantage} on saving throws and ability checks made to avoid the {@condition Grappled}, {@condition Restrained}, or {@condition Paralysed} conditions, and to escape manacles or similar restraints."
 			],
             "prerequisite": [
                 {
@@ -2086,7 +2088,7 @@
                         }
                     },
                     "feature": [
-                        "Powerful Stride I"
+                        "Deft Movement I"
                     ]
                 }
             ]
@@ -2594,13 +2596,13 @@
             ]
 		},
         {
-			"name": "Dirty Fighting",
+			"name": "No Way Out",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You can attempt to wrest a weapon from your opponent. In place of one attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a melee attack roll, which sets the DC for your opponent's Strength ({@skill Athletics|XPHB}) or Dexterity ({@skill Acrobatics|XPHB}) check. If they fail, they let go of one item or object they are holding, which falls into their current space."
+				"When you hit an {@variantrule Opportunity Attack} against a creature, its speed is reduced to 0 until the end of the current turn. If it's your Quarry, it takes additional damage from that attack equal to your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -2626,7 +2628,7 @@
 			],
 			"entries": [
 				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
-                "When you do this, the first attack roll you make is also replaced with a 20."
+                "When you do this, you can add your Hunter's Die to the attack and damage roll of your first attack in that combat."
 			],
             "prerequisite": [
                 {
