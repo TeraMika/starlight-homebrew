@@ -527,7 +527,8 @@
             "classSource": "Starlight",
             "level": 14,
             "entries": [
-                "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws."
+                "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws.",
+                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
             ]
         },
         {
@@ -1670,7 +1671,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}."
+				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}"
 			],
             "prerequisite": [
                 {
@@ -1938,8 +1939,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your movement cannot be reduced unless a condition sets it to 0 directly.",
-                "You can take the {@action Disengage} action as a {@variantrule Bonus Action}."
+                "You can take the {@action Disengage} action as a {@variantrule Bonus Action}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
 			],
             "prerequisite": [
                 {
@@ -2162,28 +2162,6 @@
                     "feature": [
                         "Cunning Hunter I"
                     ]
-                }
-            ]
-		},
-        {
-			"name": "Hunter's Resilience",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per {@variantrule Short Rest|XPHB} when you fail a saving throw, you can reroll it with a bonus equal to your Hunter's Die."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 18,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
                 }
             ]
 		},
