@@ -41,21 +41,21 @@
 				"Hunting Grounds|Hunter|Starlight|3|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|4",
                 "Extra Attack|Fighter|XPHB|5",
-                "Lesser Quarry|Hunter|Starlight|5|Starlight",
+                "Measured Quarry|Hunter|Starlight|5|Starlight",
 				"Offensive Hunter|Hunter|Starlight|6|Starlight",
                 "Sixth Sense|Hunter|Starlight|6|Starlight",
 				"Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|8",
-                "Greater Quarry|Hunter|Starlight|9|Starlight",
+                "Pressured Quarry|Hunter|Starlight|9|Starlight",
 				"Defensive Hunter|Hunter|Starlight|10|Starlight",
 				"Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|12",
-                "Superior Quarry|Hunter|Starlight|13|Starlight",
+                "Cornered Quarry|Hunter|Starlight|13|Starlight",
                 "Refined Instincts|Hunter|Starlight|14|Starlight",
 				"Hunting Grounds Feature|Hunter|Starlight|15|Starlight",
 				"Ability Score Improvement|Fighter|XPHB|16",
                 "Supernatural Hunter|Hunter|Starlight|17|Starlight",
-				"Supreme Quarry|Hunter|Starlight|18|Starlight",
+				"Doomed Quarry|Hunter|Starlight|18|Starlight",
 				"Epic Boon|Hunter|Starlight|19|Starlight",
 				"Hunter's Zenith|Hunter|Starlight|20|Starlight"
 			],
@@ -310,31 +310,31 @@
             ]
         },
         {
-            "name": "Lesser Quarry",
+            "name": "Measured Quarry",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "level": 5,
             "entries":
             [
-                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your Quarry, you gain the associated benefit.",
                 {
                     "type": "entries",
-                    "name": "Relentless",
+                    "name": "Ruthless",
                     "entries":[
                         "Your Quarry cannot {@condition Frighten} you."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Cautious",
+                    "name": "Watchful",
                     "entries":[
                         "Your Quarry cannot {@condition Charm} you."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Strategic",
+                    "name": "Tactical",
                     "entries":[
                         "You learn your Quarry's resistances, vulnerabilities or immunities to any damage or conditions."
                     ]
@@ -405,33 +405,33 @@
             ]
         },
         {
-            "name": "Greater Quarry",
+            "name": "Pressured Quarry",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "level": 9,
             "entries":
             [
-                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
                 {
                     "type": "entries",
-                    "name": "Relentless",
+                    "name": "Ruthless",
                     "entries":[
-                        "When you hit your Quarry with an attack, its AC is reduced by 3 until the end of your turn."
+                        "When you hit your Quarry with an attack, All other attacks you make against have a +3 bonus to hit until the start of your next turn."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Cautious",
+                    "name": "Watchful",
                     "entries":[
-                        "When your Quarry deals damage to you with an effect that targets only you, you can use your {@variantrule Reaction|XPHB} to halve the damage you take from that effect."
+                        "When your Quarry deals damage to you with a feature that targets only you, you can use your {@variantrule Reaction|XPHB} to halve the damage you take from that feature."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Strategic",
+                    "name": "Tactical",
                     "entries":[
-                        "When you attack your Quarry, you can instead end the Quarry and make an attack against every other creature of your choice within your reach (if you use a melee weapon), or within 10 feet of your quarry (if you use a ranged weapon)."
+                        "After your Quarry makes an attack roll, you can use your {@variantrule Reaction|XPHB} to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can do this when your Quarry makes a saving throw."
                     ]
                 }
             ]
@@ -489,33 +489,33 @@
             ]
         },
         {
-            "name": "Superior Quarry",
+            "name": "Cornered Quarry",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "level": 13,
             "entries":
             [
-                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
                 {
                     "type": "entries",
-                    "name": "Relentless",
+                    "name": "Ruthless",
                     "entries":[
                         "Your attacks against your Quarry deal additional damage equal to your Wisdom modifier."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Cautious",
+                    "name": "Watchful",
                     "entries":[
                         "You have an additional 5 feet of reach when attempting to attack your Quarry with a melee weapon. If you use a ranged weapon, you do not suffer disadvantage on attacks outside of the weapon's normal range that are made against your Quarry."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Strategic",
+                    "name": "Tactical",
                     "entries":[
-                        "After your Quarry makes an attack roll, you can use your {@variantrule Reaction|XPHB} to impose a penalty to the roll equal to your Hunter's Die. At the additional cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can do this when your Quarry makes a saving throw."
+                        "When you attack your Quarry, you can instead end the Quarry and make an attack against every other creature of your choice within your reach (if you use a melee weapon), or within 10 feet of your quarry (if you use a ranged weapon)."
                     ]
                 }
             ]
@@ -554,7 +554,7 @@
                     "type": "entries",
                     "name": "Vanish",
                     "entries":[
-                        "You can spend a {@variantrule Bonus Action|XPHB} to become {@condition Invisible|XPHB} until the end of your next turn. While invisible, you can pass through objects and creatures that you otherwise couldn't as if they were {@variantrule Difficult Terrain|XPHB}. If you end your turn within an object or creature's space, you take 3d10 force damage and are shunted to the nearest available space."
+                        "You can spend a {@variantrule Bonus Action|XPHB} to become {@condition Invisible|XPHB} until the end of your next turn. While invisible, you can pass through objects and creatures, and cannot be {@condition Grappled} or {@condition Restrained}. If you end your turn within an object or creature's space, you take {@dice 3d10} force damage and are shunted to the nearest available space."
                     ]
                 },
                 {
@@ -568,39 +568,39 @@
                     "type": "entries",
                     "name": "Reaper",
                     "entries":[
-                        "As an {@variantrule Action|XPHB}, you can make a special attack which, if it kills a creature, grants you an additional {@variantrule Action} this turn. Any attack made this way deals additional damage equal to your Hunter's Die."
+                        "Attacks made as part of the {@action Attack} action this turn deal additional damage equal to your Hunter's Die. If you reduce a creature to zero hit points with these attacks, you can take another {@variantrule Action} this turn."
                     ]
                 }
             ]
         },
         {
-            "name": "Supreme Quarry",
+            "name": "Doomed Quarry",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "level": 18,
             "entries":
             [
-                "Choose one of the following benefits. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
                 {
                     "type": "entries",
-                    "name": "Relentless",
+                    "name": "Ruthless",
                     "entries":[
                         "You have advantage on attacks against your Quarry."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Cautious",
+                    "name": "Watchful",
                     "entries":[
                         "You have advantage on any saving throws you make against your Quarry and its effects."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Strategic",
+                    "name": "Tactical",
                     "entries":[
-                        "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has disadvantage on its attack (if it attacks), that ally has resistance to any damage dealt and advantage on any saving throws it makes."
+                        "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has disadvantage on its attack (if it attacks), or that ally has resistance to any damage dealt and advantage on any saving throws they are forced to make by your Quarry."
                     ]
                 }
             ]
@@ -624,7 +624,7 @@
             "entries": [
                 "Your Wisdom score increases by 2, and so does your Strength or Dexterity score (you choose), both up to a maximum of 30.",
                 "You can have up to two creatures as your Quarry at any one time, and when you mark one you can mark another at no cost. Choosing another Quarry only ends your previous Quarry if you would have more than two, in which case you choose which to end.",
-                "At this level, you also gain access to a unique and powerful Trick: Relentless, Cautious, or Strategic Hunter."
+                "At this level, you also gain access to a unique and powerful Trick: Ruthless, Watchful, or Tactical Hunter."
             ]
         }
     ],
@@ -1410,7 +1410,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you roll initiative, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
+				"When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
 			]
 		},
         {
@@ -1420,7 +1420,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
+				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} or {@skill Deception|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
 			]
         },
         {
@@ -2166,7 +2166,7 @@
             ]
 		},
         {
-			"name": "Relentless Hunter",
+			"name": "Ruthless Hunter",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
@@ -2191,7 +2191,7 @@
             ]
 		},
         {
-			"name": "Cautious Hunter",
+			"name": "Watchful Hunter",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
@@ -2216,7 +2216,7 @@
             ]
 		},
         {
-			"name": "Strategic Hunter",
+			"name": "Tactical Hunter",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
@@ -2427,7 +2427,7 @@
 			],
 			"entries": [
 				"Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB} a creature within 60 feet of you that you can see.",
-                "The target must make a Wisdom saving throw. On failure, it becomes {@condition Frightened|XPHB} and takes 3 rolls of your Hunter's Die as damage on a failure. On a successful saving throw, it takes half as much damage and is not {@condition Frightened|XPHB}."
+                "The target must make a Wisdom saving throw. On failure, it becomes {@condition Frightened|XPHB} and takes two rolls of your Hunter's Die as damage on a failure. On a successful saving throw, it takes half as much damage and is not {@condition Frightened|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -2606,7 +2606,7 @@
 			],
 			"entries": [
 				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
-                "When you do this, you can add your Hunter's Die to the attack and damage roll of your first attack in that combat."
+                "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
 			],
             "prerequisite": [
                 {
