@@ -35,6 +35,7 @@
                 "Weapon Mastery|Ranger|XPHB|1",
                 "Fighting Style|Hunter|Starlight|1|Starlight",
                 "Survival Instincts|Hunter|Starlight|1|Starlight",
+                "Optional Rule: Alternate Ability Hunter|Hunter|Starlight|1|Starlight",
 				"Tricks|Hunter|Starlight|2|Starlight",
                 "Keen Eye|Hunter|Starlight|2|Starlight",
                 "Shrug It Off|Hunter|Starlight|2|Starlight",
@@ -435,7 +436,14 @@
                 "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
                 "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
                 "If a Trick grants or modifies an attack you cannot use more than one at a time. For example, if you use the Retaliate trick to strike back at a foe, you cannot use the Trip Attack Trick on that reliatory strike.",
-                "If a Trick requires a saving throw, the DC is equal to 8 plus your Strength or Dexterity modifier plus your Proficiency Bonus."
+                "Your Hunter features and Tricks share the same DC if they require a saving throw:",
+                {
+                    "type": "abilityDc",
+                    "name": "Hunter",
+                    "attributes": [
+                        "wis"
+                    ]
+                }
             ]
         },
         {
@@ -1183,6 +1191,25 @@
                 "Your experience in dealing with creatures of the between-realm has given you skills related to reading intention and concealing your own.",
                 "You gain proficiency with two of the following skills: {@skill Insight|XPHB}, {@skill Deception|XPHB}, {@skill Persuasion|XPHB}, or {@skill Arcana|XPHB}.",
                 "Additionally, you gain proficiency with {@item Navigator's tools|XPHB} and {@item Herbalism Kit|XPHB}, so you are never lost, and can identify the dangerous flora of the feywilds."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "insight",
+                            "deception",
+                            "persuasion",
+                            "arcana"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "navigator's tools": true,
+                    "herbalism kit": true
+                }
             ]
         },        
         {
@@ -1319,6 +1346,25 @@
                 "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
                 "You gain proficiency with 2 of the following skills: {@skill Arcana|XPHB}, {@skill Religion|XPHB}, {@skill Insight}, or {@skill Persuasion}.",
                 "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "arcana",
+                            "religion",
+                            "insight",
+                            "persuasion"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "gaming set": true,
+                    "cook's utensils": true
+                }
             ]
         },        
         {
@@ -1464,9 +1510,27 @@
                 "{@i 3rd-level Urban Hunter feature}",
                 "Your experience navigating the cities has taught you how to find secrets, and how to get your way.",
                 "You gain proficiency with two of the following three skills: {@skill Investigation|XPHB}, {@skill Persuasion|XPHB}, and {@skill Intimidation|XPHB}.",
-                "Additionally, you gain proficiency with {@item Forgery Kit|XPHB|Forgery Kits} and {@item Thieve's Tools}, to help you gain access to well-guarded places."
+                "Additionally, you gain proficiency with {@item Forgery Kit|XPHB|Forgery Kits} and {@item Thieves' Tools|XPHB}, to help you gain access to well-guarded places."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "investigation",
+                            "persuasion",
+                            "intimidation"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "forgery kit": true,
+                    "thieves' tools": true
+                }
             ]
-        },        
+        },
         {
             "name": "Everyman Quarries",  
             "source": "Starlight",
@@ -1601,7 +1665,26 @@
                 "{@i 3rd-level Horizon Hunter feature}",
                 "In order to hunt beasts, you must travel far and learn how to cope with animals of all temperaments and sizes.",
                 "You gain proficiency with two of the following three skills: {@skill Animal Handling|XPHB}, {@skill Athletics|XPHB}, and {@skill Survival|XPHB}.",
-                "Additionally, you gain proficiency with piloting air or water vehicles, and with a {@item Navigator's Kit|XPHB}."
+                "Additionally, you gain proficiency with piloting air or water vehicles, and with a {@item Navigator's Tools|XPHB}."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "animal handling",
+                            "athletics",
+                            "survival"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "navigator's tools": true,
+                    "vehicles (air)": true,
+                    "vehicles (water)": true
+                }
             ]
         },        
         {
@@ -1770,6 +1853,24 @@
                 "For your tale to be told, you must develop the quick wits and knowledge to tell it.",
                 "You gain proficiency with two of the following skills: {@skill Perception|XPHB}, {@skill Nature|XPHB}, and {@skill Performance|XPHB}.",
                 "Additionally, you gain proficiency with {@item Smith's Tools|XPHB} and {@item Woodcarver's Tools}, to keep your group well-supplied."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "perception",
+                            "nature",
+                            "performance"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "smith's tools": true,
+                    "woodcarver's tools": true
+                }
             ]
         },        
         {
@@ -2054,6 +2155,21 @@
                             "visible": true
                         }
                     }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "athletics", "acrobatics", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "stealth", "survival"
+                        ]
+                    }
+                }
+            ],
+            "expertise": [
+                {
+                    "anyProficientSkill": 1
                 }
             ]
         },
@@ -2510,6 +2626,16 @@
                             "visible": true
                         }
                     }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "any": 1
+                }
+            ],
+            "expertise": [
+                {
+                    "anyProficientSkill": 1
                 }
             ]
 		},
