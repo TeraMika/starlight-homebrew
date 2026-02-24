@@ -201,6 +201,7 @@
 					"type": "ScaleValue",
 					"configuration": {
 						"type": "dice",
+                        "identifier": "hunter-die",
 						"scale": {
 							"1": {
 								"number": 1,
@@ -289,6 +290,26 @@
 					"title": "Instinct"
 				}
 			],
+            "featProgression": [
+				{
+					"name": "Fighting Style",
+					"category": [
+						"FS"
+					],
+					"progression": {
+						"1": 1
+					}
+				},
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
             "optionalfeatureProgression": [
                 {
                     "name": "Hunter Tricks",
@@ -351,8 +372,17 @@
             "entries":
             [
                 "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a {@variantrule Short Rest|XPHB}.",
-                "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. You have an amount of Instinct equal to your Hunter level (as indicated in the Hunter Table) and additional equal to your Wisdom modifier (minimum 0)."
-            ]
+                "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. You have an amount of Instinct equal to your Hunter level plus two (as indicated in the Hunter Table) and additional equal to your Wisdom modifier (minimum 0)."
+            ],
+			"system": {
+				"uses.max": "@scale.hunter.instinct",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "Quarry",
@@ -532,26 +562,72 @@
             "entries": [
                 "At 6th level, your skill as a Hunter have grown and you develop new techniques to fell larger foes or to cleave through their minions. Choose one of the following:",
                 {
-                    "type": "entries",
-                    "name": "Focused Assault",
-                    "entries":[
-                        "You deal an additional {@dice 1d4} when you damage a creature that is below its maximum hit points."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Considered Strikes",
-                    "entries":[
-                        "You score a critical hit on attacks when rolling a 19 or 20 on the {@dice d20}. Whenever you roll a critical hit, you deal additional damage equal to one roll of your Hunter's Die."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Thin the Herd",
-                    "entries":[
-                        "Once on each of your turns when you attack a creature, you can immediately make another attack against a different creature within 10 feet of the target that is within your reach or range."
+                    "type":  "entries",
+                    "entries": [
+                        {
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Focused Assault|Hunter|Starlight|6|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Considered Strikes|Hunter|Starlight|6|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Thin the Herd|Hunter|Starlight|6|Starlight"
+                                }
+                            ]
+                        }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Focused Assault",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "You deal an additional {@dice 1d4} when you damage a creature that is below its maximum hit points."
+            ]
+        },
+        {
+            "name": "Considered Strikes",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "You score a critical hit on attacks when rolling a 19 or 20 on the {@dice d20}. Whenever you roll a critical hit, you deal additional damage equal to one roll of your Hunter's Die."
+            ],
+            "foundrySystem": {
+                "effects": [
+				{
+                    "name": "Considered Strikes",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.weaponCriticalThreshold",
+							"mode": "OVERRIDE",
+							"value": 19
+						}
+					]
+				}
+			]}
+        },
+        {
+            "name": "Thin the Herd",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "Once on each of your turns when you attack a creature, you can immediately make another attack against a different creature within 10 feet of the target that is within your reach or range."
             ]
         },
         {
@@ -685,26 +761,58 @@
             "entries": [
                 "At 10th level, your skill as a Hunter have grown further and you develop new techniques to help you evade danger. Choose one of the following:",
                 {
-                    "type": "entries",
-                    "name": "Quickstep",
-                    "entries":[
-                        "Creatures cannot make opportunity attacks against you."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Pattern Recognition",
-                    "entries":[
-                        "After a creature hits you with an attack, you gain a +4 bonus to your {@variantrule Armour Class|XPHB|AC} against all other attacks made by that creature until the end of its turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Evasion",
-                    "entries":[
-                        "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+                    "type":  "entries",
+                    "entries": [
+                        {
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Quickstep|Hunter|Starlight|10|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Pattern Recognition|Hunter|Starlight|10|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Evasion|Hunter|Starlight|10|Starlight"
+                                }
+                            ]
+                        }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Quickstep",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 10,
+            "entries": [
+                "Creatures cannot make opportunity attacks against you."
+            ]
+        },
+        {
+            "name": "Pattern Recognition",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 10,
+            "entries": [
+                "After a creature hits you with an attack, you gain a +4 bonus to your {@variantrule Armour Class|XPHB|AC} against all other attacks made by that creature until the end of its turn."
+            ]
+        },
+        {
+            "name": "Evasion",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 10,
+            "entries": [
+                "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
             ]
         },
         {
@@ -822,26 +930,58 @@
             "entries": [
                 "Your skills as a Hunter grow again, to the extent that your abilities seem almost supernatural. Choose one of the following abilities, which you can use once per {@variantrule Short Rest|XPHB}:",
                 {
-                    "type": "entries",
-                    "name": "Vanish",
-                    "entries":[
-                        "You can spend a {@variantrule Bonus Action|XPHB} to become {@condition Invisible|XPHB} until the end of your next turn. While invisible, you can pass through objects and creatures, and cannot be {@condition Grappled} or {@condition Restrained}. If you end your turn within an object or creature's space, you take {@dice 3d10} force damage and are shunted to the nearest available space."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Blur",
-                    "entries":[
-                        "You double your {@variantrule Speed|XPHB} this turn (no action required). If you take damage before the start of your next turn, any movement you didn't use on your turn can instead be used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Reaper",
-                    "entries":[
-                        "Attacks made as part of the {@action Attack} action this turn deal additional damage equal to your Hunter's Die. If you reduce a creature to zero hit points with these attacks, you can take another {@variantrule Action} this turn."
+                    "type":  "entries",
+                    "entries": [
+                        {
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Vanish|Hunter|Starlight|17|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Blur|Hunter|Starlight|17|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Reaper|Hunter|Starlight|17|Starlight"
+                                }
+                            ]
+                        }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Vanish",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 17,
+            "entries": [
+                "You can spend a {@variantrule Bonus Action|XPHB} to become {@condition Invisible|XPHB} until the end of your next turn. While invisible, you can pass through objects and creatures, and cannot be {@condition Grappled} or {@condition Restrained}. If you end your turn within an object or creature's space, you take {@dice 3d10} force damage and are shunted to the nearest available space."
+            ]
+        },
+        {
+            "name": "Blur",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 17,
+            "entries": [
+                "You double your {@variantrule Speed|XPHB} this turn (no action required). If you take damage before the start of your next turn, any movement you didn't use on your turn can instead be used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+            ]
+        },
+        {
+            "name": "Reaper",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 17,
+            "entries": [
+                "Attacks made as part of the {@action Attack} action this turn deal additional damage equal to your Hunter's Die. If you reduce a creature to zero hit points with these attacks, you can take another {@variantrule Action} this turn."
             ]
         },
         {
@@ -1078,7 +1218,11 @@
                 "You can use a {@variantrule Bonus Action|XPHB} to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
                 "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
                 "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 2
+            }
         },
         {
             "name": "Expert",
@@ -1207,7 +1351,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. Once per turn when you damage your Quarry, you can add one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry on your turn, you can add one Hunter's Die to the pool."
             ]
         },
         {
@@ -1355,7 +1499,10 @@
                 "{@i 3rd-level Urban Hunter feature}",
                 "The best way to chase a creature is to prevent them getting away in the first place.",
                 "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target; they must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight} and take damage equal to a roll of your Hunter's Die. On a successful save, they are {@condition Hampered|Starlight} instead."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Expert",
@@ -1381,7 +1528,10 @@
             "entries": [
                 "{@i 7th-level Urban Hunter feature}",
                 "You have a knack for finding people. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action} to sense the direction to a creature as per the {@spell Locate Creature|XPHB} spell. This lasts for ten minutes and does not require your {@status concentration|concentrating}."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Silent Killer",
@@ -1485,7 +1635,10 @@
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
                 "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attack options (the DM chooses which) until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Trophies",
@@ -1497,7 +1650,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "When you roll a 20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and 1d4 days to find a suitable buyer - in these cases, the item may sell for more."
+                "When you roll a 20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and {@dice 1d4} days to find a suitable buyer - in these cases, the item may sell for more."
             ]
         },
         {
@@ -1525,7 +1678,19 @@
                 "{@i 7th-level Horizon Hunter feature}",
                 "Your walking speed increases by 10 feet, and you gain a Climb and Swim speed equal to your walking speed.",
                 "You can hold your breath underwater for an additional number of minutes equal to your Wisdom modifier."
-            ]
+            ],
+            "effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			]
         },
         {
             "name": "Pack Hunting",
@@ -1577,6 +1742,7 @@
             "level": 3,
             "entries": [
                 "Fable Hunters gained their knowledge from study, and almost all of them have a common goal: to be a Hunter that would be discussed in the very books and tales they learned from. A Fable Hunter aims to live forever, immortalised in stories told around a fireplace and studies of combat strategy. A Fable Hunter wants to take on creatures of Legendary power; and a Fable Hunter wants to win. To this end, they learn their foe, and direct their allies to victory. Success comes before personal glory.",
+                "{@note A 'Legendary Creature' is one that has Legendary (or similar, such as Mythic) actions. Typically, having a Lair Action would not qualify a creature. Work with your DM to define what a legendary creature means in your campaign.}",
                     {
                         "type": "refSubclassFeature",
                         "subclassFeature": "Skills of Yore|Hunter|Starlight|Fable|Starlight|3"
@@ -1637,7 +1803,10 @@
             "entries": [
                 "{@i 3rd-level Fable Hunter feature}",
                 "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to command an ally. The ally you choose can use their {@variantrule Reaction|XPHB} to move up to their {@variantrule Speed|XPHB}, or make an attack against your Quarry. The attack has a bonus to the damage roll equal to a roll of your Hunter's Die."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Expert",
@@ -1663,7 +1832,10 @@
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
                 "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Hunter's Call",
@@ -1676,7 +1848,10 @@
             "entries": [
                 "{@i 11th-level Fable Hunter feature}",
                 "Once per {@variantrule Short Rest|XPHB}, you can use a {@variantrule Bonus Action|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to mark one target with a special Quarry until the start of your next turn. Whenever any creature deals damage to the target, they deal additional damage equal to your Hunter's Die."
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Commanding Shout",
@@ -1741,7 +1916,11 @@
 			"entries": [
 				"You gain proficiency with Heavy Armour."
 			],
-            "armorProficiencies": []
+            "armorProficiencies": [
+                {
+                    "heavy": true
+                }
+            ]
         },
         {
             "name": "Trip Attack",
@@ -1751,7 +1930,10 @@
 			],
 			"entries": [
 				"You can attempt to trip a creature when you attack it. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} when you make an attack to force the target to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
-			]
+			],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Retaliate",
@@ -1761,7 +1943,10 @@
 			],
 			"entries": [
 				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
-			]
+			],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Driving Strike",
@@ -1771,7 +1956,10 @@
 			],
 			"entries": [
 				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
-			]
+			],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Dazzling Strike",
@@ -1781,7 +1969,10 @@
 			],
 			"entries": [
 				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
-			]
+			],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Finder of Traps",
@@ -1792,7 +1983,10 @@
 			"entries": [
 				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
                 "A trap is any object or mechanism that was created or placed to cause damage or other danger. This could include spells, physical mechanisms, or even dangerous loopholes in a contract."
-			]
+			],
+            "consumes": {
+                "name": "Instinct"
+            }
         },
         {
             "name": "Trapsetter",
@@ -1905,7 +2099,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Cleaving Attack",
@@ -1927,7 +2124,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Readied Strike",
@@ -1972,7 +2172,8 @@
                         }
                     }
                 }
-            ]
+            ],
+            "resist": ["fire, cold, acid, lightning, or thunder"]
 		},
         {
 			"name": "Superior Stamina I",
@@ -1994,7 +2195,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Staggering Blow",
@@ -2017,7 +2221,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Sundering Blow",
@@ -2040,7 +2247,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Hampering Attack",
@@ -2084,7 +2294,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Instinctual Mark",
@@ -2106,7 +2319,11 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 2
+            }
 		},
         {
 			"name": "Shrug it Off Improvement",
@@ -2152,7 +2369,8 @@
                         }
                     }
                 }
-            ]
+            ],
+            "resist": ["poison"]
 		},
         {
 			"name": "Indefatigable I",
@@ -2196,7 +2414,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Sliding Attack",
@@ -2205,7 +2426,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are especially manoeuvrable. You can use two {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
+				"You are especially manoeuvrable. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
 			],
             "prerequisite": [
                 {
@@ -2218,7 +2439,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Power Attack",
@@ -2262,7 +2486,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Naturally Gifted",
@@ -2306,7 +2533,19 @@
                         }
                     }
                 }
-            ]
+            ],
+            "effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			]
 		},
         {
 			"name": "Preceding Reputation",
@@ -2328,7 +2567,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
             "name": "Honed Senses",
@@ -2359,7 +2601,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per turn when you regain hit points, including from rolling Hit Dice during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
+				"Once per turn when you regain hit points, including each time you roll a Hit Die during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -2423,7 +2665,10 @@
                         }
                     }
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Sterner Stuff II",
@@ -2432,7 +2677,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You have advantage on any saving throw against necrotic damage or the {@condition Stunned|XPHB} or {@condition Incapacitated|XPHB} conditions."
+				"You have resistance to necrotic damage and advantage on saving throws against the {@condition Stunned|XPHB} or {@condition Incapacitated|XPHB} conditions."
 			],
             "prerequisite": [
                 {
@@ -2448,7 +2693,8 @@
                         "Sterner Stuff I"
                     ]
                 }
-            ]
+            ],
+            "resist": ["necrotic"]
 		},
         {
 			"name": "Cunning Hunter II",
@@ -2523,7 +2769,10 @@
                         "No other 20th Level Tricks"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Tactical Hunter",
@@ -2548,7 +2797,10 @@
                         "No other 20th Level Tricks"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Hunter of the Planes",
@@ -2574,7 +2826,10 @@
                         "Extraplanar Hunting Grounds"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Favoured Terrain: Outer Planes",
@@ -2600,7 +2855,10 @@
                         "Extraplanar Hunting Grounds"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Supernatural Defenses",
@@ -2625,7 +2883,8 @@
                         "Extraplanar Hunting Grounds"
                     ]
                 }
-            ]
+            ],
+            "resist": ["necrotic", "radiant", "psychic"]
 		},
         {
 			"name": "Banishing Strike",
@@ -2650,7 +2909,11 @@
                         "Extraplanar Hunting Grounds"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 2
+            }
 		},
         {
 			"name": "Attunement with the Planes",
@@ -2701,7 +2964,10 @@
                         "Edge of the World"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct"
+            }
 		},
         {
 			"name": "Favoured Terrain: Borderlands",
@@ -2736,7 +3002,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB} a creature within 60 feet of you that you can see.",
+				"Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB|Frighten} a creature within 60 feet of you that you can see.",
                 "The target must make a Wisdom saving throw. On failure, it becomes {@condition Frightened|XPHB} and takes two rolls of your Hunter's Die as damage on a failure. On a successful saving throw, it takes half as much damage and is not {@condition Frightened|XPHB}."
 			],
             "prerequisite": [
@@ -2779,7 +3045,11 @@
                         "Borderland Hunting Grounds"
                     ]
                 }
-            ]
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 4
+            }
 		},
         {
 			"name": "Halfway There",
@@ -2788,7 +3058,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this once per {@variantrule Short Rest|XPHB}.",
+				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this successfully once per {@variantrule Short Rest|XPHB}.",
                 "You have advantage on Death saving throws."
 			],
             "prerequisite": [
@@ -2890,7 +3160,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit an {@variantrule Opportunity Attack} against a creature, its speed is reduced to 0 until the end of the current turn. If it's your Quarry, it takes additional damage from that attack equal to your Hunter's Die."
+				"When you hit a creature with an {@variantrule Opportunity Attack}, it is {@condition Halted|Starlight} until the end of the current turn. If it's your Quarry, it takes additional damage from that attack equal to your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -3050,7 +3320,7 @@
 				"HTR"
 			],
 			"entries": [
-				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die if you are {@variantrule Bloodied|XPHB} and have at least one {@variantrule Hit Point|XPHB}."
+				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die plus your Wisdom modifier if you are {@variantrule Bloodied|XPHB} and have at least one {@variantrule Hit Point|XPHB}."
 			],
             "prerequisite": [
                 {
