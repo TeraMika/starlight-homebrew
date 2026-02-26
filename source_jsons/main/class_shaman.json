@@ -20,7 +20,9 @@
             }
         ],
         "optionalFeatureTypes": {
-            "PRU": "Primordial Rune"
+            "PRU": "Primordial Rune",
+            "SHA:PA": "Path of the Shaman",
+            "SHA:EA": "Elemental Affinity"
         },
         "dateAdded": 0,
         "dateLastModified": 0
@@ -35,14 +37,26 @@
                 "Paths of the Shaman|Shaman|Starlight|1|Starlight",
 				"Elemental Affinity|Shaman|Starlight|2|Starlight",
 				"Primordial Runes|Shaman|Starlight|2|Starlight",
-                "Elemental Origin|Shaman|Starlight|3|Starlight",
+                {
+                    "classFeature": "Elemental Origin|Shaman|Starlight|3|Starlight",
+                    "gainSubclassFeature": true
+                },
 				"Ability Score Improvement|Fighter|XPHB|4",
-				"Elemental Origin Feature|Shaman|Starlight|6|Starlight",
+                {
+                    "classFeature": "Elemental Origin Feature|Shaman|Starlight|6|Starlight",
+                    "gainSubclassFeature": true
+                },
 				"Ability Score Improvement|Fighter|XPHB|8",
                 "Down the Path|Shaman|Starlight|9|Starlight",
-				"Elemental Origin Feature|Shaman|Starlight|10|Starlight",
+                {
+                    "classFeature": "Elemental Origin Feature|Shaman|Starlight|10|Starlight",
+                    "gainSubclassFeature": true
+                },
 				"Ability Score Improvement|Fighter|XPHB|12",
-				"Elemental Origin Feature|Shaman|Starlight|14|Starlight",
+                {
+                    "classFeature": "Elemental Origin Feature|Shaman|Starlight|14|Starlight",
+                    "gainSubclassFeature": true
+                },
 				"Ability Score Improvement|Fighter|XPHB|16",
                 "Elemental Embodiment|Shaman|Starlight|18|Starlight",
 				"Epic Boon|Fighter|XPHB|19",
@@ -210,7 +224,7 @@
             "startingProficiencies": {
                 "armor": [
                     "light",
-                    "{@item shield|XPHB|shields}"
+                    "shields"
                 ],
                 "weapons":[
                     "simple"
@@ -257,6 +271,65 @@
                     ]
                 }
             },
+            "featProgression": [
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Primordial Runes",
+                    "featureType": [
+                        "PRU"
+                    ],
+                    "progression": [
+                        0,
+                        2,
+                        3,
+                        3,
+                        4,
+                        4,
+                        5,
+                        5,
+                        6,
+                        6,
+                        7,
+                        7,
+                        8,
+                        8,
+                        9,
+                        9,
+                        10,
+                        10,
+                        10,
+                        11
+                    ]
+                },
+                {
+                    "name": "Path of the Shaman",
+                    "featureType": [
+                        "SHA:PA"
+                    ],
+                    "progression": {
+                        "1": 1
+                    }
+                },
+                {
+                    "name": "Elemental Affinity",
+                    "featureType": [
+                        "SHA:EA"
+                    ],
+                    "progression": {
+                        "2": 1
+                    }
+                }
+            ],
             "spellcastingAbility": "wis",
             "casterProgression": "full",
             "spellsKnownProgression":[
@@ -514,7 +587,7 @@
                     "type": "entries",
                     "name": "Spell Slots",
                     "entries": [
-                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a {@variantrule Long Rest}."
+                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman (Starlight)} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a {@variantrule Long Rest}."
                     ]
                 },
                 {
@@ -569,153 +642,10 @@
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 1,
-            "type": "entries",
             "entries": [
-                "You have dedicated yourself to one of the following Shamanic paths, a specific approach to channeling the power of nature or its spirits.",
-                {
-                "type": "entries",
-                "entries": [
-                    {
-                    "type": "options",
-                    "count": 1,
-                    "entries": [
-                        {
-                        "name": "Path of the Conduit",
-                        "source": "Starlight",
-                        "className": "Shaman",
-                        "classSource": "Starlight",
-                        "level": 1,
-                        "type": "entries",
-                        "entries": [
-                            "You are a conduit for nature's power directly. Shamans who take this path focus on the raw power of their spellcasting instead of any other means.",
-                            {
-                            "type": "list",
-                                "items": [
-                                    "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
-                                ]
-                            }
-                        ],
-                        "reaction": [
-                            {
-                                "name": "Primal Clarity",
-                                "entries": [
-                                    "When you would lose concentration on a Shaman spell, you can use your {@variantrule Reaction} to maintain {@status concentration} instead. Once you use this reaction, you can't do so again until you finish a {@variantrule Short Rest}."
-                                ]
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Path of the Runeblade",
-                        "source": "Starlight",
-                        "className": "Shaman",
-                        "classSource": "Starlight",
-                        "level": 1,
-                        "type": "entries",
-                        "entries": [
-                            "The Runeblade is a direct means of controlling your primal magic into combat. Shamans who take this path are likely to be the first into the fray, using magic to shore up their martial offense.",
-                            {
-                                "type": "list",
-                                "items": [
-                                    "{@b Runeblade.} As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spellcasting focus for your Shaman spells.",
-                                    "{@b Runeblade Conversion.} Over the course of an hour's ritual, you can convert a magical weapon to be your Runeblade, and can do so to only one magical weapon at a time.",
-                                    "{@b Battle Ready.} You gain proficiency with martial weapons and medium armor."
-                                ]
-                            }
-                        ],
-                        "weaponProficiencies": [
-                            "martial"
-                        ],
-                        "armorProficiencies": [
-                            "medium"
-                        ],
-                        "bonusAction": [
-                            {
-                                "name": "Conjure Runeblade",
-                                "entries": [
-                                    "You conjure your Runeblade or change its existing form."
-                                ]
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Path of the Conjurer",
-                        "source": "Starlight",
-                        "className": "Shaman",
-                        "classSource": "Starlight",
-                        "level": 1,
-                        "type": "entries",
-                        "entries": [
-                            "You manifest primal power differently, through tiny spirits in the form of totems. Shamans who take this path use their totems to aid their allies and hinder their foes in a variety of ways.",
-                            {
-                            "type": "list",
-                            "items": [
-                                "{@b Totems.} You gain the ability to summon a nature spirit totem. These tiny elemental creatures each apply a unique effect in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from themselves. If a totem deals damage, you are considered to have done that damage. Summoning a totem requires an Action, and you can have two such totems active at any time. Each totem lasts one minute. You can summon a totem at no cost, but must expend a 1st-level spell slot or complete a {@variantrule Short Rest} to do so again. You know how to summon two totems from the list below, and can change your selection whenever you complete a {@variantrule Long Rest}.",
-                                {
-                                    "type": "list",
-                                    "items": [
-                                        "{@b {@creature Taunting Nature Spirit Totem|Starlight|Taunting}.} Creatures of your choice have disadvantage when attacking any creature in the area that isn’t the totem.",
-                                        "{@b {@creature Warding Nature Spirit Totem|Starlight|Warding}.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
-                                        "{@b {@creature Warning Nature Spirit Totem|Starlight|Warning}.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
-                                        "{@b {@creature Lifting Nature Spirit Totem|Starlight|Lifting}.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
-                                        "{@b {@creature Blessing Nature Spirit Totem|Starlight|Blessing}.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
-                                        "{@b {@creature Manatide Nature Spirit Totem|Starlight|Manatide}.} Creatures in the area gain +2 spell power."
-                                    ]
-                                }
-                            ]
-                            }
-                        ],
-                        "action": [
-                            {
-                                "name": "Summon Totem",
-                                "entries": [
-                                    "You summon a nature spirit totem."
-                                ]
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Path of the Seer",
-                        "source": "Starlight",
-                        "className": "Shaman",
-                        "classSource": "Starlight",
-                        "level": 1,
-                        "type": "entries",
-                        "entries": [
-                            "You can commune with spirits more directly, guiding them to assist you and your allies in many ways. Shamans who take this path might serve the role of oracles, advisors, or spiritual leaders.",
-                            {
-                                "type": "list",
-                                "items": [
-                                    "{@b Guiding Spirits.} You can take the {@action Help} action as a {@variantrule Bonus Action} and at a range of 30 feet.",
-                                    "{@b Spiritual Insights.} You gain proficiency in the {@skill Religion} or {@skill History} skill (your choice)."
-                                ]
-                            }
-                        ],
-                        "skillProficiencies": [
-                            {
-                                "choose": {
-                                    "count": 1,
-                                    "from": [
-                                        "religion",
-                                        "history"
-                                    ]
-                                }
-                            }
-                        ],
-                        "bonusAction": [
-                            {
-                                "name": "Guiding Spirits",
-                                "entries": [
-                                    "You can take the {@action Help} action as a {@variantrule Bonus Action} at a range of 30 feet."
-                                ]
-                            }
-                        ]
-                        }
-                    ]
-                    }
-                ]
-                }
+              "You dedicate yourself to one of the following shamanic paths: {@optfeature Path of the Conduit|Starlight}, {@optfeature Path of the Runeblade|Starlight}, {@optfeature Path of the Conjurer|Starlight}, or the {@optfeature Path of the Seer|Starlight}."
             ]
-            },
+        },
         {
             "name": "Primordial Runes",
             "source": "Starlight",
@@ -736,143 +666,10 @@
             "className": "Shaman",
             "classSource": "Starlight",
             "level": 2,
-            "type": "entries",
-            "entries":
-            [
-                "You are attuned with all aspects of nature, but one speaks to you much more strongly.",
-                "When you choose an Elemental Affinity, you gain a cantrip from the options listed and become resistant to that damage type.",
-                "You will also gain access to a series of Primordial Runes that can deepen your affinity.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "options",
-                            "count": 1,
-                            "entries": [
-                                {
-                                    "name": "Affinity with Flame (Fire)",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 2,
-                                    "type": "entries",
-                                    "entries": [
-                                        "You gain power from the brilliant heat of flames and day. You gain the {@spell Firebolt|XPHB} or {@spell Green-Flame Blade|TCE} cantrip."
-                                    ],
-                                    "resist": ["fire"],
-                                    "spellcastingBonus": [
-                                    {
-                                        "name": "Elemental Affinity Cantrip",
-                                        "spells": [
-                                            "fire bolt",
-                                            "green-flame blade"
-                                        ],
-                                        "choose": {
-                                            "count": 1
-                                        }
-                                    }
-                                    ]
-                                },
-                                  {
-                                    "name": "Affinity with Frost (Cold)",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 2,
-                                    "type": "entries",
-                                    "entries": [
-                                        "You gain power from ancient frosts. You gain the {@spell Ray of Frost|XPHB} or {@spell Frostbite|XGE} cantrip."
-                                    ],
-                                    "resist": ["cold"],
-                                    "spellcastingBonus": [
-                                    {
-                                        "name": "Elemental Affinity Cantrip",
-                                        "spells": [
-                                            "ray of frost",
-                                            "frostbite"
-                                        ],
-                                        "choose": {
-                                            "count": 1
-                                        }
-                                    }
-                                    ]
-                                },
-                                {
-                                    "name": "Affinity with Lightning (Lightning)",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 2,
-                                    "type": "entries",
-                                    "entries": [
-                                        "You gain power from static and storms. You gain the {@spell Crackling Bolt|J:General} or {@spell Shocking Grasp|XPHB} cantrip."
-                                    ],
-                                    "resist": ["lightning"],
-                                    "spellcastingBonus": [
-                                    {
-                                        "name": "Elemental Affinity Cantrip",
-                                        "spells": [
-                                            "crackling bolt",
-                                            "shocking grasp"
-                                        ],
-                                        "choose": {
-                                            "count": 1
-                                        }
-                                    }
-                                    ]
-                                },
-                                {
-                                    "name": "Affinity with Thunder (Thunder)",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 2,
-                                    "type": "entries",
-                                    "entries": [
-                                        "You gain power from clouds and skies. You gain the {@spell Thunderclap|XPHB} or {@spell Booming Blade|TCE} cantrip."
-                                    ],
-                                    "resist": ["thunder"],
-                                    "spellcastingBonus": [
-                                    {
-                                        "name": "Elemental Affinity Cantrip",
-                                        "spells": [
-                                            "thunderclap",
-                                            "booming blade"
-                                        ],
-                                        "choose": {
-                                            "count": 1
-                                        }
-                                    }
-                                    ]
-                                },
-                                {
-                                    "name": "Affinity with Acid (Acid)",
-                                    "source": "Starlight",
-                                    "className": "Shaman",
-                                    "classSource": "Starlight",
-                                    "level": 2,
-                                    "type": "entries",
-                                    "entries": [
-                                        "You gain power from nature's lessons. You gain the {@spell Acid Splash|XPHB} or {@spell Primal Savagery|XGE} cantrip."
-                                    ],
-                                    "resist": ["acid"],
-                                    "spellcastingBonus": [
-                                    {
-                                        "name": "Elemental Affinity Cantrip",
-                                        "spells": [
-                                            "acid splash",
-                                            "primal savagery"
-                                        ],
-                                        "choose": {
-                                            "count": 1
-                                        }
-                                    }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "entries": [
+                "You are attuned with all aspects of nature, but one speaks to you much more strongly: {@optfeature Affinity with Flame|Starlight}, {@optfeature Affinity with Frost|Starlight}, {@optfeature Affinity with Lightning|Starlight}, {@optfeature Affinity with Thunder|Starlight}, or {@optfeature Affinity with Acid|Starlight}",
+                "When you choose an Elemental Affinity, you gain a cantrip that deals that damage type and you become resistant to that damage type.",
+                "You will also gain access to a series of Primordial Runes that can deepen your affinity."
             ]
         },
         {
@@ -1790,6 +1587,294 @@
     ],
     "optionalfeature": [
         {
+            "name": "Path of the Conduit",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:PA"
+            ],
+            "entries": [
+                "You are a conduit for nature's power directly. Shamans who take this path focus on the raw power of their spellcasting instead of any other means.",
+                {
+                "type": "list",
+                    "items": [
+                        "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
+                    ]
+                }
+            ],
+            "foundryActivities": [
+				{
+					"name": "Primal Clarity",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "When you would lose concentration on a Shaman spell"
+					},
+                    "description": {
+                        "chatFlavor": "The spirits maintain your grasp on a spell you would have otherwise lost."
+                    },
+                    "uses": {
+						"recovery": [
+							{
+								"period": "sr",
+								"type": "recoverAll"
+							}
+						],
+                        "max": "1"
+					}
+				}
+			]
+        },
+        {
+            "name": "Path of the Runeblade",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:PA"
+            ],
+            "entries": [
+                "The Runeblade is a direct means of controlling your primal magic into combat.",
+                "As a {@variantrule Bonus Action}, you can conjure a Runeblade - an unusual Shaman-crafted weapon with a long hilt and blade, each emblazoned with runes representing your primal magic. A Runeblade is a martial melee weapon with the Versatile property. While wielded in two hands, it has the Reach property. It deals {@dice 1d8} ({@dice 1d10}) slashing damage plus the ability modifier used for the attack roll. Alternatively, you can have it take the form of a simple or martial weapon of your choice. It disappears if you conjure another or if it is out of your possession for one minute or more. It acts as a spellcasting focus for your Shaman spells.",
+                "{@b Battle Ready.} You gain proficiency with {@filter Martial weapons|items|type=martial weapon} and training with {@filter Medium armor|items|type=Medium Armor"
+            ],
+            "weaponProficiencies": [
+                {
+                    "martial": true
+                }
+            ],
+            "armorProficiencies": [
+                {
+                    "medium": true
+                }
+            ],
+            "foundryActivities": [
+				{
+					"name": "Conjure Runeblade",
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"value": 1
+					},
+                    "description": {
+						"chatFlavor": "An unusual but powerful ritual."
+					}
+				},
+                {
+					"name": "Convert Magic Weapon",
+					"type": "utility",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+                    "description": {
+						"chatFlavor": "You convert a magic weapon that another creature is not attuned to and convert it into your Runeblade."
+					}
+				}
+            ]
+        },
+        {
+            "name": "Path of the Conjurer",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:PA"
+            ],
+            "entries": [
+                "You manifest primal power differently, through tiny spirits in the form of totems. Shamans who take this path use their totems to aid their allies and hinder their foes in a variety of ways.",
+                {
+                "type": "list",
+                "items": [
+                    "{@b Totems.} You gain the ability to summon a nature spirit totem. These tiny elemental creatures each apply a unique effect in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from themselves. If a totem deals damage, you are considered to have done that damage. Summoning a totem requires an Action, they appear in an unoccupied space within 60 feet, and you can have two such totems active at any time. Each totem lasts one minute. You can summon a totem at no cost, but must expend a 1st-level spell slot or complete a {@variantrule Short Rest} to do so again. You know how to summon two totems from the list below, and can change your selection whenever you complete a {@variantrule Long Rest}.",
+                    {
+                        "type": "list",
+                        "items": [
+                            "{@b {@creature Taunting Nature Spirit Totem|Starlight|Taunting}.} Creatures of your choice have disadvantage when attacking any creature in the area that isn't the totem.",
+                            "{@b {@creature Warding Nature Spirit Totem|Starlight|Warding}.} {@condition Halted|Starlight|Halt} creatures of your choice who enter the emanation or end their turn in it.",
+                            "{@b {@creature Warning Nature Spirit Totem|Starlight|Warning}.} You and allies in the area gain a +2 bonus to saving throws while in the emanation.",
+                            "{@b {@creature Lifting Nature Spirit Totem|Starlight|Lifting}.} Creatures of your choice who enter the area can be lifted, leaping up to 30 feet in a direction they choose. Creatures who start their turn in the area gain 10 feet of movement speed until the start of their next turn.",
+                            "{@b {@creature Blessing Nature Spirit Totem|Starlight|Blessing}.} Creatures of your choice can gain a +2 bonus to an attack roll or ability check once each round.",
+                            "{@b {@creature Manatide Nature Spirit Totem|Starlight|Manatide}.} Creatures in the area gain +2 spell power."
+                        ]
+                    }
+                ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Summon Totem",
+                    "type": "utility",
+                    "activation": {
+                        "type": "action",
+                        "value": 1
+                    },
+                    "range": {
+                        "value": 60,
+                        "units": "ft"
+                    },
+                    "description": {
+                        "chatFlavor": "You conjure a nature spirit totem."
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Path of the Seer",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:PA"
+            ],
+            "entries": [
+                "You can commune with spirits more directly, guiding them to assist you and your allies in many ways. Shamans who take this path might serve the role of oracles, advisors, or spiritual leaders.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Guiding Spirits.} You can take the {@action Help} action as a {@variantrule Bonus Action} and at a range of 30 feet.",
+                        "{@b Spiritual Insights.} You gain proficiency in the {@skill Religion} or {@skill History} skill (your choice)."
+                    ]
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "religion",
+                            "history"
+                        ]
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Guiding Spirits",
+                    "type": "utility",
+                    "activation": {
+                        "type": "bonus",
+                        "value": 1
+                    },
+                    "range": {
+                        "value": 30,
+                        "units": "ft"
+                    },
+                    "description": {
+                        "chatFlavor": "The spirits aid your allies."
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Affinity with Flame",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:EA"
+            ],
+            "entries": [
+                "You gain power from the brilliant heat of flames and day. You learn one Shaman cantrip that deals fire damage."
+            ],
+            "resist": ["fire"],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Shaman (Starlight)|damage type=fire",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Affinity with Frost",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:EA"
+            ],
+            "entries": [
+                "You gain power from ancient frosts. You learn one Shaman cantrip that deals cold damage."
+            ],
+            "resist": ["cold"],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Shaman (Starlight)|damage type=cold",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Affinity with Lightning",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:EA"
+            ],
+            "entries": [
+                "You gain power from static and storms. You learn one Shaman cantrip that deals lightning damage."
+            ],
+            "resist": ["lightning"],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Shaman (Starlight)|damage type=lightning",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Affinity with Thunder",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:EA"
+            ],
+            "entries": [
+                "You gain power from clouds and skies. You learn one Shaman cantrip that deals thunder damage."
+            ],
+            "resist": ["thunder"],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Shaman (Starlight)|damage type=thunder",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Affinity with Acid",
+            "source": "Starlight",
+            "featureType": [
+                "SHA:EA"
+            ],
+            "entries": [
+                "You gain power from nature's lessons. You learn one Shaman cantrip that deals acid damage."
+            ],
+            "resist": ["acid"],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            {
+                                "choose": "level=0|class=Shaman (Starlight)|damage type=acid",
+                                "count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "name": "Moonwatcher",
 			"source": "Starlight",
 			"featureType": [
@@ -1807,7 +1892,16 @@
 			],
 			"entries": [
 				"You can cast {@spell speak with animals} at will and without expending a spell slot."
-			]
+			],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "speak with animals|xphb"
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Darkseer",
@@ -1817,7 +1911,12 @@
 			],
 			"entries": [
 				"You gain darkvision out to 120 feet, or increase your existing darkvision by 120 feet. Your darkvision makes darkness appear as bright light to you, instead of dim."
-			]
+			],
+            "senses": [
+                {
+                    "darkvision": 120
+                }
+            ]
         },
         {
             "name": "Sense Arcana",
@@ -1827,7 +1926,20 @@
 			],
 			"entries": [
 				"You can cast {@spell Detect Magic|XPHB}, {@spell Detect Evil and Good}, and {@spell Detect Poison and Disease} once per {@variantrule Long Rest} each, without expending a spell slot."
-			]
+			],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "detect magic|xphb", "detect evil and good|xphb", "detect poison and disease|xphb"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
         },
         {
             "name": "Lightfeet",
@@ -1837,7 +1949,20 @@
 			],
 			"entries": [
 				"You learn the {@spell Longstrider|XPHB} and can cast it once per {@variantrule Long Rest} without expending a spell slot."
-			]
+			],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "longstrider|xphb"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
         },
         {
             "name": "Jungle's Bounty",
@@ -1847,6 +1972,19 @@
             ],
             "entries": [
                 "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest}. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "goodberry|xphb"
+                                ]
+                            }
+                        }
+                    }
+                }
             ]
         },
         {
@@ -1857,7 +1995,13 @@
 			],
 			"entries": [
 				"You gain proficiency in the {@skill Survival} and {@skill Medicine} skills."
-			]
+			],
+            "skillProficiencies": [
+                {
+                    "survival": true,
+                    "medicine": true
+                }
+            ]
         },
         {
             "name": "Rites of Passage",
@@ -1900,8 +2044,8 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Conduit"
+                    "optionalfeature": [
+                        "Path of the Conduit|Starlight"
                     ]
                 }
             ]
@@ -1917,8 +2061,8 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Conduit"
+                    "optionalfeature": [
+                        "Path of the Conduit|Starlight"
                     ]
                 }
             ]
@@ -1934,9 +2078,18 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Seer"
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "guidance|xphb"
+                        ]
+                    }
                 }
             ]
         },
@@ -1951,8 +2104,8 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Seer"
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
                 }
             ]
@@ -1968,14 +2121,23 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Runeblade"
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight"
                     ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "shillelagh|xphb"
+                        ]
+                    }
                 }
             ]
         },
         {
-            "name": "Runeblade Master",
+            "name": "Runeblade Training",
 			"source": "Starlight",
 			"featureType": [
 				"PRU"
@@ -1985,8 +2147,8 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Runeblade"
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight"
                     ]
                 }
             ]
@@ -2013,8 +2175,8 @@
 			],
             "prerequisite": [
                 {
-                    "feature": [
-                        "Path of the Runeblade"
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight"
                     ]
                 }
             ]
@@ -2037,6 +2199,15 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "summon fey|tce"
+                        ]
                     }
                 }
             ]
@@ -2082,11 +2253,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Runeblade"
+                    },
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight"
                     ]
                 }
             ]
@@ -2109,14 +2278,22 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Seer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "borrowed knowledge|scc", "enhance ability|xphb"
+                        ]
+                    }
+                }
             ]
+            
 		},
         {
 			"name": "Nature Companion",
@@ -2136,12 +2313,23 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "find familiar|xphb"
+                                ]
+                            }
+                        }
+                    }
                 }
             ]
 		},
@@ -2164,11 +2352,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2215,6 +2401,15 @@
                         }
                     }
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "polymorph|xphb"
+                        ]
+                    }
+                }
             ]
 		},
         {
@@ -2235,11 +2430,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conduit"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conduit|Starlight"
                     ]
                 }
             ]
@@ -2263,11 +2456,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2290,11 +2481,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2306,7 +2495,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When you {@action Help} a creature with Guiding Spirits, you can increase the power of your target's attacks: if the creature you are helping successfully lands an attack before the start of your next turn, their attack deals an additional 2d6 damage. The damage is of the same type dealt by the attack."
+				"When you {@action Help} a creature with Guiding Spirits, you can increase the power of your target's attacks: if the creature you are helping successfully lands an attack before the start of your next turn, their attack deals an additional {@dice 2d6} damage. The damage is of the same type dealt by the attack."
 			],
             "prerequisite": [
                 {
@@ -2317,11 +2506,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Seer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
                 }
             ]
@@ -2346,6 +2533,15 @@
                         }
                     }
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "insect plague|xphb"
+                        ]
+                    }
+                }
             ]
 		},
         {
@@ -2367,12 +2563,65 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    },
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                "name": "Siphon Magic",
+                "type": "save",
+                "activation": {
+                    "type": "action",
+                    "value": 1
+                },
+                "range": {
+                    "value": 60,
+                    "units": "ft"
+                },
+                "target": {
+                    "type": "creature",
+                    "value": 1
+                },
+                "save": {
+                    "ability": "cha",
+                    "dc": {
+                    "calculation": "spellcasting"
                     }
                 },
-                {
-                    "feature": [
-                        "Path of the Seer"
+                "damage": {
+                    "parts": [
+                    {
+                        "formula": "3d12",
+                        "type": "radiant"
+                    }
                     ]
+                },
+                "description": {
+                    "chatFlavor": "Nature attempts to siphon the creature's magic."
+                },
+                "uses": {
+                    "max": 1,
+                    "recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                    ]
+                },
+                "effects": [
+                    {
+                    "name": "Silenced",
+                    "origin": "self",
+                    "duration": {
+                        "units": "round",
+                        "value": 1
+                    },
+                    "transfer": false
+                    }
+                ]
                 }
             ]
 		},
@@ -2396,11 +2645,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2425,6 +2672,19 @@
                         }
                     }
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "transport via plants|XPHB"
+                                ]
+                            }
+                        }
+                    }
+                }
             ]
 		},
         {
@@ -2445,11 +2705,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conduit"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conduit|Starlight"
                     ]
                 }
             ]
@@ -2472,12 +2730,10 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Runeblade",
-                        "Runeblade Adept"
+                    },
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight",
+                        "Runeblade Adept|Starlight"
                     ]
                 }
             ]
@@ -2500,11 +2756,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Seer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
                 }
             ]
@@ -2527,11 +2781,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2543,7 +2795,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per {@variantrule Long Rest}, you can cast the Grasping vine spell. When you do so, you can either cast the spell as a {@variantrule Bonus Action}, or forgo the need to {@status concentration||concentrate} on the spell."
+				"Once per {@variantrule Long Rest}, you can cast the {@spell Grasping vine|XPHB} spell. When you do so, you can either cast the spell as a {@variantrule Bonus Action}, or forgo the need to {@status concentration||concentrate} on the spell."
 			],
             "prerequisite": [
                 {
@@ -2553,6 +2805,19 @@
                             "name": "Shaman",
                             "source": "Starlight",
                             "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "daily": {
+                                "1e": [
+                                    "grasping vine|XPHB"
+                                ]
+                            }
                         }
                     }
                 }
@@ -2578,6 +2843,15 @@
                         }
                     }
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "fly|xphb"
+                        ]
+                    }
+                }
             ]
 		},
         {
@@ -2599,6 +2873,11 @@
                             "visible": true
                         }
                     }
+                }
+            ],
+            "senses": [
+                {
+                    "tremorsense": 30
                 }
             ]
 		},
@@ -2622,6 +2901,22 @@
                         }
                     }
                 }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "water walk|xphb", "water breathing|XPHB"
+                        ]
+                    }
+                },
+                {
+                    "known": {
+                        "_": [
+                            "water walk|xphb", "water breathing|XPHB"
+                        ]
+                    }
+                }
             ]
 		},
         {
@@ -2642,11 +2937,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conduit"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conduit|Starlight"
                     ]
                 }
             ]
@@ -2669,11 +2962,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
                 }
             ]
@@ -2696,11 +2987,9 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Runeblade"
+                    },
+                    "optionalfeature": [
+                        "Path of the Runeblade|Starlight"
                     ]
                 }
             ]
@@ -2725,6 +3014,44 @@
                         }
                     }
                 }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Tree of Life",
+                    "type": "heal",
+                    "activation": {
+                        "type": "action",
+                        "value": 1
+                    },
+                    "range": {
+                        "value": 120,
+                        "units": "ft"
+                    },
+                    "target": {
+                        "type": "creature",
+                        "value": "any"
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "formula": "120",
+                                "type": "healing"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Life is given to all creatures nearby"
+                    },
+                    "uses": {
+                        "max": 1,
+                        "recovery": [
+                            {
+                                "period": "lr",
+                                "type": "recoverAll"
+                            }
+                        ]
+                    }
+                }
             ]
 		},
         {
@@ -2745,12 +3072,19 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Seer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Seer|Starlight"
                     ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "foresight|xphb"
+                        ]
+                    }
                 }
             ]
 		},
@@ -2772,12 +3106,19 @@
                             "source": "Starlight",
                             "visible": true
                         }
-                    }
-                },
-                {
-                    "feature": [
-                        "Path of the Conjurer"
+                    },
+                    "optionalfeature": [
+                        "Path of the Conjurer|Starlight"
                     ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "_": [
+                            "shapechange|xphb"
+                        ]
+                    }
                 }
             ]
 		},
@@ -3207,6 +3548,9 @@
                         "Elemental Origin: Mountains"
                     ]
                 }
+            ],
+            "resist": [
+                "bludgeoning (spiritual avatar only)", "slashing (spiritual avatar only)", "piercing (spiritual avatar only)"
             ]
 		},
         {
