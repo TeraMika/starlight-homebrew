@@ -3141,8 +3141,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Flame"
+                    "optionalfeature": [
+                        "Affinity with Flame|Starlight"
                     ]
                 }
             ]
@@ -3166,8 +3166,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Flame"
+                    "optionalfeature": [
+                        "Affinity with Flame|Starlight"
                     ]
                 }
             ]
@@ -3191,8 +3191,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Flame"
+                    "optionalfeature": [
+                        "Affinity with Flame|Starlight"
                     ]
                 }
             ]
@@ -3216,8 +3216,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Frost"
+                    "optionalfeature": [
+                        "Affinity with Frost|Starlight"
                     ]
                 }
             ]
@@ -3241,8 +3241,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Frost"
+                    "optionalfeature": [
+                        "Affinity with Frost|Starlight"
                     ]
                 }
             ]
@@ -3266,8 +3266,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Frost"
+                    "optionalfeature": [
+                        "Affinity with Frost|Starlight"
                     ]
                 }
             ]
@@ -3291,8 +3291,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Lightning"
+                    "optionalfeature": [
+                        "Affinity with Lightning|Starlight"
                     ]
                 }
             ]
@@ -3316,8 +3316,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Lightning"
+                    "optionalfeature": [
+                        "Affinity with Lightning|Starlight"
                     ]
                 }
             ]
@@ -3342,8 +3342,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Lightning"
+                    "optionalfeature": [
+                        "Affinity with Lightning|Starlight"
                     ]
                 }
             ]
@@ -3367,8 +3367,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Thunder"
+                    "optionalfeature": [
+                        "Affinity with Thunder|Starlight"
                     ]
                 }
             ]
@@ -3392,8 +3392,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Thunder"
+                    "optionalfeature": [
+                        "Affinity with Thunder|Starlight"
                     ]
                 }
             ]
@@ -3417,9 +3417,9 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Thunder",
-                        "Thundercrack"
+                    "optionalfeature": [
+                        "Affinity with Thunder|Starlight",
+                        "Thundercrack|Starlight"
                     ]
                 }
             ]
@@ -3443,8 +3443,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Acid"
+                    "optionalfeature": [
+                        "Affinity with Acid|Starlight"
                     ]
                 }
             ]
@@ -3468,8 +3468,8 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Acid"
+                    "optionalfeature": [
+                        "Affinity with Acid|Starlight"
                     ]
                 }
             ]
@@ -3493,9 +3493,9 @@
                             "visible": true
                         }
                     },
-                    "feature": [
-                        "Affinity with Acid",
-                        "Corroding Acid"
+                    "optionalfeature": [
+                        "Affinity with Acid|Starlight",
+                        "Corroding Acid|Starlight"
                     ]
                 }
             ]
