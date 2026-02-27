@@ -92,10 +92,6 @@
 						["{@dice 1d6}"],
 						["{@dice 1d6}"],
 						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d8}"],
-						["{@dice 1d8}"],
 						["{@dice 1d8}"],
 						["{@dice 1d8}"],
 						["{@dice 1d8}"],
@@ -106,7 +102,11 @@
 						["{@dice 1d10}"],
 						["{@dice 1d10}"],
 						["{@dice 1d10}"],
-						["{@dice 1d10}"]
+						["{@dice 1d12}"],
+						["{@dice 1d12}"],
+						["{@dice 1d12}"],
+						["{@dice 1d12}"],
+						["{@dice 1d12}"]
 					]
 				},
                 {
@@ -208,14 +208,18 @@
 								"number": 1,
 								"faces": 6
 							},
-							"8": {
+							"6": {
 								"number": 1,
 								"faces": 8
 							},
-							"15": {
+							"11": {
 								"number": 1,
 								"faces": 10
-							}
+							},
+                            "16": {
+                                "number": 1,
+                                "faces": 12
+                            }
                         }
 					},
 					"title": "Hunter's Die"
@@ -229,11 +233,14 @@
 							"1": {
                                 "value": 6
                             },
-                            "8": {
+                            "6": {
                                 "value": 8
                             },
-                            "15": {
+                            "11": {
                                 "value": 10
+                            },
+                            "16": {
+                                "value": 12
                             }
                         }
 					},
@@ -478,7 +485,6 @@
                 "A Hunter is flexible, able to adapt their skillset to most threats. These Tricks are combat techniques, unique skills or benefits to your skills, or modifications to your defenses. They may be informed by your Hunting Grounds.",
                 "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
                 "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
-                "If a Trick grants or modifies an attack you cannot use more than one at a time. For example, if you use the Retaliate trick to strike back at a foe, you cannot use the Trip Attack Trick on that reliatory strike.",
                 "Your Hunter features and Tricks share the same DC if they require a saving throw:",
                 {
                     "type": "abilityDc",
@@ -497,8 +503,17 @@
             "level": 2,
             "entries": 
             [
-                "It takes a significant hit to phase you. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die, add your Wisdom modifier, and gain Temporary Hit Points equal to the total."
+                "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain Temporary Hit Points equal to the total."
             ],
+            "foundrySystem": {
+				"uses.max": 1,
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
             "foundryActivities": [
                 {
                     "name": "Shrug It Off",
@@ -508,29 +523,29 @@
                         "value": 1
                     },
                     "consumption": {
-                    "targets": [
-                        {
-                            "type": "itemUses",
-                            "value": "1",
-                            "target": {
-                                "consumes": {
-                                    "name": "Instinct"
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
                                 }
                             }
+                        ]
+                    },
+                    "healing": {
+                        "types": [
+                            "temphp"
+                        ],
+                        "custom": {
+                            "enabled": true,
+                            "formula": "2d(@scale.hunter.hunter-die-size) + @classes.hunter.levels"
                         }
-                    ]
-                },
-                "healing": {
-                    "types": [
-                        "temphp"
-                    ],
-                    "custom": {
-                        "enabled": true,
-                        "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
-                    }
-                },
-                "description": {
-                    "chatFlavor": "Push through the pain."
+                    },
+                    "description": {
+                        "chatFlavor": "Push through the pain."
                     }
                 }
             ]
@@ -543,7 +558,7 @@
             "level": 2,
             "entries": 
             [
-                "When you make an attack roll against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll."
+                "When you make an attack roll against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll."
             ],
             "foundryActivities": [
                 {
@@ -602,7 +617,7 @@
             "level": 5,
             "entries":
             [
-                "Choose a hunting discipline. When you designate your Quarry, you gain the associated benefit.",
+                "Choose a hunting discipline. When you designate your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you gain the associated benefit.",
                 {
                     "type": "entries",
                     "entries": [
@@ -700,7 +715,7 @@
             "classSource": "Starlight",
             "level": 6,
             "entries": [
-                "You deal an additional {@dice 1d4} when you damage a creature that is below its maximum hit points."
+                "You deal an additional {@dice 1d4} damage when you damage a creature that is below its maximum hit points."
             ]
         },
         {
@@ -745,7 +760,7 @@
             "level": 6,
             "entries": 
             [
-                "You can mark your Quarry without being able to see them and within a range of 600 feet. You have advantage on any Wisdom or Intelligence checks made to find your Quarry or see through its illusions, and your quarry lasts up to eight hours."
+                "You can mark your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without being able to see them and within a range of 600 feet. You have advantage on any Wisdom or Intelligence checks made to find your Quarry or see through its illusions, and your quarry lasts up to eight hours."
             ]
         },
         {
@@ -777,7 +792,7 @@
             "level": 9,
             "entries":
             [
-                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you gain that benefit.",
                 {
                     "type": "entries",
                     "entries": [
@@ -983,7 +998,7 @@
             "level": 13,
             "entries":
             [
-                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you gain that benefit.",
                 {
                     "type": "entries",
                     "entries": [
@@ -1050,7 +1065,7 @@
             ],
             "savingThrowProficiencies": [
                 {
-                    "wisdom": true,
+                    "wis": true,
                     "choose": {
                         "count": 1,
                         "from": ["cha", "int"]
@@ -1193,7 +1208,7 @@
             "level": 18,
             "entries":
             [
-                "Choose a hunting discipline. When you designate your Quarry, you gain that benefit.",
+                "Choose a hunting discipline. When you designate your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you gain that benefit.",
                 {
                     "type": "entries",
                     "entries": [
@@ -1267,7 +1282,7 @@
             "level": 20,
             "entries": [
                 "Your Wisdom score increases by 2, and so does your Strength or Dexterity score (you choose), both up to a maximum of 30.",
-                "You can have up to two creatures as your Quarry at any one time, and when you mark one you can mark another at no cost. Choosing another Quarry only ends your previous Quarry if you would have more than two, in which case you choose which to end.",
+                "You can have up to two creatures as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} at any one time, and when you mark one you can mark another at no cost. Choosing another Quarry only ends your previous Quarry if you would have more than two, in which case you choose which to end.",
                 "At this level, you also gain access to a unique and powerful Trick: Relentless, Watchful, or Tactical Hunter."
             ]
         }
@@ -1418,11 +1433,11 @@
                 {
                     "type": "quote",
                     "entries": [
-                        "Ghosts don't have bodies, and fey are tricksy. Try the fancy fire."
+                        "Ghosts and Fae... tricksy, aye. Lucky for you, there's a fancy fire that should still get 'em sweating!"
                     ],
                     "by": "Captain Lee"
                 },
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Radiant damage."
+                "When you damage your Qua{@classFeature Quarry|Hunter|Starlight|1|Starlight}rry, you can choose for the additional damage dealt by your Hunter's Die to be Radiant damage."
             ]
         },    
         {
@@ -1467,7 +1482,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
-                "While using Ethereal Shift, you can cast Misty Step once on each of your turns (no spell slot required)."
+                "While using Ethereal Shift, you can cast {@spell Misty Step|XPHB} once on each of your turns (no spell slot required)."
             ]
         },
         {
@@ -1577,7 +1592,7 @@
                     ],
                     "by": "Anathema Fulgura"
                 },
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
             ]
         },    
         {
@@ -1590,7 +1605,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry on your turn, you can add one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry, you can add one Hunter's Die to the pool."
             ],
             "foundrySystem": {
 				"uses.max": "@prof",
@@ -1670,12 +1685,12 @@
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
                 "When you hit a creature with a weapon attack, you can spend and roll one die from your Planar Gift to grant that many temporary hit points to yourself or a creature within 10 feet of you.",
-                "If you damage your Quarry, you can instead use the Hunter's Die rolled as part of the attack."
+                "If you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can instead use the Hunter's Die rolled as part of the attack."
             ],
             "foundryActivities": [
                 {
                     "name": "Celestial Dusting",
-                    "type": "utility",
+                    "type": "heal",
 					"activation": {
 						"type": "",
 						"condition": "When you hit a creature with a weapon attack"
@@ -1703,7 +1718,7 @@
                         ],
                         "custom": {
                             "enabled": true,
-                            "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+                            "formula": "@scale.hunter.hunter-die"
                         }
                     },
                     "description": {
@@ -1722,7 +1737,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Extraplanar Hunter feature}",
-                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn, and take necrotic damage equal to a roll of the Planar Gift die. They take half as much damage on a successful save."
+                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target takes additional necrotic damage equal to a roll of your Hunter's Die, and must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
             ],
             "foundryActivities": [
                 {
@@ -1817,7 +1832,7 @@
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Crippling Attack|Hunter|Starlight|Urban|Starlight|3"
+                        "subclassFeature": "Cripple Foe|Hunter|Starlight|Urban|Starlight|3"
                     }
                 ]
         },
@@ -1871,11 +1886,11 @@
                     ],
                     "by": "Augury, Crimelord"
                 },
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Necrotic damage."
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Necrotic damage."
             ]
         },    
         {
-            "name": "Crippling Attack",
+            "name": "Cripple Foe",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -1885,14 +1900,14 @@
             "entries": [
                 "{@i 3rd-level Urban Hunter feature}",
                 "The best way to chase a creature is to prevent them getting away in the first place.",
-                "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target within your reach or range; they must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight} and take damage equal to a roll of your Hunter's Die. On a successful save, they are {@condition Hampered|Starlight} and take half damage instead."
+                "As a {@variantrule Bonus Action|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make a special attack against a target within your reach or range; they must make a Dexterity saving throw. On a failed save, they are {@condition Slowed|Starlight} and take damage equal to a roll of your Hunter's Die plus your Wisdom modifier. On a successful save, they are {@condition Hampered|Starlight} and take half damage instead."
             ],
             "consumes": {
                 "name": "Instinct"
             },
             "foundryActivities": [
                 {
-					"name": "Crippling Attack",
+					"name": "Cripple Foe",
 					"type": "save",
 					"activation": {
 						"type": "bonus"
@@ -1925,7 +1940,7 @@
 							{
 								"custom": {
 									"enabled": true,
-									"formula": "@scale.hunter.hunter-die"
+									"formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
 								},
 								"types": [
 									"necrotic"
@@ -2114,11 +2129,11 @@
                 {
                     "type": "quote",
                     "entries": [
-                        "If you must slay beasts, I don't know a beast alive that's a fan of fire. Hopefully by the time you find one you can work your way around that."
+                        "If you must slay beasts, I don't know a beast alive that's a fan of fire. Hopefully by the time you find one that {@i doesn't} mind fire, you can work your way around that."
                     ],
                     "by": "Grove, Ranger"
                 },
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Fire damage."
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Fire damage."
             ]
         },    
         {
@@ -2131,7 +2146,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "You can attempt to cripple your Quarry. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attack options (the DM chooses which) until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
+                "You can attempt to cripple your {@classFeature Quarry|Hunter|Starlight|1|Starlight}. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attack options (the DM chooses which) until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
             ],
             "consumes": {
                 "name": "Instinct"
@@ -2147,7 +2162,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Horizon Hunter feature}",
-                "When you roll a 20 on an attack roll against your Quarry, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and {@dice 1d4} days to find a suitable buyer - in these cases, the item may sell for more."
+                "When you roll a 20 on an attack roll against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and {@dice 1d4} days to find a suitable buyer - in these cases, the item may sell for more."
             ]
         },
         {
@@ -2199,7 +2214,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "When your Quarry dies, you can designate another creature of the same type as your Quarry immediately (no action required)."
+                "When your {@classFeature Quarry|Hunter|Starlight|1|Starlight} dies, you can designate another creature of the same type as your Quarry immediately (no action required)."
             ]
         },
         {
@@ -2263,7 +2278,7 @@
             "entries": [
                 "{@i 15th-level Horizon Hunter feature}",
                 "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs until the start of your next turn, unless yours are higher.",
-                "When you hit your Quarry, its immunities are treated as resistance, and you bypass its resistances."
+                "When you hit your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, its immunities are treated as resistance, and you bypass its resistances."
             ]
         },
         {
@@ -2341,7 +2356,7 @@
                     ],
                     "by": "Thane, Bard of the Chorus"
                 },
-                "When you damage your Quarry, you can choose for the additional damage dealt by your Hunter's Die to be Force damage."
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Force damage."
             ]
         },    
         {
@@ -2896,7 +2911,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by two rolls of your Hunter's Die plus your Wisdom modifier."
+				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by a number of rolls of your Hunter's Die equal to half your proficiency bonus (round up) plus your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -2936,7 +2951,7 @@
                     },
                     "roll": {
                         "name": "Bonus",
-                        "formula": "2d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
+                        "formula": "(ceil(@prof/2))d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
                     }
                 }
             ]
@@ -2948,7 +2963,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against another creature within your reach. The damage of the attack is equal to a roll of your Hunter's Die plus your Strength or Dexterity modifier (your choice), of the same type as the original weapon."
+				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against a different creature within 5 feet of the original target."
 			],
             "prerequisite": [
                 {
@@ -2963,35 +2978,9 @@
                 }
             ],
             "consumes": {
-                "name": "Instinct"
-            },
-            "foundryActivities": [
-                {
-                    "name": "Cleaving Attack (Dexterity)",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "@scale.hunter.hunter-die + @abilities.dex.mod"
-                    }
-                }
-            ]
+                "name": "Instinct",
+                "amount": 2
+            }
 		},
         {
 			"name": "Readied Strike",
@@ -3000,7 +2989,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an attack against them, adding your Hunter's Die to the attack roll."
+				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them, adding your Hunter's Die to the attack roll."
 			],
             "prerequisite": [
                 {
@@ -3168,7 +3157,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "",
+                    "name": "Sundering Blow",
                     "type": "save",
 					"activation": {
 						"type": "",
@@ -3289,7 +3278,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You can mark a creature as your Quarry without using your {@variantrule Bonus Action|XPHB}, at the cost of two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
+				"You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}, at the cost of two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
 			],
             "prerequisite": [
                 {
@@ -3461,7 +3450,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make an attack against your Quarry, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
+				"When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
 			],
             "prerequisite": [
                 {
@@ -3656,6 +3645,28 @@
             ]
         },
         {
+            "name": "Eye on the Prize",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Opportunity attacks made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction}."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
 			"name": "Indefatigable II",
 			"source": "Starlight",
 			"featureType": [
@@ -3826,7 +3837,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Attacks you make against your Quarry bypass damage resistance, and treat damage immunity as resistance."
+				"Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance."
 			],
             "prerequisite": [
                 {
@@ -4398,7 +4409,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an {@variantrule Opportunity Attack}, it is {@condition Halted|Starlight} until the end of the current turn. If it's your Quarry, it takes additional damage from that attack equal to your Hunter's Die."
+				"When you hit a creature with an {@variantrule Opportunity Attack}, it is {@condition Halted|Starlight} until the end of the current turn. If it's your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, it takes additional damage from that attack equal to your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -4532,7 +4543,7 @@
             ]
 		},
         {
-			"name": "Exploit Opening",
+			"name": "Exploit Weakness",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
@@ -4763,13 +4774,13 @@
             ]
 		},
         {
-			"name": "Exploit Weakness",
+			"name": "Exploit Opening",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You guide your allies to success through your knowledge of these legendary creatures. Once per {@variantrule Short Rest|XPHB}, when your Quarry succeeds a saving throw against one of your allies' effects, you can use a {@variantrule Reaction|XPHB} to cause it to take force damage equal to four rolls of your Hunter's Die."
+				"You guide your allies to success through your knowledge of these legendary creatures. Once per {@variantrule Short Rest|XPHB}, when your {@classFeature Quarry|Hunter|Starlight|1|Starlight} succeeds a saving throw against one of your allies' effects, you can use a {@variantrule Reaction|XPHB} to cause it to take force damage equal to four rolls of your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -4788,7 +4799,7 @@
             ],
             "foundryActivities": [
                 {
-                    "name": "Exploit Weakness",
+                    "name": "Exploit Opening",
                     "type": "damage",
 					"activation": {
 						"type": "",
@@ -4817,7 +4828,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a Legendary creature is your Quarry, your Hunter's Die becomes {@dice 2d6} instead of {@dice 1d10}."
+				"When a Legendary creature is your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, your Hunter's Die becomes {@dice 2d8} instead of {@dice 1d12}."
 			],
             "prerequisite": [
                 {
