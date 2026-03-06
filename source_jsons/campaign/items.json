@@ -31,7 +31,12 @@
             "reqAttune": false,
             "entries": [
                 "Creatures you restore hit points to gain a {@dice 1d4} bonus to attack rolls and saving throws, and are resistant to bludgeoning, piercing, and slashing damage, until the end of their next turn."
-            ]
+            ],
+            "fluff": {
+                "entries": [
+                    "The titans are ancient creatures with many powerful magics at their disposal. Found at the bottom of a deep thermal well, this ring once belonged to Aurora, who tried and failed to protect her 'blasphemous' people from the pride-wounded revenge of Lycera, the glass goddess, in the storyland of Neverwhere."
+                ]
+            }
         },
 		{
 			"name": "Lunarvitra Arrow",
@@ -49,7 +54,75 @@
 				},
                 "This arrow ignores bonuses to AC granted by spells or magical items, unless that spell or magical item is directly created by an Artifact or a Deity.",
 				"Targets hit by this arrow have any magical effects (such as {@spell Mage Armour|PHB} or {@spell Bestow Curse|PHB}) on them suppressed until the start of your next turn. Creatures with an antimagic susceptibility, such as {@creature Animated Armour|MM}, must follow the text in that condition, but only suffer its effects until the start of your next turn."
-			]
-		}
+			],
+            "fluff": {
+                "entries": [
+                    "This arrow is made from fragments of the glass moon. It absorbs magic as it flies, temporarily suppressing spells and magical effects it comes into contact with."
+                ]
+            }
+		},
+        {
+            "name": "Asha's Astral Teardrop",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person}). Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
+                    ]
+                }
+            ],
+            "attachedSpells": 
+            [
+                "modify memory",
+                "enervation"
+            ],
+            "fluff": {
+                "entries": [
+                    "The spirit of the first shadowmaiden, Asha, shed this tear when she was found in the Rifts. A gift to her daughter, it protects from death and from mental manipulation, ensuring that Anathema or Zintrin could never fall under the effects of the Ebon Blade again."
+                ]
+            }
+        },
+        {
+            "name": "Fate's Pendant",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
+                {
+                    "type": "entries",
+                    "name": "Redirect Fate.",
+                    "entries": [
+                        "Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
+                        "Additionally, when you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
+                    ]
+                }
+            ],   
+            "attachedSpells": 
+            [
+                "wish"
+            ],
+            "fluff": {
+                "entries": [
+                    "Fragments of the glass goddess' power are left all over Delamir - though this one is more intentional than her sunshard fragments. This pendant was a gift given to Scourge, the Master of Necromancy, as a reward for a service he did for the goddess. It was later stolen from his fortress by the Tempest Collective, who used it to free themselves from a pact with the goddess of the glass moon, and later to sever Anathema's connection to the Ebon Blade. Only two Wishes remained in it at the time, and it is unknown how the first was used."
+                ]
+            }
+        }
     ]
 }

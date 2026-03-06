@@ -24,7 +24,6 @@
         "dateAdded": 0,
         "dateLastModified": 0
     },
-
     "item":
     [
         {
@@ -176,59 +175,6 @@
             [
                 "Stories you tell gain a subtle effect to make them more compelling.",
                 "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
-            ]
-        },
-        {
-            "name": "Astral Teardrop",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "You can fail an additional death saving throw before dying (4 total).",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
-                    ]
-                }
-            ],
-            "attachedSpells": 
-            [
-                "modify memory",
-                "enervation"
-            ]
-        },
-        {
-            "name": "Fate's Pendant",
-            "source": "Starlight",
-            "rarity": "legendary",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
-                {
-                    "type": "entries",
-                    "name": "Redirect Fate.",
-                    "entries": [
-                        "Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
-                        "Additionally, when you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
-                    ]
-                }
-            ],   
-            "attachedSpells": 
-            [
-                "wish"
             ]
         },
         {
@@ -844,6 +790,35 @@
             "entries":
             [
                 "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
+            ]
+        },
+        {
+            "name": "Shepherd Stones",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries":
+            [
+                "These three stones float around you at all times and attempt to protect you from harm. While attuned, when an attack is made that targets you, a sphere will intercept it and negate it. Once a sphere has intercepted an attack, it becomes inert and drops to the ground. Inert spheres recover once the user has completed a {@variantrule Long Rest}.",
+                "The spheres can be deactivated or reactivated as a {@action Magic|XPHB} action. While deactivated, they do not intercept attacks." 
+            ]
+        },
+        {
+            "name": "Astral Teardrop",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person})."
+                    ]
+                }
             ]
         }
     ]
