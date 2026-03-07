@@ -1,0 +1,321 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "SCE",
+                "abbreviation": "SCE",
+                "full": "Sasha's Cauldron of Esoterica",
+                "color": "5a54a5",
+                "authors":
+                [
+                    "Starlight"
+                ],
+                "convertedBy":
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "item":
+    [
+        {
+            "name": "Potionweaver's Bracelet",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
+                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
+            ]
+        },
+        {
+            "name": "Blank Scroll",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
+                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
+                {
+                    "type": "list",
+                    "items":  [
+                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
+                        "Whenever you deal damage, no die can roll below a 3.",
+                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
+                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
+                    ]
+                },
+                "A creature can gain the benefit of this scroll only once."
+            ]
+        },
+        {
+            "name": "Curious",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The exact appearance of this gem changes depending on your mood.",
+                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Cast the spell with no somatic or verbal components.",
+                        "The target has disadvantage on its first saving throw against the spell.",
+                        "The duration is doubled (to a maximum of 24 hours).",
+                        "You can reroll any of the damage dice.",
+                        "The range is doubled, or increased to 30 feet for a touch spell.",
+                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
+                        "You can protect any number of creatures from the spell's initial effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cut Paper",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "entries": [
+                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
+                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
+            ]
+        },
+        {
+            "name": "Engraving Quill",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
+            ]
+        },
+        {
+            "name": "Exploding Nail Polish",
+            "source": "SCE",
+            "rarity": "common",
+            "charges": 3,
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
+                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
+                "There is enough nail polish within the container for 3 applications."
+            ]
+        },
+        {
+            "name": "Fisherman's Blanket",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
+            ]
+        },
+        {
+            "name": "Flamed Blade",
+            "source": "SCE",
+            "baseItem": "shortsword|xphb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 2,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "Healing Poultice",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
+                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
+            ]
+        },
+        {
+            "name": "Hidden Dagger",
+            "source": "SCE",
+            "baseItem": "dagger|xphb",
+            "type": "s",
+            "weaponCategory": "simple",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 1,
+            "reqAttune": false,
+            "entries": [
+                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
+            ]
+        },
+        {
+            "name": "Hopeful Flame",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
+                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
+                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are resistant to fire damage.",
+                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Diamond",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
+            ]
+        },
+        {
+            "name": "Invisibility Ring",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring is flawlessly invisible."
+            ]
+        },
+        {
+            "name": "Lucky-Seven Rune",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
+            ]
+        },
+        {
+            "name": "Ring of Fire Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring detects the presence of fire, with a range of touch."
+            ]
+        },
+        {
+            "name": "Ring of Teleportation",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
+            ]
+        },
+        {
+            "name": "Potion of Greater Tealing",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
+            ]
+        },
+        {
+            "name": "Potion of Hydration",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
+            ]
+        },
+        {
+            "name": "Pulpy Healing Potion",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
+            ]
+        },
+        {
+            "name": "Ring of Inn Visibility",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
+                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
+            ]
+        },
+        {
+            "name": "Scroll of Weather Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
+                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
+            ]
+        },
+        {
+            "name": "Solemn Silver Ring",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
+                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
+            ]
+        },
+        {
+            "name": "Spell-storing Arrow",
+            "source": "SCE",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
+                "Once used, the arrow turns to ash."
+            ]
+        },
+        {
+            "name": "Wand of Mystery",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
+            ]
+        }
+    ]
+}
