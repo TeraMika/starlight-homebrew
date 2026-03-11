@@ -54,6 +54,7 @@
                 },
 				"Ability Score Improvement|Fighter|XPHB|8",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
+                "Called Shot|Hunter|Starlight|9|Starlight",
 				"Defensive Hunter|Hunter|Starlight|10|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
@@ -818,6 +819,27 @@
                 }
             ]
         },
+        {
+			"name": "Called Shot",
+			"source": "Starlight",
+			"entries": [
+				"Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
+			],
+            "foundryActivities": [
+                {
+                    "name": "Called Shot",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you make an attack against your Quarry"
+					},
+                    "roll": {
+                        "name": "Damage Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+		},
         {
             "name": "Relentless Pressure",
             "source": "Starlight",
@@ -2552,18 +2574,136 @@
 				"HTR"
 			],
 			"entries": [
-				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} or {@skill Deception|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
+				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB}, {@skill Animal Handling|XPHB}, or {@skill Deception|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
 			],
             "consumes": {
                 "name": "Instinct"
             },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "insight",
+                            "animal handling",
+                            "deception"
+                        ]
+                    }
+                }
+            ],
             "foundryActivities": [
                 {
                     "name": "Hunter's Insight",
                     "type": "utility",
 					"activation": {
 						"type": "",
-						"condition": "When you make an ability check using Insight or Deception"
+						"condition": "When you make an ability check using Insight, Animal Handling, or Deception"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Physical Training",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You've trained for feats of physical prowess. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Athletics|XPHB} or {@skill Acrobatics|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
+			],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "athletics",
+                            "acrobatics"
+                        ]
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Physical Training",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you make an ability check using Athletics or Acrobatics"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Scholarly Training",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You have a knack for pursuits of intellect. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Arcana|XPHB}, {@skill Religion|XPHB}, or {@skill History|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "arcana",
+                            "history",
+                            "religion"
+                        ]
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Scholarly Training",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you make an ability check using Athletics or Acrobatics"
 					},
                     "consumption": {
                         "targets": [
@@ -2782,6 +2922,45 @@
             ]
         },
         {
+            "name": "Feint",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
+			],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "foundryActivities": [
+                {
+                    "name": "Feint",
+                    "type": "utility",
+					"activation": {
+						"type": "bonus",
+						"amount": 1
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Gain advantage on your next attack."
+                    }
+                }
+            ]
+        },
+        {
             "name": "Finder of Traps",
 			"source": "Starlight",
 			"featureType": [
@@ -2963,7 +3142,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against a different creature within 5 feet of the original target."
+				"When you hit a creature with a melee attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against a different creature within 5 feet of the original target."
 			],
             "prerequisite": [
                 {
@@ -3444,42 +3623,6 @@
             }
 		},
         {
-			"name": "Power Attack",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 8,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "foundryActivities": [
-                {
-                    "name": "Power Attack",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack against your Quarry"
-					},
-                    "roll": {
-                        "name": "Damage Bonus",
-                        "formula": "@scale.hunter.hunter-die"
-                    }
-                }
-            ]
-		},
-        {
 			"name": "Deft Movement I",
 			"source": "Starlight",
 			"featureType": [
@@ -3577,7 +3720,8 @@
 				"HTR"
 			],
 			"entries": [
-				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB} or {@skill Performance|XPHB} skills."
+				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, or {@skill Performance|XPHB} skills. Additionally, you gain proficiency in one of those skills.",
+                "If you replace this Trick with another, you lose the proficiency."
 			],
             "prerequisite": [
                 {
@@ -3588,6 +3732,18 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "intimidation",
+                            "persuasion",
+                            "performance"
+                        ]
                     }
                 }
             ],
@@ -3914,7 +4070,7 @@
                     },
                     "description": {
                         "chatFlavor": "Do not fall."
-                        }
+                    }
                 }
             ]
 		},
