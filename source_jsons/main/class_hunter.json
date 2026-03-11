@@ -822,6 +822,9 @@
         {
 			"name": "Called Shot",
 			"source": "Starlight",
+            "level": 9,
+            "className": "Hunter",
+            "classSource": "Starlight",
 			"entries": [
 				"Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
 			],
