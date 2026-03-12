@@ -533,6 +533,15 @@
                                         "name": "Instinct"
                                     }
                                 }
+                            },
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Shrug It Off"
+                                    }
+                                }
                             }
                         ]
                     },
@@ -2797,7 +2806,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
+				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature."
 			],
             "foundryActivities": [
                 {
@@ -2819,10 +2828,6 @@
                                 }
                             }
                         ]
-                    },
-                    "roll": {
-                        "name": "Retaliatory Attack Bonus",
-                        "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
@@ -3171,7 +3176,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them, adding your Hunter's Die to the attack roll."
+				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them."
 			],
             "prerequisite": [
                 {
@@ -3192,11 +3197,7 @@
 					"activation": {
 						"type": "",
 						"condition": "When a creature enters your reach and you are holding a melee weapon"
-					},
-                    "roll": {
-                        "name": "Attack Roll Bonus",
-                        "formula": "@scale.hunter.hunter-die"
-                    }
+					}
                 }
             ]
 		},
@@ -3250,14 +3251,14 @@
             }
 		},
         {
-			"name": "Staggering Blow",
+			"name": "Inflicting Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to impede your opponent's coordination.",
-                "The target must make a Strength saving throw or be {@condition Staggered|S: Conditions} until the start of your next turn."
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become to {@condition Bleeding|Starlight}.",
+                "The target can repeat the saving throw at the end of each of their turns to end the effect."
 			],
             "prerequisite": [
                 {
@@ -3276,7 +3277,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Staggering Blow",
+                    "name": "Inflicting Strike",
                     "type": "save",
 					"activation": {
 						"type": "",
@@ -3303,7 +3304,7 @@
 					},
 					"save": {
 						"ability": [
-							"str"
+							"con"
 						],
 						"dc": {
 							"calculation": "wis"
@@ -3313,14 +3314,14 @@
             ]
 		},
         {
-			"name": "Sundering Blow",
+			"name": "Searing Blow",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to temporarily weaken your opponent's armour.",
-                "The target must make a Dexterity saving throw or be {@condition Sundered|S: Conditions} until the start of your next turn."
+				"Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to force them to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
+                "Once burning, the target repeats the saving throw at the end of each of their turns, ending the effect on a success."
 			],
             "prerequisite": [
                 {
@@ -3339,7 +3340,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Sundering Blow",
+                    "name": "Searing Blow",
                     "type": "save",
 					"activation": {
 						"type": "",
@@ -3372,28 +3373,6 @@
 							"calculation": "wis"
 						}
 					}
-                }
-            ]
-		},
-        {
-			"name": "Hampering Attack",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your attacks are aimed such that they affect your opponent's movement. When you hit a creature with an attack, it becomes {@condition Hampered} until the start of your next turn."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 6,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
                 }
             ]
 		},
@@ -3454,13 +3433,13 @@
             ]
 		},
         {
-			"name": "Instinctual Mark",
+			"name": "Instinctive Mark",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}, at the cost of two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
+				"You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -3476,7 +3455,7 @@
             ],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             }
 		},
         {
@@ -3545,6 +3524,65 @@
                             "visible": true
                         }
                     }
+                }
+            ]
+		},
+        {
+			"name": "Nerve Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You land attacks such that they affect your target's ability to react to events. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force them to make an Intelligence saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Nerve Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"int"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
                 }
             ]
 		},
@@ -3939,6 +3977,29 @@
             ]
 		},
         {
+			"name": "Alpha Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
+                "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+		},
+        {
 			"name": "Sterner Stuff II",
 			"source": "Starlight",
 			"featureType": [
@@ -3996,7 +4057,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance."
+				"Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance, and you cannot have {@variantrule Disadvantage|XPHB} on attacks against it."
 			],
             "prerequisite": [
                 {
@@ -4601,14 +4662,13 @@
             ]
 		},
         {
-			"name": "Alpha Strike",
+			"name": "Pinning Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
-                "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
+				"Your attack is carefully aimed to impede your opponent's movement as much as possible. At the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can make an attack that, on a hit, forces the target to make a Strength saving throw. On a failure, the target is {@condition Restrained|XPHB} until the end of their next turn."
 			],
             "prerequisite": [
                 {
