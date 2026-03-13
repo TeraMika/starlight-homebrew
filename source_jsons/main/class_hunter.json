@@ -3148,13 +3148,13 @@
             ]
 		},
         {
-			"name": "Banked Strike",
+			"name": "Ricochet Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage retains the weapon's type and any magical properties."
+				"When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage is of the weapon's type, and the attack retains any properties of the weapon or ammunition such as masteries or attack or damage bonuses."
 			],
             "prerequisite": [
                 {
