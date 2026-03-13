@@ -2808,6 +2808,9 @@
 			"entries": [
 				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature."
 			],
+            "consumes": {
+                "name": "Instinct"
+            },
             "foundryActivities": [
                 {
                     "name": "Retaliate",
@@ -2889,7 +2892,8 @@
 				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
 			],
             "consumes": {
-                "name": "Instinct"
+                "name": "Instinct",
+                "amount": 2
             },
             "foundryActivities": [
                 {
@@ -3144,13 +3148,13 @@
             ]
 		},
         {
-			"name": "Cleaving Attack",
+			"name": "Banked Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with a melee attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against a different creature within 5 feet of the original target."
+				"When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage retains the weapon's type and any magical properties."
 			],
             "prerequisite": [
                 {
@@ -3166,7 +3170,7 @@
             ],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             }
 		},
         {
@@ -3257,7 +3261,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become to {@condition Bleeding|Starlight}.",
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become {@condition Bleeding|Starlight}.",
                 "The target can repeat the saving throw at the end of each of their turns to end the effect."
 			],
             "prerequisite": [
@@ -3320,7 +3324,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to force them to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
+				"Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
                 "Once burning, the target repeats the saving throw at the end of each of their turns, ending the effect on a success."
 			],
             "prerequisite": [
@@ -3536,6 +3540,9 @@
 			"entries": [
 				"You land attacks such that they affect your target's ability to react to events. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force them to make an Intelligence saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
 			],
+            "consumes": {
+                "name": "Instinct"
+            },
             "prerequisite": [
                 {
                     "level": {
@@ -4670,6 +4677,9 @@
 			"entries": [
 				"Your attack is carefully aimed to impede your opponent's movement as much as possible. At the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can make an attack that, on a hit, forces the target to make a Strength saving throw. On a failure, the target is {@condition Restrained|XPHB} until the end of their next turn."
 			],
+            "consumes": {
+                "name": "Instinct"
+            },
             "prerequisite": [
                 {
                     "level": {
