@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.02.27.20.16",
+                "version": "2026.04.03.16.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.02.27.20.16",
+                "version": "2026.04.03.16.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,22 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.02.27.20.16",
+                "version": "2026.04.03.16.46",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "SCE",
+                "abbreviation": "SCE",
+                "full": "Sasha's Cauldron of Esoterica",
+                "color": "5a54a5",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2026.04.03.16.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +71,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.02.27.20.16",
+                "version": "2026.04.03.16.46",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -64,7 +79,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1772223370.4544559
+        "dateLastModified": 1775234760.2088397
     },
     "class": [
         {
@@ -95,6 +110,7 @@
                 },
                 "Ability Score Improvement|Fighter|XPHB|8",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
+                "Called Shot|Hunter|Starlight|9|Starlight",
                 "Defensive Hunter|Hunter|Starlight|10|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
@@ -1459,6 +1475,15 @@
                                         "name": "Instinct"
                                     }
                                 }
+                            },
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Shrug It Off"
+                                    }
+                                }
                             }
                         ]
                     },
@@ -1743,6 +1768,30 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Called Shot",
+            "source": "Starlight",
+            "level": 9,
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "entries": [
+                "Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Called Shot",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an attack against your Quarry"
+                    },
+                    "roll": {
+                        "name": "Damage Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
                 }
             ]
         },
@@ -4795,18 +4844,136 @@
                 "HTR"
             ],
             "entries": [
-                "You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB} or {@skill Deception|XPHB} skill. You can do this after the roll, and if this turns the roll from a failure to a success, you regain the Instinct you spent."
+                "You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB}, {@skill Animal Handling|XPHB}, or {@skill Deception|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
             ],
             "consumes": {
                 "name": "Instinct"
             },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "insight",
+                            "animal handling",
+                            "deception"
+                        ]
+                    }
+                }
+            ],
             "foundryActivities": [
                 {
                     "name": "Hunter's Insight",
                     "type": "utility",
                     "activation": {
                         "type": "",
-                        "condition": "When you make an ability check using Insight or Deception"
+                        "condition": "When you make an ability check using Insight, Animal Handling, or Deception"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Physical Training",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You've trained for feats of physical prowess. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Athletics|XPHB} or {@skill Acrobatics|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "athletics",
+                            "acrobatics"
+                        ]
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Physical Training",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Athletics or Acrobatics"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Scholarly Training",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You have a knack for pursuits of intellect. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Arcana|XPHB}, {@skill Religion|XPHB}, or {@skill History|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+                "If you swap this Trick for another, you lose the proficiency."
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "arcana",
+                            "history",
+                            "religion"
+                        ]
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Scholarly Training",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Athletics or Acrobatics"
                     },
                     "consumption": {
                         "targets": [
@@ -4897,8 +5064,11 @@
                 "HTR"
             ],
             "entries": [
-                "When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature, adding your Hunter's Die to the attack roll."
+                "When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature."
             ],
+            "consumes": {
+                "name": "Instinct"
+            },
             "foundryActivities": [
                 {
                     "name": "Retaliate",
@@ -4919,10 +5089,6 @@
                                 }
                             }
                         ]
-                    },
-                    "roll": {
-                        "name": "Retaliatory Attack Bonus",
-                        "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
@@ -4984,7 +5150,8 @@
                 "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
             ],
             "consumes": {
-                "name": "Instinct"
+                "name": "Instinct",
+                "amount": 2
             },
             "foundryActivities": [
                 {
@@ -5020,6 +5187,45 @@
                         "dc": {
                             "calculation": "wis"
                         }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Feint",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "foundryActivities": [
+                {
+                    "name": "Feint",
+                    "type": "utility",
+                    "activation": {
+                        "type": "bonus",
+                        "amount": 1
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Gain advantage on your next attack."
                     }
                 }
             ]
@@ -5211,13 +5417,13 @@
             ]
         },
         {
-            "name": "Cleaving Attack",
+            "name": "Ricochet Strike",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an additional attack against a different creature within 5 feet of the original target."
+                "When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage is of the weapon's type, and the attack retains any properties of the weapon or ammunition such as masteries or attack or damage bonuses."
             ],
             "prerequisite": [
                 {
@@ -5233,7 +5439,7 @@
             ],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             }
         },
         {
@@ -5243,7 +5449,7 @@
                 "HTR"
             ],
             "entries": [
-                "When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them, adding your Hunter's Die to the attack roll."
+                "When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them."
             ],
             "prerequisite": [
                 {
@@ -5264,10 +5470,6 @@
                     "activation": {
                         "type": "",
                         "condition": "When a creature enters your reach and you are holding a melee weapon"
-                    },
-                    "roll": {
-                        "name": "Attack Roll Bonus",
-                        "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
@@ -5324,14 +5526,14 @@
             }
         },
         {
-            "name": "Staggering Blow",
+            "name": "Inflicting Strike",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to impede your opponent's coordination.",
-                "The target must make a Strength saving throw or be {@condition Staggered|S: Conditions} until the start of your next turn."
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become {@condition Bleeding|Starlight}.",
+                "The target can repeat the saving throw at the end of each of their turns to end the effect."
             ],
             "prerequisite": [
                 {
@@ -5350,7 +5552,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Staggering Blow",
+                    "name": "Inflicting Strike",
                     "type": "save",
                     "activation": {
                         "type": "",
@@ -5377,7 +5579,7 @@
                     },
                     "save": {
                         "ability": [
-                            "str"
+                            "con"
                         ],
                         "dc": {
                             "calculation": "wis"
@@ -5387,14 +5589,14 @@
             ]
         },
         {
-            "name": "Sundering Blow",
+            "name": "Searing Blow",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to temporarily weaken your opponent's armour.",
-                "The target must make a Dexterity saving throw or be {@condition Sundered|S: Conditions} until the start of your next turn."
+                "Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
+                "Once burning, the target repeats the saving throw at the end of each of their turns, ending the effect on a success."
             ],
             "prerequisite": [
                 {
@@ -5413,7 +5615,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Sundering Blow",
+                    "name": "Searing Blow",
                     "type": "save",
                     "activation": {
                         "type": "",
@@ -5444,28 +5646,6 @@
                         ],
                         "dc": {
                             "calculation": "wis"
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Hampering Attack",
-            "source": "Starlight",
-            "featureType": [
-                "HTR"
-            ],
-            "entries": [
-                "Your attacks are aimed such that they affect your opponent's movement. When you hit a creature with an attack, it becomes {@condition Hampered} until the start of your next turn."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 6,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
                         }
                     }
                 }
@@ -5528,13 +5708,13 @@
             ]
         },
         {
-            "name": "Instinctual Mark",
+            "name": "Instinctive Mark",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}, at the cost of two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
+                "You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}."
             ],
             "prerequisite": [
                 {
@@ -5550,7 +5730,7 @@
             ],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             }
         },
         {
@@ -5619,6 +5799,68 @@
                             "name": "Hunter",
                             "source": "Starlight",
                             "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nerve Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You land attacks such that they affect your target's ability to react to events. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force them to make an Intelligence saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Nerve Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "int"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
                         }
                     }
                 }
@@ -5700,42 +5942,6 @@
             "consumes": {
                 "name": "Instinct"
             }
-        },
-        {
-            "name": "Power Attack",
-            "source": "Starlight",
-            "featureType": [
-                "HTR"
-            ],
-            "entries": [
-                "When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
-            ],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 8,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "foundryActivities": [
-                {
-                    "name": "Power Attack",
-                    "type": "utility",
-                    "activation": {
-                        "type": "",
-                        "condition": "When you make an attack against your Quarry"
-                    },
-                    "roll": {
-                        "name": "Damage Bonus",
-                        "formula": "@scale.hunter.hunter-die"
-                    }
-                }
-            ]
         },
         {
             "name": "Deft Movement I",
@@ -5835,7 +6041,8 @@
                 "HTR"
             ],
             "entries": [
-                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB} or {@skill Performance|XPHB} skills."
+                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, or {@skill Performance|XPHB} skills. Additionally, you gain proficiency in one of those skills.",
+                "If you replace this Trick with another, you lose the proficiency."
             ],
             "prerequisite": [
                 {
@@ -5846,6 +6053,18 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 1,
+                        "from": [
+                            "intimidation",
+                            "persuasion",
+                            "performance"
+                        ]
                     }
                 }
             ],
@@ -6038,6 +6257,29 @@
             ]
         },
         {
+            "name": "Alpha Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
+                "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "name": "Sterner Stuff II",
             "source": "Starlight",
             "featureType": [
@@ -6097,7 +6339,7 @@
                 "HTR"
             ],
             "entries": [
-                "Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance."
+                "Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance, and you cannot have {@variantrule Disadvantage|XPHB} on attacks against it."
             ],
             "prerequisite": [
                 {
@@ -6706,15 +6948,17 @@
             ]
         },
         {
-            "name": "Alpha Strike",
+            "name": "Pinning Strike",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
-                "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
+                "Your attack is carefully aimed to impede your opponent's movement as much as possible. At the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can make an attack that, on a hit, forces the target to make a Strength saving throw. On a failure, the target is {@condition Restrained|XPHB} until the end of their next turn."
             ],
+            "consumes": {
+                "name": "Instinct"
+            },
             "prerequisite": [
                 {
                     "level": {
@@ -12261,57 +12505,6 @@
             ]
         },
         {
-            "name": "Astral Teardrop",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "You can fail an additional death saving throw before dying (4 total).",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You cannot be possessed or mind controlled. Once per long rest, you can cast {@spell Enervation|xge} or {@spell Modify Memory|phb}. If cast in this way, Modify Memory can affect a memory of any age, but only once on a given target."
-                    ]
-                }
-            ],
-            "attachedSpells": [
-                "modify memory",
-                "enervation"
-            ]
-        },
-        {
-            "name": "Fate's Pendant",
-            "source": "Starlight",
-            "rarity": "legendary",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "A sphere filled with shifting colours. When seen in your peripheral, it resembles an eye watching you.",
-                {
-                    "type": "entries",
-                    "name": "Redirect Fate.",
-                    "entries": [
-                        "Once each long rest, you may reroll any attack, ability check, or saving throw that you make, using the new result."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The Pendant carries {@dice 1d4-1} charges, which can be used to cast the {@spell Wish|phb} spell.",
-                        "Additionally, when you use Redirect Fate, roll {@dice 4d6}. You may restore that many hit points, or deal that much necrotic damage, to a creature of your choice that you can see."
-                    ]
-                }
-            ],
-            "attachedSpells": [
-                "wish"
-            ]
-        },
-        {
             "name": "Soulful Rook Chesspiece",
             "source": "Starlight",
             "rarity": "common",
@@ -12906,6 +13099,325 @@
             "reqAttune": false,
             "entries": [
                 "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
+            ]
+        },
+        {
+            "name": "Shepherd Stones",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "These three stones float around you at all times and attempt to protect you from harm. While attuned, when an attack is made that targets you, a sphere will intercept it and negate it. Once a sphere has intercepted an attack, it becomes inert and drops to the ground. Inert spheres recover once the user has completed a {@variantrule Long Rest}.",
+                "The spheres can be deactivated or reactivated as a {@action Magic|XPHB} action. While deactivated, they do not intercept attacks."
+            ]
+        },
+        {
+            "name": "Astral Teardrop",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person})."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Potionweaver's Bracelet",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
+                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
+            ]
+        },
+        {
+            "name": "Blank Scroll",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
+                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
+                        "Whenever you deal damage, no die can roll below a 3.",
+                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
+                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
+                    ]
+                },
+                "A creature can gain the benefit of this scroll only once."
+            ]
+        },
+        {
+            "name": "Curious",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The exact appearance of this gem changes depending on your mood.",
+                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Cast the spell with no somatic or verbal components.",
+                        "The target has disadvantage on its first saving throw against the spell.",
+                        "The duration is doubled (to a maximum of 24 hours).",
+                        "You can reroll any of the damage dice.",
+                        "The range is doubled, or increased to 30 feet for a touch spell.",
+                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
+                        "You can protect any number of creatures from the spell's initial effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cut Paper",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "entries": [
+                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
+                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
+            ]
+        },
+        {
+            "name": "Engraving Quill",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
+            ]
+        },
+        {
+            "name": "Exploding Nail Polish",
+            "source": "SCE",
+            "rarity": "common",
+            "charges": 3,
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
+                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
+                "There is enough nail polish within the container for 3 applications."
+            ]
+        },
+        {
+            "name": "Fisherman's Blanket",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
+            ]
+        },
+        {
+            "name": "Flamed Blade",
+            "source": "SCE",
+            "baseItem": "shortsword|xphb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 2,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "Healing Poultice",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
+                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
+            ]
+        },
+        {
+            "name": "Hidden Dagger",
+            "source": "SCE",
+            "baseItem": "dagger|xphb",
+            "type": "s",
+            "weaponCategory": "simple",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 1,
+            "reqAttune": false,
+            "entries": [
+                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
+            ]
+        },
+        {
+            "name": "Hopeful Flame",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
+                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
+                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are resistant to fire damage.",
+                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Diamond",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
+            ]
+        },
+        {
+            "name": "Invisibility Ring",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring is flawlessly invisible."
+            ]
+        },
+        {
+            "name": "Lucky-Seven Rune",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
+            ]
+        },
+        {
+            "name": "Ring of Fire Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring detects the presence of fire, with a range of touch."
+            ]
+        },
+        {
+            "name": "Ring of Teleportation",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
+            ]
+        },
+        {
+            "name": "Potion of Greater Tealing",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
+            ]
+        },
+        {
+            "name": "Potion of Hydration",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
+            ]
+        },
+        {
+            "name": "Pulpy Healing Potion",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
+            ]
+        },
+        {
+            "name": "Ring of Inn Visibility",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
+                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
+            ]
+        },
+        {
+            "name": "Scroll of Weather Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
+                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
+            ]
+        },
+        {
+            "name": "Solemn Silver Ring",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
+                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
+            ]
+        },
+        {
+            "name": "Spell-storing Arrow",
+            "source": "SCE",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
+                "Once used, the arrow turns to ash."
+            ]
+        },
+        {
+            "name": "Wand of Mystery",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
             ]
         },
         {
