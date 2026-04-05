@@ -271,6 +271,79 @@
                     ]
                 }
             },
+            "foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"type": "dice",
+                        "identifier": "ebb-flow-dice",
+						"scale": {
+							"3": {
+								"number": 1,
+								"faces": 4
+							},
+							"6": {
+								"number": 2,
+								"faces": 4
+							},
+							"10": {
+								"number": 2,
+								"faces": 6
+							},
+							"14": {
+								"number": 2,
+								"faces": 10
+							}
+                        }
+					},
+					"title": "Ebb and Flow Water Jet Dice"
+				},
+                {
+					"type": "ScaleValue",
+					"configuration": {
+						"type": "number",
+                        "identifier": "ebb-flow-range",
+						"scale": {
+							"3": {
+								"value": 30
+							},
+							"6": {
+								"value": 60
+							},
+							"14": {
+								"value": 120
+                            }
+                        }
+					},
+					"title": "Ebb and Flow Water Jet Range"
+				},
+                {
+					"type": "ScaleValue",
+					"configuration": {
+						"type": "dice",
+                        "identifier": "earthen-scales-dice",
+						"scale": {
+							"3": {
+								"number": 1,
+								"faces": 6
+                            },
+                            "6": {
+								"number": 2,
+								"faces": 6
+                            },
+                            "10": {
+								"number": 3,
+								"faces": 6
+                            },
+                            "14": {
+								"number": 4,
+								"faces": 6
+                            }
+                        }
+					},
+					"title": "Earthen Scales Dice"
+				}
+            ],
             "featProgression": [
 				{
 					"name": "Epic Boon",
@@ -972,7 +1045,11 @@
                 "{@i 3rd-level Waters Shaman feature}",
                 "Water supplies life in all places, and water flows down mountains and across plains before reaching the sea. This intuitive knowledge of the wider world and its layout grants you proficiency with the {@skill Survival} skill and {@item cartographer's tools|XPHB}. It would also be reasonable to have waterproof paper or a waterproof pouch to keep your supplies in.",
                 "Additionally, you can hold your breath for twice as long as you otherwise could."
-            ]
+            ],
+            "skillProficiencies": ["survival"],
+            "toolProficiencies": [{
+                "cartographer's tools": true
+            }]
         },    
         {
             "name": "Ebb",
@@ -985,6 +1062,50 @@
             "entries": [
                 "{@i 3rd-level Waters Shaman feature}",
                 "You maintain balance, where life inevitably brings harm. When you restore hit points to a creature on your turn, you can use a {@variantrule Bonus Action} on that turn to throw a jet of powerful water at a creature within 30 feet. Make a spell attack roll. On a hit, the target takes bludgeoning damage equal to {@dice 1d4} + your spellcasting ability modifier and becomes {@condition Off-balance|Starlight}."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Ebb",
+                    "type": "attack",
+                    "activation": {
+                        "type": "bonus",
+                        "value": 1,
+                        "condition": "When you restore hit points to a creature on your turn"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "range": {
+                        "value": "30",
+                        "units": "@scale.shaman.ebb-flow-range"
+                    },
+                    "attack": {
+                        "ability": "wis",
+                        "type": {
+                            "value": "melee",
+                            "classification": "spell"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.shaman.ebb-flow-dice + @mod"
+                                },
+                                "types": [
+                                    "bludgeoning"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Balance out healing with harm."
+                    }
+                }
             ]
         },
         {
@@ -998,6 +1119,33 @@
             "entries": [
                 "{@i 3rd-level Waters Shaman feature}",
                 "You maintain balance, where life springs from danger. When you deal damage to a creature on your turn, you can use a {@variantrule Bonus Action} on that turn to throw a jet of restorative water at a creature within 30 feet. The creature targeted regains hit points equal to {@dice 1d4} + your spellcasting ability modifier."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Flow",
+                    "type": "heal",
+					"activation": {
+						"type": "bonus",
+                        "amount": 1,
+						"condition": "When you deal damage to a creature on your turn"
+					},
+                    "range": {
+                        "units": "ft", 
+                        "value": 30
+                    },
+                    "healing": {
+                        "types": [
+                            "healing"
+                        ],
+                        "custom": {
+                            "enabled": true,
+                            "formula": "@scale.shaman.ebb-flow-dice"
+                        }
+                    },
+                    "description": {
+                        "chatFlavor": "Balance out harm with healing."
+                    }
+                }
             ]
         },
         {
@@ -1024,7 +1172,8 @@
             "entries": [
                 "{@i 6th-level Waters Shaman feature}",
                 "Your experience with waterlogged terrain means that you are no longer affected by difficult terrain on watery surfaces such as mud, marsh, shallow water, or similar terrain."
-            ]
+            ],
+            "conditionImmune": ["Difficult terrain on watery surfaces such as mud, marsh, shallow water, or similar"]
         },
         {
             "name": "Flow As Water",
@@ -1037,9 +1186,32 @@
             "entries": [
                 "{@i 10th-level Waters Shaman feature}",
                 "You can breathe underwater and gain a swimming speed equal to your walking speed.",
-                "Furthermore, when you take damage, you can take on the form of water as a {@variantrule Reaction}. Until the end of your next turn, whenever you would take damage, you can treat any dice rolled for that damage as having rolled their minimum value instead. Your movement speed increases by 30 feet for the same duration",
-                "You can use this {@variantrule Reaction} once per {@variantrule Short Rest}."
-            ]
+                "Furthermore, when you take damage, you can take on the form of water as a {@variantrule Reaction}. Until the end of your next turn, whenever you would take damage, you can treat any dice rolled for that damage as having rolled their minimum value instead, including against the triggering damage. Your movement speed increases by 30 feet for the same duration",
+                "You can use this {@variantrule Reaction} once per {@variantrule Short Rest}.",
+                "Finally, the power of your {@subclassFeature Ebb|Shaman|Starlight|Waters|Starlight|3|Starlight|Ebb} or {@subclassFeature Flow|Shaman|Starlight|Waters|Starlight|3|Starlight|Flow} water jets increases to {@dice 2d6} + your spellcasting ability modifier."        
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Flow as Water",
+                    "type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "When you take damage"
+					},
+                    "description": {
+                        "chatFlavor": "All damage dice rolled against you are treated as rolling their minimum value. Gain 30 feet movement speed."
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "Master of the Tides",
@@ -1143,7 +1315,10 @@
                 "{@i 3rd-level Mountains Shaman feature}",
                 "The mountains have stood the test of time, and with that time comes knowledge. You gain proficiency in {@item mason's tools|XPHB} and have advantage on Intelligence checks made to identify information about or investigate the properties of rooms or objects comprised in some way of stone (for example, the history of a ruin, natural properties of mountains, investigating a stone room).",
                 "Furthermore, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and you are naturally adapted to cold climates when considering {@hazard extreme cold|DMG}."
-            ]
+            ],
+            "toolProficiencies": [{
+                "mason's tools": true
+            }]
         },
         {
             "name": "Mountainhide",  
@@ -1170,6 +1345,32 @@
                 "{@i 3rd-level Mountains Shaman feature}",
                 "You can call on the spirits for active protection when creatures of the world are in danger. When you or a creature you can see within 30 feet takes damage, you can use a {@variantrule Reaction} to reduce that damage by {@dice 1d6} plus your Constitution modifier.",
                 "You can do this a number of times per {@variantrule Long Rest} equal to your proficiency bonus, or spend a spell slot of first level or higher to gain an additional use (no action required)."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Earthen Scale",
+                    "type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "When a friendly creature within 30 feet of you takes damage"
+					},
+                    "range": {
+                        "units": "ft", 
+                        "value": 30
+                    },
+                    "healing": {
+                        "types": [
+                            "temphp"
+                        ],
+                        "custom": {
+                            "enabled": true,
+                            "formula": "@scale.shaman.earthen-scales-dice"
+                        }
+                    },
+                    "description": {
+                        "chatFlavor": "Skin like iron, bones like steel."
+                    }
+                }
             ]
         },
         {
@@ -1197,7 +1398,8 @@
             "entries": [
                 "{@i 6th-level Mountains Shaman feature}",
                 "Your experience with mountainous terrain means that you are no longer affected by difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground."
-            ]
+            ],
+            "conditionImmune": ["Difficult terrain on surfaces made of stone or rocks, snow, ice, or similar ground"]
         },
         {
             "name": "Earthen Scales Improvement",
@@ -1223,7 +1425,29 @@
             "entries": [
                 "{@i 10th-level Mountains Shaman feature}",
                 "You can call on the chilling winds of the valley. You can use an {@variantrule Action} to {@condition slowed|Starlight|slow} all creatures of your choice within 10 feet of you until the end of your next turn. When you do so, you become Tough for the next minute; if you take 10 or less damage, you instead take no damage. Once you do, you cannot do so again until you finish a {@variantrule Long Rest}."
-            ]
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Spirit of the Valley",
+                    "type": "utility",
+					"activation": {
+						"type": "action",
+                        "amount": 1
+					},
+                    "description": {
+                        "chatFlavor": "Slow all creatures near you for one turn and become Tough for one minute: all damage of 10 or less is reduced to 0."
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "True Mettle",
@@ -1335,7 +1559,11 @@
                 "{@i 3rd-level Dunes Shaman feature}",
                 "Survival in a desert is no easy feat. You must be able to make do with scant resources, and able to avoid the predators and dangers that roam - an upfront approach is rarely your best choice. You gain proficiency in {@item cook's utensils|XPHB} and {@skill Stealth}.",
                 "Furthermore, you are naturally acclimated to hot or cold temperatures (depending on your desert) when considering {@hazard extreme heat|DMG} or {@hazard extreme cold|DMG}."
-            ]
+            ],
+            "skillProficiencies": ["stealth"],
+            "toolProficiencies": [{
+                "cook's utensils": true
+            }]
         },
         {
             "name": "Mirage",  
@@ -1362,8 +1590,29 @@
             "entries": [
                 "{@i 6th-level Dunes Shaman feature}",
                 "Deserts are known for their harsh weather conditions, and you can create some of your own. Once per {@variantrule Short Rest}, you can spend an {@variantrule Action} to create a storm of swirling particulates (such as snow or sand) in a 10-foot Emanation originating from you. This area provides half cover for you and your allies and is difficult terrain for creatures other than you to move through. The storm lasts for one minute or until you are {@condition Incapacitated}."
-                
-            ]
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Control the Storm",
+                    "type": "utility",
+					"activation": {
+						"type": "action",
+                        "amount": 1
+					},
+                    "description": {
+                        "chatFlavor": "Half cover for your allies, difficult terrain for your foes."
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "Duneswalker",  
@@ -1412,7 +1661,29 @@
                     ]
                 },
                 "You can concentrate on the storm this way once per {@variantrule Long Rest}. If you lose your {@status concentration}, the storm ends and you must complete a {@variantrule Short Rest} to use it again, as normal."
-            ]
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Liquifaction",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+                        "condition": "When you use Control the Storm"
+					},
+                    "description": {
+                        "chatFlavor": "A devastating sandstorm"
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "Forests",
@@ -1500,7 +1771,11 @@
             "entries": [
                 "{@i 3rd-level Forests Shaman feature}",
                 "The rampant plant growth in a forested environment provides opportunity, but also cover. You are trained to see past that cover, and make use of plants and herbs available to you. You have proficiency with the {@item Herbalism Kit|XPHB} and with the {@skill Perception} skill."
-            ]
+            ],
+            "skillProficiencies": ["persuasion"],
+            "toolProficiencies": [{
+                "herbalism kit": true
+            }]
         },
         {
             "name": "Wild Mark",
@@ -1540,8 +1815,34 @@
             "level": 6,
             "entries": [
                 "{@i 6th-level Forests Shaman feature}",
-                "When a creature marked by your Wild Mark ends its turn out of your reach, it takes damage equal to your Wisdom modifier. This damage cannot activate Wild Mark.",
+                "When a creature marked by your Wild Mark ends its turn out of your reach, it takes psychic damage equal to your Wisdom modifier. This damage cannot activate Wild Mark.",
                 "Any creature marked by your Wild Mark treats forest terrain (such as thick leafbeds, root-laden floors, or heavy undergrowth) as difficult terrain."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Relentless Pursuit",
+                    "type": "damage",
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature marked by your Wild Mark ends its turn out of your reach"
+                    },
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@abilities.wis.mod"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+                    "description": {
+                        "chatFlavor": "Fear of the chase."
+                    }
+                }
             ]
         },
         {
@@ -1556,7 +1857,8 @@
                 "{@i 6th-level Forests Shaman feature}",
                 "You are not affected by difficult terrain consisting of plants or similar foliage. If a plant is hazardous, such as being covered in spines, it does not harm you.",
                 "For you, the {@spell Plant Growth|XPHB} spell only requires you to spend 2 feet per 1 foot of movement."
-            ]
+            ],
+            "conditionImmune": ["Difficult terrain consisting of plants or similar foliage", "Damage from hazardous plants"]
         },
         {
             "name": "Looming Presence",
@@ -1582,6 +1884,32 @@
             "entries": [
                 "{@i 14th-level Forests Shaman feature}",
                 "The first time each turn a creature within your reach hits you with an attack or forces you to make a saving throw, it takes damage equal to your Wisdom modifier of a type matching your Elemental Affinity or Psychic (you choose) and has Disadvantage on its next attack roll this turn."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Forest's Thorns",
+                    "type": "damage",
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature within your reach hits you with an attack or forces you to make a saving throw"
+                    },
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@abilities.wis.mod"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+                    "description": {
+                        "chatFlavor": "Revenge."
+                    }
+                }
             ]
         }
     ],
@@ -2021,7 +2349,33 @@
 			],
 			"entries": [
 				"When a creature within 30 feet of you is hit by an attack, you can use your {@variantrule Reaction} to deal Psychic damage to the attacker equal to your Proficiency Bonus and shove them 10 feet away from their target."
-			]
+			],
+            "foundryActivities": [
+                {
+                    "name": "Ancient Wards",
+                    "type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "When a creature within 30 feet of you is hit by an attack"
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@prof"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+                    "description": {
+                        "chatFlavor": "Rebuke the attacker: damage and move them."
+                    }
+                }
+            ]
         },
         {
 			"name": "Elemental Manipulation",
