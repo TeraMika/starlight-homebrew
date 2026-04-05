@@ -56,6 +56,7 @@
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
                 "Called Shot|Hunter|Starlight|9|Starlight",
 				"Defensive Hunter|Hunter|Starlight|10|Starlight",
+                "Quick Thinking|Hunter|Starlight|10|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
                     "gainSubclassFeature": true
@@ -829,30 +830,6 @@
             ]
         },
         {
-			"name": "Called Shot",
-			"source": "Starlight",
-            "level": 9,
-            "className": "Hunter",
-            "classSource": "Starlight",
-			"entries": [
-				"Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
-			],
-            "foundryActivities": [
-                {
-                    "name": "Called Shot",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack against your Quarry"
-					},
-                    "roll": {
-                        "name": "Damage Bonus",
-                        "formula": "@scale.hunter.hunter-die"
-                    }
-                }
-            ]
-		},
-        {
             "name": "Relentless Pressure",
             "source": "Starlight",
             "className": "Hunter",
@@ -941,6 +918,30 @@
             ]
         },
         {
+			"name": "Called Shot",
+			"source": "Starlight",
+            "level": 9,
+            "className": "Hunter",
+            "classSource": "Starlight",
+			"entries": [
+				"Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
+			],
+            "foundryActivities": [
+                {
+                    "name": "Called Shot",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you make an attack against your Quarry"
+					},
+                    "roll": {
+                        "name": "Damage Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
+            ]
+		},
+        {
             "name": "Defensive Hunter",
             "source": "Starlight",
             "className": "Hunter",
@@ -1001,6 +1002,43 @@
             "level": 10,
             "entries": [
                 "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+            ]
+        },
+        {
+            "name": "Quick Thinking",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 10,
+            "entries": [
+                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Quick Thinking",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you fail a saving throw"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die"
+                    }
+                }
             ]
         },
         {
@@ -1094,8 +1132,8 @@
             "classSource": "Starlight",
             "level": 14,
             "entries": [
-                "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws.",
-                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+                "You gain proficiency in Wisdom saving throws, and one of your choice of Charisma or Intelligence saving throws."
+                
             ],
             "savingThrowProficiencies": [
                 {
@@ -1103,33 +1141,6 @@
                     "choose": {
                         "count": 1,
                         "from": ["cha", "int"]
-                    }
-                }
-            ],
-            "foundryActivities": [
-                {
-                    "name": "Refined Instincts",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you fail a saving throw"
-					},
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "roll": {
-                        "name": "Bonus",
-                        "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
@@ -3102,7 +3113,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by a number of rolls of your Hunter's Die equal to half your proficiency bonus (round up) plus your Wisdom modifier."
+				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by a two rolls of your Hunter's Die plus your Wisdom modifier."
 			],
             "prerequisite": [
                 {
@@ -3142,7 +3153,7 @@
                     },
                     "roll": {
                         "name": "Bonus",
-                        "formula": "(ceil(@prof/2))d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
+                        "formula": "2d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
                     }
                 }
             ]
@@ -3833,7 +3844,9 @@
 				"HTR"
 			],
 			"entries": [
-				"Your additional {@classFeature Instinct|Hunter|Starlight|1|Starlight} is equal to twice your Wisdom modifier, instead of once."
+				"Your additional {@classFeature Instinct|Hunter|Starlight|1|Starlight} is equal to twice your Wisdom modifier, instead of once.",
+                "You can spend an {@variantrule Action} to regain Instinct equal to two rolls of your Hunter's Die.",
+                "You can do this once and must finish {@variantrule Long Rest} before you can do so again. You can also use it as part of rolling initiative without requiring an action."
 			],
             "prerequisite": [
                 {
@@ -3846,7 +3859,30 @@
                         }
                     }
                 }
-            ]
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Honed Senses",
+                    "type": "utility",
+					"activation": {
+						"type": "action",
+                        "amount": 1
+					},
+                    "roll": {
+                        "name": "Additional Instinct",
+                        "formula": "2d(@scale.hunter.hunter-die-size)"
+                    }
+                }
+            ],
+			"foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
         },
         {
             "name": "Eye on the Prize",
@@ -4307,7 +4343,7 @@
             ],
             "foundryActivities": [
                 {
-                    "name": "",
+                    "name": "Banishing Strike",
                     "type": "damage",
 					"activation": {
 						"type": "",
