@@ -54,9 +54,8 @@
                 },
 				"Ability Score Improvement|Fighter|XPHB|8",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
-                "Called Shot|Hunter|Starlight|9|Starlight",
+                "Quick Thinking|Hunter|Starlight|9|Starlight",
 				"Defensive Hunter|Hunter|Starlight|10|Starlight",
-                "Quick Thinking|Hunter|Starlight|10|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
                     "gainSubclassFeature": true
@@ -117,26 +116,26 @@
 						"{@filter Tricks|optionalfeatures|feature type=HTR}"
                     ],
 					"rows": [
-						["3", "-"],
-						["4", "3"],
-						["5", "3"],
-						["6", "4"],
-						["7", "4"],
-						["8", "5"],
-						["9", "5"],
-						["10", "6"],
-						["11", "6"],
-						["12", "7"],
-						["13", "7"],
-						["14", "8"],
-						["15", "8"],
-						["16", "9"],
-						["17", "9"],
-						["18", "10"],
-						["19", "10"],
-						["20", "11"],
-						["21", "11"],
-						["22", "12"]
+						["1", "-"],
+						["2", "3"],
+						["3", "3"],
+						["4", "4"],
+						["5", "4"],
+						["6", "5"],
+						["7", "5"],
+						["8", "6"],
+						["9", "6"],
+						["10", "7"],
+						["11", "7"],
+						["12", "8"],
+						["13", "8"],
+						["14", "9"],
+						["15", "9"],
+						["16", "10"],
+						["17", "10"],
+						["18", "11"],
+						["19", "11"],
+						["20", "12"]
 					]
                 }
 			],
@@ -255,68 +254,86 @@
 						"type": "number",
 						"scale": {
                             "1": {
-                                "value": 3
+                                "value": 1
                             },
 							"2": {
-								"value": 4
+								"value": 2
 							},
 							"3": {
-								"value": 5
+								"value": 3
 							},
 							"4": {
-								"value": 6
+								"value": 4
 							},
 							"5": {
-								"value": 7
+								"value": 5
 							},
 							"6": {
-								"value": 8
+								"value": 6
 							},
 							"7": {
-								"value": 9
+								"value": 7
 							},
 							"8": {
-								"value": 10
+								"value": 8
 							},
 							"9": {
-								"value": 11
+								"value": 9
 							},
 							"10": {
-								"value": 12
+								"value": 10
 							},
 							"11": {
-								"value": 13
+								"value": 11
 							},
 							"12": {
-								"value": 14
+								"value": 12
 							},
 							"13": {
-								"value": 15
+								"value": 13
 							},
 							"14": {
-								"value": 16
+								"value": 14
 							},
 							"15": {
-								"value": 17
+								"value": 15
 							},
 							"16": {
-								"value": 18
+								"value": 16
 							},
 							"17": {
-								"value": 19
+								"value": 17
 							},
 							"18": {
-								"value": 20
+								"value": 18
 							},
 							"19": {
-								"value": 21
+								"value": 19
 							},
 							"20": {
-								"value": 22
+								"value": 20
 							}
 						}
 					},
 					"title": "Instinct"
+				},
+                {
+					"type": "ScaleValue",
+					"configuration": {
+						"type": "dice",
+                        "identifier": "fae-tricks-damage",
+						"scale": {
+							"11": {
+								"number": 4,
+								"faces": 8
+                            },
+                            "15": {
+                                "number": 5,
+                                "faces": 10
+                            }
+                        }
+					},
+					"title": "Fae Tricks Damage"
 				}
 			],
             "featProgression": [
@@ -918,29 +935,42 @@
             ]
         },
         {
-			"name": "Called Shot",
-			"source": "Starlight",
-            "level": 9,
+            "name": "Quick Thinking",
+            "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-			"entries": [
-				"Your training allows you to take more difficult shots, for the chance of a great reward. When you make an attack against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can subtract your Proficiency Bonus from the attack roll and add your Hunter's Die to the attack's damage."
-			],
+            "level": 9,
+            "entries": [
+                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+            ],
             "foundryActivities": [
                 {
-                    "name": "Called Shot",
+                    "name": "Quick Thinking",
                     "type": "utility",
 					"activation": {
 						"type": "",
-						"condition": "When you make an attack against your Quarry"
+						"condition": "When you fail a saving throw"
 					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
                     "roll": {
-                        "name": "Damage Bonus",
+                        "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
-		},
+        },
         {
             "name": "Defensive Hunter",
             "source": "Starlight",
@@ -981,7 +1011,7 @@
             "classSource": "Starlight",
             "level": 10,
             "entries": [
-                "Creatures cannot make opportunity attacks against you."
+                "Opportunity attacks against you are made at {@variantrule Disadvantage}."
             ]
         },
         {
@@ -991,7 +1021,7 @@
             "classSource": "Starlight",
             "level": 10,
             "entries": [
-                "After a creature hits you with an attack, you gain a +4 bonus to your {@variantrule Armour Class|XPHB|AC} against all other attacks made by that creature until the end of its turn."
+                "After a creature hits you with an attack, you gain a +3 bonus to your {@variantrule Armour Class|XPHB|AC} against all other attacks made by that creature until the end of its turn."
             ]
         },
         {
@@ -1002,43 +1032,6 @@
             "level": 10,
             "entries": [
                 "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
-            ]
-        },
-        {
-            "name": "Quick Thinking",
-            "source": "Starlight",
-            "className": "Hunter",
-            "classSource": "Starlight",
-            "level": 10,
-            "entries": [
-                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
-            ],
-            "foundryActivities": [
-                {
-                    "name": "Quick Thinking",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you fail a saving throw"
-					},
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "roll": {
-                        "name": "Bonus",
-                        "formula": "@scale.hunter.hunter-die"
-                    }
-                }
             ]
         },
         {
@@ -1095,7 +1088,8 @@
                     ]
                 }
             ]
-        },        {
+        },
+        {
             "name": "Relentless Strikes",
             "source": "Starlight",
             "className": "Hunter",
@@ -1296,7 +1290,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You have advantage on any saving throws you make against your Quarry and its effects."
+                "You have {@variantrule Advantage} on any saving throws you make against your Quarry and its effects."
             ]
         },
         {
@@ -1306,7 +1300,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has disadvantage on its attack (if it attacks), or that ally has resistance to any damage dealt and advantage on any saving throws they are forced to make by your Quarry."
+                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has {@variantrule Disadvantage} on its attack (if it attacks), or that ally has resistance to any damage dealt and advantage on any saving throws they are forced to make by your Quarry."
             ]
         },
         {
@@ -1482,7 +1476,7 @@
                     ],
                     "by": "Captain Lee"
                 },
-                "When you damage your Qua{@classFeature Quarry|Hunter|Starlight|1|Starlight}rry, you can choose for the additional damage dealt by your Hunter's Die to be Radiant damage."
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Radiant damage."
             ]
         },    
         {
@@ -1499,10 +1493,63 @@
                 "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
                 "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
             ],
-            "consumes": {
-                "name": "Instinct",
-                "amount": 2
-            }
+            "foundryActivities": [
+                {
+                    "name": "Activate Ethereal Shift (Free)",
+                    "type": "utility",
+					"activation": {
+						"type": "bonus",
+                        "amount": 1
+					},
+                    "uses": {
+                        "value": 1,
+                        "max": 1,
+                        "per": "sr"
+                    }
+                },
+                {
+                    "name": "Activate Ethereal Shift",
+                    "type": "utility",
+					"activation": {
+						"type": "bonus",
+                        "amount": 1
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Ethereal Shift Damage",
+                    "type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "When you pass through a creature's space while using Ethereal Shift"
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(1+floor(@classes.hunter.levels/15))d(@scale.hunter.hunter-die-size)"
+								},
+								"types": [
+									"necrotic"
+								]
+							}
+						]
+					}
+                }
+            ]
         },
         {
             "name": "Expert",
@@ -1542,6 +1589,43 @@
                 "{@i 11th-level Borderland Hunter feature}",
                 "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a {@variantrule Reaction|XPHB} to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
                 "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take {@dice 4d8} psychic damage. This damage increases to {@dice 5d10} at level 15."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Fae Tricks",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When a creature affects you while you are using Ethereal Shift"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.hunter.fae-tricks-damage"
+								},
+								"types": [
+									"psychic"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                }
             ]
         },
         {
@@ -1672,7 +1756,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When an ally within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
+                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When another creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
             ],
             "foundryActivities": [
                 {
@@ -1782,7 +1866,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Extraplanar Hunter feature}",
-                "Once per turn, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target takes additional necrotic damage equal to a roll of your Hunter's Die, and must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
+                "Once on each of your turns, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target takes additional necrotic damage equal to a roll of your Hunter's Die, and must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
             ],
             "foundryActivities": [
                 {
@@ -1852,7 +1936,7 @@
                     "items": [
                         "Aberrant Ward now pushes the attacking creature 10 feet away from the ally you protect with it.",
                         "Celestial Dusting can also be used to restore hit points to a creature, and its range is 30 feet.",
-                        "Infernal Edge imposes disadvantage on the saving throw if your target is a Fiend, Celestial or Aberration."
+                        "The target of your Infernal Edge has {@variantrule Disadvantage|XPHB} on the saving throw if your target is a Fiend, Celestial or Aberration."
                     ]
                 }
             ]
@@ -2045,7 +2129,7 @@
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
                 "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}.",
-                "While unseen by a creature, you can replace one attack from your {@action Attack} action with a stealth strike. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, they take additional damage equal to your Hunter's Die, and your position is not revealed. You can do this only once per turn."
+                "While unseen by a creature, you can replace one attack from your {@action Attack} action with a stealth strike. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, they take additional damage equal to your Hunter's Die, and your position is not revealed to that creature. You can do this only once on each of your turns."
             ],
             "foundryActivities": [
                 {
@@ -2272,7 +2356,7 @@
             "level": 11,
             "entries": [
                 "{@i 11th-level Horizon Hunter feature}",
-                "Once per turn when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, the creature is {@condition Slowed|Starlight} until the start of your next turn."
+                "Once on each of your turns when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, the creature is {@condition Slowed|Starlight} until the start of your next turn."
             ],
             "foundryActivities": [
                 {
@@ -3107,58 +3191,6 @@
             }]
         },
         {
-			"name": "Parry",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by a two rolls of your Hunter's Die plus your Wisdom modifier."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 4,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visible": true
-                        }
-                    }
-                }
-            ],
-            "consumes": {
-                "name": "Instinct"
-            },
-            "foundryActivities": [
-                {
-                    "name": "Parry",
-                    "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you are hit by an attack"
-					},
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "roll": {
-                        "name": "Bonus",
-                        "formula": "2d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
-                    }
-                }
-            ]
-		},
-        {
 			"name": "Ricochet Strike",
 			"source": "Starlight",
 			"featureType": [
@@ -3247,7 +3279,8 @@
 				"HTR"
 			],
 			"entries": [
-				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}"
+				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
+                "When you make any Constitution ability check, you can add your Hunter's Die to the roll, or to checks and saving throws made as part of a Chase."
 			],
             "prerequisite": [
                 {
@@ -3611,7 +3644,8 @@
 				"HTR"
 			],
 			"entries": [
-				"When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the total."
+				"You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
+                "When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the total."
 			],
             "prerequisite": [
                 {
@@ -3688,7 +3722,8 @@
 				"HTR"
 			],
 			"entries": [
-                "You can take the {@action Disengage} action as a {@variantrule Bonus Action}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
+                "You can take the {@action Disengage} action as a {@variantrule Bonus Action}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
+                "When you take the Disengage action, you can make one attempt to escape an effect causing you to be {@condition Grappled} or {@condition Restrained}. You can make this additional escape attempt no more than once per turn."
 			],
             "prerequisite": [
                 {
@@ -3844,7 +3879,6 @@
 				"HTR"
 			],
 			"entries": [
-				"Your additional {@classFeature Instinct|Hunter|Starlight|1|Starlight} is equal to twice your Wisdom modifier, instead of once.",
                 "You can spend an {@variantrule Action} to regain Instinct equal to two rolls of your Hunter's Die.",
                 "You can do this once and must finish {@variantrule Long Rest} before you can do so again. You can also use it as part of rolling initiative without requiring an action."
 			],
