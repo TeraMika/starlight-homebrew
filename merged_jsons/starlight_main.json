@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.10.21.14",
+                "version": "2026.04.19.07.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.10.21.14",
+                "version": "2026.04.19.07.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.10.21.14",
+                "version": "2026.04.19.07.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.10.21.14",
+                "version": "2026.04.19.07.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,7 +71,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.10.21.14",
+                "version": "2026.04.19.07.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -79,7 +79,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1775855654.6924138
+        "dateLastModified": 1776584452.408154
     },
     "class": [
         {
@@ -8169,7 +8169,7 @@
                 "PRU"
             ],
             "entries": [
-                "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest}. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+                "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest} without expending a spell slot. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
             ],
             "additionalSpells": [
                 {
@@ -12221,584 +12221,169 @@
             ]
         }
     ],
-    "condition": [
+    "item": [
         {
-            "name": "Dazed",
+            "name": "Staff of the Crossroads Watcher",
             "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Dazed condition, you experience the following effects.",
+            "rarity": "varies",
+            "reqAttune": "by a shaman",
+            "reqAttuneTags": [
                 {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Movement Affected",
-                            "entries": [
-                                "Your movement speed is {@condition Slowed|Starlight}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Actions Affected",
-                            "entries": [
-                                "On your turn you can take either an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, but not both.",
-                                "If you become dazed during your turn, this takes effect retroactively: if you have used only your Action or Bonus Action, you cannot take the other."
-                            ]
-                        }
-                    ]
+                    "class": "shaman"
                 }
-            ]
+            ],
+            "weight": 4,
+            "items": [
+                "+1 Staff of the Crossroads Watcher|Starlight",
+                "+2 Staff of the Crossroads Watcher|Starlight",
+                "+3 Staff of the Crossroads Watcher|Starlight"
+            ],
+            "lootTables": [
+                "Arcana - Uncommon|XDMG"
+            ],
+            "entries": []
         },
         {
-            "name": "Disoriented",
+            "name": "+1 Staff of the Crossroads Watcher",
             "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Disoriented condition, you experience the following effects.",
+            "rarity": "uncommon",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
                 {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Movement Affected",
-                            "entries": [
-                                "Your movement is {@condition Hampered|Starlight}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ability Checks Affected",
-                            "entries": [
-                                "You have disadvantage on Wisdom and Intelligence {@variantrule Ability Check|XPHB|ability checks}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Attacks and Saves Affected",
-                            "entries": [
-                                "You can make only one attack whenever you attack using an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, and you cannot cast spells higher than first level."
-                            ]
-                        }
-                    ]
+                    "class": "shaman"
                 }
-            ]
-        },
-        {
-            "name": "Overwhelmed",
-            "source": "Starlight",
-            "page": 0,
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+1",
+            "bonusSpellAttack": "+1",
+            "bonusSpellSaveDc": "+1",
             "entries": [
-                "While you have the Overwhelmed condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Actions and Movement Prevented",
-                            "entries": [
-                                "An overwhelmed creature is {@condition incapacitated} and {@condition halted|Starlight}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Attacks Affected",
-                            "entries": [
-                                "Attacks against you have {@variantrule Advantage|XPHB}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Saving Throws Affected",
-                            "entries": [
-                                "You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "The condition can be ended on a creature if another creature spends an Action or Bonus Action to help them recover."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Weakened",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Weakened condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Attacks Affected",
-                            "entries": [
-                                "You deal half damage with effects that require an attack roll."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Saving Throws Affected",
-                            "entries": [
-                                "If an effect does not require an attack roll, targets instead have advantage on any saving throw or ability check made to resist it."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Off-balance",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Off-balance condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Attacks Affected",
-                            "entries": [
-                                "Attacks against you have {@variantrule Advantage|XPHB}, and your attacks have {@variantrule Disadvantage|XPHB}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Saving Throws Affected",
-                            "entries": [
-                                "You have {@variantrule Disadvantage|XPHB} on any checks or saving throws you make to avoid being forcibly moved or falling {@condition Prone}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "The condition ends when you take damage, or you miss an attack roll."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Exposed",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Exposed condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Attacks Affected",
-                            "entries": [
-                                "Successful attacks against an exposed creature count as a {@variantrule Critical Hit|XPHB}."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Marked",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Marked condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Attacks Affected",
-                            "entries": [
-                                "Attack rolls against you have {@variantrule Advantage|XPHB} if the attacker can see you."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Silenced",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Silenced condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spells and Speech Affected",
-                            "entries": [
-                                "A silenced creature cannot speak, or cast spells requiring verbal components."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Sundered",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Sundered condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Defense Affected",
-                            "entries": [
-                                "The creature's armour class cannot benefit from armour or shields, but still gains any special bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Staggered",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Staggered condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Defense Affected",
-                            "entries": [
-                                "Your Dexterity modifier cannot increase your {@variantrule Armor Class|XPHB|Armour Class}."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bleeding",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Bleeding condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Damage Received",
-                            "entries": [
-                                "You take 3 slashing damage at the start of each of your turns."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Saving Throws Affected",
-                            "entries": [
-                                "You have {@variantrule Disadvantage|XPHB} on Constitution saving throws."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "You can use an {@variantrule Action|XPHB} to attempt a DC 10 {@skill Medicine} check to stop the bleeding.",
-                                "Regaining any hit points also ends the condition.",
-                                "If you are immune to slashing damage, you are immune to this condition. If you are resistant to slashing damage, you have advantage on any saving throws against the condition instead."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Burning",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Burning condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Damage Received",
-                            "entries": [
-                                "You take {@dice 1d4} fire damage at the start of each of your turns."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Actions Affected",
-                            "entries": [
-                                "You cannot use a free time-limited object interaction, you must use the {@action Utilize|XPHB|Utilise} action to interact with objects (such as drawing a weapon or opening doors)."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "You can use an {@variantrule Action|XPHB} to attempt a DC 10 {@skill Medicine} check to stop the burning.",
-                                "If you are immune to fire damage, you are immune to this condition. If you are resistant to fire damage, you have advantage on any saving throws against the condition instead."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Shocked",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Shocked condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Reactions Affected",
-                            "entries": [
-                                "Whenever you take a Reaction, you take {@dice 2d4} lightning damage."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Saving Throws Affected",
-                            "entries": [
-                                "You have {@variantrule Disadvantage|XPHB} on Dexterity saving throws."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "If you are immune to Lightning damage, you are immune to this condition. If you are resistant to lightning damage, you have advantage on any saving throws against the condition instead."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Melting",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Melting condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Defense Affected",
-                            "entries": [
-                                "Your {@variantrule Armor Class|XPHB|Armour Class} is reduced by 1 at the start of each of your turns. It is restored when this condition ends."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "You or a nearby creature can use an {@variantrule Action|XPHB} to clear the acid or other substance causing the condition, if there is one.",
-                                "If you are immune to acid damage, you are immune to this condition. If you are resistant to acid damage, you have advantage on any saving throws against the condition instead."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Brittle",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Brittle condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your movement is {@condition Hampered}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Damage Increased",
-                            "entries": [
-                                "When you take any damage, that damage is increased by {@dice 2}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "The condition ends after you take fire damage.",
-                                "If you are immune to cold damage, you are immune to this condition. If you are resistant to cold damage, you have advantage on any saving throws against the condition instead."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Rattled",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Rattled condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Attacks",
-                            "entries": [
-                                "You have {@variantrule Disadvantage} on all ranged attacks."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Hampered",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Hampered condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your {@variantrule Speed|XPHB} is reduced by 10 feet."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Multiple Penalties",
-                            "entries": [
-                                "You can be Hampered more than once, increasing the speed penalty, but not from the same source."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Slowed",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Slowed condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your {@variantrule Speed|XPHB} is halved."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Sluggish",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Sluggish condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your {@variantrule Speed|XPHB} is reduced to 10 feet."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Halted",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Halted condition, you experience the following effects.",
-                {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your {@variantrule Speed|XPHB} is 0 and cannot increase."
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Dying",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
+                "While holding this staff, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +1 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
                 {
                     "type": "list",
                     "items": [
-                        "If you start your turn while Dying, you roll a {@variantrule Death Saving Throw|XPHB}. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
-                        "You are prone and cannot get up.",
-                        "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds on the roll, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
                     ]
                 }
-            ]
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
         },
         {
-            "name": "Spell Power",
+            "name": "+2 Staff of the Crossroads Watcher",
             "source": "Starlight",
-            "page": 0,
-            "entries": [
-                "While you have the Spell Power condition, you experience the following effects.",
+            "rarity": "rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
                 {
-                    "type": "entries",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Spells Affected",
-                            "entries": [
-                                "You deal increased damage with your spells. Whenever you roll damage for a spell, add your Spell Power to the damage roll.",
-                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\". You can gain this condition multiple times, adding the total together.}"
-                            ]
-                        }
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+2",
+            "bonusSpellAttack": "+2",
+            "bonusSpellSaveDc": "+2",
+            "entries": [
+                "While holding this staff, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +2 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
                     ]
                 }
-            ]
-        }
-    ],
-    "item": [
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "+3 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+3",
+            "bonusSpellAttack": "+3",
+            "bonusSpellSaveDc": "+3",
+            "entries": [
+                "While holding this staff, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +3 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
+        },
         {
             "name": "Necklace of Bitter Tears",
             "source": "Starlight",
@@ -14451,6 +14036,583 @@
                             "name": "Echoes in time",
                             "entries": [
                                 "You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "condition": [
+        {
+            "name": "Dazed",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Dazed condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Movement Affected",
+                            "entries": [
+                                "Your movement speed is {@condition Slowed|Starlight}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Actions Affected",
+                            "entries": [
+                                "On your turn you can take either an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, but not both.",
+                                "If you become dazed during your turn, this takes effect retroactively: if you have used only your Action or Bonus Action, you cannot take the other."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Disoriented",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Disoriented condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Movement Affected",
+                            "entries": [
+                                "Your movement is {@condition Hampered|Starlight}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ability Checks Affected",
+                            "entries": [
+                                "You have disadvantage on Wisdom and Intelligence {@variantrule Ability Check|XPHB|ability checks}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Attacks and Saves Affected",
+                            "entries": [
+                                "You can make only one attack whenever you attack using an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, and you cannot cast spells higher than first level."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Overwhelmed",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Overwhelmed condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Actions and Movement Prevented",
+                            "entries": [
+                                "An overwhelmed creature is {@condition incapacitated} and {@condition halted|Starlight}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "Attacks against you have {@variantrule Advantage|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You automatically fail Strength and Dexterity {@variantrule Saving Throw|XPHB|saving throws}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "The condition can be ended on a creature if another creature spends an Action or Bonus Action to help them recover."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weakened",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Weakened condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "You deal half damage with effects that require an attack roll."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "If an effect does not require an attack roll, targets instead have advantage on any saving throw or ability check made to resist it."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Off-balance",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Off-balance condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "Attacks against you have {@variantrule Advantage|XPHB}, and your attacks have {@variantrule Disadvantage|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on any checks or saving throws you make to avoid being forcibly moved or falling {@condition Prone}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "The condition ends when you take damage, or you miss an attack roll."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Exposed",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Exposed condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "Successful attacks against an exposed creature count as a {@variantrule Critical Hit|XPHB}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Marked",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Marked condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "Attack rolls against you have {@variantrule Advantage|XPHB} if the attacker can see you."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Silenced",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Silenced condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spells and Speech Affected",
+                            "entries": [
+                                "A silenced creature cannot speak, or cast spells requiring verbal components."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sundered",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Sundered condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Defense Affected",
+                            "entries": [
+                                "The creature's armour class cannot benefit from armour or shields, but still gains any special bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Staggered",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Staggered condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Defense Affected",
+                            "entries": [
+                                "Your Dexterity modifier cannot increase your {@variantrule Armor Class|XPHB|Armour Class}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bleeding",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Bleeding condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Damage Received",
+                            "entries": [
+                                "You take 3 slashing damage at the start of each of your turns."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on Constitution saving throws."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "You can use an {@variantrule Action|XPHB} to attempt a DC 10 {@skill Medicine} check to stop the bleeding.",
+                                "Regaining any hit points also ends the condition.",
+                                "If you are immune to slashing damage, you are immune to this condition. If you are resistant to slashing damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Burning",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Burning condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Damage Received",
+                            "entries": [
+                                "You take {@dice 1d4} fire damage at the start of each of your turns."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Actions Affected",
+                            "entries": [
+                                "You cannot use a free time-limited object interaction, you must use the {@action Utilize|XPHB|Utilise} action to interact with objects (such as drawing a weapon or opening doors)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "You can use an {@variantrule Action|XPHB} to attempt a DC 10 {@skill Medicine} check to stop the burning.",
+                                "If you are immune to fire damage, you are immune to this condition. If you are resistant to fire damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shocked",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Shocked condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Reactions Affected",
+                            "entries": [
+                                "Whenever you take a Reaction, you take {@dice 2d4} lightning damage."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on Dexterity saving throws."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "If you are immune to Lightning damage, you are immune to this condition. If you are resistant to lightning damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Melting",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Melting condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Defense Affected",
+                            "entries": [
+                                "Your {@variantrule Armor Class|XPHB|Armour Class} is reduced by 1 at the start of each of your turns. It is restored when this condition ends."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "You or a nearby creature can use an {@variantrule Action|XPHB} to clear the acid or other substance causing the condition, if there is one.",
+                                "If you are immune to acid damage, you are immune to this condition. If you are resistant to acid damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brittle",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Brittle condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Movement",
+                            "entries": [
+                                "Your movement is {@condition Hampered}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Damage Increased",
+                            "entries": [
+                                "When you take any damage, that damage is increased by {@dice 2}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "The condition ends after you take fire damage.",
+                                "If you are immune to cold damage, you are immune to this condition. If you are resistant to cold damage, you have advantage on any saving throws against the condition instead."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rattled",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Rattled condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Attacks",
+                            "entries": [
+                                "You have {@variantrule Disadvantage} on all ranged attacks."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hampered",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Hampered condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Movement",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} is reduced by 10 feet."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Multiple Penalties",
+                            "entries": [
+                                "You can be Hampered more than once, increasing the speed penalty, but not from the same source."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Slowed",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Slowed condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Movement",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} is halved."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sluggish",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Sluggish condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Movement",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} is reduced to 10 feet."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Halted",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Halted condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Restricted Movement",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} is 0 and cannot increase."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dying",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "If you start your turn while Dying, you roll a {@variantrule Death Saving Throw|XPHB}. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
+                        "You are prone and cannot get up.",
+                        "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spell Power",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Spell Power condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spells Affected",
+                            "entries": [
+                                "You deal increased damage with your spells. Whenever you roll damage for a spell, add your Spell Power to the damage roll.",
+                                "{@note The increase depends on the source of the condition. This could be denoted as \"Spell Power (X)\". You can gain this condition multiple times, adding the total together.}"
                             ]
                         }
                     ]

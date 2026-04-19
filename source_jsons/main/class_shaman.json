@@ -2299,7 +2299,7 @@
                 "PRU"
             ],
             "entries": [
-                "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest}. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
+                "You can cast the {@spell Goodberry|XPHB} spell once per {@variantrule Long Rest} without expending a spell slot. When you cast the spell in this way, you create an additional number of berries equal to your proficiency bonus."
             ],
             "additionalSpells": [
                 {
@@ -5561,6 +5561,171 @@
                     ]
                 }
             ]
+        }
+    ],
+    "item":
+    [
+        {
+            "name": "Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "varies",
+            "reqAttune": "by a shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "items": [
+                "+1 Staff of the Crossroads Watcher|Starlight",
+                "+2 Staff of the Crossroads Watcher|Starlight",
+                "+3 Staff of the Crossroads Watcher|Starlight"
+            ],
+            "lootTables": [
+                "Arcana - Uncommon|XDMG"
+            ],
+            "entries": []
+        },
+        {
+            "name": "+1 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+1",
+            "bonusSpellAttack": "+1",
+            "bonusSpellSaveDc": "+1",
+            "entries": [
+                "While holding this staff, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +1 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds on the roll, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "+2 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+2",
+            "bonusSpellAttack": "+2",
+            "bonusSpellSaveDc": "+2",
+            "entries": [
+                "While holding this staff, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +2 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "+3 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+3",
+            "bonusSpellAttack": "+3",
+            "bonusSpellSaveDc": "+3",
+            "entries": [
+                "While holding this staff, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +3 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
         }
     ]
 }
