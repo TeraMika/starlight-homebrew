@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,7 +71,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -82,7 +82,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -94,7 +94,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -103,7 +103,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1776584452.4617796
+        "dateLastModified": 1776601177.799524
     },
     "class": [
         {
@@ -5271,7 +5271,8 @@
                 "HTR"
             ],
             "entries": [
-                "When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
+                "When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll.",
+                "Additionally, you do not roll initiative with {@variantrule Disadvantage|XPHB} when you are {@status Surprised|XPHB}."
             ],
             "consumes": {
                 "name": "Instinct"
@@ -5301,6 +5302,22 @@
                         "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
+                }
+            ]
+        },
+        {
+            "name": "Herbalist",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You gain the {@feat Healer|XPHB} origin feat. You can use it as a {@variantrule Bonus Action}.",
+                "Additionally, you gain proficiency with the {@item Herbalism Kit|XPHB}."
+            ],
+            "toolProficiencies": [
+                {
+                    "herbalism kit": true
                 }
             ]
         },
@@ -5730,6 +5747,58 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parry",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by one roll of your Hunter's Die plus your Proficiency Bonus."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "foundryActivities": [
+                {
+                    "name": "Parry",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you are hit by an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die + @prof"
                     }
                 }
             ]
@@ -9980,2272 +10049,58 @@
             ]
         }
     ],
-    "spell": [
-        {
-            "name": "Earth Shock",
-            "source": "Starlight",
-            "level": 1,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "An undamaged geode"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "round",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Silenced|Starlight} until the start of your next turn."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "bludgeoning"
-            ],
-            "spellAttack": [
-                "R"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Frost Shock",
-            "source": "Starlight",
-            "level": 1,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "An drop of water or an ice cube"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "round",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} cold damage and must make a Constitution saving throw. On a failed save, it is {@condition Halted|Starlight} until the start of your next turn. On a successful save, it is {@condition Slowed|Starlight} instead."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "cold"
-            ],
-            "spellAttack": [
-                "R"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Vitality Hex",
-            "source": "Starlight",
-            "level": 3,
-            "school": "N",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": "A used match, torch, or lantern"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You weave a cloak of shadow over a target's lifeforce. The target takes {@damage 2d8} necrotic damage becomes hexed for the duration of the spell. While hexed, once on each turn when the target takes damage (including from the casting of this spell), you regain {@damage 1d6} hit points. The target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the healing gained increases to {@damage 2d6} and any damage the target takes is increased by {@damage 1d6} necrotic damage."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "necrotic"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "miscTags": [
-                "HL",
-                "SCL"
-            ],
-            "classes": {
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Shaman",
-                            "source": "Starlight"
-                        },
-                        "subclass": {
-                            "name": "Shadows",
-                            "shortName": "Shadows",
-                            "source": "Starlight"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Spark",
-            "source": "Starlight",
-            "level": 0,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You conjure a wisp of primordial magic and launch it at a creature or object within range. Choose on effect from the options below. You make an attack roll, dealing {@dice 1d8} damage of the chosen type and gaining the additional benefit specified.",
-                {
-                    "type": "entries",
-                    "name": "Searing Flame (Fire)",
-                    "entries": [
-                        "If you roll an 8 on a {@dice d8} for this spell, you can roll another and add it to the damage. The maximum number of dice added this way equals your spellcasting ability modifier."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ancient Frost (Cold)",
-                    "entries": [
-                        "Treat any roll below 3 on the {@dice d8}s for this spell as a 3."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Disruptive Spark (Lightning)",
-                    "entries": [
-                        "The target cannot take a {@variantrule Reaction} until the end of your current turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Reverberating Thunder (Thunder)",
-                    "entries": [
-                        "The target is {@condition Deafened}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Splashing Acid (Acid)",
-                    "entries": [
-                        "The target's space(s) becomes filled with acid that deals 1d8 damage to the next creature who enters it."
-                    ]
-                }
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "Cantrip Upgrade",
-                    "entries": [
-                        "This spell's damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "spellAttack": [
-                "R"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Eruption",
-            "source": "Starlight",
-            "level": 2,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 30
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "A chunk of obsidian worth at least 50gp",
-                    "cost": 5000
-                }
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "An elemental disturbance causes the ground to split. Choose one effect from the options below. Creatures within a 15-foot cube that originates at a point of your choosing on the ground must make a Strength saving throw or take {@damage 2d8} damage of the chosen type and suffer the chosen effect. Creatures take half as much damage on a successful save.",
-                {
-                    "type": "entries",
-                    "name": "Molten Earth (Fire)",
-                    "entries": [
-                        "Lava sprays upwards. Creatures who failed the saving throw fall {@condition Prone}. Prone creatures within the area take an additional {@damage 1d8} fire damage."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Frozen Fissure (Cold)",
-                    "entries": [
-                        "Creatures that fail the saving throw are {@condition Restrained} until the start of your next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fulminant Fault (Lightning)",
-                    "entries": [
-                        "The speed at which the eruption occurs leaves creatures who fail the saving throw {@condition Staggered|Starlight} until the start of your next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Seismic Burst (Thunder)",
-                    "entries": [
-                        "Creatures who fail the saving throw are pushed 15 feet away from the centre of the cube and fall {@condition Prone}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Caustic Vent (Acid)",
-                    "entries": [
-                        "Creatures who move through the area take {@damage 1d8} acid damage for each 5 feet moved. This effect disappears at the end of your next turn."
-                    ]
-                }
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At higher levels",
-                    "entries": [
-                        "This spell's damage increases by {@damage 1d8} for each slot level above 2."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "conditionInflict": [
-                "prone",
-                "restrained",
-                "staggered"
-            ],
-            "savingThrow": [
-                "strength"
-            ],
-            "areaTags": [
-                "Q"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Breath",
-            "source": "Starlight",
-            "level": 3,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "cone",
-                "distance": {
-                    "type": "feet",
-                    "amount": 30
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "A mint plant in a pot worth at least 100gp",
-                    "cost": 10000
-                }
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You unleash a flash of raw elemental force. Choose one effect from the options below. Creatures within a 30-foot cone must make a Constitution saving throw or take {@damage 7d6} damage of the chosen type and suffer the additional effect specified below. On a successful save, targets take half as much damage.",
-                {
-                    "type": "entries",
-                    "name": "Pyroclastic Smoke (Fire)",
-                    "entries": [
-                        "Creatures who fail the saving throw become {@condition Blinded} until they or an adjacent ally clears the condition with a {@variantrule Bonus Action}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Flash Freeze (Cold)",
-                    "entries": [
-                        "Creatures who fail the saving throw are {@condition Halted} until the start of your next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ionising Breath (Lightning)",
-                    "entries": [
-                        "Creatures who fail the saving throw cannot take a {@variantrule Bonus Action} on their next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Pressure Wave (Thunder)",
-                    "entries": [
-                        "All creatures in the area are pushed 10 feet away from you."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Acidic Deluge (Acid)",
-                    "entries": [
-                        "Creatures in the area take an additional 3d6 acid damage at the end of their next turn unless they use an {@variantrule Action} to wipe the acid from themselves."
-                    ]
-                }
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At higher levels",
-                    "entries": [
-                        "This spell's damage increases by {@damage 1d6} for each slot level above 3."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "conditionInflict": [
-                "prone",
-                "halted"
-            ],
-            "savingThrow": [
-                "strength"
-            ],
-            "areaTags": [
-                "Q"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Cloudburst",
-            "source": "Starlight",
-            "level": 4,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "A lapis stone worth at least 150gp",
-                    "cost": 15000
-                }
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You call forth a cloud of energy that fills the area beneath it with an elemental effect. Choose one effect from the options below. Creatures within a 30-foot radius, 40-foot tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point within range must make a Dexterity saving throw or take {@damage 8d6} damage of the chosen type. On a success, they take half the damage only. The area is then filled with the chosen effect until the start of your next turn.",
-                {
-                    "type": "entries",
-                    "name": "Scalding Water (Fire)",
-                    "entries": [
-                        "Creatures ending their turn within the area become {@condition Burning|Starlight}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Sleet Rain (Cold)",
-                    "entries": [
-                        "The area is filled with a thick mist and is {@variantrule Heavily Obscured|XPHB}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Stormclouds (Lightning)",
-                    "entries": [
-                        "The air is filled with static electricity; creatures cannot take {@variantrule Reaction|Reactions} within the area."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Thunderclouds (Thunder)",
-                    "entries": [
-                        "Creatures are {@condition Silenced|Starlight} while in the area. "
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Acid Rain (Acid)",
-                    "entries": [
-                        "Creatures attacking from within the area take {@damage 1d6} damage whenever they attack."
-                    ]
-                }
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At higher levels",
-                    "entries": [
-                        "This spell's damage increases by {@dice 1d6} for each slot level above 4."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "conditionInflict": [
-                "burning",
-                "silenced"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "areaTags": [
-                "Y"
-            ],
-            "miscTags": [
-                "OBS"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Spire",
-            "source": "Starlight",
-            "level": 5,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "A stone model of a tower worth at least 200gp",
-                    "cost": 20000
-                }
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You summon an ancient monolith imbued with an elemental power chosen from the options below. The monolith has a radius of 20 feet and a height of up to 60 feet, filling any height lower than that. Creatures in the way of the monolith can choose to make a Dexterity saving throw to be placed at the edge of the area, otherwise they remain on top. If there is not space on top for the creature, they are crushed for {@damage 4d10} bludgeoning damage and then dropped outside of the area",
-                {
-                    "type": "entries",
-                    "name": "Pillar of Flame (Fire)",
-                    "entries": [
-                        "Creatures who end their turn within 10 feet of the monolith take {@damage 6d8} fire damage, objects not being worn or carried ignite. This monolith can be travelled through; it provides 3/4 cover to creatures in or on the other side of it and is {@variantrule Difficult Terrain|XPHB}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fang of Ice (Cold)",
-                    "entries": [
-                        "Creatures who end their turn within 10 feet of this solid monolith take {@damage 5d8} cold damage and are {@condition Hampered|Starlight} until the end of their next turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Obelisk of Storms (Lightning)",
-                    "entries": [
-                        "Lightning is drawn towards this solid mineral spire. Creatures who start their turn within 10 feet of the spire can take an {@variantrule Action} or {@variantrule Bonus Action} on their turn, not both. Additionally, when a creature takes lightning damage while near the spire, it is increased by {@damage 2d8}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spire of Echoes (Thunder)",
-                    "entries": [
-                        "Resonations from this stone spire amplify sound. Creatures of your choice within 20 feet of the spire are vulnerable to Thunder damage. Creatures casting spells while within 20 feet of the spire have advantage on any attack rolls made as part of that spell."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Thorn of Nox (Acid)",
-                    "entries": [
-                        "If a creature starts its turn within 10 feet of the spire, it is {@condition Hampered|Starlight} and attack and damage rolls are reduced by {@dice 1d6} until the start of its next turn, and attack and damage rolls made against it are increased by {@dice 1d6} for the same duration."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "conditionInflict": [
-                "hampered"
-            ],
-            "miscTags": [
-                "DFT"
-            ],
-            "savingThrow": [
-                "dexterity"
-            ],
-            "areaTags": [
-                "Y"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Primordial Tempest",
-            "source": "Starlight",
-            "level": 7,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 90
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true,
-                "m": {
-                    "text": "Fulgurite worth at least 300gp",
-                    "cost": 30000
-                }
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "round",
-                        "amount": 10
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
-                {
-                    "type": "entries",
-                    "name": "Superheated Winds (Fire)",
-                    "entries": [
-                        "Objects that are not worn or carried ignite. Creatures within the area have disadvantage on Constitution saving throws made to maintain {@status Concentration}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "White Gale (Cold)",
-                    "entries": [
-                        "Dense snow makes the area {@variantrule Heavily Obscured|XPHB} and {@condition Hampered|Starlight|Hampers} creatures who start their turn in it until the end of their turn."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Static Storm (Lightning)",
-                    "entries": [
-                        "At the start of each of your turns, choose a creature within the storm to be struck by lightning. It must succeed an additional Dexterity saving throw or take {@damage 3d10} lightning damage"
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Howling Squall (Thunder)",
-                    "entries": [
-                        "Creatures within are {@condition Deafened} and {@condition Silenced|Starlight}."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Toxic Fumes (Acid)",
-                    "entries": [
-                        "Creatures within the tempest cannot benefit from any damage resistances, and their immunities are treated as resistances."
-                    ]
-                }
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At higher levels",
-                    "entries": [
-                        "This spell's damage increases by {@dice 1d10} for each slot level above 4."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "fire",
-                "cold",
-                "lightning",
-                "acid",
-                "thunder"
-            ],
-            "conditionInflict": [
-                "deafened",
-                "silenced",
-                "blinded",
-                "hampered"
-            ],
-            "miscTags": [
-                "OBS"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "areaTags": [
-                "Y"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Shaman",
-                        "source": "Starlight"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Divine Shield",
-            "source": "Starlight",
-            "level": 1,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "bonus"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "s": true,
-                "v": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You bestow a divine boon on a creature, protecting it from harm.",
-                "The first time a creature would take damage while under the effects of this spell, they instead take none. If an effect deals multiple damage types simultaneously, the creature is protected from all of them.",
-                "The spell ends after protecting a creature once, or if the target completes a long rest."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
-                    ]
-                }
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Cleric",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Paladin",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "TCE"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "PHB"
-                        },
-                        "subclass": {
-                            "name": "Divine Soul",
-                            "shortName": "Divine Soul",
-                            "source": "XGE"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Holy Nova",
-            "source": "Starlight",
-            "level": 4,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "radius",
-                "distance": {
-                    "type": "feet",
-                    "amount": 30
-                }
-            },
-            "components": {
-                "s": true,
-                "v": true,
-                "m": "a prayer bead"
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "Divine light surges forth from you. You may choose any 6 creatures within a 30-foot radius, centered on you.",
-                "Creatures you choose gain a Divine Shield, as with the {@spell Divine Shield|S:Spells} spell. Any remaining creatures must make a Constitution saving throw or take {@damage 6d6} radiant damage, or half as much on a successful save. The divine light harmlessly washes over every other creature."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 6d6|4-9|1d6} for each slot level above 4th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "radiant"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Cleric",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Paladin",
-                        "source": "PHB"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "PHB"
-                        },
-                        "subclass": {
-                            "name": "Divine Soul",
-                            "shortName": "Divine Soul",
-                            "source": "XGE"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Consecrate",
-            "source": "Starlight",
-            "level": 4,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "cone",
-                "distance": {
-                    "type": "feet",
-                    "amount": 50
-                }
-            },
-            "components": {
-                "s": true,
-                "v": false,
-                "m": "a weapon or staff worth at least 1sp"
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
-                }
-            ],
-            "entries": [
-                "You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the same surface within a 50-foot cone (the spell covers up to 10 feet of elevation changes (such as a small wall or hole), but is blocked by a break in the surface) must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
-                "Celestials, elementals, fey, fiends, and undead have disadvantage on the saving throw. Furthermore, the ground within the spell's area is considered difficult terrain for those creature types for the next minute."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell with a spell slot above 4th level, the damage increases by {@scaledamage 10d4|4-9|1d4} for each slot level above 4th."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "radiant"
-            ],
-            "savingThrow": [
-                "constitution"
-            ],
-            "conditionInflict": [
-                "prone"
-            ],
-            "areaTags": [
-                "N"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Paladin",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Cleric",
-                        "source": "PHB"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "PHB"
-                        },
-                        "subclass": {
-                            "name": "Divine Soul",
-                            "shortName": "Divine Soul",
-                            "source": "XGE"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Arcane Butterflies",
-            "source": "Starlight",
-            "level": 1,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "s": true,
-                "v": true,
-                "m": false
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "A 20 foot cube within range is briefly filled with a burst of glowing spectral butterflies. Creatures within the area must make an Intelligence saving throw. On a failed save, they take {@damage 2d8} psychic damage and must use all of their movement in a random direction on their turn. On a successful save, they take half as much damage and do not have to use their movement randomly."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell with a spell slot above 2nd level, the spell increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
-                    ]
-                }
-            ],
-            "damageInflict": [
-                "psychic"
-            ],
-            "savingThrow": [
-                "intelligence"
-            ],
-            "areaTags": [
-                "C"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "TCE"
-                    },
-                    {
-                        "name": "Ranger",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Druid",
-                        "source": "PHB"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Raelynn's Purification Aura",
-            "source": "Starlight",
-            "page": 0,
-            "level": 4,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "radius",
-                "distance": {
-                    "type": "feet",
-                    "amount": 30
-                }
-            },
-            "components": {
-                "v": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "A 30-foot radius area around you is filled with purifying energy pulled from the warmth of the stars. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased and has resistance to poison damage.",
-                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition shocked|S: Conditions}, {@condition bleeding|S: Conditions} and {@condition weakened|S: Conditions}."
-            ],
-            "damageResist": [
-                "poison"
-            ],
-            "miscTags": [
-                "ADV"
-            ],
-            "areaTags": [
-                "S"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Paladin",
-                        "source": "PHB"
-                    }
-                ],
-                "fromClassListVariant": [
-                    {
-                        "name": "Cleric",
-                        "source": "PHB",
-                        "definedInSource": "TCE"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "PHB"
-                        },
-                        "subclass": {
-                            "name": "Divine Soul",
-                            "shortName": "Divine Soul",
-                            "source": "XGE"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Raelynn's Lesser Restoration",
-            "source": "Starlight",
-            "page": 0,
-            "level": 2,
-            "school": "A",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "touch"
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition silenced|S: Conditions}, or {@condition weakened|S: Conditions}."
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Cleric",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Druid",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Paladin",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Ranger",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "TCE"
-                    }
-                ],
-                "fromSubclass": [
-                    {
-                        "class": {
-                            "name": "Sorcerer",
-                            "source": "PHB"
-                        },
-                        "subclass": {
-                            "name": "Divine Soul",
-                            "shortName": "Divine Soul",
-                            "source": "XGE"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Pixie Sparks",
-            "source": "Starlight",
-            "level": 0,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "feet",
-                    "amount": 60
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "instant"
-                }
-            ],
-            "entries": [
-                "You conjure a volley of disorienting Feywild sparks to assail a creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} psychic damage and the next attack made against it before the end of your next turn has {@variantrule Advantage|XPHB}."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "Cantrip Upgrade",
-                    "entries": [
-                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
-                    ]
-                }
-            ],
-            "scalingLevelDice": {
-                "label": "Psychic damage",
-                "scaling": {
-                    "1": "1d6",
-                    "5": "2d6",
-                    "11": "3d6",
-                    "17": "4d6"
-                }
-            },
-            "damageInflict": [
-                "psychic"
-            ],
-            "spellAttack": [
-                "R"
-            ],
-            "miscTags": [
-                "SCL"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "races": [
-                {
-                    "name": "Fairy",
-                    "source": "Starlight",
-                    "baseName": "Fairy",
-                    "baseSource": "Starlight"
-                }
-            ]
-        }
-    ],
-    "monster": [
-        {
-            "name": "Sapling Treant",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "S"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "ac": 14,
-                    "from": [
-                        "natural armor"
-                    ]
-                }
-            ],
-            "hp": {
-                "average": 39,
-                "formula": "6d8+12"
-            },
-            "speed": {
-                "walk": 30
-            },
-            "str": 17,
-            "dex": 8,
-            "con": 14,
-            "int": 12,
-            "wis": 12,
-            "cha": 10,
-            "passive": 11,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "resist": [
-                "piercing"
-            ],
-            "vulnerable": [
-                "fire"
-            ],
-            "cr": "2",
-            "trait": [
-                {
-                    "name": "False Appearance",
-                    "entries": [
-                        "If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
-                    ]
-                }
-            ],
-            "action": [
-                {
-                    "name": "Slam",
-                    "entries": [
-                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
-                    ]
-                },
-                {
-                    "name": "Rock",
-                    "entries": [
-                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Taunting Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Taunting Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Hostile creatures within this totem's emanation have disadvantage on any attack that doesn't target the totem."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast (Requires Totemic Blast Primordial Rune)",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Warning Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Warning Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Once per round, creatures within the emanation can gain a +2 bonus to one saving throw they make."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Warding Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Warding Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "When a creature hostile to you attempts to enter the totem's emanation, it must make a Wisdom saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Lifting Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Lifting Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "When a friendly creature enters the emanation, it can be lifted and leap up to 30 feet in a direction of its choice (no movement required). This movement does not provoke opportunity attacks.",
-                        "A friendly creature that starts its turn within the emanation gains 10 feet of movement speed for that turn."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Blessing Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Blessing Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Once per round, creatures within the emanation can gain a +2 bonus to one attack roll or ability check they make."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Manatide Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Manatide Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Creatures within the totem's emanation have {@condition Spell Power|Starlight|Spell Power +2}."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Manarage Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Manarage Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Creatures within the emanation may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature. They can do this only once."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Enforcement Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Enforcement Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Creatures in the emanation that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved against their will."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use.}"
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use.}"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Vortex Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Vortex Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Any creature which enters the emanation for the first time on a turn, or ends its turn there, takes {@damage PBd4} damage of a type matching your {@classFeature Elemental Affinity|Shaman|Starlight|3|Starlight}."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Life Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Life Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Creatures of your choice within this totem's emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they have zero hit points."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Unerring Aim Nature Spirit Totem",
-            "source": "Starlight",
-            "summonedByClass": "Shaman|Starlight",
-            "size": [
-                "T"
-            ],
-            "type": "elemental",
-            "alignment": [
-                "N"
-            ],
-            "ac": [
-                {
-                    "special": "14 + PB (Natural Armor)"
-                }
-            ],
-            "hp": {
-                "special": "Three times PB"
-            },
-            "speed": {
-                "walk": 0
-            },
-            "str": 6,
-            "dex": 10,
-            "con": 14,
-            "int": 16,
-            "wis": 16,
-            "cha": 18,
-            "senses": [
-                "Uses your own"
-            ],
-            "passive": 13,
-            "languages": [
-                "understands the languages you speak"
-            ],
-            "pbNote": "equals your bonus",
-            "trait": [
-                {
-                    "name": "Nature Spirit Totem",
-                    "entries": [
-                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
-                    ]
-                },
-                {
-                    "name": "Unerring Aim Totem Aura",
-                    "entries": [
-                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
-                        "Once each round, a creature who misses an attack in the totem's emanation gains {@variantrule Advantage} can reroll the attack."
-                    ]
-                },
-                {
-                    "name": "Totemic Might",
-                    "entries": [
-                        "Gains temporary hit points equal to twice your PB when summoned.",
-                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
-                    ]
-                }
-            ],
-            "bonus": [
-                {
-                    "name": "Totemic Blast",
-                    "entries": [
-                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
-                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ],
-            "reaction": [
-                {
-                    "name": "Totem Commander",
-                    "entries": [
-                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
-                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        }
-    ],
     "item": [
+        {
+            "name": "+1 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +1 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +1 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+2 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +2 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +2 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+3 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +3 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +3 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
         {
             "name": "Staff of the Crossroads Watcher",
             "source": "Starlight",
@@ -14518,6 +12373,2271 @@
                 "This sunshard always appears as its own silhouette.",
                 "As an action, you can crush this shard in your hands and direct its energy at a creature within 60 feet. That creature must make a DC 16 Constitution saving throw or take {@dice 8d8|} necrotic damage and become {@condition dazed|Starlight} until the end of their next turn. On a successful save, they take half the damage and are not dazed.",
                 "Until the target takes a short rest, their movement speed is halved, and they cannot recover any hit points, including as part of the short rest."
+            ]
+        }
+    ],
+    "spell": [
+        {
+            "name": "Earth Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An undamaged geode"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Silenced|Starlight} until the start of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludgeoning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Frost Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "An drop of water or an ice cube"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} cold damage and must make a Constitution saving throw. On a failed save, it is {@condition Halted|Starlight} until the start of your next turn. On a successful save, it is {@condition Slowed|Starlight} instead."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Vitality Hex",
+            "source": "Starlight",
+            "level": 3,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A used match, torch, or lantern"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You weave a cloak of shadow over a target's lifeforce. The target takes {@damage 2d8} necrotic damage becomes hexed for the duration of the spell. While hexed, once on each turn when the target takes damage (including from the casting of this spell), you regain {@damage 1d6} hit points. The target can make a Constitution saving throw at the end of each of its turns, ending the spell on a success."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the healing gained increases to {@damage 2d6} and any damage the target takes is increased by {@damage 1d6} necrotic damage."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "HL",
+                "SCL"
+            ],
+            "classes": {
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight"
+                        },
+                        "subclass": {
+                            "name": "Shadows",
+                            "shortName": "Shadows",
+                            "source": "Starlight"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Spark",
+            "source": "Starlight",
+            "level": 0,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a wisp of primordial magic and launch it at a creature or object within range. Choose on effect from the options below. You make an attack roll, dealing {@dice 1d8} damage of the chosen type and gaining the additional benefit specified.",
+                {
+                    "type": "entries",
+                    "name": "Searing Flame (Fire)",
+                    "entries": [
+                        "If you roll an 8 on a {@dice d8} for this spell, you can roll another and add it to the damage. The maximum number of dice added this way equals your spellcasting ability modifier."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ancient Frost (Cold)",
+                    "entries": [
+                        "Treat any roll below 3 on the {@dice d8}s for this spell as a 3."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Disruptive Spark (Lightning)",
+                    "entries": [
+                        "The target cannot take a {@variantrule Reaction} until the end of your current turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Reverberating Thunder (Thunder)",
+                    "entries": [
+                        "The target is {@condition Deafened}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Splashing Acid (Acid)",
+                    "entries": [
+                        "The target's space(s) becomes filled with acid that deals 1d8 damage to the next creature who enters it."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d8} when you reach levels 5 ({@dice 2d8}), 11 ({@dice 3d8}), and 17 ({@dice 4d8})."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Eruption",
+            "source": "Starlight",
+            "level": 2,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A chunk of obsidian worth at least 50gp",
+                    "cost": 5000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "An elemental disturbance causes the ground to split. Choose one effect from the options below. Creatures within a 15-foot cube that originates at a point of your choosing on the ground must make a Strength saving throw or take {@damage 2d8} damage of the chosen type and suffer the chosen effect. Creatures take half as much damage on a successful save.",
+                {
+                    "type": "entries",
+                    "name": "Molten Earth (Fire)",
+                    "entries": [
+                        "Lava sprays upwards. Creatures who failed the saving throw fall {@condition Prone}. Prone creatures within the area take an additional {@damage 1d8} fire damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Frozen Fissure (Cold)",
+                    "entries": [
+                        "Creatures that fail the saving throw are {@condition Restrained} until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fulminant Fault (Lightning)",
+                    "entries": [
+                        "The speed at which the eruption occurs leaves creatures who fail the saving throw {@condition Staggered|Starlight} until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Seismic Burst (Thunder)",
+                    "entries": [
+                        "Creatures who fail the saving throw are pushed 15 feet away from the centre of the cube and fall {@condition Prone}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Caustic Vent (Acid)",
+                    "entries": [
+                        "Creatures who move through the area take {@damage 1d8} acid damage for each 5 feet moved. This effect disappears at the end of your next turn."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d8} for each slot level above 2."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "conditionInflict": [
+                "prone",
+                "restrained",
+                "staggered"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "Q"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Breath",
+            "source": "Starlight",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A mint plant in a pot worth at least 100gp",
+                    "cost": 10000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You unleash a flash of raw elemental force. Choose one effect from the options below. Creatures within a 30-foot cone must make a Constitution saving throw or take {@damage 7d6} damage of the chosen type and suffer the additional effect specified below. On a successful save, targets take half as much damage.",
+                {
+                    "type": "entries",
+                    "name": "Pyroclastic Smoke (Fire)",
+                    "entries": [
+                        "Creatures who fail the saving throw become {@condition Blinded} until they or an adjacent ally clears the condition with a {@variantrule Bonus Action}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Flash Freeze (Cold)",
+                    "entries": [
+                        "Creatures who fail the saving throw are {@condition Halted} until the start of your next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ionising Breath (Lightning)",
+                    "entries": [
+                        "Creatures who fail the saving throw cannot take a {@variantrule Bonus Action} on their next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pressure Wave (Thunder)",
+                    "entries": [
+                        "All creatures in the area are pushed 10 feet away from you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Acidic Deluge (Acid)",
+                    "entries": [
+                        "Creatures in the area take an additional 3d6 acid damage at the end of their next turn unless they use an {@variantrule Action} to wipe the acid from themselves."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@damage 1d6} for each slot level above 3."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "conditionInflict": [
+                "prone",
+                "halted"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "areaTags": [
+                "Q"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Cloudburst",
+            "source": "Starlight",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A lapis stone worth at least 150gp",
+                    "cost": 15000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You call forth a cloud of energy that fills the area beneath it with an elemental effect. Choose one effect from the options below. Creatures within a 30-foot radius, 40-foot tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on a point within range must make a Dexterity saving throw or take {@damage 8d6} damage of the chosen type. On a success, they take half the damage only. The area is then filled with the chosen effect until the start of your next turn.",
+                {
+                    "type": "entries",
+                    "name": "Scalding Water (Fire)",
+                    "entries": [
+                        "Creatures ending their turn within the area become {@condition Burning|Starlight}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Sleet Rain (Cold)",
+                    "entries": [
+                        "The area is filled with a thick mist and is {@variantrule Heavily Obscured|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Stormclouds (Lightning)",
+                    "entries": [
+                        "The air is filled with static electricity; creatures cannot take {@variantrule Reaction|Reactions} within the area."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Thunderclouds (Thunder)",
+                    "entries": [
+                        "Creatures are {@condition Silenced|Starlight} while in the area. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Acid Rain (Acid)",
+                    "entries": [
+                        "Creatures attacking from within the area take {@damage 1d6} damage whenever they attack."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d6} for each slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "conditionInflict": [
+                "burning",
+                "silenced"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "miscTags": [
+                "OBS"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Spire",
+            "source": "Starlight",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "A stone model of a tower worth at least 200gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You summon an ancient monolith imbued with an elemental power chosen from the options below. The monolith has a radius of 20 feet and a height of up to 60 feet, filling any height lower than that. Creatures in the way of the monolith can choose to make a Dexterity saving throw to be placed at the edge of the area, otherwise they remain on top. If there is not space on top for the creature, they are crushed for {@damage 4d10} bludgeoning damage and then dropped outside of the area",
+                {
+                    "type": "entries",
+                    "name": "Pillar of Flame (Fire)",
+                    "entries": [
+                        "Creatures who end their turn within 10 feet of the monolith take {@damage 6d8} fire damage, objects not being worn or carried ignite. This monolith can be travelled through; it provides 3/4 cover to creatures in or on the other side of it and is {@variantrule Difficult Terrain|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fang of Ice (Cold)",
+                    "entries": [
+                        "Creatures who end their turn within 10 feet of this solid monolith take {@damage 5d8} cold damage and are {@condition Hampered|Starlight} until the end of their next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Obelisk of Storms (Lightning)",
+                    "entries": [
+                        "Lightning is drawn towards this solid mineral spire. Creatures who start their turn within 10 feet of the spire can take an {@variantrule Action} or {@variantrule Bonus Action} on their turn, not both. Additionally, when a creature takes lightning damage while near the spire, it is increased by {@damage 2d8}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spire of Echoes (Thunder)",
+                    "entries": [
+                        "Resonations from this stone spire amplify sound. Creatures of your choice within 20 feet of the spire are vulnerable to Thunder damage. Creatures casting spells while within 20 feet of the spire have advantage on any attack rolls made as part of that spell."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Thorn of Nox (Acid)",
+                    "entries": [
+                        "If a creature starts its turn within 10 feet of the spire, it is {@condition Hampered|Starlight} and attack and damage rolls are reduced by {@dice 1d6} until the start of its next turn, and attack and damage rolls made against it are increased by {@dice 1d6} for the same duration."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "conditionInflict": [
+                "hampered"
+            ],
+            "miscTags": [
+                "DFT"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Primordial Tempest",
+            "source": "Starlight",
+            "level": 7,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "Fulgurite worth at least 300gp",
+                    "cost": 30000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
+                {
+                    "type": "entries",
+                    "name": "Superheated Winds (Fire)",
+                    "entries": [
+                        "Objects that are not worn or carried ignite. Creatures within the area have disadvantage on Constitution saving throws made to maintain {@status Concentration}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "White Gale (Cold)",
+                    "entries": [
+                        "Dense snow makes the area {@variantrule Heavily Obscured|XPHB} and {@condition Hampered|Starlight|Hampers} creatures who start their turn in it until the end of their turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Static Storm (Lightning)",
+                    "entries": [
+                        "At the start of each of your turns, choose a creature within the storm to be struck by lightning. It must succeed an additional Dexterity saving throw or take {@damage 3d10} lightning damage"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Howling Squall (Thunder)",
+                    "entries": [
+                        "Creatures within are {@condition Deafened} and {@condition Silenced|Starlight}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Toxic Fumes (Acid)",
+                    "entries": [
+                        "Creatures within the tempest cannot benefit from any damage resistances, and their immunities are treated as resistances."
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At higher levels",
+                    "entries": [
+                        "This spell's damage increases by {@dice 1d10} for each slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "cold",
+                "lightning",
+                "acid",
+                "thunder"
+            ],
+            "conditionInflict": [
+                "deafened",
+                "silenced",
+                "blinded",
+                "hampered"
+            ],
+            "miscTags": [
+                "OBS"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "Y"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Divine Shield",
+            "source": "Starlight",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You bestow a divine boon on a creature, protecting it from harm.",
+                "The first time a creature would take damage while under the effects of this spell, they instead take none. If an effect deals multiple damage types simultaneously, the creature is protected from all of them.",
+                "The spell ends after protecting a creature once, or if the target completes a long rest."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Holy Nova",
+            "source": "Starlight",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true,
+                "m": "a prayer bead"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Divine light surges forth from you. You may choose any 6 creatures within a 30-foot radius, centered on you.",
+                "Creatures you choose gain a Divine Shield, as with the {@spell Divine Shield|S:Spells} spell. Any remaining creatures must make a Constitution saving throw or take {@damage 6d6} radiant damage, or half as much on a successful save. The divine light harmlessly washes over every other creature."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 6d6|4-9|1d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Consecrate",
+            "source": "Starlight",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 50
+                }
+            },
+            "components": {
+                "s": true,
+                "v": false,
+                "m": "a weapon or staff worth at least 1sp"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You strike, or plant your weapon into, the ground, sending ripples of force through it. Any creature touching the same surface within a 50-foot cone (the spell covers up to 10 feet of elevation changes (such as a small wall or hole), but is blocked by a break in the surface) must make a Constitution saving throw or take {@damage 10d4} radiant damage and fall {@condition prone|phb}. On a successful save, they take half damage and do not fall {@condition prone|phb}.",
+                "Celestials, elementals, fey, fiends, and undead have disadvantage on the saving throw. Furthermore, the ground within the spell's area is considered difficult terrain for those creature types for the next minute."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a spell slot above 4th level, the damage increases by {@scaledamage 10d4|4-9|1d4} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "areaTags": [
+                "N"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Arcane Butterflies",
+            "source": "Starlight",
+            "level": 1,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true,
+                "m": false
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A 20 foot cube within range is briefly filled with a burst of glowing spectral butterflies. Creatures within the area must make an Intelligence saving throw. On a failed save, they take {@damage 2d8} psychic damage and must use all of their movement in a random direction on their turn. On a successful save, they take half as much damage and do not have to use their movement randomly."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a spell slot above 2nd level, the spell increases by {@scaledamage 2d8|1-9|1d8} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "C"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Raelynn's Purification Aura",
+            "source": "Starlight",
+            "page": 0,
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "A 30-foot radius area around you is filled with purifying energy pulled from the warmth of the stars. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased and has resistance to poison damage.",
+                "Furthermore, those creatures have advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, {@condition stunned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition shocked|S: Conditions}, {@condition bleeding|S: Conditions} and {@condition weakened|S: Conditions}."
+            ],
+            "damageResist": [
+                "poison"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ],
+                "fromClassListVariant": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB",
+                        "definedInSource": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Raelynn's Lesser Restoration",
+            "source": "Starlight",
+            "page": 0,
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You touch a creature and can end either one disease or one condition afflicting it. The condition can be {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, {@condition dazed|S: Conditions}, {@condition disoriented|S: Conditions}, {@condition silenced|S: Conditions}, or {@condition weakened|S: Conditions}."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Divine Soul",
+                            "shortName": "Divine Soul",
+                            "source": "XGE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Pixie Sparks",
+            "source": "Starlight",
+            "level": 0,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a volley of disorienting Feywild sparks to assail a creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d6} psychic damage and the next attack made against it before the end of your next turn has {@variantrule Advantage|XPHB}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "Psychic damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "psychic"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "races": [
+                {
+                    "name": "Fairy",
+                    "source": "Starlight",
+                    "baseName": "Fairy",
+                    "baseSource": "Starlight"
+                }
+            ]
+        }
+    ],
+    "monster": [
+        {
+            "name": "Sapling Treant",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "S"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 39,
+                "formula": "6d8+12"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 17,
+            "dex": 8,
+            "con": 14,
+            "int": 12,
+            "wis": 12,
+            "cha": 10,
+            "passive": 11,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "resist": [
+                "piercing"
+            ],
+            "vulnerable": [
+                "fire"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "If the treant is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the treant move or act, that creature must succeed on a {@dc 18} Intelligence ({@skill Investigation}) check to discern that the treant is animate."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Slam",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Rock",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Taunting Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Taunting Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Hostile creatures within this totem's emanation have disadvantage on any attack that doesn't target the totem."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast (Requires Totemic Blast Primordial Rune)",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warning Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warning Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once per round, creatures within the emanation can gain a +2 bonus to one saving throw they make."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warding Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Warding Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "When a creature hostile to you attempts to enter the totem's emanation, it must make a Wisdom saving throw against your spell save DC or become {@condition Halted|Starlight} until the end of its turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lifting Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Lifting Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "When a friendly creature enters the emanation, it can be lifted and leap up to 30 feet in a direction of its choice (no movement required). This movement does not provoke opportunity attacks.",
+                        "A friendly creature that starts its turn within the emanation gains 10 feet of movement speed for that turn."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessing Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Blessing Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once per round, creatures within the emanation can gain a +2 bonus to one attack roll or ability check they make."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manatide Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manatide Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures within the totem's emanation have {@condition Spell Power|Starlight|Spell Power +2}."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Manarage Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Manarage Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures within the emanation may cast one first-level spell without expending a spell slot, or use any feature which can be used more than once per {@variantrule Short Rest}, without expending a use of that feature. They can do this only once."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Enforcement Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Enforcement Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures in the emanation that you choose gain temporary hit points equal to your spellcasting ability modifier at the start of each of your turns. They cannot be moved against their will."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use.}"
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use.}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vortex Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Vortex Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Any creature which enters the emanation for the first time on a turn, or ends its turn there, takes {@damage PBd4} damage of a type matching your {@classFeature Elemental Affinity|Shaman|Starlight|3|Starlight}."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Life Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Life Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Creatures of your choice within this totem's emanation have resistance to necrotic damage, and regain one hit point at the start of their turn if they have zero hit points."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unerring Aim Nature Spirit Totem",
+            "source": "Starlight",
+            "summonedByClass": "Shaman|Starlight",
+            "size": [
+                "T"
+            ],
+            "type": "elemental",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "14 + PB (Natural Armor)"
+                }
+            ],
+            "hp": {
+                "special": "Three times PB"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 6,
+            "dex": 10,
+            "con": 14,
+            "int": 16,
+            "wis": 16,
+            "cha": 18,
+            "senses": [
+                "Uses your own"
+            ],
+            "passive": 13,
+            "languages": [
+                "understands the languages you speak"
+            ],
+            "pbNote": "equals your bonus",
+            "trait": [
+                {
+                    "name": "Nature Spirit Totem",
+                    "entries": [
+                        "The totem cannot take any actions unless its summoner expends the appropriate action to command it to do so."
+                    ]
+                },
+                {
+                    "name": "Unerring Aim Totem Aura",
+                    "entries": [
+                        "The totem radiates its effects in a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from itself.",
+                        "Once each round, a creature who misses an attack in the totem's emanation gains {@variantrule Advantage} can reroll the attack."
+                    ]
+                },
+                {
+                    "name": "Totemic Might",
+                    "entries": [
+                        "Gains temporary hit points equal to twice your PB when summoned.",
+                        "{@note This requires the {@optfeature Totemic Might|Starlight} Primordial Rune.}"
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Totemic Blast",
+                    "entries": [
+                        "{@atk rs} {@hitYourSpellAttack} to hit, range 30/60 ft., one target. {@h}{@damage 1d8+PB} damage of the type associated with your elemental affinity.",
+                        "{@note} This requires the {@optfeature Totemic Blast|Starlight} Primordial Rune to use."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Totem Commander",
+                    "entries": [
+                        "The totem takes the damage of an attack that would hit a creature it is attached to.",
+                        "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
+                    ]
+                }
             ]
         }
     ],

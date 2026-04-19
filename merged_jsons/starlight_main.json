@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -71,7 +71,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.07.40",
+                "version": "2026.04.19.12.19",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -79,7 +79,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1776584452.408154
+        "dateLastModified": 1776601177.7245553
     },
     "class": [
         {
@@ -5247,7 +5247,8 @@
                 "HTR"
             ],
             "entries": [
-                "When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
+                "When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll.",
+                "Additionally, you do not roll initiative with {@variantrule Disadvantage|XPHB} when you are {@status Surprised|XPHB}."
             ],
             "consumes": {
                 "name": "Instinct"
@@ -5277,6 +5278,22 @@
                         "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
+                }
+            ]
+        },
+        {
+            "name": "Herbalist",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You gain the {@feat Healer|XPHB} origin feat. You can use it as a {@variantrule Bonus Action}.",
+                "Additionally, you gain proficiency with the {@item Herbalism Kit|XPHB}."
+            ],
+            "toolProficiencies": [
+                {
+                    "herbalism kit": true
                 }
             ]
         },
@@ -5706,6 +5723,58 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parry",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by one roll of your Hunter's Die plus your Proficiency Bonus."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "foundryActivities": [
+                {
+                    "name": "Parry",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you are hit by an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die + @prof"
                     }
                 }
             ]
@@ -9956,6 +10025,1879 @@
             ]
         }
     ],
+    "item": [
+        {
+            "name": "+1 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +1 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +1 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+2 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +2 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +2 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+3 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +3 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +3 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "varies",
+            "reqAttune": "by a shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "items": [
+                "+1 Staff of the Crossroads Watcher|Starlight",
+                "+2 Staff of the Crossroads Watcher|Starlight",
+                "+3 Staff of the Crossroads Watcher|Starlight"
+            ],
+            "lootTables": [
+                "Arcana - Uncommon|XDMG"
+            ],
+            "entries": []
+        },
+        {
+            "name": "+1 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+1",
+            "bonusSpellAttack": "+1",
+            "bonusSpellSaveDc": "+1",
+            "entries": [
+                "While holding this staff, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +1 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds on the roll, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "+2 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+2",
+            "bonusSpellAttack": "+2",
+            "bonusSpellSaveDc": "+2",
+            "entries": [
+                "While holding this staff, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +2 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "+3 Staff of the Crossroads Watcher",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "reqAttune": "by a Shaman",
+            "reqAttuneTags": [
+                {
+                    "class": "shaman"
+                }
+            ],
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V|XPHB"
+            ],
+            "mastery": [
+                "Topple|XPHB"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusWeapon": "+3",
+            "bonusSpellAttack": "+3",
+            "bonusSpellSaveDc": "+3",
+            "entries": [
+                "While holding this staff, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +3 bonus to attack and damage rolls.",
+                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
+                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
+                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
+                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Necklace of Bitter Tears",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Whenever you regain hit points while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
+            ]
+        },
+        {
+            "name": "Bracers of Extreme Evocation",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
+                {
+                    "type": "list",
+                    "items": [
+                        "If the spell requires an attack roll, take a -5 penalty to that roll.",
+                        "If it requires a saving throw, targets have advantage on that saving throw."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gloves of Benign Transposition",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them."
+            ]
+        },
+        {
+            "name": "Gloves of Malicious Transposition",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 3,
+            "recharge": "restLong",
+            "entries": [
+                "These gloves have 3 charges, which are restored when you complete a long rest. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
+            ]
+        },
+        {
+            "name": "Ring of Mana Channeling",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "bonusWeaponDamage": "+2",
+            "entries": [
+                "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ring of Protection",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
+            "type": "RG",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this ring.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "and +1 to AC."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cloak of Protection",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "bonusAc": "+1",
+            "bonusSavingThrow": "+1",
+            "entries": [
+                "You gain a +1 bonus to saving throws while wearing this cloak.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "and +1 to AC."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "A Promise Made",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
+            "rechargeAmount": 1,
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers when you complete a long rest.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
+            ]
+        },
+        {
+            "name": "A Promise Kept",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "charges": 1,
+            "recharge": "restLong",
+            "rechargeAmount": 1,
+            "entries": [
+                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
+            ],
+            "attachedSpells": [
+                "unshakeable tail",
+                "warding bond",
+                "sanctuary"
+            ]
+        },
+        {
+            "name": "Circlet of Storytelling",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Stories you tell gain a subtle effect to make them more compelling.",
+                "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
+            ]
+        },
+        {
+            "name": "Soulful Rook Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Queen Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
+                "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Bishop Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
+                "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
+                "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Soulful Knight Chesspiece",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
+                "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
+                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
+                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
+                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+            ]
+        },
+        {
+            "name": "Quickstep Boots",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
+            ]
+        },
+        {
+            "name": "Eye of the 10-eyed Wyrm",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "charges": 2,
+            "recharge": "restLong",
+            "entries": [
+                "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Benefit",
+                                "Detriment"
+                            ],
+                            "rows": [
+                                [
+                                    "You gain advantage on initiative checks.",
+                                    "On your first turn in combat, you are {@condition Slowed|Starlight}."
+                                ],
+                                [
+                                    "You gain advantage on Wisdom ability checks.",
+                                    "You gain disadvantage on Intelligence ability checks."
+                                ],
+                                [
+                                    "You gain advantage on all attacks.",
+                                    "You gain disadvantage on all saving throws."
+                                ],
+                                [
+                                    "You gain resistance to bludgeoning, piercing and slashing damage.",
+                                    "You gain vulnerablity to fire, cold, and lightning damage."
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blessed Circlet",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
+            ]
+        },
+        {
+            "name": "Career Student's Ring",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "entries": [
+                "While wearing this ring, you can add half of your proficiency bonus to any any skill in which you are not already proficient.",
+                "{@note This does not combine with the Bard's 'Jack of All Trades' feature, or other similar features.}"
+            ]
+        },
+        {
+            "name": "Forgotten Green Hood",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
+                "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
+            ]
+        },
+        {
+            "name": "Friend of Arcanists",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Druids",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Animal Handling) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Priests",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Intelligence (Religion) and Wisdom (Medicine) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Warriors",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Parties",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Persuasion) and Charisma (Performance) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Thieves",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Sleight of Hand) and Intelligence (Investigation) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Urchins",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Wisdom (Survival) and Wisdom (Perception) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of the Paranoid",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Charisma (Deception) and Wisdom (Insight) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Friend of Light-foots",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "type": "RG",
+            "entries": [
+                "You have a +1 bonus to Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "The bonus is a +2 instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hunter's Shawl",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
+            ]
+        },
+        {
+            "name": "Hunter's Hood",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+                    ]
+                }
+            ],
+            "attachedSpells": [
+                "hunter's mark"
+            ]
+        },
+        {
+            "name": "Hunter's Boots",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
+            ]
+        },
+        {
+            "name": "Hunter's Bracers",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
+            ]
+        },
+        {
+            "name": "Hunter's Ring",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "reqAttune": false,
+            "type": "RG",
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
+            ]
+        },
+        {
+            "name": "Moon-Touched Bracelet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "resist": [
+                "radiant"
+            ],
+            "entries": [
+                "You have resistance to radiant damage while you are wearing this ring.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
+                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it. Once cast, the spell is removed from the bracelet, freeing up the space."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ring of Borrowed Time",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": false,
+            "type": "RG",
+            "entries": [
+                "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
+                "Instead of rolling a death saving throw at the start of your turns, you fail your death saving throw automatically at the end of your turns, but can otherwise act without penality.",
+                "This ends when the dying condition would. After the ring has put you into this alternate state, once you leave that state, the ring loses its magic until you complete a long rest."
+            ]
+        },
+        {
+            "name": "Cloak of the Timekeeper",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Attacks that deal force damage have disadvantage against you, and you have advantage on any saving throw against an effect that would cause you to take force damage on a success or failure."
+            ]
+        },
+        {
+            "name": "Stopped-clock Circlet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
+                "Once used, this cannot be used again until you complete a long rest.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Time-knife Gloves",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Whenever you hit a creature with an attack roll while wearing these gloves, it loses a reaction, if it has at least one."
+            ]
+        },
+        {
+            "name": "Boots of Excellent Positioning",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "reqAttune": "optional",
+            "charges": 5,
+            "recharge": "restLong",
+            "rechargeAmount": 5,
+            "entries": [
+                "These boots have 5 charges which are recovered upon completing a long rest. Whenever you are moved against your will, you can expend a reaction and one charge to teleport to any space you occupied after the start of your previous turn.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ring of Adrenaline Enhancment",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "reqAttune": true,
+            "type": "RG",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "While in combat, you regain {@dice 1d4} hit points at the start of each of your turns."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Amulet of Unmitigated Gall",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
+                "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+            ]
+        },
+        {
+            "name": "Cloak of the Profane Elf",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Cloak of Arcane Bolstering",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
+            ]
+        },
+        {
+            "name": "Cloak of the Wind",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "Your movement speed is increased by 5 feet.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your movement speed is increased by 10 feet instead."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Apathetic Cloak",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
+            ]
+        },
+        {
+            "name": "Sanctuary Rose Cutting",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This pale blue rose petal glows dimly within its jar, emitting 5 feet of dim light at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
+                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
+            ]
+        },
+        {
+            "name": "Sanctuary Rose",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
+                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can channel its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
+                "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moonphase except for new) before it can be used again."
+            ]
+        },
+        {
+            "name": "Darkmoon Dhalia",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
+                "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
+            ]
+        },
+        {
+            "name": "Chalice of Light",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Once each day, this chalice can be used to pour out a vial's worth of {@item Holy Water (flask)|PHB|holy water}. This holy water becomes mundane water when the Chalice is used again.",
+                "As an action, the holy water can be drank to end the {@condition poisoned|PHB} condition or one disease afflicting the character.",
+                "Over the course of one minute, this vial can also be used to coat a weapon, granting it a +1 bonus to attack rolls and +1 radiant damage against fiends and undead. The coating lasts for one hour and for the duration the weapon is considered magical for the purposes of overcoming resistances."
+            ]
+        },
+        {
+            "name": "Coin of Future Problems",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
+            ]
+        },
+        {
+            "name": "Shepherd Stones",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "These three stones float around you at all times and attempt to protect you from harm. While attuned, when an attack is made that targets you, a sphere will intercept it and negate it. Once a sphere has intercepted an attack, it becomes inert and drops to the ground. Inert spheres recover once the user has completed a {@variantrule Long Rest}.",
+                "The spheres can be deactivated or reactivated as a {@action Magic|XPHB} action. While deactivated, they do not intercept attacks."
+            ]
+        },
+        {
+            "name": "Astral Teardrop",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": "optional",
+            "entries": [
+                "You can fail an additional death saving throw before dying (4 total).",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person})."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Potionweaver's Bracelet",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
+                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
+            ]
+        },
+        {
+            "name": "Blank Scroll",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
+                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
+                        "Whenever you deal damage, no die can roll below a 3.",
+                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
+                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
+                    ]
+                },
+                "A creature can gain the benefit of this scroll only once."
+            ]
+        },
+        {
+            "name": "Curious",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The exact appearance of this gem changes depending on your mood.",
+                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Cast the spell with no somatic or verbal components.",
+                        "The target has disadvantage on its first saving throw against the spell.",
+                        "The duration is doubled (to a maximum of 24 hours).",
+                        "You can reroll any of the damage dice.",
+                        "The range is doubled, or increased to 30 feet for a touch spell.",
+                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
+                        "You can protect any number of creatures from the spell's initial effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cut Paper",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "entries": [
+                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
+                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
+            ]
+        },
+        {
+            "name": "Engraving Quill",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
+            ]
+        },
+        {
+            "name": "Exploding Nail Polish",
+            "source": "SCE",
+            "rarity": "common",
+            "charges": 3,
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
+                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
+                "There is enough nail polish within the container for 3 applications."
+            ]
+        },
+        {
+            "name": "Fisherman's Blanket",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
+            ]
+        },
+        {
+            "name": "Flamed Blade",
+            "source": "SCE",
+            "baseItem": "shortsword|xphb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 2,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "Healing Poultice",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
+                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
+            ]
+        },
+        {
+            "name": "Hidden Dagger",
+            "source": "SCE",
+            "baseItem": "dagger|xphb",
+            "type": "s",
+            "weaponCategory": "simple",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 1,
+            "reqAttune": false,
+            "entries": [
+                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
+            ]
+        },
+        {
+            "name": "Hopeful Flame",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
+                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
+                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are resistant to fire damage.",
+                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Diamond",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
+            ]
+        },
+        {
+            "name": "Invisibility Ring",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring is flawlessly invisible."
+            ]
+        },
+        {
+            "name": "Lucky-Seven Rune",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
+            ]
+        },
+        {
+            "name": "Ring of Fire Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring detects the presence of fire, with a range of touch."
+            ]
+        },
+        {
+            "name": "Ring of Teleportation",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
+            ]
+        },
+        {
+            "name": "Potion of Greater Tealing",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
+            ]
+        },
+        {
+            "name": "Potion of Hydration",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
+            ]
+        },
+        {
+            "name": "Pulpy Healing Potion",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
+            ]
+        },
+        {
+            "name": "Ring of Inn Visibility",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
+                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
+            ]
+        },
+        {
+            "name": "Scroll of Weather Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
+                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
+            ]
+        },
+        {
+            "name": "Solemn Silver Ring",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
+                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
+            ]
+        },
+        {
+            "name": "Spell-storing Arrow",
+            "source": "SCE",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
+                "Once used, the arrow turns to ash."
+            ]
+        },
+        {
+            "name": "Wand of Mystery",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
+            ]
+        },
+        {
+            "name": "Arrow of Acid",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw against your spell save DC or have its AC reduced by 2 until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Fire",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|Starlight|burning}, repeating the saving throw at the end of each of its turns to end the effect."
+            ]
+        },
+        {
+            "name": "Arrow of Ice",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|Starlight|hampered} until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Lightning",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
+            ]
+        },
+        {
+            "name": "Arrow of Thunder",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
+                "Huge or larger creatures have advantage on this saving throw."
+            ]
+        },
+        {
+            "name": "Arrow of Gravity",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
+            ]
+        },
+        {
+            "name": "Arrow of Piercing",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
+            ]
+        },
+        {
+            "name": "Arrow of Wounding",
+            "source": "Starlight",
+            "rarity": "common",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, causes the target to {@condition bleeding|Starlight|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|Starlight}."
+            ]
+        },
+        {
+            "name": "Arrow of Maiming",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, the target must make a Constitution saving throw or become {@condition halted|Starlight}. On a successful saving throw, they are {@condition slowed|Starlight} instead."
+            ]
+        },
+        {
+            "name": "Arrow of Curing",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition weakened|Starlight}, {@condition bleeding|Starlight}, {@condition burning|Starlight}, or {@condition shocked|Starlight}."
+            ]
+        },
+        {
+            "name": "Arrow of Disruption",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|Starlight} until the end of their next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Darkness",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
+            ]
+        },
+        {
+            "name": "Arrow of Lesser Slaying",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
+            ]
+        },
+        {
+            "name": "Arrow of Weeping",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "On hit, the target takes an additional {@dice 1d4} necrotic damage and cannot regain any hit points until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Arrow of Greater Slaying",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
+            ]
+        },
+        {
+            "name": "Arrow of Recurving",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not add your ability modifier to the damage roll of this attack."
+            ]
+        },
+        {
+            "name": "Arrow of Relocation",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "You teleport to where this arrow lands."
+            ]
+        },
+        {
+            "name": "Arrow of Explosives",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "wondrous": false,
+            "type": "A",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Magic Ammunition",
+                    "entries": [
+                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+                    ]
+                },
+                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
+            ]
+        },
+        {
+            "name": "Nature's Emissary",
+            "source": "Starlight",
+            "baseItem": "shortsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "rare",
+            "bonusWeapon": "+1",
+            "weight": 2,
+            "reqAttune": "optional",
+            "curse": false,
+            "entries": [
+                "You have +1 bonus to attack and damage rolls made with this weapon.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "As an action or in place of an attack when you take the {@action Attack} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a long rest - which may alter its appearance.",
+                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                        {
+                            "type": "entries",
+                            "name": "Spring's Rain",
+                            "entries": [
+                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Fall's Warding",
+                            "entries": [
+                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Summer's Glory",
+                            "entries": [
+                                "The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Winter's Watch",
+                            "entries": [
+                                "The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
+                            ]
+                        },
+                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Protector's Naginata",
+            "source": "Starlight",
+            "baseItem": "Glaive|phb",
+            "type": "M",
+            "weight": 5,
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "R",
+                "2H"
+            ],
+            "dmg1": "1d10",
+            "dmgType": "S",
+            "rarity": "common",
+            "reqAttune": "optional",
+            "curse": false,
+            "entries": [
+                "This weapon is a polearm.",
+                "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
+                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sentinel's Rapier",
+            "source": "Starlight",
+            "baseItem": "rapier|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "rarity": "uncommon",
+            "bonusWeapon": "+1",
+            "weight": 2,
+            "reqAttune": false,
+            "curse": false,
+            "entries": [
+                "You have a +1 bonus to attack and damage rolls using this weapon.",
+                "You gain a +1 bonus to initiative rolls.",
+                "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+            ]
+        },
+        {
+            "name": "Jagged Followthrough",
+            "source": "Starlight",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "rarity": "uncommon",
+            "weight": 2,
+            "reqAttune": "optional",
+            "curse": false,
+            "entries": [
+                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|S: Conditions|bleed} twice on hit. This can be used as an action, or in place of a normal weapon attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Threadsplitter",
+            "source": "Starlight",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "rarity": "very rare",
+            "weight": 3,
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "bonusWeapon": "+2",
+            "reqAttune": "optional",
+            "curse": false,
+            "entries": [
+                "You have a +2 bonus to attack and damage rolls using this weapon.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Wrath of Time",
+                            "entries": [
+                                "This weapon deals an additional {@dice 1d4} force damage on each attack."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Threadsplitter",
+                            "entries": [
+                                "When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you critically hit, this means that you roll the dice three times, not four."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Eyes of Temporus",
+                            "entries": [
+                                "You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "attachedSpells": [
+                "true seeing"
+            ]
+        },
+        {
+            "name": "Clovehoof Armour",
+            "source": "Starlight",
+            "type": "MA",
+            "rarity": "rare",
+            "reqAttune": false,
+            "curse": false,
+            "weight": 30,
+            "ac": 15,
+            "dexterityMax": null,
+            "stealth": true,
+            "entries": [
+                "Made from unusual fey materials, this armour is very light while still offering incredible protection. However, it is not more subtle than other similar armours.",
+                "You can add your full Dexterity modifier to your AC when wearing this medium armour."
+            ]
+        },
+        {
+            "name": "Dragonspirit Robes",
+            "source": "Starlight",
+            "baseItem": "robes|phb",
+            "type": "OTH",
+            "rarity": "rare",
+            "reqAttune": true,
+            "weight": 3,
+            "curse": false,
+            "wondrous": true,
+            "entries": [
+                "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        "Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vest of the Optimist",
+            "source": "Starlight",
+            "baseItem": "studded leather armor|PHB",
+            "type": "LA",
+            "rarity": "rare",
+            "reqAttune": false,
+            "ac": 12,
+            "bonusAc": "2",
+            "curse": false,
+            "weight": 10,
+            "entries": [
+                "You have a +2 bonus to AC while wearing this armour.",
+                "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+            ]
+        },
+        {
+            "name": "Timeless Scale-mail",
+            "source": "Starlight",
+            "baseItem": "Scale-mail|PHB",
+            "type": "MA",
+            "rarity": "very rare",
+            "reqAttune": "optional",
+            "ac": 14,
+            "bonusAc": "1",
+            "dexterityMax": 3,
+            "stealth": true,
+            "curse": false,
+            "weight": 10,
+            "entries": [
+                "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
+                "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
+                {
+                    "type": "entries",
+                    "name": "Attunement",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Clarity",
+                            "entries": [
+                                "You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Immutable",
+                            "entries": [
+                                "You gain a {@dice 1d4} bonus to all saving throws while wearing this armour."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Echoes in time",
+                            "entries": [
+                                "You can sense which, if any, dragons were within 30 miles of your location within the last year."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "spell": [
         {
             "name": "Earth Shock",
@@ -12216,1828 +14158,6 @@
                     "entries": [
                         "The totem takes the damage of an attack that would hit a creature it is attached to.",
                         "{@note} This requires the {@optfeature Totem Commander|Starlight} Primordial Rune to use."
-                    ]
-                }
-            ]
-        }
-    ],
-    "item": [
-        {
-            "name": "Staff of the Crossroads Watcher",
-            "source": "Starlight",
-            "rarity": "varies",
-            "reqAttune": "by a shaman",
-            "reqAttuneTags": [
-                {
-                    "class": "shaman"
-                }
-            ],
-            "weight": 4,
-            "items": [
-                "+1 Staff of the Crossroads Watcher|Starlight",
-                "+2 Staff of the Crossroads Watcher|Starlight",
-                "+3 Staff of the Crossroads Watcher|Starlight"
-            ],
-            "lootTables": [
-                "Arcana - Uncommon|XDMG"
-            ],
-            "entries": []
-        },
-        {
-            "name": "+1 Staff of the Crossroads Watcher",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "reqAttune": "by a Shaman",
-            "reqAttuneTags": [
-                {
-                    "class": "shaman"
-                }
-            ],
-            "weight": 4,
-            "weaponCategory": "simple",
-            "property": [
-                "V|XPHB"
-            ],
-            "mastery": [
-                "Topple|XPHB"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "B",
-            "dmg2": "1d8",
-            "bonusWeapon": "+1",
-            "bonusSpellAttack": "+1",
-            "bonusSpellSaveDc": "+1",
-            "entries": [
-                "While holding this staff, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +1 bonus to attack and damage rolls.",
-                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
-                {
-                    "type": "list",
-                    "items": [
-                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
-                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
-                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
-                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds on the roll, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
-                    ]
-                }
-            ],
-            "foundrySystem": {
-                "uses.max": "1",
-                "uses.recovery": [
-                    {
-                        "period": "sr",
-                        "type": "recoverAll"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "+2 Staff of the Crossroads Watcher",
-            "source": "Starlight",
-            "rarity": "rare",
-            "reqAttune": "by a Shaman",
-            "reqAttuneTags": [
-                {
-                    "class": "shaman"
-                }
-            ],
-            "weight": 4,
-            "weaponCategory": "simple",
-            "property": [
-                "V|XPHB"
-            ],
-            "mastery": [
-                "Topple|XPHB"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "B",
-            "dmg2": "1d8",
-            "bonusWeapon": "+2",
-            "bonusSpellAttack": "+2",
-            "bonusSpellSaveDc": "+2",
-            "entries": [
-                "While holding this staff, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +2 bonus to attack and damage rolls.",
-                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
-                {
-                    "type": "list",
-                    "items": [
-                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
-                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
-                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
-                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
-                    ]
-                }
-            ],
-            "foundrySystem": {
-                "uses.max": "1",
-                "uses.recovery": [
-                    {
-                        "period": "sr",
-                        "type": "recoverAll"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "+3 Staff of the Crossroads Watcher",
-            "source": "Starlight",
-            "rarity": "very rare",
-            "reqAttune": "by a Shaman",
-            "reqAttuneTags": [
-                {
-                    "class": "shaman"
-                }
-            ],
-            "weight": 4,
-            "weaponCategory": "simple",
-            "property": [
-                "V|XPHB"
-            ],
-            "mastery": [
-                "Topple|XPHB"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "B",
-            "dmg2": "1d8",
-            "bonusWeapon": "+3",
-            "bonusSpellAttack": "+3",
-            "bonusSpellSaveDc": "+3",
-            "entries": [
-                "While holding this staff, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your {@filter Shaman spells|spells|class=Shaman}. This weapon also has a +3 bonus to attack and damage rolls.",
-                "When you use a feature granted by your Path of the Shaman, you gain an additional benefit based on that path. You can't use this property again until you finish a {@variantrule Short Rest|XPHB}.",
-                {
-                    "type": "list",
-                    "items": [
-                        "{@b Conduit.} When you cast a Shaman spell, you can add your Proficiency Bonus to one damage roll of that spell.",
-                        "{@b Conjurer.} When you summon a totem, you can increase the radius of the totem's {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to 20 feet.",
-                        "{@b Runeblade.} When you conjure your Runeblade, you can make one attack as part of that {@variantrule Bonus Action}.",
-                        "{@b Seer.} When a creature you {@action Help|XPHB} succeeds the assisted action, you or they (your choice) gain {@variantrule Heroic Inspiration|XPHB}."
-                    ]
-                }
-            ],
-            "foundrySystem": {
-                "uses.max": "1",
-                "uses.recovery": [
-                    {
-                        "period": "sr",
-                        "type": "recoverAll"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Necklace of Bitter Tears",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "Whenever you regain hit points while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
-            ]
-        },
-        {
-            "name": "Bracers of Extreme Evocation",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "entries": [
-                "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
-                {
-                    "type": "list",
-                    "items": [
-                        "If the spell requires an attack roll, take a -5 penalty to that roll.",
-                        "If it requires a saving throw, targets have advantage on that saving throw."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Gloves of Benign Transposition",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them."
-            ]
-        },
-        {
-            "name": "Gloves of Malicious Transposition",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "charges": 3,
-            "recharge": "restLong",
-            "entries": [
-                "These gloves have 3 charges, which are restored when you complete a long rest. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
-            ]
-        },
-        {
-            "name": "Ring of Mana Channeling",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "bonusWeaponDamage": "+2",
-            "entries": [
-                "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ring of Protection",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "bonusAc": "+1",
-            "bonusSavingThrow": "+1",
-            "type": "RG",
-            "entries": [
-                "You gain a +1 bonus to saving throws while wearing this ring.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "and +1 to AC."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Cloak of Protection",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "bonusAc": "+1",
-            "bonusSavingThrow": "+1",
-            "entries": [
-                "You gain a +1 bonus to saving throws while wearing this cloak.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "and +1 to AC."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "A Promise Made",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "reqAttune": false,
-            "type": "RG",
-            "charges": 1,
-            "recharge": "restLong",
-            "rechargeAmount": 1,
-            "entries": [
-                "This ring shares a single charge with {@item A Promise Kept|Starlight}, which recovers when you complete a long rest.",
-                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Kept."
-            ]
-        },
-        {
-            "name": "A Promise Kept",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "reqAttune": false,
-            "type": "RG",
-            "charges": 1,
-            "recharge": "restLong",
-            "rechargeAmount": 1,
-            "entries": [
-                "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
-                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
-            ],
-            "attachedSpells": [
-                "unshakeable tail",
-                "warding bond",
-                "sanctuary"
-            ]
-        },
-        {
-            "name": "Circlet of Storytelling",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Stories you tell gain a subtle effect to make them more compelling.",
-                "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
-            ]
-        },
-        {
-            "name": "Soulful Rook Chesspiece",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
-                "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
-                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
-            ]
-        },
-        {
-            "name": "Soulful Queen Chesspiece",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "This appears to be a normal chesspiece, except that the queen's crown glows slightly.",
-                "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
-                "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
-            ]
-        },
-        {
-            "name": "Soulful Bishop Chesspiece",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "This appears to be a normal chesspiece, except that the bishop's mitre glows slightly.",
-                "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
-                "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
-            ]
-        },
-        {
-            "name": "Soulful Knight Chesspiece",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "This appears to be a normal chesspiece, except that the floor of the rook's battlements glows slightly.",
-                "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
-                "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
-                "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
-            ]
-        },
-        {
-            "name": "Quickstep Boots",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
-            ]
-        },
-        {
-            "name": "Eye of the 10-eyed Wyrm",
-            "source": "Starlight",
-            "rarity": "very rare",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "charges": 2,
-            "recharge": "restLong",
-            "entries": [
-                "One of the eyes of the mighty Dreaad Serpent Anach-Tal'lul. merely possessing it grants the bearer one of His many powers. Such powers can be difficult to handle, however, and this imposes limitations on mortals using them.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
-                        {
-                            "type": "table",
-                            "colLabels": [
-                                "Benefit",
-                                "Detriment"
-                            ],
-                            "rows": [
-                                [
-                                    "You gain advantage on initiative checks.",
-                                    "On your first turn in combat, you are {@condition Slowed|Starlight}."
-                                ],
-                                [
-                                    "You gain advantage on Wisdom ability checks.",
-                                    "You gain disadvantage on Intelligence ability checks."
-                                ],
-                                [
-                                    "You gain advantage on all attacks.",
-                                    "You gain disadvantage on all saving throws."
-                                ],
-                                [
-                                    "You gain resistance to bludgeoning, piercing and slashing damage.",
-                                    "You gain vulnerablity to fire, cold, and lightning damage."
-                                ]
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Blessed Circlet",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
-            ]
-        },
-        {
-            "name": "Career Student's Ring",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "reqAttune": false,
-            "type": "RG",
-            "entries": [
-                "While wearing this ring, you can add half of your proficiency bonus to any any skill in which you are not already proficient.",
-                "{@note This does not combine with the Bard's 'Jack of All Trades' feature, or other similar features.}"
-            ]
-        },
-        {
-            "name": "Forgotten Green Hood",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
-                "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
-            ]
-        },
-        {
-            "name": "Friend of Arcanists",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Druids",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Animal Handling) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Priests",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Intelligence (Religion) and Wisdom (Medicine) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Warriors",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Parties",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Charisma (Persuasion) and Charisma (Performance) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Thieves",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Dexterity (Sleight of Hand) and Intelligence (Investigation) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Urchins",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Wisdom (Survival) and Wisdom (Perception) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of the Paranoid",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Charisma (Deception) and Wisdom (Insight) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Friend of Light-foots",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "type": "RG",
-            "entries": [
-                "You have a +1 bonus to Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "The bonus is a +2 instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Hunter's Shawl",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
-            ]
-        },
-        {
-            "name": "Hunter's Hood",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
-                    ]
-                }
-            ],
-            "attachedSpells": [
-                "hunter's mark"
-            ]
-        },
-        {
-            "name": "Hunter's Boots",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
-            ]
-        },
-        {
-            "name": "Hunter's Bracers",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
-            ]
-        },
-        {
-            "name": "Hunter's Ring",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "reqAttune": false,
-            "type": "RG",
-            "entries": [
-                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
-            ]
-        },
-        {
-            "name": "Moon-Touched Bracelet",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "resist": [
-                "radiant"
-            ],
-            "entries": [
-                "You have resistance to radiant damage while you are wearing this ring.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
-                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it. Once cast, the spell is removed from the bracelet, freeing up the space."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ring of Borrowed Time",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": false,
-            "type": "RG",
-            "entries": [
-                "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
-                "Instead of rolling a death saving throw at the start of your turns, you fail your death saving throw automatically at the end of your turns, but can otherwise act without penality.",
-                "This ends when the dying condition would. After the ring has put you into this alternate state, once you leave that state, the ring loses its magic until you complete a long rest."
-            ]
-        },
-        {
-            "name": "Cloak of the Timekeeper",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Attacks that deal force damage have disadvantage against you, and you have advantage on any saving throw against an effect that would cause you to take force damage on a success or failure."
-            ]
-        },
-        {
-            "name": "Stopped-clock Circlet",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
-                "Once used, this cannot be used again until you complete a long rest.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You can choose to {@status concentration||concentrate} on the effect (as if you were {@status concentration||concentrating} on a spell) in order to choose a new target point from the effect when you release it (as if it originated from you). It still uses the original statistics."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Time-knife Gloves",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Whenever you hit a creature with an attack roll while wearing these gloves, it loses a reaction, if it has at least one."
-            ]
-        },
-        {
-            "name": "Boots of Excellent Positioning",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "reqAttune": "optional",
-            "charges": 5,
-            "recharge": "restLong",
-            "rechargeAmount": 5,
-            "entries": [
-                "These boots have 5 charges which are recovered upon completing a long rest. Whenever you are moved against your will, you can expend a reaction and one charge to teleport to any space you occupied after the start of your previous turn.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ring of Adrenaline Enhancment",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": false,
-            "reqAttune": true,
-            "type": "RG",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "While in combat, you regain {@dice 1d4} hit points at the start of each of your turns."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Amulet of Unmitigated Gall",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
-                "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
-            ]
-        },
-        {
-            "name": "Cloak of the Profane Elf",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "{@b Hellish Rebuke.} Creatures that hit you with a melee attack become {@condition Burning|Starlight} until the end of their next turn."
-            ]
-        },
-        {
-            "name": "Cloak of Arcane Bolstering",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
-            ]
-        },
-        {
-            "name": "Cloak of the Wind",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "Your movement speed is increased by 5 feet.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "Your movement speed is increased by 10 feet instead."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Apathetic Cloak",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
-            ]
-        },
-        {
-            "name": "Sanctuary Rose Cutting",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This pale blue rose petal glows dimly within its jar, emitting 5 feet of dim light at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
-                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
-            ]
-        },
-        {
-            "name": "Sanctuary Rose",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
-                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can channel its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
-                "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moonphase except for new) before it can be used again."
-            ]
-        },
-        {
-            "name": "Darkmoon Dhalia",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
-                "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
-            ]
-        },
-        {
-            "name": "Chalice of Light",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Once each day, this chalice can be used to pour out a vial's worth of {@item Holy Water (flask)|PHB|holy water}. This holy water becomes mundane water when the Chalice is used again.",
-                "As an action, the holy water can be drank to end the {@condition poisoned|PHB} condition or one disease afflicting the character.",
-                "Over the course of one minute, this vial can also be used to coat a weapon, granting it a +1 bonus to attack rolls and +1 radiant damage against fiends and undead. The coating lasts for one hour and for the duration the weapon is considered magical for the purposes of overcoming resistances."
-            ]
-        },
-        {
-            "name": "Coin of Future Problems",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
-            ]
-        },
-        {
-            "name": "Shepherd Stones",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": true,
-            "reqAttune": true,
-            "entries": [
-                "These three stones float around you at all times and attempt to protect you from harm. While attuned, when an attack is made that targets you, a sphere will intercept it and negate it. Once a sphere has intercepted an attack, it becomes inert and drops to the ground. Inert spheres recover once the user has completed a {@variantrule Long Rest}.",
-                "The spheres can be deactivated or reactivated as a {@action Magic|XPHB} action. While deactivated, they do not intercept attacks."
-            ]
-        },
-        {
-            "name": "Astral Teardrop",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": "optional",
-            "entries": [
-                "You can fail an additional death saving throw before dying (4 total).",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person})."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Potionweaver's Bracelet",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
-                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
-            ]
-        },
-        {
-            "name": "Blank Scroll",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
-                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
-                        "Whenever you deal damage, no die can roll below a 3.",
-                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
-                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
-                    ]
-                },
-                "A creature can gain the benefit of this scroll only once."
-            ]
-        },
-        {
-            "name": "Curious",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "The exact appearance of this gem changes depending on your mood.",
-                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Cast the spell with no somatic or verbal components.",
-                        "The target has disadvantage on its first saving throw against the spell.",
-                        "The duration is doubled (to a maximum of 24 hours).",
-                        "You can reroll any of the damage dice.",
-                        "The range is doubled, or increased to 30 feet for a touch spell.",
-                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
-                        "You can protect any number of creatures from the spell's initial effects."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Cut Paper",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "entries": [
-                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
-                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
-            ]
-        },
-        {
-            "name": "Engraving Quill",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
-            ]
-        },
-        {
-            "name": "Exploding Nail Polish",
-            "source": "SCE",
-            "rarity": "common",
-            "charges": 3,
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
-                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
-                "There is enough nail polish within the container for 3 applications."
-            ]
-        },
-        {
-            "name": "Fisherman's Blanket",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
-            ]
-        },
-        {
-            "name": "Flamed Blade",
-            "source": "SCE",
-            "baseItem": "shortsword|xphb",
-            "type": "M",
-            "weaponCategory": "martial",
-            "property": [
-                "F",
-                "L"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "S",
-            "rarity": "common",
-            "weight": 2,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
-            ]
-        },
-        {
-            "name": "Healing Poultice",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
-                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
-            ]
-        },
-        {
-            "name": "Hidden Dagger",
-            "source": "SCE",
-            "baseItem": "dagger|xphb",
-            "type": "s",
-            "weaponCategory": "simple",
-            "property": [
-                "F",
-                "L"
-            ],
-            "dmg1": "1d4",
-            "dmgType": "S",
-            "rarity": "common",
-            "weight": 1,
-            "reqAttune": false,
-            "entries": [
-                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
-            ]
-        },
-        {
-            "name": "Hopeful Flame",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": true,
-            "entries": [
-                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
-                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
-                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You are resistant to fire damage.",
-                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ice Diamond",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
-            ]
-        },
-        {
-            "name": "Invisibility Ring",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This ring is flawlessly invisible."
-            ]
-        },
-        {
-            "name": "Lucky-Seven Rune",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
-            ]
-        },
-        {
-            "name": "Ring of Fire Detection",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This ring detects the presence of fire, with a range of touch."
-            ]
-        },
-        {
-            "name": "Ring of Teleportation",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
-            ]
-        },
-        {
-            "name": "Potion of Greater Tealing",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
-            ]
-        },
-        {
-            "name": "Potion of Hydration",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
-            ]
-        },
-        {
-            "name": "Pulpy Healing Potion",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
-            ]
-        },
-        {
-            "name": "Ring of Inn Visibility",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
-                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
-            ]
-        },
-        {
-            "name": "Scroll of Weather Detection",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
-                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
-            ]
-        },
-        {
-            "name": "Solemn Silver Ring",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
-                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
-            ]
-        },
-        {
-            "name": "Spell-storing Arrow",
-            "source": "SCE",
-            "rarity": "rare",
-            "wondrous": true,
-            "entries": [
-                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
-                "Once used, the arrow turns to ash."
-            ]
-        },
-        {
-            "name": "Wand of Mystery",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
-            ]
-        },
-        {
-            "name": "Arrow of Acid",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a Dexterity saving throw against your spell save DC or have its AC reduced by 2 until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Arrow of Fire",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition explodees, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or become {@condition Burning|Starlight|burning}, repeating the saving throw at the end of each of its turns to end the effect."
-            ]
-        },
-        {
-            "name": "Arrow of Ice",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target's movement speed is {@condition Hampered|Starlight|hampered} until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Arrow of Lightning",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a Constitution saving throw against your spell save DC or lose one reaction."
-            ]
-        },
-        {
-            "name": "Arrow of Thunder",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition explodes, forcing all creatures within 10 feet of the target to make a Strength saving throw against your spell save DC or be thrown 10 feet away from the target (the target is pushed directly away from you.",
-                "Huge or larger creatures have advantage on this saving throw."
-            ]
-        },
-        {
-            "name": "Arrow of Gravity",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition prone|phb} as well. On a failed save, the target is pulled towards you."
-            ]
-        },
-        {
-            "name": "Arrow of Piercing",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, the arrow deals half the damage of the original hit to a creature no further than 10 feet behind the original target."
-            ]
-        },
-        {
-            "name": "Arrow of Wounding",
-            "source": "Starlight",
-            "rarity": "common",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, causes the target to {@condition bleeding|Starlight|bleed}. If they move on their next turn, they gain two stacks of {@condition bleeding|Starlight}."
-            ]
-        },
-        {
-            "name": "Arrow of Maiming",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, the target must make a Constitution saving throw or become {@condition halted|Starlight}. On a successful saving throw, they are {@condition slowed|Starlight} instead."
-            ]
-        },
-        {
-            "name": "Arrow of Curing",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition blinded|phb}, {@condition poisoned|phb}, {@condition paralysed|phb}, {@condition deafened|phb}, {@condition dazed|Starlight}, {@condition disoriented|Starlight}, {@condition weakened|Starlight}, {@condition bleeding|Starlight}, {@condition burning|Starlight}, or {@condition shocked|Starlight}."
-            ]
-        },
-        {
-            "name": "Arrow of Disruption",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, the target loses concentration on any spell they are maintaining. Additionally, they must make a Constitution saving throw against your spell save DC or become {@condition Silenced|Starlight} until the end of their next turn."
-            ]
-        },
-        {
-            "name": "Arrow of Darkness",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
-            ]
-        },
-        {
-            "name": "Arrow of Lesser Slaying",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
-            ]
-        },
-        {
-            "name": "Arrow of Weeping",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "On hit, the target takes an additional {@dice 1d4} necrotic damage and cannot regain any hit points until the start of your next turn."
-            ]
-        },
-        {
-            "name": "Arrow of Greater Slaying",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
-            ]
-        },
-        {
-            "name": "Arrow of Recurving",
-            "source": "Starlight",
-            "rarity": "rare",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "Hit or miss, you may make an additional attack roll against up to 3 nearby targets within 30 feet of the original. You do not add your ability modifier to the damage roll of this attack."
-            ]
-        },
-        {
-            "name": "Arrow of Relocation",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "You teleport to where this arrow lands."
-            ]
-        },
-        {
-            "name": "Arrow of Explosives",
-            "source": "Starlight",
-            "rarity": "uncommon",
-            "wondrous": false,
-            "type": "A",
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Magic Ammunition",
-                    "entries": [
-                        "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
-                    ]
-                },
-                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
-            ]
-        },
-        {
-            "name": "Nature's Emissary",
-            "source": "Starlight",
-            "baseItem": "shortsword|phb",
-            "type": "M",
-            "weaponCategory": "martial",
-            "property": [
-                "F",
-                "L"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "S",
-            "rarity": "rare",
-            "bonusWeapon": "+1",
-            "weight": 2,
-            "reqAttune": "optional",
-            "curse": false,
-            "entries": [
-                "You have +1 bonus to attack and damage rolls made with this weapon.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "As an action or in place of an attack when you take the {@action Attack} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a long rest - which may alter its appearance.",
-                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
-                        {
-                            "type": "entries",
-                            "name": "Spring's Rain",
-                            "entries": [
-                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Fall's Warding",
-                            "entries": [
-                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Summer's Glory",
-                            "entries": [
-                                "The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Winter's Watch",
-                            "entries": [
-                                "The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
-                            ]
-                        },
-                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Protector's Naginata",
-            "source": "Starlight",
-            "baseItem": "Glaive|phb",
-            "type": "M",
-            "weight": 5,
-            "weaponCategory": "martial",
-            "property": [
-                "H",
-                "R",
-                "2H"
-            ],
-            "dmg1": "1d10",
-            "dmgType": "S",
-            "rarity": "common",
-            "reqAttune": "optional",
-            "curse": false,
-            "entries": [
-                "This weapon is a polearm.",
-                "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
-                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Sentinel's Rapier",
-            "source": "Starlight",
-            "baseItem": "rapier|phb",
-            "type": "M",
-            "weaponCategory": "martial",
-            "property": [
-                "F"
-            ],
-            "dmg1": "1d8",
-            "dmgType": "P",
-            "rarity": "uncommon",
-            "bonusWeapon": "+1",
-            "weight": 2,
-            "reqAttune": false,
-            "curse": false,
-            "entries": [
-                "You have a +1 bonus to attack and damage rolls using this weapon.",
-                "You gain a +1 bonus to initiative rolls.",
-                "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
-            ]
-        },
-        {
-            "name": "Jagged Followthrough",
-            "source": "Starlight",
-            "baseItem": "longsword|phb",
-            "type": "M",
-            "weaponCategory": "martial",
-            "property": [
-                "V"
-            ],
-            "dmg1": "1d8",
-            "dmgType": "S",
-            "dmg2": "1d10",
-            "rarity": "uncommon",
-            "weight": 2,
-            "reqAttune": "optional",
-            "curse": false,
-            "entries": [
-                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|S: Conditions|bleed} twice on hit. This can be used as an action, or in place of a normal weapon attack."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Threadsplitter",
-            "source": "Starlight",
-            "baseItem": "longsword|phb",
-            "type": "M",
-            "rarity": "very rare",
-            "weight": 3,
-            "weaponCategory": "martial",
-            "property": [
-                "V"
-            ],
-            "dmg1": "1d8",
-            "dmgType": "S",
-            "dmg2": "1d10",
-            "bonusWeapon": "+2",
-            "reqAttune": "optional",
-            "curse": false,
-            "entries": [
-                "You have a +2 bonus to attack and damage rolls using this weapon.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Wrath of Time",
-                            "entries": [
-                                "This weapon deals an additional {@dice 1d4} force damage on each attack."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Threadsplitter",
-                            "entries": [
-                                "When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you critically hit, this means that you roll the dice three times, not four."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Eyes of Temporus",
-                            "entries": [
-                                "You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "attachedSpells": [
-                "true seeing"
-            ]
-        },
-        {
-            "name": "Clovehoof Armour",
-            "source": "Starlight",
-            "type": "MA",
-            "rarity": "rare",
-            "reqAttune": false,
-            "curse": false,
-            "weight": 30,
-            "ac": 15,
-            "dexterityMax": null,
-            "stealth": true,
-            "entries": [
-                "Made from unusual fey materials, this armour is very light while still offering incredible protection. However, it is not more subtle than other similar armours.",
-                "You can add your full Dexterity modifier to your AC when wearing this medium armour."
-            ]
-        },
-        {
-            "name": "Dragonspirit Robes",
-            "source": "Starlight",
-            "baseItem": "robes|phb",
-            "type": "OTH",
-            "rarity": "rare",
-            "reqAttune": true,
-            "weight": 3,
-            "curse": false,
-            "wondrous": true,
-            "entries": [
-                "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        "Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Vest of the Optimist",
-            "source": "Starlight",
-            "baseItem": "studded leather armor|PHB",
-            "type": "LA",
-            "rarity": "rare",
-            "reqAttune": false,
-            "ac": 12,
-            "bonusAc": "2",
-            "curse": false,
-            "weight": 10,
-            "entries": [
-                "You have a +2 bonus to AC while wearing this armour.",
-                "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
-            ]
-        },
-        {
-            "name": "Timeless Scale-mail",
-            "source": "Starlight",
-            "baseItem": "Scale-mail|PHB",
-            "type": "MA",
-            "rarity": "very rare",
-            "reqAttune": "optional",
-            "ac": 14,
-            "bonusAc": "1",
-            "dexterityMax": 3,
-            "stealth": true,
-            "curse": false,
-            "weight": 10,
-            "entries": [
-                "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
-                "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
-                {
-                    "type": "entries",
-                    "name": "Attunement",
-                    "entries": [
-                        {
-                            "type": "entries",
-                            "name": "Clarity",
-                            "entries": [
-                                "You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Immutable",
-                            "entries": [
-                                "You gain a {@dice 1d4} bonus to all saving throws while wearing this armour."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Echoes in time",
-                            "entries": [
-                                "You can sense which, if any, dragons were within 30 miles of your location within the last year."
-                            ]
-                        }
                     ]
                 }
             ]

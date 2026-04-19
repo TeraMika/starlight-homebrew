@@ -2641,7 +2641,8 @@
 				"HTR"
 			],
 			"entries": [
-				"When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll."
+				"When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll.",
+                "Additionally, you do not roll initiative with {@variantrule Disadvantage|XPHB} when you are {@status Surprised|XPHB}."
 			],
             "consumes": {
                 "name": "Instinct"
@@ -2674,6 +2675,22 @@
                 }
             ]
 		},
+        {
+			"name": "Herbalist",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You gain the {@feat Healer|XPHB} origin feat. You can use it as a {@variantrule Bonus Action}.",
+                "Additionally, you gain proficiency with the {@item Herbalism Kit|XPHB}."
+			],
+            "toolProficiencies": [
+                {
+                    "herbalism kit": true
+                }
+            ]
+        },
         {
             "name": "Hunter's Insight",
 			"source": "Starlight",
@@ -3100,6 +3117,58 @@
                             "source": "Starlight",
                             "visible": true
                         }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Parry",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by one roll of your Hunter's Die plus your Proficiency Bonus."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "consumes": {
+                "name": "Instinct"
+            },
+            "foundryActivities": [
+                {
+                    "name": "Parry",
+                    "type": "utility",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you are hit by an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Bonus",
+                        "formula": "@scale.hunter.hunter-die + @prof"
                     }
                 }
             ]
@@ -5145,5 +5214,58 @@
                 }
             ]
 		}
+    ],
+    "item": [
+        {
+            "name": "+1 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +1 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +1 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+2 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +2 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +2 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "+3 Strider's Signet",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "RG|XDMG",
+            "reqAttune": "by a Hunter",
+            "reqAttuneTags": [
+                {
+                    "class": "hunter"
+                }
+            ],
+            "weight": 1,
+            "entries": [
+                "You gain a +3 bonus to your Hunter save DC while wearing this signet. Additionally, when you attune to this item you can touch up to 2 weapons (including your unarmed strikes) with which you are proficient. While wearing the signet, you gain a +3 bonus to the attack and damage rolls to each of those weapons, provided the weapon doesn't already grant a bonus to those rolls.",
+                "When you roll {@variantrule Initiative}, you can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without requiring {@classFeature Instinct|Hunter|Starlight|1|Starlight} or a {@variantrule Bonus Action}. Once you mark a creature in this way, you cannot do so again until you complete a {@variantrule Long Rest}."
+            ]
+        }
     ]
 }
