@@ -1,0 +1,1210 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
+                "color": "dac4ff",
+                "authors":
+                [
+                    "Starlight"
+                ],
+                "convertedBy":
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "spell": 
+    [
+        {
+            "name": "Stellar Omen",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You read a brief omen from the stars. Roll a {@dice d4}. You can add or subtract that roll to or from any {@variantrule D20 Test|XPHB} made by a creature within 30 feet of you within the next round."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The distance at which you can affect a creature increases by 30 feet at 5th level (60 feet), 11th level (90 feet), and 17th level (120 feet)."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Celestial Mark",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Mark a creature with a celestial sign. The target is marked by fate and must make an Intelligence saving throw or take {@damage 1d6} radiant damage.",
+                "While marked, attack rolls against the target have a {@dice 1d6} bonus. This mark lasts until the target is hit with an attack or until one minute passes."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "Radiant damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+		{
+			"name": "Parallax Shift",
+			"source": "Starlight",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+                    "condition": "which is taken when you see a creature within 30 feet make an attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+                "v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You shift a creature along the cosmic gradient, shifting them towards or away from their goal. Choose one of the following:",
+                "{@b Blueshift.} The creature makes an additional attack.",
+                "{@b Redshift.} The creature's attack is negated: a {@variantrule Critical Hit|XPHB} becomes a normal hit, and a normal hit becomes a miss."
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+				]
+            }
+		},
+        {
+            "name": "Bias Fate",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a die and salted water"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "The target must make a Charisma saving throw. On a failed saving throw, fate leans against it: attacks made against it have a {@dice 1d4} bonus to the attack roll; when it forces a creature to make a saving throw, that creature adds {@dice 1d4} to the saving throw; and whenever it makes a {@variantrule D20 Test|XPHB}, it subtracts {@dice 1d4} from the result."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 1."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "miscTags": [
+                "SCT",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+			"classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Starlike Skim",
+            "source": "Starlight",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "a flat stone"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You temporarily take on a form of starlight, becoming pale and translucent. Until the start of your next turn, you gain the following benefits:",
+                "You gain 15 feet of movement speed. You can pass through other creatures' spaces, move over liquid and non-solid surfaces harmlessly (but not stand on them), and your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
+                "As part of casting the spell, you end any effects on you that cause you to be {@condition Grappled|XPHB}."
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
+            ],
+			"classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Follow the Stars",
+            "source": "Starlight",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a sextant"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hours",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "You see the celestial patterns of the sky and allow them to guide you in the right direction over long distances.",
+                "{@b Choice.} Whenever you encounter a meaningful choice of direction, you can spend a moment observing your surroundings. Choose one of the following traits, the DM reveals which of the routes forward most fits that criteria: safest, fastest, most direct, or the path with the most reward.",
+                "{@b Navigation.} While you can see the night sky: you and your immediate allies have {@variantrule Advantage|XPHB} on any Wisdom ({@skill Survival}) checks made on your journey, and moving at a fast pace does not affect your Wisdom ({@skill Perception} or {@skill Survival}) or Dexterity ({@skill Stealth}) checks."
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
+            ],
+			"classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Starfire",
+            "source": "Starlight",
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small glass prism"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You channel a fraction of a star's light into an unstoppable celestial lance. Choose a creature, it and all other creatures in a 5-foot wide line between you and that creature must make a Dexterity saving throw. This effect ignores 1/2 or 3/4 cover.",
+                "On a failed save, each creature takes {@damage 3d10} radiant damage and becomes {@condition Burning|Starlight}, the chosen creature taking an additional {@damage 3d10} fire damage. On a successful save, a creature takes half as much damage and does not start Burning ."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The radiant and fire damage each increase by {@scaledamage 3d10|3-9|1d10} for every spell slot level above 3."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire", "radiant"
+            ],
+            "conditionInflict": [
+                "burning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Starfall",
+            "source": "Starlight",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a handful of flash powder"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A sphere of radiance falls from above and strikes the target. The target must make a Constitution saving throw, taking {@damage 8d6} radiant damage on a failure and half as much on a success. All other creatures within 20 feet of it must also make a Constitution saving throw or become {@condition Blinded|XPHB} until the end of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@scaledamage 8d6|4-9|1d6} for each spell slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Starlight's Shadow",
+            "source": "Starlight",
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of charcoal and chalk"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cover a creature with a cloak of stars and shadows. As a {@variantrule Bonus Action}, the target can raise or lower the hood; you choose if it is raised or lowered when you cast the spell. With the hood lowered, the target has a flying speed of 60 feet and resistance to necrotic damage. With the hood raised, the target is {@condition Invisible|XPHB} and has resistance to radiant damage; if the target makes an attack or forces another creature to make a saving throw, the {@condition Invisible|XPHB} condition ends until the start of their next turn."
+            ],
+            "damageResist": [
+                "radiant", "necrotic"
+            ],
+            "conditionInflict": [
+                "invisible"
+            ],
+            "miscTags": [
+                "OBS"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Starlight Sending",
+            "source": "Starlight",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "unlimited"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a gold-threaded constellation map worth 100gp",
+                    "cost": 10000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You place an illusory image of yourself within 10 feet of a willing creature of your choosing. If the creature is not willing, the spell fails. The image appears to be made of stars, with constellation lines joining them, and an ethereal blue mist filling the space inbetween. For the next minute, you can converse and see as if you were there. Your physical self is {@condition Blinded|XPHB} and {@condition Deafened|XPHB} for the duration."
+            ],
+            "conditionInflict": [
+                "blinded", "deafened"
+            ],
+            "classes": {
+				"fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+				]
+            }
+        },
+        {
+            "name": "Astral Convocation",
+            "source": "Starlight",
+            "level": 6,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "four dice made of stained glass, each worth at least 150gp",
+                    "cost": 60000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You call on a council of astral spirits, gaining their blessings and insights.",
+                "You regain your {@variantrule Reaction|XPHB} at the start of every turn.",
+                "When a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can use your Reaction to allow them to roll an additional d20, you choose which result to use. When you use this reaction, you can cause that creature to regain {@dice 5} hit points."
+            ],
+            "miscTags": [
+                "HL",
+                "ADV"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Celestial Alignment",
+            "source": "Starlight",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a set of ten engraved constellation tiles, worth 500gp",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You examine the stars, and attempt to pull their alignment into one that is favourable for you. Roll {@damage 10d10}. The number of dice you get that matches any other dice determines the effect, described below.",
+                "{@note For the purpose of this spell, the number of matching dice refers to any die that has the same value as another, and not all matches need to share their value. Rolling 1, 2, 2, 4, 5, 5, 5, 9, 10, 10 would be 7 matches.}",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "No Matches",
+                            "entries": [
+                                "You die."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Two Matches: Luck Sacrifice",
+                            "entries": [
+                                "Until you complete a {@variantrule Long Rest|XPHB}, you have {@variantrule Disadvantage|XPHB} on all {@variantrule D20 Test|XPHB|D20 Tests}. The nearest creature to you (if multiple creatures are equally distant, you choose) has {@variantrule Advantage|XPHB} on all {@variantrule D20 Test|XPHB|D20 Tests} for the next hour."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Three Matches: Chaos",
+                            "entries": [
+                                "Whenever a creature rolls a {@variantrule D20 Test|XPHB} within 60 feet of you, it rolls twice and uses the result furthest from 10."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Four Matches: Realignment",
+                            "entries": [
+                                "You and every creature within 60 feet of you immediately gain the benefit of the {@spell Starlike Skim|Starlight} spell and can immediately use the movement granted by the spell."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Five Matches: Starfall",
+                            "entries": [
+                                "A creature of your choice that you can see within 90 feet takes radiant damage equal to the total you rolled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Six Matches: Protection",
+                            "entries": [
+                                "A creature of your choice that you can see within 90 feet gains hit points equal to the total rolled, and a creature you can see within 90 feet gains temporary hit points equal to the total rolled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Seven Matches: Starlight Blessings",
+                            "entries": [
+                                "You and any creatures of your choice within 30 feet are blessed: you gain the benefits of the {@spell Bless|XPHB} spell to all until you complete a {@variantrule Long Rest|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Eight Matches: Personal Alignment",
+                            "entries": [
+                                "For the next minute, whenever a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can add or subtract one of the dice rolled from the total. Dice that are 6 or higher can be added, and dice that are 5 or lower can be subtracted. Once you have used one of the rolled dice, you cannot use it again."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Nine Matches: Restoration",
+                            "entries": [
+                                "All creatures of your choice that you can see regain hit points equal to the total rolled and any conditions of their choice end on them."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Ten Matches: Will of Fate",
+                            "entries": [
+                                "You immediately cast the {@spell Wish|XPHB} spell (no action required). You can duplicate a spell of up to 9th level without incurring the stress described in the spell."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "Roll an additional {@scaledamage 10d10|7-9|1d10} for each spell slot level above 7."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "miscTags": [
+                "ADV",
+                "HL",
+                "THP",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gravitic Flux",
+            "source": "Starlight",
+            "level": 8,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a dense metal sphere worth 1000gp and weighting at least 10lbs",
+                    "cost": 100000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a 30-foot radius sphere of violently-shifting gravity centered on a point you can see within range. Teleportation through the edge of the field is impossible. When the spell is cast, and at the start of each of your turns, choose a flux state from the options below. The effect applies to all creatures within the area.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Collapse",
+                            "entries": [
+                                "Creatures in the area must make a Strength saving throw or be pulled 10 feet towards the center and take {@damage 5d10} force damage. On a successful, they take half damage and are not pulled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Inversion",
+                            "entries": [
+                                "Creatures in the area must make a Dexterity saving throw or be pulled 30 feet into the air and {@condition Restrained|XPHB}. At the end of their next turn they are pulled into the ground as if they had fallen that distance and the condition ends."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Temporal Distortion",
+                            "entries": [
+                                "Creatures in the area must make a Wisdom saving throw. On a failed save, they cannot take {@variantrule Reaction|XPHB|Reactions}, and become {@condition Dazed|Starlight}. The effect lasts until you create a different flux state."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Event Horizon",
+                            "entries": [
+                                "The field becomes challenging to escape. A creature that attempts to leave the field by any means must make a Charisma saving throw or become {@condition Halted|Starlight} until the end of their turn, and the attempt fails. When a creature fails this saving throw, it takes {@damage 3d10} force damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Density",
+                            "entries": [
+                                "The field becomes difficult terrain. When a creature moves within the area, it takes {@damage 2d10} force damage for every 5 feet it moves."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength", "dexterity", "wisdom", "charisma"
+            ],
+            "conditionInflict": [
+                "restrained", "slowed", "halted", "dazed"
+            ],
+            "miscTags": [
+                "DFT"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Eclipse",
+            "source": "Starlight",
+            "level": 9,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "The air darkens around you. A 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centred on you is filled with Dim Light as you absorb the light from the sky. You gain a flying speed of 60 feet, and become resistant to fire, cold, radiant and necrotic damage.",
+                "All creatures of your choice within the emanation must subtract your spellcasting ability modifier from any damage rolls they make. Additionally, as a {@variantrule Bonus Action}, you can target a creature within the emanation to draw power from them. That creature must make a Constitution saving throw. On a failed save, they take {@damage 4d10} radiant or necrotic damage (your choice) and become {@condition Silenced|Starlight} until the start of your next turn, taking half as much damage only on a successful one. You gain temporary hit points equal to the amount of damage dealt."
+            ],
+            "damageInflict": [
+                "radiant", "necrotic"
+            ],
+            "damageResist": [
+                "radiant", "necrotic", "fire", "cold"
+            ],
+            "conditionInflict": [
+                "silenced"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT",
+                "THP"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        }
+    ]
+}
