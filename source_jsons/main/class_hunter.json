@@ -2875,11 +2875,11 @@
 			],
             "foundryActivities": [
                 {
-                    "name": "",
+                    "name": "Trip Attack",
                     "type": "save",
 					"activation": {
 						"type": "",
-						"condition": "When you "
+						"condition": "When you hit a creature with an attack"
 					},
                     "consumption": {
                         "targets": [

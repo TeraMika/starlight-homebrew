@@ -54,7 +54,7 @@
                 }
             ],
             "entries": [
-                "You read a brief omen from the stars. Roll a {@dice d4}. You can add or subtract that roll to or from any {@variantrule D20 Test|XPHB} made by a creature within 30 feet of you within the next round."
+                "You read a brief omen from the stars. Roll a {@damage d4}. You can add or subtract that roll to or from any {@variantrule D20 Test|XPHB} made by a creature within 30 feet of you within the next round."
             ],
             "entriesHigherLevel": [
                 {
@@ -476,7 +476,7 @@
             "name": "Starfire",
             "source": "Starlight",
             "level": 3,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -562,7 +562,7 @@
             "name": "Starfall",
             "source": "Starlight",
             "level": 4,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -650,6 +650,7 @@
         {
             "name": "Starlight's Shadow",
             "source": "Starlight",
+            "level": 4,
             "school": "C",
             "time": [
                 {
@@ -930,7 +931,7 @@
                             "type": "item",
                             "name": "Seven Matches: Starlight Blessings",
                             "entries": [
-                                "You and any creatures of your choice within 30 feet are blessed: you gain the benefits of the {@spell Bless|XPHB} spell to all until you complete a {@variantrule Long Rest|XPHB}."
+                                "You and any creatures of your choice within 30 feet are blessed: you gain the benefits of the {@spell Bless|XPHB} spell until you complete a {@variantrule Long Rest|XPHB}."
                             ]
                         },
                         {
@@ -1006,7 +1007,20 @@
                         "source": "XPHB"
                     }
                 ]
-            }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Align",
+                    "type": "utility",
+					"activation": {
+						"type": "Action"						
+					},
+                    "roll": {
+                        "name": "Matching Dice",
+                        "formula": "10d10"
+                    }
+                }
+            ]
         },
         {
             "name": "Gravitic Flux",
@@ -1125,7 +1139,120 @@
                         "source": "XPHB"
                     }
                 ]
-            }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Collapse",
+                    "type": "save",
+					"activation": {
+						"type": ""
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "5d10"
+								},
+                                "type": "force"
+							}
+						]
+					}
+                },
+                {
+                    "name": "Inversion",
+                    "type": "save",
+					"activation": {
+						"type": ""
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": false,
+									"formula": "0"
+								},
+                                "type": "force"
+							}
+						]
+					}
+                },
+                {
+                    "name": "Temporal Distortion",
+                    "type": "save",
+					"activation": {
+						"type": ""
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					}
+                },
+                {
+                    "name": "Event Horizon",
+                    "type": "save",
+					"activation": {
+						"type": ""
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "3d10"
+								},
+                                "type": "force"
+							}
+						]
+					}
+                },
+                {
+                    "name": "Density",
+                    "type": "save",
+					"activation": {
+						"type": ""
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2d10"
+								},
+                                "type": "force"
+							}
+						]
+					}
+                }
+            ]
         },
         {
             "name": "Eclipse",

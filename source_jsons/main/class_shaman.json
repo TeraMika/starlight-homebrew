@@ -2905,8 +2905,9 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per {@variantrule Short Rest}, you can attempt to allow nature to siphon a creature's magic for a turn.",
-                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
+				"As an {@variantrule Action}, you can channel nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn.",
+                "You can do this a number of times per {@variantrule Long Rest|XPHB} equal to your Proficiency Bonus."
 			],
             "prerequisite": [
                 {
@@ -2957,10 +2958,10 @@
                     "chatFlavor": "Nature attempts to siphon the creature's magic."
                 },
                 "uses": {
-                    "max": 1,
+                    "max": "@prof",
                     "recovery": [
                     {
-                        "period": "sr",
+                        "period": "lr",
                         "type": "recoverAll"
                     }
                     ]
@@ -5585,9 +5586,9 @@
                 "Arcana - Uncommon|XDMG"
             ],
             "entries": []
-        },
+        }, 
         {
-            "name": "+1 Staff of the Crossroads Watcher",
+            "name": "+1 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "uncommon",
             "reqAttune": "by a Shaman",
@@ -5634,7 +5635,7 @@
 			}
         },
         {
-            "name": "+2 Staff of the Crossroads Watcher",
+            "name": "+2 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "rare",
             "reqAttune": "by a Shaman",
@@ -5681,7 +5682,7 @@
 			}
         },
         {
-            "name": "+3 Staff of the Crossroads Watcher",
+            "name": "+3 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "very rare",
             "reqAttune": "by a Shaman",
