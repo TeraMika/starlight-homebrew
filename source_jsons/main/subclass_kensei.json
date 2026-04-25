@@ -1,0 +1,281 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "S: WoB",
+				"abbreviation": "S: WoB",
+				"full": "Starlight: Warrior of Blades",
+				"authors": [
+					"Starlight"
+				],
+				"convertedBy": [
+					"Starlight"
+				],
+				"version": "1",
+				"url": "https://github.com/TeraMika/starlight-homebrew"
+			}
+		]
+	},
+	"subclass": [
+		{
+			"name": "Warrior of Blades",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+			"shortName": "Blades",
+			"subclassFeatures": [
+				"Warrior of Blades|Monk|XPHB|Blades|Starlight|3",
+				"One with the Blade|Monk|XPHB|Blades|Starlight|6",
+				"Slice the Air|Monk|XPHB|Blades|Starlight|11",
+				"Unerring Accuracy|Monk|XPHB|Blades|Starlight|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Warrior of Blades",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 3,
+			"entries": [
+                "Warriors of Blades train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons.",
+                "A warrior of blades sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the warrior views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes one a peerless warrior is but a side effect of intense devotion, practice, and study.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Kensei Weapons|Monk|XPHB|Blades|Starlight|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Agile Parry|Monk|XPHB|Blades|Starlight|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Kensei's Shot|Monk|XPHB|Blades|Starlight|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Way of the Brush|Monk|XPHB|Blades|Starlight|3"
+				}
+			]
+		},
+		{
+			"name": "Kensei Weapons",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+                "Choose two types of weapons to be your kensei wepaons: one melee weapon and one ranged weapon. Each can be {@filter simple or martial weapon|items|source=xphb|type=simple weapon;martial weapon|category=basic|miscellaneous=}. You become proficient with these weapons if you weren't. Wepaons of the chosen types are monk weapons for you. When you reach 6th, 11th, and 17th level in this class, you can choose another weapon meeting the criteria above. Your training with wepaons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of your kensei weapons. Whenever you finish a {@variantrule Long Rest|XPHB}, you can train with new weapons to change one of those choices."
+			],
+            "weaponProficiencies": [
+              {
+                "choose": {
+                    "fromFilter": "type=simple weapon;martial weapon|category=basic",
+                    "count": 2
+                }
+              }
+            ]
+		},
+		{
+			"name": "Agile Parry",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you take the {@classFeature Deflect Attacks|Monk|XPHB|3|XPHB} reaction and are holding a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon}, you may add your proficiency bonus to the damage reduction. You may draw a kensei weapon as part of the same reaction."
+			]
+		},
+		{
+			"name": "Kensei's Shot",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 3,
+			"entries": [
+                "You can use your {@variantrule Bonus Action|XPHB} to make your ranged attacks with {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon} more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1)."
+			]
+		},
+		{
+			"name": "Way of the Brush",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 3,
+			"entries": [
+                "You gain proficiency with {@item Calligrapher's Supplies|XPHB} and {@item Painter's Supplies|XPHB}."
+            ],
+            "toolProficiencies": [
+                {
+                    "calligrapher's supplies": true,
+                    "painter's supplies": true
+                }
+            ]
+		},
+		{
+			"name": "One with the Blade",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 6,
+			"header": 2,
+			"entries": [
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Empowered Kensei Weapons|Monk|XPHB|Blades|Starlight|6"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Deft Strike|Monk|XPHB|Blades|Starlight|6"
+				}
+			]
+		},
+		{
+			"name": "Empowered Kensei Weapons",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 6,
+			"entries": [
+				"When you deal damage with a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon}, it can deal your choice of Force damage or its normal damage type."
+			]
+		},
+		{
+			"name": "Deft Strike",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 6,
+			"entries": [
+                "Once per turn when you hit a creature with a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon} and deal damage, you can expend 1 Focus Point to deal additional damage equal to one roll of your Martial Arts die."
+			],
+            "foundryActivities": [
+                {
+                    "name": "Deft Strike",
+                    "type": "damage",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with a Kensei weapon and deal damage"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Focus Point"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.monk.die"
+								}
+							}
+						]
+					},
+                    "description": {
+                        "chatFlavor": "Precise."
+                    }
+                }
+            ]
+		},
+		{
+			"name": "Slice the Air",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 11,
+			"entries": [
+				"You leap forward, a whirlwind of blade. While holding a kensei weapon, you can use an {@variantrule Action} to spend 3 Focus Points to draw a path of length equal to your {@classFeature Unarmored Movement|Monk|XPHB|2|XPHB} bonus, teleporting to the end. Each creature in the path or within 5 feet of it must succeed a Dexterity saving throw or take damage equal to three rolls of your Martial Arts die plus your Dexterity modifier, of a type matching the used kensei weapon. If your movement along that path would end in an obstacle or result in a condition that {@condition Restrained|XPHB|restrains} you, you stop at the last unoccupied space."
+			],
+            "foundryActivities": [
+                {
+                    "name": "Slice the Air",
+                    "type": "save",
+                    "activation": {
+                        "type": "action",
+                        "value": 1
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "3",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Focus Point"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "type": "creature"
+                    },
+                    "save": {
+                        "ability": "dex",
+                        "dc": {
+                        "calculation": "wis"
+                        }
+                    },
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "3@scale.monk.die + @abilities.dex.mod "
+								},
+								"types": [
+									"force"
+								]
+							}
+						]
+					},
+                    "description": {
+                        "chatFlavor": "Like a flash."
+                    }
+                }
+            ]
+		},
+		{
+			"name": "Unerring Accuracy",
+			"source": "Starlight",
+			"className": "Monk",
+			"classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+			"level": 17,
+			"entries": [
+                "Once per turn, when you miss an attack roll with a Kensei weapon, you may reroll it, and you must use the new roll."
+            ]
+		}
+	]
+}
