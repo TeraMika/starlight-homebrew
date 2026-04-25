@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.12.19",
+                "version": "2026.04.25.13.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.12.19",
+                "version": "2026.04.25.13.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,45 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.12.19",
+                "version": "2026.04.25.13.40",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "S: WoB",
+                "abbreviation": "S: WoB",
+                "full": "Starlight: Warrior of Blades",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2026.04.25.13.40",
+                "url": "https://github.com/TeraMika/starlight-homebrew"
+            },
+            {
+                "json": "S: Unity",
+                "abbreviation": "S: Unity",
+                "full": "Starlight: Oath of Unity",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2026.04.25.13.40",
+                "url": "https://github.com/TeraMika/starlight-homebrew"
+            },
+            {
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2026.04.25.13.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,32 +95,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.12.19",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "S: Unity",
-                "abbreviation": "S: Unity",
-                "full": "Starlight: Oath of Unity",
-                "authors": [
-                    "Starlight"
-                ],
-                "convertedBy": [
-                    "Starlight"
-                ],
-                "version": "2026.04.19.12.19",
-                "url": "https://github.com/TeraMika/starlight-homebrew"
-            },
-            {
-                "json": "SToD",
-                "abbreviation": "SToD",
-                "full": "Shifting Tides of Delamir",
-                "color": "783ddb",
-                "authors": [
-                    "Starlight"
-                ],
-                "version": "2026.04.19.12.19",
+                "version": "2026.04.25.13.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -94,7 +107,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.19.12.19",
+                "version": "2026.04.25.13.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -103,7 +116,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1776601177.799524
+        "dateLastModified": 1777124454.5732384
     },
     "class": [
         {
@@ -2791,6 +2804,19 @@
             ]
         },
         {
+            "name": "Warrior of Blades",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "shortName": "Blades",
+            "subclassFeatures": [
+                "Warrior of Blades|Monk|XPHB|Blades|Starlight|3",
+                "One with the Blade|Monk|XPHB|Blades|Starlight|6",
+                "Slice the Air|Monk|XPHB|Blades|Starlight|11",
+                "Unerring Accuracy|Monk|XPHB|Blades|Starlight|17"
+            ]
+        },
+        {
             "name": "Oath of Unity",
             "source": "Starlight",
             "className": "Paladin",
@@ -5038,6 +5064,251 @@
             ]
         },
         {
+            "name": "Warrior of Blades",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "Warriors of Blades train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons.",
+                "A warrior of blades sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the warrior views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes one a peerless warrior is but a side effect of intense devotion, practice, and study.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Kensei Weapons|Monk|XPHB|Blades|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Agile Parry|Monk|XPHB|Blades|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Kensei's Shot|Monk|XPHB|Blades|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Way of the Brush|Monk|XPHB|Blades|Starlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Kensei Weapons",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Choose two types of weapons to be your kensei wepaons: one melee weapon and one ranged weapon. Each can be {@filter simple or martial weapon|items|source=xphb|type=simple weapon;martial weapon|category=basic|miscellaneous=}. You become proficient with these weapons if you weren't. Wepaons of the chosen types are monk weapons for you. When you reach 6th, 11th, and 17th level in this class, you can choose another weapon meeting the criteria above. Your training with wepaons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of your kensei weapons. Whenever you finish a {@variantrule Long Rest|XPHB}, you can train with new weapons to change one of those choices."
+            ],
+            "weaponProficiencies": [
+                {
+                    "choose": {
+                        "fromFilter": "type=simple weapon;martial weapon|category=basic",
+                        "count": 2
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Agile Parry",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you take the {@classFeature Deflect Attacks|Monk|XPHB|3|XPHB} reaction and are holding a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon}, you may add your proficiency bonus to the damage reduction. You may draw a kensei weapon as part of the same reaction."
+            ]
+        },
+        {
+            "name": "Kensei's Shot",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "You can use your {@variantrule Bonus Action|XPHB} to make your ranged attacks with {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon} more deadly. Until the start of your next turn, when you hit with a ranged attack using a Kensei weapon, you deal additional damage equal to your Wisdom modifier (minimum 1)."
+            ]
+        },
+        {
+            "name": "Way of the Brush",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "You gain proficiency with {@item Calligrapher's Supplies|XPHB} and {@item Painter's Supplies|XPHB}."
+            ],
+            "toolProficiencies": [
+                {
+                    "calligrapher's supplies": true,
+                    "painter's supplies": true
+                }
+            ]
+        },
+        {
+            "name": "One with the Blade",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Empowered Kensei Weapons|Monk|XPHB|Blades|Starlight|6"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Deft Strike|Monk|XPHB|Blades|Starlight|6"
+                }
+            ]
+        },
+        {
+            "name": "Empowered Kensei Weapons",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "When you deal damage with a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon}, it can deal your choice of Force damage or its normal damage type."
+            ]
+        },
+        {
+            "name": "Deft Strike",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 6,
+            "entries": [
+                "Once per turn when you hit a creature with a {@subclassFeature Kensei Weapons|Monk|XPHB|Blades|Starlight|3|Starlight|Kensei weapon} and deal damage, you can expend 1 Focus Point to deal additional damage equal to one roll of your Martial Arts die."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Deft Strike",
+                    "type": "damage",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with a Kensei weapon and deal damage"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Focus Point"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.monk.die"
+                                }
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Precise."
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Slice the Air",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "You leap forward, a whirlwind of blade. While holding a kensei weapon, you can use an {@variantrule Action} to spend 3 Focus Points to draw a path of length equal to your {@classFeature Unarmored Movement|Monk|XPHB|2|XPHB} bonus, teleporting to the end. Each creature in the path or within 5 feet of it must succeed a Dexterity saving throw or take damage equal to three rolls of your Martial Arts die plus your Dexterity modifier, of a type matching the used kensei weapon. If your movement along that path would end in an obstacle or result in a condition that {@condition Restrained|XPHB|restrains} you, you stop at the last unoccupied space."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Slice the Air",
+                    "type": "save",
+                    "activation": {
+                        "type": "action",
+                        "value": 1
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "3",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Focus Point"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "type": "creature"
+                    },
+                    "save": {
+                        "ability": "dex",
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "3@scale.monk.die + @abilities.dex.mod "
+                                },
+                                "types": [
+                                    "force"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "chatFlavor": "Like a flash."
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Unerring Accuracy",
+            "source": "Starlight",
+            "className": "Monk",
+            "classSource": "XPHB",
+            "subclassShortName": "Blades",
+            "subclassSource": "Starlight",
+            "level": 17,
+            "entries": [
+                "Once per turn, when you miss an attack roll with a Kensei weapon, you may reroll it, and you must use the new roll."
+            ]
+        },
+        {
             "name": "Oath of Unity",
             "source": "Starlight",
             "className": "Paladin",
@@ -5505,11 +5776,11 @@
             ],
             "foundryActivities": [
                 {
-                    "name": "",
+                    "name": "Trip Attack",
                     "type": "save",
                     "activation": {
                         "type": "",
-                        "condition": "When you "
+                        "condition": "When you hit a creature with an attack"
                     },
                     "consumption": {
                         "targets": [
@@ -8867,8 +9138,9 @@
                 "PRU"
             ],
             "entries": [
-                "Once per {@variantrule Short Rest}, you can attempt to allow nature to siphon a creature's magic for a turn.",
-                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn."
+                "As an {@variantrule Action}, you can channel nature to siphon a creature's magic for a turn.",
+                "The target must make a Charisma saving throw. On a failed save, it takes {@dice 3d12} radiant damage and becomes {@condition silenced|Starlight} until the end of your next turn.",
+                "You can do this a number of times per {@variantrule Long Rest|XPHB} equal to your Proficiency Bonus."
             ],
             "prerequisite": [
                 {
@@ -8919,10 +9191,10 @@
                         "chatFlavor": "Nature attempts to siphon the creature's magic."
                     },
                     "uses": {
-                        "max": 1,
+                        "max": "@prof",
                         "recovery": [
                             {
-                                "period": "sr",
+                                "period": "lr",
                                 "type": "recoverAll"
                             }
                         ]
@@ -10123,7 +10395,7 @@
             "entries": []
         },
         {
-            "name": "+1 Staff of the Crossroads Watcher",
+            "name": "+1 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "uncommon",
             "reqAttune": "by a Shaman",
@@ -10170,7 +10442,7 @@
             }
         },
         {
-            "name": "+2 Staff of the Crossroads Watcher",
+            "name": "+2 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "rare",
             "reqAttune": "by a Shaman",
@@ -10217,7 +10489,7 @@
             }
         },
         {
-            "name": "+3 Staff of the Crossroads Watcher",
+            "name": "+3 Staff of the Crossroads",
             "source": "Starlight",
             "rarity": "very rare",
             "reqAttune": "by a Shaman",
@@ -11038,297 +11310,6 @@
             ]
         },
         {
-            "name": "Potionweaver's Bracelet",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
-                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
-            ]
-        },
-        {
-            "name": "Blank Scroll",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
-                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
-                        "Whenever you deal damage, no die can roll below a 3.",
-                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
-                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
-                    ]
-                },
-                "A creature can gain the benefit of this scroll only once."
-            ]
-        },
-        {
-            "name": "Curious",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "The exact appearance of this gem changes depending on your mood.",
-                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Cast the spell with no somatic or verbal components.",
-                        "The target has disadvantage on its first saving throw against the spell.",
-                        "The duration is doubled (to a maximum of 24 hours).",
-                        "You can reroll any of the damage dice.",
-                        "The range is doubled, or increased to 30 feet for a touch spell.",
-                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
-                        "You can protect any number of creatures from the spell's initial effects."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Cut Paper",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "charges": 1,
-            "entries": [
-                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
-                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
-            ]
-        },
-        {
-            "name": "Engraving Quill",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
-            ]
-        },
-        {
-            "name": "Exploding Nail Polish",
-            "source": "SCE",
-            "rarity": "common",
-            "charges": 3,
-            "wondrous": true,
-            "reqAttune": false,
-            "entries": [
-                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
-                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
-                "There is enough nail polish within the container for 3 applications."
-            ]
-        },
-        {
-            "name": "Fisherman's Blanket",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
-            ]
-        },
-        {
-            "name": "Flamed Blade",
-            "source": "SCE",
-            "baseItem": "shortsword|xphb",
-            "type": "M",
-            "weaponCategory": "martial",
-            "property": [
-                "F",
-                "L"
-            ],
-            "dmg1": "1d6",
-            "dmgType": "S",
-            "rarity": "common",
-            "weight": 2,
-            "reqAttune": false,
-            "charges": 1,
-            "recharge": "restLong",
-            "entries": [
-                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
-            ]
-        },
-        {
-            "name": "Healing Poultice",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
-                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
-            ]
-        },
-        {
-            "name": "Hidden Dagger",
-            "source": "SCE",
-            "baseItem": "dagger|xphb",
-            "type": "s",
-            "weaponCategory": "simple",
-            "property": [
-                "F",
-                "L"
-            ],
-            "dmg1": "1d4",
-            "dmgType": "S",
-            "rarity": "common",
-            "weight": 1,
-            "reqAttune": false,
-            "entries": [
-                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
-            ]
-        },
-        {
-            "name": "Hopeful Flame",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "reqAttune": true,
-            "entries": [
-                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
-                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
-                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You are resistant to fire damage.",
-                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Ice Diamond",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
-            ]
-        },
-        {
-            "name": "Invisibility Ring",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This ring is flawlessly invisible."
-            ]
-        },
-        {
-            "name": "Lucky-Seven Rune",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
-            ]
-        },
-        {
-            "name": "Ring of Fire Detection",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "This ring detects the presence of fire, with a range of touch."
-            ]
-        },
-        {
-            "name": "Ring of Teleportation",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
-            ]
-        },
-        {
-            "name": "Potion of Greater Tealing",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
-            ]
-        },
-        {
-            "name": "Potion of Hydration",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
-            ]
-        },
-        {
-            "name": "Pulpy Healing Potion",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
-            ]
-        },
-        {
-            "name": "Ring of Inn Visibility",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "charges": 1,
-            "entries": [
-                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
-                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
-            ]
-        },
-        {
-            "name": "Scroll of Weather Detection",
-            "source": "SCE",
-            "rarity": "common",
-            "wondrous": true,
-            "entries": [
-                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
-                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
-            ]
-        },
-        {
-            "name": "Solemn Silver Ring",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
-                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
-            ]
-        },
-        {
-            "name": "Spell-storing Arrow",
-            "source": "SCE",
-            "rarity": "rare",
-            "wondrous": true,
-            "entries": [
-                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
-                "Once used, the arrow turns to ash."
-            ]
-        },
-        {
-            "name": "Wand of Mystery",
-            "source": "SCE",
-            "rarity": "uncommon",
-            "wondrous": true,
-            "entries": [
-                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
-            ]
-        },
-        {
             "name": "Arrow of Acid",
             "source": "Starlight",
             "rarity": "common",
@@ -12020,6 +12001,297 @@
                     "Fragments of the glass goddess' power are left all over Delamir - though this one is more intentional than her sunshard fragments. This pendant was a gift given to Scourge, the Master of Necromancy, as a reward for a service he did for the goddess. It was later stolen from his fortress by the Tempest Collective, who used it to free themselves from a pact with the goddess of the glass moon, and later to sever Anathema's connection to the Ebon Blade. Only two Wishes remained in it at the time, and it is unknown how the first was used."
                 ]
             }
+        },
+        {
+            "name": "Potionweaver's Bracelet",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can load a potion into this bracelet. While wearing the bracelet, if you aren't {@condition Incapacitated}, you can administer the potion at a later time with no action required.",
+                "Alternatively, the potion can be delivered remotely at the cost of a {@variantrule Bonus Action} with a command word spoken by the ring's owner (not its bearer)."
+            ]
+        },
+        {
+            "name": "Blank Scroll",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "The symbol of a dragon's head can be seen faintly on the reverse of the scroll.",
+                "If you spend one minute to read from this slightly-reflective scroll, you learn something about yourself, gaining one of the following benefits until the end of your next long rest:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you roll a hit die, roll it twice and choose the higher result.",
+                        "Whenever you deal damage, no die can roll below a 3.",
+                        "Whenever you heal a creature with a spell, increase the amount healed by {@dice 2d8}.",
+                        "Whenever you take damage, 1 point is mitigated and reflected at your attacker instead."
+                    ]
+                },
+                "A creature can gain the benefit of this scroll only once."
+            ]
+        },
+        {
+            "name": "Curious",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The exact appearance of this gem changes depending on your mood.",
+                "You can burn away this gem when you cast a spell to apply one of the following modifiers to it:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Cast the spell with no somatic or verbal components.",
+                        "The target has disadvantage on its first saving throw against the spell.",
+                        "The duration is doubled (to a maximum of 24 hours).",
+                        "You can reroll any of the damage dice.",
+                        "The range is doubled, or increased to 30 feet for a touch spell.",
+                        "A casting time of one {@variantrule Action} becomes a casting time of one {@variantrule Bonus Action}.",
+                        "You can protect any number of creatures from the spell's initial effects."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cut Paper",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "charges": 1,
+            "entries": [
+                "This paper is covered in folding lines, as if it was used for origami and unfolded many times.",
+                "You can place this sheet of paper against an object, then take the {@action Magic} action to cut a hole 1-foot deep anywhere that the paper is making contact with the object. You take 1 slashing damage and get a papercut at an inconvenient place on your hand. Once used, the paper loses its magic."
+            ]
+        },
+        {
+            "name": "Engraving Quill",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "This elegant quill can be used to write on any surface. Once used on any non-typical writing surface for a minute or more, roll a {@dice d20}. On a 1, the quill snaps."
+            ]
+        },
+        {
+            "name": "Exploding Nail Polish",
+            "source": "SCE",
+            "rarity": "common",
+            "charges": 3,
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "As a {@action Magic} Action, you can apply this bold red nail polish to a surface or willing creature. As a {@variantrule Bonus Action} you can speak the command word, chosen when you apply the polish, and deal {@damage 4d8} force damage to any creature within 10 feet of the bearer.",
+                "Alternatively, you can apply this to an object and speak the command word to make all nails in or connected to that object explode.",
+                "There is enough nail polish within the container for 3 applications."
+            ]
+        },
+        {
+            "name": "Fisherman's Blanket",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This blanket is always slightly warm to the touch. It can be shaken dry with a {@action Magic} action."
+            ]
+        },
+        {
+            "name": "Flamed Blade",
+            "source": "SCE",
+            "baseItem": "shortsword|xphb",
+            "type": "M",
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 2,
+            "reqAttune": false,
+            "charges": 1,
+            "recharge": "restLong",
+            "entries": [
+                "As a {@variantrule Bonus Action}, you may activate this sword, causing it to burst into flame, dealing {@damage 1d4} additional fire damage for one minute. Once used, this property cannot be used again until the bearer completes a {@variantrule Long Rest}."
+            ]
+        },
+        {
+            "name": "Healing Poultice",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "You can spend one minute to apply this to a wounded character. After 30 minutes, they recover {@damage 8} hit points and regain two expended hit dice.",
+                "A creature that consumes this as an {@variantrule Action} takes {@damage 8} poison damage instead."
+            ]
+        },
+        {
+            "name": "Hidden Dagger",
+            "source": "SCE",
+            "baseItem": "dagger|xphb",
+            "type": "s",
+            "weaponCategory": "simple",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "rarity": "common",
+            "weight": 1,
+            "reqAttune": false,
+            "entries": [
+                "This dagger can be flawlessly concealed anywhere on your person, such as under the fold of a cloak. It can be found only by creatures with {@sense Truesight|XPHB}, who must succeed an Intelligence ({@skill Investigation}) check against your Dexterity ({@skill Sleight of Hand})."
+            ]
+        },
+        {
+            "name": "Hopeful Flame",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "A flame that grows brighter with the attuned bearer's strength, found in the stump of a tree that has burned down.",
+                "As a {@action Magic} Action, you can summon the flame, which hovers near your head and casts 5 feet of bright light for each of your current hit dice. You may dismiss it as a {@action Magic} Action.",
+                "At the start of each of your turns, you may expend a hit die to gain the following benefits until the start of your next turn:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You are resistant to fire damage.",
+                        "You may add the hit die expended to the damage roll of one weapon attack, as fire damage. You can choose to do so after the attack."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Diamond",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "A sealed box filled with crushed ice and a diamond worth 150GP. If removed from the ice, the diamond turns to a stone over 1 minute."
+            ]
+        },
+        {
+            "name": "Invisibility Ring",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring is flawlessly invisible."
+            ]
+        },
+        {
+            "name": "Lucky-Seven Rune",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Over the course of a {@variantrule Short Rest}, you can apply this rune to a weapon. Attacks made with that weapon score a critical hit on a roll of 7, {@i instead} of 20."
+            ]
+        },
+        {
+            "name": "Ring of Fire Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "This ring detects the presence of fire, with a range of touch."
+            ]
+        },
+        {
+            "name": "Ring of Teleportation",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "As a {@action Magic} Action, you can teleport this ring to an unoccupied location of your choice."
+            ]
+        },
+        {
+            "name": "Potion of Greater Tealing",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This potion is a bright and cheery teal colour. On consumption, you regain {@damage 4d4+4} hit points and trigger a {@subclassFeature Wild Magic Surge|Sorcerer|XPHB|Wild Magic|XPHB|3|XPHB|wild magic surge}."
+            ]
+        },
+        {
+            "name": "Potion of Hydration",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "When consumed as a {@variantule Bonus Action}, this potion flawlessly quenches your thirst."
+            ]
+        },
+        {
+            "name": "Pulpy Healing Potion",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "This healing potion is off-putting in that it is thick, pulpy, and an oddly dark shade of red. When drunk or administered to an adjacent creature as a {@variantrule Bonus Action}, it restores {@damage 2d4+2} hit points."
+            ]
+        },
+        {
+            "name": "Ring of Inn Visibility",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "charges": 1,
+            "entries": [
+                "Makes available to you, an inn where you may reside for up to 24 hours, and purchase a range of magical liqueurs and items, and basic supplies, as determined by the DM.",
+                "You can open the spectral doorway to the inn by focusing on the ring for ten minutes. Only creatures you can choose can follow you through it. If you are within the inn at the end of the 24 hours, you are ejected from it in the space you entered it. Once the ring is used, it fades away and vanishes."
+            ]
+        },
+        {
+            "name": "Scroll of Weather Detection",
+            "source": "SCE",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Tells you what the weather is in a location of your choice. If it's raining where you are, the scroll disintegrates immediately and doesn't tell you what the weather is.",
+                "Roll a {@dice d100}. If you roll below 10, you hear ominous whispers foretelling your death."
+            ]
+        },
+        {
+            "name": "Solemn Silver Ring",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "A silver ring with a phrase written in Celestial engraved on its inside, reading 'gone, but not forgotten'.",
+                "If a creature dies whilst wearing this ring, their last moments are stored within it and can appear as a vivid memory to the ring's wearer, when they put it on and voluntarily after that."
+            ]
+        },
+        {
+            "name": "Spell-storing Arrow",
+            "source": "SCE",
+            "rarity": "rare",
+            "wondrous": true,
+            "entries": [
+                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
+                "Once used, the arrow turns to ash."
+            ]
+        },
+        {
+            "name": "Wand of Mystery",
+            "source": "SCE",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "This spell focus has seven charges. The way in which the charges are expended is determined by the DM in secret. Once all seven charges are expended, a genie appears to grant you a limited wish - an effect of your choice interpreted as the genie pleases. As a guideline, the power of the request should be no more impactful than a 6th level spell."
+            ]
         },
         {
             "name": "Spell-Storing Sunshard",
@@ -13723,6 +13995,1326 @@
                     "baseSource": "Starlight"
                 }
             ]
+        },
+        {
+            "name": "Stellar Omen",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "special"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You read a brief omen from the stars. Roll a {@damage d4}. You can add or subtract that roll to or from any {@variantrule D20 Test|XPHB} made by a creature within 30 feet of you within the next round."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The distance at which you can affect a creature increases by 30 feet at 5th level (60 feet), 11th level (90 feet), and 17th level (120 feet)."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Celestial Mark",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "Mark a creature with a celestial sign. The target is marked by fate and must make an Intelligence saving throw or take {@damage 1d6} radiant damage.",
+                "While marked, attack rolls against the target have a {@dice 1d6} bonus. This mark lasts until the target is hit with an attack or until one minute passes."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Cantrip Upgrade",
+                    "entries": [
+                        "The damage increases by {@damage 1d6} when you reach levels 5 ({@damage 2d6}), 11 ({@damage 3d6}), and 17 ({@damage 4d6})."
+                    ]
+                }
+            ],
+            "scalingLevelDice": {
+                "label": "Radiant damage",
+                "scaling": {
+                    "1": "1d6",
+                    "5": "2d6",
+                    "11": "3d6",
+                    "17": "4d6"
+                }
+            },
+            "damageInflict": [
+                "radiant"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Parallax Shift",
+            "source": "Starlight",
+            "level": 1,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which is taken when you see a creature within 30 feet make an attack"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You shift a creature along the cosmic gradient, shifting them towards or away from their goal. Choose one of the following:",
+                "{@b Blueshift.} The creature makes an additional attack.",
+                "{@b Redshift.} The creature's attack is negated: a {@variantrule Critical Hit|XPHB} becomes a normal hit, and a normal hit becomes a miss."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bias Fate",
+            "source": "Starlight",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a die and salted water"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "The target must make a Charisma saving throw. On a failed saving throw, fate leans against it: attacks made against it have a {@dice 1d4} bonus to the attack roll; when it forces a creature to make a saving throw, that creature adds {@dice 1d4} to the saving throw; and whenever it makes a {@variantrule D20 Test|XPHB}, it subtracts {@dice 1d4} from the result."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 1."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "miscTags": [
+                "SCT",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Starlike Skim",
+            "source": "Starlight",
+            "level": 2,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "a flat stone"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You temporarily take on a form of starlight, becoming pale and translucent. Until the start of your next turn, you gain the following benefits:",
+                "You gain 15 feet of movement speed. You can pass through other creatures' spaces, move over liquid and non-solid surfaces harmlessly (but not stand on them), and your movement doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks}.",
+                "As part of casting the spell, you end any effects on you that cause you to be {@condition Grappled|XPHB}."
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Follow the Stars",
+            "source": "Starlight",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a sextant"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hours",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "You see the celestial patterns of the sky and allow them to guide you in the right direction over long distances.",
+                "{@b Choice.} Whenever you encounter a meaningful choice of direction, you can spend a moment observing your surroundings. Choose one of the following traits, the DM reveals which of the routes forward most fits that criteria: safest, fastest, most direct, or the path with the most reward.",
+                "{@b Navigation.} While you can see the night sky: you and your immediate allies have {@variantrule Advantage|XPHB} on any Wisdom ({@skill Survival}) checks made on your journey, and moving at a fast pace does not affect your Wisdom ({@skill Perception} or {@skill Survival}) or Dexterity ({@skill Stealth}) checks."
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Starfire",
+            "source": "Starlight",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "line",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small glass prism"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You channel a fraction of a star's light into an unstoppable celestial lance. Choose a creature, it and all other creatures in a 5-foot wide line between you and that creature must make a Dexterity saving throw. This effect ignores 1/2 or 3/4 cover.",
+                "On a failed save, each creature takes {@damage 3d10} radiant damage and becomes {@condition Burning|Starlight}, the chosen creature taking an additional {@damage 3d10} fire damage. On a successful save, a creature takes half as much damage and does not start Burning ."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The radiant and fire damage each increase by {@scaledamage 3d10|3-9|1d10} for every spell slot level above 3."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire",
+                "radiant"
+            ],
+            "conditionInflict": [
+                "burning"
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "areaTags": [
+                "L"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Starfall",
+            "source": "Starlight",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a handful of flash powder"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A sphere of radiance falls from above and strikes the target. The target must make a Constitution saving throw, taking {@damage 8d6} radiant damage on a failure and half as much on a success. All other creatures within 20 feet of it must also make a Constitution saving throw or become {@condition Blinded|XPHB} until the end of your next turn."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The damage increases by {@scaledamage 8d6|4-9|1d6} for each spell slot level above 4."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Starlight's Shadow",
+            "source": "Starlight",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of charcoal and chalk"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You cover a creature with a cloak of stars and shadows. As a {@variantrule Bonus Action}, the target can raise or lower the hood; you choose if it is raised or lowered when you cast the spell. With the hood lowered, the target has a flying speed of 60 feet and resistance to necrotic damage. With the hood raised, the target is {@condition Invisible|XPHB} and has resistance to radiant damage; if the target makes an attack or forces another creature to make a saving throw, the {@condition Invisible|XPHB} condition ends until the start of their next turn."
+            ],
+            "damageResist": [
+                "radiant",
+                "necrotic"
+            ],
+            "conditionInflict": [
+                "invisible"
+            ],
+            "miscTags": [
+                "OBS"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Starlight Sending",
+            "source": "Starlight",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "unlimited"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a gold-threaded constellation map worth 100gp",
+                    "cost": 10000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You place an illusory image of yourself within 10 feet of a willing creature of your choosing. If the creature is not willing, the spell fails. The image appears to be made of stars, with constellation lines joining them, and an ethereal blue mist filling the space inbetween. For the next minute, you can converse and see as if you were there. Your physical self is {@condition Blinded|XPHB} and {@condition Deafened|XPHB} for the duration."
+            ],
+            "conditionInflict": [
+                "blinded",
+                "deafened"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Astral Convocation",
+            "source": "Starlight",
+            "level": 6,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "four dice made of stained glass, each worth at least 150gp",
+                    "cost": 60000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You call on a council of astral spirits, gaining their blessings and insights.",
+                "You regain your {@variantrule Reaction|XPHB} at the start of every turn.",
+                "When a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can use your Reaction to allow them to roll an additional d20, you choose which result to use. When you use this reaction, you can cause that creature to regain {@dice 5} hit points."
+            ],
+            "miscTags": [
+                "HL",
+                "ADV"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Celestial Alignment",
+            "source": "Starlight",
+            "level": 7,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a set of ten engraved constellation tiles, worth 500gp",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You examine the stars, and attempt to pull their alignment into one that is favourable for you. Roll {@damage 10d10}. The number of dice you get that matches any other dice determines the effect, described below.",
+                "{@note For the purpose of this spell, the number of matching dice refers to any die that has the same value as another, and not all matches need to share their value. Rolling 1, 2, 2, 4, 5, 5, 5, 9, 10, 10 would be 7 matches.}",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "No Matches",
+                            "entries": [
+                                "You die."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Two Matches: Luck Sacrifice",
+                            "entries": [
+                                "Until you complete a {@variantrule Long Rest|XPHB}, you have {@variantrule Disadvantage|XPHB} on all {@variantrule D20 Test|XPHB|D20 Tests}. The nearest creature to you (if multiple creatures are equally distant, you choose) has {@variantrule Advantage|XPHB} on all {@variantrule D20 Test|XPHB|D20 Tests} for the next hour."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Three Matches: Chaos",
+                            "entries": [
+                                "Whenever a creature rolls a {@variantrule D20 Test|XPHB} within 60 feet of you, it rolls twice and uses the result furthest from 10."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Four Matches: Realignment",
+                            "entries": [
+                                "You and every creature within 60 feet of you immediately gain the benefit of the {@spell Starlike Skim|Starlight} spell and can immediately use the movement granted by the spell."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Five Matches: Starfall",
+                            "entries": [
+                                "A creature of your choice that you can see within 90 feet takes radiant damage equal to the total you rolled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Six Matches: Protection",
+                            "entries": [
+                                "A creature of your choice that you can see within 90 feet gains hit points equal to the total rolled, and a creature you can see within 90 feet gains temporary hit points equal to the total rolled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Seven Matches: Starlight Blessings",
+                            "entries": [
+                                "You and any creatures of your choice within 30 feet are blessed: you gain the benefits of the {@spell Bless|XPHB} spell until you complete a {@variantrule Long Rest|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Eight Matches: Personal Alignment",
+                            "entries": [
+                                "For the next minute, whenever a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can add or subtract one of the dice rolled from the total. Dice that are 6 or higher can be added, and dice that are 5 or lower can be subtracted. Once you have used one of the rolled dice, you cannot use it again."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Nine Matches: Restoration",
+                            "entries": [
+                                "All creatures of your choice that you can see regain hit points equal to the total rolled and any conditions of their choice end on them."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Ten Matches: Will of Fate",
+                            "entries": [
+                                "You immediately cast the {@spell Wish|XPHB} spell (no action required). You can duplicate a spell of up to 9th level without incurring the stress described in the spell."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "Roll an additional {@scaledamage 10d10|7-9|1d10} for each spell slot level above 7."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "miscTags": [
+                "ADV",
+                "HL",
+                "THP",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "foundryActivities": [
+                {
+                    "name": "Align",
+                    "type": "utility",
+                    "activation": {
+                        "type": "Action"
+                    },
+                    "roll": {
+                        "name": "Matching Dice",
+                        "formula": "10d10"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gravitic Flux",
+            "source": "Starlight",
+            "level": 8,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a dense metal sphere worth 1000gp and weighting at least 10lbs",
+                    "cost": 100000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a 30-foot radius sphere of violently-shifting gravity centered on a point you can see within range. Teleportation through the edge of the field is impossible. When the spell is cast, and at the start of each of your turns, choose a flux state from the options below. The effect applies to all creatures within the area.",
+                {
+                    "type": "list",
+                    "style": "list-hang-notitle",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Collapse",
+                            "entries": [
+                                "Creatures in the area must make a Strength saving throw or be pulled 10 feet towards the center and take {@damage 5d10} force damage. On a successful, they take half damage and are not pulled."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Inversion",
+                            "entries": [
+                                "Creatures in the area must make a Dexterity saving throw or be pulled 30 feet into the air and {@condition Restrained|XPHB}. At the end of their next turn they are pulled into the ground as if they had fallen that distance and the condition ends."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Temporal Distortion",
+                            "entries": [
+                                "Creatures in the area must make a Wisdom saving throw. On a failed save, they cannot take {@variantrule Reaction|XPHB|Reactions}, and become {@condition Dazed|Starlight}. The effect lasts until you create a different flux state."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Event Horizon",
+                            "entries": [
+                                "The field becomes challenging to escape. A creature that attempts to leave the field by any means must make a Charisma saving throw or become {@condition Halted|Starlight} until the end of their turn, and the attempt fails. When a creature fails this saving throw, it takes {@damage 3d10} force damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Density",
+                            "entries": [
+                                "The field becomes difficult terrain. When a creature moves within the area, it takes {@damage 2d10} force damage for every 5 feet it moves."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength",
+                "dexterity",
+                "wisdom",
+                "charisma"
+            ],
+            "conditionInflict": [
+                "restrained",
+                "slowed",
+                "halted",
+                "dazed"
+            ],
+            "miscTags": [
+                "DFT"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "foundryActivities": [
+                {
+                    "name": "Collapse",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "5d10"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Inversion",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": false,
+                                    "formula": "0"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Temporal Distortion",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    }
+                },
+                {
+                    "name": "Event Horizon",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "cha"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "3d10"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Density",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "2d10"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Eclipse",
+            "source": "Starlight",
+            "level": 9,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "The air darkens around you. A 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centred on you is filled with Dim Light as you absorb the light from the sky. You gain a flying speed of 60 feet, and become resistant to fire, cold, radiant and necrotic damage.",
+                "All creatures of your choice within the emanation must subtract your spellcasting ability modifier from any damage rolls they make. Additionally, as a {@variantrule Bonus Action}, you can target a creature within the emanation to draw power from them. That creature must make a Constitution saving throw. On a failed save, they take {@damage 4d10} radiant or necrotic damage (your choice) and become {@condition Silenced|Starlight} until the start of your next turn, taking half as much damage only on a successful one. You gain temporary hit points equal to the amount of damage dealt."
+            ],
+            "damageInflict": [
+                "radiant",
+                "necrotic"
+            ],
+            "damageResist": [
+                "radiant",
+                "necrotic",
+                "fire",
+                "cold"
+            ],
+            "conditionInflict": [
+                "silenced"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT",
+                "THP"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
         }
     ],
     "monster": [
