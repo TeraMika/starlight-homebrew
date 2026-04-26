@@ -556,7 +556,42 @@
                         "source": "EFA"
                     }
 				]
-            }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Starfire",
+                    "type": "save",
+					"activation": {
+						"type": "Action"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						}
+					},
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(@item.level)d10"
+								},
+                                "type": "radiant"
+							},
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "(@item.level)d10"
+                                },
+                                "type": "fire"
+                            }
+						]
+					}
+                }
+            ]
         },
         {
             "name": "Starfall",

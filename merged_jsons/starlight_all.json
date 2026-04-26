@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +56,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -69,7 +69,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -80,7 +80,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -95,7 +95,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -107,7 +107,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.25.13.40",
+                "version": "2026.04.26.13.21",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -116,7 +116,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1777124454.5732384
+        "dateLastModified": 1777209701.5699937
     },
     "class": [
         {
@@ -14527,7 +14527,42 @@
                         "source": "EFA"
                     }
                 ]
-            }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Starfire",
+                    "type": "save",
+                    "activation": {
+                        "type": "Action"
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "(@item.level)d10"
+                                },
+                                "type": "radiant"
+                            },
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "(@item.level)d10"
+                                },
+                                "type": "fire"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Starfall",
