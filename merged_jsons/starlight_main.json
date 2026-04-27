@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.26.13.21",
+                "version": "2026.04.27.19.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.26.13.21",
+                "version": "2026.04.27.19.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.26.13.21",
+                "version": "2026.04.27.19.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +56,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.26.13.21",
+                "version": "2026.04.27.19.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -69,7 +69,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.26.13.21",
+                "version": "2026.04.27.19.05",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -77,7 +77,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1777209701.5284736
+        "dateLastModified": 1777316725.6578112
     },
     "class": [
         {
@@ -2371,23 +2371,24 @@
                     "type": "entries",
                     "name": "Cantrips",
                     "entries": [
-                        "At 1st level, you know two cantrips of your choice from the Shaman spell list. You learn an additional cantrip of your choice at 7th level."
+                        "At 1st level, you know two cantrips of your choice from the {@filter Shaman spell list|spells|class=Shaman (Starlight)}. Whenever you gain a Shaman level, you can replace one of your cantrips with another from the Shaman spell list. You learn an additional cantrip of your choice at 7th level as shown in the Cantrips column of the Shaman Features table.",
+                        "Whenever you gain a Shaman level, you can replace one of your cantrips with another from the {@filter Shaman spell list|spells|class=Shaman (Starlight)}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Spell Slots",
                     "entries": [
-                        "The Shaman table above shows how many spell slots you have to cast your {@filter shaman spells|spells|class=Shaman (Starlight)} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a {@variantrule Long Rest}."
+                        "The Shaman table above shows how many spell slots you have to cast your {@filter Shaman spells|spells|class=Shaman (Starlight)} of 1st-level or higher. To cast one, you must expend a slot of the spell's level or higher. You regain all of your expended spell slots when you finish a {@variantrule Long Rest}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Spells Known of 1st Level and Higher",
                     "entries": [
-                        "You know two 1st-level spells of your choice from the shaman spell list.",
+                        "You know two 1st-level spells of your choice from the {@filter Shaman spell list|spells|class=Shaman (Starlight)}.",
                         "You learn an additional Shaman spell of your choice every level, and every other level from level 11 onwards.",
-                        "Additionally, when you gain a level in this class, you can choose one of the Shaman spells you know and replace it with another spell from the Shaman spell list, which must also be a level for which you have spell slots."
+                        "Additionally, when you gain a level in this class, you can choose one of the Shaman spells you know and replace it with another spell from the {@filter Shaman spell list|spells|class=Shaman (Starlight)}, which must also be a level for which you have spell slots."
                     ]
                 },
                 {
@@ -9062,6 +9063,29 @@
             ]
         },
         {
+            "name": "Exchange Arcana",
+            "source": "Starlight",
+            "featureType": [
+                "PRU"
+            ],
+            "entries": [
+                "You can prepare 3 additional Shaman spells beyond the value listed in the table, following the usual rules for doing so.",
+                "When you complete a {@variantrule Long Rest|XPHB}, you can perform a primal rite to exchange knowledge. When you perform this rite, you can replace a number of your prepared spells with an equal number of Shaman spells for which you have spell slots. The number is equal to your spellcasting ability modifier."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "name": "Shaman",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "name": "Small Friends",
             "source": "Starlight",
             "featureType": [
@@ -13615,7 +13639,7 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "hours",
+                        "type": "hour",
                         "amount": 8
                     }
                 }

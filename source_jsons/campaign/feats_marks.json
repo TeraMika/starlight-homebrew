@@ -1,0 +1,723 @@
+{
+    "_meta":
+    {
+        "sources":
+        [
+            {
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
+                "authors":
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "feat": 
+    [
+        {
+            "name": "Mark of the Prophet",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Understanding",
+                    "entries": [
+                        "When you make a Wisdom ({@skill Insight|XPHB}) or Charisma ({@skill Persuasion|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Guiding Hand",
+                    "entries": [
+                        "You always have the {@spell Guidance|XPHB} cantrip prepared.",
+                        "When you cast it on another creature, you can increase the bonus by {@dice 1d4}. This increases to {@dice 2d4} at 5th level, {@dice 3d4} at 11th level, and {@dice 4d4} at 17th level. You can use this enhancement once, and regain the ability to use it when you finish a {@variantrule Short Rest|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of the Prophet Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of the Prophet Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Bless|XPHB}, {@spell Guiding Bolt|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Enhance Ability|XPHB}, {@spell Detect Thoughts|XPHB}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Clairvoyance|XPHB}, {@spell Fly|XPHB}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Aura of Purity|XPHB}, {@spell Freedom of Movement|XPHB}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Starlight Sending|Starlight}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["int", "wis", "cha"]
+                    },
+                    "known": {
+                        "_": [
+                            "guidance|xphb"
+                        ]
+                    },
+                    "expanded": {
+                        "s1": [
+                            "bless|xphb",
+                            "guiding bolt|xphb"
+                        ],
+                        "s2": [
+                            "enhance ability|xphb",
+                            "detect thoughts|xphb"
+                        ],
+                        "s3": [
+                            "clairvoyance|xphb",
+                            "fly|xphb"
+                        ],
+                        "s4": [
+                            "aura of purity|xphb",
+                            "freedom of movement|xphb"
+                        ],
+                        "s5": [
+                            "starlight sending|starlight"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "Mark of the Warden",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Preservation",
+                    "entries": [
+                        "When you make an Intelligence ({@skill Arcana|XPHB}) or Intelligence ({@skill Nature|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Protection",
+                    "entries": [
+                        "You always have the {@spell Divine Shield|Starlight} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "When you cast this spell, you can instead cast it as a {@variantrule Reaction|XPHB} to another creature being hit by an attack. You can do so once, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of the Warden Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of the Warden Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Earth Shock|Starlight}, {@spell Identify|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Calm Emotions|XPHB}, {@spell Aid|XPHB}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Beacon of Hope|XPHB}, {@spell Remove Curse|XPHB}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Consecrate|Starlight}, {@spell Resilient Sphere|XPHB}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Destructive Wave|XPHB}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["int", "wis", "cha"]
+                    },
+                    "prepared": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "divine shield|starlight"
+                                ]
+                            }
+                        }
+                    },
+                    "expanded": {
+                        "s1": [
+                            "earth shock|starlight",
+                            "identify|xphb"
+                        ],
+                        "s2": [
+                            "calm emotions|xphb",
+                            "aid|xphb"
+                        ],
+                        "s3": [
+                            "beacon of hope|xphb",
+                            "remove curse|xphb"
+                        ],
+                        "s4": [
+                            "consecrate|starlight",
+                            "resilient sphere|xphb"
+                        ],
+                        "s5": [
+                            "destructive wave|xphb"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "Mark of the Harbinger",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Warning",
+                    "entries": [
+                        "When you make a Charisma ({@skill Intimidation|XPHB}) or Charisma ({@skill Deception|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Herald of Change",
+                    "entries": [
+                        "When you reach character level 3, you always have the {@spell Vortex Warp|XPHB} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "When you cast this spell, you can target two creatures instead of one, and the additional target can be yourself. You can do so once, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of the Harbinger Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of the Harbinger Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Bias Fate|Starlight}, {@spell Dissonant Whispers|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Nystul's Magic Aura|XPHB}, {@spell Mind Spike|XPHB}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Fear|XPHB}, {@spell Vitality Hex|Starlight}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Blight|XPHB}, {@spell Phantasmal Killer|XPHB}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Primordial Spire|Starlight}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["int", "wis", "cha"]
+                    },
+                    "prepared": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "vortex warp|scc"
+                                ]
+                            }
+                        }
+                    },
+                    "expanded": {
+                        "s1": [
+                            "bias fate|starlight",
+                            "dissonant whispers|xphb"
+                        ],
+                        "s2": [
+                            "nystul's magic aura|xphb",
+                            "mind spike|xphb"
+                        ],
+                        "s3": [
+                            "fear|xphb",
+                            "vitality hex|starlight"
+                        ],
+                        "s4": [
+                            "blight|xphb",
+                            "phantasmal killer|xphb"
+                        ],
+                        "s5": [
+                            "primordial spire|starlight"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "Mark of Glass",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Fracture",
+                    "entries": [
+                        "When you make a Charisma ({@skill Deception|XPHB}) or Dexterity ({@skill Stealth|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rewrite",
+                    "entries": [
+                        "You always have the {@spell Stellar Omen|Starlight} and {@spell Silvery Barbs|XPHB} spells prepared.",
+                        "When a creature within 30 feet of you targets you or another creature within 30 feet of you with an attack or spell, you can use your {@variantrule Reaction|XPHB} to force them to target another creature in range instead. You cannot redirect a {@variantrule Critical Hit|XPHB}. Once you use this feature, you must finish a {@variantrule Short Rest|XPHB} to use it again."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Glass Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of Glass Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Disguise Self|XPHB}, {@spell Hellish Rebuke|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Mirror Image|XPHB}, {@spell Phantasmal Force|XPHB}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Major Image|XPHB}, {@spell Bestow Curse|XPHB}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Greater Invisibility|XPHB}, {@spell Starlight's Shadow|Starlight}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Mislead|XPHB}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["int", "wis", "cha"]
+                    },
+                    "known": {
+                        "_": [
+                            "stellar omen|starlight"
+                        ]
+                    },
+                    "prepared": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "silvery barbs|scc"
+                                ]
+                            }
+                        }
+                    },
+                    "expanded": {
+                        "s1": [
+                            "disguise self|xphb",
+                            "hellish rebuke|xphb"
+                        ],
+                        "s2": [
+                            "mirror image|xphb",
+                            "phantasmal force|xphb"
+                        ],
+                        "s3": [
+                            "major image|xphb",
+                            "bestow curse|xphb"
+                        ],
+                        "s4": [
+                            "greater invisibility|xphb",
+                            "starlight's shadow|starlight"
+                        ],
+                        "s5": [
+                            "mislead|xphb"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "Mark of Elune",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Unity",
+                    "entries": [
+                        "When you make a Wisdom ({@skill Insight|XPHB}) or Charisma ({@skill Persuasion|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Holy Words",
+                    "entries": [
+                        "You always have the {@spell Healing Word|XPHB} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "When you cast this spell, you can either target an additional creature, or cause one creature within 60 feet to become {@condition Charmed|XPHB} by you until the end of your next turn. You can do so once, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of Elune Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of Elune Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Cure Wounds|XPHB}, {@spell Faerie Fire|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Lesser Restoration|XPHB}, {@spell Moonbeam|XPHB}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Starfire|Starlight}, {@spell Beacon of Hope|XPHB}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Fount of Moonlight|Starlight}, {@spell Aura of Life|XPHB}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Greater Restoration|XPHB}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["int", "wis", "cha"]
+                    },
+                    "prepared": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "healing word|xphb"
+                                ]
+                            }
+                        }
+                    },
+                    "expanded": {
+                        "s1": [
+                            "cure wounds|xphb",
+                            "faerie fire|xphb"
+                        ],
+                        "s2": [
+                            "lesser restoration|xphb",
+                            "moonbeam|xphb"
+                        ],
+                        "s3": [
+                            "starfire|starlight",
+                            "beacon of hope|xphb"
+                        ],
+                        "s4": [
+                            "fount of moonlight|starlight",
+                            "aura of life|xphb"
+                        ],
+                        "s5": [
+                            "greater restoration|xphb"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "1",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        },
+        {
+            "name": "Mark of the Rifts",
+            "source": "Starlight",
+            "page": 0,
+            "category": "D",
+            "prerequisite": [
+                {
+                    "exclusiveFeatCategory": ["D"]
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Instability",
+                    "entries": [
+                        "When you make an Intelligence ({@skill Arcana|XPHB}) or Intelligence ({@skill History|XPHB}) check, you can roll {@dice 1d4} and add the number rolled to the ability check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Surge",
+                    "entries": [
+                        "You always have the {@spell Arcane Butterflies|Starlight} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "When you cast a spell using a spell slot of 1st level or higher, you can gain {@variantrule Advantage|XPHB} on the spell attack roll or increase its save DC by 1, and then trigger a {@table Wild Magic Surge|XPHB}. You can do this a number of times equal to your proficiency bonus per {@variantrule Long Rest|XPHB}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells of the Mark",
+                    "entries": [
+                        "If you have the Spellcasting or Pact Magic class feature, the spells on the Mark of the Rifts Spells table are added to that feature's spell list.",
+                        {
+                            "type": "table",
+                            "caption": "Mark of the Rifts Spells",
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "rows": [
+                                [
+                                    "1",
+                                    "{@spell Chromatic Orb|XPHB}, {@spell Detect Magic|XPHB}"
+                                ],
+                                [
+                                    "2",
+                                    "{@spell Starlike Skim|Starlight}, {@spell Primordial Eruption|Starlight}"
+                                ],
+                                [
+                                    "3",
+                                    "{@spell Counterspell|XPHB}, {@spell Blink|XPHB}"
+                                ],
+                                [
+                                    "4",
+                                    "{@spell Dimension Door|XPHB}, {@spell Confusion|XPHB}"
+                                ],
+                                [
+                                    "5",
+                                    "{@spell Telekinesis|XPHB}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": ["wis", "cha", "int"]
+                    },
+                    "prepared": {
+                        "_": {
+                            "daily": {
+                                "1": [
+                                    "arcane butterflies|xphb"
+                                ]
+                            }
+                        }
+                    },
+                    "expanded": {
+                        "s1": [
+                            "chromatic orb|xphb",
+                            "detect magic|xphb"
+                        ],
+                        "s2": [
+                            "starlike skim|starlight",
+                            "primordial eruption|starlight"
+                        ],
+                        "s3": [
+                            "counterspell|xphb",
+                            "blink|xphb"
+                        ],
+                        "s4": [
+                            "dimension door|xphb",
+                            "confusion|xphb"
+                        ],
+                        "s5": [
+                            "telekinesis|xphb"
+                        ]
+                    }
+                }
+            ],
+            "foundrySystem": {
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			}
+        }
+    ]
+}
