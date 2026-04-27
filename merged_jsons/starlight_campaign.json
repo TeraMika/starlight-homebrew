@@ -2,6 +2,18 @@
     "_meta": {
         "sources": [
             {
+                "json": "Starlight",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2026.04.27.21.01",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
                 "json": "SToD",
                 "abbreviation": "SToD",
                 "full": "Shifting Tides of Delamir",
@@ -9,7 +21,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.10",
+                "version": "2026.04.27.21.01",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -24,7 +36,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.10",
+                "version": "2026.04.27.21.01",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,13 +48,13 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.10",
+                "version": "2026.04.27.21.01",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1777317006.9667835
+        "dateLastModified": 1777323670.5868816
     },
     "feat": [
         {
@@ -223,7 +235,7 @@
                                 ],
                                 [
                                     "4",
-                                    "{@spell Consecrate|Starlight}, {@spell Resilient Sphere|XPHB}"
+                                    "{@spell Consecrate|Starlight}, {@spell Otiluke's Resilient Sphere|XPHB}"
                                 ],
                                 [
                                     "5",
@@ -267,7 +279,7 @@
                         ],
                         "s4": [
                             "consecrate|starlight",
-                            "resilient sphere|xphb"
+                            "otiluke's resilient sphere|xphb"
                         ],
                         "s5": [
                             "destructive wave|xphb"
@@ -432,7 +444,7 @@
                     "type": "entries",
                     "name": "Rewrite",
                     "entries": [
-                        "You always have the {@spell Stellar Omen|Starlight} and {@spell Silvery Barbs|XPHB} spells prepared.",
+                        "You always have the {@spell Stellar Omen|Starlight} and {@spell Silvery Barbs|SCC} spells prepared.",
                         "When a creature within 30 feet of you targets you or another creature within 30 feet of you with an attack or spell, you can use your {@variantrule Reaction|XPHB} to force them to target another creature in range instead. You cannot redirect a {@variantrule Critical Hit|XPHB}. Once you use this feature, you must finish a {@variantrule Short Rest|XPHB} to use it again."
                     ]
                 },
@@ -594,7 +606,7 @@
                                 ],
                                 [
                                     "4",
-                                    "{@spell Fount of Moonlight|Starlight}, {@spell Aura of Life|XPHB}"
+                                    "{@spell Fount of Moonlight|XPHB}, {@spell Aura of Life|XPHB}"
                                 ],
                                 [
                                     "5",
@@ -637,7 +649,7 @@
                             "beacon of hope|xphb"
                         ],
                         "s4": [
-                            "fount of moonlight|starlight",
+                            "fount of moonlight|xphb",
                             "aura of life|xphb"
                         ],
                         "s5": [
@@ -821,18 +833,24 @@
                 "fromClassList": [
                     {
                         "name": "Cleric",
-                        "source": "PHB"
+                        "source": "XPHB"
                     },
                     {
                         "name": "Druid",
-                        "source": "PHB"
+                        "source": "XPHB"
                     },
                     {
                         "name": "Artificer",
-                        "source": "TCE"
+                        "source": "EFA"
                     }
                 ]
-            }
+            },
+            "feats": [
+                {
+                    "name": "Mark of the Prophet",
+                    "source": "Starlight"
+                }
+            ]
         }
     ],
     "item": [
