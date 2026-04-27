@@ -9,7 +9,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -24,7 +24,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,13 +36,13 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1777316725.5271227
+        "dateLastModified": 1777317006.9667835
     },
     "feat": [
         {
@@ -70,7 +70,7 @@
                     "type": "entries",
                     "name": "Guiding Hand",
                     "entries": [
-                        "You always have the {@spell Guidance|XPHB} cantrip prepared.",
+                        "You always have the {@spell Guidance|Starlight} cantrip prepared.",
                         "When you cast it on another creature, you can increase the bonus by {@dice 1d4}. This increases to {@dice 2d4} at 5th level, {@dice 3d4} at 11th level, and {@dice 4d4} at 17th level. You can use this enhancement once, and regain the ability to use it when you finish a {@variantrule Short Rest|XPHB}."
                     ]
                 },
@@ -774,6 +774,62 @@
                     {
                         "period": "lr",
                         "type": "recoverAll"
+                    }
+                ]
+            }
+        }
+    ],
+    "spell": [
+        {
+            "name": "Guidance",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You touch one willing creature. Once before the spell ends, the target can roll a {@dice d4} and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
                     }
                 ]
             }

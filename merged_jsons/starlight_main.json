@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +56,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -69,7 +69,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.19.05",
+                "version": "2026.04.27.19.10",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -77,7 +77,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1777316725.6578112
+        "dateLastModified": 1777317006.9842956
     },
     "class": [
         {
