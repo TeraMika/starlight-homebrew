@@ -9,7 +9,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -21,7 +21,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,25 +36,13 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
-                "url": "https://github.com/TeraMika/starlight-homebrew",
-                "targetSchema": "1.0"
-            },
-            {
-                "json": "Starlight",
-                "abbreviation": "Starlight",
-                "full": "Starlight",
-                "color": "dac4ff",
-                "authors": [
-                    "Starlight"
-                ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1777323670.5868816
+        "dateLastModified": 1777658917.5725524
     },
     "feat": [
         {
@@ -1603,15 +1591,14 @@
     "race": [
         {
             "name": "Riftborn Lacertal",
-            "source": "Starlight",
-            "lineage": "VRGR",
+            "source": "StoD",
             "skillProficiencies": [
                 {
                     "perception": true
                 }
             ],
             "creatureTypes": [
-                "humanoid"
+                "aberration"
             ],
             "size": [
                 "M",
@@ -1690,8 +1677,10 @@
         },
         {
             "name": "Tempestborn",
-            "source": "Starlight",
-            "lineage": "VRGR",
+            "source": "StoD",
+            "creatureTypes": [
+                "humanoid"
+            ],
             "size": [
                 "S",
                 "M"
@@ -1767,8 +1756,11 @@
         },
         {
             "name": "Elf (Profane)",
-            "source": "Starlight",
+            "source": "StoD",
             "lineage": "VRGR",
+            "creatureTypes": [
+                "fiend"
+            ],
             "size": [
                 "S",
                 "M"
@@ -1880,21 +1872,23 @@
             ]
         },
         {
-            "name": "Fairy",
-            "source": "Starlight",
-            "lineage": "VRGR",
+            "name": "Tiefling (Lyceran)",
+            "source": "StoD",
             "creatureTypes": [
-                "fey"
+                "humanoid"
             ],
             "size": [
-                "T"
+                "S",
+                "M"
             ],
-            "speed": {
-                "walk": 30,
-                "fly": true
-            },
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "necrotic"
+            ],
             "additionalSpells": [
                 {
+                    "name": "Lyceran",
                     "ability": {
                         "choose": [
                             "int",
@@ -1904,84 +1898,96 @@
                     },
                     "known": {
                         "1": [
-                            "Pixie Sparks|Starlight"
+                            "Primordial Spark|Starlight#c",
+                            "|xphb#c"
                         ]
                     },
                     "innate": {
                         "3": {
                             "daily": {
                                 "1": [
-                                    "faerie fire|XPHB"
+                                    "wrathful smite|xphb"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "wither and bloom|scc"
                                 ]
                             }
                         }
                     }
                 }
             ],
+            "sizeEntry": {
+                "type": "item",
+                "name": "Size:",
+                "entries": [
+                    "Medium (about 4-7 feet tall) or Small (about 3-4 feet tall), chosen when you select this species"
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You have {@sense Darkvision|XPHB} with a range of 60 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Legacy",
+                    "entries": [
+                        "You are the recipient, by whatever means, of the legacy of the Queen of the Abyss, Lycera. This grants you supernatural abilities as detailed below.",
+                        "When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you gain this legacy).",
+                        {
+                            "type": "table",
+                            "caption": "Fiendish Legacies",
+                            "colLabels": [
+                                "Legacy",
+                                "Level 1",
+                                "Level 3",
+                                "Level 5"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-6",
+                                "col-2",
+                                "col-2"
+                            ],
+                            "rows": [
+                                [
+                                    "Lyceran",
+                                    "You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Primordial Spark|Starlight} cantrip.",
+                                    "{@spell Wrathful Smite|XPHB}",
+                                    "{@spell Wither and Bloom|SCC}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Otherworldly Presence",
+                    "entries": [
+                        "You know the {@spell Thaumaturgy|XPHB} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Abyssal Legacy Trait."
+                    ]
+                }
+            ],
+            "hasFluff": true,
             "fluff": {
                 "entries": [
                     {
                         "type": "entries",
                         "name": "Origin",
                         "entries": [
-                            "Faeries aren't common in the lands of Delamir, though they're plentiful enough in the Feywilds. They have a propensity for discovery and adventure, looking for the joy and entertainment in things big and small."
+                            "It is rare to a see someone with a legacy such as this. Lycera does not often make her presence known in this way, and even being born in her very domain would not be sufficient. A period of sufficient exposure could leave one corrupted in such a way that the body takes on the traits listed here.",
+                            "One such example would be Adorea, once-Anathema. Even Imprisoned, so many years spent in the home base of Lycera's corruption had a, maybe irreversible, effect on her physiology. Her mother is the same way, though she kept it a secret for a longer time."
                         ]
                     }
                 ]
-            },
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Fey."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fey Ancestry",
-                    "entries": [
-                        "You have advantage on saving throws against being {@condition Charmed|XPHB} and cannot be put to sleep by magical means."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Flight",
-                    "entries": [
-                        "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Quick and Nimble",
-                    "entries": [
-                        "Your speed and size make you difficult to hit. You gain a +1 bonus to your AC while you are airborne."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Tiny",
-                    "entries": [
-                        "Your size is Tiny, making you easy to move. You have {@variantrule Disadvantage|XPHB} on Strength saving throws and Strength-based ability checks."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fairy Magic",
-                    "entries": [
-                        "You know the {@spell Pixie Sparks|Starlight} cantrip.",
-                        "Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Once you cast {@spell faerie fire} with this trait, you can't cast it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
-                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this species)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read, and write Common, Sylvan, and one other language that you and your DM agree is appropriate for your character."
-                    ]
-                }
-            ]
+            }
         }
     ]
 }

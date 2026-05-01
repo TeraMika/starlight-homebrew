@@ -1,12 +1,15 @@
 {
-    "_meta": {
-        "sources": [
+    "_meta": 
+    {
+        "sources": 
+        [
             {
-                "json": "Starlight",
-                "abbreviation": "Starlight",
-                "full": "Starlight",
-                "color": "dac4ff",
-                "authors": [
+                "json": "SToD",
+                "abbreviation": "SToD",
+                "full": "Shifting Tides of Delamir",
+                "color": "783ddb",
+                "authors": 
+                [
                     "Starlight"
                 ],
                 "version": "1.0",
@@ -18,8 +21,7 @@
     "race": [
         {
             "name": "Riftborn Lacertal",
-            "source": "Starlight",
-            "lineage": "VRGR",
+            "source": "StoD",
             "skillProficiencies": 
             [
                 {
@@ -28,7 +30,7 @@
             ],
             "creatureTypes": 
             [
-                "humanoid"
+                "aberration"
             ],
             "size": 
             [
@@ -121,332 +123,344 @@
             ]
         },
         {
-        "name": "Tempestborn",
-        "source": "Starlight",
-        "lineage": "VRGR",
-        "size": 
-        [
-            "S",
-            "M"
-        ],
-        "speed": 30,
-        "darkvision": 60,
-        "resist": 
-        [
-            "lightning",
-            "thunder"
-        ],
-        "additionalSpells": 
-        [
-            {
-                "ability": 
-                {
-                    "choose": 
-                    [
-                        "int",
-                        "wis",
-                        "cha"
-                    ]
-                },
-                "known": 
-                {
-                    "1": 
-                    [
-                        "light#c"
-                    ]
-                }
-            }
-        ],
-        "entries": [
-            {
-                "type": "entries",
-                "name": "Tempestborn Resistance",
-                "entries": 
-                [
-                    "You have resistance to lightning damage and thunder damage."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Darkvision",
-                "entries": 
-                [
-                    "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Healing Hands",
-                "entries": 
-                [
-                    "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Light Bearer",
-                "entries": 
-                [
-                    "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Fulgur's Fury",
-                "entries": 
-                [
-                    "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
-                    "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
-                    "Once you use this trait, you can't use it again until you finish a long rest."
-                ]
-            }
-        ],
-        "hasFluff": true,
-        "languageProficiencies": 
-        [
-            {
-                "common": true,
-                "anyStandard": 1
-            }
-        ]
-        },
-        {
-        "name": "Elf (Profane)",
-        "source": "Starlight",
-        "lineage": "VRGR",
-        "size":
-        [
-            "S",
-            "M"
-        ],
-        "speed": 30,
-        "darkvision": 60,
-        "resist":
-        [
-            "fire",
-            "poison"
-        ],
-        "additionalSpells": 
-        [
-            {
-                "innate": {
-                    "3": {
-                        "daily": {
-                            "1": [
-                                "hellish rebuke#2"
-                            ]
-                        }
-                    }
-                },
-                "ability":                     
-                {
-                    "choose": 
-                    [
-                        "int", "wis", "cha"
-                    ]
-                },
-                "known": {
-                    "1": [
-                        "thaumaturgy#c"
-                    ]
-                }
-            }
-        ],
-        "fluff": {
-            "entries":
+            "name": "Tempestborn",
+            "source": "StoD",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": 
+            [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": 
+            [
+                "lightning",
+                "thunder"
+            ],
+            "additionalSpells": 
             [
                 {
+                    "ability": 
+                    {
+                        "choose": 
+                        [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": 
+                    {
+                        "1": 
+                        [
+                            "light#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
                     "type": "entries",
-                    "name": "Origin",
-                    "entries":
+                    "name": "Tempestborn Resistance",
+                    "entries": 
                     [
-                        "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
-                        "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
-                        "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
+                        "You have resistance to lightning damage and thunder damage."
                     ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": 
+                    [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Healing Hands",
+                    "entries": 
+                    [
+                        "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Bearer",
+                    "entries": 
+                    [
+                        "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fulgur's Fury",
+                    "entries": 
+                    [
+                        "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
+                        "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+                        "Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "languageProficiencies": 
+            [
+                {
+                    "common": true,
+                    "anyStandard": 1
                 }
             ]
         },
-        "entries": 
-        [
-            {
-                "name": "Age",
-                "type": "entries",
-                "entries": [
-                    "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Size",
-                "entries": [
-                    "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Darkvision",
-                "entries":
-                [
-                    "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Abyssal Heritage",
-                "entries": 
-                [
-                    "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Abyssal Magics",
-                "entries":
-                [
-                    "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."   
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Keen Senses",
-                "entries":
-                [
-                    "You have Proficiency in the {@skill Perception} skill."
-                ]
-            },
-            {
-                "name": "Trance",
-                "entries": [
-                    "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-                    "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
-                ],
-                "type": "entries"
-            }
-        ],
-        "hasFluff": true,
-        "hasFluffImages": true,
-        "languageProficiencies": 
-        [
-            {
-                "common": true,
-                "abyssal": true,
-                "anyStandard": 1
-            }
-        ]
-    },
-    {
-        "name": "Fairy",
-        "source": "Starlight",
-        "lineage": "VRGR",
-        "creatureTypes": 
-        [
-            "fey"
-        ],
-        "size": 
-        [
-            "T"
-        ],
-        "speed": 
         {
-            "walk": 30,
-            "fly": true
-        },
-        "additionalSpells": 
-        [
-            {
-                "ability": 
-                {
-                    "choose": 
-                    [
-                        "int",
-                        "wis",
-                        "cha"
-                    ]
-                },
-                "known": {
-                    "1": [
-                        "Pixie Sparks|Starlight"
-                    ]
-                },
-                "innate": {
-                    "3": {
-                        "daily": {
-                            "1": [
-                                "faerie fire|XPHB"
-                            ]
-                        }
-                    }
-                }
-            }
-        ],
-        "fluff": {
-            "entries":
+            "name": "Elf (Profane)",
+            "source": "StoD",
+            "lineage": "VRGR",
+            "creatureTypes": [
+                "fiend"
+            ],
+            "size":
+            [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist":
+            [
+                "fire",
+                "poison"
+            ],
+            "additionalSpells": 
             [
                 {
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "hellish rebuke#2"
+                                ]
+                            }
+                        }
+                    },
+                    "ability":                     
+                    {
+                        "choose": 
+                        [
+                            "int", "wis", "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "thaumaturgy#c"
+                        ]
+                    }
+                }
+            ],
+            "fluff": {
+                "entries":
+                [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries":
+                        [
+                            "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
+                            "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
+                            "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
+                        ]
+                    }
+                ]
+            },
+            "entries": 
+            [
+                {
+                    "name": "Age",
                     "type": "entries",
-                    "name": "Origin",
+                    "entries": [
+                        "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
                     "entries":
                     [
-                        "Faeries aren't common in the lands of Delamir, though they're plentiful enough in the Feywilds. They have a propensity for discovery and adventure, looking for the joy and entertainment in things big and small."
+                        "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
                     ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Heritage",
+                    "entries": 
+                    [
+                        "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Magics",
+                    "entries":
+                    [
+                        "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."   
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "entries":
+                    [
+                        "You have Proficiency in the {@skill Perception} skill."
+                    ]
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+                        "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "languageProficiencies": 
+            [
+                {
+                    "common": true,
+                    "abyssal": true,
+                    "anyStandard": 1
                 }
             ]
         },
-        "entries": [
-            {
-                "type": "entries",
-                "name": "Creature Type",
+        {
+            "name": "Tiefling (Lyceran)",
+            "source": "StoD",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "necrotic"
+            ],
+            "additionalSpells": [
+                {
+                    "name": "Lyceran",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "Primordial Spark|Starlight#c",
+                            "|xphb#c"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "wrathful smite|xphb"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "wither and bloom|scc"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "sizeEntry": {
+                "type": "item",
+                "name": "Size:",
                 "entries": [
-                    "You are a Fey."
+                    "Medium (about 4-7 feet tall) or Small (about 3-4 feet tall), chosen when you select this species"
                 ]
             },
-            {
-                "type": "entries",
-                "name": "Fey Ancestry",
-                "entries": [
-                    "You have advantage on saving throws against being {@condition Charmed|XPHB} and cannot be put to sleep by magical means."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Flight",
-                "entries": [
-                    "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Quick and Nimble",
-                "entries": [
-                    "Your speed and size make you difficult to hit. You gain a +1 bonus to your AC while you are airborne."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Tiny",
-                "entries": [
-                    "Your size is Tiny, making you easy to move. You have {@variantrule Disadvantage|XPHB} on Strength saving throws and Strength-based ability checks."
-                ]
-            },
-
-            {
-                "type": "entries",
-                "name": "Fairy Magic",
-                "entries": [
-                    "You know the {@spell Pixie Sparks|Starlight} cantrip.",
-                    "Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Once you cast {@spell faerie fire} with this trait, you can't cast it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
-                    "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this species)."
-                ]
-            },
-            {
-                "type": "entries",
-                "name": "Languages",
-                "entries": [
-                    "You can speak, read, and write Common, Sylvan, and one other language that you and your DM agree is appropriate for your character."
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You have {@sense Darkvision|XPHB} with a range of 60 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Legacy",
+                    "entries": [
+                        "You are the recipient, by whatever means, of the legacy of the Queen of the Abyss, Lycera. This grants you supernatural abilities as detailed below.",
+                        "When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you gain this legacy).",
+                        {
+                            "type": "table",
+                            "caption": "Fiendish Legacies",
+                            "colLabels": [
+                                "Legacy",
+                                "Level 1",
+                                "Level 3",
+                                "Level 5"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-6",
+                                "col-2",
+                                "col-2"
+                            ],
+                            "rows": [
+                                [
+                                    "Lyceran",
+                                    "You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Primordial Spark|Starlight} cantrip.",
+                                    "{@spell Wrathful Smite|XPHB}",
+                                    "{@spell Wither and Bloom|SCC}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Otherworldly Presence",
+                    "entries": [
+                        "You know the {@spell Thaumaturgy|XPHB} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Abyssal Legacy Trait."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "fluff": {
+                "entries":
+                [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries":
+                        [
+                            "It is rare to a see someone with a legacy such as this. Lycera does not often make her presence known in this way, and even being born in her very domain would not be sufficient. A period of sufficient exposure could leave one corrupted in such a way that the body takes on the traits listed here.",
+                            "One such example would be Adorea, once-Anathema. Even Imprisoned, so many years spent in the home base of Lycera's corruption had a, maybe irreversible, effect on her physiology. Her mother is the same way, though she kept it a secret for a longer time."
+                        ]
+                    }
                 ]
             }
-        ]
-    }
+        }
     ]
 }

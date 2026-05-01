@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,19 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -56,7 +68,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -69,7 +81,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.04.27.21.01",
+                "version": "2026.05.01.18.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -77,7 +89,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1777323670.687811
+        "dateLastModified": 1777658917.6860042
     },
     "class": [
         {
@@ -16085,5 +16097,116 @@
             ]
         }
     ],
-    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json"
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "race": [
+        {
+            "name": "Fairy",
+            "source": "Starlight",
+            "creatureTypes": [
+                "fey"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "size": [
+                "T"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": true
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "Pixie Sparks|Starlight"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "faerie fire|XPHB"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "Faeries aren't common in most lands, though they're plentiful enough in the Faewilds. They have a propensity for discovery and adventure, looking for the joy and entertainment in things big and small."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Creature Type",
+                    "entries": [
+                        "You are a Fey."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have advantage on saving throws against being {@condition Charmed|XPHB} and cannot be put to sleep by magical means."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Flight",
+                    "entries": [
+                        "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Quick and Nimble",
+                    "entries": [
+                        "Your speed and size make you difficult to hit. You gain a +1 bonus to your AC while you are airborne."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Tiny",
+                    "entries": [
+                        "Your size is Tiny, making you easy to move. You have {@variantrule Disadvantage|XPHB} on Strength saving throws and Strength-based ability checks."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fairy Magic",
+                    "entries": [
+                        "You know the {@spell Pixie Sparks|Starlight} cantrip.",
+                        "Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Once you cast {@spell faerie fire} with this trait, you can't cast it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common, Sylvan, and one other language that you and your DM agree is appropriate for your character."
+                    ]
+                }
+            ]
+        }
+    ]
 }
