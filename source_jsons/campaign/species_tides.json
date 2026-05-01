@@ -4,9 +4,9 @@
         "sources": 
         [
             {
-                "json": "SToD",
-                "abbreviation": "SToD",
-                "full": "Shifting Tides of Delamir",
+                "json": "ST",
+                "abbreviation": "ST",
+                "full": "Shifting Tides",
                 "color": "783ddb",
                 "authors": 
                 [
@@ -21,7 +21,7 @@
     "race": [
         {
             "name": "Riftborn Lacertal",
-            "source": "StoD",
+            "source": "ST",
             "skillProficiencies": 
             [
                 {
@@ -124,7 +124,7 @@
         },
         {
             "name": "Tempestborn",
-            "source": "StoD",
+            "source": "ST",
             "creatureTypes": [
                 "humanoid"
             ],
@@ -216,7 +216,7 @@
         },
         {
             "name": "Elf (Profane)",
-            "source": "StoD",
+            "source": "ST",
             "lineage": "VRGR",
             "creatureTypes": [
                 "fiend"
@@ -344,7 +344,7 @@
         },
         {
             "name": "Tiefling (Lyceran)",
-            "source": "StoD",
+            "source": "ST",
             "creatureTypes": [
                 "humanoid"
             ],

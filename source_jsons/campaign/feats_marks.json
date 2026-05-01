@@ -4,13 +4,13 @@
         "sources":
         [
             {
-                "json": "Starlight",
-                "abbreviation": "SToD",
-                "full": "Shifting Tides of Delamir",
+                "json": "ST",
+                "abbreviation": "ST",
+                "full": "Shifting Tides",
                 "color": "783ddb",
                 "authors":
                 [
-                    "Starlight"
+                    "ST"
                 ],
                 "version": "1.0",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
@@ -24,7 +24,7 @@
     [
         {
             "name": "Mark of the Prophet",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -45,7 +45,7 @@
                     "type": "entries",
                     "name": "Guiding Hand",
                     "entries": [
-                        "You always have the {@spell Guidance|Starlight} cantrip prepared.",
+                        "You always have the {@spell Guidance|ST} cantrip prepared.",
                         "When you cast it on another creature, you can increase the bonus by {@dice 1d4}. This increases to {@dice 2d4} at 5th level, {@dice 3d4} at 11th level, and {@dice 4d4} at 17th level. You can use this enhancement once, and regain the ability to use it when you finish a {@variantrule Short Rest|XPHB}."
                     ]
                 },
@@ -84,7 +84,7 @@
                                 ],
                                 [
                                     "5",
-                                    "{@spell Starlight Sending|Starlight}"
+                                    "{@spell ST Sending|ST}"
                                 ]
                             ]
                         }
@@ -119,7 +119,7 @@
                             "freedom of movement|xphb"
                         ],
                         "s5": [
-                            "starlight sending|starlight"
+                            "ST sending|ST"
                         ]
                     }
                 }
@@ -136,7 +136,7 @@
         },
         {
             "name": "Mark of the Warden",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -157,7 +157,7 @@
                     "type": "entries",
                     "name": "Protection",
                     "entries": [
-                        "You always have the {@spell Divine Shield|Starlight} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You always have the {@spell Divine Shield|ST} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
                         "When you cast this spell, you can instead cast it as a {@variantrule Reaction|XPHB} to another creature being hit by an attack. You can do so once, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}."
                     ]
                 },
@@ -180,7 +180,7 @@
                             "rows": [
                                 [
                                     "1",
-                                    "{@spell Earth Shock|Starlight}, {@spell Identify|XPHB}"
+                                    "{@spell Earth Shock|ST}, {@spell Identify|XPHB}"
                                 ],
                                 [
                                     "2",
@@ -192,7 +192,7 @@
                                 ],
                                 [
                                     "4",
-                                    "{@spell Consecrate|Starlight}, {@spell Otiluke's Resilient Sphere|XPHB}"
+                                    "{@spell Consecrate|ST}, {@spell Otiluke's Resilient Sphere|XPHB}"
                                 ],
                                 [
                                     "5",
@@ -212,14 +212,14 @@
                         "_": {
                             "daily": {
                                 "1": [
-                                    "divine shield|starlight"
+                                    "divine shield|ST"
                                 ]
                             }
                         }
                     },
                     "expanded": {
                         "s1": [
-                            "earth shock|starlight",
+                            "earth shock|ST",
                             "identify|xphb"
                         ],
                         "s2": [
@@ -231,7 +231,7 @@
                             "remove curse|xphb"
                         ],
                         "s4": [
-                            "consecrate|starlight",
+                            "consecrate|ST",
                             "otiluke's resilient sphere|xphb"
                         ],
                         "s5": [
@@ -252,7 +252,7 @@
         },
         {
             "name": "Mark of the Harbinger",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -296,7 +296,7 @@
                             "rows": [
                                 [
                                     "1",
-                                    "{@spell Bias Fate|Starlight}, {@spell Dissonant Whispers|XPHB}"
+                                    "{@spell Bias Fate|ST}, {@spell Dissonant Whispers|XPHB}"
                                 ],
                                 [
                                     "2",
@@ -304,7 +304,7 @@
                                 ],
                                 [
                                     "3",
-                                    "{@spell Fear|XPHB}, {@spell Vitality Hex|Starlight}"
+                                    "{@spell Fear|XPHB}, {@spell Vitality Hex|ST}"
                                 ],
                                 [
                                     "4",
@@ -312,7 +312,7 @@
                                 ],
                                 [
                                     "5",
-                                    "{@spell Primordial Spire|Starlight}"
+                                    "{@spell Primordial Spire|ST}"
                                 ]
                             ]
                         }
@@ -335,7 +335,7 @@
                     },
                     "expanded": {
                         "s1": [
-                            "bias fate|starlight",
+                            "bias fate|ST",
                             "dissonant whispers|xphb"
                         ],
                         "s2": [
@@ -344,14 +344,14 @@
                         ],
                         "s3": [
                             "fear|xphb",
-                            "vitality hex|starlight"
+                            "vitality hex|ST"
                         ],
                         "s4": [
                             "blight|xphb",
                             "phantasmal killer|xphb"
                         ],
                         "s5": [
-                            "primordial spire|starlight"
+                            "primordial spire|ST"
                         ]
                     }
                 }
@@ -368,7 +368,7 @@
         },
         {
             "name": "Mark of Glass",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -389,7 +389,7 @@
                     "type": "entries",
                     "name": "Rewrite",
                     "entries": [
-                        "You always have the {@spell Stellar Omen|Starlight} and {@spell Silvery Barbs|SCC} spells prepared.",
+                        "You always have the {@spell Stellar Omen|ST} and {@spell Silvery Barbs|SCC} spells prepared.",
                         "When a creature within 30 feet of you targets you or another creature within 30 feet of you with an attack or spell, you can use your {@variantrule Reaction|XPHB} to force them to target another creature in range instead. You cannot redirect a {@variantrule Critical Hit|XPHB}. Once you use this feature, you must finish a {@variantrule Short Rest|XPHB} to use it again."
                     ]
                 },
@@ -424,7 +424,7 @@
                                 ],
                                 [
                                     "4",
-                                    "{@spell Backlash|FRHoF}, {@spell Starlight's Shadow|Starlight}"
+                                    "{@spell Backlash|FRHoF}, {@spell ST's Shadow|ST}"
                                 ],
                                 [
                                     "5",
@@ -442,7 +442,7 @@
                     },
                     "known": {
                         "_": [
-                            "stellar omen|starlight"
+                            "stellar omen|ST"
                         ]
                     },
                     "prepared": {
@@ -469,7 +469,7 @@
                         ],
                         "s4": [
                             "greater invisibility|xphb",
-                            "starlight's shadow|starlight"
+                            "ST's shadow|ST"
                         ],
                         "s5": [
                             "mislead|xphb"
@@ -489,7 +489,7 @@
         },
         {
             "name": "Mark of Elune",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -541,7 +541,7 @@
                                 ],
                                 [
                                     "3",
-                                    "{@spell Starfire|Starlight}, {@spell Beacon of Hope|XPHB}"
+                                    "{@spell Starfire|ST}, {@spell Beacon of Hope|XPHB}"
                                 ],
                                 [
                                     "4",
@@ -580,7 +580,7 @@
                             "moonbeam|xphb"
                         ],
                         "s3": [
-                            "starfire|starlight",
+                            "starfire|ST",
                             "beacon of hope|xphb"
                         ],
                         "s4": [
@@ -605,7 +605,7 @@
         },
         {
             "name": "Mark of the Rifts",
-            "source": "Starlight",
+            "source": "ST",
             "page": 0,
             "category": "D",
             "prerequisite": [
@@ -626,7 +626,7 @@
                     "type": "entries",
                     "name": "Surge",
                     "entries": [
-                        "You always have the {@spell Arcane Butterflies|Starlight} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
+                        "You always have the {@spell Arcane Butterflies|ST} spell prepared. You can cast it once without expending a spell slot, and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}.",
                         "When you cast a spell using a spell slot of 1st level or higher, you can gain {@variantrule Advantage|XPHB} on the spell attack roll or increase its save DC by 1, and then trigger a {@table Wild Magic Surge|XPHB}. You can do this a number of times equal to your proficiency bonus per {@variantrule Long Rest|XPHB}."
                     ]
                 },
@@ -653,7 +653,7 @@
                                 ],
                                 [
                                     "2",
-                                    "{@spell Starlike Skim|Starlight}, {@spell Primordial Eruption|Starlight}"
+                                    "{@spell Starlike Skim|ST}, {@spell Primordial Eruption|ST}"
                                 ],
                                 [
                                     "3",
@@ -692,8 +692,8 @@
                             "detect magic|xphb"
                         ],
                         "s2": [
-                            "starlike skim|starlight",
-                            "primordial eruption|starlight"
+                            "starlike skim|ST",
+                            "primordial eruption|ST"
                         ],
                         "s3": [
                             "counterspell|xphb",
@@ -723,7 +723,7 @@
     "spell": [
         {
             "name": "Guidance",
-            "source": "Starlight",
+            "source": "ST",
             "level": 0,
             "school": "D",
             "time": [
@@ -777,7 +777,7 @@
             "feats": [
                 {
                     "name": "Mark of the Prophet",
-                    "source": "Starlight"
+                    "source": "ST"
                 }
             ]
         }
