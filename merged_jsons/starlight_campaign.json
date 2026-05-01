@@ -9,7 +9,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.05.01.18.08",
+                "version": "2026.05.01.19.00",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -21,7 +21,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.05.01.18.08",
+                "version": "2026.05.01.19.00",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,13 +36,13 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.05.01.18.08",
+                "version": "2026.05.01.19.00",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1777658917.5725524
+        "dateLastModified": 1777662047.7927244
     },
     "feat": [
         {
@@ -467,7 +467,7 @@
                                 ],
                                 [
                                     "4",
-                                    "{@spell Greater Invisibility|XPHB}, {@spell Starlight's Shadow|Starlight}"
+                                    "{@spell Backlash|FRHoF}, {@spell Starlight's Shadow|Starlight}"
                                 ],
                                 [
                                     "5",
