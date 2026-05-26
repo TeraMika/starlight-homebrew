@@ -5800,12 +5800,12 @@
                 "HTR"
             ],
             "entries": [
-                "As a Bonus Action, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to disappear in a flash of power, reappearing 60 feet away. Any creature within 10 feet of the space you left must make a Constitution saving throw, taking damage equal to two rolls of your Hunter's Die on a failure, of a type equal to your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}."
+                "As a {@variantrule Bonus Action|XPHB}, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to disappear in a flash of power, reappearing 60 feet away. Any creature within 10 feet of the space you left must make a Constitution saving throw, taking damage equal to two rolls of your Hunter's Die on a failure, of a type equal to your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}."
             ],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 12,
+                        "level": 15,
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
