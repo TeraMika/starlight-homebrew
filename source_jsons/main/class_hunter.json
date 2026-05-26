@@ -2797,10 +2797,16 @@
                             }
                         ]
                     },
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "2d(@scale.hunter.hunter-die-size)"
-                    },
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2d(@scale.hunter.hunter-die-size)"
+								}
+							}
+						]
+					},
                     "save": {
                         "ability": [
                             "dex"
@@ -2863,7 +2869,7 @@
 					},
                     "roll": {
                         "name": "Fall damage reduced",
-                        "formula": "3(@classes.hunter.levels)"
+                        "formula": "3 * @classes.hunter.levels"
                     }
                 },
                 {
@@ -2873,10 +2879,16 @@
 						"type": "reaction",
 						"condition": "When a creature within 60 feet of you takes a Reaction"
 					},
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
-                    }
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+								}
+							}
+						]
+					}
                 }
             ]
         },
@@ -2900,10 +2912,16 @@
 						"type": "",
 						"condition": "When you make an attack"
 					},
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "@scale.hunter.hunter-die"
-                    },
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.hunter.hunter-die"
+								}
+							}
+						]
+					},
                     "save": {
                         "ability": [
                             "cha"
@@ -2951,7 +2969,7 @@
                         ],
                         "custom": {
                             "enabled": true,
-                            "formula": "2(@classes.hunter.levels)"
+                            "formula": "2 * @classes.hunter.levels"
                         }
                     },
                     "uses": {
@@ -2967,10 +2985,16 @@
 						"type": "",
 						"condition": "When you end the enchantment with a Magic action or lose the Temporary Hit Points"
 					},
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "4d(@scale.hunter.hunter-die-size)"
-                    }
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "4d(@scale.hunter.hunter-die-size)"
+								}
+							}
+						]
+					}
                 },
                 {
                     "name": "Earth Enchantment Save",
@@ -5736,10 +5760,16 @@
 						"type": "",
 						"condition": "When you take the Dash action"
 					},
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "1d6"
-                    }
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1d6"
+								}
+							}
+						]
+					}
                 },
                 {
                     "name": "Water Conduit",
@@ -5837,10 +5867,16 @@
                             }
                         ]
                     },
-                    "roll": {
-                        "name": "Damage",
-                        "formula": "2d(@scale.hunter.hunter-die-size)"
-                    },
+                    "damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "2d(@scale.hunter.hunter-die-size)"
+								}
+							}
+						]
+					},
                     "save": {
                         "ability": [
                             "con"
