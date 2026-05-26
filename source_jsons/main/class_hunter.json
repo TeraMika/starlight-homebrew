@@ -1398,6 +1398,20 @@
                 "Commanding Shout|Hunter|Starlight|Fable|Starlight|15",
                 "Legendary Resilience|Hunter|Starlight|Fable|Starlight|15"
             ]
+        },
+        {
+            "name": "Primordial",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "shortName": "Primordial",
+            "subclassFeatures": [
+                "Off-worlder|Hunter|Starlight|Primordial|Starlight|3",
+                "Expert|Hunter|Starlight|Primordial|Starlight|7",
+                "Conjure Elemental|Hunter|Starlight|Primordial|Starlight|7",
+                "Transmute Physiology|Hunter|Starlight|Primordial|Starlight|11",
+                "Primordial Enchantment|Hunter|Starlight|Primordial|Starlight|15"
+            ]
         }
     ],
     "subclassFeature": [
@@ -1800,7 +1814,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
-                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Urban|Starlight|3|Starlight|Skills from the Outer Planes feature}."
+                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3|Starlight|Skills from the Outer Planes feature}."
             ]
         },
         {
@@ -2304,7 +2318,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Wilds|Hunter|Starlight|Urban|Starlight|3|Starlight|Skills from the Wilds} feature."
+                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Wilds|Hunter|Starlight|Horizon|Starlight|3|Starlight|Skills from the Wilds} feature."
             ]
         },
         {
@@ -2420,7 +2434,7 @@
             "level": 3,
             "entries": [
                 "Fable Hunters gained their knowledge from study, and almost all of them have a common goal: to be a Hunter that would be discussed in the very books and tales they learned from. A Fable Hunter aims to live forever, immortalised in stories told around a fireplace and studies of combat strategy. A Fable Hunter wants to take on creatures of Legendary power; and a Fable Hunter wants to win. To this end, they learn their foe, and direct their allies to victory. Success comes before personal glory.",
-                "{@note A 'Legendary Creature' is one that has Legendary (or similar, such as Mythic) actions. Typically, having a Lair Action would not qualify a creature. Work with your DM to define what a legendary creature means in your campaign.}",
+                "{@note A 'Legendary Creature' is one that has Legendary (or similar, such as Mythic) actions. Typically, having only a Lair Action would not qualify a creature. Work with your DM to define what a legendary creature means in your campaign.}",
                     {
                         "type": "refSubclassFeature",
                         "subclassFeature": "Skills of Yore|Hunter|Starlight|Fable|Starlight|3"
@@ -2528,7 +2542,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
-                "Your story-making skills have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, from your {@subclassFeature Skills of Yore|Hunter|Starlight|Urban|Starlight|3|Starlight|} feature."
+                "Your story-making skills have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, from your {@subclassFeature Skills of Yore|Hunter|Starlight|Fable|Starlight|3|Starlight|} feature."
             ]
         },
         {
@@ -2630,6 +2644,366 @@
             "entries": [
                 "{@i 15th-level Fable Hunter feature}",
                 "When you are targeted by a Legendary Action (and similar actions such as Mythic Actions), you can either gain advantage on a saving throw you are forced to make against it or gain resistance to any damage dealt by it."
+            ]
+        },
+        {
+            "name": "Off-worlder",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "Primordial Hunters have stalked the realms of the elements, managing these supernatural powers and places for their own end. A Primordial Hunter may roam these places to conquer them, or to channel their powers to enhance their prowess in other ways. They may have learned these skills through direct exposure, an elemental teacher such as a Djinn, or through rigourous study as if it were magic.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Skills from the Arcane|Hunter|Starlight|Primordial|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Preferred Plane|Hunter|Starlight|Primordial|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Ancient Quarries|Hunter|Starlight|Primordial|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Evoke Elements|Hunter|Starlight|Primordial|Starlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Skills from the Arcane",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Primordial Hunter feature}",
+                "These powers are mysterious, necessitating study and a good understanding of the world in which you live.",
+                "You gain proficiency with two of the following skills: {@skill Arcana|XPHB}, {@skill Nature|XPHB}, and {@skill History|XPHB}.",
+                "Additionally, you gain proficiency with {@item Mason's Tools|XPHB} and {@item Alchemist's Supplies}, to shape your world and use its ingredients."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "arcana",
+                            "nature",
+                            "history"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "mason's tools": true,
+                    "alchemist's supplies": true
+                }
+            ]
+        },
+        {
+            "name": "Preferred Plane",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Primordial Hunter feature}",
+                "Thanks to your experience, teacher, study, or just a grudge, you are more familiar with one plane than the others, and it acts as a focus for your talents.",
+                "Choose one of the following:",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Plane of Earth.} The damage type is Bludgeoning.",
+                        "{@b Plane of Water.} The damage type is Cold.",
+                        "{@b Plane of Fire.} The damage type is Fire.",
+                        "{@b Plane of Air.} The damage type is Lightning."
+                    ]
+                },
+                "{@b Abjure Energy.} You have resistance to the chosen damage type."
+            ],
+            "resist": [
+                {
+                    "choose": {
+                        "from": [
+                            "bludgeoning",
+                            "cold",
+                            "fire",
+                            "lightning"
+                        ]
+                    }
+                }
+            ]
+        },    
+        {
+            "name": "Ancient Quarries",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Primordial Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "What has your study taught you? These creatures are often too intelligent for their own good, or dumb without being mindless, with little inbetween. That means you aim for the head."
+                    ],
+                    "by": "Elsevere, The Grand Magistrate"
+                },
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage.",
+                "Alternatively, the damage type can be the one chosen in your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}."
+            ]
+        },    
+        {
+            "name": "Evoke Elements",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Primordial Hunter feature}",
+                "Once per turn when you make an attack as part of the {@action Attack|XPHB} action, you can instead spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to replace it with an evocation of energy from the point you targeted with the attack. Each creature other than you within 10 feet of the chosen point must make a Dexterity saving throw, taking two rolls of your Hunter's Die as damage (of a type matching your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}) and half as much on a success. Your Quarry has {@variantrule Disadvantage|XPHB} on the saving throw."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Evoke Elements",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you make an attack and replace it"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "2d(@scale.hunter.hunter-die-size)"
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    },
+                    "target": {
+						"template": {
+							"type": "sphere",
+							"size": "10",
+							"units": "ft"
+						}
+					}
+                }
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Primordial Hunter feature}",
+                "Your skills of elemental exploration have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, from your {@subclassFeature Skills from the Arcane|Hunter|Starlight|Primordial|Starlight|3|Starlight|} feature."
+            ]
+        },
+        {
+            "name": "Conjure Elemental",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Primordial Hunter feature}",
+                "You can perform a 1-hour ritual to channel the primordial energy that infuses all things into an elemental spirit that accompanies you. If the spirit enters an area of {@spell Antimagic Field|XPHB|antimagic} or is targeted with {@spell Dispel Magic|XPHB}, it vanishes and must be resummoned. It does not act as its own entity in combat but can assist you in other ways while it is present. The spirit's form depends on your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Dustling (Earth).} Appearing as a collection of small rocks or soot and dust, the Dustling can help you move objects or creatures. You add your Hunter's Die to ability checks made to move objects, your carrying capacity increases by 50lbs, and once per turn when you deal Bludgeoning damage to a creature you can move it 5 feet horizontally.",
+                        "{@b Tidesling (Water).} As a {@action Magic|XPHB} action, the Tidesling cools a surface: a dangerously hot surface becomes safe, and a cool surface becomes frozen, in a 10-foot square within 5 feet of you; a creature that walks on this surface must make a Dexterity saving throw or fall {@condition Prone|XPHB}, and the surface lasts for one minute. Once per turn, it can snuff out any fire in a 5-foot square within 30 feet of you. Finally, the Tidesling cushions your landings: if you would take damage from falling, you can use your {@variantrule Reaction|XPHB} to reduce it by three times your Hunter level and not be {@condition Prone|XPHB}.",
+                        "{@b Cinderling (Fire).} The Cinderling emits {@variantrule Bright Light|XPHB} up to a maximum of 20 feet, and {@variantrule Dim Light|XPHB} for a further 20 feet. You change the range and colour of the light as a {@variantrule Bonus Action|XPHB|XPHB}. Once per turn, the Cinderling can also start a fire on a flammable object (no action required). Once per turn when you deal Fire damage to a creature, you can end the {@condition Invisible|XPHB} condition on it and cause it to glow. This lasts for one minute or until the creature spends an {@variantrule Action|XPHB} to end the effect.",
+                        "{@b Cloudling (Air).} The Cloudling can be Invisible as it chooses and relay messages you whisper up to 180 feet, even around corners. When a creature within 60 feet of you takes a {@variantrule Reaction|XPHB}, you can use your {@variantrule Reaction} to deal Lightning damage to it equal to a roll of your Hunter's Die plus your Wisdom modifier."
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "(Tidesling Only) Soft Landing",
+                    "type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "When you would take fall damage"
+					},
+                    "roll": {
+                        "name": "Fall damage reduced",
+                        "formula": "3(@classes.hunter.levels)"
+                    }
+                },
+                {
+                    "name": "(Cloudling Only) Punish Reaction",
+                    "type": "damage",
+					"activation": {
+						"type": "reaction",
+						"condition": "When a creature within 60 feet of you takes a Reaction"
+					},
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Transmute Physiology",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Primordial Hunter feature}",
+                "Once per turn you hit a creature with an attack, you can deal additional damage to it equal to your Hunter's Die and force it to make a Charisma saving throw. On a failure, you can change one of its resistances for another of fire, cold, lightning, thunder, or acid, until the end of your next turn."
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Transmute Physiology",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you make an attack"
+					},
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "@scale.hunter.hunter-die"
+                    },
+                    "save": {
+                        "ability": [
+                            "cha"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Primordial Enchantment",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Primordial",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Primordial Hunter feature}",
+                "As a {@variantrule Bonus Action|XPHB}, you gain {@variantrule Temporary Hit Points|XPHB} equal to twice your Hunter level. While you have these temporary hit points, a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} surrounds you or your {@classFeature Quarry|Hunter|Starlight|1|Starlight} (choose when you activate this). Creatures of your choice within that {@variantrule Emanation [Area of Effect]|XPHB|Emanation} suffer an effect depending on your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}.",
+                "When you lose these {@variantrule Temporary Hit Points|XPHB} or when you dismiss the effect as a {@action Magic|XPHB} action, the enchantment explodes, dealing damage equal to four rolls of your Hunter's Die to all creatures of your choice within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, of a type matching your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}.",
+                "The enchantment lasts for one hour otherwise, and you can empower yourself in this way once per {@variantrule Long Rest|XPHB}.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Earth.} When a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, it must make a Strength saving throw or fall {@condition Prone|XPHB}. If a creature starts its turn in the area, you can cause it to be {@condition Hampered|Starlight}.",
+                        "{@b Fire.} When a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, it becomes {@condition Burning|Starlight}. A creature {@condition Burning|Starlight} in this way cannot regain {@variantrule Hit Points|XPHB}, and takes additional damage from {@condition Burning|Starlight} equal to your Wisdom modifier.",
+                        "{@b Water.} Creatures that start their turn in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must succeed a Strength saving throw or be {@condition Slowed|Starlight} and be pulled to the nearest unoccupied space to the center of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
+                        "{@b Air.} Whenever you or a creature of your choice enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or starts their turn in it, their speed increases by 10 feet. If a creature takes a {@variantrule Reaction|XPHB} in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, you or another creature within 60 feet of them can use their {@variantrule Reaction|XPHB} to counter it."
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Primordial Enchantment",
+                    "type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+                    "healing": {
+                        "types": [
+                            "temphp"
+                        ],
+                        "custom": {
+                            "enabled": true,
+                            "formula": "2(@classes.hunter.levels)"
+                        }
+                    },
+                    "uses": {
+                        "value": 1,
+                        "max": 1,
+                        "per": "lr"
+                    }
+                },
+                {
+                    "name": "Enchantment Explosion",
+                    "type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "When you end the enchantment with a Magic action or lose the Temporary Hit Points"
+					},
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "4d(@scale.hunter.hunter-die-size)"
+                    }
+                },
+                {
+                    "name": "Earth Enchantment Save",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When a creature enters the Emanation or ends its turn there,"
+					},
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                },
+                {
+                    "name": "Water Enchantment Save",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When a creature starts its turn in the Emanation"
+					},
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
             ]
         }
     ],
@@ -4349,7 +4723,8 @@
 			],
 			"entries": [
 				"You feel most comfortable when things are strange. In environments on other planes, you have advantage on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
-                "Furthermore, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how."
+                "Additionally, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how.",
+                "Finally, you can speak {@language Abyssal}, {@language Infernal}, {@language Celestial}, and {@language Deep Speech}."
 			],
             "prerequisite": [
                 {
@@ -4364,6 +4739,14 @@
                     "feature": [
                         "Extraplanar Hunting Grounds"
                     ]
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "abyssal": true,
+                    "infernal": true,
+                    "celestial": true,
+                    "deep speech": true
                 }
             ],
             "foundryActivities": [
@@ -4540,8 +4923,16 @@
 			],
 			"entries": [
 				"You are experienced travelling the lands that border your own. When travelling through the Ethereal Plane or the Feywilds, you have advantage on Wisdom (Survival) checks, you cannot become lost, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and you have advantage on ability checks or saving throws made to see through illusions.",
-                "Furthermore, in the Ethereal Plane, any vertical movement does not impose a movement penalty."
+                "Additionally, in the Ethereal Plane, any vertical movement does not impose a movement penalty.",
+                "Finally, you can speak {@language Sylvan}, {@language Goblin}, and {@language Elvish}."
 			],
+            "languageProficiencies": [
+                {
+                    "sylvan": true,
+                    "goblin": true,
+                    "elvish": true
+                }
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4725,8 +5116,15 @@
 			],
 			"entries": [
 				"You do your best work where people are. In cities and other settlements, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food to eat no matter where you are.",
-                "Furthermore, you have advantage on ability checks made to identify local customs and find secret or hidden pathways in the environment."
+                "Additionally, you have advantage on ability checks made to identify local customs and find secret or hidden pathways in the environment.",
+                "Finally, you can speak {@language Thieves' Cant} and {@language Undercommon}."
 			],
+            "languageProficiencies": [
+                {
+                    "thieves' cant": true,
+                    "undercommon": true
+                }
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4892,8 +5290,14 @@
 			],
 			"entries": [
 				"You are adept at travelling the regions that most humanoids rarely do. When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food anywhere.",
-                "Furthermore, you have advantage on ability checks made to control vehicle such as boats or airships."
+                "Additionally, you have advantage on ability checks made to control vehicles such as boats or airships.",
+                "Finally, you learn three standard languages of your choice."
 			],
+            "languageProficiencies": [
+                {
+                    "anyStandard": 3
+                }
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5076,8 +5480,15 @@
 			],
 			"entries": [
 				"You have advantage on Wisdom ({@skill Survival|XPHB}) checks in environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps. In such locations, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
-                "Furthermore, you have advantage on any saving throws made against environmental hazards such as heat or cold."
+                "Additionally, you have advantage on any saving throws made against environmental hazards such as heat or cold.",
+                "Finally, you learn one standard and one rare language of your choice."
 			],
+            "languageProficiencies": [
+                {
+                    "anyStandard": 1,
+                    "anyRare": 1
+                }
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5213,7 +5624,234 @@
                     ]
                 }
             ]
-		}
+		},
+        {
+			"name": "Hunter of Primordials",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"If you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack, you reduce the final damage total by an amount equal to a roll of your Hunter's Die plus your Wisdom modifier."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Primordial Hunting Grounds"
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Hunter of Primordials",
+                    "type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "When you you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack"
+					},
+                    "roll": {
+                        "name": "Damage reduction",
+                        "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+                    }
+                }
+            ]
+		},
+        {
+			"name": "Favoured Terrain: Elements",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"You are experienced in extreme terrains where the elements rule: volcanoes, icy tundras, the deepest caves, places where there are many storms, or the elemental planes. When in these environments, you have Advantage on Wisdom ({@skill Survival}) checks, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and you have advantage on any saving throw against extreme or hazardous weather or environmental conditions such as heat or cold."
+			],
+            "languageProficiencies": [
+                {
+                    "primordial": true,
+                    "druidic": true
+                }
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Primordial Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Primal Conduit",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you take the {@action Dash|XPHB} action, you pull ancient threads together to create an effect depending on your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}. The effect persists until the start of your next turn.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Earth.} The path you walk becomes {@variantrule Difficult Terrain|XPHB}. You are not affected by any {@variantrule Difficult Terrain|XPHB} when Dashing.",
+                        "{@b Water.} The path you walk becomes icy. You can walk on Water or similar surfaces, and another creature that stands on this trail must make a Dexterity saving throw or fall {@condition Prone|XPHB}.",
+                        "{@b Fire.} When you move within 5 feet of a creature, it takes {@dice 1d6} fire damage. You leave a trail of flames in your path which deals this damage again to any creature who enters it or ends their turn in it.",
+                        "{@b Air.} You gain an additional 20 feet of movement when you take the {@action Dash|XPHB} action."
+                    ]
+                }
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Primordial Hunting Grounds"
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Fire Conduit",
+                    "type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "When you take the Dash action"
+					},
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "1d6"
+                    }
+                },
+                {
+                    "name": "Water Conduit",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you take the Dash action"
+					},
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "One with the Elements",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per {@variantrule Short Rest}, you can connect yourself to the Inner Planes very closely, borrowing their power (no action required).",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Earth.} You can move through solid ground until the end of your turn. If you are in the earth at the end of your turn, you are ejected to the nearest unoccupied space, taking {@dice 1d8} force damage for each 5 feet you are moved.",
+                        "{@b Water.} You can breathe underwater and gain a swimming speed equal to your speed for the next hour. At the end of this period, you immediately begin suffocating if you cannot breathe.",
+                        "{@b Fire.} When you deal Fire damage this turn, you can deal that Fire damage to another creature within 30 feet. This fire damage cannot spread in the same way.",
+                        "{@b Air.} You can take an additional {@variantrule Reaction|XPHB} before the start of your next turn."
+                    ]
+                }
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Primordial Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Djinni's Gift",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "As a Bonus Action, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to disappear in a flash of power, reappearing 60 feet away. Any creature within 10 feet of the space you left must make a Constitution saving throw, taking damage equal to two rolls of your Hunter's Die on a failure, of a type equal to your {@subclassFeature Preferred Plane|Hunter|Starlight|Primordial|Starlight|3|Starlight}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Primordial Hunting Grounds"
+                    ]
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Djinni's Gift",
+                    "type": "save",
+					"activation": {
+						"type": "action"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "roll": {
+                        "name": "Damage",
+                        "formula": "2d(@scale.hunter.hunter-die-size)"
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
+            ]
+        }
     ],
     "item": [
         {
