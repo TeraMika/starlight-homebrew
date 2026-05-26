@@ -820,6 +820,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Genie Vessel",
+            "source": "Starlight",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": false,
+            "entries": [
+                "{@note This item could take several forms, such as an oil lamp, an urn, a ring with a compartment, or similar small container.}",
+                "While this tiny object is on your person, you can use a {@action Magic|XPHB} action once per {@variantrule Long Rest|XPHB} to vanish and enter the vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space.",
+                "You can remain inside the vessel for a maximum of 10 hours. You exit the vessel early if you use a {@variantrule Bonus Action|XPHB} to leave, if you die, or if the vessel is reduced to zero hit points. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space.",
+                "The vessel has 18 AC, 45 hit points, and is immune to poison and psychic damage. When reduced to zero hit points, it becomes immune to all damage for one minute. If you do not pick it up and use a {@action Magic|XPHB} action to repair it in this timeframe, it is destroyed. Once repaired, it regains all of its hit points."
+            ]
         }
     ]
 }
