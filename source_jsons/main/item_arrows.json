@@ -245,7 +245,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, you cast the {@spell Darkness|phb} spell on the target or target location. It lasts the full duration, not requiring concentration."
+                "On hit, you cast the {@spell Darkness|xphb} spell on the target or target location. It lasts the full duration, not requiring concentration."
 			]
 		},
         {
