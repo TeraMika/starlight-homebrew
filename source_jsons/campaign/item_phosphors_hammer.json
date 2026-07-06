@@ -1,0 +1,402 @@
+{
+    "_meta": 
+    {
+        "sources": 
+        [
+            {
+                "json": "ST",
+                "abbreviation": "ST",
+                "full": "Shifting Tides",
+                "color": "783ddb",
+                "authors": 
+                [
+                    "Starlight"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            }
+        ]
+    },
+    "item":
+    [
+        {
+			"name": "Volatile Earth Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "On the space you target, a large wall appears. It is 10 feet high, 5 feet thick, and has AC 15 and HP 25. It is immune to psychic and poison damage. The wall lasts for 10 minutes or until destroyed."
+			]
+		},
+        {
+			"name": "Volatile Gravity Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "Gravity is increased or decreased (your choice) for the target struck. The target takes double or half damage from falling, their jump distance is halved or doubled, until the end of your next turn.",
+                "If you increase the gravity, the target cannot fly until the effect ends."
+			]
+		},
+        {
+			"name": "Volatile Ice Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "A 10-foot square ice path appears on the surface struck with this ammunition. The area lasts for one minute. The area is difficult terrain, and any creature that enters, starts its turn on, or is benefitting from the {@action Dash|XPHB} action on the surface must make a DC 15 Dexterity saving throw or fall {@condition Prone|XPHB}."
+			]
+		},
+        {
+			"name": "Volatile Air Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "Air erupts from the target struck. All creatures within 10 feet of the target must make a DC 15 Strength saving throw or be pushed 10 feet away from the target (the target, if possible, is pushed 10 feet directly away from you on a failed saving throw).",
+                "Alternatively, fire this shell to recoil yourself 10 feet in the opposite direction shot. If this leaves you airborne, you fall only at the end of your turn unless you choose to fall sooner."
+			]
+		},
+        {
+			"name": "Volatile Nature Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "Immediately grow an area of plants in a 20-foot square on the surface struck with this ammunition. The area lasts for 10 minutes. The area requires 4 feet of movement for every 1 foot moved.",
+                "Alternatively, fire this shell at a specific plant to cause it to grow dramatically. Creatures in the plant's way are moved harmlessly aside by the growth, which is determined by the DM."
+			]
+		},
+        {
+			"name": "Volatile Lightning Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "You supercharge a mechanical construct, increasing its speed or power for one turn. The exact effect is determined by the DM. Some examples are listed below.",
+                {
+                    "type": "list",
+                    "items": [
+                        "A construct is given the benefit of the {@spell Haste|XPHB} spell until the end of its next turn. Instead of lethargy when the spell ends, it could instead gain a temporary level of {@condition Exhaustion|XPHB}, removed on a {@variantrule Short Rest|XPHB}.",
+                        "A construct can take an immediate {@variantrule Action|XPHB} using its {@variantrule Reaction|XPHB}.",
+                        "A machine or trap activates immediately.",
+                        "The speed of a construct is doubled for one round."
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Volatile Thunder Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This ammunition is worth 15gp, and can be crafted in just one day with {@item Jeweller's Tools|XPHB}. A full loader, 6 shots, can be crafted in one downtime period.}"
+					]
+				},
+                "A deafening sound erupts from the target space. Objects within 20 feet of the target take {@dice 3d8} Thunder damage, and creatures within that range are {@condition Deafened|XPHB} until the end of your next turn."
+			]
+		},
+        {
+			"name": "Contained Thunder Shell",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition deals the weapon's normal damage to the target unless otherwise specified."
+					]
+				},
+                "Your shot is silent and creates a 20-foot radius sphere of sonic force, suppressing all noise that would pass through it and {@condition Deafened|XPHB|Deafening} all creatures while they are in the area. The area lasts for 1 minute."
+			]
+		},
+        {
+			"name": "Prismatic Loader",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"Magic ammunition contained within this loader deals the weapon's normal damage to the target unless otherwise specified."
+					]
+				},
+                "Each shell in this loader deals no damage as part of the attack and instead causes a random magical effect to occur on the target, determined on the {@dice d20} table below.",
+                {
+					"type": "table",
+					"caption": "Wild Magic Effect",
+					"colLabels": [
+						"{@dice 1d20}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01",
+							"The target gains +5 to one ability score of its choice, and -5 to another, for the next minute."
+						],
+						[
+							"02",
+							"The target gains the 'Enlarge' effect of the {@spell Enlarge/Reduce|XPHB} spell, without requiring {@status Concentration|XPHB}."
+						],
+                        [
+                            "03",
+                            "For the next minute, the target gains 5 {@variantrule Temporary Hit Points|XPHB} at the start of each of its turns."
+                        ],
+                        [
+                            "04",
+                            "The target has the benefit of the {@spell Haste|XPHB} spell until the end of its next turn. It does not suffer the lethargy when the spell ends."
+                        ],
+                        [
+                            "05",
+                            "The target becomes {@condition Invisible|XPHB} for ten minutes, or until makes an attack roll, casts a spell, or deals damage."
+                        ],
+                        [
+                            "06",
+                            "The next time the target casts a spell in the next minute, it requires a spell slot one level lower than normal."
+                        ],
+                        [
+                            "07",
+                            "The first time the target deals damage before the start of its next turn, it uses the highest number on each damage die instead of rolling."
+                        ],
+                        [
+                            "08",
+                            "On its next turn, the target can use its {@variantrule Action|XPHB|Actions} and {@variantrule Bonus Action|XPHB|Bonus Actions} interchangeably."
+                        ],
+                        [
+                            "09",
+                            "The target gains the benefit of the {@spell Shield of Faith|XPHB} spell, not requiring concentration, for 1 minute."
+                        ],
+                        [
+                            "10",
+                            "The target emits {@variantrule Bright Light|XPHB} in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of the target is {@condition Blinded|XPHB} until the end of its next turn."
+                        ],
+                        [
+                            "11",
+                            "The next time the target would be reduced to 0 {@variantrule Hit Points|XPHB} in the next hour, it is instead reduced to a number of Hit Points equal to twice its level."
+                        ],
+                        [
+                            "12",
+                            "The target becomes immune to the {@condition Frightened|XPHB} or {@condition Charmed|XPHB} condition (its choice) for the next 10 minutes."
+                        ],
+                        [
+                            "13",
+                            "The target's {@variantrule Speed|XPHB} is increased by 20 feet for the next hour."
+                        ],
+                        [
+                            "14",
+                            "The target can immediately teleport to an unoccupied space it can see within 60 feet of itself."
+                        ],
+                        [
+                            "15",
+                            "A small mote of light orbits the target's head. When it fails a {@variantrule d20 Test|XPHB}, it can snuff the light to add {@dice 1d12} to the roll, ending the effect. The light disappears naturally after one hour."
+                        ],
+                        [
+                            "16",
+                            "The target regains 5 {@variantrule Hit Dice|XPHB}. It can also expend and roll up to 5 Hit Dice, adding its Constitution modifier to each, and regaining {@variantrule Hit Points|XPHB} equal to the total rolled. If it would benefit the creature, it can expend them first and then regain the Hit Dice."
+                        ],
+                        [
+                            "17",
+                            "The target gains {@variantrule Resistance|XPHB} to all damage until the start of your next turn."
+                        ],
+                        [
+                            "18",
+                            "The target casts a random spell, which doesn't require {@status Concentration|XPHB} if it normally would. Roll {@dice 1d10} to determine the spell: on a 1, {@spell Confusion|XPHB}; on a 2, {@spell Fireball|XPHB}; on a 3, {@spell Fog Cloud|XPHB}; on a 4, {@spell Fly|XPHB} (cast on a random creature within 60 feet of you), on a 5, {@spell Grease|XPHB}; on a 6, {@spell Levitate|XPHB} (cast on yourself); on a 7, {@spell Magic Missile|XPHB} (cast as a level 5 spell); on an 8, {@spell Mirror Image|XPHB}; on a 9, {@spell Polymorph|XPHB} (cast on yourself), and if you fail the saving throw, you turn into a {@creature Goat|XMM}; on a 10, {@spell See Invisibility|XPHB}."
+                        ],
+                        [
+                            "19",
+                            "The target can make one {@action Attack|XPHB}, or cast a Cantrip, immediately (no action required)."
+                        ],
+                        [
+                            "20",
+                            "You and the target regain {@dice 2d10} hit points, and recover one expended spell slot of 3rd level or lower. If there is no spell slot, an equivalent resource can be gained: for example, 5 {@classFeature Monk's Focus|Monk|XPHB|2|XPHB|Focus Points}, {@classFeature Font of Magic|Sorcerer|XPHB|2|XPHB|Sorcery Points}, or {@classFeature Instinct|Hunter|Starlight|1|Starlight}. For more limited resources, regain one, such as {@classFeature Second Wind|Fighter|XPHB|1|XPHB}, {@classFeature Action Surge|Fighter|XPHB|2|XPHB}, {@classFeature Rage|Barbarian|XPHB|1|XPHB}, {@classFeature Wild Shape|Druid|XPHB|2|XPHB}, or {@classFeature Channel Divinity|Cleric|XPHB|2|XPHB}."
+                        ]
+                    ]
+                }
+			]
+		},
+        {
+			"name": "Aberrant Loader",
+			"source": "Starlight",
+			"rarity": "uncommon",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"Magic ammunition contained within this loader deals the weapon's normal damage to the target unless otherwise specified.",
+                        "{@note This Loader is worth 200gp, and so can be crafted in one week of downtime for 100gp, using {@item Jeweller's Tools|XPHB}.} "
+					]
+				},
+                "Each shell in this loader deals no damage as part of the attack and instead causes a random magical effect to occur on the target, determined on the {@dice d20} table below.",
+                {
+					"type": "table",
+					"caption": "Wild Magic Effect",
+					"colLabels": [
+						"{@dice 1d20}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01",
+							"The target becomes doused in {@item Oil|XPHB}."
+						],
+						[
+							"02",
+							"{@item Hunting Trap|XPHB|Hunting Traps} appear in all the spaces surrounding the creature."
+						],
+                        [
+                            "03",
+                            "A {@spell Fireball|XPHB} spell is cast on the target or target location."
+                        ],
+                        [
+                            "04",
+                            "The target is {@condition Slowed|Starlight} until the end of its next turn."
+                        ],
+                        [
+                            "05",
+                            "The target becomes {@condition Restrained|XPHB} by a {@item Net|XPHB}."
+                        ],
+                        [
+                            "06",
+                            "The target must succeed a DC 15 Charisma saving throw or be {@spell Polymorph|XPHB|Polymorphed} into a {@creature Frog|XMM} until the end of your next turn."
+                        ],
+                        [
+                            "07",
+                            "The target disappears into the Astral Plane, and reappears at the end of its next turn in the space it left, or in the nearest unoccupied space if that space is occupied."
+                        ],
+                        [
+                            "08",
+                            "The target is {@condition Silenced|Starlight} until the start of your next turn."
+                        ],
+                        [
+                            "09",
+                            "The target glitters, suffering the effects of the {@spell Faerie Fire|XPHB} spell. At the end of each of its turns, it can make a DC 15 Dexterity saving throw to end the effect."
+                        ],
+                        [
+                            "10",
+                            "The target and up to 2 creatures of your choice within 20 feet of it take {@dice 3d10} lightning damage."
+                        ],
+                        [
+                            "11",
+                            "A flash of light causes the target and all creatures within 10 feet of it to become {@condition Blinded} until the start of your next turn."
+                        ],
+                        [
+                            "12",
+                            "The target and all creatures within 10 feet of it have {@variantrule Vulnerability|XPHB} to Piercing damage for the next minute."
+                        ],
+                        [
+                            "13",
+                            "The target is {@condition Frightened|XPHB} of you until the end of its next turn."
+                        ],
+                        [
+                            "14",
+                            "The target becomes {@condition Poisoned|XPHB}. At the end of each of its turns, it can make a DC 15 Constitution saving throw, ending the condition on a success."
+                        ],
+                        [
+                            "15",
+                            "The target teleports up to 60 feet to an unoccupied space that you can see, of your choosing."
+                        ],
+                        [
+                            "16",
+                            "The first time the target deals damage before the start of your next turn, it uses the lowest possible number on each die instead of rolling."
+                        ],
+                        [
+                            "17",
+                            "The target becomes {@condition Burning|Starlight}, {@condition Rattled|Starlight}, {@condition Melting|Starlight}, and {@condition Brittle|Starlight} until the end of your next turn."
+                        ],
+                        [
+                            "18",
+                            "The target takes {@dice 2d10} necrotic damage, and you regain that many hit points."
+                        ],
+                        [
+                            "19",
+                            "The target has {@variantrule Disadvantage} on the next saving throw it makes."
+                        ],
+                        [
+                            "20",
+                            "The target falls {@condition Unconscious|XPHB} until the end of your next turn or until it takes damage."
+                        ]
+                    ]
+                }
+			]
+		}
+    ]
+}
