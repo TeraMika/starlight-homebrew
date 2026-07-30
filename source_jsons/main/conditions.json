@@ -552,7 +552,7 @@
                             "type": "entries",
                             "name": "Ending the Condition",
                             "entries": [
-                                "You can spend an {@variantrule Action|XPHB} on your turn to end the condition."
+                                "You can spend an {@variantrule Action|XPHB} on your turn to steady your mind and end the condition."
                             ]
                         }
                     ]
@@ -580,13 +580,6 @@
                             "name": "Hit Die Cost",
                             "entries": [
                                 "At the start of each of your turns, lose one of your {@variantrule Hit Point Dice|XPHB}. If you have none, you gain a level of {@condition Exhaustion|XPHB}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Ending the Condition",
-                            "entries": [
-                                "You can spend an {@variantrule Action|XPHB} on your turn to end the condition."
                             ]
                         }
                     ]
