@@ -2850,7 +2850,7 @@
 				"PRU"
 			],
 			"entries": [
-				"When you {@action Help} a creature with Guiding Spirits, you can increase the power of your target's attacks: if the creature you are helping successfully lands an attack before the start of your next turn, their attack deals an additional {@dice 2d6} damage. The damage is of the same type dealt by the attack."
+                "When you {@action Help|XPHB} to assist an attack with Guiding Spirits, you can increase the power of the attack. If the assisted attack hits, you can cause it to deal an additional {@dice 2d6} psychic damage."
 			],
             "prerequisite": [
                 {
