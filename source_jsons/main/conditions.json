@@ -64,13 +64,6 @@
                     "entries": [
                         {
                             "type": "entries",
-                            "name": "Movement Affected",
-                            "entries": [
-                                "Your movement is {@condition Hampered|Starlight}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
                             "name": "Ability Checks Affected",
                             "entries": [
                                 "You have disadvantage on Wisdom and Intelligence {@variantrule Ability Check|XPHB|ability checks}."
@@ -78,9 +71,10 @@
                         },
                         {
                             "type": "entries",
-                            "name": "Attacks and Saves Affected",
+                            "name": "Attacks and Spells Affected",
                             "entries": [
-                                "You can make only one attack whenever you attack using an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, and you cannot cast spells higher than first level."
+                                "If you attack using an {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}, you can only make one attack as part of that {@variantrule Action|XPHB} or {@variantrule Bonus Action|XPHB}.",
+                                "Additionally, you cannot cast spells higher than first level."
                             ]
                         }
                     ]
@@ -471,6 +465,128 @@
                             "name": "Restricted Attacks",
                             "entries": [
                                 "You have {@variantrule Disadvantage} on all ranged attacks."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Movement Penalties",
+                            "entries": [
+                                "You take {@dice 2d6} bludgeoning damage if you move 30 feet on your turn."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Backlash",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Backlash condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Magic Backlash",
+                            "entries": [
+                                "When you cast a spell, you take force damage depending on the spell's level. The damage is determined by rolling a number of d4s equal to the spell's level plus one."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Seared",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Seared condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Easily Perceived",
+                            "entries": [
+                                "You cannot be {@condition Invisible|XPHB} or benefit from {@variantrule Cover|XPHB|Half or Three-Quarters Cover}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Radiant Weakness",
+                            "entries": [
+                                "When you take Radiant damage, that damage is increased by {@dice 1d10}."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Frayed",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Frayed condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Saves Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage} on Wisdom {@variantrule saving throws|XPHB|saving throws}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Concentration Affected",
+                            "entries": [
+                                "You must make a DC 15 Constitution {@variantrule saving throws|XPHB|saving throw} at the end of each of your turns or lose your {@status Concentration|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "You can spend an {@variantrule Action|XPHB} on your turn to end the condition."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Withering",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Withering condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Healing Affected",
+                            "entries": [
+                                "You cannot gain {@variantrule Hit Points|XPHB} or {@variantrule Temporary Hit Points|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Hit Die Cost",
+                            "entries": [
+                                "At the start of each of your turns, lose one of your {@variantrule Hit Point Dice|XPHB}. If you have none, you gain a level of {@condition Exhaustion|XPHB}."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Ending the Condition",
+                            "entries": [
+                                "You can spend an {@variantrule Action|XPHB} on your turn to end the condition."
                             ]
                         }
                     ]
