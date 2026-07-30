@@ -236,7 +236,7 @@
                         ],
                         [
                             "09",
-                            "The target gains the benefit of the {@spell Shield of Faith|XPHB} spell, not requiring concentration, for 1 minute."
+                            "The target gains the benefit of the {@spell Shield of Faith|XPHB} spell, not requiring {@status Concentration|XPHB}, for 1 minute."
                         ],
                         [
                             "10",

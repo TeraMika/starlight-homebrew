@@ -1652,16 +1652,16 @@
             "level": 14,
             "entries": [
                 "{@i 14th-level Dunes Shaman feature}",
-                "You have learned much greater control over the desert storms. You can {@status concentration||concentrate} on your {@subclassFeature Control the Storm|Shaman|Starlight|Dunes|Starlight|6|Starlight|storm} when you summon it to increase its power, granting the following benefits.",
+                "You have learned much greater control over the desert storms. You can {@status Concentration|XPHB|concentrate} on your {@subclassFeature Control the Storm|Shaman|Starlight|Dunes|Starlight|6|Starlight|storm} when you summon it to increase its power, granting the following benefits.",
                 {
                     "type": "list",
                     "items": [
                         "You can use a {@variantrule Bonus Action} to move the storm independently of yourself, up to 20 feet, where the storm then remains until you move it again.",
                         "The area is lightly obscured. You and creatures you choose can attempt to hide in this light obscurement.",
-                        "Hostile creatures entering the storm or starting their turn in it must make a Dexterity saving throw or take {@damage 5d8} piercing damage and become {@condition blinded} until the start of their next turn."
+                        "Hostile creatures entering the storm or starting their turn in it must make a Dexterity saving throw or take {@damage 5d8} piercing damage and become {@condition Blinded|XPHB} until the start of their next turn."
                     ]
                 },
-                "You can concentrate on the storm this way once per {@variantrule Long Rest}. If you lose your {@status concentration}, the storm ends and you must complete a {@variantrule Short Rest} to use it again, as normal."
+                "You can concentrate on the storm this way once per {@variantrule Long Rest}. If you lose your {@status Concentration|XPHB}, the storm ends and you must complete a {@variantrule Short Rest} to use it again, as normal."
             ],
             "foundryActivities": [
                 {
@@ -1926,7 +1926,7 @@
                 {
                 "type": "list",
                     "items": [
-                        "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status concentration} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
+                        "{@b Primal Clarity.} You can use a {@variantrule Reaction} to maintain {@status Concentration|XPHB} on a Shaman spell you cast if you would otherwise lose it. You can do this once, and regain the ability to do so after completing a {@variantrule Short Rest}."
                     ]
                 }
             ],
@@ -2412,7 +2412,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status concentration} on a spell."
+				"You may a add bonus equal to your proficiency bonus to saving throws made to maintain your {@status Concentration|XPHB} on a spell."
 			],
             "prerequisite": [
                 {
@@ -2774,7 +2774,7 @@
 				"PRU"
 			],
 			"entries": [
-				"You learn the {@spell Elemental Bane|XGE} spell. Once per {@variantrule Long Rest}, when you cast this spell, you can forgo the need to {@status concentration||concentrate} on it by reducing its duration to the end of your next turn."
+				"You learn the {@spell Elemental Bane|XGE} spell. Once per {@variantrule Long Rest}, when you cast this spell, you can forgo the need to {@status Concentration|XPHB|Concentrate} on it by reducing its duration to the end of your next turn."
 			],
             "prerequisite": [
                 {
@@ -3174,7 +3174,7 @@
 				"PRU"
 			],
 			"entries": [
-				"Once per {@variantrule Long Rest}, you can cast the {@spell Grasping vine|XPHB} spell. When you do so, you can either cast the spell as a {@variantrule Bonus Action}, or forgo the need to {@status concentration||concentrate} on the spell."
+				"Once per {@variantrule Long Rest}, you can cast the {@spell Grasping vine|XPHB} spell. When you do so, you can either cast the spell as a {@variantrule Bonus Action}, or forgo the need to {@statusConcentration|XPHB|Concentrate} on the spell."
 			],
             "prerequisite": [
                 {
@@ -4810,7 +4810,7 @@
                     "type": "entries",
                     "name": "Superheated Winds (Fire)",
                     "entries":[
-                        "Objects that are not worn or carried ignite. Creatures within the area have disadvantage on Constitution saving throws made to maintain {@status Concentration}."
+                        "Objects that are not worn or carried ignite. Creatures within the area have disadvantage on Constitution saving throws made to maintain {@status Concentration|XPHB}."
                     ]
                 },                {
                     "type": "entries",

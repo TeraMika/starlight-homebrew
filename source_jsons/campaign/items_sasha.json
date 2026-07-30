@@ -304,7 +304,7 @@
             "rarity": "rare",
             "wondrous": true,
             "entries": [
-                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@condition Concentration}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
+                "You can cast a spell into this arrow and apply its effect on hitting a creature, replacing the arrow's damage if you so choose. If the spell requires {@status Concentration|XPHB}, you do not have to concentrate on it. The spell cannot have a range of self, and its effect will originate on the target creature.",
                 "Once used, the arrow turns to ash."
             ]
         },
