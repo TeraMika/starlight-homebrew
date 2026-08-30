@@ -4377,6 +4377,15 @@
                     ]
                 }
             ],
+            "scalingLevelDice": {
+				"label": "Spell damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
             "damageInflict": [
                 "fire", "cold", "lightning", "acid", "thunder"
             ],
@@ -4560,7 +4569,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@damage 1d6} for each slot level above 3."
+                        "This spell's damage increases by {@scaledamage 7d6|3-9|1d6} for each slot level above 3."
                     ]
                 }
             ],
@@ -4571,7 +4580,7 @@
                 "prone", "halted" 
             ],
             "savingThrow": [
-                "strength"
+                "constitution"
             ],
             "areaTags": [
                 "Q"
@@ -4655,7 +4664,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@dice 1d6} for each slot level above 4."
+                        "This spell's damage increases by {@scaledamage 8d6|4-9|1d6} for each slot level above 4."
                     ]
                 }
             ],
@@ -4709,7 +4718,12 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 10
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
@@ -4843,7 +4857,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@dice 1d10} for each slot level above 4."
+                        "This spell's damage increases by {@scaledamage 6d10|7-9|1d10} for each slot level above 7."
                     ]
                 }
             ],

@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +54,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -68,7 +68,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -81,7 +81,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.07.12.45",
+                "version": "2026.08.30.08.40",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -89,7 +89,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1786106748.9489264
+        "dateLastModified": 1788079215.5375671
     },
     "class": [
         {
@@ -309,6 +309,7 @@
                 "armor": [
                     "light",
                     "medium",
+                    "heavy",
                     "shield"
                 ],
                 "weapons": [
@@ -336,15 +337,66 @@
                 ]
             },
             "startingEquipment": {
-                "default": [
-                    "{@item leather armor|PHB|leather armour}",
-                    "(a) a {@item shield|PHB} or (b) any {@filter simple weapon|items|source=phb|type=simple weapon=sand|category=basic}",
-                    "(a) a {@item component pouch|PHB} or (b) an {@item arcane focus|PHB} or {@item druidic focus|PHB}",
-                    "(a) a {@item explorer's pack|PHB} or (b) an {@item dungeoneer's pack|PHB}",
-                    "2 {@item dagger|PHB|daggers}"
-                ],
                 "additionalFromBackground": true,
-                "goldAlternative": "{@dice 3d4x10}"
+                "entries": [
+                    "{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
+                ],
+                "defaultData": [
+                    {
+                        "A": [
+                            {
+                                "item": "chain mail|xphb"
+                            },
+                            {
+                                "item": "greatsword|xphb"
+                            },
+                            {
+                                "item": "flail|xphb"
+                            },
+                            {
+                                "item": "javelin|xphb",
+                                "quantity": 8
+                            },
+                            {
+                                "item": "dungeoneer's pack|xphb"
+                            },
+                            {
+                                "value": 400
+                            }
+                        ],
+                        "B": [
+                            {
+                                "item": "studded leather armor|xphb"
+                            },
+                            {
+                                "item": "scimitar|xphb"
+                            },
+                            {
+                                "item": "shortsword|xphb"
+                            },
+                            {
+                                "item": "longbow|xphb"
+                            },
+                            {
+                                "item": "arrows (20)|xphb"
+                            },
+                            {
+                                "item": "quiver|xphb"
+                            },
+                            {
+                                "item": "dungeoneer's pack|xphb"
+                            },
+                            {
+                                "value": 1100
+                            }
+                        ],
+                        "C": [
+                            {
+                                "value": 15500
+                            }
+                        ]
+                    }
+                ]
             },
             "multiclassing": {
                 "requirements": {
@@ -485,24 +537,6 @@
                         }
                     },
                     "title": "Instinct"
-                },
-                {
-                    "type": "ScaleValue",
-                    "configuration": {
-                        "type": "dice",
-                        "identifier": "fae-tricks-damage",
-                        "scale": {
-                            "11": {
-                                "number": 4,
-                                "faces": 8
-                            },
-                            "15": {
-                                "number": 5,
-                                "faces": 10
-                            }
-                        }
-                    },
-                    "title": "Fae Tricks Damage"
                 }
             ],
             "featProgression": [
@@ -1528,7 +1562,7 @@
             "level": 2,
             "entries": [
                 "A Hunter is flexible, able to adapt their skillset to most threats. These Tricks are combat techniques, unique skills or benefits to your skills, or modifications to your defenses. They may be informed by your Hunting Grounds.",
-                "At 2nd level, you know 2 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
+                "At 2nd level, you know 3 {@filter Tricks|optionalfeatures|feature type=HTR}, and learn more as indicated in the Tricks column of the Hunter table. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change one Trick for another that you qualify for, represented by your preparations for the day ahead.",
                 "If a Trick has prerequisites, you must meet them to gain that Trick. You can gain a Trick at the same time you meet its prerequisites. A level prerequisite refers to your level in this class. If you lose the prerequisite for a Trick, for example you change one Trick that another depends on, you may replace it with another Trick for which you meet the prerequisite.",
                 "Your Hunter features and Tricks share the same DC if they require a saving throw:",
                 {
@@ -1967,7 +2001,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+                "When you fail a saving throw, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
             ],
             "foundryActivities": [
                 {
@@ -1981,7 +2015,7 @@
                         "targets": [
                             {
                                 "type": "itemUses",
-                                "value": "1",
+                                "value": "2",
                                 "target": {
                                     "consumes": {
                                         "name": "Instinct"
@@ -2037,7 +2071,7 @@
             "classSource": "Starlight",
             "level": 10,
             "entries": [
-                "Opportunity attacks against you are made at {@variantrule Disadvantage}."
+                "{@variantrule Opportunity Attacks|XPHB} taken against you are made at {@variantrule Disadvantage}."
             ]
         },
         {
@@ -2916,7 +2950,7 @@
                 {
                     "type": "quote",
                     "entries": [
-                        "Ghosts and Fae... tricksy, aye. Lucky for you, there's a fancy fire that should still get 'em sweating!"
+                        "Ghosts and Fae... tricksy, aye. Lucky for you, there's a fancy type o' fire that should still get 'em sweating!"
                     ],
                     "by": "Captain Lee"
                 },
@@ -2934,7 +2968,7 @@
             "entries": [
                 "{@i 3rd-level Borderland Hunter feature}",
                 "You can use a {@variantrule Bonus Action|XPHB} to shift into a state between the planes. While in this state, which lasts for one minute, you can move through other creatures freely. If you move through a creature this way, they take necrotic damage equal to a roll of your Hunter's Die. A creature can take this damage only once per turn.",
-                "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die.",
+                "If you end your turn in another creature's space, you are shunted harmlessly to the nearest available space. Ethereal Shift ends if you become {@condition Unconscious|XPHB} or die. You have {@variantrule Advantage|XPHB} on ability checks or saving throws made to avoid being {@condition Grappled|XPHB} or {@condition Restrained|XPHB}.",
                 "You can use this feature for free once per {@variantrule Short Rest|XPHB}, otherwise it costs two {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
             ],
             "foundryActivities": [
@@ -3032,7 +3066,7 @@
             "entries": [
                 "{@i 11th-level Borderland Hunter feature}",
                 "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a {@variantrule Reaction|XPHB} to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
-                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take {@dice 4d8} psychic damage. This damage increases to {@dice 5d10} at level 15."
+                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take psychic damage equal to a number of rolls of your Hunter's Die equal to your Proficiency Bonus."
             ],
             "foundryActivities": [
                 {
@@ -3053,7 +3087,7 @@
                             {
                                 "custom": {
                                     "enabled": true,
-                                    "formula": "@scale.hunter.fae-tricks-damage"
+                                    "formula": "(@prof)d(@scale.hunter.hunter-die-size)"
                                 },
                                 "types": [
                                     "psychic"
@@ -3573,7 +3607,8 @@
             "entries": [
                 "{@i 11th-level Urban Hunter feature}",
                 "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}.",
-                "While unseen by a creature, you can replace one attack from your {@action Attack} action with a stealth strike. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, they take additional damage equal to your Hunter's Die, and your position is not revealed to that creature. You can do this only once on each of your turns."
+                "While unseen by a creature, you can replace one attack from your {@action Attack} action with a stealth strike. On hit, the target must make an Intelligence saving throw or be {@condition Silenced|Starlight} and {@condition Deafened|XPHB} until the start of your next turn, they take additional damage equal to your Hunter's Die, and your position is not revealed to that creature. You can do this only once on each of your turns.",
+                "Additionally, this feature counts as having the 'Cunning Hunter I' trick for the purpose of {@classFeature Tricks|Hunter|Starlight|2|Starlight|Trick} prerequisites."
             ],
             "foundryActivities": [
                 {
@@ -3623,7 +3658,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Urban Hunter feature}",
-                "When you reduce a creature to 0 hit points, you can immediately move up to half your speed without provoking {@variantrule Opportunity Attacks}. As part of this movement, you can take the {@action Hide} action, and if you end the movement hidden then you become {@condition Invisible} until the end of your next turn.",
+                "When you reduce a creature to 0 hit points, you can immediately move up to half your speed without provoking {@variantrule Opportunity Attacks|XPHB}. As part of this movement, you can take the {@action Hide} action, and if you end the movement hidden then you become {@condition Invisible} until the end of your next turn.",
                 "The invisibility ends if you make an attack or force a creature to make a saving throw."
             ]
         },
@@ -3636,7 +3671,7 @@
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "Horizon Hunters strive to be the best, hunting anything from sky to sea. They weaken their quarries in speed in strength, claim trophies from their strikes and even have the expertise to handle packs of creatures. They might do it for fame and fortune, they might do it to protect the innocent from the dangers of the wild, or they might simply hunt for the thrill of bettering themselves.",
+                "Horizon Hunters strive to be the best, hunting anything from sky to sea. They weaken their quarries in speed and strength, claim trophies from their strikes and even have the expertise to handle packs of creatures. They might do it for fame and fortune, they might do it to protect the innocent from the dangers of the wild, or they might simply hunt for the thrill of bettering themselves.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Skills from the Wilds|Hunter|Starlight|Horizon|Starlight|3"
@@ -3787,7 +3822,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Horizon Hunter feature}",
-                "When your {@classFeature Quarry|Hunter|Starlight|1|Starlight} dies, you can designate another creature of the same type as your Quarry immediately (no action required)."
+                "When your {@classFeature Quarry|Hunter|Starlight|1|Starlight} dies, you can designate another creature of the same type as your Quarry immediately without requiring a {@variantrule Bonus Action|XPHB}, still spending {@classFeature Instinct|Hunter|Starlight|1|Starlight} as normal."
             ]
         },
         {
@@ -6123,18 +6158,13 @@
             ]
         },
         {
-            "name": "Heavy Training",
+            "name": "Evasive Attacks",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "You gain proficiency with Heavy Armour."
-            ],
-            "armorProficiencies": [
-                {
-                    "heavy": true
-                }
+                "Once per turn when you hit with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to move up to 10 feet without provoking {@variantrule Opportunity Attacks|XPHB}."
             ]
         },
         {
@@ -6388,7 +6418,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6410,7 +6441,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6464,7 +6496,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6486,7 +6519,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6532,7 +6566,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6559,7 +6594,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6585,7 +6621,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6618,7 +6655,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6634,7 +6672,7 @@
                 "HTR"
             ],
             "entries": [
-                "You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
+                "You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Dash|XPHB} using this feature no more than once per turn.",
                 "When you make any Constitution ability check, you can add your Hunter's Die to the roll, or to checks and saving throws made as part of a Chase."
             ],
             "prerequisite": [
@@ -6644,7 +6682,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6670,7 +6709,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6733,7 +6773,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6795,7 +6836,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6851,7 +6893,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6879,7 +6922,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6901,7 +6945,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6917,7 +6962,7 @@
                 "HTR"
             ],
             "entries": [
-                "You can remove one level of {@condition exhaustion} whenever you complete a {@variantrule Short Rest|XPHB}."
+                "You can remove one level of {@condition Exhaustion|XPHB} whenever you complete a {@variantrule Short Rest|XPHB}."
             ],
             "prerequisite": [
                 {
@@ -6926,7 +6971,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -6951,7 +6997,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7001,7 +7048,7 @@
                 "HTR"
             ],
             "entries": [
-                "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
+                "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Hide|XPHB} using this feature no more than once per turn.",
                 "When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the total."
             ],
             "prerequisite": [
@@ -7011,7 +7058,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7054,7 +7102,7 @@
                 "HTR"
             ],
             "entries": [
-                "You are especially manoeuvrable. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke opportunity attacks. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
+                "You are especially manoeuvrable. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke {@variantrule Opportunity Attacks|XPHB}. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
             ],
             "prerequisite": [
                 {
@@ -7063,7 +7111,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7089,7 +7138,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7114,7 +7164,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7146,7 +7197,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7156,7 +7208,7 @@
                     "transfer": true,
                     "changes": [
                         {
-                            "key": "system.attributes.movement.walk",
+                            "key": "system.attributes.movement.bonus",
                             "mode": "ADD",
                             "value": 10
                         }
@@ -7181,7 +7233,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7246,7 +7299,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7282,7 +7336,7 @@
                 "HTR"
             ],
             "entries": [
-                "Opportunity attacks made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction}."
+                "{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction}."
             ],
             "prerequisite": [
                 {
@@ -7291,7 +7345,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7304,7 +7359,7 @@
                 "HTR"
             ],
             "entries": [
-                "Once per turn when you regain hit points, including each time you roll a Hit Die during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
+                "Once per turn when you regain hit points, including each time you roll a {@variantrule Hit Point Dice|XPHB} during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
             ],
             "prerequisite": [
                 {
@@ -7313,7 +7368,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7339,7 +7395,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7364,7 +7421,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7427,7 +7485,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     }
                 }
@@ -7449,7 +7508,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7477,7 +7537,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7502,7 +7563,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7527,7 +7589,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7590,7 +7653,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7619,7 +7683,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7649,7 +7714,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7709,7 +7775,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7739,7 +7806,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7797,7 +7865,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7823,11 +7892,12 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
-                        "Edge of the World"
+                        "Borderlands Hunting Ground"
                     ]
                 }
             ],
@@ -7860,7 +7930,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7886,7 +7957,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7950,7 +8022,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -7980,7 +8053,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8005,7 +8079,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8052,7 +8127,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8077,7 +8153,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8102,7 +8179,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8144,7 +8222,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8169,7 +8248,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8225,7 +8305,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8258,7 +8339,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8283,7 +8365,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8322,7 +8405,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8369,7 +8453,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8416,7 +8501,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8441,7 +8527,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8488,7 +8575,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8536,7 +8624,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8561,7 +8650,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8606,7 +8696,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8640,7 +8731,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8710,7 +8802,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -8735,7 +8828,8 @@
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
-                            "visible": true
+                            "visibleStats": true,
+                            "visibleList": false
                         }
                     },
                     "feature": [
@@ -12911,6 +13005,15 @@
                     ]
                 }
             ],
+            "scalingLevelDice": {
+                "label": "Spell damage",
+                "scaling": {
+                    "1": "1d8",
+                    "5": "2d8",
+                    "11": "3d8",
+                    "17": "4d8"
+                }
+            },
             "damageInflict": [
                 "fire",
                 "cold",
@@ -13112,7 +13215,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@damage 1d6} for each slot level above 3."
+                        "This spell's damage increases by {@scaledamage 7d6|3-9|1d6} for each slot level above 3."
                     ]
                 }
             ],
@@ -13128,7 +13231,7 @@
                 "halted"
             ],
             "savingThrow": [
-                "strength"
+                "constitution"
             ],
             "areaTags": [
                 "Q"
@@ -13216,7 +13319,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@dice 1d6} for each slot level above 4."
+                        "This spell's damage increases by {@scaledamage 8d6|4-9|1d6} for each slot level above 4."
                     ]
                 }
             ],
@@ -13277,7 +13380,12 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 10
+                    },
+                    "concentration": true
                 }
             ],
             "entries": [
@@ -13425,7 +13533,7 @@
                     "type": "entries",
                     "name": "At higher levels",
                     "entries": [
-                        "This spell's damage increases by {@dice 1d10} for each slot level above 4."
+                        "This spell's damage increases by {@scaledamage 6d10|7-9|1d10} for each slot level above 7."
                     ]
                 }
             ],
