@@ -556,7 +556,7 @@
             "level": 2,
             "entries": 
             [
-                "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain Temporary Hit Points equal to the total."
+                "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain {@variantrule Temporary Hit Points|XPHB} equal to the total."
             ],
             "foundrySystem": {
 				"uses.max": 1,
@@ -1715,6 +1715,14 @@
                     {
                         "type": "refSubclassFeature",
                         "subclassFeature": "Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3"
+                    },
+                    {
+                        "type": "refSubclassFeature",
+                        "subclassFeature": "Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|3"
                     }
                 ]
         },
@@ -1765,9 +1773,9 @@
                 {
                     "type": "quote",
                     "entries": [
-                        "You gotta deal with a wide range of creatures in the outer planes, nothing works against all of them. So try to hit it where it hurts: right between the eyes."
+                        "You've got to deal with a wide range of creatures in the outer planes, nothing works against all of them. So try to hit them where it hurts: right between the eyes."
                     ],
-                    "by": "Anathema Fulgura"
+                    "by": "Adorea Fulgura"
                 },
                 "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
             ]
@@ -1782,7 +1790,8 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry, you can add one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry, you can add one Hunter's Die to the pool.",
+                "This pool of energy, your Planar Gift, is the source of your extraplanar powers, detailed below."
             ],
             "foundrySystem": {
 				"uses.max": "@prof",
@@ -1804,7 +1813,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When another creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
+                "Pulling from the psionic powers of Aberrations, you can protect your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
             ],
             "foundryActivities": [
                 {
@@ -1812,7 +1821,7 @@
                     "type": "utility",
 					"activation": {
 						"type": "",
-						"condition": "When a nearby ally takes damage"
+						"condition": "When a creature within 30 feet of you takes damage"
 					},
                     "range": {
 						"units": "ft",
@@ -1839,29 +1848,16 @@
             ]
         },
         {
-            "name": "Expert",
-            "source": "Starlight",
-            "className": "Hunter",
-            "classSource": "Starlight",
-            "subclassShortName": "Extraplanar",
-            "subclassSource": "Starlight",
-            "level": 7,
-            "entries": [
-                "{@i 7th-level Extraplanar Hunter feature}",
-                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3|Starlight|Skills from the Outer Planes feature}."
-            ]
-        },
-        {
             "name": "Celestial Dusting",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
             "subclassSource": "Starlight",
-            "level": 7,
+            "level": 3,
             "entries": [
-                "{@i 7th-level Extraplanar Hunter feature}",
-                "When you hit a creature with a weapon attack, you can spend and roll one die from your Planar Gift to grant that many temporary hit points to yourself or a creature within 10 feet of you.",
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "Drawing from the positive energy of the upper planes, you provide a protective barrier to pre-empt harm. When you hit a creature with a weapon attack, you can expend and roll one die from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} to grant that many {@variantrule Temporary Hit Points|XPHB} to yourself or a creature within 10 feet of you.",
                 "If you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can instead use the Hunter's Die rolled as part of the attack."
             ],
             "foundryActivities": [
@@ -1911,10 +1907,10 @@
             "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
             "subclassSource": "Starlight",
-            "level": 11,
+            "level": 3,
             "entries": [
-                "{@i 11th-level Extraplanar Hunter feature}",
-                "Once on each of your turns, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target takes additional necrotic damage equal to a roll of your Hunter's Die, and must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "You call on the negative energy of the lower planes to weaken your foes. Once per turn when you hit a creature with a weapon attack, you can expend one die from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} to attempt to poison a creature. The target must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
             ],
             "foundryActivities": [
                 {
@@ -1943,20 +1939,6 @@
 							"type": "creature"
 						}
 					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die"
-								},
-								"types": [
-									"necrotic"
-								]
-							}
-						],
-						"onSave": "half"
-					},
 					"save": {
 						"ability": [
 							"con"
@@ -1969,7 +1951,73 @@
             ]
         },
         {
-            "name": "Planar Boon",
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3|Starlight|Skills from the Outer Planes feature}."
+            ]
+        },
+        {
+            "name": "Aberrant Absorption",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "If your {@subclassFeature Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} reduces the damage a creature takes to zero, you regain one of the {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} die you expended to use it."
+            ]
+        },
+        {
+            "name": "Celestial Restoration",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "Your {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} can restore {@variantrule Hit Points|XPHB} instead of granting {@variantrule Temporary Hit Points|XPHB}. On a {@variantrule Critical Hit|XPHB}, you can roll two die when determing the number of hit points instead."
+            ]
+        },
+        {
+            "name": "Infernal Exploitation",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "You have {@variantrule Advantage|XPHB} on attack rolls made against {@condition Poisoned|XPHB} targets."
+            ]
+        },
+        {
+            "name": "Planar Empowerment",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Extraplanar Hunter feature}",
+                "When you use your {@subclassFeature Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, or {@subclassFeature Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, you can roll an additional Hunter's Die. This die increases the damage reduced by the Aberrant Ward, deals extra Radiant damage to the target of the attack that activated Celestial Dusting, or deals additional Necrotic damage to a target you attempt to poison with Infernal Edge.",
+                "When you empower one of those features in this way, you cannot do so again until the start of your next turn."
+            ]
+        },
+        {
+            "name": "- Boon",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -1983,7 +2031,7 @@
                     "type": "list",
                     "items": [
                         "Aberrant Ward now pushes the attacking creature 10 feet away from the ally you protect with it.",
-                        "Celestial Dusting can also be used to restore hit points to a creature, and its range is 30 feet.",
+                        "Celestial Dusting can also be used to restore {@variantrule Hit Points|XPHB} to a creature instead of granting {@variantrule Temporary Hit Points|XPHB}, and its range is 30 feet.",
                         "The target of your Infernal Edge has {@variantrule Disadvantage|XPHB} on the saving throw if your target is a Fiend, Celestial or Aberration."
                     ]
                 }
@@ -2590,7 +2638,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
-                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains {@variantrule Temporary Hit Points|XPHB} equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
             ],
             "foundryActivities": [
                 {
@@ -2634,7 +2682,7 @@
                         "formula": "@scale.hunter.hunter-die"
                     },
                     "description": {
-                        "chatFlavor": "An ally within 60 feet gains temporary hit points and their next successful attack deals additional damage equal to your Hunter's Die."
+                        "chatFlavor": "An ally within 60 feet gains {@variantrule Temporary Hit Points|XPHB} and their next successful attack deals additional damage equal to your Hunter's Die."
                     }
                   }
               ]
@@ -4023,9 +4071,9 @@
 				"HTR"
 			],
 			"entries": [
-				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the Temporary Hit Points gained.",
+				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the {@variantrule Temporary Hit Points|XPHB} gained.",
                 "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional {@classFeature Instinct|Hunter|Starlight|1|Starlight}, rolling one additional Hunter's Die for each Instinct spent.",
-                "Finally, you can use Shrug It Off to recover Hit Points, instead of gaining Temporary Hit Points."
+                "Finally, you can use Shrug It Off to recover {@variantrule Hit Points|XPHB}, instead of gaining Temporary Hit Points."
 			],
             "prerequisite": [
                 {
