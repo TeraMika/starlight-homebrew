@@ -9,7 +9,7 @@
                 "authors": [
                     "ST"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -21,7 +21,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -36,13 +36,13 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
         ],
         "dateAdded": 0,
-        "dateLastModified": 1789724010.990079
+        "dateLastModified": 1789724299.587217
     },
     "feat": [
         {

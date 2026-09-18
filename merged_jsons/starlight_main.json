@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -57,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -69,7 +69,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -83,7 +83,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -96,11 +96,11 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.18.09.33",
+                "version": "2026.09.18.09.38",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
-        "dateLastModified": 1789724011.0077817
+        "dateLastModified": 1789724299.6061003
     },
     "charoption": [
         {
@@ -3268,7 +3268,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the psionic powers of Aberrations, you can protect your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
+                "Pulling from the psionic powers of Aberrations, you can protect yourself and your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
             ],
             "foundryActivities": [
                 {

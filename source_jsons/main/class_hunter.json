@@ -1815,7 +1815,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the psionic powers of Aberrations, you can protect your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
+                "Pulling from the psionic powers of Aberrations, you can protect yourself and your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
             ],
             "foundryActivities": [
                 {
