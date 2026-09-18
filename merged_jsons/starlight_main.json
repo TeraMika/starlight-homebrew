@@ -2,6 +2,21 @@
     "_meta": {
         "sources": [
             {
+                "json": "Starbright",
+                "abbreviation": "Starbright",
+                "full": "Starbright: CharOptions",
+                "color": "dac4ff",
+                "authors": [
+                    "Starlight"
+                ],
+                "convertedBy": [
+                    "Starlight"
+                ],
+                "version": "2026.09.18.09.33",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
                 "json": "Starlight",
                 "abbreviation": "Starlight",
                 "full": "Starlight: Hunter",
@@ -12,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +57,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +69,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -68,7 +83,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -81,16 +96,24 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.08.30.08.40",
+                "version": "2026.09.18.09.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
-        "optionalFeatureTypes": {
-            "HTR": "Hunter's Tricks"
-        },
-        "dateAdded": 0,
-        "dateLastModified": 1788079215.5375671
+        "dateLastModified": 1789724011.0077817
     },
+    "charoption": [
+        {
+            "name": "Hello World",
+            "source": "Starbright",
+            "optionType": [
+                "SG"
+            ],
+            "entries": [
+                "You have the inexplicable ability to write introductory demo programs in any language."
+            ]
+        }
+    ],
     "class": [
         {
             "name": "Hunter",
@@ -1581,7 +1604,7 @@
             "classSource": "Starlight",
             "level": 2,
             "entries": [
-                "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain Temporary Hit Points equal to the total."
+                "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain {@variantrule Temporary Hit Points|XPHB} equal to the total."
             ],
             "foundrySystem": {
                 "uses.max": 1,
@@ -1735,7 +1758,7 @@
             "classSource": "Starlight",
             "level": 5,
             "entries": [
-                "Your Quarry cannot {@condition Frighten} you."
+                "Your Quarry cannot {@condition Frightened|XPHB|Frighten} you."
             ],
             "conditionImmune": [
                 "frightened (quarry only)"
@@ -1748,7 +1771,7 @@
             "classSource": "Starlight",
             "level": 5,
             "entries": [
-                "Your Quarry cannot {@condition Charm} you."
+                "Your Quarry cannot {@condition Charmed|XPHB|Charm} you."
             ],
             "conditionImmune": [
                 "charmed (quarry only)"
@@ -2001,7 +2024,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When you fail a saving throw, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
             ],
             "foundryActivities": [
                 {
@@ -2015,7 +2038,7 @@
                         "targets": [
                             {
                                 "type": "itemUses",
-                                "value": "2",
+                                "value": "1",
                                 "target": {
                                     "consumes": {
                                         "name": "Instinct"
@@ -2656,9 +2679,11 @@
             "subclassFeatures": [
                 "Planeswalker|Hunter|Starlight|Extraplanar|Starlight|3",
                 "Expert|Hunter|Starlight|Extraplanar|Starlight|7",
-                "Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|7",
-                "Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|11",
-                "Planar Boon|Hunter|Starlight|Extraplanar|Starlight|15"
+                "Aberrant Absorption|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Celestial Restoration|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Infernal Exploitation|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Gift Empowerment|Hunter|Starlight|Extraplanar|Starlight|11",
+                "Planar Blessing|Hunter|Starlight|Extraplanar|Starlight|15"
             ]
         },
         {
@@ -3039,7 +3064,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
-                "The skills you gained from the Borderlands have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3|Starlight|Skills from the Borderland} feature."
+                "The skills you gained from the Borderland have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3|Starlight|Skills from the Borderland} feature."
             ]
         },
         {
@@ -3145,6 +3170,14 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|3"
                 }
             ]
         },
@@ -3160,7 +3193,7 @@
                 "{@i 3rd-level Extraplanar Hunter feature}",
                 "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
                 "You gain proficiency with 2 of the following skills: {@skill Arcana|XPHB}, {@skill Religion|XPHB}, {@skill Insight}, or {@skill Persuasion}.",
-                "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
+                "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils|XPHB}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
             ],
             "skillProficiencies": [
                 {
@@ -3195,9 +3228,9 @@
                 {
                     "type": "quote",
                     "entries": [
-                        "You gotta deal with a wide range of creatures in the outer planes, nothing works against all of them. So try to hit it where it hurts: right between the eyes."
+                        "You've got to deal with a wide range of creatures in the outer planes, nothing works against all of them. So try to hit them where it hurts: right between the eyes."
                     ],
-                    "by": "Anathema Fulgura"
+                    "by": "Adorea Fulgura"
                 },
                 "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for the additional damage dealt by your Hunter's Die to be Psychic damage."
             ]
@@ -3212,7 +3245,8 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry, you can add one Hunter's Die to the pool."
+                "Your exposure to otherworldly magics has given you access to a pool of energy you can derive power from. It can hold a number of your Hunter's Die equal to your Proficiency Bonus and refills when you complete a {@variantrule Long Rest|XPHB}. When you damage your Quarry, you can add one Hunter's Die to the pool.",
+                "This pool of energy, your Planar Gift, is the source of your extraplanar powers, detailed below."
             ],
             "foundrySystem": {
                 "uses.max": "@prof",
@@ -3234,7 +3268,7 @@
             "level": 3,
             "entries": [
                 "{@i 3rd-level Extraplanar Hunter feature}",
-                "Pulling from the Psionic Powers of Aberrations, you can protect your allies. When another creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to roll any number of dice from your Planar Gift, reducing the damage they take by the total rolled."
+                "Pulling from the psionic powers of Aberrations, you can protect your allies. When a creature within 30 feet of you takes damage, you can use your {@variantrule Reaction|XPHB} to expend and roll any number of dice from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, reducing the damage the target takes by the total rolled."
             ],
             "foundryActivities": [
                 {
@@ -3242,7 +3276,7 @@
                     "type": "utility",
                     "activation": {
                         "type": "",
-                        "condition": "When a nearby ally takes damage"
+                        "condition": "When a creature within 30 feet of you takes damage"
                     },
                     "range": {
                         "units": "ft",
@@ -3269,29 +3303,16 @@
             ]
         },
         {
-            "name": "Expert",
-            "source": "Starlight",
-            "className": "Hunter",
-            "classSource": "Starlight",
-            "subclassShortName": "Extraplanar",
-            "subclassSource": "Starlight",
-            "level": 7,
-            "entries": [
-                "{@i 7th-level Extraplanar Hunter feature}",
-                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3|Starlight|Skills from the Outer Planes feature}."
-            ]
-        },
-        {
             "name": "Celestial Dusting",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
             "subclassSource": "Starlight",
-            "level": 7,
+            "level": 3,
             "entries": [
-                "{@i 7th-level Extraplanar Hunter feature}",
-                "When you hit a creature with a weapon attack, you can spend and roll one die from your Planar Gift to grant that many temporary hit points to yourself or a creature within 10 feet of you.",
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "Drawing from the positive energy of the upper planes, you provide a protective barrier to pre-empt harm. When you hit a creature with a weapon attack, you can expend and roll one die from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} to grant that many {@variantrule Temporary Hit Points|XPHB} to yourself or a creature within 10 feet of you.",
                 "If you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can instead use the Hunter's Die rolled as part of the attack."
             ],
             "foundryActivities": [
@@ -3341,10 +3362,10 @@
             "classSource": "Starlight",
             "subclassShortName": "Extraplanar",
             "subclassSource": "Starlight",
-            "level": 11,
+            "level": 3,
             "entries": [
-                "{@i 11th-level Extraplanar Hunter feature}",
-                "Once on each of your turns, you can use a die from your Planar Gift to attempt to poison a creature when you hit them with a weapon attack. The target takes additional necrotic damage equal to a roll of your Hunter's Die, and must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
+                "{@i 3rd-level Extraplanar Hunter feature}",
+                "You call on the negative energy of the lower planes to weaken your foes. Once per turn when you hit a creature with a weapon attack, you can expend one die from your {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} to attempt to poison a creature. The target must make a Constitution saving throw or become {@condition Poisoned|XPHB} until the end of your next turn."
             ],
             "foundryActivities": [
                 {
@@ -3373,20 +3394,6 @@
                             "type": "creature"
                         }
                     },
-                    "damage": {
-                        "parts": [
-                            {
-                                "custom": {
-                                    "enabled": true,
-                                    "formula": "@scale.hunter.hunter-die"
-                                },
-                                "types": [
-                                    "necrotic"
-                                ]
-                            }
-                        ],
-                        "onSave": "half"
-                    },
                     "save": {
                         "ability": [
                             "con"
@@ -3399,7 +3406,74 @@
             ]
         },
         {
-            "name": "Planar Boon",
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "The skills you gained from the outer planes have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Outer Planes|Hunter|Starlight|Extraplanar|Starlight|3|Starlight|Skills from the Outer Planes feature}."
+            ]
+        },
+        {
+            "name": "Aberrant Absorption",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "If your {@subclassFeature Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} reduces the damage a creature takes to zero, you regain one of the {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} die you expended to use it."
+            ]
+        },
+        {
+            "name": "Celestial Restoration",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "When you target a creature with {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, instead of granting {@variantrule Temporary Hit Points}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} (still requiring the {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} die) to remove a condition from the creature: {@condition Blinded}, {@condition Deafened}, {@condition Paralyzed}, {@condition Poisoned}, {@condition Dazed|Starlight}, {@condition Disoriented|Starlight}, {@condition Silenced|Starlight}, {@condition Weakened|Starlight}, or any {@variantrule Elemental Conditions|Starlight|Elemental Condition}.",
+                "Additionally, on a {@variantrule Critical Hit|XPHB}, you can roll two die when determing the number of {@variantrule Temporary Hit Points|XPHB} granted."
+            ]
+        },
+        {
+            "name": "Infernal Exploitation",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Extraplanar Hunter feature}",
+                "You have {@variantrule Advantage|XPHB} on attack rolls made against {@condition Poisoned|XPHB} targets."
+            ]
+        },
+        {
+            "name": "Gift Empowerment",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Extraplanar",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Extraplanar Hunter feature}",
+                "When you use your {@subclassFeature Aberrant Ward|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, or {@subclassFeature Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, you can roll an additional Hunter's Die. This die increases the damage reduced by the Aberrant Ward, deals extra Radiant damage to the target of the attack that activated Celestial Dusting, or deals additional Necrotic damage to a target you attempt to poison with Infernal Edge.",
+                "When you empower one of those features in this way, you cannot do so again until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Planar Blessing",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -3412,11 +3486,12 @@
                 {
                     "type": "list",
                     "items": [
-                        "Aberrant Ward now pushes the attacking creature 10 feet away from the ally you protect with it.",
-                        "Celestial Dusting can also be used to restore hit points to a creature, and its range is 30 feet.",
+                        "Aberrant Ward now pushes the creature who caused the damage 10 feet away from the ally you protect with it.",
+                        "Celestial Dusting can also be used to restore {@variantrule Hit Points|XPHB} to a creature instead of granting {@variantrule Temporary Hit Points|XPHB}, and its range is 30 feet.",
                         "The target of your Infernal Edge has {@variantrule Disadvantage|XPHB} on the saving throw if your target is a Fiend, Celestial or Aberration."
                     ]
-                }
+                },
+                "Additionally, your Planar Gift dice pool is filled on a {@variantrule Short Rest|XPHB}, as well as a {@variantrule Long Rest|XPHB}."
             ]
         },
         {
@@ -4020,7 +4095,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Fable Hunter feature}",
-                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains temporary hit points equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
+                "Whenever you make an attack with the {@action Attack|XPHB} action, you can instead spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to inspire a friendly creature within 60 feet of you. That creature gains {@variantrule Temporary Hit Points|XPHB} equal to a roll of your Hunter's Die plus your Wisdom modifier, and their next successful attack deals additional damage equal to your Hunter's Die."
             ],
             "foundryActivities": [
                 {
@@ -4066,7 +4141,7 @@
                         "formula": "@scale.hunter.hunter-die"
                     },
                     "description": {
-                        "chatFlavor": "An ally within 60 feet gains temporary hit points and their next successful attack deals additional damage equal to your Hunter's Die."
+                        "chatFlavor": "An ally within 60 feet gains {@variantrule Temporary Hit Points|XPHB} and their next successful attack deals additional damage equal to your Hunter's Die."
                     }
                 }
             ]
@@ -6298,21 +6373,124 @@
             ]
         },
         {
-            "name": "Dazzling Strike",
+            "name": "Beguiling Strike",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Charmed|Starlight} until the start of your next turn.",
+                "The creature treats you or one of your allies within 30 feet of the target (your choice) as the charmer. The {@condition Charmed|XPHB} condition ends early if the charmer attacks the target, deals damage to it, or forces it to make a saving throw."
             ],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             },
             "foundryActivities": [
                 {
                     "name": "Dazzling Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Baleful Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Frightened|Starlight} of you until the start of your next turn."
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Baleful Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Goading Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Taunted|Starlight} by you until the start of your next turn."
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Goading Strike",
                     "type": "save",
                     "activation": {
                         "type": "",
@@ -6355,7 +6533,7 @@
                 "HTR"
             ],
             "entries": [
-                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
+                "You can spend a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
             ],
             "consumes": {
                 "name": "Instinct"
@@ -6367,19 +6545,6 @@
                     "activation": {
                         "type": "bonus",
                         "amount": 1
-                    },
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
                     },
                     "description": {
                         "chatFlavor": "Gain advantage on your next attack."
@@ -6911,9 +7076,9 @@
                 "HTR"
             ],
             "entries": [
-                "When you use Shrug It Off, you can roll an additional Hunter's Die when determining the Temporary Hit Points gained.",
+                "When you use Shrug It Off, you can roll an additional Hunter's Die when determining the {@variantrule Temporary Hit Points|XPHB} gained.",
                 "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional {@classFeature Instinct|Hunter|Starlight|1|Starlight}, rolling one additional Hunter's Die for each Instinct spent.",
-                "Finally, you can use Shrug It Off to recover Hit Points, instead of gaining Temporary Hit Points."
+                "Finally, you can use Shrug It Off to recover {@variantrule Hit Points|XPHB}, instead of gaining Temporary Hit Points."
             ],
             "prerequisite": [
                 {
@@ -6973,6 +7138,93 @@
                             "source": "Starlight",
                             "visibleStats": true,
                             "visibleList": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Breaking Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Dexterity saving throw or become {@condition Staggered|Starlight} until the start of your next turn.",
+                "Alternatively, you can force the target to make a Strength saving throw or become {@condition Sundered|Starlight}."
+            ],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Staggering Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                },
+                {
+                    "name": "Sundering Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
                         }
                     }
                 }
@@ -7290,7 +7542,7 @@
             ],
             "entries": [
                 "You can spend an {@variantrule Action} to regain Instinct equal to two rolls of your Hunter's Die.",
-                "You can do this once and must finish {@variantrule Long Rest} before you can do so again. You can also use it as part of rolling initiative without requiring an action."
+                "You can do this once and must finish a {@variantrule Long Rest|XPHB} before you can do so again. You can also do this as part of rolling {@variantrule Initiative|XPHB} without requiring an Action."
             ],
             "prerequisite": [
                 {
@@ -7336,7 +7588,7 @@
                 "HTR"
             ],
             "entries": [
-                "{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction}."
+                "{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction|XPHB}."
             ],
             "prerequisite": [
                 {
@@ -7347,6 +7599,66 @@
                             "source": "Starlight",
                             "visibleStats": true,
                             "visibleList": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Dazzling Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight} until the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Dazzling Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
                         }
                     }
                 }
@@ -7375,6 +7687,66 @@
                     "feature": [
                         "Indefatigable I"
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Discombobulating Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Constitution saving throw or become {@condition Dazed|Starlight} until the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Dazzling Strike",
+                    "type": "save",
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
@@ -7797,7 +8169,7 @@
                 "HTR"
             ],
             "entries": [
-                "When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
+                "When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target as part of the attack. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
             ],
             "prerequisite": [
                 {
@@ -7856,7 +8228,7 @@
                 "HTR"
             ],
             "entries": [
-                "Once per {@variantrule Long Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
+                "Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
             ],
             "prerequisite": [
                 {
@@ -7897,7 +8269,7 @@
                         }
                     },
                     "feature": [
-                        "Borderlands Hunting Ground"
+                        "Borderland Hunting Ground"
                     ]
                 }
             ],
@@ -7906,7 +8278,7 @@
             }
         },
         {
-            "name": "Favoured Terrain: Borderlands",
+            "name": "Favoured Terrain: Borderland",
             "source": "Starlight",
             "featureType": [
                 "HTR"
@@ -16598,7 +16970,7 @@
                             "type": "entries",
                             "name": "Defense Affected",
                             "entries": [
-                                "The creature's armour class cannot benefit from armour or shields, but still gains any special bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
+                                "{@variantrule Armor Class|XPHB|Armour Class} over 10 granted by your equipped armour is halved (round up). For example, {@item Studded Leather Armor|XPHB|Studded Leather Armour} suffers a penalty of 1, and {@item Plate Armor|XPHB|Plate Armour} suffers a penalty of 4. Additionally, any held {@item Shield|XPHB|Shields} do not grant bonus {@variantrule Armor Class|XPHB|Armour Class}."
                             ]
                         }
                     ]
@@ -16618,7 +16990,7 @@
                             "type": "entries",
                             "name": "Defense Affected",
                             "entries": [
-                                "Your Dexterity modifier cannot increase your {@variantrule Armor Class|XPHB|Armour Class}."
+                                "Your {@variantrule Armor Class|XPHB|Armour Class} is reduced by an amount equal to your Dexterity modifier (minimum 0)."
                             ]
                         }
                     ]
@@ -17016,6 +17388,26 @@
             ]
         },
         {
+            "name": "Taunted",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Taunted condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on attack rolls against anything other than the creature that Taunted you. If you are Taunted by multiple creatures, you have {@variantrule Disadvantage|XPHB} against all of them"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Dying",
             "source": "Starlight",
             "page": 0,
@@ -17049,6 +17441,75 @@
                         }
                     ]
                 }
+            ]
+        }
+    ],
+    "variantrule": [
+        {
+            "name": "Elemental Conditions",
+            "source": "Starlight",
+            "ruleType": "O",
+            "entries": [
+                "Several of the Starlight conditions set are associated implicitly with a particular damage type. You may use these as additional minor bonuses to spells, other features, or they could be applied on a critical hit, as an example. They act as small ways to make a creature a little more threatening. Use only a couple in a given combat, as their effects are varied and it could be difficult to keep track of a wide variety.",
+                "Any item, spell, or other feature that removes a condition should be allowed to remove these ones as part of it, such as {@spell Lesser Restoration|XPHB} or a Monk's {@classFeature Self-Restoration|Monk|XPHB|10|XPHB}. See the table below for details on the conditions:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Condition",
+                        "Associated Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "{@condition Bleeding|Starlight}",
+                            "Piercing, Slashing"
+                        ],
+                        [
+                            "{@condition Off-Balance|Starlight}",
+                            "Bludgeoning"
+                        ],
+                        [
+                            "{@condition Burning|Starlight}",
+                            "Fire"
+                        ],
+                        [
+                            "{@condition Shocked|Starlight}",
+                            "Lightning"
+                        ],
+                        [
+                            "{@condition Melting|Starlight}",
+                            "Acid"
+                        ],
+                        [
+                            "{@condition Brittle|Starlight}",
+                            "Cold"
+                        ],
+                        [
+                            "{@condition Rattled|Starlight}",
+                            "Thunder"
+                        ],
+                        [
+                            "{@condition Seared|Starlight}",
+                            "Radiant"
+                        ],
+                        [
+                            "{@condition Frayed|Starlight}",
+                            "Psychic"
+                        ],
+                        [
+                            "{@condition Withering|Starlight}",
+                            "Necrotic"
+                        ],
+                        [
+                            "{@condition Backlash|Starlight}",
+                            "Force"
+                        ]
+                    ]
+                },
+                "{@note {@condition Poisoned|XPHB} is the natural partner to the Poison damage type, so including that among these options and rules would not be harmful.}"
             ]
         }
     ],

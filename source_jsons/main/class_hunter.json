@@ -712,7 +712,7 @@
             "classSource": "Starlight",
             "level": 5,
             "entries": [
-                "Your Quarry cannot {@condition Frighten} you."
+                "Your Quarry cannot {@condition Frightened|XPHB|Frighten} you."
             ],
             "conditionImmune": ["frightened (quarry only)"]
         },
@@ -723,7 +723,7 @@
             "classSource": "Starlight",
             "level": 5,
             "entries": [
-                "Your Quarry cannot {@condition Charm} you."
+                "Your Quarry cannot {@condition Charmed|XPHB|Charm} you."
             ],
             "conditionImmune": ["charmed (quarry only)"]
         },
@@ -975,7 +975,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When you fail a saving throw, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
+                "When you fail a saving throw, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the roll, potentially turning it into a success."
             ],
             "foundryActivities": [
                 {
@@ -989,7 +989,7 @@
                         "targets": [
                             {
                                 "type": "itemUses",
-                                "value": "2",
+                                "value": "1",
                                 "target": {
                                     "consumes": {
                                         "name": "Instinct"
@@ -1384,9 +1384,11 @@
             "subclassFeatures": [
                 "Planeswalker|Hunter|Starlight|Extraplanar|Starlight|3",
                 "Expert|Hunter|Starlight|Extraplanar|Starlight|7",
-                "Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|7",
-                "Infernal Edge|Hunter|Starlight|Extraplanar|Starlight|11",
-                "Planar Boon|Hunter|Starlight|Extraplanar|Starlight|15"
+                "Aberrant Absorption|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Celestial Restoration|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Infernal Exploitation|Hunter|Starlight|Extraplanar|Starlight|7",
+                "Gift Empowerment|Hunter|Starlight|Extraplanar|Starlight|11",
+                "Planar Blessing|Hunter|Starlight|Extraplanar|Starlight|15"
             ]
         },
         {
@@ -1609,7 +1611,7 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Borderland Hunter feature}",
-                "The skills you gained from the Borderlands have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3|Starlight|Skills from the Borderland} feature."
+                "The skills you gained from the Borderland have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Borderland|Hunter|Starlight|Borderland|Starlight|3|Starlight|Skills from the Borderland} feature."
             ]
         },
         {
@@ -1738,7 +1740,7 @@
                 "{@i 3rd-level Extraplanar Hunter feature}",
                 "Your experience in the outer planes has taught you much about magic and the beliefs and mythologies of others.",
                 "You gain proficiency with 2 of the following skills: {@skill Arcana|XPHB}, {@skill Religion|XPHB}, {@skill Insight}, or {@skill Persuasion}.",
-                "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
+                "Additionally, you gain proficiency with any {@item Gaming Set|XPHB} and {@item Cook's Utensils|XPHB}, as some creatures from these planes are known to enjoy games, and their food may not be to your liking."
             ],
             "skillProficiencies": [
                 {
@@ -1986,7 +1988,8 @@
             "level": 7,
             "entries": [
                 "{@i 7th-level Extraplanar Hunter feature}",
-                "Your {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} can restore {@variantrule Hit Points|XPHB} instead of granting {@variantrule Temporary Hit Points|XPHB}. On a {@variantrule Critical Hit|XPHB}, you can roll two die when determing the number of hit points instead."
+                "When you target a creature with {@subclassFeature Celestial Dusting|Hunter|Starlight|Extraplanar|Starlight|3|Starlight}, instead of granting {@variantrule Temporary Hit Points}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} (still requiring the {@subclassFeature Planar Gift|Hunter|Starlight|Extraplanar|Starlight|3|Starlight} die) to remove a condition from the creature: {@condition Blinded}, {@condition Deafened}, {@condition Paralyzed}, {@condition Poisoned}, {@condition Dazed|Starlight}, {@condition Disoriented|Starlight}, {@condition Silenced|Starlight}, {@condition Weakened|Starlight}, or any {@variantrule Elemental Conditions|Starlight|Elemental Condition}.",
+                "Additionally, on a {@variantrule Critical Hit|XPHB}, you can roll two die when determing the number of {@variantrule Temporary Hit Points|XPHB} granted."
             ]
         },
         {
@@ -2003,7 +2006,7 @@
             ]
         },
         {
-            "name": "Planar Empowerment",
+            "name": "Gift Empowerment",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -2017,7 +2020,7 @@
             ]
         },
         {
-            "name": "- Boon",
+            "name": "Planar Blessing",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
@@ -2030,11 +2033,12 @@
                 {
                     "type": "list",
                     "items": [
-                        "Aberrant Ward now pushes the attacking creature 10 feet away from the ally you protect with it.",
+                        "Aberrant Ward now pushes the creature who caused the damage 10 feet away from the ally you protect with it.",
                         "Celestial Dusting can also be used to restore {@variantrule Hit Points|XPHB} to a creature instead of granting {@variantrule Temporary Hit Points|XPHB}, and its range is 30 feet.",
                         "The target of your Infernal Edge has {@variantrule Disadvantage|XPHB} on the saving throw if your target is a Fiend, Celestial or Aberration."
                     ]
-                }
+                },
+                "Additionally, your Planar Gift dice pool is filled on a {@variantrule Short Rest|XPHB}, as well as a {@variantrule Long Rest|XPHB}."
             ]
         },
         {
@@ -3471,21 +3475,124 @@
             ]
         },
         {
-            "name": "Dazzling Strike",
+            "name": "Beguiling Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight}."
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Charmed|Starlight} until the start of your next turn.",
+                "The creature treats you or one of your allies within 30 feet of the target (your choice) as the charmer. The {@condition Charmed|XPHB} condition ends early if the charmer attacks the target, deals damage to it, or forces it to make a saving throw."
 			],
             "consumes": {
                 "name": "Instinct",
-                "amount": 2
+                "amount": 1
             },
             "foundryActivities": [
                 {
                     "name": "Dazzling Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                }
+            ]
+        },
+        {
+            "name": "Baleful Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Frightened|Starlight} of you until the start of your next turn."
+			],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Baleful Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                }
+            ]
+        },
+        {
+            "name": "Goading Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Taunted|Starlight} by you until the start of your next turn."
+			],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Goading Strike",
                     "type": "save",
 					"activation": {
 						"type": "",
@@ -3528,7 +3635,7 @@
 				"HTR"
 			],
 			"entries": [
-                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
+                "You can spend a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
 			],
             "consumes": {
                 "name": "Instinct"
@@ -3541,19 +3648,6 @@
 						"type": "bonus",
 						"amount": 1
 					},
-                    "consumption": {
-                        "targets": [
-                            {
-                                "type": "itemUses",
-                                "value": "1",
-                                "target": {
-                                    "consumes": {
-                                        "name": "Instinct"
-                                    }
-                                }
-                            }
-                        ]
-                    },
                     "description": {
                         "chatFlavor": "Gain advantage on your next attack."
                     }
@@ -4137,6 +4231,93 @@
             ]
 		},
         {
+            "name": "Breaking Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Dexterity saving throw or become {@condition Staggered|Starlight} until the start of your next turn.",
+                "Alternatively, you can force the target to make a Strength saving throw or become {@condition Sundered|Starlight}."
+			],
+            "consumes": {
+                "name": "Instinct",
+                "amount": 1
+            },
+            "foundryActivities": [
+                {
+                    "name": "Staggering Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                },
+                {
+                    "name": "Sundering Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                }
+            ]
+        },
+        {
 			"name": "Nerve Strike",
 			"source": "Starlight",
 			"featureType": [
@@ -4448,7 +4629,7 @@
 			],
 			"entries": [
                 "You can spend an {@variantrule Action} to regain Instinct equal to two rolls of your Hunter's Die.",
-                "You can do this once and must finish {@variantrule Long Rest} before you can do so again. You can also use it as part of rolling initiative without requiring an action."
+                "You can do this once and must finish a {@variantrule Long Rest|XPHB} before you can do so again. You can also do this as part of rolling {@variantrule Initiative|XPHB} without requiring an Action."
 			],
             "prerequisite": [
                 {
@@ -4494,7 +4675,7 @@
 				"HTR"
 			],
 			"entries": [
-				"{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction}."
+				"{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction|XPHB}."
 			],
             "prerequisite": [
                 {
@@ -4507,6 +4688,66 @@
                             "visibleList": false
                         }
                     }
+                }
+            ]
+        },
+        {
+            "name": "Dazzling Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Dazzling Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
                 }
             ]
         },
@@ -4536,6 +4777,66 @@
                 }
             ]
 		},
+        {
+            "name": "Discombobulating Strike",
+			"source": "Starlight",
+			"featureType": [
+				"HTR"
+			],
+			"entries": [
+				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Constitution saving throw or become {@condition Dazed|Starlight} until the start of your next turn."
+			],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 10,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    }
+                }
+            ],
+            "foundryActivities": [
+                {
+                    "name": "Dazzling Strike",
+                    "type": "save",
+					"activation": {
+						"type": "",
+						"condition": "When you hit a creature with an attack"
+					},
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "2",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+                }
+            ]
+        },
         {
 			"name": "Deft Movement II",
 			"source": "Starlight",
@@ -4949,7 +5250,7 @@
 				"HTR"
 			],
 			"entries": [
-				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
+				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target as part of the attack. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
 			],
             "prerequisite": [
                 {
@@ -5008,7 +5309,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Once per {@variantrule Long Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
+				"Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
 			],
             "prerequisite": [
                 {
@@ -5049,7 +5350,7 @@
                         }
                     },
                     "feature": [
-                        "Borderlands Hunting Ground"
+                        "Borderland Hunting Ground"
                     ]
                 }
             ],
@@ -5058,7 +5359,7 @@
             }
 		},
         {
-			"name": "Favoured Terrain: Borderlands",
+			"name": "Favoured Terrain: Borderland",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"

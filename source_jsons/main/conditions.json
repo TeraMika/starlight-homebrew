@@ -256,7 +256,7 @@
                             "type": "entries",
                             "name": "Defense Affected",
                             "entries": [
-                                "The creature's armour class cannot benefit from armour or shields, but still gains any special bonuses to AC that those items offer (such as a +1 shield). If the armour would limit the creature's Dexterity modifier bonus to armour class (such as Half-Plate or Plate armour) or impose disadvantage on Stealth (Dexterity) checks, it still does."
+                                "{@variantrule Armor Class|XPHB|Armour Class} over 10 granted by your equipped armour is halved (round up). For example, {@item Studded Leather Armor|XPHB|Studded Leather Armour} suffers a penalty of 1, and {@item Plate Armor|XPHB|Plate Armour} suffers a penalty of 4. Additionally, any held {@item Shield|XPHB|Shields} do not grant bonus {@variantrule Armor Class|XPHB|Armour Class}."
                             ]
                         }
                     ]
@@ -276,7 +276,7 @@
                             "type": "entries",
                             "name": "Defense Affected",
                             "entries": [
-                                "Your Dexterity modifier cannot increase your {@variantrule Armor Class|XPHB|Armour Class}."
+                                "Your {@variantrule Armor Class|XPHB|Armour Class} is reduced by an amount equal to your Dexterity modifier (minimum 0)."
                             ]
                         }
                     ]
@@ -674,6 +674,26 @@
             ]
         },
         {
+            "name": "Taunted",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Taunted condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Attacks Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on attack rolls against anything other than the creature that Taunted you. If you are Taunted by multiple creatures, you have {@variantrule Disadvantage|XPHB} against all of them"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Dying",
             "source": "Starlight",
             "page": 0,
@@ -709,6 +729,75 @@
                         }
                     ]
                 }
+            ]
+        }
+    ],
+    "variantrule": [
+        {
+            "name": "Elemental Conditions",
+            "source": "Starlight",
+            "ruleType": "O",
+            "entries": [
+                "Several of the Starlight conditions set are associated implicitly with a particular damage type. You may use these as additional minor bonuses to spells, other features, or they could be applied on a critical hit, as an example. They act as small ways to make a creature a little more threatening. Use only a couple in a given combat, as their effects are varied and it could be difficult to keep track of a wide variety.",
+                "Any item, spell, or other feature that removes a condition should be allowed to remove these ones as part of it, such as {@spell Lesser Restoration|XPHB} or a Monk's {@classFeature Self-Restoration|Monk|XPHB|10|XPHB}. See the table below for details on the conditions:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Condition",
+                        "Associated Damage Type"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "{@condition Bleeding|Starlight}",
+                            "Piercing, Slashing"
+                        ],
+                        [
+                            "{@condition Off-Balance|Starlight}",
+                            "Bludgeoning"
+                        ],
+                        [
+                            "{@condition Burning|Starlight}",
+                            "Fire"
+                        ],
+                        [
+                            "{@condition Shocked|Starlight}",
+                            "Lightning"
+                        ],
+                        [
+                            "{@condition Melting|Starlight}",
+                            "Acid"
+                        ],
+                        [
+                            "{@condition Brittle|Starlight}",
+                            "Cold"
+                        ],
+                        [
+                            "{@condition Rattled|Starlight}",
+                            "Thunder"
+                        ],
+                        [
+                            "{@condition Seared|Starlight}",
+                            "Radiant"
+                        ],
+                        [
+                            "{@condition Frayed|Starlight}",
+                            "Psychic"
+                        ],
+                        [
+                            "{@condition Withering|Starlight}",
+                            "Necrotic"
+                        ],
+                        [
+                            "{@condition Backlash|Starlight}",
+                            "Force"
+                        ]
+                    ]
+                },
+                "{@note {@condition Poisoned|XPHB} is the natural partner to the Poison damage type, so including that among these options and rules would not be harmful.}"
             ]
         }
     ]
