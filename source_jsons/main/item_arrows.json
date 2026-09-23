@@ -40,7 +40,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} acid damage to all creatures within 10 feet of the target. The target must make a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Acid damage to all creatures within 10 feet of the target. The target f a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
 			]
 		},
         {
@@ -57,7 +57,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} fire damage to all creatures within 10 feet of the target. The target must make a DC 14 Constitution saving throw or become {@condition Burning|Starlight}, repeating the saving throw at the end of each of its turns to end the effect."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Fire damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Constitution saving throw or become {@condition Burning|Starlight}, repeating the saving throw at the end of each of its turns to end the effect."
 			]
 		},
         {
@@ -74,7 +74,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} cold damage to all creatures within 10 feet of the target. The target is {@condition Hampered|Starlight} until the start of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Cold damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Constitution saving throw or become {@condition Brittle|Starlight}, repeating the saving throw at the end of each of its turns to end the effect."
 			]
 		},
         {
@@ -91,7 +91,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} lightning damage to all creatures within 10 feet of the target. The target must make a DC 14 Constitution saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Lightning damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Constitution saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
 			]
 		},
         {
@@ -108,7 +108,24 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} thunder damage to all creatures within 10 feet of the target. Any creature who takes this thunder damage must make a DC 14 Strength saving throw or be thrown 10 feet away from the target (the target is pushed directly away from you).",
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Thunder damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Constitution saving throw or become {@condition Rattled|Starlight} until the start of your next turn."
+			]
+		},
+        {
+			"name": "Arrow of Dispersion",
+			"source": "Starlight",
+			"rarity": "common",
+			"wondrous": false,
+            "type": "A",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Ammunition",
+					"entries":[
+						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
+					]
+				},
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Thunder damage to all creatures within 10 feet of the target. Any creature who takes this thunder damage must succeed a DC 14 Strength saving throw or be thrown 10 feet away from the target (the target is pushed directly away from you).",
                 "Huge or larger creatures have {@variantrule Advantage|XPHB} on this saving throw."
 			]
 		},
@@ -126,7 +143,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must make a DC 14 Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition Prone|xphb} as well. On a failed save, the target is {@condition Slowed|Starlight}, and cannot jump, until the end of their next turn."
+                "On hit, the ammunition explodes, and all creatures within 15 feet of the target must succeed a DC 14 Strength saving throw or be pulled up to 10 feet towards the target. If they cannot be moved the full 10 feet, they fall {@condition Prone|xphb} as well. On a failed save, the target is {@condition Slowed|Starlight}, and cannot jump, until the end of their next turn."
 			]
 		},
         {
@@ -143,7 +160,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the arrow deals half the damage of the original hit to the nearest creature up to 10 feet directly behind the original target."
+                "On hit, the arrow deals half the damage of the attack to the nearest creature up to 10 feet directly behind the original target."
 			]
 		},
 		{
@@ -160,7 +177,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-				"On hit, the target must make a DC 14 Strength saving throw or become {@condition Restrained|XPHB} by spectral ropes until the end of your next turn."
+				"On hit, the target must succeed a DC 14 Strength saving throw or become {@condition Restrained|XPHB} by spectral ropes until the end of your next turn."
 			]
 		},
         {
@@ -194,7 +211,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the target must make a DC 14 Constitution saving throw or become {@condition Halted|Starlight} until the start of your next turn. On a successful saving throw, they are {@condition Slowed|Starlight} instead."
+                "On hit, the target must succeed a DC 14 Constitution saving throw or become {@condition Halted|Starlight} until the start of your next turn. On a successful saving throw, they are {@condition Slowed|Starlight} instead."
 			]
 		},
         {
@@ -211,7 +228,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition Blinded|xphb}, {@condition Poisoned|xphb}, {@condition Paralysed|xphb}, {@condition Deafened|xphb}, {@condition Dazed|Starlight}, {@condition Disoriented|Starlight}, {@condition Weakened|Starlight}, {@condition Bleeding|Starlight}, {@condition Burning|Starlight}, {@condition Melting|Starlight}, {@condition Brittle|Starlight}, or {@condition Shocked|Starlight}."
+                "On hit, this ammunition deals no damage, and instead clears the targets of any of the following conditions: {@condition Blinded|xphb}, {@condition Poisoned|xphb}, {@condition Paralysed|xphb}, {@condition Deafened|xphb}, {@condition Dazed|Starlight}, {@condition Disoriented|Starlight}, {@condition Weakened|Starlight}, or an {@variantrule Elemental Conditions|Starlight|Elemental Condition}."
 			]
 		},
         {
@@ -228,7 +245,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the target loses {@status Concentration|XPHB} on any spell they are maintaining. Additionally, they must make a DC 14 Constitution saving throw or become {@condition Silenced|Starlight} until the end of their next turn."
+                "On hit, the target loses {@status Concentration|XPHB} on any spell they are maintaining. Additionally, they must succeed a DC 14 Constitution saving throw or become {@condition Silenced|Starlight} until the end of their next turn."
 			]
 		},
         {
@@ -245,7 +262,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, you cast the {@spell Darkness|xphb} spell on the target or target location. It lasts the full duration, not requiring concentration."
+                "On hit, you cast the {@spell Darkness|xphb} spell on the target or target location. It lasts the full duration, not requiring {@status Concentration|XPHB}."
 			]
 		},
         {
@@ -279,7 +296,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the arrow emits a flash of light. The target takes an additional {@dice 1d4} radiant damage and must make a DC 14 Constitution saving throw or become {@condition Blinded|XPHB} until the end of their next turn."
+                "On hit, the arrow emits a flash of light. The target takes an additional {@dice 1d4} Radiant damage and must succeed a DC 14 Constitution saving throw or become {@condition Blinded|XPHB} until the end of their next turn."
 			]
 		},
         {
@@ -296,11 +313,11 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a critical hit."
+                "If this arrow hits a Beast, Monstrosity, Undead, Humanoid, Construct, or Aberration, the attack is a {@variantrule Critical Hit|XPHB}."
 			]
 		},
         {
-			"name": "Arrow of Weeping",
+			"name": "Arrow of Withering",
 			"source": "Starlight",
 			"rarity": "uncommon",
 			"wondrous": false,
@@ -313,7 +330,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, the target takes an additional {@dice 1d4} necrotic damage and cannot regain any hit points until the start of your next turn."
+                "On hit, the target takes an additional {@dice 1d4} Necrotic damage and becomes {@condition Withering|XPHB} until the start of your next turn."
 			]
 		},
         {
@@ -330,7 +347,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a critical hit."
+                "If this arrow hits a Dragon, Celestial, Elemental, Fiend, or Fey, the attack is a {@variantrule Critical Hit|XPHB}."
 			]
 		},
         {
@@ -381,7 +398,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} fire damage and {@dice 4d4} force damage. On a successful saving throw, they take half the damage."
+                "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} Fire damage and {@dice 4d4} Force damage. On a successful saving throw, they take half the damage."
 			]
 		}
     ]

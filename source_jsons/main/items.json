@@ -32,16 +32,17 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-                "Whenever you regain hit points while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d6} poison damage."
+                "Whenever you regain {@variantrule Hit Points|X{HB} while wearing this necklace, your weapon attacks before the end of your next turn deal an additional {@dice 1d4} poison damage."
 			]
 		},
         {
 			"name": "Bracers of Extreme Evocation",
 			"source": "Starlight",
 			"rarity": "rare",
+            "reqAttune": true,
 			"wondrous": true,
 			"entries": [
-                "Whenever you cast a spell, you can select the relevant option from the following list in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls, this applies to all of them.",
+                "Whenever you cast a spell, you can take a penalty to the spell's casting (described below) in order to roll an additional {@dice 2d6} damage when determining the spell's damage. If a spell requires multiple attack rolls or repeats a saving throw, this applies to all of them.",
                 {
                     "type": "list",
                     "items": [
@@ -57,7 +58,7 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-                "When you hit or affect a willing creature with an attack or spell using Dexterity, Intelligence, Wisdom or Charisma, you may swap places with them."
+                "When you hit or affect a willing creature with an attack or spell, you may swap places with them."
 			]
 		},
         {
@@ -68,7 +69,7 @@
             "charges": 3,
             "recharge": "restLong",
 			"entries": [
-                "These gloves have 3 charges, which are restored when you complete a long rest. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
+                "These gloves have 3 charges, which are restored when you complete a {@variantrule Long Rest|XPHB}. When you hit or affect a creature with an attack or spell, you may expend a charge to swap places with them. An unwilling creature may make a DC 15 Charisma saving throw to avoid the effect."
 			]
 		},
         {
@@ -80,12 +81,12 @@
             "type": "RG",
             "bonusWeaponDamage": "+2",
             "entries": [
-                "While concentrating, your weapon attacks deal 2 additional damage of the weapon's type.",
+                "While {@status Concentration|XPHB|Concentrating}, your weapon attacks deal 2 additional damage of the weapon's type.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "The additional damage is force, and equal to your spellcasting ability modifier instead of 2."
+                        "The additional damage is Force, and equal to your spellcasting ability modifier instead of 2."
                     ]
                 }
             ]
@@ -100,12 +101,12 @@
             "bonusSavingThrow": "+1",
             "type": "RG",
             "entries": [
-                "You gain a +1 bonus to saving throws while wearing this ring.",
+                "You gain a +1 bonus to {@variantrule Saving Throw|XPHB|Saving Throws} while wearing this ring.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "and +1 to AC."
+                        "and +1 to your {@variantrule Armor Class|XPHB|Armour Class}."
                     ]
                 }
             ]
@@ -119,12 +120,12 @@
             "bonusAc": "+1",
             "bonusSavingThrow": "+1",
             "entries": [
-                "You gain a +1 bonus to saving throws while wearing this cloak.",
+                "You gain a +1 bonus to {@variantrule Saving Throw|XPHB|Saving Throws} while wearing this cloak.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "and +1 to AC."
+                        "and +1 to your {@variantrule Armor Class|XPHB|Armour Class}."
                     ]
                 }
             ]
@@ -156,7 +157,7 @@
             "rechargeAmount": 1,
             "entries": [
                 "This ring shares a single charge with {@item A Promise Made|Starlight}, which recovers each when you complete a long rest.",
-                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|phb}, or {@spell Sanctuary|phb} on the bearer of A Promise Made."
+                "The wearer can expend the charge to cast {@spell Unshakeable Tail|J:Portalist}, {@spell Warding Bond|XPHB}, or {@spell Sanctuary|XPHB} on the bearer of A Promise Made."
             ],
             "attachedSpells": 
             [
@@ -174,7 +175,7 @@
             "entries":
             [
                 "Stories you tell gain a subtle effect to make them more compelling.",
-                "You have advantage on Charisma (Performance) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
+                "You have {@variantrule Advantage|XPHB} on Charisma ({@skill Performance|XPHB}) checks, and can conjure small images of the tales you tell in the form of blurred cloudy images above your head."
             ]
         },
         {
@@ -190,7 +191,7 @@
                 "You may teleport up to 90 feet in any cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Strength saving throw. On a failure, they are moved 10 feet in a direction of your choice.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a {@variantrule Long Rest|XPHB}, during which time the piece stops glowing."
             ]
         },
         {
@@ -206,7 +207,7 @@
                 "You may teleport up to 90 feet in any ordinal or cardinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, forces the target to make a DC 13 Wisdom saving throw. On a failure, they are {@condition Frightened|phb} of you until the start of your next turn.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a {@variantrule Long Rest|XPHB}, during which time the piece stops glowing."
             ]
         },
         {
@@ -222,7 +223,7 @@
                 "You may teleport up to 90 feet in any ordinal direction. You may not teleport past any creature in those directions.",
                 "Additionally, you roll an additional {@dice 1d6} when determinig the damage of the next attack you make this turn after teleporting. This attack can restore hit points, instead of dealing damage, if you choose.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a {@variantrule Long Rest|XPHB}, during which time the piece stops glowing."
             ]
         },
         {
@@ -238,7 +239,7 @@
                 "You may teleport up to 60 feet in any direction except the cardinal or ordinal ones.",
                 "Additionally, the next attack you make this turn after teleporting, on a hit, {@condition Hampered|Starlight|Hampers} your target's movement until the start of your next turn.",
                 "You may use this ability only if you haven't moved this turn, and you are {@condition Halted|Starlight} until the end of your turn when you use it.",
-                "Once the piece has been used this way, you cannot use it again until you complete a long rest, during which time the piece stops glowing."
+                "Once the piece has been used this way, you cannot use it again until you complete a {@variantrule Long Rest|XPHB}, during which time the piece stops glowing."
             ]
         },
         {
@@ -248,7 +249,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "When you take the dodge action while wearing these boots, you can immediately move 5 feet without provoking opportunity attacks."
+                "When you take the {@action Dodge|XPHB} action while wearing these boots, you can immediately move 5 feet without provoking {@variantrule Opportunity Attack|XPHB|Opportunity Attacks}."
             ]
         },
         {
@@ -265,7 +266,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "The eye has two charges, which recover when you complete a long rest. As an action, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
+                        "The eye has two charges, which recover when you complete a long rest. As an {@variantrule Action|XPHB}, you can expend one charge to grant yourself one benefit from the table, and its associated detriment, for one hour.",
                         {
                             "type": "table",
                             "colLabels": [
@@ -274,20 +275,20 @@
                             ],
                             "rows": [
                                 [
-                                    "You gain advantage on initiative checks.",
+                                    "You gain {@variantrule Advantage|XPHB} on initiative checks.",
                                     "On your first turn in combat, you are {@condition Slowed|Starlight}."
                                 ],
                                 [
-                                    "You gain advantage on Wisdom ability checks.",
-                                    "You gain disadvantage on Intelligence ability checks."
+                                    "You gain {@variantrule Advantage|XPHB} on Wisdom ability checks.",
+                                    "You gain {@variantrule Disadvantage|XPHB} on Intelligence ability checks."
                                 ],
                                 [
-                                    "You gain advantage on all attacks.",
-                                    "You gain disadvantage on all saving throws."
+                                    "You gain {@variantrule Advantage|XPHB} on all attacks.",
+                                    "You gain {@variantrule Disadvantage|XPHB} on all saving throws."
                                 ],
                                 [
-                                    "You gain resistance to bludgeoning, piercing and slashing damage.",
-                                    "You gain vulnerablity to fire, cold, and lightning damage."
+                                    "You gain {@variantrule Resistance|XPHB} to Bludgeoning, Piercing and Slashing damage.",
+                                    "You gain {@variantrule Vulnerablity|XPHB} to Fire, Cold, and Lightning damage."
                                 ]
                             ]
                         }
@@ -302,7 +303,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "You receive {@dice 1d4} (additional) hitpoints when you are healed with a spell, or when you heal others with a spell."
+                "You receive {@dice 1d4} (additional) {@variantrule Hit Points|XPHB} when you are healed with a spell, or when you heal others with a spell."
             ]
         },
         {
@@ -324,8 +325,8 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "You gain a +1 bonus to Dexterity (Stealth or Sleight of Hand) checks.",
-                "You cannot be targeted by Divination magic or perceived through magical means, such as a Scrying sensor or looking through a familiar's eyes."
+                "You gain a +1 bonus to Dexterity ({@skill Stealth|XPHB} or {@skill Sleight of Hand|XPHB}) checks.",
+                "You cannot be targeted by Divination magic or perceived through magical means, such as a {@spell Scrying|XPHB} sensor or looking through a {@spell Find Familiar|XPHB|familiar's} eyes."
             ]
         },
         {
@@ -336,7 +337,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Intelligence (Arcana) and Intelligence (History) checks.",
+                "You have a +1 bonus to Intelligence ({@skill Arcana|XPHB}) and Intelligence ({@skill History|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -354,7 +355,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Intelligence (Nature) and Wisdom (Animal Handling) checks.",
+                "You have a +1 bonus to Intelligence ({@skill Nature|XPHB}) and Wisdom ({@skill Animal Handling|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -372,7 +373,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Intelligence (Religion) and Wisdom (Medicine) checks.",
+                "You have a +1 bonus to Intelligence ({@skill Religion|XPHB}) and Wisdom ({@skill Medicine|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -390,7 +391,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Strength (Athletics) and Charisma (Intimidation) checks.",
+                "You have a +1 bonus to Strength ({@skill Athletics|XPHB}) and Charisma ({@skill Intimidation|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -408,7 +409,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Charisma (Persuasion) and Charisma (Performance) checks.",
+                "You have a +1 bonus to Charisma ({@skill Persuasion|XPHB}) and Charisma ({@skill Performance|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -426,7 +427,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Dexterity (Sleight of Hand) and Intelligence (Investigation) checks.",
+                "You have a +1 bonus to Dexterity ({@skill Sleight of Hand|XPHB}) and Intelligence ({@skill Investigation|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -444,7 +445,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Wisdom (Survival) and Wisdom (Perception) checks.",
+                "You have a +1 bonus to Wisdom ({@skill Survival|XPHB}) and Wisdom ({@skill Perception|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -462,7 +463,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Charisma (Deception) and Wisdom (Insight) checks.",
+                "You have a +1 bonus to Charisma ({@skill Deception|XPHB}) and Wisdom ({@skill Insight|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -480,7 +481,7 @@
             "reqAttune": "optional",
             "type": "RG",
             "entries": [
-                "You have a +1 bonus to Dexterity (Stealth) and Dexterity (Acrobatics) checks.",
+                "You have a +1 bonus to Dexterity ({@skill Stealth)|XPHB} and Dexterity ({@skill Acrobatics|XPHB}) checks.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -497,7 +498,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "While wearing this cloak, if you kill a creature, you gain temporary hit points equal to its CR or level."
+                "While wearing this cloak, if you reduce a creature to 0 hit points, you gain {@variantrule Temporary Hit Points|XPHB} equal to its CR or level."
             ]
         },
         {
@@ -507,12 +508,12 @@
             "wondrous": true,
             "reqAttune": "optional",
             "entries": [
-                "You have advantage on Wisdom (Perception) checks made to spot creatures who are hiding from you.",
+                "You have advantage on Wisdom ({@skill Perception|XPHB}) checks made to spot creatures who are {@action Hide|XPHB|Hiding} from you.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "You can cast the {@spell Hunter's Mark|phb} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a long rest."
+                        "You can cast the {@spell Hunter's Mark|XPHB} spell at 3rd level. A creature marked in this way takes the additional damage from {@b all} weapon attacks, not just yours. Once you do so, the spell cannot be cast this way until you complete a {@variantrule Long Rest|XPHB}."
                     ]
                 }
             ],
@@ -528,7 +529,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "You have advantage on ability checks and saving throws made to escape being {@condition Grappled|phb|grappled} or {@condition Restrained|phb|restrained.}"
+                "You have {@variantrule Advantage|XPHB} on ability checks and saving throws made to escape being {@condition Grappled|XPHB} or {@condition Restrained|XPHB}."
             ]
         },
         {
@@ -538,7 +539,7 @@
             "wondrous": true,
             "reqAttune": false,
             "entries": [
-                "Hostile creatures within 5 feet of you do not impose disadvantage on your ranged attacks."
+                "Hostile creatures within 5 feet of you do not impose {@variantrule Disadvantage|XPHB} on your ranged attacks."
             ]
         },
         {
@@ -549,7 +550,7 @@
             "reqAttune": false,
             "type": "RG",
             "entries": [
-                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|phb}, {@spell Hunter's Mark|phb}, {@spell Faerie Fire|phb}, or the {@classFeature Favoured Foe|Ranger|phb|1|tce} feature."
+                "You gain a {@dice 1d4} bonus to attack rolls made against creatures who are under the effects of {@spell Guiding Bolt|XPHB}, {@spell Hunter's Mark|XPHB}, {@spell Faerie Fire|XPHB}, or the {@classFeature Quarry|Hunter|Starlight|1|Starlight} feature."
             ]
         },
         {
@@ -563,13 +564,13 @@
                 "radiant"
             ],
             "entries": [
-                "You have resistance to radiant damage while you are wearing this ring.",
+                "You have {@variantrule Resistance|XPHB} to Radiant damage while you are wearing this ring.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
                         "You can store one spell of up to 3rd level within the bracelet. Any creature can cast a spell of 1st through 3rd level into the bracelet by touching the bracelet as the spell is cast. The spell's effect is then stored for later use.",
-                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it. Once cast, the spell is removed from the bracelet, freeing up the space."
+                        "While wearing the bracelet, you can cast the spell stored in it; the spell uses the same level as when it was cast, as well as the spell save DC, attack bonus and spellcasting ablity of the original caster, but is otherwise treated as if you had cast it. Once cast, the spell is removed from the bracelet."
                     ]
                 }
             ]
@@ -583,9 +584,9 @@
             "type": "RG",
             "entries":
             [
-                "If you have the {@condition Dying|Starlight} condition at the start of your turn, you instead enter a new state where you borrow time from your own potential future.",
-                "Instead of rolling a death saving throw at the start of your turns, you fail your death saving throw automatically at the end of your turns, but can otherwise act without penality.",
-                "This ends when the dying condition would. After the ring has put you into this alternate state, once you leave that state, the ring loses its magic until you complete a long rest."
+                "If you start your turn with 0 {@variantrule Hit Points|XPHB} and are not {@variantrule Stable|XPHB}, you remain conscious and can act as normal, borrowing time from your own potential future.",
+                "You automatically fail one {@variantrule Death Saving Throw|XPHB} at the end of your turn instead of rolling one at the start of your turn. Damage taken still causes a failed {@variantrule Death Saving Throw|XPHB} as normal.",
+                "This state ends when you regain {@variantrule Hit Points|XPHB}, become {@variantrule Stable|XPHB}, or die. Once this state ends, the ring loses its magic until you complete a {@variantrule Long Rest|XPHB}."
             ]
         },
         {
@@ -596,7 +597,7 @@
             "reqAttune": false,
             "entries":
             [
-                "Attacks that deal force damage have disadvantage against you, and you have advantage on any saving throw against an effect that would cause you to take force damage on a success or failure."
+                "Attacks that deal Force damage are made with {@variantrule Disadvantage|XPHB} against you, and you have {@variantrule Advantage|XPHB} on any {@variantrule Saving Throw|XPHB} against an effect that would cause you to take Force damage on a success or failure."
             ]
         },
         {
@@ -607,8 +608,8 @@
             "reqAttune": "optional",
             "entries":
             [
-                "As a reaction, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
-                "Once used, this cannot be used again until you complete a long rest.",
+                "As a {@variantrule Reaction|XPHB}, you can halt an effect or spell that targets an area that you can see. Before the end of your next turn, you can release the effect (no action required) at its original target space.",
+                "Once used, this cannot be used again until you complete a {@variantrule Long Rest|XPHB}.",
                 {
                     "type": "entries",
                     "name": "Attunement",
@@ -626,7 +627,7 @@
             "reqAttune": false,
             "entries":
             [
-                "Whenever you hit a creature with an attack roll while wearing these gloves, it loses a reaction, if it has at least one."
+                "Whenever you hit a creature with an attack roll while wearing these gloves, it loses a {@variantrule Reaction|XPHB}, if it has any."
             ]
         },
         {
@@ -640,12 +641,12 @@
             "rechargeAmount": 5,
             "entries":
             [
-                "These boots have 5 charges which are recovered upon completing a long rest. Whenever you are moved against your will, you can expend a reaction and one charge to teleport to any space you occupied after the start of your previous turn.",
+                "These boots have 5 charges which are recovered upon completing a {@variantrule Long Rest|XPHB}. Whenever you are moved against your will, you can use your {@variantrule Reaction|XPHB} and one charge to teleport to any space you occupied after the start of your previous turn.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "You can use the reaction and expend a charge at any time, instead of only when you are moved against your will."
+                        "You can use the {@variantrule Reaction|XPHB} and expend a charge at any time, instead of only when you are moved against your will."
                     ]
                 }
             ]
@@ -663,7 +664,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "While in combat, you regain {@dice 1d4} hit points at the start of each of your turns."
+                        "While in combat, you regain {@dice 1d4} {@variantrule Hit Points|XPHB} at the start of each of your turns."
                     ]
                 }
             ]
@@ -676,8 +677,8 @@
             "reqAttune": false,
             "entries":
             [
-                "Anyone wearing this amulet cannot have disadvantage on Charisma ability checks.",
-                "The wearer has a +1 bonus to Charisma (Persuasion) and Charisma (Deception) checks."
+                "Anyone wearing this amulet cannot have {@variantrule Disadvantage|XPHB} on Charisma ability checks.",
+                "The wearer has a +1 bonus to Charisma ({@skill Persuasion|XPHB}) and Charisma ({@skill Deception|XPHB}) checks."
             ]
         },
         {
@@ -699,7 +700,7 @@
             "reqAttune": false,
             "entries":
             [
-                "Gain temporary hit points equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
+                "You gain {@variantrule Temporary Hit Points|XPHB} equal to your spellcasting modifier when you cast a spell while within 5 feet of a hostile creature."
             ]
         },
         {
@@ -710,12 +711,12 @@
             "reqAttune": "optional",
             "entries":
             [
-                "Your movement speed is increased by 5 feet.",
+                "Your {@variantrule Speed|XPHB} is increased by 5 feet.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "Your movement speed is increased by 10 feet instead."
+                        "Your {@variantrule Speed|XPHB} is increased by 10 feet instead."
                     ]
                 }
             ]
@@ -728,7 +729,7 @@
             "reqAttune": false,
             "entries":
             [
-                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|PHB} or {@spell Zone of Truth|PHB}), and grants you advantage on Intelligence saving throws."
+                "This cloak foils spells cast to determine your thoughts and intentions (such as {@spell Detect Thoughts|XPHB} or {@spell Zone of Truth|XPHB}), and grants you {@variantrule Advantage|XPHB} on Intelligence saving throws."
             ]
         },
         {
@@ -739,8 +740,8 @@
             "reqAttune": false,
             "entries":
             [
-                "This pale blue rose petal glows dimly within its jar, emitting 5 feet of dim light at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
-                "While holding the jar, as a bonus action on your turn or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration."
+                "This pale blue rose petal glows dimly within its jar, emitting 5 feet of {@variantrule Dim Light|XPHB} at all times and is surrounded by floating motes of light, which occasionally hit the glass.",
+                "While holding the jar, as a {@variantrule Bonus Action|XPHB} on your turn or as a {@variantrule Reaction|XPHB} when you take damage that doesn't reduce you to 0 {@variantrule Hit Points|XPHB}, you can shatter the jar and release its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you have {@variantrule Immunity|XPHB} to all damage and to all effects that would move you against your will."
             ]
         },
         {
@@ -752,8 +753,8 @@
             "entries":
             [
                 "This pale blue rose glows dimly, emitting 10 feet of dim light at all times and is surrounded by floating motes of light.",
-                "While holding the rose, on your turn (no action required) or as a reaction when you take damage that doesn't reduce you to 0 hit points, you can channel its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you are immune to all damage and effects that would move you against your will, and are under the effects of the {@spell Antilife Shell} spell for that duration.",
-                "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moonphase except for new) before it can be used again."
+                "While holding the rose, on your turn (no action required) or as a {@variantrule Reaction|XPHB} when you take damage that doesn't reduce you to 0 hit points, you can channel its magic to protect yourself. This reduces your current hit points to 1, and until the end of your next turn you have {@variantrule Immunity|XPHB} to all damage and to all effects that would move you against your will.",
+                "Once this effect is used, the Rose must spend an hour in direct moonlight (under any moon phase except for new) before it can be used again."
             ]
         },
         {
@@ -764,8 +765,8 @@
             "reqAttune": false,
             "entries":
             [
-                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with dim light.",
-                "Any creatures who take necrotic damage while in this dim light take an additional {@dice 1d6} necrotic damage."
+                "This dark purple flower emits a faint mist of dim light when held, suppressing any other light sources within a 30 foot radius and replacing that light with {@variantrule Dim Light|XPHB}.",
+                "Any creatures who take Necrotic damage while in this dim light take an additional {@dice 1d6} Necrotic damage."
             ]
         },
         {
@@ -776,9 +777,9 @@
             "reqAttune": false,
             "entries":
             [
-                "Once each day, this chalice can be used to pour out a vial's worth of {@item Holy Water (flask)|PHB|holy water}. This holy water becomes mundane water when the Chalice is used again.",
-                "As an action, the holy water can be drank to end the {@condition poisoned|PHB} condition or one disease afflicting the character.",
-                "Over the course of one minute, this vial can also be used to coat a weapon, granting it a +1 bonus to attack rolls and +1 radiant damage against fiends and undead. The coating lasts for one hour and for the duration the weapon is considered magical for the purposes of overcoming resistances."
+                "Once each day, this chalice can be used to pour out a vial's worth of {@item Holy Water (flask)|XPHB|holy water}. This holy water becomes mundane water when the Chalice is used again.",
+                "As an action, the holy water can be drank to end the {@condition Poisoned|XPHB} condition or one disease afflicting the character.",
+                "Over the course of one minute, this vial can also be used to coat a weapon, granting it a +1 bonus to attack rolls and +1 Radiant damage. The coating lasts for one hour and for the duration the weapon is considered magical for the purposes of overcoming resistances."
             ]
         },
         {
@@ -789,7 +790,7 @@
             "reqAttune": false,
             "entries":
             [
-                "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain advantage on a roll (attack, ability check, or saving throw) when you do so. The next roll you make after that has disadvantage."
+                "Once per day, you can hold onto this coin and hope for a little extra luck (no action required). You gain {@variantrule Advantage|XPHB} on a {@variantrule D20 Test} when you do so (you can do this during or after the roll). The next D20 Test you make after that has {@variantrule Disadvantage|XPHB}."
             ]
         },
         {
@@ -816,7 +817,7 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "You are immune to possession or mind control effects (such as {@spell Suggestion} or {@spell Dominate Person})."
+                        "You are immune to possession or mind control effects (such as {@spell Suggestion|XPHB} or {@spell Dominate Person|XPHB})."
                     ]
                 }
             ]

@@ -50,37 +50,37 @@
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "As an action or in place of an attack when you take the {@action Attack} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a long rest - which may alter its appearance.",
-                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each long rest. A benefit that requires the drawing of energy cannot be done without the required points.",
+                        "As an action or in place of an attack when you take the {@action Attack|XPHB} action, you can plant this sword in the ground to cause a special effect within a radius of 15 feet. You can change the benefit upon completing a {@variantrule Long Rest|XPHB} - which may alter its appearance.",
+                        "Nature's Emissary stores a reservoir of energy with points equal to five times your character level. The reservoir is replenished each {@variantrule Long Rest|XPHB}. A benefit that requires the drawing of energy cannot be done without the required points.",
                         {
                             "type": "entries",
                             "name": "Spring's Rain",
                             "entries": [
-                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 hit points, taking that many points from the reservoir."
+                                "The radius is filled with cool air a soothing mist. If a creature ends their turn within the radius, you may grant it up to 5 {@variantrule Hit Points|XPHB}, taking that many points from the reservoir."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Fall's Warding",
                             "entries": [
-                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of half cover. This effect drains 5 points from the reservoir for each round it is planted there.."
+                                "The radius is filled with swirling leaves. Creatures within the area gain the benefit of {@variantrule Cover|XPHB|Half Cover}. This effect drains 5 points from the reservoir for each round it is planted there."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Summer's Glory",
                             "entries": [
-                                "The radius is filled with warm air and bright light. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its movement speed by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a reaction to grant a creature within the radius advantage on a saving throw it makes."
+                                "The radius is filled with warm air and {@variantrule Bright Light|XPHB}. If a creature starts its turn within the area, you may spend up to five points from the reservoir, increasing its {@variantrule Speed|XPHB} by five times the number of points spent until the end of its turn. Additionally, you can spend five points and a {@variantrule Reaction|XPHB} to grant a creature within the radius {@variantrule Advantage|XPHB} on a {@variantrule Saving Throw|XPHB} it makes."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Winter's Watch",
                             "entries": [
-                                "The radius becomes cold, and filled with dim light. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
+                                "The radius becomes cold, and filled with {@variantrule Dim Light|XPHB}. Creatures within the area take less damage and healing from all sources, of an amount equal to your proficiency bonus. This effect drains 5 points from the reservoir for each round it is planted there."
                             ]
                         },
-                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an action to do so."
+                        "You can pick up the sword as if it were lying on the floor to be picked up. Unattuned creatures must spend an {@variantrule Action|XPHB} to do so."
                     ]
                 }
             ]
@@ -104,13 +104,13 @@
 			"curse": false,
             "entries": [
                 "This weapon is a polearm.",
-                "This weapon places you in the position of a corageous leader in battle. You have advantage on saving throws against the {@condition Frightened|phb} condition while wielding this weapon.",
+                "This weapon places you in the position of a corageous leader in battle. You have {@variantrule Advantage|XPHB} on saving throws against the {@condition Frightened|XPHB} condition while wielding this weapon.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
                         "When you kill a creature with this weapon, you can treat this as a +1 weapon against other creatures of its type. When the weapon is unattuned, it loses its memory.",
-                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is just a +1 weapon.}"
+                        "{@note At the DM's discretion, 'of its type' may refer to species in the case of humanoids, drawing a distinction between elves, humanoids, dwarves, and so on. However, it is suggested that they be lenient, as this is a minor benefit.}"
                     ]
                 }
             ]
@@ -133,8 +133,8 @@
 			"curse": false,
             "entries": [
                 "You have a +1 bonus to attack and damage rolls using this weapon.",
-                "You gain a +1 bonus to initiative rolls.",
-                "While in combat, you deal an additional {@dice 1d6} necrotic damage with this weapon against creatures who have not taken a turn yet."
+                "You gain a +1 bonus to {@variantrule Initiative|XPHB} rolls.",
+                "While in combat, you deal an additional {@dice 1d6} Necrotic damage with this weapon against creatures who have not taken a turn yet."
             ]
         },
         {
@@ -154,12 +154,12 @@
             "reqAttune": "optional",
 			"curse": false,
             "entries": [
-                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|S: Conditions}.",
+                "You gain a {@dice 1d4} bonus to attack and damage rolls with this weapon when you attack a target that is {@condition Bleeding|Starlight}.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "Once per short rest, you can make a special attack with this weapon that causes targets to {@condition Bleeding|S: Conditions|bleed} twice on hit. This can be used as an action, or in place of a normal weapon attack."
+                        "Once on each of your turns, you can force a creature you hit with this weapon to make a DC 14 Constitution saving throw. On a failure, they become {@condition Bleeding|Starlight} until the start of your next turn."
                     ]
                 }
             ]
@@ -191,21 +191,21 @@
                             "type": "entries",
                             "name": "Wrath of Time",
                             "entries": [
-                                "This weapon deals an additional {@dice 1d4} force damage on each attack."
+                                "This weapon deals an additional {@dice 1d4} Force damage on each attack."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Threadsplitter",
                             "entries": [
-                                "When you attack with advantage, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you critically hit, this means that you roll the dice three times, not four."
+                                "When you attack with {@variantrule Advantage|XPHB}, if both rolls would hit the target, you roll the weapon's damage one additional time when determining the attack's damage. If you {@variantrule Critical Hit|XPHB|Critically hit}, this means that you roll the dice three times, not four."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "Eyes of Temporus",
                             "entries": [
-                                "You can cast the {@spell True Seeing|phb} spell once using this weapon. You regain the ability to do so after completing a long rest."
+                                "You can cast the {@spell True Seeing|XPHB} spell once using this weapon. You regain the ability to do so after completing a {@variantrule Long Rest|XPHB}."
                             ]
                         }
                     ]
@@ -228,7 +228,7 @@
             "stealth": true,
             "entries": [
                 "Made from unusual fey materials, this armour is very light while still offering incredible protection. However, it is not more subtle than other similar armours.",
-                "You can add your full Dexterity modifier to your AC when wearing this medium armour."
+                "You can add your full Dexterity modifier to your {@variantrule Armor Class|XPHB|Armour Class} when wearing this medium armour."
             ]
         },
         {
@@ -242,12 +242,12 @@
 			"curse": false,
             "wondrous": true,
             "entries": [
-                "You gain a +1 bonus to the attack and damage rolls of your unarmed strikes.",
+                "You gain a +1 bonus to the attack and damage rolls of your {@variantrule Unarmed Strike|XPHB|Unarmed Strikes}.",
                 {
                     "type": "entries",
                     "name": "Attunement",
                     "entries": [
-                        "Your Ki save DC increases by 1, and once per long rest you may spent an action to regain a number of ki points equal to your wisdom modifier."
+                        "Your {{@classFeature Monk's Focus|Monk|XPHB|2|XPHB|Focus Save DC} increases by 1, and once per {@variantrule Long Rest|XPHB} you may spent an action to regain a number of Focus Points equal to your Wisdom modifier."
                     ]
                 }
                 
@@ -265,8 +265,8 @@
 			"curse": false,
             "weight": 10,
             "entries": [
-                 "You have a +2 bonus to AC while wearing this armour.",
-                 "{@b All} creatures within 10 feet of you, including yourself, have vulnerability to piercing damage."
+                 "You have a +2 bonus to your {@variantrule Armor Class|XPHB|Armour Class} while wearing this armour.",
+                 "{@b All} creatures within 10 feet of you, including yourself, have {@variantrule Vulnerability|XPHB} to Piercing damage."
             ]
         },
         {
@@ -284,7 +284,7 @@
             "weight": 10,
             "entries": [
                  "This scale-mail is made of the actual dragonscales of Temporus the Timekeeper, a time dragon.",
-                 "You have +1 bonus to AC while wearing this armour, and you can add 3, rather than 2, to your AC if you have a Dexterity score of 16 or higher.",
+                 "You have +1 bonus to your {@variantrule Armor Class|XPHB|Armour Class} while wearing this armour, and you can add 3, rather than 2, to your Armour Class if you have a Dexterity score of 16 or higher.",
                  {
                     "type": "entries",
                     "name": "Attunement",
@@ -293,7 +293,7 @@
                             "type": "entries",
                             "name": "Clarity",
                             "entries": [
-                                "You have advantage on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
+                                "You have {@variantrule Advantage|XPHB} on any saving throw against the {@condition Dazed|Starlight} or {@condition Disoriented|Starlight} conditions."
                             ]
                         },
                         {
