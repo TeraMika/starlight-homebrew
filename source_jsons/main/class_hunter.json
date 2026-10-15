@@ -1638,7 +1638,7 @@
             "entries": [
                 "{@i 11th-level Borderland Hunter feature}",
                 "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a {@variantrule Reaction|XPHB} to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
-                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take psychic damage equal to a number of rolls of your Hunter's Die equal to your Proficiency Bonus."
+                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take Psychic damage equal to a number of rolls of your Hunter's Die equal to your Proficiency Bonus."
             ],
             "foundryActivities": [
                 {
@@ -3746,15 +3746,15 @@
             ]
         },
         {
-            "name": "Preparations",
+            "name": "Specialised Ammunition",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
 			],
 			"entries": [
-				"You can plan ahead when you know what the day holds.",
-                "At the start of each day, you can prepare a number of special coatings equal to your Proficiency Bonus. These coatings provide a +1 bonus to attack rolls and deal {@dice 1d4} additional damage of a damage type of your choosing other than force or psychic.",
-                "You can apply these to an arrow or other weapon with no action cost, but only one can be used at a time. The coatings retain their potency for 24 hours or until used, whereupon they last one minute."
+				"Your daily preparations can include special ammunition, to leave you ready for the day ahead.",
+                "After you complete a {@variantrule Long Rest|XPHB}, you can create a number of {@variantrule Magic Arrows|Starlight|common Magic Arrows} equal to your Proficiency Bonus, requiring one arrow for each.",
+                "If not used before you complete your next {@variantrule Long Rest|XPHB}, the arrows lose their magical properties."
 			],
             "prerequisite": [
                 {
@@ -4011,7 +4011,7 @@
             ]
 		},
         {
-			"name": "Searing Blow",
+			"name": "Searing Strike",
 			"source": "Starlight",
 			"featureType": [
 				"HTR"
@@ -4038,7 +4038,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Searing Blow",
+                    "name": "Searing Strike",
                     "type": "save",
 					"activation": {
 						"type": "",

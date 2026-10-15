@@ -40,7 +40,7 @@
 						"This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
 					]
 				},
-                "On hit, this ammunition explodes, dealing {@dice 2d4} Acid damage to all creatures within 10 feet of the target. The target f a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Acid damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
 			]
 		},
         {
@@ -401,5 +401,118 @@
                 "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} Fire damage and {@dice 4d4} Force damage. On a successful saving throw, they take half the damage."
 			]
 		}
+    ],
+	"variantrule": [
+        {
+            "name": "Magic Arrows",
+            "source": "Starlight",
+            "ruleType": "O",
+            "entries": [
+                "Starlight's Shadow offers a wide range of magical arrows for crafting, looting, and shooting, compiled by rarity here.",
+				"These arrows all impose relatively minor conditions or single-shot effects, but some are quite potent. They could be crafted using magic items rules and the monster component rules detailed elsewhere.",
+                {
+					"caption": "Magic Arrows",
+                    "type": "table",
+                    "colLabels": [
+                        "Rarity",
+                        "Arrow"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "common",
+                            "{@item Arrow of Acid|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Binding|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Dispersion|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Fire|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Gravity|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Ice|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Lightning|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Piercing|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Revealing|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Thunder|Starlight}"
+                        ],
+						[
+                            "common",
+                            "{@item Arrow of Wounding|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Curing|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Darkness|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Dazzling|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Disruption|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Lesser Slaying|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Maiming|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Relocation|Starlight}"
+                        ],
+						[
+                            "uncommon",
+                            "{@item Arrow of Withering|Starlight}"
+                        ],
+						[
+                            "rare",
+                            "{@item Arrow of Explosives|Starlight}"
+                        ],
+						[
+                            "rare",
+                            "{@item Arrow of Greater Slaying|Starlight}"
+                        ],
+						[
+                            "rare",
+                            "{@item Arrow of Recurving|Starlight}"
+                        ]
+                    ]
+                }
+            ]
+        }
     ]
 }

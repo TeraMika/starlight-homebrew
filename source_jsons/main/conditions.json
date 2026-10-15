@@ -320,6 +320,33 @@
             ]
         },
         {
+            "name": "Winded",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Winded condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Speed Affected",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} becomes 30 feet unless it is already lower. When you take the {@action Dash|XPHB}, you gain half the usual benefit."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on Dexterity saving throws."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Burning",
             "source": "Starlight",
             "page": 0,
@@ -427,13 +454,6 @@
                     "entries": [
                         {
                             "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your movement is {@condition Hampered}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
                             "name": "Damage Increased",
                             "entries": [
                                 "When you take any damage, that damage is increased by {@dice 2}."
@@ -491,7 +511,7 @@
                             "type": "entries",
                             "name": "Magic Backlash",
                             "entries": [
-                                "When you cast a spell, you take force damage depending on the spell's level. The damage is determined by rolling a number of d4s equal to the spell's level plus one."
+                                "When you cast a spell, you take force damage depending on the spell's level. The damage is determined by rolling a number of d4s equal to the spell's level plus one. This condition then ends."
                             ]
                         }
                     ]
@@ -689,23 +709,6 @@
                                 "You have {@variantrule Disadvantage|XPHB} on attack rolls against anything other than the creature that Taunted you. If you are Taunted by multiple creatures, you have {@variantrule Disadvantage|XPHB} against all of them"
                             ]
                         }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Dying",
-            "source": "Starlight",
-            "page": 0,
-            "entries":
-            [
-                {
-                    "type": "list",
-                    "items":
-                    [
-                        "If you start your turn while Dying, you roll a {@variantrule Death Saving Throw|XPHB}. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
-                        "You are prone and cannot get up.",
-                        "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
                     ]
                 }
             ]

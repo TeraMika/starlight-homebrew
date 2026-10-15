@@ -4819,7 +4819,7 @@
                 }
             ],
             "entries": [
-                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
+                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or end their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
                 {
                     "type": "entries",
                     "name": "Superheated Winds (Fire)",
