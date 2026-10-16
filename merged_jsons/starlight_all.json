@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,19 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
+                "url": "https://github.com/TeraMika/starlight-homebrew",
+                "targetSchema": "1.0"
+            },
+            {
+                "json": "Starlight",
+                "abbreviation": "Starlight",
+                "full": "Starlight",
+                "color": "783ddb",
+                "authors": [
+                    "Starlight"
+                ],
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +66,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -68,7 +80,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -81,7 +93,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -92,7 +104,7 @@
                 "authors": [
                     "ST"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -104,7 +116,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -119,7 +131,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.09.23.09.58",
+                "version": "2026.10.16.08.08",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -128,7 +140,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1790157520.8018034
+        "dateLastModified": 1792138139.585862
     },
     "class": [
         {
@@ -3107,7 +3119,7 @@
             "entries": [
                 "{@i 11th-level Borderland Hunter feature}",
                 "When a creature hits you with an attack, spell, or other effect while you are using Ethereal Shift, you can use a {@variantrule Reaction|XPHB} to end Ethereal Shift and teleport up to 30 feet away, potentially causing the effect to miss.",
-                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take psychic damage equal to a number of rolls of your Hunter's Die equal to your Proficiency Bonus."
+                "Regardless of if you evade the effect, the attacking creature must make a Wisdom saving throw or take Psychic damage equal to a number of rolls of your Hunter's Die equal to your Proficiency Bonus."
             ],
             "foundryActivities": [
                 {
@@ -6660,15 +6672,15 @@
             ]
         },
         {
-            "name": "Preparations",
+            "name": "Specialised Ammunition",
             "source": "Starlight",
             "featureType": [
                 "HTR"
             ],
             "entries": [
-                "You can plan ahead when you know what the day holds.",
-                "At the start of each day, you can prepare a number of special coatings equal to your Proficiency Bonus. These coatings provide a +1 bonus to attack rolls and deal {@dice 1d4} additional damage of a damage type of your choosing other than force or psychic.",
-                "You can apply these to an arrow or other weapon with no action cost, but only one can be used at a time. The coatings retain their potency for 24 hours or until used, whereupon they last one minute."
+                "Your daily preparations can include special ammunition, to leave you ready for the day ahead.",
+                "After you complete a {@variantrule Long Rest|XPHB}, you can create a number of {@variantrule Magic Arrows|Starlight|common Magic Arrows} equal to your Proficiency Bonus, requiring one arrow for each.",
+                "If not used before you complete your next {@variantrule Long Rest|XPHB}, the arrows lose their magical properties."
             ],
             "prerequisite": [
                 {
@@ -6938,7 +6950,7 @@
             ]
         },
         {
-            "name": "Searing Blow",
+            "name": "Searing Strike",
             "source": "Starlight",
             "featureType": [
                 "HTR"
@@ -6965,7 +6977,7 @@
             },
             "foundryActivities": [
                 {
-                    "name": "Searing Blow",
+                    "name": "Searing Strike",
                     "type": "save",
                     "activation": {
                         "type": "",
@@ -12490,7 +12502,7 @@
                         "This magic ammunition gains a +1 bonus to attack and damage rolls. It is destroyed on use, dealing the weapon's ordinary damage (unless otherwise specified) and the additional effect below."
                     ]
                 },
-                "On hit, this ammunition explodes, dealing {@dice 2d4} Acid damage to all creatures within 10 feet of the target. The target f a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
+                "On hit, this ammunition explodes, dealing {@dice 2d4} Acid damage to all creatures within 10 feet of the target. The target must succeed a DC 14 Dexterity saving throw or become {@condition Melting|Starlight} until the end of your next turn."
             ]
         },
         {
@@ -12849,6 +12861,605 @@
                     ]
                 },
                 "Hit or miss, this arrow explodes, forcing all creatures within 10 feet of the target to make a Dexterity saving throw against your spell save DC. On a failed saving throw, they take {@dice 4d4} Fire damage and {@dice 4d4} Force damage. On a successful saving throw, they take half the damage."
+            ]
+        },
+        {
+            "name": "Basic Coating Poison",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Necrotic damage."
+            ]
+        },
+        {
+            "name": "Basic Poisoning Coating Poison",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 11} Constitution Saving Throw or become {@condition Poisoned|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Positive Essence",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1} Radiant damage.",
+                "Once per turn, if the target is an Aberration, Celestial, Elemental, Fey, Fiend, or Undead, you can force a target struck with this poison to succeed on a {@dc 11} Charisma Saving Throw or become {@condition Dazed|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Negative Essence",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1} Necrotic damage.",
+                "Once per turn, if the target is {@i not} an Aberration, Celestial, Elemental, Fey, Fiend, or Undead, you can force a target struck with this poison to succeed on a {@dc 11} Charisma Saving Throw or become {@condition Withering|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Yuan-ti Inversion",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Force damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Charisma Saving Throw or suffer from the effects of the {@spell Bane|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Spider Venom",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Acid damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Constitution Saving Throw or become {@condition Poisoned|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Arcane Anchoring",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Force damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Intelligence Saving Throw or become unable to Teleport, and its spells that require a {@variantrule Bonus Action|XPHB} require an {@variantrule Action|XPHB} instead. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Oil of Diminution",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Constitution Saving Throw or be reduced: it suffers a {@dice 1d4} penalty to its damage rolls with melee attacks, and has {@variantrule Disadvantage|XPHB} on Strength ability checks and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Liquid Static",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Lightning damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Dexterity Saving Throw or become {@condition Shocked|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Very Holy Water",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Radiant damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Wisdom Saving Throw or become {@condition Seared|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Sectus Oil",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Slashing damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 13} Constitution Saving Throw or become {@condition Bleeding|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Remorhaz Poison",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d6} Fire damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 15} Constitution Saving Throw or become {@condition Burning|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Ankheg Acid Extraction",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d8} Acid damage.",
+                "Once per turn when you score a critical hit, you can force a target struck with this poison to succeed on a {@dc 15} Constitution Saving Throw or become {@condition Blinded|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Dilute Antimagic",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d4} Force damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 15} Wisdom Saving Throw or suffer {@variantrule Disadvantage|XPHB} on spell attack rolls and {@status Concentration|XPHB} Saving Throws, and targets have {@variantrule Advantage|XPHB} on Saving Throws made against the target's spells. The target can repeat the Saving Throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Ooze Salts",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d6} Acid damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 17} Constitution Saving Throw or become {@condition Poisoned|XPHB}; while {@condition Poisoned|XPHB}, the target is {@condition Slowed|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Sphinx's Roar",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d8} Thunder damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 17} Wisdom Saving Throw or become {@condition Frightened|XPHB}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Demongore",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d8} Bludgeoning damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 17} Constitution Saving Throw or become {@condition Winded|Starlight}. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Tarrasque Acid",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "type": "G|XPHB",
+            "value": 200000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d12} Acid damage."
+            ]
+        },
+        {
+            "name": "Lord Sage's Mire",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "type": "G|XPHB",
+            "value": 200000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "As a {@variantrule Bonus Action|XPHB}, you can use a vial of this poison to coat one weapon or up to three pieces of ammunition. Once applied, the poison retains its potency for 1 minute.",
+                "When you hit a creature with a weapon or ammunition coated with this poison, the creature takes an additional {@damage 1d10} Psychic damage.",
+                "Once per turn, you can force a target struck with this poison to succeed on a {@dc 19} Wisdom Saving Throw or suffer a {@dice 1d4} penalty to all Saving Throws. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Basic Single-Use Poison",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 3d6} Necrotic Damage and must make a {@dc } stat saving throw or become {@condition } for one minute."
+            ]
+        },
+        {
+            "name": "Acid Jabber",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison must make a {@dc 11} Constitution saving throw or become {@condition Poisoned|XPHB} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success. Each time it makes this saving throw, success or failure, it takes {@damage 1d6} Acid damage."
+            ]
+        },
+        {
+            "name": "Dazzler Perfume",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "inhaled"
+            ],
+            "entries": [
+                "This poison can optionally be worn as a perfume, where it affects any creature in a 5-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for one hour.",
+                "A creature subjected to this poison (including the wearer, if there is one) must make a {@dc 11} Constitution saving throw or suffer {@variantrule Disadvantage|XPHB} on Intelligence, Wisdom, and Charisma ability checks for one minute."
+            ]
+        },
+        {
+            "name": "Pyroclasm",
+            "source": "Starlight",
+            "rarity": "common",
+            "type": "G|XPHB",
+            "value": 7500,
+            "poison": true,
+            "poisonTypes": [
+                "cloud"
+            ],
+            "entries": [
+                "This poison can be thrown to create a cloud of poison in a 10-foot radius. It can be thrown a distance of 3 times your Strength score. The cloud persists until the start of your next turn. Any creature in the cloud when it appears, or who enter it on a turn, are subjected to the poison.",
+                "A creature subjected to this poison becomes {@condition Burning|Starlight} for one minute. It can make a {@dc 11} Dexterity Saving Throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Nogginfogger",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 1d8} Psychic damage and must make a {@dc 13} Wisdom saving throw or become {@condition Poisoned|XPHB} for one minute. While {@condition Poisoned|XPHB}, it also suffers the effects of the {@spell Confusion|XPHB}. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Flashpowder",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "cloud"
+            ],
+            "entries": [
+                "This poison can be thrown to create a cloud of poison in a 10-foot radius. It can be thrown a distance of 3 times your Strength score. The cloud persists until the start of your next turn. Any creature in the cloud when it appears, or who enter it on a turn, are subjected to the poison.",
+                "A creature subjected to this poison takes {@damage 3d4} Radiant damage and must make a {@dc 13} Intelligence saving throw or become {@condition Disoriented|Starlight} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Boneshaker Broth",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 3d6} Thunder damage and must make a {@dc 13} Constitution saving throw or become {@condition Rattled|Starlight} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Lifesbane",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 2d10} Necrotic damage and must make a {@dc 13} Constitution saving throw or become {@condition Withering|Starlight} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Distillation of Light",
+            "source": "Starlight",
+            "rarity": "uncommon",
+            "type": "G|XPHB",
+            "value": 20000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 2d10} Radiant damage and must make a {@dc 13} Charisma saving throw or become {@condition Seared|Starlight} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Captured Medusa-Gaze",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 3d10} Piercing damage and must make a {@dc 15} Wisdom saving throw or become {@condition Restrained|XPHB} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
+            ]
+        },
+        {
+            "name": "Truth Serum",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "ingested"
+            ],
+            "entries": [
+                "A creature subjected to this poison must make a {@dc 15} Charisma saving throw or become unable to lie for one hour. It can repeat the saving throw every 10 minutes, ending the effect on a success."
+            ]
+        },
+        {
+            "name": "Knockout Gas",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "cloud"
+            ],
+            "entries": [
+                "This poison can be thrown to create a cloud of poison in a 10-foot radius. It can be thrown a distance of 3 times your Strength score. The cloud persists until the start of your next turn. Any creature in the cloud when it appears, or who enter it on a turn, are subjected to the poison.",
+                "A creature subjected to this poison must make a {@dc 15} Constitution saving throw or become {@condition Exhausted|XPHB}. If it starts its turn outside of the area of the poison, it loses one level of Exhaustion it gained from this poison. Elves have {@variantrule Advantage|XPHB} on any saving throw made against this poison.",
+                "A creature cannot have more than 5 levels of Exhaustion as a result of this poison. If it reaches 5 levels of Exhaustion while suffering from this poison, it falls {@condition Unconscious|XPHB} for 1 hour, until it takes damage, or until another creature within 5 feet makes a DC 10 Wisdom ({@skill Medicine|XPHB}) check to wake it."
+            ]
+        },
+        {
+            "name": "Grave's Grasp",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 3d8} Necrotic damage and must make a {@dc 15} Constitution saving throw or become {@condition Poisoned|XPHB} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success.",
+                "Whenever a creature makes any saving throw against this poison, success or fail, it takes {@damage 1d8} Necrotic damage."
+            ]
+        },
+        {
+            "name": "Skinfizzler",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "contact"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 2d6} Fire damage and {@damage 3d6 Acid} damage and must make a {@dc 15} Constitution saving throw or become {@condition Melting|Starlight} for one minute. The condition ends when the target, or another creature within 5 feet of it, uses an {@variantrule Action|XPHB} to remove it."
+            ]
+        },
+        {
+            "name": "Phantasmal Effluvium",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "inhaled"
+            ],
+            "entries": [
+                "A creature subjected to this poison must make a {@dc 15} Intelligence saving throw or become {@condition Frightened|XPHB} for one minute. While Frightened, it is hostile to all creatures. While hostile, the target must attempt to make an attack or force a target to make a saving throw each turn.",
+                "If the target is attacked or forced to make a saving throw while Frightened, it is no longer Frightened of the attacking creature. If it is no longer Frightened of any creature it can see, the poison ends."
+            ]
+        },
+        {
+            "name": "Antiarcanum Serum",
+            "source": "Starlight",
+            "rarity": "rare",
+            "type": "G|XPHB",
+            "value": 50000,
+            "poison": true,
+            "poisonTypes": [
+                "ingested"
+            ],
+            "entries": [
+                "A creature subjected to this poison must make a {@dc 15} Wisdom saving throw or suffer from this poison for one minute and gain {@condition Backlash|Starlight}. If a creature suffering from this poison starts its turn without {@condition Backlash|XPHB}, it must make a new Wisdom saving throw, regaining the condition on a failure."
+            ]
+        },
+        {
+            "name": "Fever's Peak",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "Ingested (Contact)"
+            ],
+            "entries": [
+                "A creature subjected to this poison must make a {@dc 17} Constitution saving throw or become {@condition Poisoned|XPHB} for one minute, though it will not be able to tell unless it enters combat. While {@condition Poisoned|XPHB} in this way, the creature sweats after one minute; this sweat explodes on contact with Fire (or if the creature takes Fire damage), dealing {@damage 3d6} Fire damage to itself and all other creatures within 10 feet of it.",
+                "The sweat acts as a contact poison, and any creature that comes into contact with it must make the same saving throw or suffer the effects of this poison themselves."
+            ]
+        },
+        {
+            "name": "Slow-Acting Poison",
+            "source": "Starlight",
+            "rarity": "very rare",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "ingested"
+            ],
+            "entries": [
+                "A creature subjected to this poison must make a {@dc 17} Constitution saving throw or become {@condition Poisoned|Starlight} for one day. At the start of each hour, it takes {@damage 1d12} Necrotic damage."
+            ]
+        },
+        {
+            "name": "Wyrm Bile",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "injury"
+            ],
+            "entries": [
+                "This poison can be used to coat a weapon or piece of ammunition. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+                "A creature subjected to this poison takes {@damage 11d6} Acid damage."
+            ]
+        },
+        {
+            "name": "Dragon's Breath",
+            "source": "Starlight",
+            "rarity": "legendary",
+            "type": "G|XPHB",
+            "value": 110000,
+            "poison": true,
+            "poisonTypes": [
+                "cloud"
+            ],
+            "entries": [
+                "This poison can be thrown to create a cloud of poison in a 10-foot radius. It can be thrown a distance of 3 times your Strength score. The cloud persists until the start of your next turn. Any creature in the cloud when it appears, or who enter it on a turn, are subjected to the poison.",
+                "A creature subjected to this poison takes {@damage 9d6} Force damage and must make a {@dc 19} Constitution saving throw or become {@condition Burning|Starlight} for one minute. It can repeat the saving throw at the end of each of its turns, ending the condition on a success."
             ]
         },
         {
@@ -15020,7 +15631,7 @@
                 }
             ],
             "entries": [
-                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or start their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
+                "You conjure an ancient storm in the form of a 30-foot radius, 60-foot-tall {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder}, centred on a point within range, which moves 20 feet in a direction of your choice at the start of each of your turns. Choose one effect from the options below. Creatures who enter the tempest or end their turn in it must make a Constitution saving throw or take {@damage 6d10} damage of the chosen type, taking half as much on a success. The tempest also applies the chosen affect within its area for the duration.",
                 {
                     "type": "entries",
                     "name": "Superheated Winds (Fire)",
@@ -18251,6 +18862,33 @@
             ]
         },
         {
+            "name": "Winded",
+            "source": "Starlight",
+            "page": 0,
+            "entries": [
+                "While you have the Winded condition, you experience the following effects.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Speed Affected",
+                            "entries": [
+                                "Your {@variantrule Speed|XPHB} becomes 30 feet unless it is already lower. When you take the {@action Dash|XPHB}, you gain half the usual benefit."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Saving Throws Affected",
+                            "entries": [
+                                "You have {@variantrule Disadvantage|XPHB} on Dexterity saving throws."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Burning",
             "source": "Starlight",
             "page": 0,
@@ -18358,13 +18996,6 @@
                     "entries": [
                         {
                             "type": "entries",
-                            "name": "Restricted Movement",
-                            "entries": [
-                                "Your movement is {@condition Hampered}."
-                            ]
-                        },
-                        {
-                            "type": "entries",
                             "name": "Damage Increased",
                             "entries": [
                                 "When you take any damage, that damage is increased by {@dice 2}."
@@ -18422,7 +19053,7 @@
                             "type": "entries",
                             "name": "Magic Backlash",
                             "entries": [
-                                "When you cast a spell, you take force damage depending on the spell's level. The damage is determined by rolling a number of d4s equal to the spell's level plus one."
+                                "When you cast a spell, you take force damage depending on the spell's level. The damage is determined by rolling a number of d4s equal to the spell's level plus one. This condition then ends."
                             ]
                         }
                     ]
@@ -18625,21 +19256,6 @@
             ]
         },
         {
-            "name": "Dying",
-            "source": "Starlight",
-            "page": 0,
-            "entries": [
-                {
-                    "type": "list",
-                    "items": [
-                        "If you start your turn while Dying, you roll a {@variantrule Death Saving Throw|XPHB}. Regaining any hit points ends this condition on you. Being stabilised via a DC 10 Wisdom (Medicine) check prevents only the death saving throw rolls.",
-                        "You are prone and cannot get up.",
-                        "On your turn, you can move, or take an action or a bonus action. Taking an action gives two levels of exhaustion, bonus actions and reactions give one."
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Spell Power",
             "source": "Starlight",
             "page": 0,
@@ -18728,521 +19344,406 @@
                 },
                 "{@note {@condition Poisoned|XPHB} is the natural partner to the Poison damage type, so including that among these options and rules would not be harmful.}"
             ]
-        }
-    ],
-    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
-    "race": [
+        },
         {
-            "name": "Fairy",
+            "name": "Magic Arrows",
             "source": "Starlight",
-            "creatureTypes": [
-                "fey"
-            ],
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "sylvan": true
-                }
-            ],
-            "size": [
-                "T"
-            ],
-            "speed": {
-                "walk": 30,
-                "fly": true
-            },
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    },
-                    "known": {
-                        "1": [
-                            "Pixie Sparks|Starlight"
-                        ]
-                    },
-                    "innate": {
-                        "3": {
-                            "daily": {
-                                "1": [
-                                    "faerie fire|XPHB"
-                                ]
-                            }
-                        }
-                    }
-                }
-            ],
-            "fluff": {
-                "entries": [
-                    {
-                        "type": "entries",
-                        "name": "Origin",
-                        "entries": [
-                            "Faeries aren't common in most lands, though they're plentiful enough in the Faewilds. They have a propensity for discovery and adventure, looking for the joy and entertainment in things big and small."
-                        ]
-                    }
-                ]
-            },
+            "ruleType": "O",
             "entries": [
+                "Starlight's Shadow offers a wide range of magical arrows for crafting, looting, and shooting, compiled by rarity here.",
+                "These arrows all impose relatively minor conditions or single-shot effects, but some are quite potent. They could be crafted using magic items rules and the monster component rules detailed elsewhere.",
                 {
-                    "type": "entries",
-                    "name": "Creature Type",
-                    "entries": [
-                        "You are a Fey."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fey Ancestry",
-                    "entries": [
-                        "You have advantage on saving throws against being {@condition Charmed|XPHB} and cannot be put to sleep by magical means."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Flight",
-                    "entries": [
-                        "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Quick and Nimble",
-                    "entries": [
-                        "Your speed and size make you difficult to hit. You gain a +1 bonus to your AC while you are airborne."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Tiny",
-                    "entries": [
-                        "Your size is Tiny, making you easy to move. You have {@variantrule Disadvantage|XPHB} on Strength saving throws and Strength-based ability checks."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fairy Magic",
-                    "entries": [
-                        "You know the {@spell Pixie Sparks|Starlight} cantrip.",
-                        "Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Once you cast {@spell faerie fire} with this trait, you can't cast it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
-                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this species)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Languages",
-                    "entries": [
-                        "You can speak, read, and write Common, Sylvan, and one other language that you and your DM agree is appropriate for your character."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Riftborn Lacertal",
-            "source": "ST",
-            "skillProficiencies": [
-                {
-                    "perception": true
-                }
-            ],
-            "creatureTypes": [
-                "aberration"
-            ],
-            "size": [
-                "M",
-                "S"
-            ],
-            "speed": {
-                "walk": 30,
-                "fly": 30
-            },
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    },
-                    "known": {
-                        "1": {
-                            "_": [
-                                {
-                                    "choose": "level=0|group=primal"
-                                }
-                            ]
-                        }
-                    }
-                }
-            ],
-            "fluff": {
-                "entries": [
-                    {
-                        "type": "entries",
-                        "name": "Origin",
-                        "entries": [
-                            "The Lacertal are a simple folk. Living peaceful lives in another plane. When the rifts appeared, this changed dramatically, and while they steer clear sometimes fate determine that one makes their way in, willfully or not.",
-                            "Few survive the journey: going up is much harder than going down. Those that do rarely remember anything, especially if they are young, and none so far have made it to civilisation meaningfully. The lacertal learned to steer clear long ago, and even with only primitive communication warnings of the rift are passed through generations.",
-                            "Of course, this doesn't stop any particularly foolhardy, sneaky, and curious lacertal from entering anyway. However they end up in the rift, it is likely to change them in ways that make them hard to recognise back home."
-                        ]
-                    }
-                ]
-            },
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Winged Form",
-                    "entries": [
-                        "You have a flying speed equal to your movement speed."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Malformed Wings",
-                    "entries": [
-                        "You fall at the end of your turn if you are airborne and the only thing holding you aloft is your flying speed."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Rift Magic Exposure",
-                    "page": 8,
-                    "entries": [
-                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter druid spell list|spells|level=0|class=Druid}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Druid Spell list.",
-                        "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Keen Senses",
-                    "page": 8,
-                    "entries": [
-                        "You have Proficiency in the {@skill Perception} Skill."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Tempestborn",
-            "source": "ST",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "S",
-                "M"
-            ],
-            "speed": 30,
-            "darkvision": 60,
-            "resist": [
-                "lightning",
-                "thunder"
-            ],
-            "additionalSpells": [
-                {
-                    "ability": {
-                        "choose": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    },
-                    "known": {
-                        "1": [
-                            "light#c"
-                        ]
-                    }
-                }
-            ],
-            "entries": [
-                {
-                    "type": "entries",
-                    "name": "Tempestborn Resistance",
-                    "entries": [
-                        "You have resistance to lightning damage and thunder damage."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Darkvision",
-                    "entries": [
-                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Healing Hands",
-                    "entries": [
-                        "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Light Bearer",
-                    "entries": [
-                        "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Fulgur's Fury",
-                    "entries": [
-                        "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
-                        "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
-                        "Once you use this trait, you can't use it again until you finish a long rest."
-                    ]
-                }
-            ],
-            "hasFluff": true,
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "anyStandard": 1
-                }
-            ]
-        },
-        {
-            "name": "Elf (Profane)",
-            "source": "ST",
-            "lineage": "VRGR",
-            "creatureTypes": [
-                "fiend"
-            ],
-            "size": [
-                "S",
-                "M"
-            ],
-            "speed": 30,
-            "darkvision": 60,
-            "resist": [
-                "fire",
-                "poison"
-            ],
-            "additionalSpells": [
-                {
-                    "innate": {
-                        "3": {
-                            "daily": {
-                                "1": [
-                                    "hellish rebuke#2"
-                                ]
-                            }
-                        }
-                    },
-                    "ability": {
-                        "choose": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    },
-                    "known": {
-                        "1": [
-                            "thaumaturgy#c"
-                        ]
-                    }
-                }
-            ],
-            "fluff": {
-                "entries": [
-                    {
-                        "type": "entries",
-                        "name": "Origin",
-                        "entries": [
-                            "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
-                            "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
-                            "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
-                        ]
-                    }
-                ]
-            },
-            "entries": [
-                {
-                    "name": "Age",
-                    "type": "entries",
-                    "entries": [
-                        "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Size",
-                    "entries": [
-                        "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Darkvision",
-                    "entries": [
-                        "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Abyssal Heritage",
-                    "entries": [
-                        "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Abyssal Magics",
-                    "entries": [
-                        "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Keen Senses",
-                    "entries": [
-                        "You have Proficiency in the {@skill Perception} skill."
-                    ]
-                },
-                {
-                    "name": "Trance",
-                    "entries": [
-                        "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-                        "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                    "caption": "Magic Arrows",
+                    "type": "table",
+                    "colLabels": [
+                        "Rarity",
+                        "Arrow"
                     ],
-                    "type": "entries"
-                }
-            ],
-            "hasFluff": true,
-            "hasFluffImages": true,
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "abyssal": true,
-                    "anyStandard": 1
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        [
+                            "common",
+                            "{@item Arrow of Acid|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Binding|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Dispersion|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Fire|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Gravity|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Ice|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Lightning|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Piercing|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Revealing|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Thunder|Starlight}"
+                        ],
+                        [
+                            "common",
+                            "{@item Arrow of Wounding|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Curing|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Darkness|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Dazzling|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Disruption|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Lesser Slaying|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Maiming|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Relocation|Starlight}"
+                        ],
+                        [
+                            "uncommon",
+                            "{@item Arrow of Withering|Starlight}"
+                        ],
+                        [
+                            "rare",
+                            "{@item Arrow of Explosives|Starlight}"
+                        ],
+                        [
+                            "rare",
+                            "{@item Arrow of Greater Slaying|Starlight}"
+                        ],
+                        [
+                            "rare",
+                            "{@item Arrow of Recurving|Starlight}"
+                        ]
+                    ]
                 }
             ]
         },
         {
-            "name": "Tiefling (Lyceran)",
-            "source": "ST",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "S",
-                "M"
-            ],
-            "speed": 30,
-            "darkvision": 60,
-            "resist": [
-                "necrotic"
-            ],
-            "additionalSpells": [
-                {
-                    "name": "Lyceran",
-                    "ability": {
-                        "choose": [
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    },
-                    "known": {
-                        "1": [
-                            "Primordial Spark|Starlight#c",
-                            "|xphb#c"
-                        ]
-                    },
-                    "innate": {
-                        "3": {
-                            "daily": {
-                                "1": [
-                                    "wrathful smite|xphb"
-                                ]
-                            }
-                        },
-                        "5": {
-                            "daily": {
-                                "1": [
-                                    "wither and bloom|scc"
-                                ]
-                            }
-                        }
-                    }
-                }
-            ],
-            "sizeEntry": {
-                "type": "item",
-                "name": "Size:",
-                "entries": [
-                    "Medium (about 4-7 feet tall) or Small (about 3-4 feet tall), chosen when you select this species"
-                ]
-            },
+            "name": "Crafting Poisons",
+            "source": "Starlight",
+            "ruleType": "O",
             "entries": [
+                "{@note Crafting a poison requires {@variantrule Proficiency|XPHB} with a {@item Poisoner's Kit|XPHB}.",
+                "When crafting a poison, you choose whether it is a weapon coating or a single-use poison as the 'base', also deciding the delivery mechanism.",
+                "Then you add an agent, which determines the poison's rarity (and thus the power) and potential effect(s) of the poison: this may be a {@variantrule Monster Components|Starlight|component from a monster}, magic from a spell or class feature, or a similar valuable item.",
+                "Crafting time does not need to be done continuously - a poison might be a simple mixing of ingredients, or require time to settle, mix, distill, dissolve, and so on. This could be done while the poison remains in your bag, but only one can be made at a time with each {@item Poisoner's Kit|XPHB}.",
+                "The bases are as follows: Weapon coating (Contact or Injury); Single-Use (Injury, Contact, Inhaled, Ingested, or Cloud).",
+                "The rarity of the agent influences the damage and save DC of the poison. A Single-Use poison will often do 4-6x as much damage as a Coating poison of the same rarity, but can only be used once.",
                 {
-                    "type": "entries",
-                    "name": "Darkvision",
-                    "entries": [
-                        "You have {@sense Darkvision|XPHB} with a range of 60 feet."
+                    "type": "table",
+                    "colLabels": [
+                        "Rarity",
+                        "Damage (Coating)",
+                        "Damage (Single-Use)",
+                        "DC",
+                        "Typical Cost",
+                        "Crafting Time"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-2",
+                        "col-2",
+                        "col-2",
+                        "col-3",
+                        "col-3"
+                    ],
+                    "rows": [
+                        [
+                            "Common",
+                            "{@dice 1} or {@dice 1d4}",
+                            "{@dice 3d6}",
+                            "11",
+                            "75gp",
+                            "1 Hour"
+                        ],
+                        [
+                            "Uncommon",
+                            "{@dice 1d6}",
+                            "{@dice 5d6}",
+                            "13",
+                            "200gp",
+                            "8 Hours"
+                        ],
+                        [
+                            "Rare",
+                            "{@dice 1d8}",
+                            "{@dice 7d6}",
+                            "15",
+                            "500gp",
+                            "1 Day"
+                        ],
+                        [
+                            "Very Rare",
+                            "{@dice 1d10}",
+                            "{@dice 9d6}",
+                            "17",
+                            "1100gp",
+                            "3 Days"
+                        ],
+                        [
+                            "Legendary",
+                            "{@dice 1d12}",
+                            "{@dice 11d6}",
+                            "19",
+                            "2000gp",
+                            "1 Week"
+                        ]
                     ]
                 },
+                "If the poison inflicts a condition, lower its damage by one rarity. For example a Rare Remorhaz tooth could provide a {@dice 1d8} Fire weapon coating, or a {@dice 1d6} Fire Weapon coating that has a DC 15 saving throw against Burning. Or a Single-Use poison that does {@dice 5d6} Fire damage with the same saving throw.",
+                "A poison might inflict its damage over a longer period of time or after a delay - consider the full damage when determining rarity, but if the period is extremely long (such as an hour or more) a creature is likely to have time to cure the poison before suffering much of its effect. If damage is inflicted on every saving throw, increase the potential damage by one tier, as it is unlikely the full damage will ever be applied!",
+                "If a poison inflicts more than one condition (such as {@condition Poisoned|XPHB} and a secondary condition that depends on being Poisoned), consider this as two conditions and lower the damage accordingly. This is a reasonable way to ugprade an existing poison. If a poison inflicts two negative effects (such as the {@item Oil of Diminution|Starlight}), count those separately.",
+                "If a poison does no damage and inflicts a condition, the condition could be quite unique or powerful (see {@item Phantasmal Effluvium|Starlight} or {@item Truth Serum|Starlight}), and this will usually be Rare (but not always, see {@item Fever's Peak|Starlight}).",
+                "At the DM's discretion or player's request, the die size could be increased or decreased - the examples in this supplement use a range of dice sizes. If you're unsure, use the average value for the rarity (for example, {@dice 3d6} averages to 10, {@dice 2d10} averages to 11) - a couple of points of damage won't make a meaningful difference to power, but can change the feeling a lot; a smaller number of larger dice will roll high and low more often."
+            ]
+        },
+        {
+            "name": "Monster Components",
+            "source": "Starlight",
+            "ruleType": "O",
+            "entries": [
+                "To craft any manner of magic item, potion, or poison, you may require a special component or a spell. Typically, groups of creatures are associated with certain characteristics, though some are much broader than others. An item acquired from a creature (such as a devil's horn, or a beast's tooth) might be usable to create an item fitting one of these categories.",
+                "The 'rarity' of a given component can be linked to the monster's {@variantrule Challenge Rating|XPHB} (CR): 0-5, common; 6-10, uncommon; 11-15, rare; 16-20, very rare; 21+, legendary. Legendary Actions or similar special properties could increase the rarity of an item from a monster.",
+                "Components should require some amount of effort to harvest, you may be required to make an ability check: Wisdom ({@skill Medicine|XPHB} or {@skill Survival|XPHB}), or Intelligence ({@skill Nature|XPHB}); alternatively, using a {@item Poisoner's Kit|XPHB} if you are proficient with it. The DC should be based off of the monster's CR, but higher difficulty checks (or larger monsters!) could come with additional components. This can be an alternative way to a nearby treasure chest for the DM to provide reward for slaying a challenging monster.",
+                "These components could then be used for crafting or selling. As a guideline, components should sell for approximately 10 x CR x rarity (where common is 1, and legendary is 5), with a minimum of 5gp. Some components may take effort to sell for their higher value, requiring (as example), {@skill Insight|XPHB}, {@skill Persuasion|XPHB}, {@skill Survival|XPHB}, {@skill Nature|XPHB}, or {@skill History|XPHB} or {@skill Investigation|XPHB} and some number of days to locate and convince suitable and trustworthy buyers. If a monster drops several components, this could be quite a lot of gold!",
+                "Below is a table of common associations for types of monsters. It includes damage types, conditions, special features, spellcasting if applicable, and common ability scores. An individual creature may not fit this trend, at which point the categories of a component can be changed as desired (typically, a given item could be used for a couple of these categories, not any of them).",
                 {
-                    "type": "entries",
-                    "name": "Abyssal Legacy",
-                    "entries": [
-                        "You are the recipient, by whatever means, of the legacy of the Queen of the Abyss, Lycera. This grants you supernatural abilities as detailed below.",
-                        "When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you gain this legacy).",
-                        {
-                            "type": "table",
-                            "caption": "Fiendish Legacies",
-                            "colLabels": [
-                                "Legacy",
-                                "Level 1",
-                                "Level 3",
-                                "Level 5"
-                            ],
-                            "colStyles": [
-                                "col-2",
-                                "col-6",
-                                "col-2",
-                                "col-2"
-                            ],
-                            "rows": [
-                                [
-                                    "Lyceran",
-                                    "You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Primordial Spark|Starlight} cantrip.",
-                                    "{@spell Wrathful Smite|XPHB}",
-                                    "{@spell Wither and Bloom|SCC}"
-                                ]
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Otherworldly Presence",
-                    "entries": [
-                        "You know the {@spell Thaumaturgy|XPHB} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Abyssal Legacy Trait."
+                    "type": "table",
+                    "colLabels": [
+                        "Monster Type",
+                        "Damage type(s)",
+                        "Common conditions",
+                        "Common features",
+                        "Spellcasting?",
+                        "Ability scores"
+                    ],
+                    "colStyles": [
+                        "col-2",
+                        "col-3",
+                        "col-3",
+                        "col-2",
+                        "col-3",
+                        "col-3"
+                    ],
+                    "rows": [
+                        [
+                            "Aberration",
+                            "Psychic, Necrotic",
+                            "{@condition Grappled|XPHB}, {@condition Charmed|XPHB}, {@condition Frightened|XPHB}, {@condition Poisoned|XPHB}, {@condition Incapacitated|XPHB}, {@condition Blinded|XPHB}",
+                            "Psionics, Telepathy, Curses",
+                            "Depends",
+                            "Constitution, Intelligence"
+                        ],
+                        [
+                            "Beast",
+                            "Bludgeoning, Piercing, Slashing",
+                            "{@condition Prone|XPHB}, {@status Bloodied|XPHB}",
+                            "Speed, Special movement",
+                            "-",
+                            "Strength, Constitution"
+                        ],
+                        [
+                            "Celestial",
+                            "Radiant",
+                            "{@condition Blinded|XPHB}, {@condition Poisoned|XPHB}",
+                            "Flight, Healing, Shapechange, Truesight",
+                            "Tier 2+",
+                            "Intelligence, Wisdom, Charisma"
+                        ],
+                        [
+                            "Construct",
+                            "Bludgeoning, Piercing, Slashing, Fire",
+                            "-",
+                            "Immutable form, Condition immunities, Absorption, Connections to other creatures",
+                            "-",
+                            "Strength"
+                        ],
+                        [
+                            "Dragon",
+                            "Any",
+                            "-",
+                            "Flight, Area effects",
+                            "Tier 2+",
+                            "Any ability score except Dexterity"
+                        ],
+                        [
+                            "Elemental",
+                            "Fire, Cold, Lightning, Thunder, Acid",
+                            "-",
+                            "Area effects, Special senses, Special speeds",
+                            "Yes",
+                            "-"
+                        ],
+                        [
+                            "Fey",
+                            "Psychic",
+                            "{@condition Charmed|XPHB}, {@condition Frightened|XPHB}, {@condition Invisible|XPHB}",
+                            "Disguise, Teamwork (ally benefits)",
+                            "Yes",
+                            "Dexterity, Charisma"
+                        ],
+                        [
+                            "Fiend",
+                            "Fire, Poison, Necrotic, Cold",
+                            "{@condition Charmed|XPHB}, {@condition Frightened|XPHB}, {@condition Invisible|XPHB}",
+                            "Magic Resistance, Shapeshifting, Disguise, Special senses",
+                            "Tier 3+",
+                            "Charisma"
+                        ],
+                        [
+                            "Giant",
+                            "Bludgeoning, Piercing, Slashing, Fire, Cold, Lightning, or Thunder",
+                            "{@condition Prone|XPHB}",
+                            "Forced movement, Regeneration, Large size",
+                            "-",
+                            "Strength, Constitution"
+                        ],
+                        [
+                            "Humanoid",
+                            "Bludgeoning, Piercing, Slashing, varies",
+                            "{@condition Charmed|XPHB}, {@condition Frightened|XPHB}, {@condition Poisoned|XPHB},",
+                            "Varies: archetypes include leaders (ally benefits), assassins (hiding, poison), and duelists (parry, retaliate).",
+                            "Usually",
+                            "Varies, usually Strength/Dexterity OR Intelligence/Wisdom/Charisma"
+                        ],
+                        [
+                            "Monstrosity",
+                            "Poison, Acid, Other elements depending on the creature",
+                            "{@condition Grappled|XPHB}, {@condition Restrained|XPHB}, {@condition Prone|XPHB}, {@condition Blinded|XPHB}",
+                            "Special movement, Shapeshifting, Disguise, Large size",
+                            "-",
+                            "Strength, Constitution, Wisdom"
+                        ],
+                        [
+                            "Ooze",
+                            "Acid, Psychic",
+                            "{@condition Restrained|XPHB}",
+                            "Movement, Regeneration, Immunities, Size-changing",
+                            "-",
+                            "Strength, Constitution"
+                        ],
+                        [
+                            "Plant",
+                            "Poison, Bludgeoning, Piercing, Slashing",
+                            "{@condition Grappled|XPHB}, {@condition Restrained|XPHB}, {@condition Poisoned|XPHB}",
+                            "Hiding",
+                            "-",
+                            "Strength, Constitution"
+                        ],
+                        [
+                            "Undead",
+                            "Necrotic",
+                            "{@condition Frightened|XPHB}",
+                            "Regeneration, Maximum {@variantrule Hit Points|XPHB} alteration",
+                            "-",
+                            "Strength, Constitution, Intelligence, Charisma"
+                        ]
                     ]
                 }
-            ],
-            "hasFluff": true,
-            "fluff": {
-                "entries": [
-                    {
-                        "type": "entries",
-                        "name": "Origin",
-                        "entries": [
-                            "It is rare to a see someone with a legacy such as this. Lycera does not often make her presence known in this way, and even being born in her very domain would not be sufficient. A period of sufficient exposure could leave one corrupted in such a way that the body takes on the traits listed here.",
-                            "One such example would be Adorea, once-Anathema. Even Imprisoned, so many years spent in the home base of Lycera's corruption had a, maybe irreversible, effect on her physiology. Her mother is the same way, though she kept it a secret for a longer time."
-                        ]
-                    }
-                ]
-            }
+            ]
         }
     ],
     "feat": [
+        {
+            "name": "Poison-maker",
+            "source": "Starlight",
+            "category": "G",
+            "prerequisite": [
+                {
+                    "level": 4
+                }
+            ],
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                "You gain the following benefits.",
+                {
+                    "type": "entries",
+                    "name": "Potent Poisons",
+                    "entries": [
+                        "When you deal damage to a creature with a poison, the damage ignores {@variantrule Resistance|XPHB} to the poison's damage type."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Precise Chemist",
+                    "entries": [
+                        "When you {@variantrule Crafting Poisons|Starlight|craft a poison}, you can add a catalyst to it, which does one of the following without affecting the rarity, cost, or time to make the poison:",
+                        {
+                            "type": "entries",
+                            "name": "Highly Concentrated",
+                            "entries": [
+                                "Increase the DC of the poison by 2."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Potent Formulation",
+                            "entries": [
+                                "Increase the damage by one rarity (if the poison is Legendary: 1d12 becomes 2d6, 11d6 becomes 13d6)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Careful Dosage",
+                            "entries": [
+                                "Double the duration of the poison's effect, the duration of the coating, or the number of pieces of ammunition coated."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
         {
             "name": "Mark of the Prophet",
             "source": "ST",
@@ -19972,6 +20473,518 @@
                     {
                         "period": "lr",
                         "type": "recoverAll"
+                    }
+                ]
+            }
+        }
+    ],
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "race": [
+        {
+            "name": "Fairy",
+            "source": "Starlight",
+            "creatureTypes": [
+                "fey"
+            ],
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "sylvan": true
+                }
+            ],
+            "size": [
+                "T"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": true
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "Pixie Sparks|Starlight"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "faerie fire|XPHB"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "Faeries aren't common in most lands, though they're plentiful enough in the Faewilds. They have a propensity for discovery and adventure, looking for the joy and entertainment in things big and small."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Creature Type",
+                    "entries": [
+                        "You are a Fey."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have advantage on saving throws against being {@condition Charmed|XPHB} and cannot be put to sleep by magical means."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Flight",
+                    "entries": [
+                        "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Quick and Nimble",
+                    "entries": [
+                        "Your speed and size make you difficult to hit. You gain a +1 bonus to your AC while you are airborne."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Tiny",
+                    "entries": [
+                        "Your size is Tiny, making you easy to move. You have {@variantrule Disadvantage|XPHB} on Strength saving throws and Strength-based ability checks."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fairy Magic",
+                    "entries": [
+                        "You know the {@spell Pixie Sparks|Starlight} cantrip.",
+                        "Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Once you cast {@spell faerie fire} with this trait, you can't cast it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+                        "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common, Sylvan, and one other language that you and your DM agree is appropriate for your character."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Riftborn Lacertal",
+            "source": "ST",
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "creatureTypes": [
+                "aberration"
+            ],
+            "size": [
+                "M",
+                "S"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": 30
+            },
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": {
+                            "_": [
+                                {
+                                    "choose": "level=0|group=primal"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "The Lacertal are a simple folk. Living peaceful lives in another plane. When the rifts appeared, this changed dramatically, and while they steer clear sometimes fate determine that one makes their way in, willfully or not.",
+                            "Few survive the journey: going up is much harder than going down. Those that do rarely remember anything, especially if they are young, and none so far have made it to civilisation meaningfully. The lacertal learned to steer clear long ago, and even with only primitive communication warnings of the rift are passed through generations.",
+                            "Of course, this doesn't stop any particularly foolhardy, sneaky, and curious lacertal from entering anyway. However they end up in the rift, it is likely to change them in ways that make them hard to recognise back home."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Winged Form",
+                    "entries": [
+                        "You have a flying speed equal to your movement speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Malformed Wings",
+                    "entries": [
+                        "You fall at the end of your turn if you are airborne and the only thing holding you aloft is your flying speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rift Magic Exposure",
+                    "page": 8,
+                    "entries": [
+                        "Your exposure to the wild magics of Delamir has given you some innate spellcasting, connected to the elements. You know one cantrip from the {@filter druid spell list|spells|level=0|class=Druid}. Whenever you finish a Long Rest, you can replace that spell with a different one from the Druid Spell list.",
+                        "Intelligence, Wisdom or Charisma is your spellcasting ability for any spell you cast with this trait (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "page": 8,
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} Skill."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tempestborn",
+            "source": "ST",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "lightning",
+                "thunder"
+            ],
+            "additionalSpells": [
+                {
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "light#c"
+                        ]
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Tempestborn Resistance",
+                    "entries": [
+                        "You have resistance to lightning damage and thunder damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Healing Hands",
+                    "entries": [
+                        "As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Bearer",
+                    "entries": [
+                        "You know the {@spell light} cantrip. Intelligence, Wisdom or Charisma is your spellcasting ability for this cantrip (choose when you select this species)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fulgur's Fury",
+                    "entries": [
+                        "When you reach 3rd level, you can use a bonus action to unleash the divine lightning within yourself, causing arcs of lightning to emenate from you. Your transformation lasts for 1 minute or until you end it as a bonus action.",
+                        "During your transformation, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes lightning damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra lightning damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.",
+                        "Once you use this trait, you can't use it again until you finish a long rest."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "anyStandard": 1
+                }
+            ]
+        },
+        {
+            "name": "Elf (Profane)",
+            "source": "ST",
+            "lineage": "VRGR",
+            "creatureTypes": [
+                "fiend"
+            ],
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "fire",
+                "poison"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "hellish rebuke#2"
+                                ]
+                            }
+                        }
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "thaumaturgy#c"
+                        ]
+                    }
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "Profane Elves originate from a dark ritual, giving a soul from the abyss a physical form. This grants them the ability to remain in the realm without issue. Without it, the soul cannot maintain its presence in the True Material.",
+                            "While they take the physical shape and build of an elf, their lifespan is essentially random, and there is no process of maturing or aging otherwise. Typically, a profane elf would die in combat, their body would turn to ashes and their soul return to the lower planes.",
+                            "Unlike other Sun'Dorai methods of taking form in the True Material plane, profane elves do not possess an alternate form. Once this body has reached its limit, it breaks. Healing is a slow process with this body, as parts may turn to ash when they are removed."
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                {
+                    "name": "Age",
+                    "type": "entries",
+                    "entries": [
+                        "You are created mature, and could in theory live indefinitely, provided your body does not take damage too severe. No upper age limit is known for a Profane Elf, but no magic lasts forever."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Size",
+                    "entries": [
+                        "Elves range from under 5 to over 6 feet tall and have slender builds, which you have inherited as a part of your creation. Your size is Medium."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Their abyssal heritage grants Profane Elves superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Heritage",
+                    "entries": [
+                        "The ritual that brought you to this plane confers some of your heritage's resilience and knowledge. You have resistance to fire and poison damage. Additionally, you can speak, read, and write Abyssal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Magics",
+                    "entries": [
+                        "You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have Proficiency in the {@skill Perception} skill."
+                    ]
+                },
+                {
+                    "name": "Trance",
+                    "entries": [
+                        "Elves don't need to sleep, and the ritual that created you has granted you the same ability. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you have visions of the Abyss, instead of dreams. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+                        "{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "abyssal": true,
+                    "anyStandard": 1
+                }
+            ]
+        },
+        {
+            "name": "Tiefling (Lyceran)",
+            "source": "ST",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "S",
+                "M"
+            ],
+            "speed": 30,
+            "darkvision": 60,
+            "resist": [
+                "necrotic"
+            ],
+            "additionalSpells": [
+                {
+                    "name": "Lyceran",
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "Primordial Spark|Starlight#c",
+                            "|xphb#c"
+                        ]
+                    },
+                    "innate": {
+                        "3": {
+                            "daily": {
+                                "1": [
+                                    "wrathful smite|xphb"
+                                ]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": [
+                                    "wither and bloom|scc"
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "sizeEntry": {
+                "type": "item",
+                "name": "Size:",
+                "entries": [
+                    "Medium (about 4-7 feet tall) or Small (about 3-4 feet tall), chosen when you select this species"
+                ]
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You have {@sense Darkvision|XPHB} with a range of 60 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Abyssal Legacy",
+                    "entries": [
+                        "You are the recipient, by whatever means, of the legacy of the Queen of the Abyss, Lycera. This grants you supernatural abilities as detailed below.",
+                        "When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you gain this legacy).",
+                        {
+                            "type": "table",
+                            "caption": "Fiendish Legacies",
+                            "colLabels": [
+                                "Legacy",
+                                "Level 1",
+                                "Level 3",
+                                "Level 5"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-6",
+                                "col-2",
+                                "col-2"
+                            ],
+                            "rows": [
+                                [
+                                    "Lyceran",
+                                    "You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Primordial Spark|Starlight} cantrip.",
+                                    "{@spell Wrathful Smite|XPHB}",
+                                    "{@spell Wither and Bloom|SCC}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Otherworldly Presence",
+                    "entries": [
+                        "You know the {@spell Thaumaturgy|XPHB} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Abyssal Legacy Trait."
+                    ]
+                }
+            ],
+            "hasFluff": true,
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Origin",
+                        "entries": [
+                            "It is rare to a see someone with a legacy such as this. Lycera does not often make her presence known in this way, and even being born in her very domain would not be sufficient. A period of sufficient exposure could leave one corrupted in such a way that the body takes on the traits listed here.",
+                            "One such example would be Adorea, once-Anathema. Even Imprisoned, so many years spent in the home base of Lycera's corruption had a, maybe irreversible, effect on her physiology. Her mother is the same way, though she kept it a secret for a longer time."
+                        ]
                     }
                 ]
             }
