@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +54,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -66,7 +66,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -80,7 +80,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -93,7 +93,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -104,7 +104,7 @@
                 "authors": [
                     "ST"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -116,7 +116,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -131,7 +131,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.08.08",
+                "version": "2026.10.16.13.58",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             }
@@ -140,7 +140,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1792138139.585862
+        "dateLastModified": 1792159129.133594
     },
     "class": [
         {
@@ -149,7 +149,7 @@
             "classFeatures": [
                 "Instinct|Hunter|Starlight|1|Starlight",
                 "Quarry|Hunter|Starlight|1|Starlight",
-                "Weapon Mastery|Ranger|XPHB|1",
+                "Weapon Mastery|Hunter|Starlight|1|Starlight",
                 "Fighting Style|Hunter|Starlight|1|Starlight",
                 "Survival Instincts|Hunter|Starlight|1|Starlight",
                 "Optional Rule: Alternate Ability Hunter|Hunter|Starlight|1|Starlight",
@@ -160,8 +160,8 @@
                     "classFeature": "Hunting Grounds|Hunter|Starlight|3|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|4",
-                "Extra Attack|Fighter|XPHB|5",
+                "Ability Score Improvement|Hunter|Starlight|4|Starlight",
+                "Extra Attack|Hunter|Starlight|5|Starlight",
                 "Measured Quarry|Hunter|Starlight|5|Starlight",
                 "Offensive Hunter|Hunter|Starlight|6|Starlight",
                 "Sixth Sense|Hunter|Starlight|6|Starlight",
@@ -169,7 +169,7 @@
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|8",
+                "Ability Score Improvement|Hunter|Starlight|8|Starlight",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
                 "Quick Thinking|Hunter|Starlight|9|Starlight",
                 "Defensive Hunter|Hunter|Starlight|10|Starlight",
@@ -177,14 +177,14 @@
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|12",
+                "Ability Score Improvement|Hunter|Starlight|12|Starlight",
                 "Cornered Quarry|Hunter|Starlight|13|Starlight",
                 "Refined Instincts|Hunter|Starlight|14|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|15|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|16",
+                "Ability Score Improvement|Hunter|Starlight|16|Starlight",
                 "Supernatural Hunter|Hunter|Starlight|17|Starlight",
                 "Doomed Quarry|Hunter|Starlight|18|Starlight",
                 "Epic Boon|Hunter|Starlight|19|Starlight",
@@ -654,25 +654,25 @@
                     "classFeature": "Elemental Origin|Shaman|Starlight|3|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|4",
+                "Ability Score Improvement|Shaman|Starlight|4|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|6|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|8",
+                "Ability Score Improvement|Shaman|Starlight|8|Starlight",
                 "Down the Path|Shaman|Starlight|9|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|10|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|12",
+                "Ability Score Improvement|Shaman|Starlight|12|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|14|Starlight",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Fighter|XPHB|16",
+                "Ability Score Improvement|Shaman|Starlight|16|Starlight",
                 "Elemental Embodiment|Shaman|Starlight|18|Starlight",
-                "Epic Boon|Fighter|XPHB|19",
+                "Epic Boon|Shaman|Starlight|19|Starlight",
                 "Spiritual Avatar|Shaman|Starlight|20|Starlight"
             ],
             "hd": {
@@ -1558,6 +1558,17 @@
             }
         },
         {
+            "name": "Weapon Mastery",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 1,
+            "entries": [
+                "Your training with weapons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of two kinds of {@filter weapons|items|type=simple weapon;martial weapon} of your choice with which you have proficiency, such as {@item Longbow|XPHB|Longbows} and {@item Shortsword|XPHB|Shortswords}.",
+                "Whenever you finish a {@variantrule Long Rest|XPHB}, you can change the kinds of weapons you chose. For example, you could switch to using the {@variantrule weapon mastery properties|XPHB|mastery properties} of {@item Scimitar|XPHB|Scimitars} and {@item Longsword|XPHB|Longswords}."
+            ]
+        },
+        {
             "name": "Fighting Style",
             "source": "Starlight",
             "className": "Hunter",
@@ -1743,7 +1754,17 @@
             "classSource": "Starlight",
             "level": 4,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 5,
+            "entries": [
+                "You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn."
             ]
         },
         {
@@ -1921,7 +1942,7 @@
             "classSource": "Starlight",
             "level": 8,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 12 and 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
             ]
         },
         {
@@ -2163,7 +2184,7 @@
             "classSource": "Starlight",
             "level": 12,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter level 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
             ]
         },
         {
@@ -2263,6 +2284,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 16,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Supernatural Hunter",
             "source": "Starlight",
             "className": "Hunter",
@@ -2338,7 +2369,7 @@
             "classSource": "Starlight",
             "level": 17,
             "entries": [
-                "You double your {@variantrule Speed|XPHB} this turn (no action required). If you take damage before the start of your next turn, any movement you didn't use on your turn can instead be used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+                "You double your {@variantrule Speed|XPHB} this turn (no action required). At the end of your turn, any unused movement is converted to {@variantrule Temporary Hit Points|XPHB}. These Temporary Hit Points last until the end of your next turn."
             ]
         },
         {
@@ -2391,7 +2422,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You have advantage on attacks against your Quarry."
+                "You have {@variantrule Advantage|XPHB} on attacks against your Quarry."
             ]
         },
         {
@@ -2411,7 +2442,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has {@variantrule Disadvantage} on its attack (if it attacks), or that ally has resistance to any damage dealt and advantage on any saving throws they are forced to make by your Quarry."
+                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has {@variantrule Disadvantage} on its attack (if it attacks), or that ally has resistance to any damage dealt and {@variantrule Advantage|XPHB} on any saving throws they are forced to make by your Quarry."
             ]
         },
         {
@@ -2573,6 +2604,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 4,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Shaman levels 8, 12, and 16."
+            ]
+        },
+        {
             "name": "Elemental Origin Feature",
             "source": "Starlight",
             "className": "Shaman",
@@ -2631,6 +2672,16 @@
             ]
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 8,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Elemental Origin Feature",
             "source": "Starlight",
             "className": "Shaman",
@@ -2640,6 +2691,16 @@
                 "At 10th level, you gain a feature granted by your elemental origin."
             ],
             "gainSubclassFeature": true
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 12,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
         },
         {
             "name": "Elemental Origin Feature",
@@ -2653,6 +2714,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 16,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Elemental Embodiment",
             "source": "Starlight",
             "className": "Shaman",
@@ -2660,6 +2731,16 @@
             "level": 18,
             "entries": [
                 "At 18th level, you are a paragon of your chosen element. You become immune to the damage type of your chosen elemental affinity."
+            ]
+        },
+        {
+            "name": "Epic Boon",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 19,
+            "entries": [
+                "You gain an {@filter Epic Boon Feat|feats|category=EB} or another {@filter feat|feats|} of your choice for which you qualify."
             ]
         },
         {
@@ -19683,7 +19764,7 @@
     ],
     "feat": [
         {
-            "name": "Poison-maker",
+            "name": "Toxicologist",
             "source": "Starlight",
             "category": "G",
             "prerequisite": [
@@ -19718,7 +19799,7 @@
                     "type": "entries",
                     "name": "Precise Chemist",
                     "entries": [
-                        "When you {@variantrule Crafting Poisons|Starlight|craft a poison}, you can add a catalyst to it, which does one of the following without affecting the rarity, cost, or time to make the poison:",
+                        "You gain {@variantrule Proficiency|XPHB} with the {@item Poisoner's Kit|XPHB}. When you {@variantrule Crafting Poisons|Starlight|craft a poison}, you can add a catalyst to it, which does one of the following without affecting the rarity, cost, or time to make the poison:",
                         {
                             "type": "entries",
                             "name": "Highly Concentrated",
@@ -19730,7 +19811,7 @@
                             "type": "entries",
                             "name": "Potent Formulation",
                             "entries": [
-                                "Increase the damage by one rarity (if the poison is Legendary: 1d12 becomes 2d6, 11d6 becomes 13d6)."
+                                "Increase the damage by one rarity (if the poison is Legendary: {@dice 1d12} becomes {@dice 2d6}, {@dice 11d6} becomes {@dice 13d6})."
                             ]
                         },
                         {

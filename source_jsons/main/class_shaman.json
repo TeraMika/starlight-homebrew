@@ -41,25 +41,25 @@
                     "classFeature": "Elemental Origin|Shaman|Starlight|3|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|4",
+				"Ability Score Improvement|Shaman|Starlight|4|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|6|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|8",
+				"Ability Score Improvement|Shaman|Starlight|8|Starlight",
                 "Down the Path|Shaman|Starlight|9|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|10|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|12",
+				"Ability Score Improvement|Shaman|Starlight|12|Starlight",
                 {
                     "classFeature": "Elemental Origin Feature|Shaman|Starlight|14|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|16",
+				"Ability Score Improvement|Shaman|Starlight|16|Starlight",
                 "Elemental Embodiment|Shaman|Starlight|18|Starlight",
-				"Epic Boon|Fighter|XPHB|19",
+				"Epic Boon|Shaman|Starlight|19|Starlight",
 				"Spiritual Avatar|Shaman|Starlight|20|Starlight"
 			],
             "hd": {
@@ -760,6 +760,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 4,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Shaman levels 8, 12, and 16."
+            ]
+        },
+        {
             "name": "Elemental Origin Feature",
             "source": "Starlight",
             "className": "Shaman",
@@ -818,6 +828,16 @@
             ]
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 8,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Elemental Origin Feature",
             "source": "Starlight",
             "className": "Shaman",
@@ -827,6 +847,16 @@
                 "At 10th level, you gain a feature granted by your elemental origin."
             ],
             "gainSubclassFeature": true
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 12,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
         },
         {
             "name": "Elemental Origin Feature",
@@ -840,6 +870,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 16,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Elemental Embodiment",
             "source": "Starlight",
             "className": "Shaman",
@@ -847,6 +887,16 @@
             "level": 18,
             "entries": [
                 "At 18th level, you are a paragon of your chosen element. You become immune to the damage type of your chosen elemental affinity."
+            ]
+        },
+        {
+            "name": "Epic Boon",
+            "source": "Starlight",
+            "className": "Shaman",
+            "classSource": "Starlight",
+            "level": 19,
+            "entries": [
+                "You gain an {@filter Epic Boon Feat|feats|category=EB} or another {@filter feat|feats|} of your choice for which you qualify."
             ]
         },
         {

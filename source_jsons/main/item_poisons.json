@@ -623,7 +623,7 @@
     "feat": 
     [
         {
-            "name": "Poison-maker",
+            "name": "Toxicologist",
             "source": "Starlight",
             "category": "G",
             "prerequisite": [
@@ -658,7 +658,7 @@
                     "type": "entries",
                     "name": "Precise Chemist",
                     "entries": [
-                        "When you {@variantrule Crafting Poisons|Starlight|craft a poison}, you can add a catalyst to it, which does one of the following without affecting the rarity, cost, or time to make the poison:",
+                        "You gain {@variantrule Proficiency|XPHB} with the {@item Poisoner's Kit|XPHB}. When you {@variantrule Crafting Poisons|Starlight|craft a poison}, you can add a catalyst to it, which does one of the following without affecting the rarity, cost, or time to make the poison:",
                         {
                             "type": "entries",
                             "name": "Highly Concentrated",
@@ -670,7 +670,7 @@
                             "type": "entries",
                             "name": "Potent Formulation",
                             "entries": [
-                                "Increase the damage by one rarity (if the poison is Legendary: 1d12 becomes 2d6, 11d6 becomes 13d6)."
+                                "Increase the damage by one rarity (if the poison is Legendary: {@dice 1d12} becomes {@dice 2d6}, {@dice 11d6} becomes {@dice 13d6})."
                             ]
                         },
                         {

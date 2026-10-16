@@ -32,7 +32,7 @@
             "classFeatures": [
 				"Instinct|Hunter|Starlight|1|Starlight",
 				"Quarry|Hunter|Starlight|1|Starlight",
-                "Weapon Mastery|Ranger|XPHB|1",
+                "Weapon Mastery|Hunter|Starlight|1|Starlight",
                 "Fighting Style|Hunter|Starlight|1|Starlight",
                 "Survival Instincts|Hunter|Starlight|1|Starlight",
                 "Optional Rule: Alternate Ability Hunter|Hunter|Starlight|1|Starlight",
@@ -43,8 +43,8 @@
                     "classFeature": "Hunting Grounds|Hunter|Starlight|3|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|4",
-                "Extra Attack|Fighter|XPHB|5",
+				"Ability Score Improvement|Hunter|Starlight|4|Starlight",
+                "Extra Attack|Hunter|Starlight|5|Starlight",
                 "Measured Quarry|Hunter|Starlight|5|Starlight",
 				"Offensive Hunter|Hunter|Starlight|6|Starlight",
                 "Sixth Sense|Hunter|Starlight|6|Starlight",
@@ -52,7 +52,7 @@
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|8",
+				"Ability Score Improvement|Hunter|Starlight|8|Starlight",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
                 "Quick Thinking|Hunter|Starlight|9|Starlight",
 				"Defensive Hunter|Hunter|Starlight|10|Starlight",
@@ -60,14 +60,14 @@
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|12",
+				"Ability Score Improvement|Hunter|Starlight|12|Starlight",
                 "Cornered Quarry|Hunter|Starlight|13|Starlight",
                 "Refined Instincts|Hunter|Starlight|14|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|15|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Fighter|XPHB|16",
+				"Ability Score Improvement|Hunter|Starlight|16|Starlight",
                 "Supernatural Hunter|Hunter|Starlight|17|Starlight",
 				"Doomed Quarry|Hunter|Starlight|18|Starlight",
 				"Epic Boon|Hunter|Starlight|19|Starlight",
@@ -478,6 +478,17 @@
             }
         },
         {
+            "name": "Weapon Mastery",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 1,
+            "entries": [
+                "Your training with weapons allows you to use the {@variantrule weapon mastery properties|XPHB|mastery properties} of two kinds of {@filter weapons|items|type=simple weapon;martial weapon} of your choice with which you have proficiency, such as {@item Longbow|XPHB|Longbows} and {@item Shortsword|XPHB|Shortswords}.",
+                "Whenever you finish a {@variantrule Long Rest|XPHB}, you can change the kinds of weapons you chose. For example, you could switch to using the {@variantrule weapon mastery properties|XPHB|mastery properties} of {@item Scimitar|XPHB|Scimitars} and {@item Longsword|XPHB|Longswords}."
+            ]
+        },
+        {
             "name": "Fighting Style",
             "source": "Starlight",
             "className": "Hunter",
@@ -668,7 +679,17 @@
             "classSource": "Starlight",
             "level": 4,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Hunter levels 8, 12, and 16."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 5,
+            "entries": [
+                "You can attack twice instead of once whenever you take the {@action Attack|XPHB} action on your turn."
             ]
         },
         {
@@ -843,7 +864,7 @@
             "classSource": "Starlight",
             "level": 8,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter levels 12 and 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
             ]
         },
         {
@@ -1086,7 +1107,7 @@
             "classSource": "Starlight",
             "level": 12,
             "entries": [
-                "You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Hunter level 16."
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
             ]
         },
         {
@@ -1185,6 +1206,16 @@
             "gainSubclassFeature": true
         },
         {
+            "name": "Ability Score Improvement",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "level": 16,
+            "entries": [
+                "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+            ]
+        },
+        {
             "name": "Supernatural Hunter",
             "source": "Starlight",
             "className": "Hunter",
@@ -1260,7 +1291,7 @@
             "classSource": "Starlight",
             "level": 17,
             "entries": [
-                "You double your {@variantrule Speed|XPHB} this turn (no action required). If you take damage before the start of your next turn, any movement you didn't use on your turn can instead be used to reduce that damage, spending 1 feet of unused movement for every 1 point of damage."
+                "You double your {@variantrule Speed|XPHB} this turn (no action required). At the end of your turn, any unused movement is converted to {@variantrule Temporary Hit Points|XPHB}. These Temporary Hit Points last until the end of your next turn."
             ]
         },
         {
@@ -1314,7 +1345,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You have advantage on attacks against your Quarry."
+                "You have {@variantrule Advantage|XPHB} on attacks against your Quarry."
             ]
         },
         {
@@ -1334,7 +1365,7 @@
             "classSource": "Starlight",
             "level": 18,
             "entries": [
-                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has {@variantrule Disadvantage} on its attack (if it attacks), or that ally has resistance to any damage dealt and advantage on any saving throws they are forced to make by your Quarry."
+                "You force your Quarry's attention, protecting your allies. The first time each turn your Quarry targets one of your allies, your Quarry has {@variantrule Disadvantage} on its attack (if it attacks), or that ally has resistance to any damage dealt and {@variantrule Advantage|XPHB} on any saving throws they are forced to make by your Quarry."
             ]
         },
         {
