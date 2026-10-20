@@ -193,7 +193,7 @@
             "name": "Wandering Star",
             "source": "Starlight",
             "level": 0,
-            "school": "C",
+            "school": "I",
             "subschools": [
                 "Astromancy"
             ],
@@ -405,7 +405,7 @@
             "name": "Guiding Star",
             "source": "Starlight",
             "level": 1,
-            "school": "A",
+            "school": "D",
             "subschools": [
                 "Astromancy"
             ],
@@ -430,7 +430,7 @@
                 {
                     "type": "timed",
                     "duration": {
-                        "type": "hours",
+                        "type": "hour",
                         "amount": 8
                     }
                 }
@@ -475,7 +475,7 @@
             "name": "Moment of Uncertainty",
             "source": "Starlight",
             "level": 1,
-            "school": "A",
+            "school": "D",
             "subschools": [
                 "Astromancy"
             ],
@@ -483,14 +483,14 @@
                 {
                     "number": 1,
                     "unit": "reaction",
-                    "condition": "when a creature rolls a D20 Test within 30 feet of you"
+                    "condition": "when a creature rolls a D20 Test"
                 }
             ],
             "range": {
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 30
                 }
             },
             "components": {
@@ -626,6 +626,10 @@
                     {
                         "name": "Artificer",
                         "source": "EFA"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
                     }
                 ]
             }
@@ -770,6 +774,10 @@
                         "source": "XPHB"
                     },
                     {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
                         "name": "Druid",
                         "source": "XPHB"
                     },
@@ -855,6 +863,10 @@
                     {
                         "name": "Shaman",
                         "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
                     }
                 ]
             }
@@ -994,7 +1006,7 @@
                 }
             ],
             "entries": [
-                "You bend the cosmic gradient in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centered on you. Within that {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, creatures appear slightly further away and less distinct. For the duration of the spell, any creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} cannot be identified by appearance, and Wisdom ({@skill Perception|XPHB} and {@skill Insight|XPHB}) checks made to locate and identify them have {@variantrule Disadvantage|XPHB}."
+                "You bend the Cosmic Gradient in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centered on you. Within that {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, creatures appear slightly further away and less distinct. For the duration of the spell, any creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} cannot be identified by their appearance, and ability checks (such as Wisdom ({@skill Insight|XPHB} or {@skill Perception|XPHB} or Intelligence ({@skill History}) checks made to locate and identify them (by traits other than their appearance) have {@variantrule Disadvantage|XPHB}."
             ],
             "areaTags": [
                 "MT"
@@ -1014,19 +1026,15 @@
                         "source": "XPHB"
                     },
                     {
+                        "name": "Artificer",
+                        "source": "XPHB"
+                    },
+                    {
                         "name": "Warlock",
                         "source": "XPHB"
                     },
                     {
                         "name": "Cleric",
-                        "source": "XPHB"
-                    },
-                    {
-                        "name": "Druid",
-                        "source": "XPHB"
-                    },
-                    {
-                        "name": "Ranger",
                         "source": "XPHB"
                     },
                     {
@@ -1117,10 +1125,6 @@
                     {
                         "name": "Shaman",
                         "source": "Starlight"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "EFA"
                     }
                 ]
             },
@@ -1244,10 +1248,6 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "EFA"
                     }
                 ]
             }
@@ -1256,7 +1256,7 @@
             "name": "Starlight's Shadow",
             "source": "Starlight",
             "level": 4,
-            "school": "C",
+            "school": "I",
             "subschools": [
                 "Astromancy"
             ],
@@ -1323,6 +1323,10 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
                     }
                 ]
             }
@@ -1395,6 +1399,10 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
                     }
                 ]
             }
@@ -1430,8 +1438,8 @@
                 }
             ],
             "entries": [
-                "Choose up to 6 creatures within range. For each creature, you teleport it to an unoccupied space you can see within 60 feet of its starting position and within the range of the spell. The destination must be a surface that can support it and cannot be immediately harmful (such as over a chasm, or in a fire).",
-                "An unwilling creature can make a Charisma saving throw to resist the effect."
+                "Choose up to 8 creatures within range. For each creature, you teleport it to an unoccupied space you can see within 60 feet of its starting position and within the range of the spell. The destination must be a surface that can support it and cannot be immediately harmful (such as over a chasm, or in a fire).",
+                "An unwilling creature can make a Charisma saving throw to partially resist the effect: on a successful save, it can choose a location within 5 feet of its target destination to be teleported to instead."
             ],
             "savingThrow": [
                 "charisma"
@@ -1457,6 +1465,10 @@
                     {
                         "name": "Shaman",
                         "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "XPHB"
                     }
                 ]
             }
@@ -1501,7 +1513,7 @@
                 }
             ],
             "entries": [
-                "When you cast this spell and as a {@action Magic|XPHB} action on each of your turns, you can create a blast of force that pulls from the cosmic gradient. The blast is a 30-foot {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you can see within range. When you create each blast, choose one of the following:",
+                "When you cast this spell and as a {@action Magic|XPHB} action on each of your turns, you can create a blast of force that pulls from the Cosmic Gradient. The blast is a 30-foot {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you can see within range. When you create each blast, choose one of the following:",
                 "{@b Blueshift.} Creatures of your choice within the blast must make a Strength saving throw or be pulled 15 feet towards the center of the area.",
                 "{@b Redshift.} Creatures of your choice within the blast must make a Strength saving throw or be pushed 15 feet away from the center.",
                 "With either option, a friendly creature of your choice within the blast can move up to half its {@variantrule Speed|XPHB} without provoking {@variantrule Opportunity Attacks|XPHB}.",
@@ -1579,7 +1591,7 @@
             ],
             "entries": [
                 "You call on a council of astral spirits, gaining their blessings and insights.",
-                "You regain your {@variantrule Reaction|XPHB} at the start of every turn.",
+                "You regain your {@variantrule Reaction|XPHB} at the start of every turn, not just your own.",
                 "When a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can use your Reaction to allow them to roll an additional d20, you choose which result to use. When you use this reaction, you can cause that creature to regain {@dice 5} hit points."
             ],
             "miscTags": [
@@ -1590,6 +1602,10 @@
                 "fromClassList": [
                     {
                         "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
                         "source": "XPHB"
                     },
                     {
@@ -1788,7 +1804,7 @@
             "name": "Gravitic Flux",
             "source": "Starlight",
             "level": 8,
-            "school": "T",
+            "school": "V",
             "subschools": [
                 "Astromancy"
             ],
@@ -2105,7 +2121,7 @@
             "name": "Cosmic Gradient",
             "source": "Starlight",
             "level": 9,
-            "school": "T",
+            "school": "V",
             "subschools": [
                 "Astromancy"
             ],
@@ -2141,10 +2157,10 @@
                 }
             ],
             "entries": [
-                "You become the center of the cosmic gradient, creating a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that moves with you. When you cast the spell and at the start of each of your turns, you create up to three of the following effects in any combination, targeting creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
+                "You become the center of the Cosmic Gradient, creating a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that moves with you. When you cast the spell and at the start of each of your turns, you create up to three of the following effects in any combination, targeting creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
                 "{@b Redshift.} One creature must succeed a Wisdom saving throw or be thrown 30 feet away from you, become {@condition Restrained|XPHB}, and take {@damage 4d12} Force damage. On a successful save, it takes half as much damage only. If this movement collides with another creature, both fall {@condition Prone|XPHB}; if the other creature is more than one size larger than the target, it does not fall {@condition Prone|XPHB}.",
                 "{@b Blueshift.} You and one other creature gain the benefits of the {@spell Haste|XPHB} spell until the start of your next turn.",
-                "{@b Parallax.} Up to three creatures of your choice are teleported to any other location within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, choosing differently for each. The destination must be unoccupied and be able to support the creature teleported there. An unwilling creature can make a Charisma saving throw to resist the effect."
+                "{@b Parallax.} Up to three creatures of your choice are teleported to any other location within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, choosing differently for each. The destination must be unoccupied and be able to support the creature teleported there. An unwilling creature can make a Charisma saving throw to resist the effect: on a success, it chooses another unoccupied within 5 feet of the destination you choose."
             ],
             "savingThrow": [
                 "wisdom", "charisma"
@@ -2189,7 +2205,50 @@
                         "source": "Starlight"
                     }
                 ]
-            }
+            },
+            "foundryActivities": [
+                {
+                    "name": "Redshift",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "4d12"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Parallax",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "cha"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

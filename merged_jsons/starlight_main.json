@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +54,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -66,7 +66,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -80,7 +80,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -93,7 +93,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.16.13.58",
+                "version": "2026.10.20.08.36",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -101,7 +101,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1792159129.094333
+        "dateLastModified": 1792485367.932923
     },
     "class": [
         {
@@ -15158,6 +15158,9 @@
             "source": "Starlight",
             "level": 0,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15226,6 +15229,9 @@
             "source": "Starlight",
             "level": 0,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15311,22 +15317,307 @@
             }
         },
         {
-            "name": "Parallax Shift",
+            "name": "Wandering Star",
             "source": "Starlight",
-            "level": 1,
-            "school": "A",
+            "level": 0,
+            "school": "I",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
-                    "unit": "reaction",
-                    "condition": "which is taken when you see a creature within 30 feet make an attack"
+                    "unit": "action"
                 }
             ],
             "range": {
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You create a mote of starlight that sheds 20 feet of {@variantrule Bright Light|XPHB} and 20 feet of {@variantrule Dim Light|XPHB}; it floats around you or travels to a point you can see within 120 feet. You can change whether it orbits you or follows your mental direction (no action required) as a {@variantrule Bonus Action|XPHB}, and it moves at your Speed. Also as a {@variantrule Bonus Action|XPHB}, you can dim the star to a minimum of 10 feet of Dim Light."
+            ],
+            "miscTags": [
+                "LGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Minor Constellation",
+            "source": "Starlight",
+            "level": 0,
+            "school": "C",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You trace a constellation in the air, creating 6 points of light connected by fine luminous lines. For the duration of the spell, you can organise these lines into a symbol, map, or simple diagram. Only very simple background detail can be created around the constellation, but the lights can take on the vague form of an object or creature to help illustrate your point.",
+                "The image hovers in place and moves with you, and sheds 5 feet of {@variantrule Dim Light|XPHB}."
+            ],
+            "miscTags": [
+                "LGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Astral Trace",
+            "source": "Starlight",
+            "level": 0,
+            "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a magnifying glass"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You study an object you can see within 30 feet. You learn whether it has been moved, touched, or magically altered within the last hour, but not by whom. For example, you might see a faint glowing star-trail where a heavy object was dragged, a glowing handprint where the last location it was touched was, or a spectral image of the item's previous form overlayed on top of it."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Guiding Star",
+            "source": "Starlight",
+            "level": 1,
+            "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 8
+                    }
+                }
+            ],
+            "entries": [
+                "You designate a visible point or location as your guiding star. For the duration, you always know the direction to that location while you are on the same place of existence. The spell does not reveal the route or distance."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Moment of Uncertainty",
+            "source": "Starlight",
+            "level": 1,
+            "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "when a creature rolls a D20 Test"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
                 }
             },
             "components": {
@@ -15338,9 +15629,9 @@
                 }
             ],
             "entries": [
-                "You shift a creature along the cosmic gradient, shifting them towards or away from their goal. Choose one of the following:",
-                "{@b Blueshift.} The creature makes an additional attack.",
-                "{@b Redshift.} The creature's attack is negated: a {@variantrule Critical Hit|XPHB} becomes a normal hit, and a normal hit becomes a miss."
+                "You shift a creature momentarily along the Cosmic Gradient, giving it a glimpse of a possible future where it becomes closer to or further from its goal. Choose one of the following:",
+                "{@b Blueshift.} The creature makes the {@variantrule D20 Test|XPHB} with {@variantrule Advantage|XPHB}.",
+                "{@b Redshift.} The creature makes the {@variantrule D20 Test|XPHB} with {@variantrule Disadvantage|XPHB}."
             ],
             "classes": {
                 "fromClassList": [
@@ -15380,6 +15671,9 @@
             "source": "Starlight",
             "level": 1,
             "school": "E",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15459,6 +15753,97 @@
                     {
                         "name": "Artificer",
                         "source": "EFA"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Cosmic Shift",
+            "source": "Starlight",
+            "level": 2,
+            "school": "T",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "yeast extract"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You move a creature along the Cosmic Gradient for the duration, accelerating or decelerating it. You grant it one of the following effects for the duration; an unwilling creature can make a Wisdom saving throw to resist, and repeats the saving throw at the end of each of its turns, ending the effect on a success.",
+                "{@b Blueshift.} When the target takes the {@action Attack|XPHB} action, it can make one additional attack as part of that action.",
+                "{@b Redshift.} When the target takes the {@action Attack|XPHB} action, it can make one fewer attack as part of that action (minimum 1 attack)."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "SCT",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
                     }
                 ]
             }
@@ -15468,6 +15853,9 @@
             "source": "Starlight",
             "level": 2,
             "school": "T",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15513,6 +15901,10 @@
                         "source": "XPHB"
                     },
                     {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
                         "name": "Druid",
                         "source": "XPHB"
                     },
@@ -15532,6 +15924,9 @@
             "source": "Starlight",
             "level": 2,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 10,
@@ -15595,6 +15990,183 @@
                     {
                         "name": "Shaman",
                         "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gradient Exchange",
+            "source": "Starlight",
+            "level": 3,
+            "school": "N",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a pair of silvered handheld mirrors, each worth 100gp",
+                    "cost": 20000
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You alter the relative energy of two creatures. Choose two creatures within range, each of whom receives one of these effects:",
+                "{@b Redshift.} You take a creature's energy. The target must make a Constitution saving throw, taking {@damage 5d8} Necrotic damage on failure, or half as much damage on a successful save.",
+                "{@b Blueshift.} You grant a creature the stolen energy. The target regains {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt."
+            ],
+            "savingThrow": [
+                "con"
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The Necrotic damage increases by {@scaledamage 3d8|3-9|1d8} for every spell slot level above 3."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "HL",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Redshift Veil",
+            "source": "Starlight",
+            "level": 3,
+            "school": "I",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 20
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a chunk of pink quartz worth 50gp",
+                    "cost": 5000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You bend the Cosmic Gradient in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centered on you. Within that {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, creatures appear slightly further away and less distinct. For the duration of the spell, any creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} cannot be identified by their appearance, and ability checks (such as Wisdom ({@skill Insight|XPHB} or {@skill Perception|XPHB} or Intelligence ({@skill History}) checks made to locate and identify them (by traits other than their appearance) have {@variantrule Disadvantage|XPHB}."
+            ],
+            "areaTags": [
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
                     }
                 ]
             }
@@ -15604,6 +16176,9 @@
             "source": "Starlight",
             "level": 3,
             "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15678,10 +16253,6 @@
                     {
                         "name": "Shaman",
                         "source": "Starlight"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "EFA"
                     }
                 ]
             },
@@ -15726,6 +16297,9 @@
             "source": "Starlight",
             "level": 4,
             "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15802,10 +16376,6 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
-                    },
-                    {
-                        "name": "Artificer",
-                        "source": "EFA"
                     }
                 ]
             }
@@ -15814,7 +16384,10 @@
             "name": "Starlight's Shadow",
             "source": "Starlight",
             "level": 4,
-            "school": "C",
+            "school": "I",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15879,6 +16452,10 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
                     }
                 ]
             }
@@ -15888,6 +16465,9 @@
             "source": "Starlight",
             "level": 5,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15949,6 +16529,159 @@
                     {
                         "name": "Bard",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Parallax Shift",
+            "source": "Starlight",
+            "level": 5,
+            "school": "C",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Choose up to 8 creatures within range. For each creature, you teleport it to an unoccupied space you can see within 60 feet of its starting position and within the range of the spell. The destination must be a surface that can support it and cannot be immediately harmful (such as over a chasm, or in a fire).",
+                "An unwilling creature can make a Charisma saving throw to partially resist the effect: on a successful save, it can choose a location within 5 feet of its target destination to be teleported to instead."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Diverge/Converge",
+            "source": "Starlight",
+            "level": 6,
+            "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a convex lens worth 750gp",
+                    "cost": 75000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "When you cast this spell and as a {@action Magic|XPHB} action on each of your turns, you can create a blast of force that pulls from the Cosmic Gradient. The blast is a 30-foot {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point you can see within range. When you create each blast, choose one of the following:",
+                "{@b Blueshift.} Creatures of your choice within the blast must make a Strength saving throw or be pulled 15 feet towards the center of the area.",
+                "{@b Redshift.} Creatures of your choice within the blast must make a Strength saving throw or be pushed 15 feet away from the center.",
+                "With either option, a friendly creature of your choice within the blast can move up to half its {@variantrule Speed|XPHB} without provoking {@variantrule Opportunity Attacks|XPHB}.",
+                "If either effect results in multiple creatures sharing a space, each creatures falls {@condition Prone|XPHB} unless it is two sizes larger than any other in the space."
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "miscTags": [
+                "FMV"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
                     }
                 ]
             }
@@ -15958,6 +16691,9 @@
             "source": "Starlight",
             "level": 6,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -15985,7 +16721,7 @@
             ],
             "entries": [
                 "You call on a council of astral spirits, gaining their blessings and insights.",
-                "You regain your {@variantrule Reaction|XPHB} at the start of every turn.",
+                "You regain your {@variantrule Reaction|XPHB} at the start of every turn, not just your own.",
                 "When a creature within 30 feet of you makes a {@variantrule D20 Test|XPHB}, you can use your Reaction to allow them to roll an additional d20, you choose which result to use. When you use this reaction, you can cause that creature to regain {@dice 5} hit points."
             ],
             "miscTags": [
@@ -15996,6 +16732,10 @@
                 "fromClassList": [
                     {
                         "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
                         "source": "XPHB"
                     },
                     {
@@ -16018,6 +16758,9 @@
             "source": "Starlight",
             "level": 7,
             "school": "D",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -16191,7 +16934,10 @@
             "name": "Gravitic Flux",
             "source": "Starlight",
             "level": 8,
-            "school": "T",
+            "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -16430,6 +17176,9 @@
             "source": "Starlight",
             "level": 9,
             "school": "T",
+            "subschools": [
+                "Astromancy"
+            ],
             "time": [
                 {
                     "number": 1,
@@ -16457,7 +17206,7 @@
             ],
             "entries": [
                 "The air darkens around you. A 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} centred on you is filled with Dim Light as you absorb the light from the sky. You gain a flying speed of 60 feet, and become resistant to fire, cold, radiant and necrotic damage.",
-                "All creatures of your choice within the emanation must subtract your spellcasting ability modifier from any damage rolls they make. Additionally, as a {@variantrule Bonus Action}, you can target a creature within the emanation to draw power from them. That creature must make a Constitution saving throw. On a failed save, they take {@damage 4d10} radiant or necrotic damage (your choice) and become {@condition Silenced|Starlight} until the start of your next turn, taking half as much damage only on a successful one. You gain temporary hit points equal to the amount of damage dealt."
+                "All creatures of your choice within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must subtract your spellcasting ability modifier from any damage rolls they make. Additionally, as a {@variantrule Bonus Action}, you can target a creature within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} to draw power from them. That creature must make a Constitution saving throw. On a failed save, they take {@damage 4d10} radiant or necrotic damage (your choice) and become {@condition Silenced|Starlight} until the start of your next turn, taking half as much damage only on a successful one. You gain temporary hit points equal to the amount of damage dealt."
             ],
             "damageInflict": [
                 "radiant",
@@ -16507,6 +17256,141 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Cosmic Gradient",
+            "source": "Starlight",
+            "level": 9,
+            "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a platinum tuning fork worth 1000gp",
+                    "cost": 100000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You become the center of the Cosmic Gradient, creating a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that moves with you. When you cast the spell and at the start of each of your turns, you create up to three of the following effects in any combination, targeting creatures within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}.",
+                "{@b Redshift.} One creature must succeed a Wisdom saving throw or be thrown 30 feet away from you, become {@condition Restrained|XPHB}, and take {@damage 4d12} Force damage. On a successful save, it takes half as much damage only. If this movement collides with another creature, both fall {@condition Prone|XPHB}; if the other creature is more than one size larger than the target, it does not fall {@condition Prone|XPHB}.",
+                "{@b Blueshift.} You and one other creature gain the benefits of the {@spell Haste|XPHB} spell until the start of your next turn.",
+                "{@b Parallax.} Up to three creatures of your choice are teleported to any other location within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, choosing differently for each. The destination must be unoccupied and be able to support the creature teleported there. An unwilling creature can make a Charisma saving throw to resist the effect: on a success, it chooses another unoccupied within 5 feet of the destination you choose."
+            ],
+            "savingThrow": [
+                "wisdom",
+                "charisma"
+            ],
+            "conditionInflict": [
+                "restrained",
+                "prone"
+            ],
+            "miscTags": [
+                "FMV",
+                "ADV",
+                "MAC",
+                "SGT"
+            ],
+            "areaTags": [
+                "ST",
+                "MT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            },
+            "foundryActivities": [
+                {
+                    "name": "Redshift",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "4d12"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Parallax",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "cha"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    }
+                }
+            ]
         }
     ],
     "monster": [
