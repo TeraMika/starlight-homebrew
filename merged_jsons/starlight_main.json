@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +54,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -66,7 +66,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -80,7 +80,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -93,7 +93,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.23.19.42",
+                "version": "2026.10.23.20.33",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -101,7 +101,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1792784572.664189
+        "dateLastModified": 1792787608.7513587
     },
     "class": [
         {
@@ -1946,7 +1946,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When you hit your Quarry with an attack, all other attacks you make against your Quarry before the start of your have a +3 bonus to hit until the start of your next turn."
+                "When your Quarry uses their {@variantrule Reaction|XPHB}, you can use your own {@variantrule Reaction|XPHB} to attempt to counter it. The target must succeed an Intelligence saving throw or their {@variantrule Reaction|XPHB} fails."
             ]
         },
         {
@@ -13796,7 +13796,7 @@
             "name": "Earth Shock",
             "source": "Starlight",
             "level": 1,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -13807,7 +13807,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 90
+                    "amount": 60
                 }
             },
             "components": {
@@ -13825,7 +13825,7 @@
                 }
             ],
             "entries": [
-                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Silenced|Starlight} until the start of your next turn."
+                "You channel the earth's might to suppress another creature. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d4} bludgeoning damage and is {@condition Winded|Starlight} until the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -13835,6 +13835,9 @@
                         "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|1d4} for each slot level above 1st."
                     ]
                 }
+            ],
+            "conditionInflict": [
+                "winded"
             ],
             "damageInflict": [
                 "bludgeoning"
@@ -13858,7 +13861,7 @@
             "name": "Frost Shock",
             "source": "Starlight",
             "level": 1,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -13869,7 +13872,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 90
+                    "amount": 60
                 }
             },
             "components": {
@@ -13887,7 +13890,7 @@
                 }
             ],
             "entries": [
-                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} cold damage and must make a Constitution saving throw. On a failed save, it is {@condition Halted|Starlight} until the start of your next turn. On a successful save, it is {@condition Slowed|Starlight} instead."
+                "You conjure a mote of pure cold and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} Cold damage and becomes {@condition Brittle|Starlight}."
             ],
             "entriesHigherLevel": [
                 {
@@ -13898,6 +13901,9 @@
                     ]
                 }
             ],
+            "conditionInflict": [
+                "brittle"
+            ],
             "damageInflict": [
                 "cold"
             ],
@@ -13906,6 +13912,464 @@
             ],
             "areaTags": [
                 "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Lava Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a flake of ash"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon the heat of the earth and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d6} Fire damage and becomes {@condition Burning|Starlight}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|2d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "burning"
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Caustic Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pinch of lime"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon the toxins of the flora and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} Acid damage and becomes {@condition Melting|Starlight}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|2d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "melting"
+            ],
+            "damageInflict": [
+                "acid"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Lightning Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a bit of wool"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon the charge of the sky and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} Lightning damage and becomes {@condition Shocked|Starlight}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d4|1-9|2d4} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "shocked"
+            ],
+            "damageInflict": [
+                "lightning"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Lightning Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a flake of ash"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon the heat of the earth and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d6} Fire damage and becomes {@condition Burning|Starlight}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|2d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "burning"
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Thunder Shock",
+            "source": "Starlight",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a kernel of corn"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon a small energetic cloud and launch it at your target. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d6} Thunder damage and becomes {@condition Rattled|Starlight}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|2d6} for each slot level above 1st."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "rattled"
+            ],
+            "damageInflict": [
+                "thunder"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Creeping Cold",
+            "source": "Starlight",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a small flat wooden stick"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "A 20-foot radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centred on a point you choose within range undergoes a rapid chill. All creatures within the area must make a Constitution saving throw or take {@damage 4d6} Cold damage and become {@variantrule Slowed|Starlight}. On a successful saving throw, a creature takes half as much damage and is not {@variantrule Slowed|Starlight}.",
+                "At the start of your next turn, the cold intensifies, and all creatures within the area must make a Constitution saving throw or take {@damage 4d6}} Cold damage and become {@variantrule Halted|Starlight}. On a successful saving throw, a creature takes half as much damage and is {@variantrule Slowed|Starlight} instead."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the Cold damage increases by {@scaledamage 1d6|3-9|4d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "slowed",
+                "halted"
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Advection Frost",
+            "source": "Starlight",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "cone",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You summon a chilling wind that causes frosty spikes to grow. All creatures in the area must make a Constitution saving throw or take {@damage 4d10} Cold damage, taking half as much damage on a success.",
+                "The ground in that area becomes {@variantrule Difficult Terrain|XPHB}, creatures that move within it take {@damage 1d6} Cold damage for every 5 feet they move. Any objects on the ground become stuck, and can be loosened with a {@variantrule Utilize|XPHB|Utilise} action to make a DC 15 Strength ({@skill Athletics|XPHB}) check, or through heat."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the initial Cold damage increases by {@scaledamage 1d10|3-9|4d10} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "cold"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "C"
+            ],
+            "miscTags": [
+                "DFT",
+                "OBJ"
             ],
             "classes": {
                 "fromClassList": [
@@ -13994,7 +14458,7 @@
             "name": "Primordial Spark",
             "source": "Starlight",
             "level": 0,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -14099,7 +14563,7 @@
             "name": "Primordial Eruption",
             "source": "Starlight",
             "level": 2,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -14204,7 +14668,7 @@
             "name": "Primordial Breath",
             "source": "Starlight",
             "level": 3,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -14308,7 +14772,7 @@
             "name": "Primordial Cloudburst",
             "source": "Starlight",
             "level": 4,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -14415,7 +14879,7 @@
             "name": "Primordial Spire",
             "source": "Starlight",
             "level": 5,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,
@@ -14517,7 +14981,7 @@
             "name": "Primordial Tempest",
             "source": "Starlight",
             "level": 7,
-            "school": "E",
+            "school": "V",
             "time": [
                 {
                     "number": 1,

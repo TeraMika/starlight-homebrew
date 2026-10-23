@@ -908,7 +908,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When you hit your Quarry with an attack, all other attacks you make against your Quarry before the start of your have a +3 bonus to hit until the start of your next turn."
+                "When your Quarry uses their {@variantrule Reaction|XPHB}, you can use your own {@variantrule Reaction|XPHB} to attempt to counter it. The target must succeed an Intelligence saving throw or their {@variantrule Reaction|XPHB} fails."
             ]
         },
         {
