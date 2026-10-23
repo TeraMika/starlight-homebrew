@@ -12,7 +12,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -27,7 +27,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -42,7 +42,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -54,7 +54,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -66,7 +66,7 @@
                 "authors": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew",
                 "targetSchema": "1.0"
             },
@@ -80,7 +80,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             },
             {
@@ -93,7 +93,7 @@
                 "convertedBy": [
                     "Starlight"
                 ],
-                "version": "2026.10.20.08.36",
+                "version": "2026.10.23.19.42",
                 "url": "https://github.com/TeraMika/starlight-homebrew"
             }
         ],
@@ -101,7 +101,7 @@
             "HTR": "Hunter's Tricks"
         },
         "dateAdded": 0,
-        "dateLastModified": 1792485367.932923
+        "dateLastModified": 1792784572.664189
     },
     "class": [
         {
@@ -15762,6 +15762,95 @@
             }
         },
         {
+            "name": "Ward Misfortune",
+            "source": "Starlight",
+            "level": 2,
+            "school": "A",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "yeast extract"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You protect a creature from grave misfortune. Until the start of your next turn, whenever the target makes a {@variantrule D20 Test|XPHB}, it can treat a {@dice d20} roll of 9 or lower as a 10."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "You can target one additional creature for each spell slot level above 2."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Artificer",
+                        "source": "EFA"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Cosmic Shift",
             "source": "Starlight",
             "level": 2,
@@ -16038,7 +16127,7 @@
                 "{@b Blueshift.} You grant a creature the stolen energy. The target regains {@variantrule Hit Points|XPHB} equal to the Necrotic damage dealt."
             ],
             "savingThrow": [
-                "con"
+                "constitution"
             ],
             "entriesHigherLevel": [
                 {
@@ -16461,6 +16550,73 @@
             }
         },
         {
+            "name": "Shelter of the Firmament",
+            "source": "Starlight",
+            "level": 4,
+            "school": "A",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "emanation",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a snowglobe"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "A sphere of stars and luminous celestial bodies surrounds you, some orbiting you in a ring, in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} that moves with you for the duration.",
+                "Attacks made by creatures outside of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} have {@variantrule Disadvantage|XPHB} against you and allies of your choice within it.",
+                "Whenever you or an ally within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} takes damage, you can use your {@variantrule Disadvantage|XPHB} to cause nearby stars to intercept the harm. The damage the creature takes is reduced by {@damage 2d4} plus your spellcasting ability modifier. If the creature that dealt the damage is within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, it takes Radiant damage equal to the damage reduced."
+            ],
+            "areaTags": [
+                "E"
+            ],
+            "damageInflict": [
+                "radiant"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Starlight Sending",
             "source": "Starlight",
             "level": 5,
@@ -16570,6 +16726,9 @@
             "entries": [
                 "Choose up to 8 creatures within range. For each creature, you teleport it to an unoccupied space you can see within 60 feet of its starting position and within the range of the spell. The destination must be a surface that can support it and cannot be immediately harmful (such as over a chasm, or in a fire).",
                 "An unwilling creature can make a Charisma saving throw to partially resist the effect: on a successful save, it can choose a location within 5 feet of its target destination to be teleported to instead."
+            ],
+            "miscTags": [
+                "TP"
             ],
             "savingThrow": [
                 "charisma"
@@ -16752,6 +16911,164 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Nebular Genesis",
+            "source": "Starlight",
+            "level": 7,
+            "school": "V",
+            "subschools": [
+                "Astromancy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a powdered magical gem worth 1000gp",
+                    "cost": 100000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You create a swirling nebula at a point you can see within range. The nebula fills a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} and sheds {@variantrule Dim Light|XPHB} in a 60-foot radius. The nebula advances through three stages of its lifecycle, described below. You cause the first stage when you cast the spell. As a {@variantrule Magic|XPHB} action on your later turns, you can advance it to its next stage, ending the current one. If you don't advance it yourself, the nebula advances to its final stage when the spell's duration expires. If your {@status Concentration} ends, or the nebula is dispelled, it ends with no effect as normal.",
+                "{@b Stage 1: Coalescence.} Matter is drawn to the center of the nebula with gravitational force. Each creature within the sphere makes a Constitution saving throw. On a failed save, a creature takes {@damage 5d10} Force damage and is pulled to an unoccupied space of your choice within 5 feet of the sphere's center. On a successful save, it takes half as much damage and isn't pulled. Unsecured objects that are not being worn or carried are pulled towards the center.",
+                "{@b Stage 2: Providence.} The nebula expands into a cloud of gases and starlight. The {@variantrule Sphere [Area of Effect]|XPHB|Sphere} is {@variantrule Heavily Obscured|XPHB} to creatures of your choice. You and any creatures you choose when this stage begins can see through this obfuscation. In addition, you and the chosen creatures gain the benefit of {@variantrule Cover|XPHB|Half-Cover} while within the sphere.",
+                "{@b Stage 3: Separation.} The nebula collapses in on itself and releases the accumulated energy. Previously chosen creatures within the sphere regain {@damage 5d8} {@variantrule Hit Points|XPHB}. All other creatures within 30 feet of the Nebula's center must make a Constitution saving throw. On a failed save, a creature takes {@damage 5d10} Force and {@damage 5d10} Radiant damage and is pushed 20 feet away from the center. On a successful save, they take half as much damage only. The spell then ends."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "Using a Higher-Level Spell Slot",
+                    "entries": [
+                        "The Radiant damage and the Force damage increase by {@scaledamage 5d10|7-9|1d10} for each spell slot level above 7."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force",
+                "radiant"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ],
+            "miscTags": [
+                "HL",
+                "FMV",
+                "OBJ"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Shaman",
+                        "source": "Starlight"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    }
+                ]
+            },
+            "foundryActivities": [
+                {
+                    "name": "Coalescence",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "6d10"
+                                },
+                                "type": "force"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Separation",
+                    "type": "save",
+                    "activation": {
+                        "type": ""
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "spellcasting"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": false,
+                                    "formula": "5d10"
+                                },
+                                "type": "force"
+                            },
+                            {
+                                "custom": {
+                                    "enabled": false,
+                                    "formula": "5d10"
+                                },
+                                "type": "radiant"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Celestial Alignment",
@@ -17314,7 +17631,8 @@
                 "FMV",
                 "ADV",
                 "MAC",
-                "SGT"
+                "SGT",
+                "TP"
             ],
             "areaTags": [
                 "ST",
