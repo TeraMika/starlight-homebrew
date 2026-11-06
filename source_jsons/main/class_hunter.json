@@ -26,53 +26,53 @@
         "dateLastModified": 0
     },
     "class": [
-		{
+        {
             "name": "Hunter",
             "source": "Starlight",
             "classFeatures": [
-				"Instinct|Hunter|Starlight|1|Starlight",
-				"Quarry|Hunter|Starlight|1|Starlight",
+                "Instinct|Hunter|Starlight|1|Starlight",
+                "Quarry|Hunter|Starlight|1|Starlight",
                 "Weapon Mastery|Hunter|Starlight|1|Starlight",
                 "Fighting Style|Hunter|Starlight|1|Starlight",
                 "Survival Instincts|Hunter|Starlight|1|Starlight",
                 "Optional Rule: Alternate Ability Hunter|Hunter|Starlight|1|Starlight",
-				"Tricks|Hunter|Starlight|2|Starlight",
+                "Tricks|Hunter|Starlight|2|Starlight",
                 "Keen Eye|Hunter|Starlight|2|Starlight",
                 "Shrug It Off|Hunter|Starlight|2|Starlight",
                 {
                     "classFeature": "Hunting Grounds|Hunter|Starlight|3|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Hunter|Starlight|4|Starlight",
+                "Ability Score Improvement|Hunter|Starlight|4|Starlight",
                 "Extra Attack|Hunter|Starlight|5|Starlight",
                 "Measured Quarry|Hunter|Starlight|5|Starlight",
-				"Offensive Hunter|Hunter|Starlight|6|Starlight",
+                "Offensive Hunter|Hunter|Starlight|6|Starlight",
                 "Sixth Sense|Hunter|Starlight|6|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|7|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Hunter|Starlight|8|Starlight",
+                "Ability Score Improvement|Hunter|Starlight|8|Starlight",
                 "Pressured Quarry|Hunter|Starlight|9|Starlight",
                 "Quick Thinking|Hunter|Starlight|9|Starlight",
-				"Defensive Hunter|Hunter|Starlight|10|Starlight",
+                "Defensive Hunter|Hunter|Starlight|10|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|11|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Hunter|Starlight|12|Starlight",
+                "Ability Score Improvement|Hunter|Starlight|12|Starlight",
                 "Cornered Quarry|Hunter|Starlight|13|Starlight",
                 "Refined Instincts|Hunter|Starlight|14|Starlight",
                 {
                     "classFeature": "Hunting Grounds Feature|Hunter|Starlight|15|Starlight",
                     "gainSubclassFeature": true
                 },
-				"Ability Score Improvement|Hunter|Starlight|16|Starlight",
+                "Ability Score Improvement|Hunter|Starlight|16|Starlight",
                 "Supernatural Hunter|Hunter|Starlight|17|Starlight",
-				"Doomed Quarry|Hunter|Starlight|18|Starlight",
-				"Epic Boon|Hunter|Starlight|19|Starlight",
-				"Hunter's Zenith|Hunter|Starlight|20|Starlight"
-			],
+                "Doomed Quarry|Hunter|Starlight|18|Starlight",
+                "Epic Boon|Hunter|Starlight|19|Starlight",
+                "Hunter's Zenith|Hunter|Starlight|20|Starlight"
+            ],
             "subclassTitle": "Hunting Grounds",
             "hd": {
                 "number": 1,
@@ -83,62 +83,62 @@
                 "dex"
             ],
             "classTableGroups": [
-				{
-					"colLabels": [
-						"Hunter's Die"
-					],
-					"rows": [
-						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d6}"],
-						["{@dice 1d8}"],
-						["{@dice 1d8}"],
-						["{@dice 1d8}"],
-						["{@dice 1d8}"],
-						["{@dice 1d8}"],
-						["{@dice 1d10}"],
-						["{@dice 1d10}"],
-						["{@dice 1d10}"],
-						["{@dice 1d10}"],
-						["{@dice 1d10}"],
-						["{@dice 1d12}"],
-						["{@dice 1d12}"],
-						["{@dice 1d12}"],
-						["{@dice 1d12}"],
-						["{@dice 1d12}"]
-					]
-				},
+                {
+                    "colLabels": [
+                        "Hunter's Die"
+                    ],
+                    "rows": [
+                        ["{@dice 1d6}"],
+                        ["{@dice 1d6}"],
+                        ["{@dice 1d6}"],
+                        ["{@dice 1d6}"],
+                        ["{@dice 1d6}"],
+                        ["{@dice 1d8}"],
+                        ["{@dice 1d8}"],
+                        ["{@dice 1d8}"],
+                        ["{@dice 1d8}"],
+                        ["{@dice 1d8}"],
+                        ["{@dice 1d10}"],
+                        ["{@dice 1d10}"],
+                        ["{@dice 1d10}"],
+                        ["{@dice 1d10}"],
+                        ["{@dice 1d10}"],
+                        ["{@dice 1d12}"],
+                        ["{@dice 1d12}"],
+                        ["{@dice 1d12}"],
+                        ["{@dice 1d12}"],
+                        ["{@dice 1d12}"]
+                    ]
+                },
                 {
                     "colLabels": [
                         "Instinct",
-						"{@filter Tricks|optionalfeatures|feature type=HTR}"
+                        "{@filter Tricks|optionalfeatures|feature type=HTR}"
                     ],
-					"rows": [
-						["1", "-"],
-						["2", "3"],
-						["3", "3"],
-						["4", "4"],
-						["5", "4"],
-						["6", "5"],
-						["7", "5"],
-						["8", "6"],
-						["9", "6"],
-						["10", "7"],
-						["11", "7"],
-						["12", "8"],
-						["13", "8"],
-						["14", "9"],
-						["15", "9"],
-						["16", "10"],
-						["17", "10"],
-						["18", "11"],
-						["19", "11"],
-						["20", "12"]
-					]
+                    "rows": [
+                        ["1", "-"],
+                        ["2", "3"],
+                        ["3", "3"],
+                        ["4", "4"],
+                        ["5", "4"],
+                        ["6", "5"],
+                        ["7", "5"],
+                        ["8", "6"],
+                        ["9", "6"],
+                        ["10", "7"],
+                        ["11", "7"],
+                        ["12", "8"],
+                        ["13", "8"],
+                        ["14", "9"],
+                        ["15", "9"],
+                        ["16", "10"],
+                        ["17", "10"],
+                        ["18", "11"],
+                        ["19", "11"],
+                        ["20", "12"]
+                    ]
                 }
-			],
+            ],
             "startingProficiencies": {
                 "armor": [
                     "light",
@@ -170,76 +170,76 @@
                     }
                 ]
             },
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"entries": [
-					"{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "entries": [
+                    "{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
                 ],
                 "defaultData": [
-					{
-						"A": [
-							{
-								"item": "chain mail|xphb"
-							},
-							{
-								"item": "greatsword|xphb"
-							},
-							{
-								"item": "flail|xphb"
-							},
-							{
-								"item": "javelin|xphb",
-								"quantity": 8
-							},
-							{
-								"item": "dungeoneer's pack|xphb"
-							},
-							{
-								"value": 400
-							}
-						],
-						"B": [
-							{
-								"item": "studded leather armor|xphb"
-							},
-							{
-								"item": "scimitar|xphb"
-							},
-							{
-								"item": "shortsword|xphb"
-							},
-							{
-								"item": "longbow|xphb"
-							},
-							{
-								"item": "arrows (20)|xphb"
-							},
-							{
-								"item": "quiver|xphb"
-							},
-							{
-								"item": "dungeoneer's pack|xphb"
-							},
-							{
-								"value": 1100
-							}
-						],
-						"C": [
-							{
-								"value": 15500
-							}
-						]
-					}
-				]
+                    {
+                        "A": [
+                            {
+                                "item": "chain mail|xphb"
+                            },
+                            {
+                                "item": "greatsword|xphb"
+                            },
+                            {
+                                "item": "flail|xphb"
+                            },
+                            {
+                                "item": "javelin|xphb",
+                                "quantity": 8
+                            },
+                            {
+                                "item": "dungeoneer's pack|xphb"
+                            },
+                            {
+                                "value": 400
+                            }
+                        ],
+                        "B": [
+                            {
+                                "item": "studded leather armor|xphb"
+                            },
+                            {
+                                "item": "scimitar|xphb"
+                            },
+                            {
+                                "item": "shortsword|xphb"
+                            },
+                            {
+                                "item": "longbow|xphb"
+                            },
+                            {
+                                "item": "arrows (20)|xphb"
+                            },
+                            {
+                                "item": "quiver|xphb"
+                            },
+                            {
+                                "item": "dungeoneer's pack|xphb"
+                            },
+                            {
+                                "value": 1100
+                            }
+                        ],
+                        "C": [
+                            {
+                                "value": 15500
+                            }
+                        ]
+                    }
+                ]
             },
             "multiclassing": {
                 "requirements":{
-					"or": [
-						{
-							"str": 13,
-							"dex": 13
-						}
-					]
+                    "or": [
+                        {
+                            "str": 13,
+                            "dex": 13
+                        }
+                    ]
                 },
                 "proficienciesGained": {
                     "weapons":[
@@ -251,39 +251,39 @@
                 }
             },
             "foundryAdvancement": [
-				{
-					"type": "ScaleValue",
-					"configuration": {
-						"type": "dice",
+                {
+                    "type": "ScaleValue",
+                    "configuration": {
+                        "type": "dice",
                         "identifier": "hunter-die",
-						"scale": {
-							"1": {
-								"number": 1,
-								"faces": 6
-							},
-							"6": {
-								"number": 1,
-								"faces": 8
-							},
-							"11": {
-								"number": 1,
-								"faces": 10
-							},
+                        "scale": {
+                            "1": {
+                                "number": 1,
+                                "faces": 6
+                            },
+                            "6": {
+                                "number": 1,
+                                "faces": 8
+                            },
+                            "11": {
+                                "number": 1,
+                                "faces": 10
+                            },
                             "16": {
                                 "number": 1,
                                 "faces": 12
                             }
                         }
-					},
-					"title": "Hunter's Die"
-				},
+                    },
+                    "title": "Hunter's Die"
+                },
                 {
-					"type": "ScaleValue",
-					"configuration": {
-						"type": "number",
+                    "type": "ScaleValue",
+                    "configuration": {
+                        "type": "number",
                         "identifier": "hunter-die-size",
-						"scale": {
-							"1": {
+                        "scale": {
+                            "1": {
                                 "value": 6
                             },
                             "6": {
@@ -296,100 +296,100 @@
                                 "value": 12
                             }
                         }
-					},
-					"title": "Hunter's Die Size"
-				},
+                    },
+                    "title": "Hunter's Die Size"
+                },
                 {
-					"type": "ScaleValue",
-					"configuration": {
-						"identifier": "instinct",
-						"type": "number",
-						"scale": {
+                    "type": "ScaleValue",
+                    "configuration": {
+                        "identifier": "instinct",
+                        "type": "number",
+                        "scale": {
                             "1": {
                                 "value": 1
                             },
-							"2": {
-								"value": 2
-							},
-							"3": {
-								"value": 3
-							},
-							"4": {
-								"value": 4
-							},
-							"5": {
-								"value": 5
-							},
-							"6": {
-								"value": 6
-							},
-							"7": {
-								"value": 7
-							},
-							"8": {
-								"value": 8
-							},
-							"9": {
-								"value": 9
-							},
-							"10": {
-								"value": 10
-							},
-							"11": {
-								"value": 11
-							},
-							"12": {
-								"value": 12
-							},
-							"13": {
-								"value": 13
-							},
-							"14": {
-								"value": 14
-							},
-							"15": {
-								"value": 15
-							},
-							"16": {
-								"value": 16
-							},
-							"17": {
-								"value": 17
-							},
-							"18": {
-								"value": 18
-							},
-							"19": {
-								"value": 19
-							},
-							"20": {
-								"value": 20
-							}
-						}
-					},
-					"title": "Instinct"
-				}
-			],
+                            "2": {
+                                "value": 2
+                            },
+                            "3": {
+                                "value": 3
+                            },
+                            "4": {
+                                "value": 4
+                            },
+                            "5": {
+                                "value": 5
+                            },
+                            "6": {
+                                "value": 6
+                            },
+                            "7": {
+                                "value": 7
+                            },
+                            "8": {
+                                "value": 8
+                            },
+                            "9": {
+                                "value": 9
+                            },
+                            "10": {
+                                "value": 10
+                            },
+                            "11": {
+                                "value": 11
+                            },
+                            "12": {
+                                "value": 12
+                            },
+                            "13": {
+                                "value": 13
+                            },
+                            "14": {
+                                "value": 14
+                            },
+                            "15": {
+                                "value": 15
+                            },
+                            "16": {
+                                "value": 16
+                            },
+                            "17": {
+                                "value": 17
+                            },
+                            "18": {
+                                "value": 18
+                            },
+                            "19": {
+                                "value": 19
+                            },
+                            "20": {
+                                "value": 20
+                            }
+                        }
+                    },
+                    "title": "Instinct"
+                }
+            ],
             "featProgression": [
-				{
-					"name": "Fighting Style",
-					"category": [
-						"FS"
-					],
-					"progression": {
-						"1": 1
-					}
-				},
-				{
-					"name": "Epic Boon",
-					"category": [
-						"EB"
-					],
-					"progression": {
-						"19": 1
-					}
-				}
-			],
+                {
+                    "name": "Fighting Style",
+                    "category": [
+                        "FS"
+                    ],
+                    "progression": {
+                        "1": 1
+                    }
+                },
+                {
+                    "name": "Epic Boon",
+                    "category": [
+                        "EB"
+                    ],
+                    "progression": {
+                        "19": 1
+                    }
+                }
+            ],
             "optionalfeatureProgression": [
                 {
                     "name": "Hunter Tricks",
@@ -454,15 +454,15 @@
                 "Hunters rely on their senses and instincts. You can apply yours more keenly than most creatures, granting you an edge in combat that you can exploit in various ways. Your Instinct recovers on a {@variantrule Short Rest|XPHB}.",
                 "You also have a Hunter's Die, which determines the damage or bonus granted by some of your features. You have an amount of Instinct equal to your Hunter level plus two (as indicated in the Hunter Table) and additional equal to your Wisdom modifier (minimum 0)."
             ],
-			"foundrySystem": {
-				"uses.max": "@scale.hunter.instinct + @abilities.wis.mod",
-				"uses.recovery": [
-					{
-						"period": "sr",
-						"type": "recoverAll"
-					}
-				]
-			}
+            "foundrySystem": {
+                "uses.max": "@scale.hunter.instinct + @abilities.wis.mod",
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
         },
         {
             "name": "Quarry",
@@ -514,10 +514,10 @@
                 {
                     "name": "Survival Instincts",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make a Perception or Survival check"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make a Perception or Survival check"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -570,14 +570,14 @@
                 "It takes a significant hit to phase you. Once per {@variantrule Short Rest}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to roll your Hunter's Die twice, add your Hunter level, and gain {@variantrule Temporary Hit Points|XPHB} equal to the total."
             ],
             "foundrySystem": {
-				"uses.max": 1,
-				"uses.recovery": [
-					{
-						"period": "sr",
-						"type": "recoverAll"
-					}
-				]
-			},
+                "uses.max": 1,
+                "uses.recovery": [
+                    {
+                        "period": "sr",
+                        "type": "recoverAll"
+                    }
+                ]
+            },
             "foundryActivities": [
                 {
                     "name": "Shrug It Off",
@@ -637,10 +637,10 @@
                 {
                     "name": "Keen Eye",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack roll against your Quarry"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an attack roll against your Quarry"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -704,22 +704,22 @@
                 {
                     "type": "entries",
                     "entries": [
-                      {
-                          "type": "options",
-                          "count": 1,
-                          "entries": [
-                              {
-                                  "type": "refClassFeature",
-                                  "classFeature": "Relentless Approach|Hunter|Starlight|5|Starlight"
-                              },
-                              {
-                                  "type": "refClassFeature",
-                                  "classFeature": "Watchful Approach|Hunter|Starlight|5|Starlight"
-                              },
-                              {
-                                  "type": "refClassFeature",
-                                  "classFeature": "Tactical Approach|Hunter|Starlight|5|Starlight"
-                              }
+                        {
+                            "type": "options",
+                            "count": 1,
+                            "entries": [
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Relentless Approach|Hunter|Starlight|5|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Watchful Approach|Hunter|Starlight|5|Starlight"
+                                },
+                                {
+                                    "type": "refClassFeature",
+                                    "classFeature": "Tactical Approach|Hunter|Starlight|5|Starlight"
+                                }
                             ]
                         }
                     ]
@@ -812,18 +812,18 @@
             ],
             "foundrySystem": {
                 "effects": [
-				{
+                {
                     "name": "Considered Strikes",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "flags.dnd5e.weaponCriticalThreshold",
-							"mode": "OVERRIDE",
-							"value": 19
-						}
-					]
-				}
-			]}
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "flags.dnd5e.weaponCriticalThreshold",
+                            "mode": "OVERRIDE",
+                            "value": 19
+                        }
+                    ]
+                }
+            ]}
         },
         {
             "name": "Thin the Herd",
@@ -924,10 +924,10 @@
                 {
                     "name": "Watchful Guard",
                     "type": "utility",
-					"activation": {
-						"type": "reaction",
-						"condition": "When your Quarry deals damage to you with a feature that targets only you"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When your Quarry deals damage to you with a feature that targets only you"
+                    },
                     "description": {
                         "chatFlavor": "Your careful watch lets you protect yourself from danger. Take half damage from the triggering effect."
                     }
@@ -947,10 +947,10 @@
                 {
                     "name": "Tactical Disruption (Attack)",
                     "type": "utility",
-					"activation": {
-						"type": "reaction",
-						"condition": "When your Quarry makes an attack roll"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When your Quarry makes an attack roll"
+                    },
                     "description": {
                         "chatFlavor": "Strategically impede their strikes"
                     },
@@ -962,10 +962,10 @@
                 {
                     "name": "Tactical Disruption (Save)",
                     "type": "utility",
-					"activation": {
-						"type": "reaction",
-						"condition": "When your Quarry makes a saving throw"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When your Quarry makes a saving throw"
+                    },
                     "description": {
                         "chatFlavor": "Strategically impede their defenses"
                     },
@@ -1002,10 +1002,10 @@
                 {
                     "name": "Quick Thinking",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you fail a saving throw"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you fail a saving throw"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -1265,19 +1265,19 @@
                         "type": "bonus",
                         "value": 1
                     },
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "3d10"
-								},
-								"types": [
-									"force"
-								]
-							}
-						]
-					},
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "3d10"
+                                },
+                                "types": [
+                                    "force"
+                                ]
+                            }
+                        ]
+                    },
                     "description": {
                         "chatFlavor": "Gone."
                     }
@@ -1593,10 +1593,10 @@
                 {
                     "name": "Activate Ethereal Shift (Free)",
                     "type": "utility",
-					"activation": {
-						"type": "bonus",
+                    "activation": {
+                        "type": "bonus",
                         "amount": 1
-					},
+                    },
                     "uses": {
                         "value": 1,
                         "max": 1,
@@ -1606,10 +1606,10 @@
                 {
                     "name": "Activate Ethereal Shift",
                     "type": "utility",
-					"activation": {
-						"type": "bonus",
+                    "activation": {
+                        "type": "bonus",
                         "amount": 1
-					},
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -1627,23 +1627,23 @@
                 {
                     "name": "Ethereal Shift Damage",
                     "type": "damage",
-					"activation": {
-						"type": "",
-						"condition": "When you pass through a creature's space while using Ethereal Shift"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you pass through a creature's space while using Ethereal Shift"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "(1+floor(@classes.hunter.levels/15))d(@scale.hunter.hunter-die-size)"
-								},
-								"types": [
-									"necrotic"
-								]
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "(1+floor(@classes.hunter.levels/15))d(@scale.hunter.hunter-die-size)"
+                                },
+                                "types": [
+                                    "necrotic"
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -1690,37 +1690,37 @@
                 {
                     "name": "Fae Tricks",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When a creature affects you while you are using Ethereal Shift"
-					},
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "(@prof)d(@scale.hunter.hunter-die-size)"
-								},
-								"types": [
-									"psychic"
-								]
-							}
-						]
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature affects you while you are using Ethereal Shift"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "(@prof)d(@scale.hunter.hunter-die-size)"
+                                },
+                                "types": [
+                                    "psychic"
+                                ]
+                            }
+                        ]
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
@@ -1842,14 +1842,14 @@
                 "This pool of energy, your Planar Gift, is the source of your extraplanar powers, detailed below."
             ],
             "foundrySystem": {
-				"uses.max": "@prof",
-				"uses.recovery": [
-					{
-						"period": "lr",
-						"type": "recoverAll"
-					}
-				]
-			}
+                "uses.max": "@prof",
+                "uses.recovery": [
+                    {
+                        "period": "lr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
         },
         {
             "name": "Aberrant Ward",
@@ -1867,14 +1867,14 @@
                 {
                     "name": "Aberrant Ward",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When a creature within 30 feet of you takes damage"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature within 30 feet of you takes damage"
+                    },
                     "range": {
-						"units": "ft",
-						"value": "30"
-					},
+                        "units": "ft",
+                        "value": "30"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -1912,14 +1912,14 @@
                 {
                     "name": "Celestial Dusting",
                     "type": "heal",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with a weapon attack"
-					},
-					"range": {
-						"units": "ft",
-						"value": "10"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with a weapon attack"
+                    },
+                    "range": {
+                        "units": "ft",
+                        "value": "10"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -1964,10 +1964,10 @@
                 {
                     "name": "Infernal Edge",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with a weapon attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with a weapon attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -1981,20 +1981,20 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"con"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
@@ -2182,11 +2182,11 @@
             },
             "foundryActivities": [
                 {
-					"name": "Cripple Foe",
-					"type": "save",
-					"activation": {
-						"type": "bonus"
-					},
+                    "name": "Cripple Foe",
+                    "type": "save",
+                    "activation": {
+                        "type": "bonus"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -2200,39 +2200,39 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"range": {
-						"units": "ft",
-						"value": "30"
-					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
-								},
-								"types": [
-									"necrotic"
-								]
-							}
-						],
-						"onSave": "half"
-					},
-					"save": {
-						"ability": [
-							"dex"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
-				}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "range": {
+                        "units": "ft",
+                        "value": "30"
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+                                },
+                                "types": [
+                                    "necrotic"
+                                ]
+                            }
+                        ],
+                        "onSave": "half"
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
             ]
         },
         {
@@ -2280,40 +2280,40 @@
             ],
             "foundryActivities": [
                 {
-					"name": "Silent Killer",
-					"type": "save",
-					"activation": {
-						"type": "bonus"
-					},
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die"
-								},
-								"types": [
-									"necrotic"
-								]
-							}
-						],
-						"onSave": "full"
-					},
-					"save": {
-						"ability": [
-							"int"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
-				}
+                    "name": "Silent Killer",
+                    "type": "save",
+                    "activation": {
+                        "type": "bonus"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.hunter.hunter-die"
+                                },
+                                "types": [
+                                    "necrotic"
+                                ]
+                            }
+                        ],
+                        "onSave": "full"
+                    },
+                    "save": {
+                        "ability": [
+                            "int"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
             ]
         },
         {
@@ -2467,17 +2467,17 @@
                 "You can hold your breath underwater for an additional number of minutes equal to your Wisdom modifier."
             ],
             "effects": [
-				{
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.attributes.movement.walk",
-							"mode": "ADD",
-							"value": 10
-						}
-					]
-				}
-			]
+                {
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "system.attributes.movement.walk",
+                            "mode": "ADD",
+                            "value": 10
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Pack Hunting",
@@ -2506,40 +2506,40 @@
             ],
             "foundryActivities": [
                 {
-					"name": "Siphon Speed",
-					"type": "save",
-					"activation": {
-						"type": "bonus"
-					},
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die"
-								},
-								"types": [
-									"fire"
-								]
-							}
-						],
-						"onSave": "full"
-					},
-					"save": {
-						"ability": [
-							"int"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
-				}
+                    "name": "Siphon Speed",
+                    "type": "save",
+                    "activation": {
+                        "type": "bonus"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.hunter.hunter-die"
+                                },
+                                "types": [
+                                    "fire"
+                                ]
+                            }
+                        ],
+                        "onSave": "full"
+                    },
+                    "save": {
+                        "ability": [
+                            "int"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
+                }
             ]
         },
         {
@@ -2653,10 +2653,10 @@
                 {
                     "name": "Commander",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack and command an ally to attack instead"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an attack and command an ally to attack instead"
+                    },
                     "roll": {
                         "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
@@ -2699,15 +2699,15 @@
                     },
                     "consumption": {
                         "targets": [
-                          {
-                              "type": "itemUses",
-                              "value": "1",
-                              "target": {
-                                  "consumes": {
-                                      "name": "Instinct"
-                                  }
-                              }
-                          }
+                            {
+                                "type": "itemUses",
+                                "value": "1",
+                                "target": {
+                                    "consumes": {
+                                        "name": "Instinct"
+                                    }
+                                }
+                            }
                         ]
                     },
                     "target": {
@@ -2733,8 +2733,8 @@
                     "description": {
                         "chatFlavor": "An ally within 60 feet gains {@variantrule Temporary Hit Points|XPHB} and their next successful attack deals additional damage equal to your Hunter's Die."
                     }
-                  }
-              ]
+                    }
+                ]
         },
         {
             "name": "Hunter's Call",
@@ -2912,10 +2912,10 @@
                 {
                     "name": "Evoke Elements",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack and replace it"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an attack and replace it"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -2930,15 +2930,15 @@
                         ]
                     },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "2d(@scale.hunter.hunter-die-size)"
-								}
-							}
-						]
-					},
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "2d(@scale.hunter.hunter-die-size)"
+                                }
+                            }
+                        ]
+                    },
                     "save": {
                         "ability": [
                             "dex"
@@ -2948,12 +2948,12 @@
                         }
                     },
                     "target": {
-						"template": {
-							"type": "sphere",
-							"size": "10",
-							"units": "ft"
-						}
-					}
+                        "template": {
+                            "type": "sphere",
+                            "size": "10",
+                            "units": "ft"
+                        }
+                    }
                 }
             ]
         },
@@ -2995,10 +2995,10 @@
                 {
                     "name": "(Tidesling Only) Soft Landing",
                     "type": "utility",
-					"activation": {
-						"type": "reaction",
-						"condition": "When you would take fall damage"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When you would take fall damage"
+                    },
                     "roll": {
                         "name": "Fall damage reduced",
                         "formula": "3 * @classes.hunter.levels"
@@ -3007,20 +3007,20 @@
                 {
                     "name": "(Cloudling Only) Punish Reaction",
                     "type": "damage",
-					"activation": {
-						"type": "reaction",
-						"condition": "When a creature within 60 feet of you takes a Reaction"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When a creature within 60 feet of you takes a Reaction"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
-								}
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
+                                }
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -3040,20 +3040,20 @@
                 {
                     "name": "Transmute Physiology",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you make an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an attack"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "@scale.hunter.hunter-die"
-								}
-							}
-						]
-					},
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "@scale.hunter.hunter-die"
+                                }
+                            }
+                        ]
+                    },
                     "save": {
                         "ability": [
                             "cha"
@@ -3092,9 +3092,9 @@
                 {
                     "name": "Primordial Enchantment",
                     "type": "heal",
-					"activation": {
-						"type": "bonus"
-					},
+                    "activation": {
+                        "type": "bonus"
+                    },
                     "healing": {
                         "types": [
                             "temphp"
@@ -3113,28 +3113,28 @@
                 {
                     "name": "Enchantment Explosion",
                     "type": "damage",
-					"activation": {
-						"type": "",
-						"condition": "When you end the enchantment with a Magic action or lose the Temporary Hit Points"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you end the enchantment with a Magic action or lose the Temporary Hit Points"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "4d(@scale.hunter.hunter-die-size)"
-								}
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "4d(@scale.hunter.hunter-die-size)"
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
                     "name": "Earth Enchantment Save",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When a creature enters the Emanation or ends its turn there,"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature enters the Emanation or ends its turn there,"
+                    },
                     "save": {
                         "ability": [
                             "str"
@@ -3147,10 +3147,10 @@
                 {
                     "name": "Water Enchantment Save",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When a creature starts its turn in the Emanation"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature starts its turn in the Emanation"
+                    },
                     "save": {
                         "ability": [
                             "str"
@@ -3361,15 +3361,15 @@
     ],
     "optionalfeature": [
         {
-			"name": "Quick Reactions",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll.",
+            "name": "Quick Reactions",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you roll {@variantrule Initiative}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die and add it to the total. You can do so after the roll.",
                 "Additionally, you do not roll initiative with {@variantrule Disadvantage|XPHB} when you are {@status Surprised|XPHB}."
-			],
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -3377,10 +3377,10 @@
                 {
                     "name": "Quick Reaction",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you roll Initiative"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you roll Initiative"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3400,17 +3400,17 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Herbalist",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You gain the {@feat Healer|XPHB} origin feat. You can use it as a {@variantrule Bonus Action}.",
+            "name": "Herbalist",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You gain the {@feat Healer|XPHB} origin feat. You can use it as a {@variantrule Bonus Action}.",
                 "Additionally, you gain proficiency with the {@item Herbalism Kit|XPHB}."
-			],
+            ],
             "toolProficiencies": [
                 {
                     "herbalism kit": true
@@ -3419,14 +3419,14 @@
         },
         {
             "name": "Hunter's Insight",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB}, {@skill Animal Handling|XPHB}, or {@skill Deception|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You have a knack for reading people and their intentions. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Insight|XPHB}, {@skill Animal Handling|XPHB}, or {@skill Deception|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
                 "If you swap this Trick for another, you lose the proficiency."
-			],
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -3446,10 +3446,10 @@
                 {
                     "name": "Hunter's Insight",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an ability check using Insight, Animal Handling, or Deception"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Insight, Animal Handling, or Deception"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3472,14 +3472,14 @@
         },
         {
             "name": "Physical Training",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You've trained for feats of physical prowess. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Athletics|XPHB} or {@skill Acrobatics|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You've trained for feats of physical prowess. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Athletics|XPHB} or {@skill Acrobatics|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
                 "If you swap this Trick for another, you lose the proficiency."
-			],
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -3498,10 +3498,10 @@
                 {
                     "name": "Physical Training",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an ability check using Athletics or Acrobatics"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Athletics or Acrobatics"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3524,12 +3524,12 @@
         },
         {
             "name": "Scholarly Training",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You have a knack for pursuits of intellect. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Arcana|XPHB}, {@skill Religion|XPHB}, or {@skill History|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You have a knack for pursuits of intellect. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to any ability check you make using the {@skill Arcana|XPHB}, {@skill Religion|XPHB}, or {@skill History|XPHB} skill. Additionally, you gain proficiency in one of those skills.",
                 "If you swap this Trick for another, you lose the proficiency."
             ],
             "consumes": {
@@ -3551,10 +3551,10 @@
                 {
                     "name": "Scholarly Training",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an ability check using Athletics or Acrobatics"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Athletics or Acrobatics"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3577,31 +3577,31 @@
         },
         {
             "name": "Evasive Attacks",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per turn when you hit with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to move up to 10 feet without provoking {@variantrule Opportunity Attacks|XPHB}."
-			]
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per turn when you hit with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to move up to 10 feet without provoking {@variantrule Opportunity Attacks|XPHB}."
+            ]
         },
         {
             "name": "Trip Attack",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can attempt to trip a creature when you hit with an attack. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} when you hit a creature to force it to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can attempt to trip a creature when you hit with an attack. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} when you hit a creature to force it to make a Strength saving throw against your Hunter DC, falling {@condition Prone|XPHB} if it fails."
+            ],
             "foundryActivities": [
                 {
                     "name": "Trip Attack",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3615,32 +3615,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"str"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
             "name": "Retaliate",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When a creature hits you with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Reaction|XPHB} to make an attack against that creature."
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -3648,10 +3648,10 @@
                 {
                     "name": "Retaliate",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When a creature hits you with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature hits you with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3670,21 +3670,21 @@
         },
         {
             "name": "Driving Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Strength saving throw or be pushed up to 15 feet away from you."
+            ],
             "foundryActivities": [
                 {
                     "name": "Driving Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3698,33 +3698,33 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"str"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
             "name": "Beguiling Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Charmed|Starlight} until the start of your next turn.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Charmed|Starlight} until the start of your next turn.",
                 "The creature treats you or one of your allies within 30 feet of the target (your choice) as the charmer. The {@condition Charmed|XPHB} condition ends early if the charmer attacks the target, deals damage to it, or forces it to make a saving throw."
-			],
+            ],
             "consumes": {
                 "name": "Instinct",
                 "amount": 1
@@ -3733,10 +3733,10 @@
                 {
                     "name": "Dazzling Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3750,32 +3750,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
             "name": "Baleful Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Frightened|Starlight} of you until the start of your next turn."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Frightened|Starlight} of you until the start of your next turn."
+            ],
             "consumes": {
                 "name": "Instinct",
                 "amount": 1
@@ -3784,10 +3784,10 @@
                 {
                     "name": "Baleful Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3801,32 +3801,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
             "name": "Goading Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Taunted|Starlight} by you until the start of your next turn."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Taunted|Starlight} by you until the start of your next turn."
+            ],
             "consumes": {
                 "name": "Instinct",
                 "amount": 1
@@ -3835,10 +3835,10 @@
                 {
                     "name": "Goading Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -3852,32 +3852,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
             "name": "Feint",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You can spend a {@variantrule Bonus Action} to feint a creature within 5 feet of you. Your next attack against the target before the start of your next turn has {@variantrule Advantage}."
-			],
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -3885,10 +3885,10 @@
                 {
                     "name": "Feint",
                     "type": "utility",
-					"activation": {
-						"type": "bonus",
-						"amount": 1
-					},
+                    "activation": {
+                        "type": "bonus",
+                        "amount": 1
+                    },
                     "description": {
                         "chatFlavor": "Gain advantage on your next attack."
                     }
@@ -3897,14 +3897,14 @@
         },
         {
             "name": "Finder of Traps",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and a {@variantrule Bonus Action|XPHB} to sense the location and purpose of any traps (and their triggers) within 60 feet of you.",
                 "A trap is any object or mechanism that was created or placed to cause damage or other danger. This could include spells, physical mechanisms, or even dangerous loopholes in a contract."
-			],
+            ],
             "consumes": {
                 "name": "Instinct"
             }
@@ -3988,15 +3988,15 @@
         },
         {
             "name": "Specialised Ammunition",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your daily preparations can include special ammunition, to leave you ready for the day ahead.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your daily preparations can include special ammunition, to leave you ready for the day ahead.",
                 "After you complete a {@variantrule Long Rest|XPHB}, you can create a number of {@variantrule Magic Arrows|Starlight|common Magic Arrows} equal to your Proficiency Bonus, requiring one arrow for each.",
                 "If not used before you complete your next {@variantrule Long Rest|XPHB}, the arrows lose their magical properties."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4013,13 +4013,13 @@
         },
         {
             "name": "Naturally Talented",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You gain {@variantrule Expertise|XPHB} in one skill that you are proficient in."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4041,13 +4041,13 @@
         },
         {
             "name": "Trained in Darkness",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You have {@sense Darkvision|XPHB} out to a range of 60 feet. If you already have darkvision, its range is increased by 60 feet."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4066,14 +4066,14 @@
             }]
         },
         {
-			"name": "Ricochet Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage is of the weapon's type, and the attack retains any properties of the weapon or ammunition such as masteries or attack or damage bonuses."
-			],
+            "name": "Ricochet Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause the attack to ricochet or follow-through. Make an additional attack roll against a different creature within 5 feet of the original target. On a hit, the target takes damage equal to one roll of your Hunter's Die. This damage is of the weapon's type, and the attack retains any properties of the weapon or ammunition such as masteries or attack or damage bonuses."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4091,16 +4091,16 @@
                 "name": "Instinct",
                 "amount": 1
             }
-		},
+        },
         {
-			"name": "Readied Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them."
-			],
+            "name": "Readied Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When a creature enters your reach and you are holding a melee weapon, you can use your {@variantrule Reaction|XPHB} to make an {@action Opportunity Attack} against them."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4118,23 +4118,23 @@
                 {
                     "name": "Readied Strike",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When a creature enters your reach and you are holding a melee weapon"
-					}
+                    "activation": {
+                        "type": "",
+                        "condition": "When a creature enters your reach and you are holding a melee weapon"
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Environmental Conditioning",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your exposure to a range of creatures and environments has taught you how to prepare for many a situation.",
+            "name": "Environmental Conditioning",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your exposure to a range of creatures and environments has taught you how to prepare for many a situation.",
                 "When you complete a {@variantrule Short Rest|XPHB|Short} or {@variantrule Long Rest|XPHB}, you can choose to become resistant to your choice of fire, cold, acid, lightning or thunder damage. This resistance lasts until you select another resistance through this feature."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4149,17 +4149,17 @@
                 }
             ],
             "resist": ["fire, cold, acid, lightning, or thunder"]
-		},
+        },
         {
-			"name": "Superior Stamina I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Dash|XPHB} using this feature no more than once per turn.",
+            "name": "Superior Stamina I",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can take the {@action Dash|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Dash|XPHB} using this feature no more than once per turn.",
                 "When you make any Constitution ability check, you can add your Hunter's Die to the roll, or to checks and saving throws made as part of a Chase."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4176,17 +4176,17 @@
             "consumes": {
                 "name": "Instinct"
             }
-		},
+        },
         {
-			"name": "Inflicting Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become {@condition Bleeding|Starlight}.",
+            "name": "Inflicting Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Constitution saving throw or become {@condition Bleeding|Starlight}.",
                 "The target can repeat the saving throw at the end of each of their turns to end the effect."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4207,10 +4207,10 @@
                 {
                     "name": "Inflicting Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4224,33 +4224,33 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"con"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Searing Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
+            "name": "Searing Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your strike is so fast and vicious, or creates sparks when it hits strikes metal, that it ignites your target. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force your target to make a Dexterity saving throw or become {@condition Burning|Starlight}.",
                 "Once burning, the target repeats the saving throw at the end of each of their turns, ending the effect on a success."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4271,10 +4271,10 @@
                 {
                     "name": "Searing Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4288,32 +4288,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"dex"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Pocket Sand",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can use a {@variantrule Bonus Action|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
-			],
+            "name": "Pocket Sand",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can use a {@variantrule Bonus Action|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to attempt to {@condition Blinded|XPHB|blind} a creature. Choose a creature within 5 feet of you. It must make a Constitution saving throw or become {@condition Blinded|XPHB} until the start of your next turn. You must have a free hand to use this Trick."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4334,10 +4334,10 @@
                 {
                     "name": "Pocket Sand",
                     "type": "save",
-					"activation": {
-						"type": "bonus",
-						"value": 1
-					},
+                    "activation": {
+                        "type": "bonus",
+                        "value": 1
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4351,26 +4351,26 @@
                             }
                         ]
                     },
-					"save": {
-						"ability": [
-							"con"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Instinctive Mark",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}."
-			],
+            "name": "Instinctive Mark",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can mark a creature as your {@classFeature Quarry|Hunter|Starlight|1|Starlight} without using your {@variantrule Bonus Action|XPHB}."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4388,18 +4388,18 @@
                 "name": "Instinct",
                 "amount": 1
             }
-		},
+        },
         {
-			"name": "Shrug it Off Improvement",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you use Shrug It Off, you can roll an additional Hunter's Die when determining the {@variantrule Temporary Hit Points|XPHB} gained.",
+            "name": "Shrug it Off Improvement",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you use Shrug It Off, you can roll an additional Hunter's Die when determining the {@variantrule Temporary Hit Points|XPHB} gained.",
                 "As part of that {@variantrule Bonus Action|XPHB}, you can choose to spend additional {@classFeature Instinct|Hunter|Starlight|1|Starlight}, rolling one additional Hunter's Die for each Instinct spent.",
                 "Finally, you can use Shrug It Off to recover {@variantrule Hit Points|XPHB}, instead of gaining Temporary Hit Points."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4413,16 +4413,16 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Sterner Stuff I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You have resistance to poison damage and advantage on any saving throws made against the {@condition Poisoned|XPHB} condition."
-			],
+            "name": "Sterner Stuff I",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You have resistance to poison damage and advantage on any saving throws made against the {@condition Poisoned|XPHB} condition."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4437,14 +4437,14 @@
                 }
             ],
             "resist": ["poison"]
-		},
+        },
         {
-			"name": "Indefatigable I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "name": "Indefatigable I",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You can remove one level of {@condition Exhaustion|XPHB} whenever you complete a {@variantrule Short Rest|XPHB}."
             ],
             "prerequisite": [
@@ -4460,17 +4460,17 @@
                     }
                 }
             ]
-		},
+        },
         {
             "name": "Breaking Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Dexterity saving throw or become {@condition Staggered|Starlight} until the start of your next turn.",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Dexterity saving throw or become {@condition Staggered|Starlight} until the start of your next turn.",
                 "Alternatively, you can force the target to make a Strength saving throw or become {@condition Sundered|Starlight}."
-			],
+            ],
             "consumes": {
                 "name": "Instinct",
                 "amount": 1
@@ -4479,10 +4479,10 @@
                 {
                     "name": "Staggering Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4496,28 +4496,28 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"dex"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "dex"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 },
                 {
                     "name": "Sundering Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4531,32 +4531,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"str"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
-			"name": "Nerve Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You land attacks such that they affect your target's ability to react to events. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force them to make an Intelligence saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
-			],
+            "name": "Nerve Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You land attacks such that they affect your target's ability to react to events. When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force them to make an Intelligence saving throw or become {@condition Shocked|Starlight} until the start of your next turn."
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -4577,10 +4577,10 @@
                 {
                     "name": "Nerve Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4594,33 +4594,33 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"int"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "int"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Cunning Hunter I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Hide|XPHB} using this feature no more than once per turn.",
+            "name": "Cunning Hunter I",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can take the {@action Hide|XPHB} action as a {@variantrule Bonus Action|XPHB}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}. You can {@action Hide|XPHB} using this feature no more than once per turn.",
                 "When you make a Dexterity ({@skill Stealth|XPHB}) or Dexterity ({@skill Sleight of Hand|XPHB}) check, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to the total."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4641,10 +4641,10 @@
                 {
                     "name": "Cunning Hunter I",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make a Dexterity (Stealth or Sleight of Hand) check."
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make a Dexterity (Stealth or Sleight of Hand) check."
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4664,16 +4664,16 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Sliding Attack",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are especially manoeuvrable. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke {@variantrule Opportunity Attacks|XPHB}. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
-			],
+            "name": "Sliding Attack",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are especially manoeuvrable. You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and an {@variantrule Action|XPHB} to do a special {@action Dash|XPHB} which allows you to move through other creature's spaces and not provoke {@variantrule Opportunity Attacks|XPHB}. Once per turn, if you move through a creature's space as part of this, you can make one attack with {@variantrule Advantage|XPHB} against that creature."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4690,17 +4690,17 @@
             "consumes": {
                 "name": "Instinct"
             }
-		},
+        },
         {
-			"name": "Deft Movement I",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "name": "Deft Movement I",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You can take the {@action Disengage} action as a {@variantrule Bonus Action}, or with no action required at the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}.",
                 "When you take the Disengage action, you can make one attempt to escape an effect causing you to be {@condition Grappled} or {@condition Restrained}. You can make this additional escape attempt no more than once per turn."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4717,16 +4717,16 @@
             "consumes": {
                 "name": "Instinct"
             }
-		},
+        },
         {
-			"name": "Naturally Gifted",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You gain {@variantrule Expertise|XPHB} in two skills that you are proficient in."
-			],
+            "name": "Naturally Gifted",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You gain {@variantrule Expertise|XPHB} in two skills that you are proficient in."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4745,16 +4745,16 @@
                     "anyProficientSkill": 2
                 }
             ]
-		},
+        },
         {
-			"name": "Superior Stamina II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your {@variantrule Speed|XPHB} increases by 10 feet."
-			],
+            "name": "Superior Stamina II",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your {@variantrule Speed|XPHB} increases by 10 feet."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4769,28 +4769,28 @@
                 }
             ],
             "effects": [
-				{
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.attributes.movement.bonus",
-							"mode": "ADD",
-							"value": 10
-						}
-					]
-				}
-			]
-		},
+                {
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "system.attributes.movement.bonus",
+                            "mode": "ADD",
+                            "value": 10
+                        }
+                    ]
+                }
+            ]
+        },
         {
-			"name": "Preceding Reputation",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, or {@skill Performance|XPHB} skills. Additionally, you gain proficiency in one of those skills.",
+            "name": "Preceding Reputation",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to add your Hunter's Die to an ability check that uses the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, or {@skill Performance|XPHB} skills. Additionally, you gain proficiency in one of those skills.",
                 "If you replace this Trick with another, you lose the proficiency."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4823,10 +4823,10 @@
                 {
                     "name": "Preceding Reputation",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you make an ability check using Intimidation, Persuasion, or Performance"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you make an ability check using Intimidation, Persuasion, or Performance"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4846,17 +4846,17 @@
                     }
                 }
             ]
-		},
+        },
         {
             "name": "Honed Senses",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "You can spend an {@variantrule Action} to regain Instinct equal to two rolls of your Hunter's Die.",
                 "You can do this once and must finish a {@variantrule Long Rest|XPHB} before you can do so again. You can also do this as part of rolling {@variantrule Initiative|XPHB} without requiring an Action."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4874,35 +4874,35 @@
                 {
                     "name": "Honed Senses",
                     "type": "utility",
-					"activation": {
-						"type": "action",
+                    "activation": {
+                        "type": "action",
                         "amount": 1
-					},
+                    },
                     "roll": {
                         "name": "Additional Instinct",
                         "formula": "2d(@scale.hunter.hunter-die-size)"
                     }
                 }
             ],
-			"foundrySystem": {
-				"uses.max": "1",
-				"uses.recovery": [
-					{
-						"period": "lr",
-						"type": "recoverAll"
-					}
-				]
-			}
+            "foundrySystem": {
+                "uses.max": "1",
+                "uses.recovery": [
+                    {
+                        "period": "lr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
         },
         {
             "name": "Eye on the Prize",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction|XPHB}."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "{@variantrule Opportunity Attacks|XPHB} made against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} do not require your {@variantrule Reaction|XPHB}."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4919,13 +4919,13 @@
         },
         {
             "name": "Dazzling Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight} until the start of your next turn."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Wisdom saving throw or become {@condition Disoriented|Starlight} until the start of your next turn."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -4943,10 +4943,10 @@
                 {
                     "name": "Dazzling Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -4960,32 +4960,32 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
-			"name": "Indefatigable II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per turn when you regain hit points, including each time you roll a {@variantrule Hit Point Dice|XPHB} during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
-			],
+            "name": "Indefatigable II",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per turn when you regain hit points, including each time you roll a {@variantrule Hit Point Dice|XPHB} during a {@variantrule Short Rest|XPHB}, you can regain an additional amount equal to your Wisdom modifier."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5002,16 +5002,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
             "name": "Discombobulating Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Constitution saving throw or become {@condition Dazed|Starlight} until the start of your next turn."
-			],
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force the target to make a Constitution saving throw or become {@condition Dazed|Starlight} until the start of your next turn."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5029,10 +5029,10 @@
                 {
                     "name": "Dazzling Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -5046,33 +5046,33 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"con"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "con"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
         },
         {
-			"name": "Deft Movement II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your speed cannot be reduced unless a condition sets it to 0 directly.",
+            "name": "Deft Movement II",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your speed cannot be reduced unless a condition sets it to 0 directly.",
                 "You have {@variantrule Advantage} on saving throws and ability checks made to avoid the {@condition Grappled}, {@condition Restrained}, or {@condition Paralysed} conditions, and to escape manacles or similar restraints."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5089,16 +5089,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Disarming Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Strength saving throw or let go of or drop an object of your choice that it is holding. The object lands in the creature's space if possible."
-			],
+            "name": "Disarming Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Strength saving throw or let go of or drop an object of your choice that it is holding. The object lands in the creature's space if possible."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5119,10 +5119,10 @@
                 {
                     "name": "Disarming Strike",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you hit a creature with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit a creature with an attack"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -5136,33 +5136,33 @@
                             }
                         ]
                     },
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"str"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "str"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Alpha Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
+            "name": "Alpha Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per {@variantrule Long Rest|XPHB} when you roll initiative, you can replace the result of your {@dice d20} roll with a 20.",
                 "When you do this, you can add your Hunter's Die to the attack and damage roll of attacks you make in your first turn of combat."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5176,16 +5176,16 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Sterner Stuff II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You have resistance to necrotic damage and advantage on saving throws against the {@condition Stunned|XPHB} or {@condition Incapacitated|XPHB} conditions."
-			],
+            "name": "Sterner Stuff II",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You have resistance to necrotic damage and advantage on saving throws against the {@condition Stunned|XPHB} or {@condition Incapacitated|XPHB} conditions."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5203,16 +5203,16 @@
                 }
             ],
             "resist": ["necrotic"]
-		},
+        },
         {
-			"name": "Cunning Hunter II",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are untraceable. You make no sound when Hiding and cannot be tracked or seen by Divination or other magic unless you choose to be."
-			],
+            "name": "Cunning Hunter II",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are untraceable. You make no sound when Hiding and cannot be tracked or seen by Divination or other magic unless you choose to be."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5229,7 +5229,7 @@
                     ]
                 }
             ]
-		},
+        },
         {
             "name": "Relentless Hunter",
             "source": "Starlight",
@@ -5311,10 +5311,10 @@
                 {
                     "name": "Tactical Hunter",
                     "type": "utility",
-					"activation": {
-						"type": "reaction",
-						"condition": "When you take an additional Reaction beyond your first each round"
-					},
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When you take an additional Reaction beyond your first each round"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -5330,18 +5330,18 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of the Planes",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are trained to protect yourself from supernatural effects.",
+            "name": "Hunter of the Planes",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are trained to protect yourself from supernatural effects.",
                 "{@b Iron Mind.} You cannot be possessed.",
                 "{@b Read the Unreadable.} you have experience with a wide range of abstract creature. You can take the {@action Search|XPHB} action to get the impression of a creature's emotional state, immediate intention, or what plane it comes from. Your experience allows you to do the same for the written word: gleaning the vague meaning of a text without specific details (such as ciphers, unfamiliar proper nouns, or exact instructions) even if you don't understand the language."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5361,19 +5361,19 @@
             "consumes": {
                 "name": "Instinct"
             }
-		},
+        },
         {
-			"name": "Favoured Terrain: Outer Planes",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You feel most comfortable when things are strange.",
+            "name": "Favoured Terrain: Outer Planes",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You feel most comfortable when things are strange.",
                 "{@b Favoured Terrain.} In environments on other planes, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
                 "{@b Sixth Sense.} You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how.",
                 "{@b Language Proficiencies.} You can speak {@language Abyssal}, {@language Infernal}, {@language Celestial}, and {@language Deep Speech}."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5402,10 +5402,10 @@
                 {
                     "name": "Identify Supernatural Danger",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you feel you are being watched...."
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you feel you are being watched...."
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -5425,16 +5425,16 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Supernatural Defenses",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your exposure to creatures from other planes has taught you how to resist their powers. You become {@variantrule Resistance|XPHB|resistance} to Necrotic, Radiant, and Psychic damage."
-			],
+            "name": "Supernatural Defenses",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your exposure to creatures from other planes has taught you how to resist their powers. You become {@variantrule Resistance|XPHB|resistance} to Necrotic, Radiant, and Psychic damage."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5452,16 +5452,16 @@
                 }
             ],
             "resist": ["necrotic", "radiant", "psychic"]
-		},
+        },
         {
-			"name": "Banishing Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target as part of the attack. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
-			],
+            "name": "Banishing Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit an Aberration, Celestial or Fiend with an attack, you can attempt to drive them away. Once per {@variantrule Short Rest|XPHB}, you can spend two Instinct to cast the {@spell Banishment|XPHB} spell on the target as part of the attack. Success or fail, the target takes additional damage equal to two rolls of your Hunter's Die."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5482,10 +5482,10 @@
                 {
                     "name": "Banishing Strike",
                     "type": "damage",
-					"activation": {
-						"type": "",
-						"condition": "When you attempt to Banish a Celestial, Aberration, or Fiend"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you attempt to Banish a Celestial, Aberration, or Fiend"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -5500,27 +5500,27 @@
                         ]
                     },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "2d(@scale.hunter.hunter-die-size)"
-								}
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "2d(@scale.hunter.hunter-die-size)"
+                                }
+                            }
+                        ]
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Attunement with the Planes",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
-			],
+            "name": "Attunement with the Planes",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Plane Shift|XPHB} spell, targeting only the Upper or Lower planes, or the Material Plane. You do not require the material components."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5537,18 +5537,18 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of Ghosts",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Borderland Hunters can pursue their foes even as they step into or through the Ethereal Plane.",
+            "name": "Hunter of Ghosts",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Borderland Hunters can pursue their foes even as they step into or through the Ethereal Plane.",
                 "{@b Interplanar Lockdown.} When you hit a creature with an attack, it cannot change the plane that it is on (for example, the {@spell Blink|XPHB} or {@spell Plane Shift|XPHB} spells) until the end of your next turn.",
                 "{@b Chase them down.} If you see a creature teleport, you can use your {@variantrule Reaction|XPHB} to move up to your {@variantrule Speed|XPHB} in pursuit of it."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5568,19 +5568,19 @@
             "consumes": {
                 "name": "Instinct"
             }
-		},
+        },
         {
-			"name": "Favoured Terrain: Borderland",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are experienced travelling the lands that border your own.",
+            "name": "Favoured Terrain: Borderland",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are experienced travelling the lands that border your own.",
                 "{@b Favoured Terrain.} When travelling through the Ethereal Plane or the Feywilds, you have {@variantrule Advantage|XPHB} on Wisdom (Survival) checks, you cannot become lost, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food in any environment.",
                 "{@b Illusion Sense.} You know if there is Illusion magic, shape-shifting, or other similar effects present within 20 feet of you.",
                 "{@b Language Proficiencies.} You can speak {@language Sylvan}, {@language Goblin}, and {@language Elvish}."
-			],
+            ],
             "languageProficiencies": [
                 {
                     "sylvan": true,
@@ -5604,17 +5604,17 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Visions of Death",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB|Frighten} a creature within 60 feet of you that you can see.",
+            "name": "Visions of Death",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per turn while using Ethereal Shift, you can replace an attack you make with an attempt to {@condition Frightened|XPHB|Frighten} a creature within 60 feet of you that you can see.",
                 "The target must make a Wisdom saving throw. On failure, it becomes {@condition Frightened|XPHB} and takes two rolls of your Hunter's Die as psychic damage on a failure. On a successful saving throw, it takes half as much damage and is not {@condition Frightened|XPHB}."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5635,51 +5635,51 @@
                 {
                     "name": "Visions of Death",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you replace an attack while using Ethereal Shift"
-					},
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "2d(@scale.hunter.hunter-die-size)"
-								},
-								"types": [
-									"psychic"
-								]
-							}
-						],
-						"onSave": "half"
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "activation": {
+                        "type": "",
+                        "condition": "When you replace an attack while using Ethereal Shift"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "damage": {
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "2d(@scale.hunter.hunter-die-size)"
+                                },
+                                "types": [
+                                    "psychic"
+                                ]
+                            }
+                        ],
+                        "onSave": "half"
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Ethereal Step",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Etherealness|XPHB} spell on yourself as a {@variantrule Bonus Action|XPHB}. When cast this way, the spell lasts until the start of your next turn.",
+            "name": "Ethereal Step",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Once per {@variantrule Short Rest|XPHB}, you can cast the {@spell Etherealness|XPHB} spell on yourself as a {@variantrule Bonus Action|XPHB}. When cast this way, the spell lasts until the start of your next turn.",
                 "If you have already used this feature, you can use it again at the cost of four {@classFeature Instinct|Hunter|Starlight|1|Starlight}."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5700,17 +5700,17 @@
                 "name": "Instinct",
                 "amount": 4
             }
-		},
+        },
         {
-			"name": "Halfway There",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this successfully once per {@variantrule Short Rest|XPHB}.",
+            "name": "Halfway There",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this successfully once per {@variantrule Short Rest|XPHB}.",
                 "You have {@variantrule Advantage|XPHB} on Death saving throws."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5727,16 +5727,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of People",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are trained to find people, no matter where they are hiding. You can add your Hunter's Die to ability checks using the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, {@skill Insight|XPHB} or {@skill Deception|XPHB} skills that are made to gain information from others."
-			],
+            "name": "Hunter of People",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are trained to find people, no matter where they are hiding. You can add your Hunter's Die to ability checks using the {@skill Intimidation|XPHB}, {@skill Persuasion|XPHB}, {@skill Insight|XPHB} or {@skill Deception|XPHB} skills that are made to gain information from others."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5757,29 +5757,29 @@
                 {
                     "name": "Hunter of People",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you attempt to gain information using the Intimidation, Persuasion, Insight, or Deception skills"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you attempt to gain information using the Intimidation, Persuasion, Insight, or Deception skills"
+                    },
                     "roll": {
                         "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Favoured Terrain: City",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You do your best work where people are.",
+            "name": "Favoured Terrain: City",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You do your best work where people are.",
                 "{@b Favoured Terrain.} In cities and other settlements, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food to eat no matter where you are.",
                 "{@b Always at home.} You have {@variantrule Advantage|XPHB} on ability checks made to identify local customs and find secret or hidden pathways in the environment.",
                 "{@b Language Proficiencies.} You can speak {@language Thieves' Cant} and {@language Undercommon}."
-			],
+            ],
             "languageProficiencies": [
                 {
                     "thieves' cant": true,
@@ -5802,16 +5802,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Building Scaler",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are practised climbing buildings and leaping between them. You have a climbing speed equal to your {@variantrule Speed|XPHB} and your jump distance is doubled."
-			],
+            "name": "Building Scaler",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are practised climbing buildings and leaping between them. You have a climbing speed equal to your {@variantrule Speed|XPHB} and your jump distance is doubled."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5828,16 +5828,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "No Way Out",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you hit a creature with an {@variantrule Opportunity Attack}, it is {@condition Halted|Starlight} until the end of the current turn. If it's your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, it takes additional damage from that attack equal to your Hunter's Die."
-			],
+            "name": "No Way Out",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you hit a creature with an {@variantrule Opportunity Attack}, it is {@condition Halted|Starlight} until the end of the current turn. If it's your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, it takes additional damage from that attack equal to your Hunter's Die."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5858,26 +5858,26 @@
                 {
                     "name": "No Way Out",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you hit your Quarry with an opportunity attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you hit your Quarry with an opportunity attack"
+                    },
                     "roll": {
                         "name": "Damage Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Pinning Strike",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Your attack is carefully aimed to impede your opponent's movement as much as possible. At the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can make an attack that, on a hit, forces the target to make a Strength saving throw. On a failure, the target is {@condition Restrained|XPHB} until the end of their next turn."
-			],
+            "name": "Pinning Strike",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "Your attack is carefully aimed to impede your opponent's movement as much as possible. At the cost of one {@classFeature Instinct|Hunter|Starlight|1|Starlight}, you can make an attack that, on a hit, forces the target to make a Strength saving throw. On a failure, the target is {@condition Restrained|XPHB} until the end of their next turn."
+            ],
             "consumes": {
                 "name": "Instinct"
             },
@@ -5897,16 +5897,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of all Horizons",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you cause a Beast or Monstrosity that is {@variantrule Bloodied|XPHB} to take damage, you can force it to make a Wisdom saving throw. On a failure, it becomes {@condition Frightened|XPHB} of you and will attempt to flee the encounter by the fastest available means. A creature can be forced to make this save only once per turn."
-			],
+            "name": "Hunter of all Horizons",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you cause a Beast or Monstrosity that is {@variantrule Bloodied|XPHB} to take damage, you can force it to make a Wisdom saving throw. On a failure, it becomes {@condition Frightened|XPHB} of you and will attempt to flee the encounter by the fastest available means. A creature can be forced to make this save only once per turn."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5927,39 +5927,39 @@
                 {
                     "name": "Hunter of all Horizons",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you deal damage to a bloodied beast or monstrosity"
-					},
-					"target": {
-						"affects": {
-							"count": "1",
-							"type": "creature"
-						}
-					},
-					"save": {
-						"ability": [
-							"wis"
-						],
-						"dc": {
-							"calculation": "wis"
-						}
-					}
+                    "activation": {
+                        "type": "",
+                        "condition": "When you deal damage to a bloodied beast or monstrosity"
+                    },
+                    "target": {
+                        "affects": {
+                            "count": "1",
+                            "type": "creature"
+                        }
+                    },
+                    "save": {
+                        "ability": [
+                            "wis"
+                        ],
+                        "dc": {
+                            "calculation": "wis"
+                        }
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Favoured Terrain: Land, Sea and Sky",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are adept at travelling the regions that most humanoids rarely do.",
+            "name": "Favoured Terrain: Land, Sea and Sky",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are adept at travelling the regions that most humanoids rarely do.",
                 "{@b Favoured Terrain.} When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food anywhere.",
                 "{@b All-terrain Travel.} You have {@variantrule Advantage|XPHB} on ability checks made to control vehicles such as boats or airships.",
                 "{@b Language Proficiencies.} You learn three standard languages of your choice."
-			],
+            ],
             "languageProficiencies": [
                 {
                     "anyStandard": 3
@@ -5981,15 +5981,15 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Exploit Weakness",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When you would get a trophy from a creature, you can forgo that opportunity to instead create one of the following weaknesses to take your target down:",
+            "name": "Exploit Weakness",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you would get a trophy from a creature, you can forgo that opportunity to instead create one of the following weaknesses to take your target down:",
                 {
                     "type": "list",
                     "items": [
@@ -5998,7 +5998,7 @@
                         "The creature becomes {@condition Dazed|Starlight} until the start of your next turn."
                     ]
                 }
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6015,16 +6015,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Adrenaline Rush",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"While you are {@variantrule Bloodied|XPHB}, you add your Hunter's Die to all saving throws that you make."
-			],
+            "name": "Adrenaline Rush",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "While you are {@variantrule Bloodied|XPHB}, you add your Hunter's Die to all saving throws that you make."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6045,26 +6045,26 @@
                 {
                     "name": "Adrenaline Rush",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you are bloodied and make a saving throw"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you are bloodied and make a saving throw"
+                    },
                     "roll": {
                         "name": "Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Thrill of the Hunt",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die plus your Wisdom modifier if you are {@variantrule Bloodied|XPHB} and have at least one {@variantrule Hit Point|XPHB}."
-			],
+            "name": "Thrill of the Hunt",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "At the start of each of your turns, you regain hit points equal to one roll of your Hunter's Die plus your Wisdom modifier if you are {@variantrule Bloodied|XPHB} and have at least one {@variantrule Hit Point|XPHB}."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6103,16 +6103,16 @@
                         }
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of Fables",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
+            "name": "Hunter of Fables",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
                 "With the {@action Search|XPHB} action or when you roll {@variantrule Initiative|XPHB}, choose a creature you can see or a creature whose tracks or other signs you can examine. Make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to recall or deduce information about it. The information you learn depends on the creature and might include its creature type, notable Traits or Legendary capabilities, typical habitat or territory, signs of its presence, known behaviours or taboos, properties of its lair, or common defences, as appropriate. You add your Hunter's Die to this roll."
-			],
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6133,29 +6133,29 @@
                 {
                     "name": "Hunter of Fables",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": ""
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": ""
+                    },
                     "roll": {
                         "name": "Surival/Nature Bonus",
                         "formula": "@scale.hunter.hunter-die"
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Favoured Terrain: Myths",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are home wherever your mythical foes are found.",
+            "name": "Favoured Terrain: Myths",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are home wherever your mythical foes are found.",
                 "{@b Favoured Terrain.} In environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps - you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
                 "{@b Trained for this.} You have {@variantrule Advantage|XPHB} on any saving throws made against {@variantrule Hazard|XPHB|environmental hazards} such as heat or cold.",
                 "{@b Language Proficiencies.} Finally, you learn one standard and one rare language of your choice."
-			],
+            ],
             "languageProficiencies": [
                 {
                     "anyStandard": 1,
@@ -6178,16 +6178,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Previvify",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You can use an {@action Action|XPHB} on your turn to revive a friendly creature within your reach who is at zero hit points. They regain hit points equal to twice your Hunter level and gain the benefits of your {@subclassFeature Rally|Hunter|Starlight|Fable|Starlight|7|Starlight} and {@subclassFeature Commander|Hunter|Starlight|Fable|Starlight|3|Starlight} features (movement only). Once you have used this feature, you cannot do so again until you complete a {@variantrule Long Rest|XPHB}."
-			],
+            "name": "Previvify",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You can use an {@action Action|XPHB} on your turn to revive a friendly creature within your reach who is at zero hit points. They regain hit points equal to twice your Hunter level and gain the benefits of your {@subclassFeature Rally|Hunter|Starlight|Fable|Starlight|7|Starlight} and {@subclassFeature Commander|Hunter|Starlight|Fable|Starlight|3|Starlight} features (movement only). Once you have used this feature, you cannot do so again until you complete a {@variantrule Long Rest|XPHB}."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6226,16 +6226,16 @@
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Exploit Opening",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You guide your allies to success through your knowledge of these legendary creatures. Once per {@variantrule Short Rest|XPHB}, when your {@classFeature Quarry|Hunter|Starlight|1|Starlight} succeeds a saving throw against one of your allies' effects, you can use a {@variantrule Reaction|XPHB} to cause it to take force damage equal to four rolls of your Hunter's Die."
-			],
+            "name": "Exploit Opening",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You guide your allies to success through your knowledge of these legendary creatures. Once per {@variantrule Short Rest|XPHB}, when your {@classFeature Quarry|Hunter|Starlight|1|Starlight} succeeds a saving throw against one of your allies' effects, you can use a {@variantrule Reaction|XPHB} to cause it to take force damage equal to four rolls of your Hunter's Die."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6256,35 +6256,35 @@
                 {
                     "name": "Exploit Opening",
                     "type": "damage",
-					"activation": {
-						"type": "",
-						"condition": "When your Quarry succeeds a saving throw against an ally"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When your Quarry succeeds a saving throw against an ally"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "4d(@scale.hunter.hunter-die-size)"
-								},
-								"types": [
-									"force"
-								]
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "4d(@scale.hunter.hunter-die-size)"
+                                },
+                                "types": [
+                                    "force"
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
-		},
+        },
         {
-			"name": "Slayer of Legends",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When a Legendary creature is your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, your Hunter's Die becomes {@dice 2d8} instead of {@dice 1d12}."
-			],
+            "name": "Slayer of Legends",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When a Legendary creature is your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, your Hunter's Die becomes {@dice 2d8} instead of {@dice 1d12}."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6301,16 +6301,16 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Hunter of Primordials",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"If you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack, you reduce the final damage total by an amount equal to a roll of your Hunter's Die plus your Wisdom modifier."
-			],
+            "name": "Hunter of Primordials",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "If you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack, you reduce the final damage total by an amount equal to a roll of your Hunter's Die plus your Wisdom modifier."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -6331,29 +6331,29 @@
                 {
                     "name": "Hunter of Primordials",
                     "type": "utility",
-					"activation": {
-						"type": "",
-						"condition": "When you you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you you would take damage from a creature's Aura Trait, Death Burst, Breath weapon, or from hitting it with an attack"
+                    },
                     "roll": {
                         "name": "Damage reduction",
                         "formula": "@scale.hunter.hunter-die + @abilities.wis.mod"
                     }
                 }
             ]
-		},
+        },
         {
-			"name": "Favoured Terrain: Elements",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"You are experienced in extreme terrains where the elements rule.",
+            "name": "Favoured Terrain: Elements",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are experienced in extreme terrains where the elements rule.",
                 "{@b Favoured Terrain.} While in locations such as volcanoes, icy tundras, the deepest caves, places where there are many storms, or the elemental planes, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival}) checks, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food in any environment.",
                 "{@b Elemental Attunement.} You have {@variantrule Advantage|XPHB} on any saving throw against extreme or hazardous weather or {@variantrule Hazard|XPHB|environmental hazards} such as heat or cold.",
                 "{@b Language Proficiencies.} You can speak {@language Primordial} and {@language Druidic}."
-			],
+            ],
             "languageProficiencies": [
                 {
                     "primordial": true,
@@ -6415,28 +6415,28 @@
                 {
                     "name": "Fire Conduit",
                     "type": "damage",
-					"activation": {
-						"type": "",
-						"condition": "When you take the Dash action"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you take the Dash action"
+                    },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "1d6"
-								}
-							}
-						]
-					}
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "1d6"
+                                }
+                            }
+                        ]
+                    }
                 },
                 {
                     "name": "Water Conduit",
                     "type": "save",
-					"activation": {
-						"type": "",
-						"condition": "When you take the Dash action"
-					},
+                    "activation": {
+                        "type": "",
+                        "condition": "When you take the Dash action"
+                    },
                     "save": {
                         "ability": [
                             "dex"
@@ -6512,9 +6512,9 @@
                 {
                     "name": "Djinni's Gift",
                     "type": "save",
-					"activation": {
-						"type": "action"
-					},
+                    "activation": {
+                        "type": "action"
+                    },
                     "consumption": {
                         "targets": [
                             {
@@ -6529,15 +6529,15 @@
                         ]
                     },
                     "damage": {
-						"parts": [
-							{
-								"custom": {
-									"enabled": true,
-									"formula": "2d(@scale.hunter.hunter-die-size)"
-								}
-							}
-						]
-					},
+                        "parts": [
+                            {
+                                "custom": {
+                                    "enabled": true,
+                                    "formula": "2d(@scale.hunter.hunter-die-size)"
+                                }
+                            }
+                        ]
+                    },
                     "save": {
                         "ability": [
                             "con"
