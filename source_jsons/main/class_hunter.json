@@ -908,7 +908,7 @@
             "classSource": "Starlight",
             "level": 9,
             "entries": [
-                "When your Quarry uses their {@variantrule Reaction|XPHB}, you can use your own {@variantrule Reaction|XPHB} to attempt to counter it. The target must succeed an Intelligence saving throw or their {@variantrule Reaction|XPHB} fails."
+                "When your Quarry uses their {@variantrule Reaction|XPHB} within 60 feet of you, you can use your own {@variantrule Reaction|XPHB} to attempt to counter it. The target must succeed an Intelligence saving throw or their {@variantrule Reaction|XPHB} fails."
             ]
         },
         {
@@ -1437,18 +1437,18 @@
             ]
         },
         {
-            "name": "Horizon",
+            "name": "Horizons",
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "shortName": "Horizon",
+            "shortName": "Horizons",
             "subclassFeatures": [
-                "Beast Hunter|Hunter|Starlight|Horizon|Starlight|3",
-                "Expert|Hunter|Starlight|Horizon|Starlight|7",
-                "Roaming|Hunter|Starlight|Horizon|Starlight|7",
-                "Pack Hunting|Hunter|Starlight|Horizon|Starlight|7",
-                "Siphon Speed|Hunter|Starlight|Horizon|Starlight|11",
-                "Apex Hunter|Hunter|Starlight|Horizon|Starlight|15"
+                "Beast Hunter|Hunter|Starlight|Horizons|Starlight|3",
+                "Expert|Hunter|Starlight|Horizons|Starlight|7",
+                "Roaming|Hunter|Starlight|Horizons|Starlight|7",
+                "Pack Hunting|Hunter|Starlight|Horizons|Starlight|7",
+                "Siphon Speed|Hunter|Starlight|Horizons|Starlight|11",
+                "Apex Hunter|Hunter|Starlight|Horizons|Starlight|15"
             ]
         },
         {
@@ -1478,6 +1478,21 @@
                 "Conjure Elemental|Hunter|Starlight|Primordial|Starlight|7",
                 "Transmute Physiology|Hunter|Starlight|Primordial|Starlight|11",
                 "Primordial Enchantment|Hunter|Starlight|Primordial|Starlight|15"
+            ]
+        },
+        {
+            "name": "Pits",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "shortName": "Pits",
+            "subclassFeatures": [
+                "Behind Closed Doors|Hunter|Starlight|Pits|Starlight|3",
+                "Expert|Hunter|Starlight|Pits|Starlight|7",
+                "Fearsome|Hunter|Starlight|Pits|Starlight|7",
+                "Blood in the Water|Hunter|Starlight|Pits|Starlight|11",
+                "Power Through|Hunter|Starlight|Pits|Starlight|15",
+                "Never Out|Hunter|Starlight|Pits|Starlight|15"
             ]
         }
     ],
@@ -2311,8 +2326,7 @@
             "level": 15,
             "entries": [
                 "{@i 15th-level Urban Hunter feature}",
-                "When you reduce a creature to 0 hit points, you can immediately move up to half your speed without provoking {@variantrule Opportunity Attacks|XPHB}. As part of this movement, you can take the {@action Hide} action, and if you end the movement hidden then you become {@condition Invisible} until the end of your next turn.",
-                "The invisibility ends if you make an attack or force a creature to make a saving throw."
+                "When you reduce a creature to 0 hit points, you can immediately move up to half your {@variantrule Speed|XPHB} without provoking {@variantrule Opportunity Attacks|XPHB}. As part of this movement, you can take the {@action Hide} action."
             ]
         },
         {
@@ -2320,26 +2334,26 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "Horizon Hunters strive to be the best, hunting anything from sky to sea. They weaken their quarries in speed and strength, claim trophies from their strikes and even have the expertise to handle packs of creatures. They might do it for fame and fortune, they might do it to protect the innocent from the dangers of the wild, or they might simply hunt for the thrill of bettering themselves.",
+                "Horizons Hunters strive to be the best, hunting anything from sky to sea. They weaken their quarries in speed and strength, claim trophies from their strikes and even have the expertise to handle packs of creatures. They might do it for fame and fortune, they might do it to protect the innocent from the dangers of the wild, or they might simply hunt for the thrill of bettering themselves.",
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Skills from the Wilds|Hunter|Starlight|Horizon|Starlight|3"
+                        "subclassFeature": "Skills from the Wilds|Hunter|Starlight|Horizons|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Bestial Quarries|Hunter|Starlight|Horizon|Starlight|3"
+                        "subclassFeature": "Bestial Quarries|Hunter|Starlight|Horizons|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Declaw|Hunter|Starlight|Horizon|Starlight|3"
+                        "subclassFeature": "Declaw|Hunter|Starlight|Horizons|Starlight|3"
                     },
                     {
                         "type": "refSubclassFeature",
-                        "subclassFeature": "Trophies|Hunter|Starlight|Horizon|Starlight|3"
+                        "subclassFeature": "Trophies|Hunter|Starlight|Horizons|Starlight|3"
                     }
             ]
         },
@@ -2348,14 +2362,14 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "{@i 3rd-level Horizon Hunter feature}",
+                "{@i 3rd-level Horizons Hunter feature}",
                 "In order to hunt beasts, you must travel far and learn how to cope with animals of all temperaments and sizes.",
                 "You gain proficiency with two of the following three skills: {@skill Animal Handling|XPHB}, {@skill Athletics|XPHB}, and {@skill Survival|XPHB}.",
-                "Additionally, you gain proficiency with piloting air or water vehicles, and with a {@item Navigator's Tools|XPHB}."
+                "Additionally, you gain proficiency with piloting air and water vehicles, and with a {@item Navigator's Tools|XPHB}."
             ],
             "skillProficiencies": [
                 {
@@ -2382,11 +2396,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "{@i 3rd-level Horizon Hunter feature}",
+                "{@i 3rd-level Horizons Hunter feature}",
                 {
                     "type": "quote",
                     "entries": [
@@ -2402,11 +2416,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "{@i 3rd-level Horizon Hunter feature}",
+                "{@i 3rd-level Horizons Hunter feature}",
                 "You can attempt to cripple your {@classFeature Quarry|Hunter|Starlight|1|Starlight}. Once per turn when you make a successful attack with the {@variantrule Attack|XPHB|Attack action} against your Quarry, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to force it to make a Constitution saving throw. On a failed save, you can disable one of its attack options (the DM chooses which) until the start of your next turn. If you forgo dealing damage, it has disadvantage on the saving throw."
             ],
             "consumes": {
@@ -2418,11 +2432,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 3,
             "entries": [
-                "{@i 3rd-level Horizon Hunter feature}",
+                "{@i 3rd-level Horizons Hunter feature}",
                 "When you roll a 20 on an attack roll against your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, it drops a trophy, an item of significance such as a serpent's venomous fang. You can sell a Trophy in your downtime for 10gp times the creature's CR. At your DM's discretion, you may require a Wisdom (Survival) check and {@dice 1d4} days to find a suitable buyer - in these cases, the item may sell for more."
             ]
         },
@@ -2431,12 +2445,12 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 7,
             "entries": [
-                "{@i 7th-level Horizon Hunter feature}",
-                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Wilds|Hunter|Starlight|Horizon|Starlight|3|Starlight|Skills from the Wilds} feature."
+                "{@i 7th-level Horizons Hunter feature}",
+                "Your skills from the wild have improved. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from, your {@subclassFeature Skills from the Wilds|Hunter|Starlight|Horizons|Starlight|3|Starlight|Skills from the Wilds} feature."
             ]
         },
         {
@@ -2444,11 +2458,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 7,
             "entries": [
-                "{@i 7th-level Horizon Hunter feature}",
+                "{@i 7th-level Horizons Hunter feature}",
                 "Your walking speed increases by 10 feet, and you gain a Climb and Swim speed equal to your walking speed.",
                 "You can hold your breath underwater for an additional number of minutes equal to your Wisdom modifier."
             ],
@@ -2470,11 +2484,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 7,
             "entries": [
-                "{@i 7th-level Horizon Hunter feature}",
+                "{@i 7th-level Horizons Hunter feature}",
                 "When your {@classFeature Quarry|Hunter|Starlight|1|Starlight} dies, you can designate another creature of the same type as your Quarry immediately without requiring a {@variantrule Bonus Action|XPHB}, still spending {@classFeature Instinct|Hunter|Starlight|1|Starlight} as normal."
             ]
         },
@@ -2483,11 +2497,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 11,
             "entries": [
-                "{@i 11th-level Horizon Hunter feature}",
+                "{@i 11th-level Horizons Hunter feature}",
                 "Once on each of your turns when you hit a creature with an attack, you can deal extra damage equal to your Hunter's Die and force it to make a Wisdom saving throw. On a failed saving throw, the creature is {@condition Slowed|Starlight} until the start of your next turn."
             ],
             "foundryActivities": [
@@ -2533,11 +2547,11 @@
             "source": "Starlight",
             "className": "Hunter",
             "classSource": "Starlight",
-            "subclassShortName": "Horizon",
+            "subclassShortName": "Horizons",
             "subclassSource": "Starlight",
             "level": 15,
             "entries": [
-                "{@i 15th-level Horizon Hunter feature}",
+                "{@i 15th-level Horizons Hunter feature}",
                 "When a creature fails their saving throw against Siphon Speed, your movement speeds are replaced with theirs until the start of your next turn, unless yours are higher.",
                 "When you hit your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, its immunities are treated as resistance, and you bypass its resistances."
             ]
@@ -2973,7 +2987,7 @@
                         "{@b Dustling (Earth).} Appearing as a collection of small rocks or soot and dust, the Dustling can help you move objects or creatures. You add your Hunter's Die to ability checks made to move objects, your carrying capacity increases by 50lbs, and once per turn when you deal Bludgeoning damage to a creature you can move it 5 feet horizontally.",
                         "{@b Tidesling (Water).} As a {@action Magic|XPHB} action, the Tidesling cools a surface: a dangerously hot surface becomes safe, and a cool surface becomes frozen, in a 10-foot square within 5 feet of you; a creature that walks on this surface must make a Dexterity saving throw or fall {@condition Prone|XPHB}, and the surface lasts for one minute. Once per turn, it can snuff out any fire in a 5-foot square within 30 feet of you. Finally, the Tidesling cushions your landings: if you would take damage from falling, you can use your {@variantrule Reaction|XPHB} to reduce it by three times your Hunter level and not be {@condition Prone|XPHB}.",
                         "{@b Cinderling (Fire).} The Cinderling emits {@variantrule Bright Light|XPHB} up to a maximum of 20 feet, and {@variantrule Dim Light|XPHB} for a further 20 feet. You change the range and colour of the light as a {@variantrule Bonus Action|XPHB|XPHB}. Once per turn, the Cinderling can also start a fire on a flammable object (no action required). Once per turn when you deal Fire damage to a creature, you can end the {@condition Invisible|XPHB} condition on it and cause it to glow. This lasts for one minute or until the creature spends an {@variantrule Action|XPHB} to end the effect.",
-                        "{@b Cloudling (Air).} The Cloudling can be Invisible as it chooses and relay messages you whisper up to 180 feet, even around corners. When a creature within 60 feet of you takes a {@variantrule Reaction|XPHB}, you can use your {@variantrule Reaction} to deal Lightning damage to it equal to a roll of your Hunter's Die plus your Wisdom modifier."
+                        "{@b Cloudling (Air).} The Cloudling can be {@condition Invisible|XPHB} as it chooses and relay messages you whisper up to 180 feet, even around corners. When a creature within 60 feet of you takes a {@variantrule Reaction|XPHB}, you can use your {@variantrule Reaction} to deal Lightning damage to it equal to a roll of your Hunter's Die plus your Wisdom modifier."
                     ]
                 }
             ],
@@ -3146,6 +3160,202 @@
                         }
                     }
                 }
+            ]
+        },
+        {
+            "name": "Behind Closed Doors",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "Pits Hunters stalk the backstreets and alleys of the world, from fighting rings, to the dens of criminal lords, to the seediest halls of sellswords and mercenaries. Three skills are essential to a Pits Hunter: taking hits, dishing them out, and navigating 'unpleasant' conversations. They may have learned these skills from their time in the employ of a criminal organisation, from their time in the fighting pits, or from simply coming out the other side of a very difficult life.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Always Armed|Hunter|Starlight|Pits|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Skills from the Undercity|Hunter|Starlight|Pits|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Arena Quarries|Hunter|Starlight|Pits|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Brawl|Hunter|Starlight|Pits|Starlight|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Grit|Hunter|Starlight|Pits|Starlight|3"
+                }
+            ]
+        },
+        {
+            "name": "Skills from the Undercity",  
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Pits Hunter feature}",
+                "Your time in the undercity has taught you how to get what you want, one way or another.",
+                "You gain proficiency with two of the following skills: {@skill Intimidation|XPHB}, {@skill Athletics|XPHB}, {@skill Persuasion|XPHB}, {@skill Sleight of Hand|XPHB}.",
+                "Additionally, you gain proficiency with {@item Thieves' Tools|XPHB} and {@item Leatherworker's Tools|XPHB}, to keep your equipment in good condition, or to 'borrow' someone else's.",
+                "Finally, you understand and can speak {@language Thieves' Cant|XPHB}."
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "count": 2,
+                        "from": [
+                            "intimidation",
+                            "athletics",
+                            "persuasion",
+                            "sleight of hand"
+                        ]
+                    }
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "thieves' tools": true,
+                    "leatherworker's tools": true
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "thieves' cant": true
+                }
+            ]
+        },
+        {
+            "name": "Always Armed",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Pits Hunter feature}",
+                "You gain proficiency with {@variantrule Improvised Weapons|XPHB|Improvised Weapon} (you can add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to attack rolls made with them). When you hit an attack roll made with an Improvised Weapon or an {@variantrule Unarmed Strike|XPHB}, you can deal damage equal to a roll of your Hunter's Die plus the ability modifier used for the attack, instead of the normal damage."
+            ]
+        },
+        {
+            "name": "Arena Quarries",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Pits Hunter feature}",
+                {
+                    "type": "quote",
+                    "entries": [
+                        "There was a demon lord, once, who hit so hard and so fast that it felt like being hit by lightning. He might have been infused with the Storm like I was - or maybe he was just really good at punching."
+                    ],
+                    "by": "Zintrin Fulgura, Counsellor of the Soul"
+                },
+                "When you damage your {@classFeature Quarry|Hunter|Starlight|1|Starlight}, you can choose for additional damage dealt by your Hunter's Die to be Thunder damage."
+            ]
+        },
+        {
+            "name": "Brawl",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Pits Hunter feature}",
+                "Once per turn when you hit a creature with an {@variantrule Improvised Weapons|XPHB|Improvised Weapon} or {@variantrule Unarmed Strike|XPHB}, you can both deal damage and attempt to {@variantrule Unarmed Strike|XPHB|Shove} or {@variantrule Unarmed Strike|XPHB|Grapple} the target as part of that attack. You still need a free hand to maintain a grapple."
+            ]
+        },
+        {
+            "name": "Grit",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Pits Hunter feature}",
+                "You can use {@classFeature Shrug It Off|Hunter|Starlight|2|Starlight} any number of times each {@variantrule Short Rest|XPHB}. Each time you use it, the cost increases by 1 {@classFeature Instinct|Hunter|Starlight|1|Starlight}. This increased cost resets when you take a Short Rest to recover your normal use of Shrug It Off."
+            ]
+        },
+        {
+            "name": "Expert",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Pits Hunter feature}",
+                "Your skills of urban survival have grown. You gain {@variantrule Expertise|XPHB} in the skills you chose, and one of the tools from your {@subclassFeature Skills from the Undercity|Hunter|Starlight|Pits|Starlight|3|Starlight} feature."
+            ]
+        },
+        {
+            "name": "Fearsome",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Pits Hunter feature}",
+                "Your experience in underhand dealings and dangerous situations allows you to direct a conversation, leverage your reputation, and get under people's skin. Through a minute of talking to another creature, or in place of a {@variantrule Unarmed Strike|XPHB|Shove} or {@variantrule Unarmed Strike|XPHB|Grapple} made as part of the {@action Attack|XPHB} action, you can attempt to Charm, Frighten, or Taunt another creature. If the creature fails a Wisdom saving throw against your Hunter DC, it becomes {@condition Charmed|XPHB}, {@condition Frightened|XPHB}, or {@condition Taunted|Starlight} by you (your choice) for the next hour. In combat, a creature repeats this saving throw at the end of each of its turns, ending the condition on a success. If a creature succeeds on the saving throw, it is immune to Fearsome for the next 24 hours."
+            ]
+        },
+        {
+            "name": "Blood in the Water",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Pits Hunter feature}",
+                "Once per turn, when you hit your {@classFeature Quarry|Hunter|Starlight|1|Starlight} with an attack, you deal an additional Hunter's Die of damage if you or your Quarry is {@variantrule Bloodied|XPHB}. If you are both Bloodied, you can use any {@classFeature Tricks|Hunter|Starlight|2|Starlight} that activates on an attack without paying the Instinct cost, still meeting all other requirements for the Trick."
+            ]
+        },
+        {
+            "name": "Power Through",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Pits Hunter feature}",
+                "Your tolerance for pain increases. When you use {@classFeature Shrug It Off|Hunter|Starlight|2|Starlight}, you take less damage from all sources equal to the amount of Instinct you are missing below your maximum. This benefit lasts until you have no {@variantrule Temporary Hit Points|XPHB}, and you regain the benefit when you use Shrug It Off again."
+            ]
+        },
+        {
+            "name": "Never Out",
+            "source": "Starlight",
+            "className": "Hunter",
+            "classSource": "Starlight",
+            "subclassShortName": "Pits",
+            "subclassSource": "Starlight",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Pits Hunter feature}",
+                "You can use {@classFeature Shrug It Off|Hunter|Starlight|2|Starlight} even if you lack the Instinct to activate it. When you activate it this way, you instead gain a level of {@condition Exhaustion|XPHB}."
             ]
         }
     ],
@@ -3707,7 +3917,7 @@
             ],
             "entries": [
                 "At the start of each day, you can improvise {@item Ball Bearings|XPHB}, {@item Caltrops|XPHB}, {@item Acid|XPHB} or {@item Oil|XPHB}. You can {@action Utilize|XPHB} this improvised item with a {@variantrule Bonus Action|XPHB} instead of replacing an attack or using the {@action Utilize|XPHB} action.",
-                "Once created, the item lasts for 24 hours or until you improvise another, which costs 10gp and takes ten minutes."
+                "Once created, the item lasts for 24 hours or until you improvise another, which takes one minute."
             ],
             "prerequisite": [
                 {
@@ -3730,7 +3940,7 @@
                 "HTR"
             ],
             "entries": [
-                "When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by one roll of your Hunter's Die plus your Proficiency Bonus."
+                "When you are hit by an attack, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} and your {@variantrule Reaction|XPHB} to reduce the damage by two rolls of your Hunter's Die plus your Proficiency Bonus."
             ],
             "prerequisite": [
                 {
@@ -3771,7 +3981,7 @@
                     },
                     "roll": {
                         "name": "Bonus",
-                        "formula": "@scale.hunter.hunter-die + @prof"
+                        "formula": "2d(@scale.hunter.hunter-die-size) + @prof"
                     }
                 }
             ]
@@ -3808,7 +4018,7 @@
 				"HTR"
 			],
 			"entries": [
-                "You gain proficiency in a Hunter skill you are not already proficient in (Athletics, Acrobatics, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Stealth, Survival), then you gain {@variantrule Expertise|XPHB} in one that you are proficient in."
+                "You gain {@variantrule Expertise|XPHB} in one skill that you are proficient in."
 			],
             "prerequisite": [
                 {
@@ -3820,16 +4030,6 @@
                             "visibleStats": true,
                             "visibleList": false
                         }
-                    }
-                }
-            ],
-            "skillProficiencies": [
-                {
-                    "choose": {
-                        "count": 1,
-                        "from": [
-                            "athletics", "acrobatics", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "stealth", "survival"
-                        ]
                     }
                 }
             ],
@@ -4525,12 +4725,12 @@
 				"HTR"
 			],
 			"entries": [
-				"You gain proficiency in any skill that you are not proficient in, then you gain {@variantrule Expertise|XPHB} in one that you are proficient in."
+				"You gain {@variantrule Expertise|XPHB} in two skills that you are proficient in."
 			],
             "prerequisite": [
                 {
                     "level": {
-                        "level": 8,
+                        "level": 10,
                         "class": {
                             "name": "Hunter",
                             "source": "Starlight",
@@ -4540,14 +4740,9 @@
                     }
                 }
             ],
-            "skillProficiencies": [
-                {
-                    "any": 1
-                }
-            ],
             "expertise": [
                 {
-                    "anyProficientSkill": 1
+                    "anyProficientSkill": 2
                 }
             ]
 		},
@@ -5036,14 +5231,14 @@
             ]
 		},
         {
-			"name": "Relentless Hunter",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"Attacks you make against your {@classFeature Quarry|Hunter|Starlight|1|Starlight} bypass damage resistance, and treat damage immunity as resistance, and you cannot have {@variantrule Disadvantage|XPHB} on attacks against it."
-			],
+            "name": "Relentless Hunter",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When your {@classFeature Quarry|Hunter|Starlight|1|Starlight} moves, you can use your {@variantrule Reaction|XPHB} to move up to your {@variantrule Speed|XPHB} in pursuit of it without provoking {@variantrule Opportunity Attacks|XPHB}. If you end this movement within reach of your Quarry, you can make one weapon attack against it."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5060,16 +5255,42 @@
                     ]
                 }
             ]
-		},
+        },
         {
-			"name": "Watchful Hunter",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"When an effect would reduce you to zero hit points, you can spend a {@variantrule Reaction|XPHB} and one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to be reduced to one instead. Then roll your Hunter's Die four times, add your Wisdom modifier, and regain hit points equal to the total rolled."
-			],
+            "name": "Watchful Hunter",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "At the end of each of your turns, you can end one condition, spell, or other effect affecting you of your choice."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 20,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "No other 20th Level Tricks"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tactical Hunter",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "If you have used your {@variantrule Reaction|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to take another. You can use only one Reaction per triggering event."
+            ],
             "prerequisite": [
                 {
                     "level": {
@@ -5086,16 +5307,13 @@
                     ]
                 }
             ],
-            "consumes": {
-                "name": "Instinct"
-            },
             "foundryActivities": [
                 {
-                    "name": "Watchful Hunter",
+                    "name": "Tactical Hunter",
                     "type": "utility",
 					"activation": {
 						"type": "reaction",
-						"condition": "When you would be reduced to zero hit points"
+						"condition": "When you take an additional Reaction beyond your first each round"
 					},
                     "consumption": {
                         "targets": [
@@ -5109,50 +5327,9 @@
                                 }
                             }
                         ]
-                    },
-                    "healing": {
-                        "types": [
-                            "healing"
-                        ],
-                        "custom": {
-                            "enabled": true,
-                            "formula": "4d(@scale.hunter.hunter-die-size) + @abilities.wis.mod"
-                        }
-                    },
-                    "description": {
-                        "chatFlavor": "Do not fall."
                     }
                 }
             ]
-		},
-        {
-			"name": "Tactical Hunter",
-			"source": "Starlight",
-			"featureType": [
-				"HTR"
-			],
-			"entries": [
-				"If you have used your {@variantrule Reaction|XPHB}, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to take another. You can use only one reaction per triggering event."
-			],
-            "prerequisite": [
-                {
-                    "level": {
-                        "level": 20,
-                        "class": {
-                            "name": "Hunter",
-                            "source": "Starlight",
-                            "visibleStats": true,
-                            "visibleList": false
-                        }
-                    },
-                    "feature": [
-                        "No other 20th Level Tricks"
-                    ]
-                }
-            ],
-            "consumes": {
-                "name": "Instinct"
-            }
 		},
         {
 			"name": "Hunter of the Planes",
@@ -5161,8 +5338,9 @@
 				"HTR"
 			],
 			"entries": [
-				"You are trained to protect yourself from supernatural effects. You cannot be possessed.",
-                "Additionally, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to reroll a saving throw against being {@condition Charmed|XPHB} or {@condition Frightened|XPHB}. You must use the new roll."
+				"You are trained to protect yourself from supernatural effects.",
+                "{@b Iron Mind.} You cannot be possessed.",
+                "{@b Read the Unreadable.} you have experience with a wide range of abstract creature. You can take the {@action Search|XPHB} action to get the impression of a creature's emotional state, immediate intention, or what plane it comes from. Your experience allows you to do the same for the written word: gleaning the vague meaning of a text without specific details (such as ciphers, unfamiliar proper nouns, or exact instructions) even if you don't understand the language."
 			],
             "prerequisite": [
                 {
@@ -5191,9 +5369,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You feel most comfortable when things are strange. In environments on other planes, you have advantage on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
-                "Additionally, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how.",
-                "Finally, you can speak {@language Abyssal}, {@language Infernal}, {@language Celestial}, and {@language Deep Speech}."
+				"You feel most comfortable when things are strange.",
+                "{@b Favoured Terrain.} In environments on other planes, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and while tracking other creatures you can learn their number and when they last passed through the area.",
+                "{@b Sixth Sense.} You can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to roll your Hunter's Die to identify supernatural danger. If you roll 4 or higher, you learn if you are being watched and how.",
+                "{@b Language Proficiencies.} You can speak {@language Abyssal}, {@language Infernal}, {@language Celestial}, and {@language Deep Speech}."
 			],
             "prerequisite": [
                 {
@@ -5254,7 +5433,7 @@
 				"HTR"
 			],
 			"entries": [
-				"Your exposure to creatures from other planes has taught you how to resist their powers. You become resistant to necrotic, radiant, and psychic damage."
+				"Your exposure to creatures from other planes has taught you how to resist their powers. You become {@variantrule Resistance|XPHB|resistance} to Necrotic, Radiant, and Psychic damage."
 			],
             "prerequisite": [
                 {
@@ -5366,8 +5545,9 @@
 				"HTR"
 			],
 			"entries": [
-				"Borderland Hunters can pursue their foes even as they step into or through the Ethereal Plane. When you hit a creature with an attack, it cannot change the plane that it is on (for example, the {@spell Blink|XPHB} or {@spell Plane Shift|XPHB} spells) until the end of your next turn.",
-                "If you see a creature teleport, you can use your {@variantrule Reaction|XPHB} to move up to your speed in pursuit of it."
+				"Borderland Hunters can pursue their foes even as they step into or through the Ethereal Plane.",
+                "{@b Interplanar Lockdown.} When you hit a creature with an attack, it cannot change the plane that it is on (for example, the {@spell Blink|XPHB} or {@spell Plane Shift|XPHB} spells) until the end of your next turn.",
+                "{@b Chase them down.} If you see a creature teleport, you can use your {@variantrule Reaction|XPHB} to move up to your {@variantrule Speed|XPHB} in pursuit of it."
 			],
             "prerequisite": [
                 {
@@ -5396,9 +5576,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You are experienced travelling the lands that border your own. When travelling through the Ethereal Plane or the Feywilds, you have advantage on Wisdom (Survival) checks, you cannot become lost, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and you have advantage on ability checks or saving throws made to see through illusions.",
-                "Additionally, in the Ethereal Plane, any vertical movement does not impose a movement penalty.",
-                "Finally, you can speak {@language Sylvan}, {@language Goblin}, and {@language Elvish}."
+				"You are experienced travelling the lands that border your own.",
+                "{@b Favoured Terrain.} When travelling through the Ethereal Plane or the Feywilds, you have {@variantrule Advantage|XPHB} on Wisdom (Survival) checks, you cannot become lost, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food in any environment.",
+                "{@b Illusion Sense.} You know if there is Illusion magic, shape-shifting, or other similar effects present within 20 feet of you.",
+                "{@b Language Proficiencies.} You can speak {@language Sylvan}, {@language Goblin}, and {@language Elvish}."
 			],
             "languageProficiencies": [
                 {
@@ -5528,7 +5709,7 @@
 			],
 			"entries": [
 				"When an attack would reduce you to zero hit points, you can make a Wisdom saving throw with a DC equal to 5 plus the damage taken. On a success, you are reduced to one hit point instead of zero. You can do this successfully once per {@variantrule Short Rest|XPHB}.",
-                "You have advantage on Death saving throws."
+                "You have {@variantrule Advantage|XPHB} on Death saving throws."
 			],
             "prerequisite": [
                 {
@@ -5594,9 +5775,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You do your best work where people are. In cities and other settlements, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food to eat no matter where you are.",
-                "Additionally, you have advantage on ability checks made to identify local customs and find secret or hidden pathways in the environment.",
-                "Finally, you can speak {@language Thieves' Cant} and {@language Undercommon}."
+				"You do your best work where people are.",
+                "{@b Favoured Terrain.} In cities and other settlements, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food to eat no matter where you are.",
+                "{@b Always at home.} You have {@variantrule Advantage|XPHB} on ability checks made to identify local customs and find secret or hidden pathways in the environment.",
+                "{@b Language Proficiencies.} You can speak {@language Thieves' Cant} and {@language Undercommon}."
 			],
             "languageProficiencies": [
                 {
@@ -5737,7 +5919,7 @@
                         }
                     },
                     "feature": [
-                        "Horizon Hunting Grounds"
+                        "Horizons Hunting Grounds"
                     ]
                 }
             ],
@@ -5773,9 +5955,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You are adept at travelling the regions that most humanoids rarely do. When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food anywhere.",
-                "Additionally, you have advantage on ability checks made to control vehicles such as boats or airships.",
-                "Finally, you learn three standard languages of your choice."
+				"You are adept at travelling the regions that most humanoids rarely do.",
+                "{@b Favoured Terrain.} When you travel through forests, plains, or regions with little solid ground such as the sky or large bodies of water, you have advantage on Wisdom ({@skill Survival}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food anywhere.",
+                "{@b All-terrain Travel.} You have {@variantrule Advantage|XPHB} on ability checks made to control vehicles such as boats or airships.",
+                "{@b Language Proficiencies.} You learn three standard languages of your choice."
 			],
             "languageProficiencies": [
                 {
@@ -5794,7 +5977,7 @@
                         }
                     },
                     "feature": [
-                        "Horizon Hunting Grounds"
+                        "Horizons Hunting Grounds"
                     ]
                 }
             ]
@@ -5828,7 +6011,7 @@
                         }
                     },
                     "feature": [
-                        "Horizon Hunting Grounds"
+                        "Horizons Hunting Grounds"
                     ]
                 }
             ]
@@ -5854,7 +6037,7 @@
                         }
                     },
                     "feature": [
-                        "Horizon Hunting Grounds"
+                        "Horizons Hunting Grounds"
                     ]
                 }
             ],
@@ -5894,7 +6077,7 @@
                         }
                     },
                     "feature": [
-                        "Horizon Hunting Grounds"
+                        "Horizons Hunting Grounds"
                     ]
                 }
             ],
@@ -5928,7 +6111,7 @@
 				"HTR"
 			],
 			"entries": [
-				"You are trained to fight all manner of creatures, from the fantastical to the real. When you roll initiative, you can make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to determine either the Traits or Legendary Actions of a creature you can see, with a DC equal to 10 plus the creature's CR (maximum 30). You can add your Hunter's Die to this roll."
+                "With the {@action Search|XPHB} action or when you roll {@variantrule Initiative|XPHB}, choose a creature you can see or a creature whose tracks or other signs you can examine. Make a Wisdom ({@skill Survival|XPHB}) or Intelligence ({@skill Nature|XPHB}) ability check to recall or deduce information about it. The information you learn depends on the creature and might include its creature type, notable Traits or Legendary capabilities, typical habitat or territory, signs of its presence, known behaviours or taboos, properties of its lair, or common defences, as appropriate. You add your Hunter's Die to this roll."
 			],
             "prerequisite": [
                 {
@@ -5952,7 +6135,7 @@
                     "type": "utility",
 					"activation": {
 						"type": "",
-						"condition": "When you roll initiative"
+						"condition": ""
 					},
                     "roll": {
                         "name": "Surival/Nature Bonus",
@@ -5968,9 +6151,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You have advantage on Wisdom ({@skill Survival|XPHB}) checks in environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps. In such locations, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
-                "Additionally, you have advantage on any saving throws made against environmental hazards such as heat or cold.",
-                "Finally, you learn one standard and one rare language of your choice."
+				"You are home wherever your mythical foes are found.",
+                "{@b Favoured Terrain.} In environments that are home to Legendary creatures - such as volcanoes, the deepest caves, barren wastes or vast swamps - you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost outside of magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any conditions, and while tracking other creatures you can learn their number and when they last passed through the area.",
+                "{@b Trained for this.} You have {@variantrule Advantage|XPHB} on any saving throws made against {@variantrule Hazard|XPHB|environmental hazards} such as heat or cold.",
+                "{@b Language Proficiencies.} Finally, you learn one standard and one rare language of your choice."
 			],
             "languageProficiencies": [
                 {
@@ -6165,7 +6349,10 @@
 				"HTR"
 			],
 			"entries": [
-				"You are experienced in extreme terrains where the elements rule: volcanoes, icy tundras, the deepest caves, places where there are many storms, or the elemental planes. When in these environments, you have Advantage on Wisdom ({@skill Survival}) checks, {@variantrule Difficult Terrain|XPHB} does not slow your travel, you can forage for food in any environment, and you have advantage on any saving throw against extreme or hazardous weather or environmental conditions such as heat or cold."
+				"You are experienced in extreme terrains where the elements rule.",
+                "{@b Favoured Terrain.} While in locations such as volcanoes, icy tundras, the deepest caves, places where there are many storms, or the elemental planes, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival}) checks, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can forage for food in any environment.",
+                "{@b Elemental Attunement.} You have {@variantrule Advantage|XPHB} on any saving throw against extreme or hazardous weather or {@variantrule Hazard|XPHB|environmental hazards} such as heat or cold.",
+                "{@b Language Proficiencies.} You can speak {@language Primordial} and {@language Druidic}."
 			],
             "languageProficiencies": [
                 {
@@ -6361,6 +6548,154 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Hunter of Combatants",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You know how to deal with people who live by desperation, violence, and illicit dealings. When you make an ability check as part of the {@action Search|XPHB} or {@action Influence|XPHB} action to gather information from or influence a creature knowingly involved in criminal activity, or who is an arena fighter or sellsword, you can add your Hunter's Die to the roll."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "Pits Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Favoured Terrain: Undercity",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "You are experienced in travelling the places that hide in plain sight.",
+                "{@b Favoured Terrain.} While travelling in cities or settlements and locations where criminal dealings are prevalent, you have {@variantrule Advantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks, you cannot become lost except by magical means, {@variantrule Difficult Terrain|XPHB} does not slow your travel, and you can find enough food for you to eat.",
+                "{@b Comes with the territory.} You recognise local criminal customs, symbols, and territory markings. You have {@variantrule Advantage|XPHB} on any ability check made to find hidden routes, safehouses, illicit markets, or other such places where underground dealings occur.",
+                "{@b Language Proficiencies.} You learn two standard languages of your choice."
+            ],
+            "languageProficiencies": [
+                {
+                    "anyStandard": 2
+                }
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 4,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "Pits Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unarmed Master",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "{@b Natural with Weapons.} When you attack with an {@variantrule Unarmed Strike|XPHB} or Improvised Weapon, you can use one of the following mastery properties for that attack: {@itemMastery Push|XPHB}, {@itemMastery Sap|XPHB}, or {@itemMastery Slow|XPHB}.",
+                "{@b Shaking Blows.} Once per turn when you deal Thunder damage to a creature, you can spend one {@classFeature Instinct|Hunter|Starlight|1|Starlight} to cause it to become {@condition Rattled|Starlight} until the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 8,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "Pits Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pyrrhic Victory",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When a creature within your reach reduces you to 0 hit points but doesn't kill you outright, you can spend two {@classFeature Instinct|Hunter|Starlight|1|Starlight} to make an attack against it before you fall {@condition Unconscious|XPHB}. If the attack hits, it becomes a {@variantrule Critical Hit|XPHB}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 12,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "Pits Hunting Grounds"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Last Stand",
+            "source": "Starlight",
+            "featureType": [
+                "HTR"
+            ],
+            "entries": [
+                "When you would be reduced to 0 {@variantrule Hit Points|XPHB} or killed outright, you can use {@classFeature Shrug It Off|Hunter|Starlight|2|Starlight} (no action required). If you do, you are reduced to 1 Hit Point instead of becoming {@condition Unconscious|XPHB} or dying, then gain the {@variantrule Temporary Hit Points|XPHB} from Shrug It Off. Once you use Shrug It Off in this way, you cannot do so again until you finish a {@variantrule Long Rest|XPHB}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "name": "Hunter",
+                            "source": "Starlight",
+                            "visibleStats": true,
+                            "visibleList": false
+                        }
+                    },
+                    "feature": [
+                        "Pits Hunting Grounds"
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "uses.max": 1,
+                "uses.recovery": [
+                    {
+                        "period": "lr",
+                        "type": "recoverAll"
+                    }
+                ]
+            }
         }
     ],
     "item": [
